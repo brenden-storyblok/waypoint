@@ -8,7 +8,8 @@ import { placesLabel } from '@/lib/destinationSearch';
  * Filter chips, cards, and the empty message with Clear all.
  *
  * Renders on the server as the Suspense fallback (no handlers: the search box
- * submits a plain GET form) and in the browser inside DestinationSearch.
+ * submits a plain GET form and Clear all is a link) and in the browser inside
+ * DestinationSearch.
  *
  * Props:
  *   headline   the grid headline
@@ -16,25 +17,27 @@ import { placesLabel } from '@/lib/destinationSearch';
  *   cards      { [uuid]: rendered DestinationCard } for every Destination in the Pool
  *   texts      { placeholder, countryLabel, attributesLabel, emptyMessage,
  *              clearLabel } from the editor
- *   text       the Search Text shown in the search box
- *   choices    the visitor's choices (parseChoices), for the selected chips
- *   onText     (text) => void; omit for the static fallback
- *   onToggle   (group, value) => void toggles one chip; group is a key of
- *              result.chips, e.g. 'countries'. Omit for the static fallback
- *   onClear    () => void; omit for the static fallback
+ *   choices    the visitor's choices (parseChoices): the Search Text in the
+ *              search box and the selected chips
+ *   handlers   the browser's event handlers; omit for the static fallback:
+ *                onText    (text) => void
+ *                onToggle  (group, value) => void toggles one chip; group is
+ *                          a key of result.chips, e.g. 'countries'
+ *                onClear   () => void
+ *   clearHref  the static fallback's Clear all link (clearChoicesHref)
  */
 const DestinationSearchView = ({
 	headline,
 	result,
 	cards,
 	texts,
-	text,
 	choices,
-	onText,
-	onToggle,
-	onClear,
+	handlers,
+	clearHref,
 }) => {
-	const interactive = Boolean(onText);
+	const clearClass = 'btn btn--secondary btn--sm destination-grid__clear';
+	const toggle = (group) =>
+		handlers && ((value) => handlers.onToggle(group, value));
 
 	return (
 		<>
@@ -47,7 +50,7 @@ const DestinationSearchView = ({
 			<form
 				role="search"
 				className="destination-grid__search"
-				onSubmit={interactive ? (e) => e.preventDefault() : undefined}
+				onSubmit={handlers ? (e) => e.preventDefault() : undefined}
 			>
 				<input
 					type="search"
@@ -56,9 +59,12 @@ const DestinationSearchView = ({
 					aria-label={texts.placeholder}
 					placeholder={texts.placeholder}
 					autoComplete="off"
-					{...(interactive
-						? { value: text, onChange: (e) => onText(e.target.value) }
-						: { defaultValue: text })}
+					{...(handlers
+						? {
+								value: choices.text,
+								onChange: (e) => handlers.onText(e.target.value),
+							}
+						: { defaultValue: choices.text })}
 				/>
 			</form>
 			<div className="destination-grid__filters">
@@ -66,13 +72,13 @@ const DestinationSearchView = ({
 					heading={texts.countryLabel}
 					chips={result.chips.countries}
 					selected={choices.countries}
-					onToggle={onToggle && ((value) => onToggle('countries', value))}
+					onToggle={toggle('countries')}
 				/>
 				<FilterChips
 					heading={texts.attributesLabel}
 					chips={result.chips.attributes}
 					selected={choices.attributes}
-					onToggle={onToggle && ((value) => onToggle('attributes', value))}
+					onToggle={toggle('attributes')}
 				/>
 			</div>
 			{result.visible.length > 0 ? (
@@ -84,14 +90,18 @@ const DestinationSearchView = ({
 			) : (
 				<div className="destination-grid__empty">
 					<p>{texts.emptyMessage}</p>
-					{interactive && (
+					{handlers ? (
 						<button
 							type="button"
-							className="btn btn--secondary btn--sm destination-grid__clear"
-							onClick={onClear}
+							className={clearClass}
+							onClick={handlers.onClear}
 						>
 							{texts.clearLabel}
 						</button>
+					) : (
+						<a className={clearClass} href={clearHref}>
+							{texts.clearLabel}
+						</a>
 					)}
 				</div>
 			)}

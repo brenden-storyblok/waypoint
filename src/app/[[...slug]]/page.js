@@ -8,7 +8,7 @@ const NON_ROUTABLE_PREFIXES = ['data/', 'global/'];
 export default async function Page({ params, searchParams }) {
 	const { slug } = await params;
 	// Handed down to bloks that read the visitor's choices (destination grid).
-	const sp = await searchParams;
+	const query = await searchParams;
 
 	let fullSlug = slug ? slug.join('/') : 'home';
 
@@ -35,7 +35,7 @@ export default async function Page({ params, searchParams }) {
 		<StoryblokStory
 			story={data.story}
 			bridgeOptions={{ resolveRelations: RESOLVE_RELATIONS }}
-			searchParams={sp}
+			searchParams={query}
 		/>
 	);
 }

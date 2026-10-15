@@ -23,30 +23,31 @@ const DestinationSearch = ({ headline, pool, labels, cards, texts }) => {
 	// The box keeps its own text so typing never waits on the URL sync.
 	const [text, setText] = useState(choices.text);
 
+	const shown = { ...choices, text };
 	const result = searchDestinations({
 		destinations: pool,
-		choices: { ...choices, text },
+		choices: shown,
 		labels,
 	});
 
-	const onText = (next) => {
-		setText(next);
-		setChoices({ ...choices, text: next });
-	};
-
-	// Selects or deselects one chip in a Filter group (a key of choices).
-	const onToggle = (group, value) => {
-		const current = choices[group];
-		const next = current.includes(value)
-			? current.filter((v) => v !== value)
-			: [...current, value];
-		setChoices({ ...choices, text, [group]: next });
-	};
-
-	const onClear = () => {
-		const none = parseChoices();
-		setText(none.text);
-		setChoices(none);
+	const handlers = {
+		onText: (next) => {
+			setText(next);
+			setChoices({ ...choices, text: next });
+		},
+		// Selects or deselects one chip in a Filter group (a key of choices).
+		onToggle: (group, value) => {
+			const selected = choices[group];
+			const next = selected.includes(value)
+				? selected.filter((v) => v !== value)
+				: [...selected, value];
+			setChoices({ ...shown, [group]: next });
+		},
+		onClear: () => {
+			const none = parseChoices();
+			setText(none.text);
+			setChoices(none);
+		},
 	};
 
 	return (
@@ -55,11 +56,8 @@ const DestinationSearch = ({ headline, pool, labels, cards, texts }) => {
 			result={result}
 			cards={cards}
 			texts={texts}
-			text={text}
-			choices={choices}
-			onText={onText}
-			onToggle={onToggle}
-			onClear={onClear}
+			choices={shown}
+			handlers={handlers}
 		/>
 	);
 };

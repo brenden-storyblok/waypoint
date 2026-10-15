@@ -6,7 +6,12 @@ import DestinationSearchView from './DestinationSearchView';
 import { storyblokEditable } from '@storyblok/react/rsc';
 import { getStoryblokApi } from '@/lib/storyblok';
 import { storyHref } from '@/lib/links';
-import { parseChoices, searchDestinations } from '@/lib/destinationSearch';
+import {
+	clearChoicesHref,
+	parseChoices,
+	placesLabel,
+	searchDestinations,
+} from '@/lib/destinationSearch';
 
 async function findPages(uuids) {
 	const hrefs = {};
@@ -34,7 +39,7 @@ async function loadAllDestinations() {
 		return await getStoryblokApi().getAll(
 			'cdn/stories',
 			{ version: 'draft', content_type: 'destination' },
-			'stories'
+			'stories',
 		);
 	} catch (error) {
 		console.error('DestinationGrid: destination lookup failed', error);
@@ -56,7 +61,7 @@ async function loadLabels(datasource) {
 		const entries = await getStoryblokApi().getAll(
 			'cdn/datasource_entries',
 			{ datasource },
-			'datasource_entries'
+			'datasource_entries',
 		);
 		return Object.fromEntries(entries.map((e) => [e.value, e.name]));
 	} catch (error) {
@@ -66,12 +71,12 @@ async function loadLabels(datasource) {
 }
 
 const DestinationGrid = async ({ blok, searchParams }) => {
-	// The editor's raw picks: uuid strings, or story objects once resolved.
-	const raw = blok.destinations || [];
-	const picked = raw
+	// The editor's picks: uuid strings, or story objects once resolved.
+	const picks = blok.destinations || [];
+	const picked = picks
 		.map((d) => (d && typeof d === 'object' ? d.uuid : d))
 		.filter(Boolean);
-	const resolved = raw.filter((d) => d && typeof d === 'object');
+	const resolved = picks.filter((d) => d && typeof d === 'object');
 	const stories = picked.length ? resolved : await loadAllDestinations();
 	const storyByUuid = new Map(stories.map((s) => [s.uuid, s]));
 
@@ -83,82 +88,81 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 				attributes: await loadLabels('destination-attributes'),
 			}
 		: {};
-	const result = searchDestinations({
+	const choices = parseChoices(search ? searchParams : undefined);
+	const searchResult = searchDestinations({
 		destinations: stories.map(toRecord),
 		settings: {
 			picked,
 			countries: blok.countries || [],
 			attributes: blok.attributes || [],
 		},
-		choices: parseChoices(search ? searchParams : undefined),
+		choices,
 		labels,
 	});
-	const { pool } = result;
+	const { pool } = searchResult;
 	const destinations = pool.map((d) => storyByUuid.get(d.uuid));
 	const hrefs = await findPages(destinations.map((d) => d.uuid));
+	const card = (d) => (
+		<DestinationCard key={d.uuid} destination={d} href={hrefs[d.uuid]} />
+	);
 
-	if (search) {
-		const cards = Object.fromEntries(
-			destinations.map((d) => [
-				d.uuid,
-				<DestinationCard key={d.uuid} destination={d} href={hrefs[d.uuid]} />,
-			])
-		);
-		const texts = {
-			placeholder: blok.search_placeholder,
-			countryLabel: blok.country_label,
-			attributesLabel: blok.attributes_label,
-			emptyMessage: blok.empty_message,
-			clearLabel: blok.clear_label,
-		};
-		// The fallback is the same grid, filtered on the server, so a shared
-		// link never flashes the full Pool.
-		const choices = parseChoices(searchParams);
-		const fallback = (
-			<DestinationSearchView
-				headline={blok.headline}
-				result={result}
-				cards={cards}
-				texts={texts}
-				text={choices.text}
-				choices={choices}
-			/>
-		);
-		return (
-			<section {...storyblokEditable(blok)} className="wp-section destination-grid">
-				<div className="wp-wrap">
-					<Suspense fallback={fallback}>
-						<DestinationSearch
-							headline={blok.headline}
-							pool={pool}
-							labels={labels}
-							cards={cards}
-							texts={texts}
-						/>
-					</Suspense>
-				</div>
-			</section>
-		);
-	}
+	const section = (children) => (
+		<section
+			{...storyblokEditable(blok)}
+			className="wp-section destination-grid"
+		>
+			<div className="wp-wrap">{children}</div>
+		</section>
+	);
 
-	return (
-		<section {...storyblokEditable(blok)} className="wp-section destination-grid">
-			<div className="wp-wrap">
+	if (!search) {
+		return section(
+			<>
 				<div className="destination-grid__head">
-					{blok.headline && <h2 className="wp-section-title">{blok.headline}</h2>}
+					{blok.headline && (
+						<h2 className="wp-section-title">{blok.headline}</h2>
+					)}
 					{destinations.length > 0 && (
 						<span className="destination-grid__count">
-							{destinations.length} {destinations.length === 1 ? 'place' : 'places'}
+							{placesLabel(searchResult)}
 						</span>
 					)}
 				</div>
-				<div className="destination-grid__cards">
-					{destinations.map((d) => (
-						<DestinationCard key={d.uuid} destination={d} href={hrefs[d.uuid]} />
-					))}
-				</div>
-			</div>
-		</section>
+				<div className="destination-grid__cards">{destinations.map(card)}</div>
+			</>,
+		);
+	}
+
+	const cards = Object.fromEntries(destinations.map((d) => [d.uuid, card(d)]));
+	const texts = {
+		placeholder: blok.search_placeholder,
+		countryLabel: blok.country_label,
+		attributesLabel: blok.attributes_label,
+		emptyMessage: blok.empty_message,
+		clearLabel: blok.clear_label,
+	};
+	// The fallback is the same grid, filtered on the server, so a shared
+	// link never flashes the full Pool.
+	const fallback = (
+		<DestinationSearchView
+			headline={blok.headline}
+			result={searchResult}
+			cards={cards}
+			texts={texts}
+			choices={choices}
+			clearHref={clearChoicesHref(searchParams)}
+		/>
+	);
+	return section(
+		<Suspense fallback={fallback}>
+			<DestinationSearch
+				headline={blok.headline}
+				pool={pool}
+				labels={labels}
+				cards={cards}
+				texts={texts}
+			/>
+		</Suspense>,
 	);
 };
 

@@ -1,3 +1,4 @@
+import './DestinationGrid.css';
 import ImageCredit from './ImageCredit';
 import { imageUrl, imageAlt } from '@/lib/images';
 
