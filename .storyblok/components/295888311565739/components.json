@@ -61,7 +61,7 @@
     "display_name": "Destination",
     "description": null,
     "created_at": "2026-10-14T15:55:27.887Z",
-    "updated_at": "2026-10-14T16:06:30.544Z",
+    "updated_at": "2026-10-15T12:25:06.516Z",
     "id": 230620069430149,
     "schema": {
       "name": {
@@ -80,16 +80,25 @@
         "datasource_slug": "countries",
         "id": "-Qy82J83R-ukXeEAMzPnQA"
       },
+      "attributes": {
+        "type": "options",
+        "pos": 2,
+        "display_name": "Destination attributes",
+        "source": "internal",
+        "datasource_slug": "destination-attributes",
+        "description": "What this Destination offers, such as beach, nature or city.",
+        "id": "GwBDvyz6QqOkXNZc5i_XXQ"
+      },
       "region": {
         "type": "text",
-        "pos": 2,
+        "pos": 3,
         "display_name": "Region",
         "translatable": true,
         "id": "1O0Ai39zSW69Vup8xJercA"
       },
       "summary": {
         "type": "textarea",
-        "pos": 3,
+        "pos": 4,
         "display_name": "Summary",
         "translatable": true,
         "description": "Short teaser used on cards and the destination hero",
@@ -97,14 +106,14 @@
       },
       "description": {
         "type": "richtext",
-        "pos": 4,
+        "pos": 5,
         "display_name": "Description",
         "translatable": true,
         "id": "hnIPIFqOTVyPLcmE3v-f1Q"
       },
       "hero_image": {
         "type": "asset",
-        "pos": 5,
+        "pos": 6,
         "display_name": "Hero image",
         "filetypes": [
           "images"
@@ -115,7 +124,7 @@
       },
       "image_portrait": {
         "type": "asset",
-        "pos": 6,
+        "pos": 7,
         "display_name": "Portrait image",
         "filetypes": [
           "images"
@@ -124,7 +133,7 @@
       },
       "image_landscape": {
         "type": "asset",
-        "pos": 7,
+        "pos": 8,
         "display_name": "Landscape image",
         "filetypes": [
           "images"
@@ -133,7 +142,7 @@
       },
       "gallery": {
         "type": "multiasset",
-        "pos": 8,
+        "pos": 9,
         "display_name": "Gallery",
         "filetypes": [
           "images"
@@ -142,7 +151,7 @@
       },
       "usps": {
         "type": "bloks",
-        "pos": 9,
+        "pos": 10,
         "display_name": "USPs",
         "restrict_components": true,
         "component_whitelist": [
@@ -236,7 +245,7 @@
     "display_name": "Destination grid",
     "description": null,
     "created_at": "2026-10-14T15:55:45.667Z",
-    "updated_at": "2026-10-15T12:19:05.463Z",
+    "updated_at": "2026-10-15T12:28:02.431Z",
     "id": 230620142261129,
     "schema": {
       "headline": {
@@ -256,6 +265,57 @@
         ],
         "required": false,
         "id": "TzsiqXZwTFeol_RMCWJl0Q"
+      },
+      "countries": {
+        "type": "options",
+        "pos": 2,
+        "display_name": "Countries",
+        "source": "internal",
+        "datasource_slug": "countries",
+        "description": "Narrow the grid to Destinations in any of these Countries. Empty keeps every Country.",
+        "id": "lqC7i7QsSbOOlBFnlCq89g"
+      },
+      "attributes": {
+        "type": "options",
+        "pos": 3,
+        "display_name": "Destination attributes",
+        "source": "internal",
+        "datasource_slug": "destination-attributes",
+        "description": "Narrow the grid to Destinations carrying any of these Destination Attributes. Empty keeps every Destination.",
+        "id": "EuJxdhQlSO64ZGGTM5H4aw"
+      },
+      "search_enabled": {
+        "type": "boolean",
+        "pos": 4,
+        "display_name": "Search UI",
+        "default_value": false,
+        "description": "Let visitors search the grid.",
+        "id": "8peEGtY7RzaYTo9F-aVy2A"
+      },
+      "search_placeholder": {
+        "type": "text",
+        "pos": 5,
+        "display_name": "Search placeholder",
+        "translatable": true,
+        "default_value": "Search destinations",
+        "id": "f5S4JkQASuaJDt_dZpoWeQ"
+      },
+      "empty_message": {
+        "type": "text",
+        "pos": 6,
+        "display_name": "Empty message",
+        "translatable": true,
+        "default_value": "No destinations match your search.",
+        "description": "Shown when nothing matches the visitor's search.",
+        "id": "E35AVOoBSUKY5KgieZQQNw"
+      },
+      "clear_label": {
+        "type": "text",
+        "pos": 7,
+        "display_name": "Clear all label",
+        "translatable": true,
+        "default_value": "Clear all",
+        "id": "nbDgvXfsTQK6GNvsqY0IUQ"
       }
     },
     "image": null,

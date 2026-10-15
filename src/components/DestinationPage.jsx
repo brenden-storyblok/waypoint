@@ -3,7 +3,7 @@ import {
 	StoryblokServerComponent,
 } from '@storyblok/react/rsc';
 
-const DestinationPage = ({ blok }) => {
+const DestinationPage = ({ blok, searchParams }) => {
 	const destination =
 		blok.destination && typeof blok.destination === 'object'
 			? blok.destination
@@ -17,6 +17,7 @@ const DestinationPage = ({ blok }) => {
 					blok={nestedBlok}
 					key={nestedBlok._uid}
 					destination={destinationContent}
+					searchParams={searchParams}
 				/>
 			))}
 		</main>
