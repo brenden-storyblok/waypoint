@@ -49,6 +49,18 @@ export default async function RootLayout({ children }) {
 	return (
 		<StoryblokProvider>
 			<html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
+				<head>
+					<meta name="robots" content="noindex, nofollow" />
+					<meta name="title" content="Waypoint" />
+					<meta name="description" content="European destinations our editors keep going back to." />
+					<meta name="keywords" content="European destinations, travel, travel planning, travel tips, travel inspiration, travel guides, travel destinations, travel destinations in Europe, travel destinations in the world, travel destinations in the USA, travel destinations in Asia, travel destinations in Africa, travel destinations in South America, travel destinations in North America, travel destinations in Europe, travel destinations in the world, travel destinations in the USA, travel destinations in Asia, travel destinations in Africa, travel destinations in South America, travel destinations in North America" />
+					<meta name="author" content="Waypoint" />
+					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+					<meta name="theme-color" content="#000000" />
+					<meta name="apple-mobile-web-app-capable" content="yes" />
+					<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+					<meta name="apple-mobile-web-app-title" content="Waypoint" />
+				</head>
 				<body>
 					{header && <StoryblokServerComponent blok={header.content} />}
 					{children}
