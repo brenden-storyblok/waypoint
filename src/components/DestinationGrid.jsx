@@ -33,12 +33,23 @@ async function findPages(uuids) {
 	return hrefs;
 }
 
-// Every story of content type `destination`.
-async function loadAllDestinations() {
+// Every story of content type `destination` whose Country is any of
+// `countries` and that carries any of `attributes`. An empty setting
+// filters nothing.
+export async function loadAllDestinations({ countries = [], attributes = [] }) {
+	const filterQuery = {};
+	if (countries.length) filterQuery.country = { in: countries.join(',') };
+	if (attributes.length) {
+		filterQuery.attributes = { any_in_array: attributes.join(',') };
+	}
 	try {
 		return await getStoryblokApi().getAll(
 			'cdn/stories',
-			{ version: 'draft', content_type: 'destination' },
+			{
+				version: 'draft',
+				content_type: 'destination',
+				...(Object.keys(filterQuery).length && { filter_query: filterQuery }),
+			},
 			'stories',
 		);
 	} catch (error) {
@@ -79,7 +90,12 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 		.map((pick) => (pick && typeof pick === 'object' ? pick.uuid : pick))
 		.filter(Boolean);
 	const resolved = picks.filter((pick) => pick && typeof pick === 'object');
-	const stories = picked.length ? resolved : await loadAllDestinations();
+	const stories = picked.length
+		? resolved
+		: await loadAllDestinations({
+				countries: blok.countries || [],
+				attributes: blok.attributes || [],
+			});
 	const storyByUuid = new Map(stories.map((story) => [story.uuid, story]));
 
 	// With search off the grid ignores the URL and shows the whole Pool.
