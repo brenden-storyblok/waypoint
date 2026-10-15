@@ -62,6 +62,13 @@
 	--section-pad: 72px;
 	--radius: 6px;
 
+	/* Spacing scale (Layout gap) */
+	--space-xs: 8px;
+	--space-sm: 16px;
+	--space-md: 24px;
+	--space-lg: 40px;
+	--space-xl: 64px;
+
 	/* Breakpoints (reference only; media queries cannot read custom properties) */
 	/* tablet: 860px, phone: 520px */
 }

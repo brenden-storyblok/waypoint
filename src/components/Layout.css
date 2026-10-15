@@ -1,0 +1,47 @@
+/*
+ * Layout reads the resolved Breakpoint values the component sets inline on
+ * every Layout, so a nested Layout never picks up its parent's values.
+ * Breakpoints: md 768px, lg 1024px, xl 1280px (min-width, mobile-first).
+ */
+.layout {
+	gap: var(--layout-gap);
+}
+
+.layout--grid {
+	display: grid;
+	grid-template-columns: repeat(var(--layout-columns), minmax(0, 1fr));
+	align-items: var(--layout-align);
+}
+
+@media (min-width: 768px) {
+	.layout {
+		gap: var(--layout-gap-md);
+	}
+
+	.layout--grid {
+		grid-template-columns: repeat(var(--layout-columns-md), minmax(0, 1fr));
+		align-items: var(--layout-align-md);
+	}
+}
+
+@media (min-width: 1024px) {
+	.layout {
+		gap: var(--layout-gap-lg);
+	}
+
+	.layout--grid {
+		grid-template-columns: repeat(var(--layout-columns-lg), minmax(0, 1fr));
+		align-items: var(--layout-align-lg);
+	}
+}
+
+@media (min-width: 1280px) {
+	.layout {
+		gap: var(--layout-gap-xl);
+	}
+
+	.layout--grid {
+		grid-template-columns: repeat(var(--layout-columns-xl), minmax(0, 1fr));
+		align-items: var(--layout-align-xl);
+	}
+}

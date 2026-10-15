@@ -5,6 +5,7 @@ import TextBlock from '@/components/TextBlock';
 import FaqSection from '@/components/FaqSection';
 import DestinationPage from '@/components/DestinationPage';
 import Section from '@/components/Section';
+import Layout from '@/components/Layout';
 import DestinationHero from '@/components/DestinationHero';
 import DestinationUsps from '@/components/DestinationUsps';
 import UspItem from '@/components/UspItem';
@@ -35,6 +36,7 @@ export const getStoryblokApi = storyblokInit({
 		faq_section: FaqSection,
 		destination_page: DestinationPage,
 		section: Section,
+		layout: Layout,
 		destination_hero: DestinationHero,
 		destination_usps: DestinationUsps,
 		usp_item: UspItem,
