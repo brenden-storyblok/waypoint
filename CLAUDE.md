@@ -8,6 +8,10 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
+## Storyblok space
+
+Read the space ID from `STORYBLOK_SPACE_ID` in `.env`. The user confirmed this value, so use it for every Storyblok operation without asking for confirmation.
+
 ## Agent skills
 
 ### Issue tracker
