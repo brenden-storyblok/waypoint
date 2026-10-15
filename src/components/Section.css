@@ -1,0 +1,33 @@
+.section {
+	padding-block: var(--section-pad);
+}
+
+.section--pad-none {
+	padding-block: 0;
+}
+
+.section--pad-compact {
+	padding-block: calc(var(--section-pad) / 2);
+}
+
+.section--pad-spacious {
+	padding-block: calc(var(--section-pad) * 1.5);
+}
+
+.section--bg-surface {
+	background: var(--color-surface);
+}
+
+.section--bg-inverse {
+	background: var(--color-inverse);
+	color: var(--color-on-inverse);
+}
+
+.section--bg-accent {
+	background: var(--color-accent);
+	color: var(--color-on-accent);
+}
+
+.section__headline {
+	margin-block-end: 32px;
+}
