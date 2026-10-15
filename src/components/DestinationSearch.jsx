@@ -13,9 +13,9 @@ import { parseChoices, searchDestinations } from '@/lib/destinationSearch';
  * Props (all serialisable, from the DestinationGrid server component):
  *   headline   the grid headline
  *   pool       the Pool as destination search records
- *   labels     display labels for the module, e.g. { countries }
+ *   labels     display labels for the module, e.g. { countries, attributes }
  *   cards      { [uuid]: rendered DestinationCard }
- *   texts      { placeholder, emptyMessage, clearLabel }
+ *   texts      { placeholder, attributesLabel, emptyMessage, clearLabel }
  */
 const DestinationSearch = ({ headline, pool, labels, cards, texts }) => {
 	const [choices, setChoices] = useSearchChoices();
@@ -33,6 +33,13 @@ const DestinationSearch = ({ headline, pool, labels, cards, texts }) => {
 		setChoices({ ...choices, text: next });
 	};
 
+	const onToggleAttribute = (value) => {
+		const attributes = choices.attributes.includes(value)
+			? choices.attributes.filter((v) => v !== value)
+			: [...choices.attributes, value];
+		setChoices({ ...choices, text, attributes });
+	};
+
 	const onClear = () => {
 		const none = parseChoices();
 		setText(none.text);
@@ -45,8 +52,9 @@ const DestinationSearch = ({ headline, pool, labels, cards, texts }) => {
 			result={result}
 			cards={cards}
 			texts={texts}
-			text={text}
+			choices={{ ...choices, text }}
 			onText={onText}
+			onToggleAttribute={onToggleAttribute}
 			onClear={onClear}
 		/>
 	);

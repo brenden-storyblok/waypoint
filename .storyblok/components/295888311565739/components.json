@@ -245,7 +245,7 @@
     "display_name": "Destination grid",
     "description": null,
     "created_at": "2026-10-14T15:55:45.667Z",
-    "updated_at": "2026-10-15T12:28:02.431Z",
+    "updated_at": "2026-10-15T12:35:31.235Z",
     "id": 230620142261129,
     "schema": {
       "headline": {
@@ -316,6 +316,15 @@
         "translatable": true,
         "default_value": "Clear all",
         "id": "nbDgvXfsTQK6GNvsqY0IUQ"
+      },
+      "attributes_label": {
+        "type": "text",
+        "pos": 8,
+        "display_name": "Attributes label",
+        "translatable": true,
+        "default_value": "Attributes",
+        "description": "Heading above the Destination Attribute chips.",
+        "id": "xHX8322BSgeixF00ajFk_Q"
       }
     },
     "image": null,

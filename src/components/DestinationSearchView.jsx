@@ -1,5 +1,6 @@
 import './Button.css';
 import { Fragment } from 'react';
+import FilterChips from './FilterChips';
 import { placesLabel } from '@/lib/destinationSearch';
 
 /**
@@ -13,9 +14,10 @@ import { placesLabel } from '@/lib/destinationSearch';
  *   headline   the grid headline
  *   result     a searchDestinations result
  *   cards      { [uuid]: rendered DestinationCard } for every Destination in the Pool
- *   texts      { placeholder, emptyMessage, clearLabel } from the editor
- *   text       the Search Text shown in the search box
+ *   texts      { placeholder, attributesLabel, emptyMessage, clearLabel } from the editor
+ *   choices    the visitor's choices; `text` is the Search Text in the search box
  *   onText     (text) => void; omit for the static fallback
+ *   onToggleAttribute  (value) => void; omit for the static fallback
  *   onClear    () => void; omit for the static fallback
  */
 const DestinationSearchView = ({
@@ -23,10 +25,12 @@ const DestinationSearchView = ({
 	result,
 	cards,
 	texts,
-	text,
+	choices,
 	onText,
+	onToggleAttribute,
 	onClear,
 }) => {
+	const { text } = choices;
 	const interactive = Boolean(onText);
 
 	return (
@@ -54,6 +58,12 @@ const DestinationSearchView = ({
 						: { defaultValue: text })}
 				/>
 			</form>
+			<FilterChips
+				label={texts.attributesLabel}
+				options={result.options.attributes}
+				selected={choices.attributes}
+				onToggle={onToggleAttribute}
+			/>
 			{result.visible.length > 0 ? (
 				<div className="destination-grid__cards">
 					{result.visible.map((d) => (

@@ -13,17 +13,22 @@
  *                   attributes  [value] a Destination stays in the Pool when
  *                               it carries any of these Destination Attributes
  *                 A Destination must pass both countries and attributes.
- *   choices       the visitor's choices: { text } (see parseChoices)
- *   labels        display labels by stored value: { countries: { spain: 'Spain' } }
+ *   choices       the visitor's choices: { text, attributes } (see parseChoices)
+ *   labels        display labels by stored value, in datasource order:
+ *                 { countries: { spain: 'Spain' }, attributes: { beach: 'Beach' } }
  *
  * Output:
  *   pool          Destinations the editor makes available in the grid
  *   visible       Destinations in the Pool that pass the visitor's choices
  *   counts        { visible, pool }
  *   narrowed      true while the visitor's choices narrow the Pool
+ *   options       { attributes: [{ value, label }] } Destination Attribute chips:
+ *                 values some Destination in the Pool carries
  *
  * Search Text matches a Destination's name or Country label as a substring,
  * ignoring case and accents. A Country with no label matches on its value.
+ * A Destination passes the Destination Attribute Filters when it carries any
+ * selected one, and must also pass the Search Text.
  *
  * Returned Destinations are the same objects passed in.
  */
@@ -38,17 +43,34 @@ export function searchDestinations({
 		.filter(carriesAny(settings.attributes || []));
 	const countryLabel = (value) => labels.countries?.[value] ?? value;
 	const text = fold(choices.text || '');
-	const visible = pool.filter(
-		(d) =>
-			!text ||
-			[d.name, countryLabel(d.country)].some((s) => fold(s).includes(text)),
-	);
+	const attributes = choices.attributes || [];
+	const visible = pool
+		.filter(
+			(d) =>
+				!text ||
+				[d.name, countryLabel(d.country)].some((s) => fold(s).includes(text)),
+		)
+		.filter(carriesAny(attributes));
 	return {
 		pool,
 		visible,
 		counts: { visible: visible.length, pool: pool.length },
-		narrowed: Boolean(text),
+		narrowed: Boolean(text) || attributes.length > 0,
+		options: { attributes: attributeOptions(pool, labels.attributes || {}) },
 	};
+}
+
+// Destination Attribute chips: [{ value, label }] for each value some
+// Destination in the Pool carries. Labelled values come first in label
+// (datasource) order; a value with no label follows, labelled by its value.
+function attributeOptions(pool, labels) {
+	const present = new Set(pool.flatMap((d) => d.attributes || []));
+	const labelled = Object.keys(labels).filter((v) => present.has(v));
+	const unlabelled = [...present].filter((v) => !(v in labels));
+	return [...labelled, ...unlabelled].map((value) => ({
+		value,
+		label: labels[value] ?? value,
+	}));
 }
 
 /**
@@ -65,22 +87,23 @@ export function placesLabel({ counts, narrowed }) {
 /*
  * URL choices. One searchable grid per page, so every grid reads the same
  * params:
- *   q  Search Text
+ *   q          Search Text
+ *   attribute  a selected Destination Attribute Filter, once per value
  * Each choice param is listed in CHOICE_PARAMS so serialising replaces it and
  * keeps every other param (Visual Editor `_storyblok*`).
  */
-const CHOICE_PARAMS = ['q'];
+const CHOICE_PARAMS = ['q', 'attribute'];
 
 /**
  * The visitor's choices from URL search params. Accepts URLSearchParams (the
  * browser) or a page `searchParams` object whose values are a string or an
  * array of strings (the server).
  *
- * Returns { text }.
+ * Returns { text, attributes }.
  */
 export function parseChoices(params) {
 	const all = paramReader(params);
-	return { text: all('q')[0] || '' };
+	return { text: all('q')[0] || '', attributes: all('attribute') };
 }
 
 /**
@@ -93,6 +116,7 @@ export function serialiseChoices(choices, current = '') {
 		toEntries(current).filter(([key]) => !CHOICE_PARAMS.includes(key)),
 	);
 	if (choices.text?.trim()) out.append('q', choices.text);
+	for (const value of choices.attributes || []) out.append('attribute', value);
 	return out.toString();
 }
 
