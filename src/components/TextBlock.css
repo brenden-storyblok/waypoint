@@ -1,0 +1,5 @@
+.text-block__body :is(ul, ol) {
+	padding-left: 1.2em;
+	display: grid;
+	gap: 6px;
+}

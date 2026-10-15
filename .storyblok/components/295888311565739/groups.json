@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Data",
+    "id": 230619626765812,
+    "uuid": "003bb1ff-66f3-4227-a859-c923cb69afb4",
+    "parent_id": null,
+    "parent_uuid": null
+  },
+  {
+    "name": "Destination",
+    "id": 230619542089201,
+    "uuid": "6b603e6d-956b-4d89-ab7a-2324a364a69c",
+    "parent_id": null,
+    "parent_uuid": null
+  },
+  {
+    "name": "Elements",
+    "id": 230619564326386,
+    "uuid": "73a3d280-86c7-46ad-8bb1-be30ae0fb08b",
+    "parent_id": null,
+    "parent_uuid": null
+  },
+  {
+    "name": "Generic",
+    "id": 230619510320624,
+    "uuid": "47f26d33-3718-4e99-a513-75f449da01cb",
+    "parent_id": null,
+    "parent_uuid": null
+  },
+  {
+    "name": "Global",
+    "id": 230623233641977,
+    "uuid": "1b0a5321-348d-4d5e-b0d7-d4c150cea0c1",
+    "parent_id": null,
+    "parent_uuid": null
+  },
+  {
+    "name": "Pages",
+    "id": 230619607428595,
+    "uuid": "8cbce778-b02e-40e9-9641-5f5d42e1a9f0",
+    "parent_id": null,
+    "parent_uuid": null
+  }
+]

@@ -1,0 +1,22 @@
+.destination-bio {
+	background: var(--color-surface);
+}
+
+.destination-bio__rich {
+	font-size: var(--text-17);
+}
+
+.destination-bio__rich > p:first-child {
+	font-size: var(--text-22);
+	line-height: 1.5;
+}
+
+.destination-bio__rich > p:first-child::first-letter {
+	float: left;
+	padding: 6px 10px 0 0;
+	font-family: var(--font-display-family);
+	font-weight: 800;
+	font-size: 3.4em;
+	line-height: 0.8;
+	color: var(--color-accent);
+}
