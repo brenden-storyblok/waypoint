@@ -1,3 +1,6 @@
 import eslintConfig from "eslint-config-next/core-web-vitals";
 
-export default eslintConfig;
+export default [
+  { ignores: [".claude/**"] },
+  ...eslintConfig,
+];
