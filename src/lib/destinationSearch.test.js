@@ -103,6 +103,59 @@ describe('searchDestinations', () => {
 		});
 	});
 
+	describe('Destination Attributes', () => {
+		it('narrow the Pool to Destinations carrying the chosen one', () => {
+			const result = searchDestinations({
+				destinations: allDestinations,
+				settings: { picked: [], attributes: ['beach'] },
+			});
+
+			expect(names(result.pool)).toEqual([
+				'Amalfi Coast',
+				'Santorini',
+				'Lisbon',
+			]);
+			expect(result.counts).toEqual({ visible: 3, pool: 3 });
+		});
+
+		it('keep a Destination carrying any of several chosen ones', () => {
+			const result = searchDestinations({
+				destinations: allDestinations,
+				settings: { picked: [], attributes: ['beach', 'city'] },
+			});
+
+			expect(names(result.pool)).toEqual([
+				'Seville',
+				'Amalfi Coast',
+				'Santorini',
+				'Lisbon',
+			]);
+		});
+
+		it('narrow the picked Destinations, keeping the editor order', () => {
+			const result = searchDestinations({
+				destinations: allDestinations,
+				settings: {
+					picked: [lisbon.uuid, provence.uuid, seville.uuid, santorini.uuid],
+					attributes: ['beach'],
+				},
+			});
+
+			expect(names(result.pool)).toEqual(['Lisbon', 'Santorini']);
+			expect(result.counts).toEqual({ visible: 2, pool: 2 });
+		});
+
+		it('leave the Pool empty when no Destination carries the chosen one', () => {
+			const result = searchDestinations({
+				destinations: allDestinations,
+				settings: { picked: [seville.uuid, provence.uuid], attributes: ['island'] },
+			});
+
+			expect(result.pool).toEqual([]);
+			expect(result.counts).toEqual({ visible: 0, pool: 0 });
+		});
+	});
+
 	describe('Pool narrowed by editor Countries', () => {
 		it('keeps a Destination in any chosen Country when nothing is picked', () => {
 			const result = searchDestinations({
@@ -157,6 +210,18 @@ describe('searchDestinations', () => {
 				'Santorini',
 				'Lisbon',
 			]);
+		});
+	});
+
+	describe('Pool narrowed by Countries and Destination Attributes', () => {
+		it('keeps only Destinations that pass both', () => {
+			const result = searchDestinations({
+				destinations: allDestinations,
+				settings: { picked: [], countries: ['portugal'], attributes: ['beach'] },
+			});
+
+			expect(names(result.pool)).toEqual(['Lisbon']);
+			expect(result.counts).toEqual({ visible: 1, pool: 1 });
 		});
 	});
 });

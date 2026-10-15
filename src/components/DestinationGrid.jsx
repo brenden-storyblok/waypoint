@@ -59,7 +59,11 @@ const DestinationGrid = async ({ blok }) => {
 
 	const { pool } = searchDestinations({
 		destinations: stories.map(toRecord),
-		settings: { picked, countries: blok.countries || [] },
+		settings: {
+			picked,
+			countries: blok.countries || [],
+			attributes: blok.attributes || [],
+		},
 	});
 	const destinations = pool.map((d) => storyByUuid.get(d.uuid));
 	const hrefs = await findPages(destinations.map((d) => d.uuid));
