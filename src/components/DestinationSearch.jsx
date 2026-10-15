@@ -15,7 +15,8 @@ import { parseChoices, searchDestinations } from '@/lib/destinationSearch';
  *   pool       the Pool as destination search records
  *   labels     display labels for the module, e.g. { countries, attributes }
  *   cards      { [uuid]: rendered DestinationCard }
- *   texts      { placeholder, attributesLabel, emptyMessage, clearLabel }
+ *   texts      { placeholder, countryLabel, attributesLabel, emptyMessage,
+ *              clearLabel }
  */
 const DestinationSearch = ({ headline, pool, labels, cards, texts }) => {
 	const [choices, setChoices] = useSearchChoices();
@@ -33,11 +34,13 @@ const DestinationSearch = ({ headline, pool, labels, cards, texts }) => {
 		setChoices({ ...choices, text: next });
 	};
 
-	const onToggleAttribute = (value) => {
-		const attributes = choices.attributes.includes(value)
-			? choices.attributes.filter((v) => v !== value)
-			: [...choices.attributes, value];
-		setChoices({ ...choices, text, attributes });
+	// Selects or deselects one chip in a Filter group (a key of choices).
+	const onToggle = (group, value) => {
+		const current = choices[group];
+		const next = current.includes(value)
+			? current.filter((v) => v !== value)
+			: [...current, value];
+		setChoices({ ...choices, text, [group]: next });
 	};
 
 	const onClear = () => {
@@ -52,9 +55,10 @@ const DestinationSearch = ({ headline, pool, labels, cards, texts }) => {
 			result={result}
 			cards={cards}
 			texts={texts}
-			choices={{ ...choices, text }}
+			text={text}
+			choices={choices}
 			onText={onText}
-			onToggleAttribute={onToggleAttribute}
+			onToggle={onToggle}
 			onClear={onClear}
 		/>
 	);

@@ -106,19 +106,22 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 		);
 		const texts = {
 			placeholder: blok.search_placeholder,
+			countryLabel: blok.country_label,
 			attributesLabel: blok.attributes_label,
 			emptyMessage: blok.empty_message,
 			clearLabel: blok.clear_label,
 		};
 		// The fallback is the same grid, filtered on the server, so a shared
 		// link never flashes the full Pool.
+		const choices = parseChoices(searchParams);
 		const fallback = (
 			<DestinationSearchView
 				headline={blok.headline}
 				result={result}
 				cards={cards}
 				texts={texts}
-				choices={parseChoices(searchParams)}
+				text={choices.text}
+				choices={choices}
 			/>
 		);
 		return (

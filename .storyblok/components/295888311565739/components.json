@@ -245,7 +245,7 @@
     "display_name": "Destination grid",
     "description": null,
     "created_at": "2026-10-14T15:55:45.667Z",
-    "updated_at": "2026-10-15T12:35:31.235Z",
+    "updated_at": "2026-10-15T12:36:30.723Z",
     "id": 230620142261129,
     "schema": {
       "headline": {
@@ -325,6 +325,15 @@
         "default_value": "Attributes",
         "description": "Heading above the Destination Attribute chips.",
         "id": "xHX8322BSgeixF00ajFk_Q"
+      },
+      "country_label": {
+        "type": "text",
+        "pos": 9,
+        "display_name": "Country label",
+        "translatable": true,
+        "default_value": "Country",
+        "description": "Heading above the Country chips.",
+        "id": "AIEFNQd3TbGJIxmZDzHBjg"
       }
     },
     "image": null,

@@ -2,32 +2,40 @@ import { describe, expect, it } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 import FilterChips from '@/components/FilterChips';
 
-const options = [
-	{ value: 'beach', label: 'Beach' },
-	{ value: 'city', label: 'City' },
+const chips = [
+	{ value: 'italy', label: 'Italy' },
+	{ value: 'greece', label: 'Greece' },
 ];
 
 describe('FilterChips', () => {
-	it('shows each chip as a toggle button exposing its selected state', () => {
+	it('renders a labelled group of toggle buttons that expose their selected state', () => {
 		const html = renderToStaticMarkup(
-			<FilterChips label="Attributes" options={options} selected={['city']} />,
+			<FilterChips
+				heading="Country"
+				chips={chips}
+				selected={['greece']}
+				onToggle={() => {}}
+			/>
 		);
-		expect(html).toContain('role="group"');
-		expect(html).toContain('>Attributes</span>');
-		expect(html).toMatch(/<button type="button"[^>]*aria-pressed="false"[^>]*>Beach<\/button>/);
-		expect(html).toMatch(/<button type="button"[^>]*aria-pressed="true"[^>]*>City<\/button>/);
+		expect(html).toBe(
+			'<div class="filter-chips" role="group" aria-label="Country">' +
+				'<span class="filter-chips__heading" aria-hidden="true">Country</span>' +
+				'<button type="button" class="filter-chips__chip" aria-pressed="false">Italy</button>' +
+				'<button type="button" class="filter-chips__chip" aria-pressed="true">Greece</button>' +
+				'</div>'
+		);
 	});
 
-	it('still shows a group with a single chip', () => {
+	it('shows a group with a single chip', () => {
 		const html = renderToStaticMarkup(
-			<FilterChips label="Attributes" options={[options[0]]} selected={[]} />,
+			<FilterChips heading="Country" chips={[chips[1]]} selected={[]} />
 		);
-		expect(html).toContain('>Beach</button>');
+		expect(html).toContain('aria-pressed="false">Greece</button>');
 	});
 
-	it('shows nothing when there are no chips', () => {
+	it('renders nothing when there are no chips', () => {
 		expect(
-			renderToStaticMarkup(<FilterChips label="Attributes" options={[]} selected={[]} />),
+			renderToStaticMarkup(<FilterChips heading="Country" chips={[]} selected={[]} />)
 		).toBe('');
 	});
 });

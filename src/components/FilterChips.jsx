@@ -1,42 +1,39 @@
-import { useId } from 'react';
+import './FilterChips.css';
 
 /**
- * One labelled group of Filter chips. Each chip is a toggle button: its
- * `aria-pressed` tells screen readers whether it is selected, and Enter or
- * Space toggles it.
+ * One group of Filter chips, e.g. Countries or Destination Attributes.
+ * Each chip is a toggle button: aria-pressed tells screen readers whether it
+ * is selected, and Enter or Space toggles it.
  *
- * Renders nothing when there are no options; a single option still shows.
+ * Renders on the server (no onToggle: the chips show the selection but do
+ * nothing until the browser takes over) and in the browser.
  *
  * Props:
- *   label     the group heading, e.g. the editor's `attributes_label`
- *   options   [{ value, label }] the chips, in display order
+ *   heading   the group's visible heading, also its accessible name
+ *   chips     [{ value, label }] from a searchDestinations result's `chips`
  *   selected  [value] the selected chips
- *   onToggle  (value) => void; omit for the static fallback (chips show their
- *             state but do nothing)
+ *   onToggle  (value) => void; omit for the static render
+ *
+ * Renders nothing when there are no chips. A group with one chip still shows.
  */
-const FilterChips = ({ label, options, selected, onToggle }) => {
-	const headingId = useId();
-	if (!options.length) return null;
-	const isSelected = new Set(selected);
-
+const FilterChips = ({ heading, chips, selected, onToggle }) => {
+	if (!chips.length) return null;
 	return (
-		<div className="filter-chips" role="group" aria-labelledby={headingId}>
-			<span id={headingId} className="filter-chips__label">
-				{label}
+		<div className="filter-chips" role="group" aria-label={heading}>
+			<span className="filter-chips__heading" aria-hidden="true">
+				{heading}
 			</span>
-			<div className="filter-chips__list">
-				{options.map((option) => (
-					<button
-						key={option.value}
-						type="button"
-						className="filter-chips__chip"
-						aria-pressed={isSelected.has(option.value)}
-						onClick={onToggle ? () => onToggle(option.value) : undefined}
-					>
-						{option.label}
-					</button>
-				))}
-			</div>
+			{chips.map(({ value, label }) => (
+				<button
+					key={value}
+					type="button"
+					className="filter-chips__chip"
+					aria-pressed={selected.includes(value)}
+					onClick={onToggle ? () => onToggle(value) : undefined}
+				>
+					{label}
+				</button>
+			))}
 		</div>
 	);
 };
