@@ -252,7 +252,7 @@
     "display_name": "Destination grid",
     "description": null,
     "created_at": "2026-10-14T15:55:45.667Z",
-    "updated_at": "2026-10-15T14:53:26.427Z",
+    "updated_at": "2026-10-15T15:47:49.498Z",
     "id": 230620142261129,
     "schema": {
       "headline": {
@@ -351,7 +351,7 @@
     "all_presets": [],
     "preset_id": null,
     "real_name": "Destination grid",
-    "component_group_uuid": "6b603e6d-956b-4d89-ab7a-2324a364a69c",
+    "component_group_uuid": "47f26d33-3718-4e99-a513-75f449da01cb",
     "color": null,
     "icon": null,
     "internal_tags_list": [],
