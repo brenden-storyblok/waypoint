@@ -1,11 +1,8 @@
 import './DestinationGrid.css';
-import ImageCredit from './ImageCredit';
+import DestinationCard from './DestinationCard';
 import { storyblokEditable } from '@storyblok/react/rsc';
 import { getStoryblokApi } from '@/lib/storyblok';
 import { storyHref } from '@/lib/links';
-import { imageUrl, imageAlt } from '@/lib/images';
-
-const capitalise = (s) => (s ? s.charAt(0).toUpperCase() + s.slice(1) : '');
 
 async function findPages(uuids) {
 	const hrefs = {};
@@ -45,48 +42,9 @@ const DestinationGrid = async ({ blok }) => {
 					)}
 				</div>
 				<div className="destination-grid__cards">
-					{destinations.map((d) => {
-						const content = d.content || {};
-						const name = content.name || d.name;
-						const src = imageUrl(content.hero_image, 800, 1000);
-						const href = hrefs[d.uuid];
-						const body = (
-							<>
-								<div className="destination-grid__media">
-									{src && (
-										// eslint-disable-next-line @next/next/no-img-element
-										<img
-											className="wp-img"
-											src={src}
-											alt={imageAlt(content.hero_image)}
-											loading="lazy"
-										/>
-									)}
-									{src && <ImageCredit asset={content.hero_image} />}
-								</div>
-								<div className="destination-grid__meta">
-									<h3 className="destination-grid__name">{name}</h3>
-									{content.country && (
-										<span className="destination-grid__country">
-											{capitalise(content.country)}
-										</span>
-									)}
-								</div>
-								{href && (
-									<span className="destination-grid__go">Explore {name} →</span>
-								)}
-							</>
-						);
-						return href ? (
-							<a key={d.uuid} className="destination-grid__card" href={href}>
-								{body}
-							</a>
-						) : (
-							<div key={d.uuid} className="destination-grid__card">
-								{body}
-							</div>
-						);
-					})}
+					{destinations.map((d) => (
+						<DestinationCard key={d.uuid} destination={d} href={hrefs[d.uuid]} />
+					))}
 				</div>
 			</div>
 		</section>
