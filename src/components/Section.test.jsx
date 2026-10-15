@@ -109,6 +109,73 @@ describe('Section', () => {
 		);
 	});
 
+	it('puts the headline beside the body when the headline position is start', () => {
+		const html = renderToStaticMarkup(
+			<Section
+				blok={sectionBlok({
+					headline: 'Need more ideas?',
+					headline_position: 'start',
+				})}
+			/>,
+		);
+		expect(html).toBe(
+			'<section class="section section--pad-default">' +
+				'<div class="section__inner section__inner--start wp-wrap wp-split">' +
+				'<h2 class="section__headline wp-section-title">Need more ideas?</h2>' +
+				'<div class="section__body"></div>' +
+				'</div>' +
+				'</section>',
+		);
+	});
+
+	it('keeps a start headline and its body at content width when full bleed is on', () => {
+		const html = renderToStaticMarkup(
+			<Section
+				blok={sectionBlok({
+					full_bleed: true,
+					headline: 'Need more ideas?',
+					headline_position: 'start',
+				})}
+			/>,
+		);
+		expect(html).toContain(
+			'<div class="section__inner section__inner--start wp-wrap wp-split">',
+		);
+	});
+
+	it('keeps the headline first in the markup when the headline position is end', () => {
+		const html = renderToStaticMarkup(
+			<Section
+				blok={sectionBlok({
+					headline: 'Need more ideas?',
+					headline_position: 'end',
+				})}
+			/>,
+		);
+		expect(html).toBe(
+			'<section class="section section--pad-default">' +
+				'<div class="section__inner section__inner--end wp-wrap wp-split">' +
+				'<h2 class="section__headline wp-section-title">Need more ideas?</h2>' +
+				'<div class="section__body"></div>' +
+				'</div>' +
+				'</section>',
+		);
+	});
+
+	it('stacks the headline above the body for an empty or unknown headline position', () => {
+		for (const headlinePosition of ['', 'side']) {
+			const html = renderToStaticMarkup(
+				<Section
+					blok={sectionBlok({
+						headline: 'Plan your trip',
+						headline_position: headlinePosition,
+					})}
+				/>,
+			);
+			expect(html).toContain('<div class="section__inner wp-wrap">');
+		}
+	});
+
 	it('renders its Buttons through the component registry', () => {
 		const html = renderToStaticMarkup(
 			<Section

@@ -2370,7 +2370,7 @@
     "display_name": "Section",
     "description": "A band of the page with an optional headline, a background, full bleed and vertical padding.",
     "created_at": "2026-10-15T15:26:02.837Z",
-    "updated_at": "2026-10-15T15:26:02.837Z",
+    "updated_at": "2026-10-15T16:05:18.492Z",
     "id": 230966734187604,
     "schema": {
       "headline": {
@@ -2380,9 +2380,32 @@
         "translatable": true,
         "id": "nbZQ40T5TA2mQKRTbxiluA"
       },
-      "background": {
+      "headline_position": {
         "type": "option",
         "pos": 1,
+        "display_name": "Headline position",
+        "description": "Start and end put the headline in a column beside the body on wider screens. On phones the headline sits on top.",
+        "default_value": "top",
+        "exclude_empty_option": true,
+        "options": [
+          {
+            "name": "Top",
+            "value": "top"
+          },
+          {
+            "name": "Start",
+            "value": "start"
+          },
+          {
+            "name": "End",
+            "value": "end"
+          }
+        ],
+        "id": "TplBKh-KRga0lScEdVTDyQ"
+      },
+      "background": {
+        "type": "option",
+        "pos": 2,
         "display_name": "Background",
         "description": "Empty means no background.",
         "options": [
@@ -2403,14 +2426,14 @@
       },
       "full_bleed": {
         "type": "boolean",
-        "pos": 2,
+        "pos": 3,
         "display_name": "Full bleed",
         "description": "Let the content span the whole viewport instead of the content width.",
         "id": "UvY0mQXwRFS1i4M8sNfkqg"
       },
       "padding": {
         "type": "option",
-        "pos": 3,
+        "pos": 4,
         "display_name": "Padding",
         "default_value": "default",
         "exclude_empty_option": true,
@@ -2436,7 +2459,7 @@
       },
       "body": {
         "type": "bloks",
-        "pos": 4,
+        "pos": 5,
         "display_name": "Body",
         "restrict_components": true,
         "restrict_type": "tags",
