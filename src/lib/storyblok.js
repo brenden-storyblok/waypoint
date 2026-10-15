@@ -1,7 +1,4 @@
 import Page from '@/components/Page';
-import Feature from '@/components/Feature';
-import Grid from '@/components/Grid';
-import Teaser from '@/components/Teaser';
 import Hero from '@/components/Hero';
 import Button from '@/components/Button';
 import TextBlock from '@/components/TextBlock';
@@ -31,9 +28,6 @@ export const getStoryblokApi = storyblokInit({
 	use: [apiPlugin],
 	components: {
 		page: Page,
-		feature: Feature,
-		grid: Grid,
-		teaser: Teaser,
 		hero: Hero,
 		button: Button,
 		text_block: TextBlock,
