@@ -5,7 +5,14 @@
  *
  * Input:
  *   destinations  [{ uuid, name, country, attributes }] the loaded Destinations
- *   settings      the grid's editor settings: { picked: [uuid] }
+ *   settings      the grid's editor settings:
+ *                   picked      [uuid] picked Destinations, in editor order;
+ *                               empty means every Destination
+ *                   countries   [value] a Destination stays in the Pool when
+ *                               its Country is any of them
+ *                   attributes  [value] a Destination stays in the Pool when
+ *                               it carries any of these Destination Attributes
+ *                 A Destination must pass both countries and attributes.
  *   choices       the visitor's choices: { text } (see parseChoices)
  *   labels        display labels by stored value: { countries: { spain: 'Spain' } }
  *
@@ -26,7 +33,9 @@ export function searchDestinations({
 	choices = {},
 	labels = {},
 }) {
-	const pool = pickedOrAll(destinations, settings.picked || []);
+	const pool = pickedOrAll(destinations, settings.picked || [])
+		.filter(inAnyCountry(settings.countries || []))
+		.filter(carriesAny(settings.attributes || []));
 	const countryLabel = (value) => labels.countries?.[value] ?? value;
 	const text = fold(choices.text || '');
 	const visible = pool.filter(
@@ -120,4 +129,19 @@ function pickedOrAll(destinations, picked) {
 	if (!picked.length) return destinations;
 	const byUuid = new Map(destinations.map((d) => [d.uuid, d]));
 	return picked.map((uuid) => byUuid.get(uuid)).filter(Boolean);
+}
+
+// Keeps a Destination whose Country is any of the chosen Countries. No
+// chosen Countries keeps every Destination.
+function inAnyCountry(countries) {
+	if (!countries.length) return () => true;
+	const chosen = new Set(countries);
+	return (d) => chosen.has(d.country);
+}
+
+// Keeps a Destination that carries any of the chosen Destination Attributes.
+// No chosen Destination Attribute keeps every Destination.
+function carriesAny(chosen) {
+	if (!chosen.length) return () => true;
+	return (d) => (d.attributes || []).some((a) => chosen.includes(a));
 }

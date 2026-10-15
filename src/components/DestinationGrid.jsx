@@ -80,7 +80,11 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 	const labels = search ? { countries: await loadCountryLabels() } : {};
 	const result = searchDestinations({
 		destinations: stories.map(toRecord),
-		settings: { picked },
+		settings: {
+			picked,
+			countries: blok.countries || [],
+			attributes: blok.attributes || [],
+		},
 		choices: parseChoices(search ? searchParams : undefined),
 		labels,
 	});
