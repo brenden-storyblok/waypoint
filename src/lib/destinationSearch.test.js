@@ -54,7 +54,7 @@ const allDestinations = [
 	lisbon,
 ];
 
-const names = (list) => list.map((d) => d.name);
+const names = (list) => list.map((destination) => destination.name);
 
 describe('searchDestinations', () => {
 	describe('Pool', () => {
@@ -337,7 +337,7 @@ describe('Search Text within the Pool', () => {
 	});
 });
 
-const chipValues = (chips) => chips.map((c) => c.value);
+const chipValues = (chips) => chips.map((chip) => chip.value);
 
 describe('Country chips', () => {
 	it('offer only Countries some Destination in the Pool carries, with datasource labels', () => {

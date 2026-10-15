@@ -50,7 +50,7 @@ const DestinationSearchView = ({
 			<form
 				role="search"
 				className="destination-grid__search"
-				onSubmit={handlers ? (e) => e.preventDefault() : undefined}
+				onSubmit={handlers ? (event) => event.preventDefault() : undefined}
 			>
 				<input
 					type="search"
@@ -62,7 +62,7 @@ const DestinationSearchView = ({
 					{...(handlers
 						? {
 								value: choices.text,
-								onChange: (e) => handlers.onText(e.target.value),
+								onChange: (event) => handlers.onText(event.target.value),
 							}
 						: { defaultValue: choices.text })}
 				/>
@@ -83,8 +83,10 @@ const DestinationSearchView = ({
 			</div>
 			{result.visible.length > 0 ? (
 				<div className="destination-grid__cards">
-					{result.visible.map((d) => (
-						<Fragment key={d.uuid}>{cards[d.uuid]}</Fragment>
+					{result.visible.map((destination) => (
+						<Fragment key={destination.uuid}>
+							{cards[destination.uuid]}
+						</Fragment>
 					))}
 				</div>
 			) : (

@@ -2,7 +2,8 @@ import './DestinationGrid.css';
 import ImageCredit from './ImageCredit';
 import { imageUrl, imageAlt } from '@/lib/images';
 
-const capitalise = (s) => (s ? s.charAt(0).toUpperCase() + s.slice(1) : '');
+const capitalise = (text) =>
+	text ? text.charAt(0).toUpperCase() + text.slice(1) : '';
 
 /**
  * One Destination as a card. Links to its Destination Page when `href` is set.

@@ -39,7 +39,7 @@ const DestinationSearch = ({ headline, pool, labels, cards, texts }) => {
 		onToggle: (group, value) => {
 			const selected = choices[group];
 			const next = selected.includes(value)
-				? selected.filter((v) => v !== value)
+				? selected.filter((selectedValue) => selectedValue !== value)
 				: [...selected, value];
 			setChoices({ ...shown, [group]: next });
 		},

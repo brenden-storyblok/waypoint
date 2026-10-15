@@ -63,7 +63,9 @@ async function loadLabels(datasource) {
 			{ datasource },
 			'datasource_entries',
 		);
-		return Object.fromEntries(entries.map((e) => [e.value, e.name]));
+		return Object.fromEntries(
+			entries.map((entry) => [entry.value, entry.name]),
+		);
 	} catch (error) {
 		console.error(`DestinationGrid: ${datasource} labels failed`, error);
 		return {};
@@ -74,11 +76,11 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 	// The editor's picks: uuid strings, or story objects once resolved.
 	const picks = blok.destinations || [];
 	const picked = picks
-		.map((d) => (d && typeof d === 'object' ? d.uuid : d))
+		.map((pick) => (pick && typeof pick === 'object' ? pick.uuid : pick))
 		.filter(Boolean);
-	const resolved = picks.filter((d) => d && typeof d === 'object');
+	const resolved = picks.filter((pick) => pick && typeof pick === 'object');
 	const stories = picked.length ? resolved : await loadAllDestinations();
-	const storyByUuid = new Map(stories.map((s) => [s.uuid, s]));
+	const storyByUuid = new Map(stories.map((story) => [story.uuid, story]));
 
 	// With search off the grid ignores the URL and shows the whole Pool.
 	const search = Boolean(blok.search_enabled);
@@ -100,10 +102,16 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 		labels,
 	});
 	const { pool } = searchResult;
-	const destinations = pool.map((d) => storyByUuid.get(d.uuid));
-	const hrefs = await findPages(destinations.map((d) => d.uuid));
-	const card = (d) => (
-		<DestinationCard key={d.uuid} destination={d} href={hrefs[d.uuid]} />
+	const destinations = pool.map((record) => storyByUuid.get(record.uuid));
+	const hrefs = await findPages(
+		destinations.map((destination) => destination.uuid),
+	);
+	const card = (destination) => (
+		<DestinationCard
+			key={destination.uuid}
+			destination={destination}
+			href={hrefs[destination.uuid]}
+		/>
 	);
 
 	const section = (children) => (
@@ -133,7 +141,9 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 		);
 	}
 
-	const cards = Object.fromEntries(destinations.map((d) => [d.uuid, card(d)]));
+	const cards = Object.fromEntries(
+		destinations.map((destination) => [destination.uuid, card(destination)]),
+	);
 	const texts = {
 		placeholder: blok.search_placeholder,
 		countryLabel: blok.country_label,
