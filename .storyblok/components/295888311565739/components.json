@@ -753,7 +753,7 @@
     "display_name": "Layout",
     "description": "Arranges blocks inside a Section as a grid or a flex row. Set each setting per Breakpoint; an empty value inherits from the next narrower Breakpoint.",
     "created_at": "2026-10-15T15:28:53.735Z",
-    "updated_at": "2026-10-15T15:28:53.735Z",
+    "updated_at": "2026-10-15T15:36:49.800Z",
     "id": 230967434185818,
     "schema": {
       "mode": {
@@ -792,6 +792,11 @@
         "keys": [
           "grid_columns",
           "grid_align",
+          "flex_direction",
+          "flex_wrap",
+          "flex_justify",
+          "flex_align",
+          "flex_item_sizing",
           "gap"
         ],
         "id": "p8NB8_-UTXyZF14nJytBUQ"
@@ -898,9 +903,228 @@
         ],
         "id": "PhDoJnWXQQqocblNsggg6w"
       },
-      "gap": {
+      "flex_direction": {
         "type": "option",
         "pos": 5,
+        "display_name": "Direction",
+        "description": "Empty means row.",
+        "options": [
+          {
+            "name": "Row",
+            "value": "row"
+          },
+          {
+            "name": "Column",
+            "value": "column"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "CuzlNVeBR0CZ1WfdhaNm7A"
+      },
+      "flex_wrap": {
+        "type": "option",
+        "pos": 6,
+        "display_name": "Wrap",
+        "description": "Empty means no wrap.",
+        "options": [
+          {
+            "name": "Wrap",
+            "value": "wrap"
+          },
+          {
+            "name": "No wrap",
+            "value": "nowrap"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "IbRpGzMNSXuE8FhtT3mZlA"
+      },
+      "flex_justify": {
+        "type": "option",
+        "pos": 7,
+        "display_name": "Justify content",
+        "description": "Empty means start.",
+        "options": [
+          {
+            "name": "Start",
+            "value": "start"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "End",
+            "value": "end"
+          },
+          {
+            "name": "Space between",
+            "value": "space-between"
+          },
+          {
+            "name": "Space around",
+            "value": "space-around"
+          },
+          {
+            "name": "Space evenly",
+            "value": "space-evenly"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "0WLqwxpLTgGHk8K7fOYOlA"
+      },
+      "flex_align": {
+        "type": "option",
+        "pos": 8,
+        "display_name": "Align items",
+        "description": "Empty means stretch.",
+        "options": [
+          {
+            "name": "Stretch",
+            "value": "stretch"
+          },
+          {
+            "name": "Start",
+            "value": "start"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "End",
+            "value": "end"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "a7s3zxTYTFyJ3YhFE1zFqQ"
+      },
+      "flex_item_sizing": {
+        "type": "option",
+        "pos": 9,
+        "display_name": "Item sizing",
+        "description": "Empty means content-sized.",
+        "options": [
+          {
+            "name": "Content-sized",
+            "value": "content"
+          },
+          {
+            "name": "Equal",
+            "value": "equal"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "0q6HK1jPRJKZ9981eq8Ilg"
+      },
+      "gap": {
+        "type": "option",
+        "pos": 10,
         "display_name": "Gap",
         "description": "Empty means md.",
         "options": [
@@ -933,18 +1157,23 @@
       },
       "breakpoint_md": {
         "type": "section",
-        "pos": 6,
+        "pos": 11,
         "display_name": "md (768px and up)",
         "keys": [
           "grid_columns_md",
           "grid_align_md",
+          "flex_direction_md",
+          "flex_wrap_md",
+          "flex_justify_md",
+          "flex_align_md",
+          "flex_item_sizing_md",
           "gap_md"
         ],
         "id": "YQTXh_uSSUmrieiHYT-gig"
       },
       "grid_columns_md": {
         "type": "option",
-        "pos": 7,
+        "pos": 12,
         "display_name": "Columns",
         "description": "Empty inherits Base.",
         "options": [
@@ -999,7 +1228,7 @@
       },
       "grid_align_md": {
         "type": "option",
-        "pos": 8,
+        "pos": 13,
         "display_name": "Align items",
         "description": "Empty inherits Base.",
         "options": [
@@ -1044,9 +1273,228 @@
         ],
         "id": "HQ1tC216TIqkhLidMvPIow"
       },
+      "flex_direction_md": {
+        "type": "option",
+        "pos": 14,
+        "display_name": "Direction",
+        "description": "Empty inherits Base.",
+        "options": [
+          {
+            "name": "Row",
+            "value": "row"
+          },
+          {
+            "name": "Column",
+            "value": "column"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "S3VmWrkpRseJt_tB_1R1-w"
+      },
+      "flex_wrap_md": {
+        "type": "option",
+        "pos": 15,
+        "display_name": "Wrap",
+        "description": "Empty inherits Base.",
+        "options": [
+          {
+            "name": "Wrap",
+            "value": "wrap"
+          },
+          {
+            "name": "No wrap",
+            "value": "nowrap"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "fNkmu7gIRl-z4EzuAsjRwA"
+      },
+      "flex_justify_md": {
+        "type": "option",
+        "pos": 16,
+        "display_name": "Justify content",
+        "description": "Empty inherits Base.",
+        "options": [
+          {
+            "name": "Start",
+            "value": "start"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "End",
+            "value": "end"
+          },
+          {
+            "name": "Space between",
+            "value": "space-between"
+          },
+          {
+            "name": "Space around",
+            "value": "space-around"
+          },
+          {
+            "name": "Space evenly",
+            "value": "space-evenly"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "OLbx3czcR2-SGCPDa6rMuA"
+      },
+      "flex_align_md": {
+        "type": "option",
+        "pos": 17,
+        "display_name": "Align items",
+        "description": "Empty inherits Base.",
+        "options": [
+          {
+            "name": "Stretch",
+            "value": "stretch"
+          },
+          {
+            "name": "Start",
+            "value": "start"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "End",
+            "value": "end"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "tiO-up_fThOTl7aIqZ3NqA"
+      },
+      "flex_item_sizing_md": {
+        "type": "option",
+        "pos": 18,
+        "display_name": "Item sizing",
+        "description": "Empty inherits Base.",
+        "options": [
+          {
+            "name": "Content-sized",
+            "value": "content"
+          },
+          {
+            "name": "Equal",
+            "value": "equal"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "hCp2DZw7Rp-QGdhcDGZ73w"
+      },
       "gap_md": {
         "type": "option",
-        "pos": 9,
+        "pos": 19,
         "display_name": "Gap",
         "description": "Empty inherits Base.",
         "options": [
@@ -1079,18 +1527,23 @@
       },
       "breakpoint_lg": {
         "type": "section",
-        "pos": 10,
+        "pos": 20,
         "display_name": "lg (1024px and up)",
         "keys": [
           "grid_columns_lg",
           "grid_align_lg",
+          "flex_direction_lg",
+          "flex_wrap_lg",
+          "flex_justify_lg",
+          "flex_align_lg",
+          "flex_item_sizing_lg",
           "gap_lg"
         ],
         "id": "Ite3n5VPQ_uBAOaUXGrIzA"
       },
       "grid_columns_lg": {
         "type": "option",
-        "pos": 11,
+        "pos": 21,
         "display_name": "Columns",
         "description": "Empty inherits md.",
         "options": [
@@ -1145,7 +1598,7 @@
       },
       "grid_align_lg": {
         "type": "option",
-        "pos": 12,
+        "pos": 22,
         "display_name": "Align items",
         "description": "Empty inherits md.",
         "options": [
@@ -1190,9 +1643,228 @@
         ],
         "id": "sfmvqOM7QomR0bkM-N_0IA"
       },
+      "flex_direction_lg": {
+        "type": "option",
+        "pos": 23,
+        "display_name": "Direction",
+        "description": "Empty inherits md.",
+        "options": [
+          {
+            "name": "Row",
+            "value": "row"
+          },
+          {
+            "name": "Column",
+            "value": "column"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "gY37_vfyTYCnY1giHXPlXQ"
+      },
+      "flex_wrap_lg": {
+        "type": "option",
+        "pos": 24,
+        "display_name": "Wrap",
+        "description": "Empty inherits md.",
+        "options": [
+          {
+            "name": "Wrap",
+            "value": "wrap"
+          },
+          {
+            "name": "No wrap",
+            "value": "nowrap"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "NtR-s9LTQEiVqzU9QoMrZw"
+      },
+      "flex_justify_lg": {
+        "type": "option",
+        "pos": 25,
+        "display_name": "Justify content",
+        "description": "Empty inherits md.",
+        "options": [
+          {
+            "name": "Start",
+            "value": "start"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "End",
+            "value": "end"
+          },
+          {
+            "name": "Space between",
+            "value": "space-between"
+          },
+          {
+            "name": "Space around",
+            "value": "space-around"
+          },
+          {
+            "name": "Space evenly",
+            "value": "space-evenly"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "uV8-3Sm9SnSqvDzFCRyI5A"
+      },
+      "flex_align_lg": {
+        "type": "option",
+        "pos": 26,
+        "display_name": "Align items",
+        "description": "Empty inherits md.",
+        "options": [
+          {
+            "name": "Stretch",
+            "value": "stretch"
+          },
+          {
+            "name": "Start",
+            "value": "start"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "End",
+            "value": "end"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "dO2hzFHfSJyOIad9RXg4rw"
+      },
+      "flex_item_sizing_lg": {
+        "type": "option",
+        "pos": 27,
+        "display_name": "Item sizing",
+        "description": "Empty inherits md.",
+        "options": [
+          {
+            "name": "Content-sized",
+            "value": "content"
+          },
+          {
+            "name": "Equal",
+            "value": "equal"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "jIdvevDOTqy9SdvsCFz4Eg"
+      },
       "gap_lg": {
         "type": "option",
-        "pos": 13,
+        "pos": 28,
         "display_name": "Gap",
         "description": "Empty inherits md.",
         "options": [
@@ -1225,18 +1897,23 @@
       },
       "breakpoint_xl": {
         "type": "section",
-        "pos": 14,
+        "pos": 29,
         "display_name": "xl (1280px and up)",
         "keys": [
           "grid_columns_xl",
           "grid_align_xl",
+          "flex_direction_xl",
+          "flex_wrap_xl",
+          "flex_justify_xl",
+          "flex_align_xl",
+          "flex_item_sizing_xl",
           "gap_xl"
         ],
         "id": "7ohsggnHSkiLxapYEctvYw"
       },
       "grid_columns_xl": {
         "type": "option",
-        "pos": 15,
+        "pos": 30,
         "display_name": "Columns",
         "description": "Empty inherits lg.",
         "options": [
@@ -1291,7 +1968,7 @@
       },
       "grid_align_xl": {
         "type": "option",
-        "pos": 16,
+        "pos": 31,
         "display_name": "Align items",
         "description": "Empty inherits lg.",
         "options": [
@@ -1336,9 +2013,228 @@
         ],
         "id": "SItC5GrkRdy_ekUo4Ho9vg"
       },
+      "flex_direction_xl": {
+        "type": "option",
+        "pos": 32,
+        "display_name": "Direction",
+        "description": "Empty inherits lg.",
+        "options": [
+          {
+            "name": "Row",
+            "value": "row"
+          },
+          {
+            "name": "Column",
+            "value": "column"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "9mzDwiFPSIuUBpb98jdPlg"
+      },
+      "flex_wrap_xl": {
+        "type": "option",
+        "pos": 33,
+        "display_name": "Wrap",
+        "description": "Empty inherits lg.",
+        "options": [
+          {
+            "name": "Wrap",
+            "value": "wrap"
+          },
+          {
+            "name": "No wrap",
+            "value": "nowrap"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "rhUi9BmPRUmT0CC8fbz4VQ"
+      },
+      "flex_justify_xl": {
+        "type": "option",
+        "pos": 34,
+        "display_name": "Justify content",
+        "description": "Empty inherits lg.",
+        "options": [
+          {
+            "name": "Start",
+            "value": "start"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "End",
+            "value": "end"
+          },
+          {
+            "name": "Space between",
+            "value": "space-between"
+          },
+          {
+            "name": "Space around",
+            "value": "space-around"
+          },
+          {
+            "name": "Space evenly",
+            "value": "space-evenly"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "4RznAcctTGyqobZMiZzmpg"
+      },
+      "flex_align_xl": {
+        "type": "option",
+        "pos": 35,
+        "display_name": "Align items",
+        "description": "Empty inherits lg.",
+        "options": [
+          {
+            "name": "Stretch",
+            "value": "stretch"
+          },
+          {
+            "name": "Start",
+            "value": "start"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "End",
+            "value": "end"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "DA-OdMq1Q7i8g6ea8UdgYQ"
+      },
+      "flex_item_sizing_xl": {
+        "type": "option",
+        "pos": 36,
+        "display_name": "Item sizing",
+        "description": "Empty inherits lg.",
+        "options": [
+          {
+            "name": "Content-sized",
+            "value": "content"
+          },
+          {
+            "name": "Equal",
+            "value": "equal"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "grid",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "wMohdX1NQk20cAiLhU8-Eg"
+      },
       "gap_xl": {
         "type": "option",
-        "pos": 17,
+        "pos": 37,
         "display_name": "Gap",
         "description": "Empty inherits lg.",
         "options": [
