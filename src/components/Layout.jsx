@@ -2,9 +2,10 @@ import {
 	storyblokEditable,
 	StoryblokServerComponent,
 } from '@storyblok/react/rsc';
+import { pickFrom } from '@/lib/pickFrom';
 import './Layout.css';
 
-const MODES = ['grid', 'flex'];
+const pickMode = pickFrom(['grid', 'flex']);
 
 /** Field suffix and custom-property suffix per Breakpoint, narrowest first. */
 const BREAKPOINT_SUFFIXES = [
@@ -28,9 +29,6 @@ const ITEM_FLEX_VALUES = {
 	content: '0 1 auto',
 	equal: '1 1 0',
 };
-
-const pickFrom = (allowedValues) => (editorValue) =>
-	allowedValues.includes(editorValue) ? editorValue : undefined;
 
 const mapFrom = (cssByOption) => (editorValue) => cssByOption[editorValue];
 
@@ -121,7 +119,7 @@ const resolveBreakpointProperties = (blok, mode) => {
 };
 
 const Layout = ({ blok, ...forwardedProps }) => {
-	const mode = MODES.includes(blok.mode) ? blok.mode : 'grid';
+	const mode = pickMode(blok.mode) ?? 'grid';
 
 	return (
 		<div
