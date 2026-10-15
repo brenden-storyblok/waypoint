@@ -90,6 +90,16 @@ a.destination-grid__card:hover .destination-grid__go {
 	outline-offset: 2px;
 }
 
+.destination-grid__filters {
+	display: grid;
+	gap: 12px;
+	margin-bottom: 32px;
+}
+
+.destination-grid__filters:empty {
+	display: none;
+}
+
 .destination-grid__empty {
 	display: grid;
 	justify-items: start;

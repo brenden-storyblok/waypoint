@@ -318,6 +318,108 @@ describe('Search Text within the Pool', () => {
 	});
 });
 
+const chipValues = (chips) => chips.map((c) => c.value);
+
+describe('Country chips', () => {
+	it('offer only Countries some Destination in the Pool carries, with datasource labels', () => {
+		const result = search('', {
+			picked: [lisbon.uuid, santorini.uuid, amalfiCoast.uuid, seville.uuid],
+		});
+		expect(result.chips.countries).toEqual([
+			{ value: 'spain', label: 'Spain' },
+			{ value: 'italy', label: 'Italy' },
+			{ value: 'greece', label: 'Greece' },
+			{ value: 'portugal', label: 'Portugal' },
+		]);
+	});
+
+	it('show one chip when the Pool covers one Country', () => {
+		const result = search('', { picked: [], countries: ['greece'] });
+		expect(result.chips.countries).toEqual([{ value: 'greece', label: 'Greece' }]);
+	});
+
+	it('offer each Country once and keep a Country with no label as its value', () => {
+		const result = searchDestinations({
+			destinations: [
+				lisbon,
+				{ ...seville, uuid: 'x', country: 'portugal' },
+				{ uuid: 'z', name: 'Zürich', country: 'switzerland', attributes: [] },
+			],
+			labels: { countries: countryLabels },
+		});
+		expect(result.chips.countries).toEqual([
+			{ value: 'portugal', label: 'Portugal' },
+			{ value: 'switzerland', label: 'switzerland' },
+		]);
+	});
+
+	it('do not change as the visitor narrows the grid', () => {
+		const result = searchDestinations({
+			destinations: allDestinations,
+			choices: { text: 'lis', countries: ['italy'] },
+			labels: { countries: countryLabels },
+		});
+		expect(chipValues(result.chips.countries)).toEqual([
+			'france',
+			'spain',
+			'italy',
+			'greece',
+			'portugal',
+			'germany',
+		]);
+	});
+});
+
+const filter = (choices, settings = { picked: [] }) =>
+	searchDestinations({
+		destinations: allDestinations,
+		settings,
+		choices,
+		labels: { countries: countryLabels },
+	});
+
+describe('Country Filters', () => {
+	it('show Destinations in any selected Country', () => {
+		const result = filter({ countries: ['italy', 'greece'] });
+		expect(names(result.visible)).toEqual(['Amalfi Coast', 'Santorini']);
+		expect(result.counts).toEqual({ visible: 2, pool: 6 });
+		expect(result.narrowed).toBe(true);
+		expect(placesLabel(result)).toBe('2 of 6 places');
+	});
+
+	it('combine with Search Text: a Destination passes both', () => {
+		expect(
+			names(filter({ countries: ['italy', 'greece'], text: 'santo' }).visible),
+		).toEqual(['Santorini']);
+		expect(
+			names(filter({ countries: ['italy', 'greece'], text: 'lisbon' }).visible),
+		).toEqual([]);
+	});
+
+	it('keep the editor order of the Pool', () => {
+		const result = filter(
+			{ countries: ['italy', 'greece'] },
+			{ picked: [santorini.uuid, lisbon.uuid, amalfiCoast.uuid] },
+		);
+		expect(names(result.visible)).toEqual(['Santorini', 'Amalfi Coast']);
+	});
+
+	it('ignore a Country no Destination in the Pool carries', () => {
+		const result = filter(
+			{ countries: ['germany'] },
+			{ picked: [], countries: ['italy', 'greece'] },
+		);
+		expect(names(result.visible)).toEqual(['Amalfi Coast', 'Santorini']);
+		expect(result.narrowed).toBe(false);
+	});
+
+	it('show the whole Pool when none are selected', () => {
+		const result = filter({ countries: [] });
+		expect(result.counts).toEqual({ visible: 6, pool: 6 });
+		expect(result.narrowed).toBe(false);
+	});
+});
+
 describe('placesLabel', () => {
 	it('reads "X of Y places" while Search Text narrows the Pool', () => {
 		expect(placesLabel(search('lis'))).toBe('1 of 6 places');
@@ -333,23 +435,23 @@ describe('placesLabel', () => {
 
 describe('URL choices', () => {
 	it('reads Search Text from q in a page searchParams object', () => {
-		expect(parseChoices({ q: 'lis' })).toEqual({ text: 'lis' });
+		expect(parseChoices({ q: 'lis' }).text).toBe('lis');
 	});
 
 	it('reads Search Text from q in URLSearchParams', () => {
-		expect(parseChoices(new URLSearchParams('q=s%C3%A9villa'))).toEqual({
-			text: 'sévilla',
-		});
+		expect(parseChoices(new URLSearchParams('q=s%C3%A9villa')).text).toBe(
+			'sévilla',
+		);
 	});
 
 	it('reads the first q when the URL repeats it', () => {
-		expect(parseChoices({ q: ['lis', 'spain'] })).toEqual({ text: 'lis' });
+		expect(parseChoices({ q: ['lis', 'spain'] }).text).toBe('lis');
 	});
 
 	it('reads no choices from an empty or missing query', () => {
-		expect(parseChoices({})).toEqual({ text: '' });
-		expect(parseChoices(new URLSearchParams(''))).toEqual({ text: '' });
-		expect(parseChoices(undefined)).toEqual({ text: '' });
+		expect(parseChoices({})).toEqual({ text: '', countries: [] });
+		expect(parseChoices(new URLSearchParams(''))).toEqual({ text: '', countries: [] });
+		expect(parseChoices(undefined)).toEqual({ text: '', countries: [] });
 	});
 
 	it('writes Search Text as q', () => {
@@ -375,8 +477,44 @@ describe('URL choices', () => {
 		);
 	});
 
+	it('reads every repeated country param as Country Filters', () => {
+		expect(parseChoices({ country: ['italy', 'greece'] }).countries).toEqual([
+			'italy',
+			'greece',
+		]);
+		expect(parseChoices({ country: 'italy' }).countries).toEqual(['italy']);
+		expect(
+			parseChoices(new URLSearchParams('country=italy&q=s&country=greece')),
+		).toEqual({ text: 's', countries: ['italy', 'greece'] });
+		expect(parseChoices(undefined).countries).toEqual([]);
+	});
+
+	it('writes country once per selected Country', () => {
+		expect(
+			serialiseChoices({ text: 'santo', countries: ['italy', 'greece'] }),
+		).toBe('q=santo&country=italy&country=greece');
+		expect(
+			serialiseChoices({ text: '', countries: [] }, '_storyblok=1&country=spain'),
+		).toBe('_storyblok=1');
+	});
+
+	it('round-trips Country Filters with Search Text through the URL', () => {
+		for (const choices of [
+			{ text: 'santo', countries: ['italy', 'greece'] },
+			{ text: '', countries: ['portugal'] },
+			{ text: '', countries: [] },
+		]) {
+			const qs = serialiseChoices(choices, '_storyblok=1');
+			expect(parseChoices(new URLSearchParams(qs))).toEqual(choices);
+		}
+	});
+
 	it('round-trips choices through the URL', () => {
-		for (const choices of [{ text: 'lis' }, { text: 'SEVÍLLE & co' }, { text: '' }]) {
+		for (const choices of [
+			{ text: 'lis', countries: [] },
+			{ text: 'SEVÍLLE & co', countries: [] },
+			{ text: '', countries: [] },
+		]) {
 			const qs = serialiseChoices(choices);
 			expect(parseChoices(new URLSearchParams(qs))).toEqual(choices);
 		}

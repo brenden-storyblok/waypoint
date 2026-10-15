@@ -15,7 +15,7 @@ import { parseChoices, searchDestinations } from '@/lib/destinationSearch';
  *   pool       the Pool as destination search records
  *   labels     display labels for the module, e.g. { countries }
  *   cards      { [uuid]: rendered DestinationCard }
- *   texts      { placeholder, emptyMessage, clearLabel }
+ *   texts      { placeholder, countryLabel, emptyMessage, clearLabel }
  */
 const DestinationSearch = ({ headline, pool, labels, cards, texts }) => {
 	const [choices, setChoices] = useSearchChoices();
@@ -33,6 +33,15 @@ const DestinationSearch = ({ headline, pool, labels, cards, texts }) => {
 		setChoices({ ...choices, text: next });
 	};
 
+	// Selects or deselects one chip in a Filter group (a key of choices).
+	const onToggle = (group, value) => {
+		const current = choices[group];
+		const next = current.includes(value)
+			? current.filter((v) => v !== value)
+			: [...current, value];
+		setChoices({ ...choices, text, [group]: next });
+	};
+
 	const onClear = () => {
 		const none = parseChoices();
 		setText(none.text);
@@ -46,7 +55,9 @@ const DestinationSearch = ({ headline, pool, labels, cards, texts }) => {
 			cards={cards}
 			texts={texts}
 			text={text}
+			choices={choices}
 			onText={onText}
+			onToggle={onToggle}
 			onClear={onClear}
 		/>
 	);
