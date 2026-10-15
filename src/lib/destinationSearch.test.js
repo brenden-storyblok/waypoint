@@ -54,14 +54,14 @@ const allDestinations = [
 	lisbon,
 ];
 
-const names = (list) => list.map((d) => d.name);
+const names = (list) => list.map((destination) => destination.name);
 
 describe('searchDestinations', () => {
 	describe('Pool', () => {
-		it('holds every Destination when the editor picked none', () => {
+		it('holds every loaded Destination when the editor sets no Countries or Destination Attributes', () => {
 			const result = searchDestinations({
 				destinations: allDestinations,
-				settings: { picked: [] },
+				settings: {},
 			});
 
 			expect(names(result.pool)).toEqual([
@@ -76,10 +76,10 @@ describe('searchDestinations', () => {
 			expect(result.counts).toEqual({ visible: 6, pool: 6 });
 		});
 
-		it('holds only the picked Destinations, in the editor order', () => {
+		it('keeps the picked Destinations in the editor order', () => {
 			const result = searchDestinations({
-				destinations: allDestinations,
-				settings: { picked: [santorini.uuid, lisbon.uuid, provence.uuid] },
+				destinations: [santorini, lisbon, provence],
+				settings: {},
 			});
 
 			expect(names(result.pool)).toEqual(['Santorini', 'Lisbon', 'Provence']);
@@ -91,20 +91,10 @@ describe('searchDestinations', () => {
 			expect(result.counts).toEqual({ visible: 3, pool: 3 });
 		});
 
-		it('leaves out a picked Destination that is not loaded', () => {
-			const result = searchDestinations({
-				destinations: [seville, lisbon],
-				settings: { picked: [lisbon.uuid, santorini.uuid, seville.uuid] },
-			});
-
-			expect(names(result.pool)).toEqual(['Lisbon', 'Seville']);
-			expect(result.counts).toEqual({ visible: 2, pool: 2 });
-		});
-
-		it('is empty when every picked Destination is not loaded', () => {
+		it('is empty when no Destination is loaded', () => {
 			const result = searchDestinations({
 				destinations: [],
-				settings: { picked: [santorini.uuid, lisbon.uuid] },
+				settings: {},
 			});
 
 			expect(result.pool).toEqual([]);
@@ -117,7 +107,7 @@ describe('searchDestinations', () => {
 		it('narrow the Pool to Destinations carrying the chosen one', () => {
 			const result = searchDestinations({
 				destinations: allDestinations,
-				settings: { picked: [], attributes: ['beach'] },
+				settings: { attributes: ['beach'] },
 			});
 
 			expect(names(result.pool)).toEqual([
@@ -131,7 +121,7 @@ describe('searchDestinations', () => {
 		it('keep a Destination carrying any of several chosen ones', () => {
 			const result = searchDestinations({
 				destinations: allDestinations,
-				settings: { picked: [], attributes: ['beach', 'city'] },
+				settings: { attributes: ['beach', 'city'] },
 			});
 
 			expect(names(result.pool)).toEqual([
@@ -144,11 +134,8 @@ describe('searchDestinations', () => {
 
 		it('narrow the picked Destinations, keeping the editor order', () => {
 			const result = searchDestinations({
-				destinations: allDestinations,
-				settings: {
-					picked: [lisbon.uuid, provence.uuid, seville.uuid, santorini.uuid],
-					attributes: ['beach'],
-				},
+				destinations: [lisbon, provence, seville, santorini],
+				settings: { attributes: ['beach'] },
 			});
 
 			expect(names(result.pool)).toEqual(['Lisbon', 'Santorini']);
@@ -157,11 +144,8 @@ describe('searchDestinations', () => {
 
 		it('leave the Pool empty when no Destination carries the chosen one', () => {
 			const result = searchDestinations({
-				destinations: allDestinations,
-				settings: {
-					picked: [seville.uuid, provence.uuid],
-					attributes: ['island'],
-				},
+				destinations: [seville, provence],
+				settings: { attributes: ['island'] },
 			});
 
 			expect(result.pool).toEqual([]);
@@ -170,10 +154,10 @@ describe('searchDestinations', () => {
 	});
 
 	describe('Pool narrowed by editor Countries', () => {
-		it('keeps a Destination in any chosen Country when nothing is picked', () => {
+		it('keeps a Destination in any chosen Country', () => {
 			const result = searchDestinations({
 				destinations: allDestinations,
-				settings: { picked: [], countries: ['italy', 'greece'] },
+				settings: { countries: ['italy', 'greece'] },
 			});
 
 			expect(names(result.pool)).toEqual(['Amalfi Coast', 'Santorini']);
@@ -183,11 +167,8 @@ describe('searchDestinations', () => {
 
 		it('keeps only the picked Destinations in a chosen Country, in the editor order', () => {
 			const result = searchDestinations({
-				destinations: allDestinations,
-				settings: {
-					picked: [lisbon.uuid, santorini.uuid, seville.uuid, amalfiCoast.uuid],
-					countries: ['greece', 'spain'],
-				},
+				destinations: [lisbon, santorini, seville, amalfiCoast],
+				settings: { countries: ['greece', 'spain'] },
 			});
 
 			expect(names(result.pool)).toEqual(['Santorini', 'Seville']);
@@ -196,29 +177,22 @@ describe('searchDestinations', () => {
 
 		it('is empty when no picked Destination sits in a chosen Country', () => {
 			const result = searchDestinations({
-				destinations: allDestinations,
-				settings: {
-					picked: [lisbon.uuid, provence.uuid],
-					countries: ['italy'],
-				},
+				destinations: [lisbon, provence],
+				settings: { countries: ['italy'] },
 			});
 
 			expect(result.pool).toEqual([]);
 			expect(result.counts).toEqual({ visible: 0, pool: 0 });
 		});
 
-		it('leaves the Pool as before when no Countries are chosen', () => {
+		it('leaves the Pool as loaded when no Countries are chosen', () => {
 			const picks = searchDestinations({
-				destinations: allDestinations,
-				settings: {
-					picked: [santorini.uuid, lisbon.uuid],
-					countries: [],
-					attributes: [],
-				},
+				destinations: [santorini, lisbon],
+				settings: { countries: [], attributes: [] },
 			});
 			const noPicks = searchDestinations({
 				destinations: allDestinations,
-				settings: { picked: [] },
+				settings: { countries: [], attributes: [] },
 			});
 
 			expect(names(picks.pool)).toEqual(['Santorini', 'Lisbon']);
@@ -237,11 +211,7 @@ describe('searchDestinations', () => {
 		it('keeps only Destinations that pass both', () => {
 			const result = searchDestinations({
 				destinations: allDestinations,
-				settings: {
-					picked: [],
-					countries: ['portugal'],
-					attributes: ['beach'],
-				},
+				settings: { countries: ['portugal'], attributes: ['beach'] },
 			});
 
 			expect(names(result.pool)).toEqual(['Lisbon']);
@@ -259,9 +229,9 @@ const countryLabels = {
 	germany: 'Germany',
 };
 
-const search = (text, settings = { picked: [] }) =>
+const search = (text, { destinations = allDestinations, settings = {} } = {}) =>
 	searchDestinations({
-		destinations: allDestinations,
+		destinations,
 		settings,
 		choices: { text },
 		labels: { countries: countryLabels },
@@ -275,7 +245,6 @@ describe('Search Text', () => {
 	it('matches the Country label a visitor sees', () => {
 		const result = searchDestinations({
 			destinations: allDestinations,
-			settings: { picked: [] },
 			choices: { text: 'spain' },
 			labels: { countries: { ...countryLabels, spain: 'España' } },
 		});
@@ -320,13 +289,13 @@ describe('Search Text', () => {
 
 describe('Search Text within the Pool', () => {
 	it('only narrows the Pool, never adds to it', () => {
-		const result = search('lis', { picked: [seville.uuid, provence.uuid] });
+		const result = search('lis', { destinations: [seville, provence] });
 		expect(result.visible).toEqual([]);
 		expect(result.counts).toEqual({ visible: 0, pool: 2 });
 	});
 
 	it('keeps the editor order of the Pool', () => {
-		const result = search('e', { picked: [provence.uuid, seville.uuid] });
+		const result = search('e', { destinations: [provence, seville] });
 		expect(names(result.visible)).toEqual(['Provence', 'Seville']);
 	});
 
@@ -337,12 +306,12 @@ describe('Search Text within the Pool', () => {
 	});
 });
 
-const chipValues = (chips) => chips.map((c) => c.value);
+const chipValues = (chips) => chips.map((chip) => chip.value);
 
 describe('Country chips', () => {
 	it('offer only Countries some Destination in the Pool carries, with datasource labels', () => {
 		const result = search('', {
-			picked: [lisbon.uuid, santorini.uuid, amalfiCoast.uuid, seville.uuid],
+			destinations: [lisbon, santorini, amalfiCoast, seville],
 		});
 		expect(result.chips.countries).toEqual([
 			{ value: 'spain', label: 'Spain' },
@@ -353,7 +322,7 @@ describe('Country chips', () => {
 	});
 
 	it('show one chip when the Pool covers one Country', () => {
-		const result = search('', { picked: [], countries: ['greece'] });
+		const result = search('', { settings: { countries: ['greece'] } });
 		expect(result.chips.countries).toEqual([
 			{ value: 'greece', label: 'Greece' },
 		]);
@@ -391,9 +360,12 @@ describe('Country chips', () => {
 	});
 });
 
-const filter = (choices, settings = { picked: [] }) =>
+const filter = (
+	choices,
+	{ destinations = allDestinations, settings = {} } = {},
+) =>
 	searchDestinations({
-		destinations: allDestinations,
+		destinations,
 		settings,
 		choices,
 		labels: { countries: countryLabels },
@@ -420,7 +392,7 @@ describe('Country Filters', () => {
 	it('keep the editor order of the Pool', () => {
 		const result = filter(
 			{ countries: ['italy', 'greece'] },
-			{ picked: [santorini.uuid, lisbon.uuid, amalfiCoast.uuid] },
+			{ destinations: [santorini, lisbon, amalfiCoast] },
 		);
 		expect(names(result.visible)).toEqual(['Santorini', 'Amalfi Coast']);
 	});
@@ -428,7 +400,7 @@ describe('Country Filters', () => {
 	it('ignore a Country no Destination in the Pool carries', () => {
 		const result = filter(
 			{ countries: ['germany'] },
-			{ picked: [], countries: ['italy', 'greece'] },
+			{ settings: { countries: ['italy', 'greece'] } },
 		);
 		expect(names(result.visible)).toEqual(['Amalfi Coast', 'Santorini']);
 		expect(result.narrowed).toBe(false);
@@ -450,7 +422,7 @@ describe('placesLabel', () => {
 	it('reads "Y places" with no Search Text', () => {
 		expect(placesLabel(search(''))).toBe('6 places');
 		expect(placesLabel(search(' '))).toBe('6 places');
-		expect(placesLabel(search('', { picked: [lisbon.uuid] }))).toBe('1 place');
+		expect(placesLabel(search('', { destinations: [lisbon] }))).toBe('1 place');
 	});
 });
 
@@ -583,9 +555,12 @@ const attributeLabels = {
 	wellness: 'Wellness',
 };
 
-const filterByAttributes = (attributes, settings = { picked: [] }, text = '') =>
+const filterByAttributes = (
+	attributes,
+	{ destinations = allDestinations, settings = {}, text = '' } = {},
+) =>
 	searchDestinations({
-		destinations: allDestinations,
+		destinations,
 		settings,
 		choices: { text, attributes },
 		labels: { countries: countryLabels, attributes: attributeLabels },
@@ -594,7 +569,7 @@ const filterByAttributes = (attributes, settings = { picked: [] }, text = '') =>
 describe('Destination Attribute chips', () => {
 	it('offer only Destination Attributes some Destination in the Pool carries, in datasource order', () => {
 		const result = filterByAttributes([], {
-			picked: [santorini.uuid, bavarianAlps.uuid],
+			destinations: [santorini, bavarianAlps],
 		});
 		expect(result.chips.attributes).toEqual([
 			{ value: 'beach', label: 'Beach' },
@@ -647,17 +622,16 @@ describe('Destination Attribute Filters', () => {
 
 	it('must pass together with Search Text', () => {
 		expect(
-			names(filterByAttributes(['beach'], { picked: [] }, 'portugal').visible),
+			names(filterByAttributes(['beach'], { text: 'portugal' }).visible),
 		).toEqual(['Lisbon']);
 		expect(
-			names(filterByAttributes(['beach'], { picked: [] }, 'seville').visible),
+			names(filterByAttributes(['beach'], { text: 'seville' }).visible),
 		).toEqual([]);
 	});
 
 	it('only narrow the Pool the editor set', () => {
 		const result = filterByAttributes(['beach'], {
-			picked: [],
-			countries: ['portugal', 'spain'],
+			settings: { countries: ['portugal', 'spain'] },
 		});
 		expect(names(result.visible)).toEqual(['Lisbon']);
 		expect(result.counts).toEqual({ visible: 1, pool: 2 });
@@ -675,7 +649,7 @@ describe('Destination Attribute Filters', () => {
 
 	it('ignore a Destination Attribute no Destination in the Pool carries', () => {
 		const result = filterByAttributes(['island'], {
-			picked: [seville.uuid, lisbon.uuid],
+			destinations: [seville, lisbon],
 		});
 		expect(names(result.visible)).toEqual(['Seville', 'Lisbon']);
 		expect(result.narrowed).toBe(false);

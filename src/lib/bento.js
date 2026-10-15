@@ -53,16 +53,20 @@ const MAX_CHUNK = 8;
 // Returns the chunk's items in display order, each with its { cols, rows }.
 function solveChunk(items, columns, lookahead) {
 	const grid = [];
-	const isFree = (r, c) => !grid[r]?.[c];
-	const mark = (r, c, w, h, value) => {
-		for (let y = r; y < r + h; y++) {
-			grid[y] ??= Array(columns).fill(false);
-			for (let x = c; x < c + w; x++) grid[y][x] = value;
+	const isFree = (row, column) => !grid[row]?.[column];
+	const mark = (startRow, startColumn, width, height, value) => {
+		for (let row = startRow; row < startRow + height; row++) {
+			grid[row] ??= Array(columns).fill(false);
+			for (let column = startColumn; column < startColumn + width; column++) {
+				grid[row][column] = value;
+			}
 		}
 	};
 	const firstFree = () => {
-		for (let r = 0; ; r++) {
-			for (let c = 0; c < columns; c++) if (isFree(r, c)) return [r, c];
+		for (let row = 0; ; row++) {
+			for (let column = 0; column < columns; column++) {
+				if (isFree(row, column)) return [row, column];
+			}
 		}
 	};
 	// Backtracking leaves empty rows at the end of the grid; those are fine.
@@ -78,24 +82,31 @@ function solveChunk(items, columns, lookahead) {
 			if (isFull()) best = { cost, placed: [...placed] };
 			return;
 		}
-		const [r, c] = firstFree();
+		const [row, column] = firstFree();
 		for (let pick = 0; pick < Math.min(lookahead, remaining.length); pick++) {
 			const item = remaining[pick];
-			const rest = remaining.filter((_, i) => i !== pick);
+			const rest = remaining.filter((_item, index) => index !== pick);
 			for (const shape of SHAPES[item.kind]) {
-				const w = shape.cols === 'all' ? columns : Math.min(shape.cols, columns);
-				const h = shape.rows;
-				if (c + w > columns) continue;
+				const width =
+					shape.cols === 'all' ? columns : Math.min(shape.cols, columns);
+				const height = shape.rows;
+				if (column + width > columns) continue;
 				let fits = true;
-				for (let y = r; y < r + h && fits; y++) {
-					for (let x = c; x < c + w && fits; x++) fits = isFree(y, x);
+				for (let cellRow = row; cellRow < row + height && fits; cellRow++) {
+					for (
+						let cellColumn = column;
+						cellColumn < column + width && fits;
+						cellColumn++
+					) {
+						fits = isFree(cellRow, cellColumn);
+					}
 				}
 				if (!fits) continue;
-				mark(r, c, w, h, true);
-				placed.push({ ...item, cols: w, rows: h });
+				mark(row, column, width, height, true);
+				placed.push({ ...item, cols: width, rows: height });
 				place(rest, cost + shape.cost + pick * MOVE_COST);
 				placed.pop();
-				mark(r, c, w, h, false);
+				mark(row, column, width, height, false);
 			}
 		}
 	};
@@ -108,9 +119,11 @@ function solve(items, columns, lookahead) {
 	const chunkCount = Math.ceil(items.length / MAX_CHUNK);
 	const result = [];
 	let start = 0;
-	for (let i = 0; i < chunkCount; i++) {
-		const size = Math.ceil((items.length - start) / (chunkCount - i));
-		result.push(...solveChunk(items.slice(start, start + size), columns, lookahead));
+	for (let chunkIndex = 0; chunkIndex < chunkCount; chunkIndex++) {
+		const size = Math.ceil((items.length - start) / (chunkCount - chunkIndex));
+		result.push(
+			...solveChunk(items.slice(start, start + size), columns, lookahead),
+		);
 		start += size;
 	}
 	return result;
@@ -128,9 +141,9 @@ export function bentoLayout(assets, columns = 4, narrowColumns = 2) {
 	}));
 	const wide = solve(items, columns, LOOKAHEAD);
 	const narrow = solve(wide, narrowColumns, 1);
-	return wide.map((tile, i) => ({
+	return wide.map((tile, index) => ({
 		asset: tile.asset,
 		wide: { cols: tile.cols, rows: tile.rows },
-		narrow: { cols: narrow[i].cols, rows: narrow[i].rows },
+		narrow: { cols: narrow[index].cols, rows: narrow[index].rows },
 	}));
 }

@@ -22,13 +22,17 @@ const Header = ({ blok }) => {
 					)}
 				</Link>
 				<nav className="site-header__nav">
-					{(blok.nav || []).map((b) => (
-						<StoryblokServerComponent blok={b} key={b._uid} />
+					{(blok.nav || []).map((navBlok) => (
+						<StoryblokServerComponent blok={navBlok} key={navBlok._uid} />
 					))}
 				</nav>
 				<div className="site-header__cta">
-					{(blok.cta || []).map((b) => (
-						<StoryblokServerComponent blok={b} key={b._uid} size="sm" />
+					{(blok.cta || []).map((ctaBlok) => (
+						<StoryblokServerComponent
+							blok={ctaBlok}
+							key={ctaBlok._uid}
+							size="sm"
+						/>
 					))}
 				</div>
 			</div>

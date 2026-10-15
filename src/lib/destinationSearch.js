@@ -4,15 +4,17 @@
  * browser can share it.
  *
  * Input:
- *   destinations  [{ uuid, name, country, attributes }] the loaded Destinations
- *   settings      the grid's editor settings:
- *                   picked      [uuid] picked Destinations, in editor order;
- *                               empty means every Destination
+ *   destinations  [{ uuid, name, country, attributes }] the loaded set the
+ *                 Pool is filtered from, in display order (the picked
+ *                 Destinations in editor order, or every Destination)
+ *   settings      the grid's editor settings, applied to every loaded set,
+ *                 even one the Delivery API already filtered:
  *                   countries   [value] a Destination stays in the Pool when
  *                               its Country is any of them
  *                   attributes  [value] a Destination stays in the Pool when
  *                               it carries any of these Destination Attributes
- *                 A Destination must pass both countries and attributes.
+ *                 A Destination must pass both countries and attributes; an
+ *                 empty setting keeps every Destination.
  *   choices       the visitor's choices: { text, countries, attributes } (see
  *                 parseChoices). A Destination must pass all three: its Country
  *                 is any selected Country, it carries any selected Destination
@@ -46,17 +48,17 @@ export function searchDestinations({
 	choices = {},
 	labels = {},
 }) {
-	const pool = pickedOrAll(destinations, settings.picked || [])
+	const pool = destinations
 		.filter(inAnyCountry(settings.countries || []))
 		.filter(carriesAny(settings.attributes || []));
 	const countryLabel = (value) => labels.countries?.[value] ?? value;
 	const chips = {
 		countries: chipsFor(
-			pool.map((d) => d.country),
+			pool.map((destination) => destination.country),
 			labels.countries,
 		),
 		attributes: chipsFor(
-			pool.flatMap((d) => d.attributes || []),
+			pool.flatMap((destination) => destination.attributes || []),
 			labels.attributes,
 		),
 	};
@@ -68,9 +70,11 @@ export function searchDestinations({
 		.filter(inAnyCountry(countries))
 		.filter(carriesAny(attributes))
 		.filter(
-			(d) =>
+			(destination) =>
 				!text ||
-				[d.name, countryLabel(d.country)].some((s) => fold(s).includes(text)),
+				[destination.name, countryLabel(destination.country)].some(
+					(searchable) => fold(searchable).includes(text),
+				),
 		);
 	return {
 		pool,
@@ -86,7 +90,7 @@ export function searchDestinations({
  * visitor's choices narrow the Pool, "Y places" otherwise.
  */
 export function placesLabel({ counts, narrowed }) {
-	const places = (n) => `${n} ${n === 1 ? 'place' : 'places'}`;
+	const places = (count) => `${count} ${count === 1 ? 'place' : 'places'}`;
 	return narrowed
 		? `${counts.visible} of ${places(counts.pool)}`
 		: places(counts.pool);
@@ -151,7 +155,8 @@ const withoutChoices = (entries) =>
 // `valuesOf(key)` returns every value for `key` in `params`, as an array.
 function paramReader(params) {
 	const entries = toEntries(params);
-	return (key) => entries.filter(([k]) => k === key).map(([, v]) => v);
+	return (key) =>
+		entries.filter(([entryKey]) => entryKey === key).map(([, value]) => value);
 }
 
 // [key, value] pairs from URLSearchParams or a page `searchParams` object.
@@ -162,15 +167,15 @@ function toEntries(params) {
 	return Object.entries(params).flatMap(([key, value]) =>
 		[value]
 			.flat()
-			.filter((v) => v != null)
-			.map((v) => [key, String(v)]),
+			.filter((item) => item != null)
+			.map((item) => [key, String(item)]),
 	);
 }
 
 // Lower case, accents removed and spaces trimmed, so "SEVÍLLE " reads as
 // "seville".
-const fold = (s) =>
-	String(s ?? '')
+const fold = (text) =>
+	String(text ?? '')
 		.normalize('NFD')
 		.replace(/\p{Diacritic}/gu, '')
 		.toLowerCase()
@@ -181,8 +186,10 @@ const fold = (s) =>
 // order), then values with no label, labelled by their value, in Pool order.
 function chipsFor(values, labels = {}) {
 	const present = new Set(values.filter(Boolean));
-	const labelled = Object.keys(labels).filter((v) => present.has(v));
-	const unlabelled = [...present].filter((v) => !Object.hasOwn(labels, v));
+	const labelled = Object.keys(labels).filter((value) => present.has(value));
+	const unlabelled = [...present].filter(
+		(value) => !Object.hasOwn(labels, value),
+	);
 	return [...labelled, ...unlabelled].map((value) => ({
 		value,
 		label: labels[value] ?? value,
@@ -191,16 +198,8 @@ function chipsFor(values, labels = {}) {
 
 // The `selected` values that have a chip.
 function withChip(selected = [], chips) {
-	const values = new Set(chips.map((c) => c.value));
-	return selected.filter((v) => values.has(v));
-}
-
-// Picked Destinations in the editor order, or every Destination when none
-// are picked. A picked uuid with no loaded Destination is dropped.
-function pickedOrAll(destinations, picked) {
-	if (!picked.length) return destinations;
-	const byUuid = new Map(destinations.map((d) => [d.uuid, d]));
-	return picked.map((uuid) => byUuid.get(uuid)).filter(Boolean);
+	const values = new Set(chips.map((chip) => chip.value));
+	return selected.filter((value) => values.has(value));
 }
 
 // Keeps a Destination whose Country is any of the chosen Countries. No
@@ -208,12 +207,15 @@ function pickedOrAll(destinations, picked) {
 function inAnyCountry(countries) {
 	if (!countries.length) return () => true;
 	const chosen = new Set(countries);
-	return (d) => chosen.has(d.country);
+	return (destination) => chosen.has(destination.country);
 }
 
 // Keeps a Destination that carries any of the chosen Destination Attributes.
 // No chosen Destination Attribute keeps every Destination.
 function carriesAny(chosen) {
 	if (!chosen.length) return () => true;
-	return (d) => (d.attributes || []).some((a) => chosen.includes(a));
+	return (destination) =>
+		(destination.attributes || []).some((attribute) =>
+			chosen.includes(attribute),
+		);
 }

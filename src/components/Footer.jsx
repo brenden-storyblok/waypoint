@@ -12,11 +12,13 @@ const Footer = ({ blok }) => (
 				<Link className="site-footer__logo" href="/">
 					way<span>point</span>
 				</Link>
-				{(blok.columns || []).map((b) => (
-					<StoryblokServerComponent blok={b} key={b._uid} />
+				{(blok.columns || []).map((column) => (
+					<StoryblokServerComponent blok={column} key={column._uid} />
 				))}
 			</div>
-			{blok.legal_text && <p className="site-footer__legal">{blok.legal_text}</p>}
+			{blok.legal_text && (
+				<p className="site-footer__legal">{blok.legal_text}</p>
+			)}
 		</div>
 	</footer>
 );

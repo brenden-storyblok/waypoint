@@ -33,12 +33,23 @@ async function findPages(uuids) {
 	return hrefs;
 }
 
-// Every story of content type `destination`.
-async function loadAllDestinations() {
+// Every story of content type `destination` whose Country is any of
+// `countries` and that carries any of `attributes`. An empty setting
+// filters nothing.
+export async function loadAllDestinations({ countries = [], attributes = [] }) {
+	const filterQuery = {};
+	if (countries.length) filterQuery.country = { in: countries.join(',') };
+	if (attributes.length) {
+		filterQuery.attributes = { any_in_array: attributes.join(',') };
+	}
 	try {
 		return await getStoryblokApi().getAll(
 			'cdn/stories',
-			{ version: 'draft', content_type: 'destination' },
+			{
+				version: 'draft',
+				content_type: 'destination',
+				...(Object.keys(filterQuery).length && { filter_query: filterQuery }),
+			},
 			'stories',
 		);
 	} catch (error) {
@@ -63,22 +74,34 @@ async function loadLabels(datasource) {
 			{ datasource },
 			'datasource_entries',
 		);
-		return Object.fromEntries(entries.map((e) => [e.value, e.name]));
+		return Object.fromEntries(
+			entries.map((entry) => [entry.value, entry.name]),
+		);
 	} catch (error) {
 		console.error(`DestinationGrid: ${datasource} labels failed`, error);
 		return {};
 	}
 }
 
+// The Destination stories the grid's Pool is filtered from: the picked
+// Destinations in the editor order when the editor picked any, otherwise
+// every Destination in the grid's Countries and Destination Attributes.
+// Picks are uuid strings, or story objects once resolved; a pick that did not
+// resolve is left out, so picks that all fail to resolve load nothing.
+export async function loadDestinations(blok) {
+	const picks = (blok.destinations || []).filter(Boolean);
+	if (picks.length) {
+		return picks.filter((pick) => typeof pick === 'object');
+	}
+	return loadAllDestinations({
+		countries: blok.countries || [],
+		attributes: blok.attributes || [],
+	});
+}
+
 const DestinationGrid = async ({ blok, searchParams }) => {
-	// The editor's picks: uuid strings, or story objects once resolved.
-	const picks = blok.destinations || [];
-	const picked = picks
-		.map((d) => (d && typeof d === 'object' ? d.uuid : d))
-		.filter(Boolean);
-	const resolved = picks.filter((d) => d && typeof d === 'object');
-	const stories = picked.length ? resolved : await loadAllDestinations();
-	const storyByUuid = new Map(stories.map((s) => [s.uuid, s]));
+	const stories = await loadDestinations(blok);
+	const storyByUuid = new Map(stories.map((story) => [story.uuid, story]));
 
 	// With search off the grid ignores the URL and shows the whole Pool.
 	const search = Boolean(blok.search_enabled);
@@ -92,7 +115,6 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 	const searchResult = searchDestinations({
 		destinations: stories.map(toRecord),
 		settings: {
-			picked,
 			countries: blok.countries || [],
 			attributes: blok.attributes || [],
 		},
@@ -100,10 +122,16 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 		labels,
 	});
 	const { pool } = searchResult;
-	const destinations = pool.map((d) => storyByUuid.get(d.uuid));
-	const hrefs = await findPages(destinations.map((d) => d.uuid));
-	const card = (d) => (
-		<DestinationCard key={d.uuid} destination={d} href={hrefs[d.uuid]} />
+	const destinations = pool.map((record) => storyByUuid.get(record.uuid));
+	const hrefs = await findPages(
+		destinations.map((destination) => destination.uuid),
+	);
+	const card = (destination) => (
+		<DestinationCard
+			key={destination.uuid}
+			destination={destination}
+			href={hrefs[destination.uuid]}
+		/>
 	);
 
 	const section = (children) => (
@@ -133,7 +161,9 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 		);
 	}
 
-	const cards = Object.fromEntries(destinations.map((d) => [d.uuid, card(d)]));
+	const cards = Object.fromEntries(
+		destinations.map((destination) => [destination.uuid, card(destination)]),
+	);
 	const texts = {
 		placeholder: blok.search_placeholder,
 		countryLabel: blok.country_label,
