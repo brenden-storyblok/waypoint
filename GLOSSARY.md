@@ -34,3 +34,17 @@ _Avoid_: Query, keyword
 **Filter**:
 A Country or Destination Attribute a visitor selects to narrow the Destinations shown.
 _Avoid_: Facet, refinement
+
+### Page building
+
+**Section**:
+A horizontal band of a page that sets its own background and width. A Section holds Layouts and content blocks, but never another Section.
+_Avoid_: Container, wrapper, row, band
+
+**Layout**:
+An arrangement of blocks inside a Section, either as a flexible row or column, or as a grid of equal columns. A Layout can hold other Layouts.
+_Avoid_: Grid (reserved for a Pool's listing), container, columns
+
+**Breakpoint**:
+A screen width at which a Layout's arrangement can change. A setting left empty at a Breakpoint inherits the value from the next narrower one.
+_Avoid_: Screen size, device
