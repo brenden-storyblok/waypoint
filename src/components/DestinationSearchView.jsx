@@ -14,8 +14,8 @@ import { placesLabel } from '@/lib/destinationSearch';
  *   headline   the grid headline
  *   result     a searchDestinations result
  *   cards      { [uuid]: rendered DestinationCard } for every Destination in the Pool
- *   texts      { placeholder, countryLabel, emptyMessage, clearLabel } from
- *              the editor
+ *   texts      { placeholder, countryLabel, attributesLabel, emptyMessage,
+ *              clearLabel } from the editor
  *   text       the Search Text shown in the search box
  *   choices    the visitor's choices (parseChoices), for the selected chips
  *   onText     (text) => void; omit for the static fallback
@@ -67,6 +67,12 @@ const DestinationSearchView = ({
 					chips={result.chips.countries}
 					selected={choices.countries}
 					onToggle={onToggle && ((value) => onToggle('countries', value))}
+				/>
+				<FilterChips
+					heading={texts.attributesLabel}
+					chips={result.chips.attributes}
+					selected={choices.attributes}
+					onToggle={onToggle && ((value) => onToggle('attributes', value))}
 				/>
 			</div>
 			{result.visible.length > 0 ? (

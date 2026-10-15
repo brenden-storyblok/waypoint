@@ -13,11 +13,13 @@
  *                   attributes  [value] a Destination stays in the Pool when
  *                               it carries any of these Destination Attributes
  *                 A Destination must pass both countries and attributes.
- *   choices       the visitor's choices: { text, countries } (see
- *                 parseChoices). A Destination must pass both: its Country is
- *                 any selected Country (none selected passes every one), and
- *                 it matches the Search Text.
- *   labels        display labels by stored value: { countries: { spain: 'Spain' } }
+ *   choices       the visitor's choices: { text, countries, attributes } (see
+ *                 parseChoices). A Destination must pass all three: its Country
+ *                 is any selected Country, it carries any selected Destination
+ *                 Attribute (an empty group passes every one), and it matches
+ *                 the Search Text.
+ *   labels        display labels by stored value, in datasource order:
+ *                 { countries: { spain: 'Spain' }, attributes: { beach: 'Beach' } }
  *
  * Output:
  *   pool          Destinations the editor makes available in the grid
@@ -28,6 +30,9 @@
  *                 with the visitor's choices:
  *                   countries  [{ value, label }] each Country some Destination
  *                              in the Pool carries, in datasource order
+ *                   attributes [{ value, label }] each Destination Attribute
+ *                              some Destination in the Pool carries, in
+ *                              datasource order
  *                 A selected value with no chip is ignored.
  *
  * Search Text matches a Destination's name or Country label as a substring,
@@ -47,12 +52,18 @@ export function searchDestinations({
 	const countryLabel = (value) => labels.countries?.[value] ?? value;
 	const chips = {
 		countries: chipsFor(pool.map((d) => d.country), labels.countries),
+		attributes: chipsFor(
+			pool.flatMap((d) => d.attributes || []),
+			labels.attributes,
+		),
 	};
-	// A selected Country with no chip cannot be seen or cleared, so it is ignored.
+	// A selected value with no chip cannot be seen or cleared, so it is ignored.
 	const countries = offered(choices.countries, chips.countries);
+	const attributes = offered(choices.attributes, chips.attributes);
 	const text = fold(choices.text || '');
 	const visible = pool
 		.filter(inAnyCountry(countries))
+		.filter(carriesAny(attributes))
 		.filter(
 			(d) =>
 				!text ||
@@ -62,7 +73,7 @@ export function searchDestinations({
 		pool,
 		visible,
 		counts: { visible: visible.length, pool: pool.length },
-		narrowed: Boolean(text) || countries.length > 0,
+		narrowed: Boolean(text) || countries.length > 0 || attributes.length > 0,
 		chips,
 	};
 }
@@ -81,24 +92,29 @@ export function placesLabel({ counts, narrowed }) {
 /*
  * URL choices. One searchable grid per page, so every grid reads the same
  * params:
- *   q        Search Text
- *   country  a Country Filter, once per selected Country
+ *   q          Search Text
+ *   country    a Country Filter, once per selected Country
+ *   attribute  a Destination Attribute Filter, once per selected value
  * Each choice param is listed in CHOICE_PARAMS so serialising replaces it and
  * keeps every other param (Visual Editor `_storyblok*`).
  */
-const CHOICE_PARAMS = ['q', 'country'];
+const CHOICE_PARAMS = ['q', 'country', 'attribute'];
 
 /**
  * The visitor's choices from URL search params. Accepts URLSearchParams (the
  * browser) or a page `searchParams` object whose values are a string or an
  * array of strings (the server).
  *
- * Returns { text, countries }: countries holds every `country` value, in URL
- * order.
+ * Returns { text, countries, attributes }: countries and attributes hold every
+ * `country` and `attribute` value, in URL order.
  */
 export function parseChoices(params) {
 	const all = paramReader(params);
-	return { text: all('q')[0] || '', countries: all('country') };
+	return {
+		text: all('q')[0] || '',
+		countries: all('country'),
+		attributes: all('attribute'),
+	};
 }
 
 /**
@@ -112,6 +128,7 @@ export function serialiseChoices(choices, current = '') {
 	);
 	if (choices.text?.trim()) out.append('q', choices.text);
 	for (const country of choices.countries || []) out.append('country', country);
+	for (const value of choices.attributes || []) out.append('attribute', value);
 	return out.toString();
 }
 

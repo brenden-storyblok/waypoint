@@ -13,9 +13,10 @@ import { parseChoices, searchDestinations } from '@/lib/destinationSearch';
  * Props (all serialisable, from the DestinationGrid server component):
  *   headline   the grid headline
  *   pool       the Pool as destination search records
- *   labels     display labels for the module, e.g. { countries }
+ *   labels     display labels for the module, e.g. { countries, attributes }
  *   cards      { [uuid]: rendered DestinationCard }
- *   texts      { placeholder, countryLabel, emptyMessage, clearLabel }
+ *   texts      { placeholder, countryLabel, attributesLabel, emptyMessage,
+ *              clearLabel }
  */
 const DestinationSearch = ({ headline, pool, labels, cards, texts }) => {
 	const [choices, setChoices] = useSearchChoices();

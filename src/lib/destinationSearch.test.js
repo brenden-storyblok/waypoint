@@ -199,7 +199,7 @@ describe('searchDestinations', () => {
 		it('leaves the Pool as before when no Countries are chosen', () => {
 			const picks = searchDestinations({
 				destinations: allDestinations,
-				settings: { picked: [santorini.uuid, lisbon.uuid], countries: [] },
+				settings: { picked: [santorini.uuid, lisbon.uuid], countries: [], attributes: [] },
 			});
 			const noPicks = searchDestinations({
 				destinations: allDestinations,
@@ -449,9 +449,9 @@ describe('URL choices', () => {
 	});
 
 	it('reads no choices from an empty or missing query', () => {
-		expect(parseChoices({})).toEqual({ text: '', countries: [] });
-		expect(parseChoices(new URLSearchParams(''))).toEqual({ text: '', countries: [] });
-		expect(parseChoices(undefined)).toEqual({ text: '', countries: [] });
+		expect(parseChoices({})).toEqual({ text: '', countries: [], attributes: [] });
+		expect(parseChoices(new URLSearchParams(''))).toEqual({ text: '', countries: [], attributes: [] });
+		expect(parseChoices(undefined)).toEqual({ text: '', countries: [], attributes: [] });
 	});
 
 	it('writes Search Text as q', () => {
@@ -485,7 +485,7 @@ describe('URL choices', () => {
 		expect(parseChoices({ country: 'italy' }).countries).toEqual(['italy']);
 		expect(
 			parseChoices(new URLSearchParams('country=italy&q=s&country=greece')),
-		).toEqual({ text: 's', countries: ['italy', 'greece'] });
+		).toEqual({ text: 's', countries: ['italy', 'greece'], attributes: [] });
 		expect(parseChoices(undefined).countries).toEqual([]);
 	});
 
@@ -494,15 +494,16 @@ describe('URL choices', () => {
 			serialiseChoices({ text: 'santo', countries: ['italy', 'greece'] }),
 		).toBe('q=santo&country=italy&country=greece');
 		expect(
-			serialiseChoices({ text: '', countries: [] }, '_storyblok=1&country=spain'),
+			serialiseChoices({ text: '', countries: [], attributes: [] }, '_storyblok=1&country=spain'),
 		).toBe('_storyblok=1');
 	});
 
 	it('round-trips Country Filters with Search Text through the URL', () => {
 		for (const choices of [
-			{ text: 'santo', countries: ['italy', 'greece'] },
-			{ text: '', countries: ['portugal'] },
-			{ text: '', countries: [] },
+			{ text: 'santo', countries: ['italy', 'greece'], attributes: [] },
+			{ text: '', countries: ['portugal'], attributes: [] },
+			{ text: 'lis', countries: ['portugal'], attributes: ['beach', 'city'] },
+			{ text: '', countries: [], attributes: [] },
 		]) {
 			const qs = serialiseChoices(choices, '_storyblok=1');
 			expect(parseChoices(new URLSearchParams(qs))).toEqual(choices);
@@ -511,12 +512,151 @@ describe('URL choices', () => {
 
 	it('round-trips choices through the URL', () => {
 		for (const choices of [
-			{ text: 'lis', countries: [] },
-			{ text: 'SEVÍLLE & co', countries: [] },
-			{ text: '', countries: [] },
+			{ text: 'lis', countries: [], attributes: [] },
+			{ text: 'SEVÍLLE & co', countries: [], attributes: [] },
+			{ text: '', countries: [], attributes: [] },
 		]) {
 			const qs = serialiseChoices(choices);
 			expect(parseChoices(new URLSearchParams(qs))).toEqual(choices);
 		}
+	});
+});
+
+const attributeLabels = {
+	beach: 'Beach',
+	city: 'City',
+	nature: 'Nature',
+	mountains: 'Mountains',
+	island: 'Island',
+	coast: 'Coast',
+	countryside: 'Countryside',
+	culture: 'Culture',
+	food: 'Food',
+	wellness: 'Wellness',
+};
+
+const filterByAttributes = (attributes, settings = { picked: [] }, text = '') =>
+	searchDestinations({
+		destinations: allDestinations,
+		settings,
+		choices: { text, attributes },
+		labels: { countries: countryLabels, attributes: attributeLabels },
+	});
+
+describe('Destination Attribute chips', () => {
+	it('offer only Destination Attributes some Destination in the Pool carries, in datasource order', () => {
+		const result = filterByAttributes([], { picked: [santorini.uuid, bavarianAlps.uuid] });
+		expect(result.chips.attributes).toEqual([
+			{ value: 'beach', label: 'Beach' },
+			{ value: 'nature', label: 'Nature' },
+			{ value: 'mountains', label: 'Mountains' },
+			{ value: 'island', label: 'Island' },
+		]);
+	});
+
+	it('still offer a single Destination Attribute', () => {
+		const result = searchDestinations({
+			destinations: [{ ...lisbon, attributes: ['city'] }],
+			labels: { attributes: attributeLabels },
+		});
+		expect(result.chips.attributes).toEqual([{ value: 'city', label: 'City' }]);
+	});
+
+	it('label a value missing from the datasource with the value itself', () => {
+		const result = searchDestinations({
+			destinations: [{ ...lisbon, attributes: ['surf', 'beach'] }],
+			labels: { attributes: attributeLabels },
+		});
+		expect(result.chips.attributes).toEqual([
+			{ value: 'beach', label: 'Beach' },
+			{ value: 'surf', label: 'surf' },
+		]);
+	});
+});
+
+describe('Destination Attribute Filters', () => {
+	it('show Destinations carrying the selected one', () => {
+		const result = filterByAttributes(['beach']);
+		expect(names(result.visible)).toEqual(['Amalfi Coast', 'Santorini', 'Lisbon']);
+		expect(result.counts).toEqual({ visible: 3, pool: 6 });
+		expect(placesLabel(result)).toBe('3 of 6 places');
+	});
+
+	it('show Destinations carrying any selected one', () => {
+		expect(names(filterByAttributes(['beach', 'city']).visible)).toEqual([
+			'Seville',
+			'Amalfi Coast',
+			'Santorini',
+			'Lisbon',
+		]);
+	});
+
+	it('must pass together with Search Text', () => {
+		expect(names(filterByAttributes(['beach'], { picked: [] }, 'portugal').visible)).toEqual([
+			'Lisbon',
+		]);
+		expect(names(filterByAttributes(['beach'], { picked: [] }, 'seville').visible)).toEqual([]);
+	});
+
+	it('only narrow the Pool the editor set', () => {
+		const result = filterByAttributes(['beach'], { picked: [], countries: ['portugal', 'spain'] });
+		expect(names(result.visible)).toEqual(['Lisbon']);
+		expect(result.counts).toEqual({ visible: 1, pool: 2 });
+	});
+
+	it('must pass together with Country Filters', () => {
+		const result = searchDestinations({
+			destinations: allDestinations,
+			choices: { countries: ['portugal'], attributes: ['beach'] },
+			labels: { countries: countryLabels, attributes: attributeLabels },
+		});
+		expect(names(result.visible)).toEqual(['Lisbon']);
+		expect(placesLabel(result)).toBe('1 of 6 places');
+	});
+
+	it('ignore a Destination Attribute no Destination in the Pool carries', () => {
+		const result = filterByAttributes(['island'], { picked: [seville.uuid, lisbon.uuid] });
+		expect(names(result.visible)).toEqual(['Seville', 'Lisbon']);
+		expect(result.narrowed).toBe(false);
+	});
+
+	it('leave the Pool whole when none is selected', () => {
+		const result = filterByAttributes([]);
+		expect(result.counts).toEqual({ visible: 6, pool: 6 });
+		expect(result.narrowed).toBe(false);
+	});
+});
+
+describe('Destination Attribute Filters in the URL', () => {
+	it('read every repeated attribute param', () => {
+		expect(parseChoices({ attribute: ['beach', 'city'] }).attributes).toEqual([
+			'beach',
+			'city',
+		]);
+		expect(
+			parseChoices(new URLSearchParams('attribute=beach&attribute=city')).attributes,
+		).toEqual(['beach', 'city']);
+		expect(parseChoices({ attribute: 'beach' }).attributes).toEqual(['beach']);
+		expect(parseChoices({}).attributes).toEqual([]);
+	});
+
+	it('write attribute once per selected value, keeping other params', () => {
+		expect(
+			serialiseChoices(
+				{ text: 'lis', attributes: ['beach', 'city'] },
+				'_storyblok=1&attribute=old',
+			),
+		).toBe('_storyblok=1&q=lis&attribute=beach&attribute=city');
+	});
+
+	it('round-trip through the URL', () => {
+		const choices = { text: '', countries: [], attributes: ['beach', 'city'] };
+		const qs = serialiseChoices(choices);
+		expect(qs).toBe('attribute=beach&attribute=city');
+		expect(parseChoices(new URLSearchParams(qs))).toEqual(choices);
+	});
+
+	it('are cleared by the empty choices', () => {
+		expect(serialiseChoices(parseChoices(), 'q=lis&attribute=beach')).toBe('');
 	});
 });

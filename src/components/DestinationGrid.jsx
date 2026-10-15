@@ -50,17 +50,17 @@ const toRecord = (story) => ({
 	attributes: story.content?.attributes || [],
 });
 
-// Country labels from the `countries` datasource: { value: label }.
-async function loadCountryLabels() {
+// Labels from a datasource, in datasource order: { value: label }.
+async function loadLabels(datasource) {
 	try {
 		const entries = await getStoryblokApi().getAll(
 			'cdn/datasource_entries',
-			{ datasource: 'countries' },
+			{ datasource },
 			'datasource_entries'
 		);
 		return Object.fromEntries(entries.map((e) => [e.value, e.name]));
 	} catch (error) {
-		console.error('DestinationGrid: country labels failed', error);
+		console.error(`DestinationGrid: ${datasource} labels failed`, error);
 		return {};
 	}
 }
@@ -77,7 +77,12 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 
 	// With search off the grid ignores the URL and shows the whole Pool.
 	const search = Boolean(blok.search_enabled);
-	const labels = search ? { countries: await loadCountryLabels() } : {};
+	const labels = search
+		? {
+				countries: await loadLabels('countries'),
+				attributes: await loadLabels('destination-attributes'),
+			}
+		: {};
 	const result = searchDestinations({
 		destinations: stories.map(toRecord),
 		settings: {
@@ -102,6 +107,7 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 		const texts = {
 			placeholder: blok.search_placeholder,
 			countryLabel: blok.country_label,
+			attributesLabel: blok.attributes_label,
 			emptyMessage: blok.empty_message,
 			clearLabel: blok.clear_label,
 		};
