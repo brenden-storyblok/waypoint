@@ -245,7 +245,7 @@
     "display_name": "Destination grid",
     "description": null,
     "created_at": "2026-10-14T15:55:45.667Z",
-    "updated_at": "2026-10-15T12:25:07.307Z",
+    "updated_at": "2026-10-15T12:28:02.431Z",
     "id": 230620142261129,
     "schema": {
       "headline": {
@@ -283,6 +283,39 @@
         "datasource_slug": "destination-attributes",
         "description": "Narrow the grid to Destinations carrying any of these Destination Attributes. Empty keeps every Destination.",
         "id": "EuJxdhQlSO64ZGGTM5H4aw"
+      },
+      "search_enabled": {
+        "type": "boolean",
+        "pos": 4,
+        "display_name": "Search UI",
+        "default_value": false,
+        "description": "Let visitors search the grid.",
+        "id": "8peEGtY7RzaYTo9F-aVy2A"
+      },
+      "search_placeholder": {
+        "type": "text",
+        "pos": 5,
+        "display_name": "Search placeholder",
+        "translatable": true,
+        "default_value": "Search destinations",
+        "id": "f5S4JkQASuaJDt_dZpoWeQ"
+      },
+      "empty_message": {
+        "type": "text",
+        "pos": 6,
+        "display_name": "Empty message",
+        "translatable": true,
+        "default_value": "No destinations match your search.",
+        "description": "Shown when nothing matches the visitor's search.",
+        "id": "E35AVOoBSUKY5KgieZQQNw"
+      },
+      "clear_label": {
+        "type": "text",
+        "pos": 7,
+        "display_name": "Clear all label",
+        "translatable": true,
+        "default_value": "Clear all",
+        "id": "nbDgvXfsTQK6GNvsqY0IUQ"
       }
     },
     "image": null,

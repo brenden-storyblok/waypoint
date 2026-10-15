@@ -6,9 +6,13 @@
  * Input:
  *   destinations  [{ uuid, name, country, attributes }] the loaded Destinations
  *   settings      the grid's editor settings:
- *                   picked      [uuid] picked Destinations, in editor order
- *                   attributes  [value] Destination Attributes; a Destination
- *                               stays in the Pool when it carries any of them
+ *                   picked      [uuid] picked Destinations, in editor order;
+ *                               empty means every Destination
+ *                   countries   [value] a Destination stays in the Pool when
+ *                               its Country is any of them
+ *                   attributes  [value] a Destination stays in the Pool when
+ *                               it carries any of these Destination Attributes
+ *                 A Destination must pass both countries and attributes.
  *
  * Output:
  *   pool          Destinations the editor makes available in the grid
@@ -18,9 +22,9 @@
  * Returned Destinations are the same objects passed in.
  */
 export function searchDestinations({ destinations = [], settings = {} }) {
-	const pool = pickedOrAll(destinations, settings.picked || []).filter(
-		carriesAny(settings.attributes || []),
-	);
+	const pool = pickedOrAll(destinations, settings.picked || [])
+		.filter(inAnyCountry(settings.countries || []))
+		.filter(carriesAny(settings.attributes || []));
 	const visible = pool;
 	return {
 		pool,
@@ -35,6 +39,14 @@ function pickedOrAll(destinations, picked) {
 	if (!picked.length) return destinations;
 	const byUuid = new Map(destinations.map((d) => [d.uuid, d]));
 	return picked.map((uuid) => byUuid.get(uuid)).filter(Boolean);
+}
+
+// Keeps a Destination whose Country is any of the chosen Countries. No
+// chosen Countries keeps every Destination.
+function inAnyCountry(countries) {
+	if (!countries.length) return () => true;
+	const chosen = new Set(countries);
+	return (d) => chosen.has(d.country);
 }
 
 // Keeps a Destination that carries any of the chosen Destination Attributes.
