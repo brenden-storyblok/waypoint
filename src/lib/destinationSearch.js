@@ -5,7 +5,10 @@
  *
  * Input:
  *   destinations  [{ uuid, name, country, attributes }] the loaded Destinations
- *   settings      the grid's editor settings: { picked: [uuid] }
+ *   settings      the grid's editor settings:
+ *                   picked      [uuid] picked Destinations, in editor order
+ *                   attributes  [value] Destination Attributes; a Destination
+ *                               stays in the Pool when it carries any of them
  *
  * Output:
  *   pool          Destinations the editor makes available in the grid
@@ -15,7 +18,9 @@
  * Returned Destinations are the same objects passed in.
  */
 export function searchDestinations({ destinations = [], settings = {} }) {
-	const pool = pickedOrAll(destinations, settings.picked || []);
+	const pool = pickedOrAll(destinations, settings.picked || []).filter(
+		carriesAny(settings.attributes || []),
+	);
 	const visible = pool;
 	return {
 		pool,
@@ -30,4 +35,11 @@ function pickedOrAll(destinations, picked) {
 	if (!picked.length) return destinations;
 	const byUuid = new Map(destinations.map((d) => [d.uuid, d]));
 	return picked.map((uuid) => byUuid.get(uuid)).filter(Boolean);
+}
+
+// Keeps a Destination that carries any of the chosen Destination Attributes.
+// No chosen Destination Attribute keeps every Destination.
+function carriesAny(chosen) {
+	if (!chosen.length) return () => true;
+	return (d) => (d.attributes || []).some((a) => chosen.includes(a));
 }

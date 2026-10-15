@@ -102,4 +102,57 @@ describe('searchDestinations', () => {
 			expect(result.counts).toEqual({ visible: 0, pool: 0 });
 		});
 	});
+
+	describe('Destination Attributes', () => {
+		it('narrow the Pool to Destinations carrying the chosen one', () => {
+			const result = searchDestinations({
+				destinations: allDestinations,
+				settings: { picked: [], attributes: ['beach'] },
+			});
+
+			expect(names(result.pool)).toEqual([
+				'Amalfi Coast',
+				'Santorini',
+				'Lisbon',
+			]);
+			expect(result.counts).toEqual({ visible: 3, pool: 3 });
+		});
+
+		it('keep a Destination carrying any of several chosen ones', () => {
+			const result = searchDestinations({
+				destinations: allDestinations,
+				settings: { picked: [], attributes: ['beach', 'city'] },
+			});
+
+			expect(names(result.pool)).toEqual([
+				'Seville',
+				'Amalfi Coast',
+				'Santorini',
+				'Lisbon',
+			]);
+		});
+
+		it('narrow the picked Destinations, keeping the editor order', () => {
+			const result = searchDestinations({
+				destinations: allDestinations,
+				settings: {
+					picked: [lisbon.uuid, provence.uuid, seville.uuid, santorini.uuid],
+					attributes: ['beach'],
+				},
+			});
+
+			expect(names(result.pool)).toEqual(['Lisbon', 'Santorini']);
+			expect(result.counts).toEqual({ visible: 2, pool: 2 });
+		});
+
+		it('leave the Pool empty when no Destination carries the chosen one', () => {
+			const result = searchDestinations({
+				destinations: allDestinations,
+				settings: { picked: [seville.uuid, provence.uuid], attributes: ['island'] },
+			});
+
+			expect(result.pool).toEqual([]);
+			expect(result.counts).toEqual({ visible: 0, pool: 0 });
+		});
+	});
 });
