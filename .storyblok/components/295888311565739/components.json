@@ -236,7 +236,7 @@
     "display_name": "Destination grid",
     "description": null,
     "created_at": "2026-10-14T15:55:45.667Z",
-    "updated_at": "2026-10-15T12:19:05.463Z",
+    "updated_at": "2026-10-15T12:24:07.528Z",
     "id": 230620142261129,
     "schema": {
       "headline": {
@@ -256,6 +256,15 @@
         ],
         "required": false,
         "id": "TzsiqXZwTFeol_RMCWJl0Q"
+      },
+      "countries": {
+        "type": "options",
+        "pos": 2,
+        "display_name": "Countries",
+        "source": "internal",
+        "datasource_slug": "countries",
+        "description": "Narrow the grid to Destinations in any of these Countries. Empty keeps every Country.",
+        "id": "lqC7i7QsSbOOlBFnlCq89g"
       }
     },
     "image": null,
