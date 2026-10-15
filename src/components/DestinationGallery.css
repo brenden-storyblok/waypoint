@@ -21,7 +21,11 @@
 	gap: 12px;
 }
 
+/* Spans come from bentoLayout() in src/lib/bento.js. */
 .destination-gallery__tile {
+	position: relative;
+	grid-column: span var(--tile-cols, 1);
+	grid-row: span var(--tile-rows, 1);
 	min-width: 0;
 	min-height: 0;
 }
@@ -30,16 +34,13 @@
 	border-radius: var(--radius);
 }
 
-.destination-gallery__tile--wide {
-	grid-column: span 2;
-}
-
-.destination-gallery__tile--tall {
-	grid-row: span 2;
-}
-
 @media (max-width: 860px) {
 	.destination-gallery__grid {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.destination-gallery__tile {
+		grid-column: span var(--tile-cols-narrow, 1);
+		grid-row: span var(--tile-rows-narrow, 1);
 	}
 }

@@ -34,6 +34,7 @@
 }
 
 .hero__media {
+	position: relative;
 	min-height: 380px;
 	background: var(--color-image-placeholder);
 }

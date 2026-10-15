@@ -1,4 +1,5 @@
 import './DestinationGrid.css';
+import ImageCredit from './ImageCredit';
 import { storyblokEditable } from '@storyblok/react/rsc';
 import { getStoryblokApi } from '@/lib/storyblok';
 import { storyHref } from '@/lib/links';
@@ -61,6 +62,7 @@ const DestinationGrid = async ({ blok }) => {
 											loading="lazy"
 										/>
 									)}
+									{src && <ImageCredit asset={content.hero_image} />}
 								</div>
 								<div className="destination-grid__meta">
 									<h3 className="destination-grid__name">{name}</h3>

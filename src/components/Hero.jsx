@@ -3,6 +3,7 @@ import {
 	StoryblokServerComponent,
 } from '@storyblok/react/rsc';
 import { imageUrl, imageAlt } from '@/lib/images';
+import ImageCredit from './ImageCredit';
 import './Hero.css';
 
 const Hero = ({ blok }) => {
@@ -29,6 +30,7 @@ const Hero = ({ blok }) => {
 					// eslint-disable-next-line @next/next/no-img-element
 					<img className="wp-img" src={src} alt={imageAlt(blok.image)} />
 				)}
+				{src && <ImageCredit asset={blok.image} />}
 			</div>
 		</section>
 	);

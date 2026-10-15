@@ -1,0 +1,49 @@
+{
+  "status": "SUCCESS",
+  "meta": {
+    "startedAt": "2026-10-15T08:51:58.727Z",
+    "command": "storyblok assets pull",
+    "cliVersion": "4.23.4",
+    "runId": "1792054318727",
+    "config": {
+      "target": "with-referenced",
+      "space": "295888311565739",
+      "verbose": false,
+      "apiMaxRetries": 3,
+      "apiRateLimit": 6,
+      "logConsoleEnabled": false,
+      "logConsoleLevel": "info",
+      "logFileEnabled": true,
+      "logFileLevel": "info",
+      "logFileMaxFiles": 10,
+      "uiEnabled": true,
+      "reportEnabled": true,
+      "reportMaxFiles": 10
+    },
+    "logPath": "/Users/brenden.niedermeyer/code/waypoint/.storyblok/logs/295888311565739/storyblok-assets-pull-1792054318727.jsonl",
+    "endedAt": "2026-10-15T08:52:03.509Z",
+    "durationMs": 4782
+  },
+  "summary": {
+    "folderResults": {
+      "total": 0,
+      "succeeded": 0,
+      "failed": 0
+    },
+    "fetchAssetPagesResults": {
+      "total": 1,
+      "succeeded": 1,
+      "failed": 0
+    },
+    "fetchAssetsResults": {
+      "total": 36,
+      "succeeded": 36,
+      "failed": 0
+    },
+    "saveResults": {
+      "total": 36,
+      "succeeded": 36,
+      "failed": 0
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import { storyblokEditable } from '@storyblok/react/rsc';
 import { imageUrl, imageAlt } from '@/lib/images';
+import ImageCredit from './ImageCredit';
 import './DestinationHero.css';
 
 const capitalise = (value) =>
@@ -33,6 +34,7 @@ const DestinationHero = ({ blok, destination }) => {
 					<p className="destination-hero__summary">{destination.summary}</p>
 				)}
 			</div>
+			{src && <ImageCredit asset={destination.hero_image} />}
 		</section>
 	);
 };

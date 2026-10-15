@@ -27,6 +27,7 @@
 }
 
 .destination-grid__media {
+	position: relative;
 	aspect-ratio: 4 / 5;
 	overflow: hidden;
 	border-radius: var(--radius);

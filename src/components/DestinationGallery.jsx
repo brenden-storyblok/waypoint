@@ -1,13 +1,8 @@
 import { storyblokEditable } from '@storyblok/react/rsc';
 import { imageUrl, imageAlt } from '@/lib/images';
+import { bentoLayout } from '@/lib/bento';
+import ImageCredit from './ImageCredit';
 import './DestinationGallery.css';
-
-const tileClass = (index) => {
-	const slot = index % 5;
-	if (slot === 0 || slot === 4) return ' destination-gallery__tile--wide';
-	if (slot === 1) return ' destination-gallery__tile--tall';
-	return '';
-};
 
 const DestinationGallery = ({ blok, destination }) => {
 	if (!destination) return null;
@@ -31,10 +26,16 @@ const DestinationGallery = ({ blok, destination }) => {
 					)}
 				</div>
 				<div className="destination-gallery__grid">
-					{images.map((asset, index) => (
+					{bentoLayout(images).map(({ asset, wide, narrow }) => (
 						<div
 							key={asset.id ?? asset.filename}
-							className={`destination-gallery__tile${tileClass(index)}`}
+							className="destination-gallery__tile"
+							style={{
+								'--tile-cols': wide.cols,
+								'--tile-rows': wide.rows,
+								'--tile-cols-narrow': narrow.cols,
+								'--tile-rows-narrow': narrow.rows,
+							}}
 						>
 							{/* eslint-disable-next-line @next/next/no-img-element */}
 							<img
@@ -43,6 +44,7 @@ const DestinationGallery = ({ blok, destination }) => {
 								alt={imageAlt(asset)}
 								loading="lazy"
 							/>
+							<ImageCredit asset={asset} />
 						</div>
 					))}
 				</div>
