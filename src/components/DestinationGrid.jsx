@@ -48,10 +48,12 @@ const toRecord = (story) => ({
 });
 
 const DestinationGrid = async ({ blok }) => {
-	const resolved = (blok.destinations || []).filter(
-		(d) => d && typeof d === 'object'
-	);
-	const picked = resolved.map((d) => d.uuid);
+	// The editor's raw picks: uuid strings, or story objects once resolved.
+	const raw = blok.destinations || [];
+	const picked = raw
+		.map((d) => (d && typeof d === 'object' ? d.uuid : d))
+		.filter(Boolean);
+	const resolved = raw.filter((d) => d && typeof d === 'object');
 	const stories = picked.length ? resolved : await loadAllDestinations();
 	const storyByUuid = new Map(stories.map((s) => [s.uuid, s]));
 

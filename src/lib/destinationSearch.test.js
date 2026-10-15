@@ -90,5 +90,16 @@ describe('searchDestinations', () => {
 			expect(names(result.pool)).toEqual(['Lisbon', 'Seville']);
 			expect(result.counts).toEqual({ visible: 2, pool: 2 });
 		});
+
+		it('is empty when every picked Destination is not loaded', () => {
+			const result = searchDestinations({
+				destinations: [],
+				settings: { picked: [santorini.uuid, lisbon.uuid] },
+			});
+
+			expect(result.pool).toEqual([]);
+			expect(result.visible).toEqual([]);
+			expect(result.counts).toEqual({ visible: 0, pool: 0 });
+		});
 	});
 });
