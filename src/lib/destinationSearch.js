@@ -13,7 +13,10 @@
  *                   attributes  [value] a Destination stays in the Pool when
  *                               it carries any of these Destination Attributes
  *                 A Destination must pass both countries and attributes.
- *   choices       the visitor's choices: { text } (see parseChoices)
+ *   choices       the visitor's choices: { text, countries } (see
+ *                 parseChoices). A Destination must pass both: its Country is
+ *                 any selected Country (none selected passes every one), and
+ *                 it matches the Search Text.
  *   labels        display labels by stored value: { countries: { spain: 'Spain' } }
  *
  * Output:
@@ -21,6 +24,11 @@
  *   visible       Destinations in the Pool that pass the visitor's choices
  *   counts        { visible, pool }
  *   narrowed      true while the visitor's choices narrow the Pool
+ *   chips         Filter chips, built from the Pool so they never change
+ *                 with the visitor's choices:
+ *                   countries  [{ value, label }] each Country some Destination
+ *                              in the Pool carries, in datasource order
+ *                 A selected value with no chip is ignored.
  *
  * Search Text matches a Destination's name or Country label as a substring,
  * ignoring case and accents. A Country with no label matches on its value.
@@ -37,17 +45,25 @@ export function searchDestinations({
 		.filter(inAnyCountry(settings.countries || []))
 		.filter(carriesAny(settings.attributes || []));
 	const countryLabel = (value) => labels.countries?.[value] ?? value;
+	const chips = {
+		countries: chipsFor(pool.map((d) => d.country), labels.countries),
+	};
+	// A selected Country with no chip cannot be seen or cleared, so it is ignored.
+	const countries = offered(choices.countries, chips.countries);
 	const text = fold(choices.text || '');
-	const visible = pool.filter(
-		(d) =>
-			!text ||
-			[d.name, countryLabel(d.country)].some((s) => fold(s).includes(text)),
-	);
+	const visible = pool
+		.filter(inAnyCountry(countries))
+		.filter(
+			(d) =>
+				!text ||
+				[d.name, countryLabel(d.country)].some((s) => fold(s).includes(text)),
+		);
 	return {
 		pool,
 		visible,
 		counts: { visible: visible.length, pool: pool.length },
-		narrowed: Boolean(text),
+		narrowed: Boolean(text) || countries.length > 0,
+		chips,
 	};
 }
 
@@ -65,22 +81,24 @@ export function placesLabel({ counts, narrowed }) {
 /*
  * URL choices. One searchable grid per page, so every grid reads the same
  * params:
- *   q  Search Text
+ *   q        Search Text
+ *   country  a Country Filter, once per selected Country
  * Each choice param is listed in CHOICE_PARAMS so serialising replaces it and
  * keeps every other param (Visual Editor `_storyblok*`).
  */
-const CHOICE_PARAMS = ['q'];
+const CHOICE_PARAMS = ['q', 'country'];
 
 /**
  * The visitor's choices from URL search params. Accepts URLSearchParams (the
  * browser) or a page `searchParams` object whose values are a string or an
  * array of strings (the server).
  *
- * Returns { text }.
+ * Returns { text, countries }: countries holds every `country` value, in URL
+ * order.
  */
 export function parseChoices(params) {
 	const all = paramReader(params);
-	return { text: all('q')[0] || '' };
+	return { text: all('q')[0] || '', countries: all('country') };
 }
 
 /**
@@ -93,6 +111,7 @@ export function serialiseChoices(choices, current = '') {
 		toEntries(current).filter(([key]) => !CHOICE_PARAMS.includes(key)),
 	);
 	if (choices.text?.trim()) out.append('q', choices.text);
+	for (const country of choices.countries || []) out.append('country', country);
 	return out.toString();
 }
 
@@ -122,6 +141,25 @@ const fold = (s) =>
 		.replace(/\p{Diacritic}/gu, '')
 		.toLowerCase()
 		.trim();
+
+// Chips for the distinct `values` the Pool carries: [{ value, label }].
+// Labelled values come first in the order of `labels` (the datasource
+// order), then values with no label, labelled by their value, in Pool order.
+function chipsFor(values, labels = {}) {
+	const present = new Set(values.filter(Boolean));
+	const labelled = Object.keys(labels).filter((v) => present.has(v));
+	const unlabelled = [...present].filter((v) => !Object.hasOwn(labels, v));
+	return [...labelled, ...unlabelled].map((value) => ({
+		value,
+		label: labels[value] ?? value,
+	}));
+}
+
+// The `selected` values that have a chip.
+function offered(selected = [], chips) {
+	const values = new Set(chips.map((c) => c.value));
+	return selected.filter((v) => values.has(v));
+}
 
 // Picked Destinations in the editor order, or every Destination when none
 // are picked. A picked uuid with no loaded Destination is dropped.
