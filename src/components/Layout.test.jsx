@@ -15,13 +15,21 @@ const freshGridStyle =
 	'--layout-align:stretch;--layout-align-md:stretch;--layout-align-lg:stretch;--layout-align-xl:stretch;' +
 	'--layout-gap:var(--space-md);--layout-gap-md:var(--space-md);--layout-gap-lg:var(--space-md);--layout-gap-xl:var(--space-md)';
 
+const freshFlexStyle =
+	'--layout-direction:row;--layout-direction-md:row;--layout-direction-lg:row;--layout-direction-xl:row;' +
+	'--layout-wrap:nowrap;--layout-wrap-md:nowrap;--layout-wrap-lg:nowrap;--layout-wrap-xl:nowrap;' +
+	'--layout-justify:start;--layout-justify-md:start;--layout-justify-lg:start;--layout-justify-xl:start;' +
+	'--layout-flex-align:stretch;--layout-flex-align-md:stretch;--layout-flex-align-lg:stretch;--layout-flex-align-xl:stretch;' +
+	'--layout-item-flex:0 1 auto;--layout-item-flex-md:0 1 auto;--layout-item-flex-lg:0 1 auto;--layout-item-flex-xl:0 1 auto;' +
+	'--layout-gap:var(--space-md);--layout-gap-md:var(--space-md);--layout-gap-lg:var(--space-md);--layout-gap-xl:var(--space-md)';
+
 describe('Layout', () => {
 	it('renders a fresh Layout as a 1-column grid with the md gap', () => {
 		const html = renderToStaticMarkup(
-			<Layout blok={layoutBlok({ mode: 'grid' })} />
+			<Layout blok={layoutBlok({ mode: 'grid' })} />,
 		);
 		expect(html).toBe(
-			`<div class="layout layout--grid" style="${freshGridStyle}"></div>`
+			`<div class="layout layout--grid" style="${freshGridStyle}"></div>`,
 		);
 	});
 
@@ -34,12 +42,12 @@ describe('Layout', () => {
 					grid_align: 'center',
 					gap: 'lg',
 				})}
-			/>
+			/>,
 		);
 		expect(html).toContain(
 			'style="--layout-columns:2;--layout-columns-md:2;--layout-columns-lg:2;--layout-columns-xl:2;' +
 				'--layout-align:center;--layout-align-md:center;--layout-align-lg:center;--layout-align-xl:center;' +
-				'--layout-gap:var(--space-lg);--layout-gap-md:var(--space-lg);--layout-gap-lg:var(--space-lg);--layout-gap-xl:var(--space-lg)"'
+				'--layout-gap:var(--space-lg);--layout-gap-md:var(--space-lg);--layout-gap-lg:var(--space-lg);--layout-gap-xl:var(--space-lg)"',
 		);
 	});
 
@@ -53,10 +61,10 @@ describe('Layout', () => {
 					grid_columns_lg: '3',
 					grid_columns_xl: '',
 				})}
-			/>
+			/>,
 		);
 		expect(html).toContain(
-			'--layout-columns:1;--layout-columns-md:1;--layout-columns-lg:3;--layout-columns-xl:3;'
+			'--layout-columns:1;--layout-columns-md:1;--layout-columns-lg:3;--layout-columns-xl:3;',
 		);
 	});
 
@@ -69,7 +77,7 @@ describe('Layout', () => {
 		['xl', 'var(--space-xl)'],
 	])('maps the %s gap to %s', (gap, cssValue) => {
 		const html = renderToStaticMarkup(
-			<Layout blok={layoutBlok({ gap_xl: gap })} />
+			<Layout blok={layoutBlok({ gap_xl: gap })} />,
 		);
 		expect(html).toContain(`--layout-gap-xl:${cssValue}"`);
 	});
@@ -78,19 +86,69 @@ describe('Layout', () => {
 		for (const mode of [undefined, '', 'masonry']) {
 			const html = renderToStaticMarkup(<Layout blok={layoutBlok({ mode })} />);
 			expect(html).toBe(
-				`<div class="layout layout--grid" style="${freshGridStyle}"></div>`
+				`<div class="layout layout--grid" style="${freshGridStyle}"></div>`,
 			);
 		}
 	});
 
-	it('leaves the grid settings out in flex mode', () => {
+	it('renders a fresh flex Layout as a content-sized row and ignores grid fields', () => {
 		const html = renderToStaticMarkup(
-			<Layout blok={layoutBlok({ mode: 'flex', grid_columns: '3' })} />
+			<Layout
+				blok={layoutBlok({
+					mode: 'flex',
+					grid_columns: '3',
+					grid_align: 'end',
+				})}
+			/>,
 		);
 		expect(html).toBe(
-			'<div class="layout layout--flex" style="' +
-				'--layout-gap:var(--space-md);--layout-gap-md:var(--space-md);--layout-gap-lg:var(--space-md);--layout-gap-xl:var(--space-md)' +
-				'"></div>'
+			`<div class="layout layout--flex" style="${freshFlexStyle}"></div>`,
+		);
+	});
+
+	it('stacks at Base and carries an md row through lg and xl', () => {
+		const html = renderToStaticMarkup(
+			<Layout
+				blok={layoutBlok({
+					mode: 'flex',
+					flex_direction: 'column',
+					flex_direction_md: 'row',
+					flex_justify_lg: 'space-between',
+				})}
+			/>,
+		);
+		expect(html).toContain(
+			'--layout-direction:column;--layout-direction-md:row;--layout-direction-lg:row;--layout-direction-xl:row;',
+		);
+		expect(html).toContain(
+			'--layout-justify:start;--layout-justify-md:start;--layout-justify-lg:space-between;--layout-justify-xl:space-between;',
+		);
+	});
+
+	it.each([
+		['content', '0 1 auto'],
+		['equal', '1 1 0'],
+	])('maps %s item sizing to flex: %s', (itemSizing, cssValue) => {
+		const html = renderToStaticMarkup(
+			<Layout
+				blok={layoutBlok({ mode: 'flex', flex_item_sizing_md: itemSizing })}
+			/>,
+		);
+		expect(html).toContain(`--layout-item-flex-md:${cssValue};`);
+	});
+
+	it('leaves the flex settings out in grid mode', () => {
+		const html = renderToStaticMarkup(
+			<Layout
+				blok={layoutBlok({
+					mode: 'grid',
+					flex_direction: 'column',
+					flex_item_sizing: 'equal',
+				})}
+			/>,
+		);
+		expect(html).toBe(
+			`<div class="layout layout--grid" style="${freshGridStyle}"></div>`,
 		);
 	});
 
@@ -108,10 +166,10 @@ describe('Layout', () => {
 						},
 					],
 				})}
-			/>
+			/>,
 		);
 		expect(html).toContain(
-			`<div class="layout layout--grid" style="${freshGridStyle}"></div></div>`
+			`<div class="layout layout--grid" style="${freshGridStyle}"></div></div>`,
 		);
 	});
 
@@ -130,7 +188,7 @@ describe('Layout', () => {
 				})}
 				destination={lisbon}
 				searchParams={{ country: 'portugal' }}
-			/>
+			/>,
 		);
 		expect(html).toContain('<h2 class="wp-section-title">About Lisbon</h2>');
 	});

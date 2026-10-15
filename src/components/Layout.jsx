@@ -23,6 +23,12 @@ const GAP_VALUES = {
 	xl: 'var(--space-xl)',
 };
 
+/** Content-sized items keep their natural width; equal items share the row. */
+const ITEM_FLEX_VALUES = {
+	content: '0 1 auto',
+	equal: '1 1 0',
+};
+
 const pickFrom = (allowedValues) => (editorValue) =>
 	allowedValues.includes(editorValue) ? editorValue : undefined;
 
@@ -47,6 +53,48 @@ const SETTINGS = [
 		modes: ['grid'],
 		fallback: 'stretch',
 		toCss: pickFrom(['stretch', 'start', 'center', 'end']),
+	},
+	{
+		field: 'flex_direction',
+		property: '--layout-direction',
+		modes: ['flex'],
+		fallback: 'row',
+		toCss: pickFrom(['row', 'column']),
+	},
+	{
+		field: 'flex_wrap',
+		property: '--layout-wrap',
+		modes: ['flex'],
+		fallback: 'nowrap',
+		toCss: pickFrom(['wrap', 'nowrap']),
+	},
+	{
+		field: 'flex_justify',
+		property: '--layout-justify',
+		modes: ['flex'],
+		fallback: 'start',
+		toCss: pickFrom([
+			'start',
+			'center',
+			'end',
+			'space-between',
+			'space-around',
+			'space-evenly',
+		]),
+	},
+	{
+		field: 'flex_align',
+		property: '--layout-flex-align',
+		modes: ['flex'],
+		fallback: 'stretch',
+		toCss: pickFrom(['stretch', 'start', 'center', 'end']),
+	},
+	{
+		field: 'flex_item_sizing',
+		property: '--layout-item-flex',
+		modes: ['flex'],
+		fallback: ITEM_FLEX_VALUES.content,
+		toCss: mapFrom(ITEM_FLEX_VALUES),
 	},
 	{
 		field: 'gap',
