@@ -51,15 +51,18 @@ export function searchDestinations({
 		.filter(carriesAny(settings.attributes || []));
 	const countryLabel = (value) => labels.countries?.[value] ?? value;
 	const chips = {
-		countries: chipsFor(pool.map((d) => d.country), labels.countries),
+		countries: chipsFor(
+			pool.map((d) => d.country),
+			labels.countries,
+		),
 		attributes: chipsFor(
 			pool.flatMap((d) => d.attributes || []),
 			labels.attributes,
 		),
 	};
 	// A selected value with no chip cannot be seen or cleared, so it is ignored.
-	const countries = offered(choices.countries, chips.countries);
-	const attributes = offered(choices.attributes, chips.attributes);
+	const countries = withChip(choices.countries, chips.countries);
+	const attributes = withChip(choices.attributes, chips.attributes);
 	const text = fold(choices.text || '');
 	const visible = pool
 		.filter(inAnyCountry(countries))
@@ -109,22 +112,22 @@ const CHOICE_PARAMS = ['q', 'country', 'attribute'];
  * `country` and `attribute` value, in URL order.
  */
 export function parseChoices(params) {
-	const all = paramReader(params);
+	const valuesOf = paramReader(params);
 	return {
-		text: all('q')[0] || '',
-		countries: all('country'),
-		attributes: all('attribute'),
+		text: valuesOf('q')[0] || '',
+		countries: valuesOf('country'),
+		attributes: valuesOf('attribute'),
 	};
 }
 
 /**
  * The query string (no leading "?") for `choices`, keeping every param in
- * `current` that is not a choice param. `current` takes the same shapes as
- * parseChoices, or a query string.
+ * `current` that is not a choice param. `current` is a query string, with or
+ * without its leading "?" (e.g. window.location.search).
  */
 export function serialiseChoices(choices, current = '') {
 	const out = new URLSearchParams(
-		toEntries(current).filter(([key]) => !CHOICE_PARAMS.includes(key)),
+		withoutChoices([...new URLSearchParams(current)]),
 	);
 	if (choices.text?.trim()) out.append('q', choices.text);
 	for (const country of choices.countries || []) out.append('country', country);
@@ -132,21 +135,35 @@ export function serialiseChoices(choices, current = '') {
 	return out.toString();
 }
 
-// `all(key)` returns every value for `key` in `params`, as an array.
+/**
+ * The Clear all link for a page `searchParams` object: "?" and every param
+ * that is not a choice param, so it reloads the current page with no choices
+ * and keeps the Visual Editor `_storyblok*` params.
+ */
+export function clearChoicesHref(params) {
+	return `?${new URLSearchParams(withoutChoices(toEntries(params)))}`;
+}
+
+// The [key, value] pairs whose key is not a choice param.
+const withoutChoices = (entries) =>
+	entries.filter(([key]) => !CHOICE_PARAMS.includes(key));
+
+// `valuesOf(key)` returns every value for `key` in `params`, as an array.
 function paramReader(params) {
 	const entries = toEntries(params);
 	return (key) => entries.filter(([k]) => k === key).map(([, v]) => v);
 }
 
-// [key, value] pairs from URLSearchParams, a query string or a page
-// `searchParams` object.
+// [key, value] pairs from URLSearchParams or a page `searchParams` object.
 function toEntries(params) {
 	if (!params) return [];
-	if (typeof params === 'string') return [...new URLSearchParams(params)];
 	// URLSearchParams, or Next's ReadonlyURLSearchParams from useSearchParams.
 	if (typeof params.getAll === 'function') return [...params.entries()];
 	return Object.entries(params).flatMap(([key, value]) =>
-		[value].flat().filter((v) => v != null).map((v) => [key, String(v)]),
+		[value]
+			.flat()
+			.filter((v) => v != null)
+			.map((v) => [key, String(v)]),
 	);
 }
 
@@ -173,7 +190,7 @@ function chipsFor(values, labels = {}) {
 }
 
 // The `selected` values that have a chip.
-function offered(selected = [], chips) {
+function withChip(selected = [], chips) {
 	const values = new Set(chips.map((c) => c.value));
 	return selected.filter((v) => values.has(v));
 }
