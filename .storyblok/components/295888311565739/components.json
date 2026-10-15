@@ -749,6 +749,651 @@
     "metadata": {}
   },
   {
+    "name": "layout",
+    "display_name": "Layout",
+    "description": "Arranges blocks inside a Section as a grid or a flex row. Set each setting per Breakpoint; an empty value inherits from the next narrower Breakpoint.",
+    "created_at": "2026-10-15T15:28:53.735Z",
+    "updated_at": "2026-10-15T15:28:53.735Z",
+    "id": 230967434185818,
+    "schema": {
+      "mode": {
+        "type": "option",
+        "pos": 0,
+        "display_name": "Mode",
+        "default_value": "grid",
+        "exclude_empty_option": true,
+        "options": [
+          {
+            "name": "Grid",
+            "value": "grid"
+          },
+          {
+            "name": "Flex",
+            "value": "flex"
+          }
+        ],
+        "id": "zBdcPqgcSIa1yd5ySy0B-Q"
+      },
+      "items": {
+        "type": "bloks",
+        "pos": 1,
+        "display_name": "Items",
+        "restrict_components": true,
+        "restrict_type": "tags",
+        "component_tag_whitelist": [
+          230965598630878
+        ],
+        "id": "QDSTefzHQoq-aUw4znJx5A"
+      },
+      "breakpoint_base": {
+        "type": "section",
+        "pos": 2,
+        "display_name": "Base",
+        "keys": [
+          "grid_columns",
+          "grid_align",
+          "gap"
+        ],
+        "id": "p8NB8_-UTXyZF14nJytBUQ"
+      },
+      "grid_columns": {
+        "type": "option",
+        "pos": 3,
+        "display_name": "Columns",
+        "description": "Empty means 1.",
+        "options": [
+          {
+            "name": "1",
+            "value": "1"
+          },
+          {
+            "name": "2",
+            "value": "2"
+          },
+          {
+            "name": "3",
+            "value": "3"
+          },
+          {
+            "name": "4",
+            "value": "4"
+          },
+          {
+            "name": "5",
+            "value": "5"
+          },
+          {
+            "name": "6",
+            "value": "6"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "flex",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "m3TW2yVKR_-5b1DO4ppWxQ"
+      },
+      "grid_align": {
+        "type": "option",
+        "pos": 4,
+        "display_name": "Align items",
+        "description": "Empty means stretch.",
+        "options": [
+          {
+            "name": "Stretch",
+            "value": "stretch"
+          },
+          {
+            "name": "Start",
+            "value": "start"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "End",
+            "value": "end"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "flex",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "PhDoJnWXQQqocblNsggg6w"
+      },
+      "gap": {
+        "type": "option",
+        "pos": 5,
+        "display_name": "Gap",
+        "description": "Empty means md.",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "xs",
+            "value": "xs"
+          },
+          {
+            "name": "sm",
+            "value": "sm"
+          },
+          {
+            "name": "md",
+            "value": "md"
+          },
+          {
+            "name": "lg",
+            "value": "lg"
+          },
+          {
+            "name": "xl",
+            "value": "xl"
+          }
+        ],
+        "id": "Li4llZxzTPqU_EnOgSqDmA"
+      },
+      "breakpoint_md": {
+        "type": "section",
+        "pos": 6,
+        "display_name": "md (768px and up)",
+        "keys": [
+          "grid_columns_md",
+          "grid_align_md",
+          "gap_md"
+        ],
+        "id": "YQTXh_uSSUmrieiHYT-gig"
+      },
+      "grid_columns_md": {
+        "type": "option",
+        "pos": 7,
+        "display_name": "Columns",
+        "description": "Empty inherits Base.",
+        "options": [
+          {
+            "name": "1",
+            "value": "1"
+          },
+          {
+            "name": "2",
+            "value": "2"
+          },
+          {
+            "name": "3",
+            "value": "3"
+          },
+          {
+            "name": "4",
+            "value": "4"
+          },
+          {
+            "name": "5",
+            "value": "5"
+          },
+          {
+            "name": "6",
+            "value": "6"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "flex",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "7ixkN0syS56ZCXhjZ9zZxw"
+      },
+      "grid_align_md": {
+        "type": "option",
+        "pos": 8,
+        "display_name": "Align items",
+        "description": "Empty inherits Base.",
+        "options": [
+          {
+            "name": "Stretch",
+            "value": "stretch"
+          },
+          {
+            "name": "Start",
+            "value": "start"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "End",
+            "value": "end"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "flex",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "HQ1tC216TIqkhLidMvPIow"
+      },
+      "gap_md": {
+        "type": "option",
+        "pos": 9,
+        "display_name": "Gap",
+        "description": "Empty inherits Base.",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "xs",
+            "value": "xs"
+          },
+          {
+            "name": "sm",
+            "value": "sm"
+          },
+          {
+            "name": "md",
+            "value": "md"
+          },
+          {
+            "name": "lg",
+            "value": "lg"
+          },
+          {
+            "name": "xl",
+            "value": "xl"
+          }
+        ],
+        "id": "OKhY3IJnQpuFWl-q1QB_7A"
+      },
+      "breakpoint_lg": {
+        "type": "section",
+        "pos": 10,
+        "display_name": "lg (1024px and up)",
+        "keys": [
+          "grid_columns_lg",
+          "grid_align_lg",
+          "gap_lg"
+        ],
+        "id": "Ite3n5VPQ_uBAOaUXGrIzA"
+      },
+      "grid_columns_lg": {
+        "type": "option",
+        "pos": 11,
+        "display_name": "Columns",
+        "description": "Empty inherits md.",
+        "options": [
+          {
+            "name": "1",
+            "value": "1"
+          },
+          {
+            "name": "2",
+            "value": "2"
+          },
+          {
+            "name": "3",
+            "value": "3"
+          },
+          {
+            "name": "4",
+            "value": "4"
+          },
+          {
+            "name": "5",
+            "value": "5"
+          },
+          {
+            "name": "6",
+            "value": "6"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "flex",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "kw9o3dsGTji5LNpkb0tkMA"
+      },
+      "grid_align_lg": {
+        "type": "option",
+        "pos": 12,
+        "display_name": "Align items",
+        "description": "Empty inherits md.",
+        "options": [
+          {
+            "name": "Stretch",
+            "value": "stretch"
+          },
+          {
+            "name": "Start",
+            "value": "start"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "End",
+            "value": "end"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "flex",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sfmvqOM7QomR0bkM-N_0IA"
+      },
+      "gap_lg": {
+        "type": "option",
+        "pos": 13,
+        "display_name": "Gap",
+        "description": "Empty inherits md.",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "xs",
+            "value": "xs"
+          },
+          {
+            "name": "sm",
+            "value": "sm"
+          },
+          {
+            "name": "md",
+            "value": "md"
+          },
+          {
+            "name": "lg",
+            "value": "lg"
+          },
+          {
+            "name": "xl",
+            "value": "xl"
+          }
+        ],
+        "id": "KHohIhFvRseffuuhhxOfCg"
+      },
+      "breakpoint_xl": {
+        "type": "section",
+        "pos": 14,
+        "display_name": "xl (1280px and up)",
+        "keys": [
+          "grid_columns_xl",
+          "grid_align_xl",
+          "gap_xl"
+        ],
+        "id": "7ohsggnHSkiLxapYEctvYw"
+      },
+      "grid_columns_xl": {
+        "type": "option",
+        "pos": 15,
+        "display_name": "Columns",
+        "description": "Empty inherits lg.",
+        "options": [
+          {
+            "name": "1",
+            "value": "1"
+          },
+          {
+            "name": "2",
+            "value": "2"
+          },
+          {
+            "name": "3",
+            "value": "3"
+          },
+          {
+            "name": "4",
+            "value": "4"
+          },
+          {
+            "name": "5",
+            "value": "5"
+          },
+          {
+            "name": "6",
+            "value": "6"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "flex",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "5fcu8uJsTa-ksCswxWdn9A"
+      },
+      "grid_align_xl": {
+        "type": "option",
+        "pos": 16,
+        "display_name": "Align items",
+        "description": "Empty inherits lg.",
+        "options": [
+          {
+            "name": "Stretch",
+            "value": "stretch"
+          },
+          {
+            "name": "Start",
+            "value": "start"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "End",
+            "value": "end"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "value": "flex",
+                "validated_object": {
+                  "field_key": "mode",
+                  "field_attr": "value",
+                  "type": "field",
+                  "component": "layout"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "SItC5GrkRdy_ekUo4Ho9vg"
+      },
+      "gap_xl": {
+        "type": "option",
+        "pos": 17,
+        "display_name": "Gap",
+        "description": "Empty inherits lg.",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "xs",
+            "value": "xs"
+          },
+          {
+            "name": "sm",
+            "value": "sm"
+          },
+          {
+            "name": "md",
+            "value": "md"
+          },
+          {
+            "name": "lg",
+            "value": "lg"
+          },
+          {
+            "name": "xl",
+            "value": "xl"
+          }
+        ],
+        "id": "LxNscmhbQ1WQS_I1tjdrrw"
+      }
+    },
+    "image": null,
+    "preview_field": null,
+    "is_root": false,
+    "preview_tmpl": null,
+    "is_nestable": true,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "Layout",
+    "component_group_uuid": "73a3d280-86c7-46ad-8bb1-be30ae0fb08b",
+    "color": null,
+    "icon": null,
+    "internal_tags_list": [
+      {
+        "id": 230965598630878,
+        "name": "layout-child"
+      }
+    ],
+    "internal_tag_ids": [
+      "230965598630878"
+    ],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
     "name": "nav_link",
     "display_name": "Nav link",
     "description": null,
