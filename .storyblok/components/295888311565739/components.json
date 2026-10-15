@@ -4,7 +4,7 @@
     "display_name": "Button",
     "description": null,
     "created_at": "2026-10-14T15:55:18.396Z",
-    "updated_at": "2026-10-14T15:55:18.396Z",
+    "updated_at": "2026-10-15T15:25:55.735Z",
     "id": 230620030559107,
     "schema": {
       "label": {
@@ -51,8 +51,15 @@
     "component_group_uuid": "73a3d280-86c7-46ad-8bb1-be30ae0fb08b",
     "color": null,
     "icon": null,
-    "internal_tags_list": [],
-    "internal_tag_ids": [],
+    "internal_tags_list": [
+      {
+        "id": 230965598630878,
+        "name": "layout-child"
+      }
+    ],
+    "internal_tag_ids": [
+      "230965598630878"
+    ],
     "content_type_asset_preview": null,
     "metadata": {}
   },
@@ -61,7 +68,7 @@
     "display_name": "Destination",
     "description": null,
     "created_at": "2026-10-14T15:55:27.887Z",
-    "updated_at": "2026-10-15T12:25:06.516Z",
+    "updated_at": "2026-10-15T14:53:38.956Z",
     "id": 230620069430149,
     "schema": {
       "name": {
@@ -181,7 +188,7 @@
     "display_name": "Destination bio",
     "description": "Renders the description from the page's linked destination",
     "created_at": "2026-10-14T15:55:49.820Z",
-    "updated_at": "2026-10-14T15:55:49.820Z",
+    "updated_at": "2026-10-15T14:53:26.427Z",
     "id": 230620159271821,
     "schema": {
       "headline": {
@@ -213,7 +220,7 @@
     "display_name": "Destination gallery",
     "description": "Renders the gallery from the page's linked destination",
     "created_at": "2026-10-14T16:06:13.258Z",
-    "updated_at": "2026-10-14T16:06:13.258Z",
+    "updated_at": "2026-10-15T14:53:26.427Z",
     "id": 230622712873919,
     "schema": {
       "headline": {
@@ -245,7 +252,7 @@
     "display_name": "Destination grid",
     "description": null,
     "created_at": "2026-10-14T15:55:45.667Z",
-    "updated_at": "2026-10-15T12:36:30.723Z",
+    "updated_at": "2026-10-15T14:53:26.427Z",
     "id": 230620142261129,
     "schema": {
       "headline": {
@@ -344,7 +351,7 @@
     "all_presets": [],
     "preset_id": null,
     "real_name": "Destination grid",
-    "component_group_uuid": "47f26d33-3718-4e99-a513-75f449da01cb",
+    "component_group_uuid": "6b603e6d-956b-4d89-ab7a-2324a364a69c",
     "color": null,
     "icon": null,
     "internal_tags_list": [],
@@ -357,7 +364,7 @@
     "display_name": "Destination hero",
     "description": "Renders name, hero image and summary from the page's linked destination",
     "created_at": "2026-10-14T15:55:47.676Z",
-    "updated_at": "2026-10-14T15:55:47.676Z",
+    "updated_at": "2026-10-15T14:53:26.427Z",
     "id": 230620150494091,
     "schema": {},
     "image": null,
@@ -430,7 +437,7 @@
     "display_name": "Destination USPs",
     "description": "Renders the USPs from the page's linked destination",
     "created_at": "2026-10-14T15:55:48.782Z",
-    "updated_at": "2026-10-14T15:55:48.782Z",
+    "updated_at": "2026-10-15T14:53:26.427Z",
     "id": 230620155028364,
     "schema": {
       "headline": {
@@ -810,6 +817,103 @@
     "preset_id": null,
     "real_name": "Page",
     "component_group_uuid": "8cbce778-b02e-40e9-9641-5f5d42e1a9f0",
+    "color": null,
+    "icon": null,
+    "internal_tags_list": [],
+    "internal_tag_ids": [],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
+    "name": "section",
+    "display_name": "Section",
+    "description": "A band of the page with an optional headline, a background, full bleed and vertical padding.",
+    "created_at": "2026-10-15T15:26:02.837Z",
+    "updated_at": "2026-10-15T15:26:02.837Z",
+    "id": 230966734187604,
+    "schema": {
+      "headline": {
+        "type": "text",
+        "pos": 0,
+        "display_name": "Headline",
+        "translatable": true,
+        "id": "nbZQ40T5TA2mQKRTbxiluA"
+      },
+      "background": {
+        "type": "option",
+        "pos": 1,
+        "display_name": "Background",
+        "description": "Empty means no background.",
+        "options": [
+          {
+            "name": "Surface",
+            "value": "surface"
+          },
+          {
+            "name": "Inverse",
+            "value": "inverse"
+          },
+          {
+            "name": "Accent",
+            "value": "accent"
+          }
+        ],
+        "id": "89N1h_XsTEiZocKtaTwLtg"
+      },
+      "full_bleed": {
+        "type": "boolean",
+        "pos": 2,
+        "display_name": "Full bleed",
+        "description": "Let the content span the whole viewport instead of the content width.",
+        "id": "UvY0mQXwRFS1i4M8sNfkqg"
+      },
+      "padding": {
+        "type": "option",
+        "pos": 3,
+        "display_name": "Padding",
+        "default_value": "default",
+        "exclude_empty_option": true,
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Compact",
+            "value": "compact"
+          },
+          {
+            "name": "Default",
+            "value": "default"
+          },
+          {
+            "name": "Spacious",
+            "value": "spacious"
+          }
+        ],
+        "id": "-dm6zWylSnCnLeKxAjvY1w"
+      },
+      "body": {
+        "type": "bloks",
+        "pos": 4,
+        "display_name": "Body",
+        "restrict_components": true,
+        "restrict_type": "tags",
+        "component_tag_whitelist": [
+          230965598630878
+        ],
+        "id": "261LPPGxTOinXdvvzHjKMg"
+      }
+    },
+    "image": null,
+    "preview_field": "headline",
+    "is_root": false,
+    "preview_tmpl": null,
+    "is_nestable": true,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "Section",
+    "component_group_uuid": "47f26d33-3718-4e99-a513-75f449da01cb",
     "color": null,
     "icon": null,
     "internal_tags_list": [],
