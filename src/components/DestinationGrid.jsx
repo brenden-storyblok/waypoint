@@ -3,6 +3,7 @@ import DestinationCard from './DestinationCard';
 import { storyblokEditable } from '@storyblok/react/rsc';
 import { getStoryblokApi } from '@/lib/storyblok';
 import { storyHref } from '@/lib/links';
+import { searchDestinations } from '@/lib/destinationSearch';
 
 async function findPages(uuids) {
 	const hrefs = {};
@@ -24,10 +25,41 @@ async function findPages(uuids) {
 	return hrefs;
 }
 
+// Every story of content type `destination`.
+async function loadAllDestinations() {
+	try {
+		return await getStoryblokApi().getAll(
+			'cdn/stories',
+			{ version: 'draft', content_type: 'destination' },
+			'stories'
+		);
+	} catch (error) {
+		console.error('DestinationGrid: destination lookup failed', error);
+		return [];
+	}
+}
+
+// A Destination story as the record the destination search module reads.
+const toRecord = (story) => ({
+	uuid: story.uuid,
+	name: story.content?.name || story.name,
+	country: story.content?.country || '',
+	attributes: story.content?.attributes || [],
+});
+
 const DestinationGrid = async ({ blok }) => {
-	const destinations = (blok.destinations || []).filter(
+	const resolved = (blok.destinations || []).filter(
 		(d) => d && typeof d === 'object'
 	);
+	const picked = resolved.map((d) => d.uuid);
+	const stories = picked.length ? resolved : await loadAllDestinations();
+	const storyByUuid = new Map(stories.map((s) => [s.uuid, s]));
+
+	const { pool } = searchDestinations({
+		destinations: stories.map(toRecord),
+		settings: { picked },
+	});
+	const destinations = pool.map((d) => storyByUuid.get(d.uuid));
 	const hrefs = await findPages(destinations.map((d) => d.uuid));
 
 	return (
