@@ -5,7 +5,8 @@ vi.mock('@/lib/storyblok', () => ({
 	getStoryblokApi: () => ({ getAll }),
 }));
 
-const { loadAllDestinations } = await import('@/components/DestinationGrid');
+const { loadAllDestinations, loadDestinations } =
+	await import('@/components/DestinationGrid');
 
 // The query loadAllDestinations sent to the Delivery API.
 const sentQuery = () => getAll.mock.calls[0][1];
@@ -61,5 +62,52 @@ describe('loadAllDestinations', () => {
 		expect(
 			await loadAllDestinations({ countries: [], attributes: [] }),
 		).toEqual([lisbon]);
+	});
+});
+
+describe('loadDestinations', () => {
+	const santorini = { uuid: 'santorini', content: { country: 'greece' } };
+	const lisbon = { uuid: 'lisbon', content: { country: 'portugal' } };
+
+	beforeEach(() => {
+		getAll.mockReset();
+		getAll.mockResolvedValue([santorini, lisbon]);
+	});
+
+	it('uses the picked Destinations in the editor order when the editor picked any', async () => {
+		const loaded = await loadDestinations({
+			destinations: [lisbon, santorini],
+			countries: ['greece'],
+		});
+		expect(loaded).toEqual([lisbon, santorini]);
+		expect(getAll).not.toHaveBeenCalled();
+	});
+
+	it('leaves out a picked Destination that did not resolve', async () => {
+		const loaded = await loadDestinations({
+			destinations: ['missing-uuid', santorini],
+		});
+		expect(loaded).toEqual([santorini]);
+	});
+
+	it('loads no Destinations when no picked Destination resolves', async () => {
+		const loaded = await loadDestinations({
+			destinations: ['missing-uuid', 'other-uuid'],
+		});
+		expect(loaded).toEqual([]);
+		expect(getAll).not.toHaveBeenCalled();
+	});
+
+	it("loads the Destinations in the grid's Countries and Destination Attributes when the editor picked none", async () => {
+		const loaded = await loadDestinations({
+			destinations: [],
+			countries: ['portugal'],
+			attributes: ['beach'],
+		});
+		expect(loaded).toEqual([santorini, lisbon]);
+		expect(sentQuery().filter_query).toEqual({
+			country: { in: 'portugal' },
+			attributes: { any_in_array: 'beach' },
+		});
 	});
 });

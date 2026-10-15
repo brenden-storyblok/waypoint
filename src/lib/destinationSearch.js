@@ -4,15 +4,17 @@
  * browser can share it.
  *
  * Input:
- *   destinations  [{ uuid, name, country, attributes }] the loaded Destinations
- *   settings      the grid's editor settings:
- *                   picked      [uuid] picked Destinations, in editor order;
- *                               empty means every Destination
+ *   destinations  [{ uuid, name, country, attributes }] the loaded set the
+ *                 Pool is filtered from, in display order (the picked
+ *                 Destinations in editor order, or every Destination)
+ *   settings      the grid's editor settings, applied to every loaded set,
+ *                 even one the Delivery API already filtered:
  *                   countries   [value] a Destination stays in the Pool when
  *                               its Country is any of them
  *                   attributes  [value] a Destination stays in the Pool when
  *                               it carries any of these Destination Attributes
- *                 A Destination must pass both countries and attributes.
+ *                 A Destination must pass both countries and attributes; an
+ *                 empty setting keeps every Destination.
  *   choices       the visitor's choices: { text, countries, attributes } (see
  *                 parseChoices). A Destination must pass all three: its Country
  *                 is any selected Country, it carries any selected Destination
@@ -46,7 +48,7 @@ export function searchDestinations({
 	choices = {},
 	labels = {},
 }) {
-	const pool = pickedOrAll(destinations, settings.picked || [])
+	const pool = destinations
 		.filter(inAnyCountry(settings.countries || []))
 		.filter(carriesAny(settings.attributes || []));
 	const countryLabel = (value) => labels.countries?.[value] ?? value;
@@ -198,16 +200,6 @@ function chipsFor(values, labels = {}) {
 function withChip(selected = [], chips) {
 	const values = new Set(chips.map((chip) => chip.value));
 	return selected.filter((value) => values.has(value));
-}
-
-// Picked Destinations in the editor order, or every Destination when none
-// are picked. A picked uuid with no loaded Destination is dropped.
-function pickedOrAll(destinations, picked) {
-	if (!picked.length) return destinations;
-	const byUuid = new Map(
-		destinations.map((destination) => [destination.uuid, destination]),
-	);
-	return picked.map((uuid) => byUuid.get(uuid)).filter(Boolean);
 }
 
 // Keeps a Destination whose Country is any of the chosen Countries. No
