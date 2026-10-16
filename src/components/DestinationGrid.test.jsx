@@ -1,12 +1,17 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { renderToStaticMarkup } from 'react-dom/server';
 
 const getAll = vi.fn();
+const get = vi.fn();
 vi.mock('@/lib/storyblok', () => ({
-	getStoryblokApi: () => ({ getAll }),
+	getStoryblokApi: () => ({ getAll, get }),
 }));
 
-const { loadAllDestinations, loadDestinations } =
-	await import('@/components/DestinationGrid');
+const {
+	default: DestinationGrid,
+	loadAllDestinations,
+	loadDestinations,
+} = await import('@/components/DestinationGrid');
 
 // The query loadAllDestinations sent to the Delivery API.
 const sentQuery = () => getAll.mock.calls[0][1];
@@ -109,5 +114,77 @@ describe('loadDestinations', () => {
 			country: { in: 'portugal' },
 			attributes: { any_in_array: 'beach' },
 		});
+	});
+});
+
+describe('DestinationGrid', () => {
+	const lisbon = {
+		uuid: 'lisbon',
+		content: { name: 'Lisbon', country: 'portugal' },
+	};
+	const porto = {
+		uuid: 'porto',
+		content: { name: 'Porto', country: 'portugal' },
+	};
+	const lisbonPage = {
+		full_slug: 'destinations/lisbon',
+		content: { destination: 'lisbon' },
+	};
+
+	const render = async (settings) =>
+		renderToStaticMarkup(
+			await DestinationGrid({
+				blok: {
+					_uid: 'grid-uid',
+					component: 'destination_grid',
+					headline: 'More places in Portugal',
+					...settings,
+				},
+				searchParams: {},
+			}),
+		);
+
+	beforeEach(() => {
+		getAll.mockReset();
+		getAll.mockResolvedValue([]);
+		get.mockReset();
+		get.mockResolvedValue({ data: { stories: [lisbonPage] } });
+	});
+
+	it('shows the Pool as a Carousel when the carousel setting is on and search is off', async () => {
+		const html = await render({
+			carousel: true,
+			destinations: [lisbon, porto],
+		});
+		expect(html).toContain('aria-roledescription="carousel"');
+		expect(html).toMatch(/<li[^>]*><a [^>]*href="\/destinations\/lisbon"/);
+		expect(html).toContain('2 places');
+	});
+
+	it('hides the Destination count of a Carousel with an empty Pool', async () => {
+		const html = await render({ carousel: true, destinations: [] });
+		expect(html).toContain('aria-roledescription="carousel"');
+		expect(html).not.toContain('0 places');
+	});
+
+	it('shows the Pool as a grid when the carousel setting is off', async () => {
+		const html = await render({
+			carousel: false,
+			destinations: [lisbon, porto],
+		});
+		expect(html).not.toContain('aria-roledescription="carousel"');
+		expect(html).not.toContain('<li');
+		expect(html).toContain('href="/destinations/lisbon"');
+	});
+
+	it('shows the searchable grid when search is on, even with the carousel setting on', async () => {
+		const html = await render({
+			carousel: true,
+			search_enabled: true,
+			destinations: [lisbon, porto],
+		});
+		expect(html).not.toContain('aria-roledescription="carousel"');
+		expect(html).toContain('role="search"');
+		expect(html).toContain('href="/destinations/lisbon"');
 	});
 });

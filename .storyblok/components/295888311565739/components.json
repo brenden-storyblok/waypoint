@@ -256,7 +256,7 @@
     "display_name": "Destination grid",
     "description": null,
     "created_at": "2026-10-14T15:55:45.667Z",
-    "updated_at": "2026-10-15T15:47:49.498Z",
+    "updated_at": "2026-10-16T14:12:02.584Z",
     "id": 230620142261129,
     "schema": {
       "headline": {
@@ -303,9 +303,38 @@
         "description": "Let visitors search the grid.",
         "id": "8peEGtY7RzaYTo9F-aVy2A"
       },
+      "carousel": {
+        "type": "boolean",
+        "pos": 5,
+        "display_name": "Show as carousel",
+        "default_value": false,
+        "description": "Shows the destinations in one row visitors swipe through. Not available when search is on.",
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validated_object": {
+                  "type": "field",
+                  "field_key": "search_enabled",
+                  "field_attr": "value"
+                },
+                "validation": "equals",
+                "value": true
+              }
+            ]
+          }
+        ],
+        "id": "kYpaVoTiTDy86m5ZQM5wqQ"
+      },
       "search_placeholder": {
         "type": "text",
-        "pos": 5,
+        "pos": 6,
         "display_name": "Search placeholder",
         "translatable": true,
         "default_value": "Search destinations",
@@ -313,7 +342,7 @@
       },
       "empty_message": {
         "type": "text",
-        "pos": 6,
+        "pos": 7,
         "display_name": "Empty message",
         "translatable": true,
         "default_value": "No destinations match your search.",
@@ -322,7 +351,7 @@
       },
       "clear_label": {
         "type": "text",
-        "pos": 7,
+        "pos": 8,
         "display_name": "Clear all label",
         "translatable": true,
         "default_value": "Clear all",
@@ -330,7 +359,7 @@
       },
       "attributes_label": {
         "type": "text",
-        "pos": 8,
+        "pos": 9,
         "display_name": "Attributes label",
         "translatable": true,
         "default_value": "Attributes",
@@ -339,7 +368,7 @@
       },
       "country_label": {
         "type": "text",
-        "pos": 9,
+        "pos": 10,
         "display_name": "Country label",
         "translatable": true,
         "default_value": "Country",

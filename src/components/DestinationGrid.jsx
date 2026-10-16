@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import DestinationCard from './DestinationCard';
+import DestinationCarousel from './DestinationCarousel';
 import DestinationSearch from './DestinationSearch';
 import DestinationSearchView from './DestinationSearchView';
 import { storyblokEditable } from '@storyblok/react/rsc';
@@ -138,6 +139,20 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 			<div className="mx-auto max-w-7xl px-gutter">{children}</div>
 		</section>
 	);
+
+	// A Carousel always shows the whole Pool, so search wins over it.
+	if (!search && blok.carousel) {
+		return section(
+			<DestinationCarousel
+				headline={blok.headline}
+				placesLabel={
+					destinations.length > 0 ? placesLabel(searchResult) : undefined
+				}
+			>
+				{destinations.map(card)}
+			</DestinationCarousel>,
+		);
+	}
 
 	if (!search) {
 		return section(
