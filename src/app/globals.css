@@ -1,183 +1,114 @@
-@import 'https://a.storyblok.com/f/212319/x/e6ccda03b8/blueprint-blank.css';
+@import 'tailwindcss';
 
-/*
- * Waypoint tokens. Two layers:
- * palette (hue names, literals live only here) and semantic (roles, used by components).
- * The blueprint stylesheet above sits in cascade layers, so these unlayered rules win.
- */
-:root {
-	/* Palette */
-	--palette-mist-50: #f5f7f6;
-	--palette-white: #ffffff;
-	--palette-deep-sea-900: #13232c;
-	--palette-deep-sea-950: #0d181e;
-	--palette-deep-sea-800: #142229;
-	--palette-slate-500: #56676f;
-	--palette-slate-300: #97a8ad;
-	--palette-mist-200: #d5dedd;
-	--palette-deep-sea-700: #26363d;
-	--palette-lagoon-700: #0b6e69;
-	--palette-lagoon-300: #4fc1b8;
-	--palette-sun-400: #f0b23e;
-	--palette-sun-300: #f3bd57;
-	--palette-frost-100: #e9f3f1;
-	--palette-frost-200: #e4ecea;
-	--palette-shade-0: rgb(10 20 26 / 0);
-	--palette-shade-70: rgb(10 20 26 / 0.72);
-	--palette-placeholder: #6d8ea0;
+@plugin '@tailwindcss/typography';
 
-	/* Semantic */
-	--color-page: var(--palette-mist-50);
-	--color-surface: var(--palette-white);
-	--color-text: var(--palette-deep-sea-900);
-	--color-text-muted: var(--palette-slate-500);
-	--color-line: var(--palette-mist-200);
-	--color-accent: var(--palette-lagoon-700);
-	--color-on-accent: var(--palette-white);
-	--color-highlight: var(--palette-sun-400);
-	--color-on-highlight: var(--palette-deep-sea-900);
-	--color-inverse: var(--palette-deep-sea-900);
-	--color-on-inverse: var(--palette-frost-100);
-	--color-on-image: var(--palette-white);
-	--color-image-shade-start: var(--palette-shade-0);
-	--color-image-shade-end: var(--palette-shade-70);
-	--color-image-placeholder: var(--palette-placeholder);
+/* Brand palette and fluid sizes as Tailwind theme tokens */
+@theme {
+	/* Only the brand slate shades exist */
+	--color-slate-*: initial;
 
-	/* Type (font families come from next/font in layout.js) */
-	--font-display-family: var(--font-display), 'Avenir Next Condensed', 'Arial Narrow', sans-serif;
-	--font-body-family: var(--font-body), Georgia, 'Times New Roman', serif;
-	--font-mono-family: var(--font-mono), ui-monospace, Menlo, Consolas, monospace;
+	--color-mist-50: #f5f7f6;
+	--color-mist-200: #d5dedd;
+	--color-deep-sea-700: #26363d;
+	--color-deep-sea-800: #142229;
+	--color-deep-sea-900: #13232c;
+	--color-deep-sea-950: #0d181e;
+	--color-slate-300: #97a8ad;
+	--color-slate-500: #56676f;
+	--color-lagoon-300: #4fc1b8;
+	--color-lagoon-700: #0b6e69;
+	--color-sun-300: #f3bd57;
+	--color-sun-400: #f0b23e;
+	--color-frost-100: #e9f3f1;
+	--color-frost-200: #e4ecea;
+	--color-shade-0: rgb(10 20 26 / 0);
+	--color-shade-70: rgb(10 20 26 / 0.72);
+	--color-placeholder: #6d8ea0;
 
-	--text-12: 0.75rem;
-	--text-14: 0.875rem;
-	--text-17: 1.0625rem;
-	--text-22: 1.375rem;
-	--text-32: 2rem;
-	--text-48: clamp(2.25rem, 5vw, 3rem);
-	--text-80: clamp(3rem, 10vw, 5.5rem);
-
-	/* Space and shape */
-	--gutter: clamp(16px, 4vw, 48px);
-	--content-max: 1240px;
-	--section-pad: 72px;
-	--radius: 6px;
-
-	/* Spacing scale (Layout gap) */
-	--space-xs: 8px;
-	--space-sm: 16px;
-	--space-md: 24px;
-	--space-lg: 40px;
-	--space-xl: 64px;
-
-	/* Breakpoints (reference only; media queries cannot read custom properties) */
-	/* tablet: 860px, phone: 520px */
+	--text-display: clamp(2.25rem, 5vw, 3rem);
+	--text-hero: clamp(3rem, 10vw, 5.5rem);
+	--spacing-gutter: clamp(16px, 4vw, 48px);
+	/* The Destination hero's name, larger than text-hero */
+	--text-destination-name: clamp(4rem, 16vw, 11rem);
+	/* The Hero's vertical padding: py-hero */
+	--spacing-hero: clamp(40px, 7vw, 96px);
+	/* One Destination gallery row: auto-rows-gallery-row */
+	--grid-auto-rows-gallery-row: clamp(140px, 18vw, 220px);
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		color-scheme: dark;
-		--color-page: var(--palette-deep-sea-950);
-		--color-surface: var(--palette-deep-sea-800);
-		--color-text: var(--palette-frost-200);
-		--color-text-muted: var(--palette-slate-300);
-		--color-line: var(--palette-deep-sea-700);
-		--color-accent: var(--palette-lagoon-300);
-		--color-on-accent: var(--palette-deep-sea-950);
-		--color-highlight: var(--palette-sun-300);
-		--color-on-highlight: var(--palette-deep-sea-950);
-		--color-inverse: var(--palette-frost-200);
-		--color-on-inverse: var(--palette-deep-sea-950);
-	}
+/* Font slots read the next/font variables set on <html> in layout.js */
+@theme inline {
+	--font-serif: var(--font-next-serif), Georgia, 'Times New Roman', serif;
+	--font-mono: var(--font-next-mono), ui-monospace, Menlo, Consolas, monospace;
+	--font-display:
+		var(--font-next-display), 'Avenir Next Condensed', 'Arial Narrow',
+		sans-serif;
 }
 
-/* Base: undo the blueprint's centred, padded body so sections can run full-bleed */
-body {
-	max-inline-size: none;
-	padding: 0;
-	margin: 0;
-	background: var(--color-page);
-	color: var(--color-text);
-	font-family: var(--font-body-family);
-	font-size: var(--text-17);
-	line-height: 1.6;
+/* Rich text colors from the brand palette, light and `prose-invert` (dark) */
+@utility prose {
+	--tw-prose-body: var(--color-deep-sea-900);
+	--tw-prose-headings: var(--color-deep-sea-900);
+	--tw-prose-links: var(--color-lagoon-700);
+	--tw-prose-bold: var(--color-deep-sea-900);
+	--tw-prose-counters: var(--color-slate-500);
+	--tw-prose-bullets: var(--color-slate-500);
+	--tw-prose-hr: var(--color-mist-200);
+	--tw-prose-lead: var(--color-slate-500);
+	--tw-prose-quotes: var(--color-deep-sea-900);
+	--tw-prose-quote-borders: var(--color-mist-200);
+	--tw-prose-captions: var(--color-slate-500);
+	--tw-prose-kbd: var(--color-deep-sea-900);
+	--tw-prose-kbd-shadows: color-mix(
+		in srgb,
+		var(--color-deep-sea-900) 10%,
+		transparent
+	);
+	--tw-prose-code: var(--color-deep-sea-900);
+	--tw-prose-pre-code: var(--color-frost-200);
+	--tw-prose-pre-bg: var(--color-deep-sea-800);
+	--tw-prose-th-borders: var(--color-slate-300);
+	--tw-prose-td-borders: var(--color-mist-200);
+	--tw-prose-invert-body: var(--color-frost-200);
+	--tw-prose-invert-headings: var(--color-frost-200);
+	--tw-prose-invert-links: var(--color-lagoon-300);
+	--tw-prose-invert-bold: var(--color-frost-200);
+	--tw-prose-invert-counters: var(--color-slate-300);
+	--tw-prose-invert-bullets: var(--color-slate-300);
+	--tw-prose-invert-hr: var(--color-deep-sea-700);
+	--tw-prose-invert-lead: var(--color-slate-300);
+	--tw-prose-invert-quotes: var(--color-frost-100);
+	--tw-prose-invert-quote-borders: var(--color-deep-sea-700);
+	--tw-prose-invert-captions: var(--color-slate-300);
+	--tw-prose-invert-kbd: var(--color-frost-200);
+	--tw-prose-invert-kbd-shadows: color-mix(
+		in srgb,
+		var(--color-frost-200) 10%,
+		transparent
+	);
+	--tw-prose-invert-code: var(--color-frost-200);
+	--tw-prose-invert-pre-code: var(--color-frost-200);
+	--tw-prose-invert-pre-bg: var(--color-deep-sea-950);
+	--tw-prose-invert-th-borders: var(--color-slate-500);
+	--tw-prose-invert-td-borders: var(--color-deep-sea-700);
 }
 
-main {
-	display: block;
-	padding: 0;
+/* Muted rich text, e.g. FAQ answers: body and bold text in the secondary color */
+@utility prose-muted {
+	--tw-prose-body: var(--color-slate-500);
+	--tw-prose-bold: var(--color-slate-500);
+	--tw-prose-invert-body: var(--color-slate-300);
+	--tw-prose-invert-bold: var(--color-slate-300);
 }
 
-:is(h1, h2, h3) {
-	margin: 0;
-	font-family: var(--font-display-family);
-	line-height: 1.05;
-	letter-spacing: -0.01em;
-	text-wrap: balance;
-}
+/* Keyboard focus ring for every focusable element; utilities can override it */
+@layer base {
+	:focus-visible {
+		outline: 3px solid var(--color-sun-400);
+		outline-offset: 3px;
 
-a {
-	color: inherit;
-}
-
-:focus-visible {
-	outline: 3px solid var(--color-highlight);
-	outline-offset: 3px;
-}
-
-/* Shared layout helpers used by every block */
-.wp-wrap {
-	max-width: var(--content-max);
-	margin-inline: auto;
-	padding-inline: var(--gutter);
-}
-
-.wp-section {
-	padding-block: var(--section-pad);
-}
-
-.wp-section-title {
-	font-size: var(--text-48);
-	font-weight: 800;
-}
-
-.wp-split {
-	display: grid;
-	grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-	gap: 48px;
-}
-
-.wp-rich {
-	display: grid;
-	gap: 1em;
-	max-width: 64ch;
-}
-
-.wp-rich :is(ul, ol) {
-	margin: 0;
-}
-
-/* The rich text renderer may wrap nodes, so space siblings at any depth */
-.wp-rich :is(p, ul, ol, h2, h3) + :is(p, ul, ol, h2, h3) {
-	margin-block-start: 1em;
-}
-
-.wp-img {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	background: var(--color-image-placeholder);
-}
-
-@media (max-width: 860px) {
-	.wp-split {
-		grid-template-columns: 1fr;
-		gap: 24px;
-	}
-}
-
-@media (prefers-reduced-motion: reduce) {
-	* {
-		transition: none !important;
+		@media (prefers-color-scheme: dark) {
+			outline-color: var(--color-sun-300);
+		}
 	}
 }

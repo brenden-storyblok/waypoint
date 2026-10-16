@@ -1,6 +1,6 @@
-import './Button.css';
 import { Fragment } from 'react';
 import FilterChips from './FilterChips';
+import { buttonClasses } from './buttonClasses';
 import { placesLabel } from '@/lib/destinationSearch';
 
 /**
@@ -35,27 +35,35 @@ const DestinationSearchView = ({
 	handlers,
 	clearHref,
 }) => {
-	const clearClass = 'btn btn--secondary btn--sm destination-grid__clear';
+	// A small secondary Button, unfilled, in the text color.
+	const clearClass = `${buttonClasses('secondary', 'sm')} cursor-pointer bg-transparent text-deep-sea-900 dark:text-frost-200`;
 	const toggle = (group) =>
 		handlers && ((value) => handlers.onToggle(group, value));
 
 	return (
 		<>
-			<div className="destination-grid__head">
-				{headline && <h2 className="wp-section-title">{headline}</h2>}
-				<span className="destination-grid__count" aria-live="polite">
+			<div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+				{headline && (
+					<h2 className="font-display text-display leading-[1.05] font-extrabold tracking-[-0.01em] text-balance">
+						{headline}
+					</h2>
+				)}
+				<span
+					className="font-mono text-xs text-slate-500 dark:text-slate-300"
+					aria-live="polite"
+				>
 					{placesLabel(result)}
 				</span>
 			</div>
 			<form
 				role="search"
-				className="destination-grid__search"
+				className="mb-8"
 				onSubmit={handlers ? (event) => event.preventDefault() : undefined}
 			>
 				<input
 					type="search"
 					name="q"
-					className="destination-grid__search-input"
+					className="w-full max-w-120 rounded-full border border-mist-200 bg-white px-4.5 py-3 font-serif text-lg text-deep-sea-900 dark:border-deep-sea-700 dark:bg-deep-sea-800 dark:text-frost-200"
 					aria-label={texts.placeholder}
 					placeholder={texts.placeholder}
 					autoComplete="off"
@@ -67,7 +75,7 @@ const DestinationSearchView = ({
 						: { defaultValue: choices.text })}
 				/>
 			</form>
-			<div className="destination-grid__filters">
+			<div className="mb-8 grid gap-3 empty:hidden">
 				<FilterChips
 					heading={texts.countryLabel}
 					chips={result.chips.countries}
@@ -82,7 +90,7 @@ const DestinationSearchView = ({
 				/>
 			</div>
 			{result.visible.length > 0 ? (
-				<div className="destination-grid__cards">
+				<div className="grid grid-cols-1 gap-x-6 gap-y-7 sm:grid-cols-2 md:grid-cols-3">
 					{result.visible.map((destination) => (
 						<Fragment key={destination.uuid}>
 							{cards[destination.uuid]}
@@ -90,7 +98,7 @@ const DestinationSearchView = ({
 					))}
 				</div>
 			) : (
-				<div className="destination-grid__empty">
+				<div className="grid justify-items-start gap-4 py-8 text-slate-500 dark:text-slate-300">
 					<p>{texts.emptyMessage}</p>
 					{handlers ? (
 						<button

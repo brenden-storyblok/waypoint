@@ -2,7 +2,7 @@ import {
 	storyblokEditable,
 	StoryblokServerRichText,
 } from '@storyblok/react/rsc';
-import './DestinationBio.css';
+import { RICH_TEXT_CLASSES } from './richTextClasses';
 
 const DestinationBio = ({ blok, destination }) => {
 	if (!destination) return null;
@@ -10,12 +10,14 @@ const DestinationBio = ({ blok, destination }) => {
 	return (
 		<section
 			{...storyblokEditable(blok)}
-			className="destination-bio wp-section"
+			className="bg-white py-18 dark:bg-deep-sea-800"
 		>
-			<div className="wp-wrap wp-split">
-				<h2 className="wp-section-title">{blok.headline}</h2>
+			<div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-gutter md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] md:gap-12">
+				<h2 className="font-display text-display leading-[1.05] font-extrabold tracking-[-0.01em] text-balance">
+					{blok.headline}
+				</h2>
 				{destination.description && (
-					<div className="destination-bio__rich wp-rich">
+					<div className={RICH_TEXT_CLASSES}>
 						<StoryblokServerRichText document={destination.description} />
 					</div>
 				)}

@@ -4,7 +4,7 @@
     "display_name": "Button",
     "description": null,
     "created_at": "2026-10-14T15:55:18.396Z",
-    "updated_at": "2026-10-15T15:25:55.735Z",
+    "updated_at": "2026-10-16T10:02:15.378Z",
     "id": 230620030559107,
     "schema": {
       "label": {
@@ -35,6 +35,10 @@
           {
             "name": "Secondary",
             "value": "secondary"
+          },
+          {
+            "name": "Tertiary",
+            "value": "tertiary"
           }
         ],
         "id": "_uxXy4dYT5OGf6tB5sOimg"

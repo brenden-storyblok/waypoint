@@ -1,17 +1,14 @@
 import { storyblokEditable } from '@storyblok/react/rsc';
 import { resolveLink } from '@/lib/links';
-import './Button.css';
+import { VARIANT_CLASSES, buttonClasses } from './buttonClasses';
 
 const Button = ({ blok, size }) => {
-	const variant = blok.variant === 'secondary' ? 'secondary' : 'primary';
-	const classes = ['btn', `btn--${variant}`, size === 'sm' ? 'btn--sm' : '']
-		.filter(Boolean)
-		.join(' ');
+	const variant = VARIANT_CLASSES[blok.variant] ? blok.variant : 'primary';
 
 	return (
 		<a
 			{...storyblokEditable(blok)}
-			className={classes}
+			className={buttonClasses(variant, size === 'sm' ? 'sm' : 'regular')}
 			href={resolveLink(blok.link)}
 		>
 			{blok.label}

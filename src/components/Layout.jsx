@@ -3,120 +3,187 @@ import {
 	StoryblokServerComponent,
 } from '@storyblok/react/rsc';
 import { pickFrom } from '@/lib/pickFrom';
-import './Layout.css';
 
 const pickMode = pickFrom(['grid', 'flex']);
 
-/** Field suffix and custom-property suffix per Breakpoint, narrowest first. */
-const BREAKPOINT_SUFFIXES = [
-	{ field: '', property: '' },
-	{ field: '_md', property: '-md' },
-	{ field: '_lg', property: '-lg' },
-	{ field: '_xl', property: '-xl' },
-];
+/** Field suffix per Breakpoint, narrowest first. */
+const BREAKPOINT_FIELD_SUFFIXES = ['', '_md', '_lg', '_xl'];
 
-const GAP_VALUES = {
-	none: '0',
-	xs: 'var(--space-xs)',
-	sm: 'var(--space-sm)',
-	md: 'var(--space-md)',
-	lg: 'var(--space-lg)',
-	xl: 'var(--space-xl)',
+/** Grid align and flex align both set `align-items`. */
+const ALIGN_ITEMS_CLASSES = {
+	stretch: [
+		'items-stretch',
+		'md:items-stretch',
+		'lg:items-stretch',
+		'xl:items-stretch',
+	],
+	start: ['items-start', 'md:items-start', 'lg:items-start', 'xl:items-start'],
+	center: [
+		'items-center',
+		'md:items-center',
+		'lg:items-center',
+		'xl:items-center',
+	],
+	end: ['items-end', 'md:items-end', 'lg:items-end', 'xl:items-end'],
 };
-
-/** Content-sized items keep their natural width; equal items share the row. */
-const ITEM_FLEX_VALUES = {
-	content: '0 1 auto',
-	equal: '1 1 0',
-};
-
-const mapFrom = (cssByOption) => (editorValue) => cssByOption[editorValue];
 
 /**
- * Every Breakpoint setting a Layout can emit. `toCss` turns an editor value into
- * a CSS value, or undefined when the value is empty or unknown so the next
- * narrower Breakpoint's value carries forward. Adding a setting is a new row.
+ * Every Breakpoint setting a Layout can emit. `classes` maps an editor value to
+ * its class at Base, md, lg and xl, written out in full so Tailwind's scanner
+ * generates each one. Base always gets a class (the fallback for an empty or
+ * unknown value); a Breakpoint gets one only when the editor set a known value,
+ * and the mobile-first cascade inherits the narrower value otherwise. Adding a
+ * setting is a new row.
  */
 const SETTINGS = [
 	{
 		field: 'grid_columns',
-		property: '--layout-columns',
 		modes: ['grid'],
 		fallback: '1',
-		toCss: pickFrom(['1', '2', '3', '4', '5', '6']),
+		classes: {
+			1: ['grid-cols-1', 'md:grid-cols-1', 'lg:grid-cols-1', 'xl:grid-cols-1'],
+			2: ['grid-cols-2', 'md:grid-cols-2', 'lg:grid-cols-2', 'xl:grid-cols-2'],
+			3: ['grid-cols-3', 'md:grid-cols-3', 'lg:grid-cols-3', 'xl:grid-cols-3'],
+			4: ['grid-cols-4', 'md:grid-cols-4', 'lg:grid-cols-4', 'xl:grid-cols-4'],
+			5: ['grid-cols-5', 'md:grid-cols-5', 'lg:grid-cols-5', 'xl:grid-cols-5'],
+			6: ['grid-cols-6', 'md:grid-cols-6', 'lg:grid-cols-6', 'xl:grid-cols-6'],
+		},
 	},
 	{
 		field: 'grid_align',
-		property: '--layout-align',
 		modes: ['grid'],
 		fallback: 'stretch',
-		toCss: pickFrom(['stretch', 'start', 'center', 'end']),
+		classes: ALIGN_ITEMS_CLASSES,
 	},
 	{
 		field: 'flex_direction',
-		property: '--layout-direction',
 		modes: ['flex'],
 		fallback: 'row',
-		toCss: pickFrom(['row', 'column']),
+		classes: {
+			row: ['flex-row', 'md:flex-row', 'lg:flex-row', 'xl:flex-row'],
+			column: ['flex-col', 'md:flex-col', 'lg:flex-col', 'xl:flex-col'],
+		},
 	},
 	{
 		field: 'flex_wrap',
-		property: '--layout-wrap',
 		modes: ['flex'],
 		fallback: 'nowrap',
-		toCss: pickFrom(['wrap', 'nowrap']),
+		classes: {
+			wrap: ['flex-wrap', 'md:flex-wrap', 'lg:flex-wrap', 'xl:flex-wrap'],
+			nowrap: [
+				'flex-nowrap',
+				'md:flex-nowrap',
+				'lg:flex-nowrap',
+				'xl:flex-nowrap',
+			],
+		},
 	},
 	{
 		field: 'flex_justify',
-		property: '--layout-justify',
 		modes: ['flex'],
 		fallback: 'start',
-		toCss: pickFrom([
-			'start',
-			'center',
-			'end',
-			'space-between',
-			'space-around',
-			'space-evenly',
-		]),
+		classes: {
+			start: [
+				'justify-start',
+				'md:justify-start',
+				'lg:justify-start',
+				'xl:justify-start',
+			],
+			center: [
+				'justify-center',
+				'md:justify-center',
+				'lg:justify-center',
+				'xl:justify-center',
+			],
+			end: [
+				'justify-end',
+				'md:justify-end',
+				'lg:justify-end',
+				'xl:justify-end',
+			],
+			'space-between': [
+				'justify-between',
+				'md:justify-between',
+				'lg:justify-between',
+				'xl:justify-between',
+			],
+			'space-around': [
+				'justify-around',
+				'md:justify-around',
+				'lg:justify-around',
+				'xl:justify-around',
+			],
+			'space-evenly': [
+				'justify-evenly',
+				'md:justify-evenly',
+				'lg:justify-evenly',
+				'xl:justify-evenly',
+			],
+		},
 	},
 	{
 		field: 'flex_align',
-		property: '--layout-flex-align',
 		modes: ['flex'],
 		fallback: 'stretch',
-		toCss: pickFrom(['stretch', 'start', 'center', 'end']),
+		classes: ALIGN_ITEMS_CLASSES,
 	},
 	{
+		/* Content-sized items keep their natural width; equal items share the row. */
 		field: 'flex_item_sizing',
-		property: '--layout-item-flex',
 		modes: ['flex'],
-		fallback: ITEM_FLEX_VALUES.content,
-		toCss: mapFrom(ITEM_FLEX_VALUES),
+		fallback: 'content',
+		classes: {
+			content: [
+				'*:flex-initial',
+				'md:*:flex-initial',
+				'lg:*:flex-initial',
+				'xl:*:flex-initial',
+			],
+			equal: ['*:flex-1', 'md:*:flex-1', 'lg:*:flex-1', 'xl:*:flex-1'],
+		},
 	},
 	{
 		field: 'gap',
-		property: '--layout-gap',
 		modes: ['grid', 'flex'],
-		fallback: GAP_VALUES.md,
-		toCss: mapFrom(GAP_VALUES),
+		fallback: 'md',
+		classes: {
+			none: ['gap-0', 'md:gap-0', 'lg:gap-0', 'xl:gap-0'],
+			xs: ['gap-2', 'md:gap-2', 'lg:gap-2', 'xl:gap-2'],
+			sm: ['gap-4', 'md:gap-4', 'lg:gap-4', 'xl:gap-4'],
+			md: ['gap-6', 'md:gap-6', 'lg:gap-6', 'xl:gap-6'],
+			lg: ['gap-10', 'md:gap-10', 'lg:gap-10', 'xl:gap-10'],
+			xl: ['gap-16', 'md:gap-16', 'lg:gap-16', 'xl:gap-16'],
+		},
 	},
 ];
 
-/** Walks Base → md → lg → xl, carrying the last non-empty value forward. */
-const resolveBreakpointProperties = (blok, mode) => {
-	const properties = {};
-	for (const setting of SETTINGS) {
-		if (!setting.modes.includes(mode)) continue;
-		let carriedValue = setting.fallback;
-		for (const suffix of BREAKPOINT_SUFFIXES) {
-			carriedValue =
-				setting.toCss(blok[setting.field + suffix.field]) ?? carriedValue;
-			properties[setting.property + suffix.property] = carriedValue;
-		}
-	}
-	return properties;
+/**
+ * Classes every Layout of a mode gets. `min-w-0` stops a flex child's long
+ * content from overflowing the row.
+ */
+const MODE_CLASSES = {
+	grid: ['grid'],
+	flex: ['flex', '*:min-w-0'],
 };
+
+const classForValue = (setting, editorValue, breakpointIndex) =>
+	Object.hasOwn(setting.classes, editorValue)
+		? setting.classes[editorValue][breakpointIndex]
+		: undefined;
+
+const breakpointClasses = (blok, mode) =>
+	SETTINGS.filter((setting) => setting.modes.includes(mode)).flatMap(
+		(setting) =>
+			BREAKPOINT_FIELD_SUFFIXES.map((suffix, breakpointIndex) => {
+				const editorClass = classForValue(
+					setting,
+					blok[setting.field + suffix],
+					breakpointIndex,
+				);
+				if (editorClass || breakpointIndex > 0) return editorClass;
+				return classForValue(setting, setting.fallback, breakpointIndex);
+			}).filter(Boolean),
+	);
 
 const Layout = ({ blok, ...forwardedProps }) => {
 	const mode = pickMode(blok.mode) ?? 'grid';
@@ -124,8 +191,9 @@ const Layout = ({ blok, ...forwardedProps }) => {
 	return (
 		<div
 			{...storyblokEditable(blok)}
-			className={`layout layout--${mode}`}
-			style={resolveBreakpointProperties(blok, mode)}
+			className={[...MODE_CLASSES[mode], ...breakpointClasses(blok, mode)].join(
+				' ',
+			)}
 		>
 			{blok.items?.map((nestedBlok) => (
 				<StoryblokServerComponent

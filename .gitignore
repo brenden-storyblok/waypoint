@@ -44,3 +44,6 @@ yarn-error.log*
 next-env.d.ts
 
 certificates
+
+# Agent worktrees: other checkouts that Tailwind must not scan for classes
+.claude/worktrees/

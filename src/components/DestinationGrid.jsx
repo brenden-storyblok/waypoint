@@ -1,4 +1,3 @@
-import './DestinationGrid.css';
 import { Suspense } from 'react';
 import DestinationCard from './DestinationCard';
 import DestinationSearch from './DestinationSearch';
@@ -135,28 +134,29 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 	);
 
 	const section = (children) => (
-		<section
-			{...storyblokEditable(blok)}
-			className="wp-section destination-grid"
-		>
-			<div className="wp-wrap">{children}</div>
+		<section {...storyblokEditable(blok)} className="py-18">
+			<div className="mx-auto max-w-7xl px-gutter">{children}</div>
 		</section>
 	);
 
 	if (!search) {
 		return section(
 			<>
-				<div className="destination-grid__head">
+				<div className="mb-8 flex flex-wrap items-end justify-between gap-4">
 					{blok.headline && (
-						<h2 className="wp-section-title">{blok.headline}</h2>
+						<h2 className="font-display text-display leading-[1.05] font-extrabold tracking-[-0.01em] text-balance">
+							{blok.headline}
+						</h2>
 					)}
 					{destinations.length > 0 && (
-						<span className="destination-grid__count">
+						<span className="font-mono text-xs text-slate-500 dark:text-slate-300">
 							{placesLabel(searchResult)}
 						</span>
 					)}
 				</div>
-				<div className="destination-grid__cards">{destinations.map(card)}</div>
+				<div className="grid grid-cols-1 gap-x-6 gap-y-7 sm:grid-cols-2 md:grid-cols-3">
+					{destinations.map(card)}
+				</div>
 			</>,
 		);
 	}

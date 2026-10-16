@@ -37,9 +37,7 @@ describe('DestinationSearchView', () => {
 			clearHref: '?_storyblok=1',
 		});
 		expect(html).toContain('<p>No places match.</p>');
-		expect(html).toContain(
-			'<a class="btn btn--secondary btn--sm destination-grid__clear" href="?_storyblok=1">Clear all</a>',
-		);
+		expect(html).toMatch(/<a [^>]*href="\?_storyblok=1">Clear all<\/a>/);
 	});
 
 	it('shows Clear all as a button in the browser', () => {
@@ -50,9 +48,8 @@ describe('DestinationSearchView', () => {
 			choices,
 			handlers: { onText: noop, onToggle: noop, onClear: noop },
 		});
-		expect(html).toContain(
-			'<button type="button" class="btn btn--secondary btn--sm destination-grid__clear">Clear all</button>',
-		);
+		expect(html).toMatch(/<button type="button" [^>]*>Clear all<\/button>/);
+		expect(html).not.toContain('>Clear all</a>');
 	});
 
 	it('shows the matching cards and no Clear all', () => {

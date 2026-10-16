@@ -19,34 +19,30 @@ const lisbon = {
 describe('DestinationCard', () => {
 	it('links a Destination with a Destination Page to that page', () => {
 		const html = renderToStaticMarkup(
-			<DestinationCard destination={lisbon} href="/destinations/lisbon" />
+			<DestinationCard destination={lisbon} href="/destinations/lisbon" />,
 		);
-		expect(html).toBe(
-			'<a class="destination-grid__card" href="/destinations/lisbon">' +
-				'<div class="destination-grid__media">' +
-				'<img class="wp-img" src="https://a.storyblok.com/f/1/lisbon.jpg/m/800x1000/smart/filters:format(webp)" alt="Trams on a hill" loading="lazy"/>' +
-				'<small class="image-credit">© Jane Doe</small>' +
-				'</div>' +
-				'<div class="destination-grid__meta">' +
-				'<h3 class="destination-grid__name">Lisbon</h3>' +
-				'<span class="destination-grid__country">Portugal</span>' +
-				'</div>' +
-				'<span class="destination-grid__go">Explore Lisbon →</span>' +
-				'</a>'
+		expect(html).toMatch(/^<a [^>]*href="\/destinations\/lisbon">/);
+		expect(html).toMatch(/<\/a>$/);
+		expect(html).toMatch(
+			/<img [^>]*src="https:\/\/a.storyblok.com\/f\/1\/lisbon.jpg\/m\/800x1000\/smart\/filters:format\(webp\)" alt="Trams on a hill" loading="lazy"\/>/,
 		);
+		expect(html).toContain('© Jane Doe</small>');
+		expect(html).toMatch(/<h3 [^>]*>Lisbon<\/h3>/);
+		expect(html).toMatch(/<span [^>]*>Portugal<\/span>/);
+		expect(html).toContain('Explore Lisbon →</span>');
 	});
 
 	it('renders an unlinked card with no image when a Destination has neither', () => {
 		const html = renderToStaticMarkup(
-			<DestinationCard destination={{ uuid: 'x', name: 'Oslo', content: {} }} />
+			<DestinationCard
+				destination={{ uuid: 'x', name: 'Oslo', content: {} }}
+			/>,
 		);
-		expect(html).toBe(
-			'<div class="destination-grid__card">' +
-				'<div class="destination-grid__media"></div>' +
-				'<div class="destination-grid__meta">' +
-				'<h3 class="destination-grid__name">Oslo</h3>' +
-				'</div>' +
-				'</div>'
-		);
+		expect(html).toMatch(/^<div /);
+		expect(html).not.toContain('<a ');
+		expect(html).not.toContain('<img');
+		expect(html).not.toContain('<small');
+		expect(html).toMatch(/<h3 [^>]*>Oslo<\/h3>/);
+		expect(html).not.toContain('Explore');
 	});
 });
