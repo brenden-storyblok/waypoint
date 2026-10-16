@@ -35,6 +35,10 @@ _Avoid_: Query, keyword
 A Country or Destination Attribute a visitor selects to narrow the Destinations shown.
 _Avoid_: Facet, refinement
 
+**Carousel**:
+A single row of a Pool's Destinations that visitors swipe through. A Carousel always shows the whole Pool, so visitors cannot search or filter within it.
+_Avoid_: Slider, slideshow
+
 ### Page building
 
 **Section**:
