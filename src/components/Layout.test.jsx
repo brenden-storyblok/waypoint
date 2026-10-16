@@ -10,153 +10,181 @@ const layoutBlok = (fields = {}) => ({
 	...fields,
 });
 
-const freshGridStyle =
-	'--layout-columns:1;--layout-columns-md:1;--layout-columns-lg:1;--layout-columns-xl:1;' +
-	'--layout-align:stretch;--layout-align-md:stretch;--layout-align-lg:stretch;--layout-align-xl:stretch;' +
-	'--layout-gap:var(--space-md);--layout-gap-md:var(--space-md);--layout-gap-lg:var(--space-md);--layout-gap-xl:var(--space-md)';
-
-const freshFlexStyle =
-	'--layout-direction:row;--layout-direction-md:row;--layout-direction-lg:row;--layout-direction-xl:row;' +
-	'--layout-wrap:nowrap;--layout-wrap-md:nowrap;--layout-wrap-lg:nowrap;--layout-wrap-xl:nowrap;' +
-	'--layout-justify:start;--layout-justify-md:start;--layout-justify-lg:start;--layout-justify-xl:start;' +
-	'--layout-flex-align:stretch;--layout-flex-align-md:stretch;--layout-flex-align-lg:stretch;--layout-flex-align-xl:stretch;' +
-	'--layout-item-flex:0 1 auto;--layout-item-flex-md:0 1 auto;--layout-item-flex-lg:0 1 auto;--layout-item-flex-xl:0 1 auto;' +
-	'--layout-gap:var(--space-md);--layout-gap-md:var(--space-md);--layout-gap-lg:var(--space-md);--layout-gap-xl:var(--space-md)';
+/** The class list of the outermost Layout element. */
+const layoutClasses = (blok) => {
+	const html = renderToStaticMarkup(<Layout blok={blok} />);
+	const classAttribute = html.match(/^<div[^>]*\bclass="([^"]*)"/)?.[1] ?? '';
+	return classAttribute.split(/\s+/).filter(Boolean);
+};
 
 describe('Layout', () => {
-	it('renders a fresh Layout as a 1-column grid with the md gap', () => {
-		const html = renderToStaticMarkup(
-			<Layout blok={layoutBlok({ mode: 'grid' })} />,
-		);
-		expect(html).toBe(
-			`<div class="layout layout--grid" style="${freshGridStyle}"></div>`,
-		);
-	});
-
-	it('fills every Breakpoint with the Base values', () => {
-		const html = renderToStaticMarkup(
-			<Layout
-				blok={layoutBlok({
-					mode: 'grid',
-					grid_columns: '2',
-					grid_align: 'center',
-					gap: 'lg',
-				})}
-			/>,
-		);
-		expect(html).toContain(
-			'style="--layout-columns:2;--layout-columns-md:2;--layout-columns-lg:2;--layout-columns-xl:2;' +
-				'--layout-align:center;--layout-align-md:center;--layout-align-lg:center;--layout-align-xl:center;' +
-				'--layout-gap:var(--space-lg);--layout-gap-md:var(--space-lg);--layout-gap-lg:var(--space-lg);--layout-gap-xl:var(--space-lg)"',
-		);
-	});
-
-	it('lets an empty md inherit Base and carries an lg value through to xl', () => {
-		const html = renderToStaticMarkup(
-			<Layout
-				blok={layoutBlok({
-					mode: 'grid',
-					grid_columns: '1',
-					grid_columns_md: '',
-					grid_columns_lg: '3',
-					grid_columns_xl: '',
-				})}
-			/>,
-		);
-		expect(html).toContain(
-			'--layout-columns:1;--layout-columns-md:1;--layout-columns-lg:3;--layout-columns-xl:3;',
-		);
-	});
-
 	it.each([
-		['none', '0'],
-		['xs', 'var(--space-xs)'],
-		['sm', 'var(--space-sm)'],
-		['md', 'var(--space-md)'],
-		['lg', 'var(--space-lg)'],
-		['xl', 'var(--space-xl)'],
-	])('maps the %s gap to %s', (gap, cssValue) => {
-		const html = renderToStaticMarkup(
-			<Layout blok={layoutBlok({ gap_xl: gap })} />,
+		['grid_columns', '3', 'grid-cols-3'],
+		['grid_columns_md', '3', 'md:grid-cols-3'],
+		['grid_columns_lg', '5', 'lg:grid-cols-5'],
+		['grid_columns_xl', '6', 'xl:grid-cols-6'],
+	])('renders %s: %s as %s', (field, editorValue, expectedClass) => {
+		expect(
+			layoutClasses(layoutBlok({ mode: 'grid', [field]: editorValue })),
+		).toContain(expectedClass);
+	});
+
+	it('renders no lg: class for a setting left empty at lg', () => {
+		const classes = layoutClasses(
+			layoutBlok({ mode: 'grid', grid_columns: '2', grid_columns_lg: '' }),
 		);
-		expect(html).toContain(`--layout-gap-xl:${cssValue}"`);
+		expect(classes).toContain('grid-cols-2');
+		expect(classes.filter((className) => className.startsWith('lg:'))).toEqual(
+			[],
+		);
+	});
+
+	it('renders a fresh Layout as a 1-column grid with the md gap', () => {
+		const classes = layoutClasses(layoutBlok({ mode: 'grid' }));
+		expect(classes).toEqual(
+			expect.arrayContaining(['grid', 'grid-cols-1', 'items-stretch', 'gap-6']),
+		);
+		expect(classes.some((className) => className.includes(':'))).toBe(false);
 	});
 
 	it('falls back to grid for an empty or unknown mode', () => {
 		for (const mode of [undefined, '', 'masonry']) {
-			const html = renderToStaticMarkup(<Layout blok={layoutBlok({ mode })} />);
-			expect(html).toBe(
-				`<div class="layout layout--grid" style="${freshGridStyle}"></div>`,
+			const classes = layoutClasses(layoutBlok({ mode }));
+			expect(classes).toContain('grid');
+			expect(classes).not.toContain('flex');
+		}
+	});
+
+	it('falls back at Base and emits nothing at a Breakpoint for unknown values', () => {
+		const classes = layoutClasses(
+			layoutBlok({
+				mode: 'grid',
+				grid_columns: '9',
+				grid_columns_md: 'many',
+				grid_align: 'sideways',
+				gap: 'huge',
+				gap_xl: 'huge',
+			}),
+		);
+		expect(classes).toEqual(
+			expect.arrayContaining(['grid-cols-1', 'items-stretch', 'gap-6']),
+		);
+		expect(classes.some((className) => className.includes(':'))).toBe(false);
+	});
+
+	it.each([
+		['grid_align', 'center', 'items-center'],
+		['grid_align_md', 'start', 'md:items-start'],
+		['grid_align_xl', 'end', 'xl:items-end'],
+		['grid_align_lg', 'stretch', 'lg:items-stretch'],
+	])('renders %s: %s as %s', (field, editorValue, expectedClass) => {
+		expect(
+			layoutClasses(layoutBlok({ mode: 'grid', [field]: editorValue })),
+		).toContain(expectedClass);
+	});
+
+	it.each([
+		['none', 'gap-0'],
+		['xs', 'gap-2'],
+		['sm', 'gap-4'],
+		['md', 'gap-6'],
+		['lg', 'gap-10'],
+		['xl', 'gap-16'],
+	])('maps the %s gap to %s at every Breakpoint', (gap, gapClass) => {
+		for (const mode of ['grid', 'flex']) {
+			const classes = layoutClasses(
+				layoutBlok({ mode, gap, gap_md: gap, gap_lg: gap, gap_xl: gap }),
+			);
+			expect(classes).toEqual(
+				expect.arrayContaining([
+					gapClass,
+					`md:${gapClass}`,
+					`lg:${gapClass}`,
+					`xl:${gapClass}`,
+				]),
 			);
 		}
 	});
 
-	it('renders a fresh flex Layout as a content-sized row and ignores grid fields', () => {
-		const html = renderToStaticMarkup(
-			<Layout
-				blok={layoutBlok({
-					mode: 'flex',
-					grid_columns: '3',
-					grid_align: 'end',
-				})}
-			/>,
+	it('renders a fresh flex Layout as a content-sized, non-wrapping row', () => {
+		const classes = layoutClasses(layoutBlok({ mode: 'flex' }));
+		expect(classes).toEqual(
+			expect.arrayContaining([
+				'flex',
+				'flex-row',
+				'flex-nowrap',
+				'justify-start',
+				'items-stretch',
+				'*:flex-initial',
+				'*:min-w-0',
+				'gap-6',
+			]),
 		);
-		expect(html).toBe(
-			`<div class="layout layout--flex" style="${freshFlexStyle}"></div>`,
-		);
-	});
-
-	it('stacks at Base and carries an md row through lg and xl', () => {
-		const html = renderToStaticMarkup(
-			<Layout
-				blok={layoutBlok({
-					mode: 'flex',
-					flex_direction: 'column',
-					flex_direction_md: 'row',
-					flex_justify_lg: 'space-between',
-				})}
-			/>,
-		);
-		expect(html).toContain(
-			'--layout-direction:column;--layout-direction-md:row;--layout-direction-lg:row;--layout-direction-xl:row;',
-		);
-		expect(html).toContain(
-			'--layout-justify:start;--layout-justify-md:start;--layout-justify-lg:space-between;--layout-justify-xl:space-between;',
-		);
+		expect(
+			classes.filter((className) => /^(md|lg|xl):/.test(className)),
+		).toEqual([]);
 	});
 
 	it.each([
-		['content', '0 1 auto'],
-		['equal', '1 1 0'],
-	])('maps %s item sizing to flex: %s', (itemSizing, cssValue) => {
-		const html = renderToStaticMarkup(
-			<Layout
-				blok={layoutBlok({ mode: 'flex', flex_item_sizing_md: itemSizing })}
-			/>,
-		);
-		expect(html).toContain(`--layout-item-flex-md:${cssValue};`);
+		['flex_direction', 'column', 'flex-col'],
+		['flex_direction_md', 'row', 'md:flex-row'],
+		['flex_wrap', 'wrap', 'flex-wrap'],
+		['flex_wrap_lg', 'nowrap', 'lg:flex-nowrap'],
+		['flex_justify', 'center', 'justify-center'],
+		['flex_justify_md', 'end', 'md:justify-end'],
+		['flex_justify_lg', 'space-between', 'lg:justify-between'],
+		['flex_justify_xl', 'space-around', 'xl:justify-around'],
+		['flex_justify', 'space-evenly', 'justify-evenly'],
+		['flex_justify_md', 'start', 'md:justify-start'],
+		['flex_align', 'center', 'items-center'],
+		['flex_align_md', 'start', 'md:items-start'],
+		['flex_align_lg', 'end', 'lg:items-end'],
+		['flex_align_xl', 'stretch', 'xl:items-stretch'],
+		['flex_item_sizing', 'equal', '*:flex-1'],
+		['flex_item_sizing_md', 'equal', 'md:*:flex-1'],
+		['flex_item_sizing_xl', 'content', 'xl:*:flex-initial'],
+	])('renders %s: %s as %s', (field, editorValue, expectedClass) => {
+		expect(
+			layoutClasses(layoutBlok({ mode: 'flex', [field]: editorValue })),
+		).toContain(expectedClass);
 	});
 
-	it('leaves the flex settings out in grid mode', () => {
-		const html = renderToStaticMarkup(
-			<Layout
-				blok={layoutBlok({
-					mode: 'grid',
-					flex_direction: 'column',
-					flex_item_sizing: 'equal',
-				})}
-			/>,
+	it('ignores grid fields in flex mode', () => {
+		const classes = layoutClasses(
+			layoutBlok({ mode: 'flex', grid_columns: '3', grid_align_md: 'end' }),
 		);
-		expect(html).toBe(
-			`<div class="layout layout--grid" style="${freshGridStyle}"></div>`,
-		);
+		expect(classes).not.toContain('grid-cols-3');
+		expect(classes).not.toContain('md:items-end');
 	});
 
-	it('gives a nested Layout its own full set of properties', () => {
+	it('ignores flex fields in grid mode', () => {
+		const classes = layoutClasses(
+			layoutBlok({
+				mode: 'grid',
+				flex_direction: 'column',
+				flex_item_sizing: 'equal',
+			}),
+		);
+		expect(classes).not.toContain('flex-col');
+		expect(classes).not.toContain('*:flex-1');
+		expect(classes).not.toContain('*:min-w-0');
+	});
+
+	it('renders no inline style', () => {
+		const html = renderToStaticMarkup(
+			<Layout
+				blok={layoutBlok({ mode: 'flex', gap_md: 'lg', flex_wrap: 'wrap' })}
+			/>,
+		);
+		expect(html).not.toContain('style=');
+	});
+
+	it("renders only a nested Layout's own settings on it", () => {
 		const html = renderToStaticMarkup(
 			<Layout
 				blok={layoutBlok({
 					grid_columns_lg: '3',
+					gap: 'xl',
 					items: [
 						{
 							_uid: 'nested-layout-uid',
@@ -168,9 +196,14 @@ describe('Layout', () => {
 				})}
 			/>,
 		);
-		expect(html).toContain(
-			`<div class="layout layout--grid" style="${freshGridStyle}"></div></div>`,
+		const nestedClasses = html
+			.match(/<div[^>]*\bclass="([^"]*)"[^>]*><\/div><\/div>$/)?.[1]
+			.split(' ');
+		expect(nestedClasses).toEqual(
+			expect.arrayContaining(['grid', 'grid-cols-1', 'gap-6']),
 		);
+		expect(nestedClasses).not.toContain('lg:grid-cols-3');
+		expect(nestedClasses).not.toContain('gap-16');
 	});
 
 	it("forwards the page's Destination to its children", () => {
@@ -190,6 +223,6 @@ describe('Layout', () => {
 				searchParams={{ country: 'portugal' }}
 			/>,
 		);
-		expect(html).toContain('<h2 class="wp-section-title">About Lisbon</h2>');
+		expect(html).toContain('About Lisbon');
 	});
 });

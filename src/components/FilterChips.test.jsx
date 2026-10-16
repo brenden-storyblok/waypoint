@@ -15,27 +15,30 @@ describe('FilterChips', () => {
 				chips={chips}
 				selected={['greece']}
 				onToggle={() => {}}
-			/>
+			/>,
 		);
-		expect(html).toBe(
-			'<div class="filter-chips" role="group" aria-label="Country">' +
-				'<span class="filter-chips__heading" aria-hidden="true">Country</span>' +
-				'<button type="button" class="filter-chips__chip" aria-pressed="false">Italy</button>' +
-				'<button type="button" class="filter-chips__chip" aria-pressed="true">Greece</button>' +
-				'</div>'
+		expect(html).toMatch(/^<div [^>]*role="group" aria-label="Country">/);
+		expect(html).toMatch(/<span [^>]*aria-hidden="true">Country<\/span>/);
+		expect(html).toMatch(
+			/<button type="button" [^>]*aria-pressed="false">Italy<\/button>/,
+		);
+		expect(html).toMatch(
+			/<button type="button" [^>]*aria-pressed="true">Greece<\/button>/,
 		);
 	});
 
 	it('shows a group with a single chip', () => {
 		const html = renderToStaticMarkup(
-			<FilterChips heading="Country" chips={[chips[1]]} selected={[]} />
+			<FilterChips heading="Country" chips={[chips[1]]} selected={[]} />,
 		);
 		expect(html).toContain('aria-pressed="false">Greece</button>');
 	});
 
 	it('renders nothing when there are no chips', () => {
 		expect(
-			renderToStaticMarkup(<FilterChips heading="Country" chips={[]} selected={[]} />)
+			renderToStaticMarkup(
+				<FilterChips heading="Country" chips={[]} selected={[]} />,
+			),
 		).toBe('');
 	});
 });

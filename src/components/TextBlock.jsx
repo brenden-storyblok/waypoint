@@ -2,14 +2,18 @@ import {
 	storyblokEditable,
 	StoryblokServerRichText,
 } from '@storyblok/react/rsc';
-import './TextBlock.css';
+import { RICH_TEXT_CLASSES } from './richTextClasses';
 
 const TextBlock = ({ blok }) => (
-	<section {...storyblokEditable(blok)} className="text-block wp-section">
-		<div className="wp-wrap wp-split">
-			{blok.headline && <h2 className="wp-section-title">{blok.headline}</h2>}
+	<section {...storyblokEditable(blok)} className="py-18">
+		<div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-gutter md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] md:gap-12">
+			{blok.headline && (
+				<h2 className="font-display text-display leading-[1.05] font-extrabold tracking-[-0.01em] text-balance">
+					{blok.headline}
+				</h2>
+			)}
 			{blok.text && (
-				<div className="text-block__body wp-rich">
+				<div className={RICH_TEXT_CLASSES}>
 					<StoryblokServerRichText document={blok.text} />
 				</div>
 			)}
