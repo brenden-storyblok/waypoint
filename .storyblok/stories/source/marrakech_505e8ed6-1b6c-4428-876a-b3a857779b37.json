@@ -1,0 +1,293 @@
+{
+  "name": "Marrakech",
+  "parent_id": 230624344329791,
+  "group_id": "f5b49cc0-705b-441a-a78e-de11544545e7",
+  "alternates": [],
+  "created_at": "2026-10-15T14:19:14.591Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:19:14.656Z",
+  "published_at": "2026-10-15T14:19:14.637Z",
+  "id": 230950316444473,
+  "uuid": "505e8ed6-1b6c-4428-876a-b3a857779b37",
+  "is_folder": false,
+  "content": {
+    "_uid": "15af760f-8413-4023-9176-7a382f5cf0c0",
+    "name": "Marrakech",
+    "usps": [
+      {
+        "_uid": "a8a6925b-fcae-452e-8820-76cc7a790399",
+        "text": "Food stalls set up in the main square each evening, serving harira, snail broth and grilled merguez.",
+        "title": "Jemaa el-Fna after dark",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "680cdbcf-b08c-48d8-9b17-a9d2a1954155",
+        "text": "The 12th-century Almohad tower stands about 77 metres tall and served as a model for the Giralda in Seville.",
+        "title": "The Koutoubia minaret",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "e3b5d103-8103-4139-b505-a4b762903534",
+        "text": "This 16th-century Saadian college of carved cedar and zellige once housed up to 900 students.",
+        "title": "Ben Youssef Madrasa",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "5b123b04-aae6-4167-a70f-429a4065bc8f",
+        "text": "The stony Agafay desert lies about 40 km southwest, close enough for a night in a desert camp.",
+        "title": "Desert on the doorstep",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Marrakech-Safi",
+    "country": "morocco",
+    "gallery": [
+      {
+        "id": 230949952216121,
+        "alt": "Crowds and food stalls fill Jemaa el-Fna square below terracotta rooftops at sunset.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/6f067607b6/marrakech-jemaa-el-fna.jpg",
+        "copyright": "CALIN STAN / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1507"
+        }
+      },
+      {
+        "id": 230949948046392,
+        "alt": "Cones of ground spices, jars and hanging dried herbs fill a market stall in the medina.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/844ad69d83/marrakech-spices.jpg",
+        "copyright": "zakariae daoui / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3200"
+        }
+      },
+      {
+        "id": 230949957274682,
+        "alt": "Shoppers walk a shaded souk lane lined with paintings, lanterns and hanging textiles.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/433dc3b041/marrakech-souk.jpg",
+        "copyright": "Esteban Palacios Blanco / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1596"
+        }
+      },
+      {
+        "id": 230949961837627,
+        "alt": "Visitors stand by a reflecting pool in a courtyard of carved stucco, cedar wood and zellige tiles.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/eb4daa2d35/marrakech-madrasa.jpg",
+        "copyright": "Abdou Faiz / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1602"
+        }
+      },
+      {
+        "id": 230949965876284,
+        "alt": "A white fountain stands in a tiled courtyard framed by green latticed arches and orange trees.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/906acf56e3/marrakech-courtyard.jpg",
+        "copyright": "Oussama sabri / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1976"
+        }
+      }
+    ],
+    "summary": "Red walls, rooftop terraces and the snowy Atlas on the skyline. Spend the day in the souks and the evening at the grill stalls of Jemaa el-Fna.",
+    "component": "destination",
+    "attributes": [
+      "city",
+      "culture",
+      "food",
+      "desert"
+    ],
+    "hero_image": {
+      "id": 230949943929911,
+      "alt": "The Koutoubia minaret rises over the city's red rooftops with the snow-covered High Atlas behind.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/7cee2fb4fd/marrakech-koutoubia-atlas.jpg",
+      "copyright": "Paul Macallan / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1596"
+      }
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Marrakech sits on the Haouz plain at the foot of the High Atlas, about 240 km south of Casablanca. On clear winter days Jebel Toubkal, at 4,167 metres the highest peak in North Africa, shows white above the city.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The Almoravids founded the city around 1070 and built its red earthen walls. The Almohads raised the Koutoubia minaret a century later. The medina has been a UNESCO World Heritage Site since 1985, and its souks still sort by trade: dyers, metalworkers, leather and spice sellers.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "March to May and October to November bring warm days, while July and August often pass 40°C. Carry small change in dirhams for stalls, taxis and tips.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230949948046392,
+      "alt": "Cones of ground spices, jars and hanging dried herbs fill a market stall in the medina.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/844ad69d83/marrakech-spices.jpg",
+      "copyright": "zakariae daoui / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x3200"
+      }
+    },
+    "image_landscape": {
+      "id": 230949952216121,
+      "alt": "Crowds and food stalls fill Jemaa el-Fna square below terracotta rooftops at sunset.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/6f067607b6/marrakech-jemaa-el-fna.jpg",
+      "copyright": "CALIN STAN / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1507"
+      }
+    }
+  },
+  "published": true,
+  "slug": "marrakech",
+  "path": null,
+  "full_slug": "data/destinations/marrakech",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "caa2aadceeac380918a2d2012a5809b9091612c5",
+    "timestamp": "1792592500"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:19:14.637Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/marrakech",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/marrakech",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/marrakech",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -80,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230950316534782,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

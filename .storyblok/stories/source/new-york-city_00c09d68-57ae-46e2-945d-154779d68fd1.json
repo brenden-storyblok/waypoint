@@ -1,0 +1,292 @@
+{
+  "name": "New York City",
+  "parent_id": 230624344329791,
+  "group_id": "6e1e1f6a-30d1-4a4f-8e2a-2c38cfc74299",
+  "alternates": [],
+  "created_at": "2026-10-15T14:21:38.613Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:21:38.680Z",
+  "published_at": "2026-10-15T14:21:38.661Z",
+  "id": 230950906354539,
+  "uuid": "00c09d68-57ae-46e2-945d-154779d68fd1",
+  "is_folder": false,
+  "content": {
+    "_uid": "02428e0f-9f52-49dc-9bc6-7405ab56e633",
+    "name": "New York City",
+    "usps": [
+      {
+        "_uid": "14b185d1-c825-4c2d-8971-7907d34ee709",
+        "text": "The 843-acre park runs 51 blocks from 59th Street to 110th Street.",
+        "title": "Central Park in the middle",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "c34aaf26-bcac-4db9-a96e-1955f8ccb25e",
+        "text": "The 1883 bridge has a raised walkway over the East River with views of Lower Manhattan.",
+        "title": "Walk the Brooklyn Bridge",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "4e74b32f-6101-4ac5-bdaf-caf9a40a596c",
+        "text": "The 41 Broadway theatres around Times Square stage shows eight times a week.",
+        "title": "Broadway after dark",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "380f9f5d-687d-4f6c-a09f-7cd411a96f83",
+        "text": "Eat dumplings in Flushing, arepas in Jackson Heights and pastrami at Katz's, open since 1888.",
+        "title": "A food map of the world",
+        "component": "usp_item"
+      }
+    ],
+    "region": "New York",
+    "country": "united-states",
+    "gallery": [
+      {
+        "id": 230950458920105,
+        "alt": "Lower Manhattan towers lit at dusk behind a Brooklyn Bridge tower, with a ferry crossing the East River.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/2622a7a0cb/new-york-city-brooklyn-bridge.jpg",
+        "copyright": "Luca Bravo / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230950527012017,
+        "alt": "Aerial view south over Central Park's lake and Sheep Meadow toward the Midtown towers and the Hudson River.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/45834170fb/new-york-city-central-park.jpg",
+        "copyright": "Jermaine Ee / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1601"
+        }
+      },
+      {
+        "id": 230950592515258,
+        "alt": "Pedestrians cross a Times Square crosswalk under giant billboards as the sun sets down 42nd Street.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/982bad0ca3/new-york-city-times-square.jpg",
+        "copyright": "Luca Bravo / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230950665022657,
+        "alt": "The Manhattan Bridge tower framed between red brick warehouses on a cobbled Washington Street in Dumbo.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/77ce3dc047/new-york-city-manhattan-bridge.jpg",
+        "copyright": "Redd Francisco / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1350"
+        }
+      },
+      {
+        "id": 230950731881670,
+        "alt": "A yellow cab drives down tree-lined 42nd Street toward the Chrysler Building's steel spire.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/9bd2991340/new-york-city-yellow-cab.jpg",
+        "copyright": "Robert Bye / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3606"
+        }
+      }
+    ],
+    "summary": "Five boroughs, 472 subway stations and a skyline you already know from films. Eat a slice on the street, then walk the Brooklyn Bridge at dusk.",
+    "component": "destination",
+    "attributes": [
+      "city",
+      "culture",
+      "food"
+    ],
+    "hero_image": {
+      "id": 230950381472916,
+      "alt": "Lower Manhattan skyline with One World Trade Center rising behind the Brooklyn Bridge and the East River.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/4c95a2b8bc/new-york-city-skyline.jpg",
+      "copyright": "Patrick Tomasso / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1599"
+      }
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "New York City sits where the Hudson River meets the Atlantic, spread across five boroughs on islands and the mainland. Manhattan is about 21 km long and runs on a street grid laid out in 1811.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The Dutch built New Amsterdam on the tip of Manhattan, and the English renamed it New York in 1664. More than 12 million immigrants passed through Ellis Island between 1892 and 1954. Bagels, pastrami on rye and the dollar slice came with them.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Late April to June and September to early November bring mild weather. Book Statue of Liberty crown tickets well ahead, as they sell out months in advance.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230950731881670,
+      "alt": "A yellow cab drives down tree-lined 42nd Street toward the Chrysler Building's steel spire.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/9bd2991340/new-york-city-yellow-cab.jpg",
+      "copyright": "Robert Bye / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x3606"
+      }
+    },
+    "image_landscape": {
+      "id": 230950527012017,
+      "alt": "Aerial view south over Central Park's lake and Sheep Meadow toward the Midtown towers and the Hudson River.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/45834170fb/new-york-city-central-park.jpg",
+      "copyright": "Jermaine Ee / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1601"
+      }
+    }
+  },
+  "published": true,
+  "slug": "new-york-city",
+  "path": null,
+  "full_slug": "data/destinations/new-york-city",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "1c6ee6c384e2502d103e10e793d5c19576df78ad",
+    "timestamp": "1792592499"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:21:38.661Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/new-york-city",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/new-york-city",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/new-york-city",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -110,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230950906445804,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

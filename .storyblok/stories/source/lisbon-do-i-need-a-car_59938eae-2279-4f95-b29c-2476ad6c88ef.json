@@ -1,0 +1,151 @@
+{
+  "name": "Do I need a car in Lisbon?",
+  "parent_id": 230624347930176,
+  "group_id": "f51c935e-83a3-497c-8377-fd455caccd4a",
+  "alternates": [],
+  "created_at": "2026-10-14T16:22:00.327Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T08:00:36.499Z",
+  "published_at": "2026-10-15T08:00:36.161Z",
+  "id": 230626592093382,
+  "uuid": "59938eae-2279-4f95-b29c-2476ad6c88ef",
+  "is_folder": false,
+  "content": {
+    "_uid": "b0e717e1-86c6-47ca-86a4-81470b77ccc6",
+    "answer": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "No. The metro, trams and suburban trains reach everything in the city and along the coast.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question": "Do I need a car?",
+    "component": "faq_item"
+  },
+  "published": true,
+  "slug": "lisbon-do-i-need-a-car",
+  "path": null,
+  "full_slug": "data/faqs/lisbon-do-i-need-a-car",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624347930176,
+    "uuid": "684d4de1-a03c-4454-9b91-22940d23aff3",
+    "name": "FAQs",
+    "slug": "faqs",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "40982a284b433403eebb5db763e9d1b488336fed",
+    "timestamp": "1792592504"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624347930176,
+      "name": "FAQs",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "faqs",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:36.161Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/faqs/lisbon-do-i-need-a-car",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/faqs/lisbon-do-i-need-a-car",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/faqs/lisbon-do-i-need-a-car",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -10,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230857263009097,
+  "variant_type": null,
+  "taxonomy_terms": [
+    {
+      "id": "230846207203379",
+      "display_name": "Lisbon",
+      "name": "lisbon",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    },
+    {
+      "id": "230845758261298",
+      "display_name": "Portugal",
+      "name": "portugal",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    }
+  ],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

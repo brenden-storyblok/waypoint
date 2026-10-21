@@ -1,0 +1,253 @@
+{
+  "name": "About",
+  "parent_id": 0,
+  "group_id": "d14cad88-10b8-49a1-8d1e-1e3916937aa3",
+  "alternates": [],
+  "created_at": "2026-10-16T13:29:47.858Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-16T13:49:10.469Z",
+  "published_at": "2026-10-16T13:49:10.456Z",
+  "id": 231292059093148,
+  "uuid": "19156863-9c7f-465b-b7f3-8aa6c1da24e1",
+  "is_folder": false,
+  "content": {
+    "_uid": "382508f4-5cf2-4927-a8a3-08bff2cf19a7",
+    "body": [
+      {
+        "cta": [
+          {
+            "_uid": "9e1fb482-96f6-4bd2-9040-cc98d653dd8e",
+            "link": {
+              "id": "dbcf6ae6-1dac-40d6-ac76-446831ff5ddd",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "destinations/"
+            },
+            "label": "Browse destinations",
+            "variant": "primary",
+            "component": "button"
+          }
+        ],
+        "_uid": "660a5ebe-9ddc-47ec-89d6-c80a3b846a15",
+        "image": {
+          "id": 230952146218372,
+          "alt": "White paper lanterns hang in front of the gold-topped brick chedi at Wat Chiang Man under a blue sky.",
+          "name": "",
+          "focus": "",
+          "title": "Wat Chiang Man lanterns",
+          "source": "",
+          "filename": "https://a.storyblok.com/f/295888311565739/177dde3808/chiang-mai-yellow.jpg",
+          "copyright": "cheese yang / Unsplash",
+          "fieldtype": "asset",
+          "meta_data": {
+            "size": "2400x1600"
+          },
+          "is_external_url": false
+        },
+        "intro": "An editorial travel guide to places worth a second trip.",
+        "headline": "About Waypoint",
+        "component": "hero"
+      },
+      {
+        "_uid": "2c0c4883-882d-4292-9a41-5a07265b9764",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Waypoint is an editorial guide. Our editors describe each destination once, with what a traveller needs to plan a visit: when to go, where to stay and how to get around.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "We do not sell trips. You plan and book with whoever you choose.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "Who we are",
+        "component": "text_block"
+      },
+      {
+        "_uid": "a1bd5df7-ba08-44c7-80bf-348d6fcf3c8b",
+        "body": [
+          {
+            "_uid": "72c43ed6-dee6-4bcc-a891-07c8e1a6b8e7",
+            "link": {
+              "id": "f09756a9-ca01-4082-b9de-fd7b21256a9d",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "inspiration"
+            },
+            "label": "Get inspired",
+            "variant": "primary",
+            "component": "button"
+          }
+        ],
+        "padding": "compact",
+        "headline": "Not sure where to go?",
+        "component": "section",
+        "background": "accent",
+        "headline_position": "start"
+      },
+      {
+        "_uid": "9dd62064-f365-49cb-a2fc-f14497f94d2a",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Our editors pick places they have visited in more than one season. We add a destination only after it has earned a second trip.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "How we choose destinations",
+        "component": "text_block"
+      },
+      {
+        "_uid": "b0a6ece3-a4a3-4faf-91b4-6ff19cb91d3a",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Waypoint marks any partner link on the page, so you can see it before you click.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "How we stay independent",
+        "component": "text_block"
+      },
+      {
+        "_uid": "138537e0-b831-47cf-bf3d-c5281c141c67",
+        "body": [
+          {
+            "_uid": "20a50bbd-37d2-4547-8600-55336e181a3c",
+            "link": {
+              "id": "dbcf6ae6-1dac-40d6-ac76-446831ff5ddd",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "destinations/"
+            },
+            "label": "Search destinations",
+            "variant": "primary",
+            "component": "button"
+          }
+        ],
+        "padding": "compact",
+        "headline": "Already have a place in mind?",
+        "component": "section",
+        "background": "inverse",
+        "headline_position": "start"
+      },
+      {
+        "_uid": "1c92f0f5-2946-45b6-b600-0ee8edfd9b93",
+        "body": [
+          {
+            "_uid": "5ad205c7-0d97-40f6-855f-c70c4969cb42",
+            "link": {
+              "id": "080548ac-4979-4f3b-abf4-4e99252b1edb",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "help"
+            },
+            "label": "Visit Help",
+            "variant": "secondary",
+            "component": "button"
+          }
+        ],
+        "padding": "compact",
+        "headline": "Have a question?",
+        "component": "section",
+        "background": "surface",
+        "headline_position": "start"
+      }
+    ],
+    "component": "page"
+  },
+  "published": true,
+  "slug": "about",
+  "path": null,
+  "full_slug": "about",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": null,
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "64feb09f487e6210a422038da98f79f53180e644",
+    "timestamp": "1792592501"
+  },
+  "pinned": false,
+  "breadcrumbs": [],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-16T13:49:10.456Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "about",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "about",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "about",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -50,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 231296820875386,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

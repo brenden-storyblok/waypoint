@@ -1,0 +1,292 @@
+{
+  "name": "Yellowstone",
+  "parent_id": 230624344329791,
+  "group_id": "b3a48236-9334-47f6-ac88-6082c11f63ac",
+  "alternates": [],
+  "created_at": "2026-10-15T14:20:15.908Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:20:15.962Z",
+  "published_at": "2026-10-15T14:20:15.948Z",
+  "id": 230950567586648,
+  "uuid": "587a27e4-1102-4b95-a9f2-8c4149098f37",
+  "is_folder": false,
+  "content": {
+    "_uid": "037b15be-6310-4843-9561-ea9cc54cd11d",
+    "name": "Yellowstone",
+    "usps": [
+      {
+        "_uid": "58c4d754-1db4-4eb3-8008-0f25d73c7ca1",
+        "text": "The park holds about 500 active geysers, from Old Faithful to the rarely erupting Steamboat.",
+        "title": "Half the world's geysers",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "eed89879-195c-4875-ab8e-60ba75259c05",
+        "text": "The largest hot spring in the United States is about 110 metres across, ringed in orange and yellow microbial mats.",
+        "title": "Grand Prismatic Spring",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "ad41b139-89f7-4013-98c3-c2d97612d287",
+        "text": "Yellowstone is the only place in the United States where bison have lived continuously since prehistoric times.",
+        "title": "Wild bison herds",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "e4a0461d-0930-4c73-b2fc-3c898fbbc5e4",
+        "text": "Wolves reintroduced in 1995 roam the Lamar Valley, best watched at dawn with a spotting scope.",
+        "title": "Wolves in the Lamar Valley",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Wyoming",
+    "country": "united-states",
+    "gallery": [
+      {
+        "id": 230950114208865,
+        "alt": "Grand Prismatic Spring seen from above, a deep blue pool ringed by yellow and orange bands of bacterial mats.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/33626db3ba/yellowstone-prismatic.jpg",
+        "copyright": "Denys Nevozhai / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1599"
+        }
+      },
+      {
+        "id": 230950132587622,
+        "alt": "A lone bison grazes golden grassland beside a calm river, with snow-capped peaks beyond the pine forest.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/fd00a25069/yellowstone-meadow.jpg",
+        "copyright": "Steven Cordes / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3600"
+        }
+      },
+      {
+        "id": 230950118882402,
+        "alt": "A rainbow hangs in the spray above the Yellowstone River as it cuts through steep yellow and pink canyon walls.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/92c2745812/yellowstone-river.jpg",
+        "copyright": "Austin Farrington / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230950123531363,
+        "alt": "A bull elk with wide antlers rests in tall grass among fallen logs and lodgepole pines.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/bcf4f96642/yellowstone-elk.jpg",
+        "copyright": "Harrison Hargrave / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230950128528484,
+        "alt": "A clear river bends through grass meadows below pine-covered hills and rocky slopes.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/38e92901ce/yellowstone-lake.jpg",
+        "copyright": "Austin Farrington / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      }
+    ],
+    "summary": "Geysers, boiling springs and a canyon the colour of its name. Bison herds still graze where they have for thousands of years.",
+    "component": "destination",
+    "attributes": [
+      "nature",
+      "wildlife",
+      "mountains"
+    ],
+    "hero_image": {
+      "id": 230950109854814,
+      "alt": "The Lower Falls of the Yellowstone River pour between yellow canyon walls and pine trees under a blue sky.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/d462a0c234/yellowstone-falls.jpg",
+      "copyright": "Laura Seaman / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1600"
+      }
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Yellowstone sits on a high volcanic plateau in the north-west corner of Wyoming, with edges reaching into Montana and Idaho. A supervolcano's caldera lies beneath it and feeds more than 10,000 hydrothermal features, including about half of the world's geysers.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "In 1872 Congress made Yellowstone the world's first national park. Old Faithful erupts roughly every 90 minutes, and the Yellowstone River drops 94 metres at the Lower Falls into a canyon of yellow rock. Gray wolves returned to the park in 1995 and now hunt elk across the Lamar Valley.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Most park roads open from late April to early November. June and September bring open roads with thinner crowds. Stay on the boardwalks in the geyser basins, where the crust over boiling water can be thin.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230950132587622,
+      "alt": "A lone bison grazes golden grassland beside a calm river, with snow-capped peaks beyond the pine forest.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/fd00a25069/yellowstone-meadow.jpg",
+      "copyright": "Steven Cordes / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x3600"
+      }
+    },
+    "image_landscape": {
+      "id": 230950118882402,
+      "alt": "A rainbow hangs in the spray above the Yellowstone River as it cuts through steep yellow and pink canyon walls.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/92c2745812/yellowstone-river.jpg",
+      "copyright": "Austin Farrington / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1600"
+      }
+    }
+  },
+  "published": true,
+  "slug": "yellowstone",
+  "path": null,
+  "full_slug": "data/destinations/yellowstone",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "caa2aadceeac380918a2d2012a5809b9091612c5",
+    "timestamp": "1792592500"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:20:15.948Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/yellowstone",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/yellowstone",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/yellowstone",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -90,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230950567669191,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

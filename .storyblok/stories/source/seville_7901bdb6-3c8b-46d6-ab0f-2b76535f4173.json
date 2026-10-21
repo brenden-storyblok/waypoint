@@ -1,0 +1,293 @@
+{
+  "name": "Seville",
+  "parent_id": 230624344329791,
+  "group_id": "ae05e4ce-581e-46c9-a440-035818d8334a",
+  "alternates": [],
+  "created_at": "2026-10-15T07:21:10.150Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T12:26:01.869Z",
+  "published_at": "2026-10-15T12:26:01.836Z",
+  "id": 230847570557659,
+  "uuid": "7901bdb6-3c8b-46d6-ab0f-2b76535f4173",
+  "is_folder": false,
+  "content": {
+    "_uid": "6a1c0b52-3f1e-4d8e-9a77-1b2c3d4e6001",
+    "name": "Seville",
+    "usps": [
+      {
+        "_uid": "6a1c0b52-3f1e-4d8e-9a77-1b2c3d4e6101",
+        "text": "The royal palace mixes Moorish and Christian styles, with courtyards, tilework and gardens. Spain's royal family still uses part of it.",
+        "title": "The Real Alcázar",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "6a1c0b52-3f1e-4d8e-9a77-1b2c3d4e6102",
+        "text": "Bars across the river from the centre serve small plates at the counter. Order a few at a time.",
+        "title": "Tapas in Triana",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "6a1c0b52-3f1e-4d8e-9a77-1b2c3d4e6103",
+        "text": "Small tablaos in the old town stage guitar, song and dance in rooms that seat a few dozen.",
+        "title": "Flamenco up close",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "6a1c0b52-3f1e-4d8e-9a77-1b2c3d4e6104",
+        "text": "A brick semicircle with a canal, rowing boats and tiled benches for each Spanish province.",
+        "title": "Plaza de España",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Andalusia",
+    "country": "spain",
+    "gallery": [
+      {
+        "id": 230846329492099,
+        "alt": "Gilded domed ceiling and carved walls inside the Real Alcázar",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/eb08e31b18/seville-alcazar-dome.jpg",
+        "copyright": "Tom Podmore / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230846334292614,
+        "alt": "The wooden Metropol Parasol structure against a blue sky",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/7c0824acb8/seville-metropol-parasol.jpg",
+        "copyright": "Freysteinn G. Jonsson / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1623"
+        }
+      },
+      {
+        "id": 230846337782407,
+        "alt": "Yellow and white buildings along the Guadalquivir riverbank in Triana",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/06468980ba/seville-triana-river.jpg",
+        "copyright": "Taisia Karaseva / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1580"
+        }
+      },
+      {
+        "id": 230846321070719,
+        "alt": "The Giralda bell tower seen between two narrow buildings",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/f38fc2a785/seville-giralda-tower.jpg",
+        "copyright": "Alex Robertson / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3600"
+        }
+      },
+      {
+        "id": 230846325334658,
+        "alt": "The Giralda and Seville Cathedral rising above rooftops at sunset",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/39c59a5b25/seville-giralda-cathedral.jpg",
+        "copyright": "Henrique Ferreira / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      }
+    ],
+    "summary": "Orange trees, tiled courtyards and a Moorish palace in the heart of Andalusia. A city built for slow evenings.",
+    "component": "destination",
+    "attributes": [
+      "city",
+      "culture",
+      "food"
+    ],
+    "hero_image": {
+      "id": 230846316913277,
+      "alt": "Tower and canal at Plaza de España in Seville, reflected in the water",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/3f0279dc90/seville-plaza-espana-canal.jpg",
+      "copyright": "Taisia Karaseva / Unsplash",
+      "fieldtype": "asset"
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Seville sits on the banks of the Guadalquivir in southern Spain. It is the capital of Andalusia and one of the warmest cities in Europe.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Moorish builders left the Real Alcázar and the Giralda, which began as a minaret and now serves as the cathedral bell tower. Plaza de España came later, built for the 1929 Ibero-American Exposition. Across the river, Triana keeps its own tapas bars and ceramic workshops.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Spring and autumn suit walking. Summer afternoons are hot, so the city keeps late hours and eats dinner after 9 pm.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230846321070719,
+      "alt": "The Giralda bell tower seen between two narrow buildings",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/f38fc2a785/seville-giralda-tower.jpg",
+      "copyright": "Alex Robertson / Unsplash",
+      "fieldtype": "asset"
+    },
+    "image_landscape": {
+      "id": 230846325334658,
+      "alt": "The Giralda and Seville Cathedral rising above rooftops at sunset",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/39c59a5b25/seville-giralda-cathedral.jpg",
+      "copyright": "Henrique Ferreira / Unsplash",
+      "fieldtype": "asset"
+    }
+  },
+  "published": true,
+  "slug": "seville",
+  "path": null,
+  "full_slug": "data/destinations/seville",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "37120912aeebad9eab55de18e9eee6460c1efc49",
+    "timestamp": "1792592502"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:36.161Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/seville",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/seville",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/seville",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -50,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230922493042855,
+  "variant_type": null,
+  "taxonomy_terms": [
+    {
+      "id": "230850638682164",
+      "display_name": "Spain",
+      "name": "spain",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    }
+  ],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

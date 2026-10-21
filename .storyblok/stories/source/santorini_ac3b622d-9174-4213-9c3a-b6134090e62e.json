@@ -1,0 +1,292 @@
+{
+  "name": "Santorini",
+  "parent_id": 230624344329791,
+  "group_id": "9cc6ad49-5f54-459a-88bc-66185fbcd348",
+  "alternates": [],
+  "created_at": "2026-10-15T07:17:57.887Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T12:27:19.515Z",
+  "published_at": "2026-10-15T12:27:19.492Z",
+  "id": 230846783052449,
+  "uuid": "ac3b622d-9174-4213-9c3a-b6134090e62e",
+  "is_folder": false,
+  "content": {
+    "_uid": "7a2d9c10-5e0b-4c11-8a31-1b0f6d2e4c01",
+    "name": "Santorini",
+    "usps": [
+      {
+        "_uid": "7a2d9c10-5e0b-4c11-8a31-1b0f6d2e4c11",
+        "text": "The caldera path links the two towns along the cliff edge. Plan on about three hours one way.",
+        "title": "Fira to Oia on foot",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "7a2d9c10-5e0b-4c11-8a31-1b0f6d2e4c12",
+        "text": "Red Beach, Perissa and Kamari have red, black and dark sand shaped by the volcano.",
+        "title": "Volcanic beaches",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "7a2d9c10-5e0b-4c11-8a31-1b0f6d2e4c13",
+        "text": "Vines grow in low baskets on volcanic soil. Several wineries pour tastings with caldera views.",
+        "title": "Assyrtiko wine",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "7a2d9c10-5e0b-4c11-8a31-1b0f6d2e4c14",
+        "text": "Volcanic ash preserved a Bronze Age settlement. Its multi-storey houses still stand under a covered roof.",
+        "title": "Akrotiri, the buried town",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Cyclades",
+    "country": "greece",
+    "gallery": [
+      {
+        "id": 230846320738942,
+        "alt": "Two blue church domes and white houses in Oia above the deep blue caldera",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/217473e405/santorini-oia-blue-domes.jpg",
+        "copyright": "Matthew Waring / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3600"
+        }
+      },
+      {
+        "id": 230846325207681,
+        "alt": "White houses stacked on the cliff in Oia in late light, with a windmill on the skyline",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/7223cd30f8/santorini-caldera-calm.jpg",
+        "copyright": "Jaime Arrieta / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3600"
+        }
+      },
+      {
+        "id": 230846329668228,
+        "alt": "Cliffside houses in Oia stepping down toward the castle ruins and the caldera",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/fe376fca5e/santorini-oia-castle-ruins.jpg",
+        "copyright": "Dawid Tkocz / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230846334071429,
+        "alt": "Red volcanic rocks above Red Beach, with catamarans anchored in the bay",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/85ce2957aa/santorini-red-beach.jpg",
+        "copyright": "Ronak Mokashi / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230846337782408,
+        "alt": "Blue dome and white drum of a church in Oia with bougainvillea and the caldera behind",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/84f36ed3c2/santorini-oia-church-dome.jpg",
+        "copyright": "Tamal Mukhopadhyay / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3600"
+        }
+      }
+    ],
+    "summary": "A crescent of white villages on the rim of a flooded volcano. The cliffs drop straight into the caldera.",
+    "component": "destination",
+    "attributes": [
+      "beach",
+      "island"
+    ],
+    "hero_image": {
+      "id": 230846316339836,
+      "alt": "Blue-domed church in Oia above the caldera, with the cliffs of the island across the water",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/1b58fd1d72/santorini-oia-harbor.jpg",
+      "copyright": "Raimond Klavins / Unsplash",
+      "fieldtype": "asset"
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Santorini is the curved remnant of a volcano in the southern Cyclades. A huge eruption in the Bronze Age collapsed the centre and left a caldera, now filled by the sea.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Fira, Imerovigli and Oia line the cliff edge. Their white houses and blue church domes face the caldera. On the outer coast, the beaches are black, red or white volcanic sand and pebbles.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "May, June, September and October bring warm sea and fewer people. Oia is busiest at sunset, so book dinner ahead.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230846320738942,
+      "alt": "Two blue church domes and white houses in Oia above the deep blue caldera",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/217473e405/santorini-oia-blue-domes.jpg",
+      "copyright": "Matthew Waring / Unsplash",
+      "fieldtype": "asset"
+    },
+    "image_landscape": {
+      "id": 230846334071429,
+      "alt": "Red volcanic rocks above Red Beach, with catamarans anchored in the bay",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/85ce2957aa/santorini-red-beach.jpg",
+      "copyright": "Ronak Mokashi / Unsplash",
+      "fieldtype": "asset"
+    }
+  },
+  "published": true,
+  "slug": "santorini",
+  "path": null,
+  "full_slug": "data/destinations/santorini",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "40982a284b433403eebb5db763e9d1b488336fed",
+    "timestamp": "1792592504"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:36.161Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/santorini",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/santorini",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/santorini",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -10,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230922811212231,
+  "variant_type": null,
+  "taxonomy_terms": [
+    {
+      "id": "230851230324796",
+      "display_name": "Greece",
+      "name": "greece",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    }
+  ],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

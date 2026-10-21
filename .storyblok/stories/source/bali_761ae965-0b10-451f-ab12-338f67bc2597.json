@@ -1,0 +1,293 @@
+{
+  "name": "Bali",
+  "parent_id": 230624344329791,
+  "group_id": "cba53699-6f83-405c-b8f1-f0c319f89793",
+  "alternates": [],
+  "created_at": "2026-10-15T14:24:02.861Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-16T08:35:52.862Z",
+  "published_at": "2026-10-16T08:35:52.847Z",
+  "id": 230951497182425,
+  "uuid": "761ae965-0b10-451f-ab12-338f67bc2597",
+  "is_folder": false,
+  "content": {
+    "_uid": "e332c5b6-16e3-4e36-ab40-68c49df12ce6",
+    "name": "Bali",
+    "usps": [
+      {
+        "_uid": "277268d8-81e0-4cfc-a8bf-d6f86e43add7",
+        "text": "Tanah Lot stands on a rock in the surf, and Ulun Danu Bratan's shrines sit on the edge of a crater lake.",
+        "title": "Temples on the water",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "2792194e-fde8-4981-9f4d-e7d61a931e93",
+        "text": "The water-sharing system behind Jatiluwih and Tegallalang dates back more than a thousand years.",
+        "title": "Terraces shaped by subak",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "beb4c78a-1212-4263-b829-14b083ac002e",
+        "text": "Legong and Kecak performances run most evenings in Ubud's palace and temple courtyards.",
+        "title": "Ubud's dance stages",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "c09d3ffc-d4b8-4e3a-8766-d25583795163",
+        "text": "Fast boats from Sanur reach the cliffs and coves of Nusa Penida in under an hour.",
+        "title": "Nusa Penida by boat",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Lesser Sunda Islands",
+    "country": "indonesia",
+    "gallery": [
+      {
+        "id": 230951158406399,
+        "alt": "Tanah Lot temple sits on a rock outcrop above wet tidal flats as the sun sets behind it.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/e496506303/bali-tanah-lot.jpg",
+        "copyright": "Harry Kessell / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230951154195707,
+        "alt": "The eleven-tiered thatched shrine of Pura Ulun Danu Bratan reflects in Lake Bratan below misty hills.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/79aa729c07/bali-ulun-danu.jpg",
+        "copyright": "Aron Visuals / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3185"
+        }
+      },
+      {
+        "id": 230951162678528,
+        "alt": "Limestone sea stacks rise from turquoise water below white cliffs and a strip of sand on Nusa Penida.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/3972179000/bali-nusa-penida.jpg",
+        "copyright": "Alfiano Sutianto / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230951167364353,
+        "alt": "Curved green rice terraces climb a valley lined with coconut palms at Tegallalang.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/6b50269b97/bali-rice-terraces.jpg",
+        "copyright": "Niklas Weiss / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230951171644675,
+        "alt": "A brick split gate with carved stone tiers stands against a cloudy sky behind pink bougainvillea.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/8ad77b0e23/bali-split-gate.jpg",
+        "copyright": "Jeremy Bishop / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      }
+    ],
+    "summary": "Volcanoes, rice terraces and sea temples on a Hindu island in a Muslim-majority country. Offerings of flowers line every doorstep.",
+    "component": "destination",
+    "attributes": [
+      "island",
+      "beach",
+      "culture",
+      "nature"
+    ],
+    "hero_image": {
+      "id": 230951149366521,
+      "alt": "Green rice terraces step down toward palm trees with a cloud-capped volcano behind in morning haze.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/4fb12dd90d/bali-rice-dawn.jpg",
+      "copyright": "Geio Tischler / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1599"
+      }
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Bali lies between Java and Lombok, a volcanic island ringed by surf beaches. Mount Agung rises over 3,000 metres in the east, and crater lakes like Bratan sit in the cool central highlands.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Most Balinese are Hindu, and every village keeps its own temples and festival calendar. The subak system shares water between rice terraces through canals run by temple councils, and UNESCO listed it in 2012. Ubud is the centre for dance, painting and wood carving. Try babi guling, sate lilit and nasi campur at a warung.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The dry season runs from April to October. On Nyepi, the Balinese New Year in March, the whole island goes silent for a day and the airport closes, so check the date before you book.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230951154195707,
+      "alt": "The eleven-tiered thatched shrine of Pura Ulun Danu Bratan reflects in Lake Bratan below misty hills.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/79aa729c07/bali-ulun-danu.jpg",
+      "copyright": "Aron Visuals / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x3185"
+      }
+    },
+    "image_landscape": {
+      "id": 230951158406399,
+      "alt": "Tanah Lot temple sits on a rock outcrop above wet tidal flats as the sun sets behind it.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/e496506303/bali-tanah-lot.jpg",
+      "copyright": "Harry Kessell / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1600"
+      }
+    }
+  },
+  "published": true,
+  "slug": "bali",
+  "path": null,
+  "full_slug": "data/destinations/bali",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "8a0924dbc567e4e05d09aa7c3d4282b078266666",
+    "timestamp": "1792592497"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:24:02.908Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/bali",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/bali",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/bali",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -150,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 231219825799315,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

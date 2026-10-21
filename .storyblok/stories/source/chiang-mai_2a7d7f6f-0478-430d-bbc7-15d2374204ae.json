@@ -1,0 +1,293 @@
+{
+  "name": "Chiang Mai",
+  "parent_id": 230624344329791,
+  "group_id": "98bf0386-868d-441d-bae2-3a6c119d40db",
+  "alternates": [],
+  "created_at": "2026-10-15T14:28:09.147Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:28:10.012Z",
+  "published_at": "2026-10-15T14:28:09.996Z",
+  "id": 230952505978534,
+  "uuid": "2a7d7f6f-0478-430d-bbc7-15d2374204ae",
+  "is_folder": false,
+  "content": {
+    "_uid": "1886508d-1aa4-48ed-a2ec-ff099b69a3ad",
+    "name": "Chiang Mai",
+    "usps": [
+      {
+        "_uid": "f03232ea-83d0-4b1f-a603-3e50602bca84",
+        "text": "A naga staircase of more than 300 steps climbs to the gold chedi of Wat Phra That Doi Suthep.",
+        "title": "Temple on the mountain",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "50bd98d1-d37e-4a09-bf1f-c0210ca1efbc",
+        "text": "Wat Chiang Man, inside the moat, dates from the city's founding in the 1290s.",
+        "title": "The old Lanna capital",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "a7f7fb3f-9733-40f0-a51c-6b35b46ad359",
+        "text": "The north's curry noodle soup comes topped with crisp fried noodles, pickled mustard greens and lime.",
+        "title": "A bowl of khao soi",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "15ac9cdc-14d2-4a01-af62-04f1a11f2dbb",
+        "text": "Every Sunday evening, Ratchadamnoen Road closes to traffic for a market that runs from Tha Phae Gate.",
+        "title": "Sunday Walking Street",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Northern Thailand",
+    "country": "thailand",
+    "gallery": [
+      {
+        "id": 230952127434108,
+        "alt": "Gilded carvings and green glass mosaic cover the tiered gables and pillars of a Lanna temple hall under a stormy sky.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/6996945726/chiang-mai-llamas.jpg",
+        "copyright": "Jose Llamas / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3596"
+        }
+      },
+      {
+        "id": 230952132332925,
+        "alt": "A carved gold archway frames the gilded chedi of Wat Phra That Doi Suthep, with Buddha statues and yellow flowers at its base.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/6e093e9210/chiang-mai-arch.jpg",
+        "copyright": "Nat Weerawong / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230952137387391,
+        "alt": "A line of monks in orange robes walks along a white temple wall above a red and white kerb.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/dad51d80db/chiang-mai-monks.jpg",
+        "copyright": "billow926 / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230952142437763,
+        "alt": "The tiered roofs of the Ho Kham Luang pavilion rise above flower beds and a reflecting pool at Royal Park Rajapruek.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/b1974f22b3/chiang-mai-nopparuj.jpg",
+        "copyright": "Nopparuj Lamaikul / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230952146218372,
+        "alt": "White paper lanterns hang in front of the gold-topped brick chedi at Wat Chiang Man under a blue sky.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/177dde3808/chiang-mai-yellow.jpg",
+        "copyright": "cheese yang / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      }
+    ],
+    "summary": "A moated old city of Lanna temples below the forested slopes of Doi Suthep. Come for the khao soi, stay for the cool mountain mornings.",
+    "component": "destination",
+    "attributes": [
+      "city",
+      "culture",
+      "food",
+      "mountains"
+    ],
+    "hero_image": {
+      "id": 230952122510715,
+      "alt": "The gold chedi of Wat Phra That Doi Suthep rises above orange temple roofs and hillside houses with forested slopes behind.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/7e007b7043/chiang-mai-holp-aerial.jpg",
+      "copyright": "Mike Holp / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1350"
+      }
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Chiang Mai sits in a valley on the Ping River, about 700 kilometres north of Bangkok. Doi Suthep rises to 1,676 metres on the western edge of the city, and higher ranges run on toward the Myanmar border.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "King Mangrai founded the city in 1296 as the capital of the Lanna kingdom. Brick walls and a square moat still frame the old city, which holds more than 30 temples, including Wat Chiang Man and Wat Chedi Luang. Saffron-robed monks walk the lanes at dawn. Khao soi, a curry noodle soup, and sai ua sausage are the northern dishes to order.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "November to February brings cool, dry days, and the Yi Peng lantern festival falls in November. March and April are hot and hazy from crop burning. Dress with covered shoulders and knees for temple visits.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230952127434108,
+      "alt": "Gilded carvings and green glass mosaic cover the tiered gables and pillars of a Lanna temple hall under a stormy sky.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/6996945726/chiang-mai-llamas.jpg",
+      "copyright": "Jose Llamas / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x3596"
+      }
+    },
+    "image_landscape": {
+      "id": 230952132332925,
+      "alt": "A carved gold archway frames the gilded chedi of Wat Phra That Doi Suthep, with Buddha statues and yellow flowers at its base.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/6e093e9210/chiang-mai-arch.jpg",
+      "copyright": "Nat Weerawong / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1600"
+      }
+    }
+  },
+  "published": true,
+  "slug": "chiang-mai",
+  "path": null,
+  "full_slug": "data/destinations/chiang-mai",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "9d5d0e440e0e141dda98d947fea9262e701fc1e2",
+    "timestamp": "1792592495"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:28:09.996Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/chiang-mai",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/chiang-mai",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/chiang-mai",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -190,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230952509366318,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

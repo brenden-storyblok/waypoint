@@ -1,0 +1,189 @@
+{
+  "name": "Ha Long Bay",
+  "parent_id": 230624294035005,
+  "group_id": "dd84e80d-86a6-433a-9462-7a1cdee54acf",
+  "alternates": [],
+  "created_at": "2026-10-15T14:25:54.599Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:25:54.669Z",
+  "published_at": "2026-10-15T14:25:54.650Z",
+  "id": 230951954869899,
+  "uuid": "cd183ccd-f0ec-4ea9-8c8a-78302d467ed7",
+  "is_folder": false,
+  "content": {
+    "_uid": "50e0ec25-6442-4a74-92d2-21aeff3ddfff",
+    "body": [
+      {
+        "_uid": "da44faab-3f75-4481-a3a1-04737fe443d8",
+        "component": "destination_hero"
+      },
+      {
+        "_uid": "dec59e7e-7fb1-4c7f-91c7-7bfdb61a00fa",
+        "headline": "Why Ha Long Bay",
+        "component": "destination_usps"
+      },
+      {
+        "_uid": "90768ea0-e51c-4200-9fd4-e33b859b9597",
+        "headline": "About Ha Long Bay",
+        "component": "destination_bio"
+      },
+      {
+        "_uid": "3f303c1c-b589-4c20-b165-54fb9d7862bd",
+        "headline": "Ha Long Bay in pictures",
+        "component": "destination_gallery"
+      },
+      {
+        "_uid": "71513305-c727-477f-ad5e-8f9f2875133b",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Most visitors come from Hanoi by cruise shuttle bus or private car along the expressway. Day boats and overnight junks leave from Tuan Chau and Bai Chay harbours.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Hanoi to Ha Long by expressway takes about 2 hours 30 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Van Don International Airport is about 50 kilometres from Ha Long city.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Day cruises on the bay run about 4 to 6 hours from the harbour and back.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "Getting around",
+        "component": "text_block"
+      }
+    ],
+    "component": "destination_page",
+    "destination": "514abc54-f596-47e5-92e1-d86f76a675a3"
+  },
+  "published": true,
+  "slug": "ha-long-bay",
+  "path": null,
+  "full_slug": "destinations/ha-long-bay",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624294035005,
+    "uuid": "f65cf2f5-d1c9-4b9a-846c-82e576922b14",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "ca20359998d10526c94eb4aba0bf30ef94b08466",
+    "timestamp": "1792592494"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624294035005,
+      "name": "Destinations",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:25:54.650Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "destinations/ha-long-bay",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "destinations/ha-long-bay",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "destinations/ha-long-bay",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -270,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230951954995924,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

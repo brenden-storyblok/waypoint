@@ -1,0 +1,199 @@
+{
+  "name": "Santorini",
+  "parent_id": 230624294035005,
+  "group_id": "89d27175-f34b-4d3e-b5f7-178d2462fce5",
+  "alternates": [],
+  "created_at": "2026-10-15T07:18:05.715Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T08:00:47.251Z",
+  "published_at": "2026-10-15T08:00:47.115Z",
+  "id": 230846815120038,
+  "uuid": "f0585984-e4af-4634-9140-a53bcd824a64",
+  "is_folder": false,
+  "content": {
+    "_uid": "7a2d9c10-5e0b-4c11-8a31-1b0f6d2e4d00",
+    "body": [
+      {
+        "_uid": "7a2d9c10-5e0b-4c11-8a31-1b0f6d2e4d01",
+        "component": "destination_hero"
+      },
+      {
+        "_uid": "7a2d9c10-5e0b-4c11-8a31-1b0f6d2e4d02",
+        "headline": "Why Santorini",
+        "component": "destination_usps"
+      },
+      {
+        "_uid": "7a2d9c10-5e0b-4c11-8a31-1b0f6d2e4d03",
+        "headline": "About Santorini",
+        "component": "destination_bio"
+      },
+      {
+        "_uid": "7a2d9c10-5e0b-4c11-8a31-1b0f6d2e4d04",
+        "headline": "Santorini in pictures",
+        "component": "destination_gallery"
+      },
+      {
+        "_uid": "7a2d9c10-5e0b-4c11-8a31-1b0f6d2e4d05",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Fira is the hub for local transport. Most visitors combine buses with a rental vehicle.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "KTEL buses run from Fira to Oia, Perissa, Kamari and Akrotiri.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "ATVs and rental cars cover the beaches and wineries.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "A cable car or the steps lead from Fira down to the old port.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "Getting around",
+        "component": "text_block"
+      },
+      {
+        "_uid": "7a2d9c10-5e0b-4c11-8a31-1b0f6d2e4d06",
+        "faqs": [
+          "cc9ef600-c084-40c1-9ad1-b30eb12ecbe7",
+          "39e71b69-95dd-48a3-9035-273321b75cff",
+          "01f3d445-cc39-4857-9573-102b976a4a82"
+        ],
+        "headline": "Before you go",
+        "component": "faq_section"
+      }
+    ],
+    "component": "destination_page",
+    "destination": "ac3b622d-9174-4213-9c3a-b6134090e62e"
+  },
+  "published": true,
+  "slug": "santorini",
+  "path": null,
+  "full_slug": "destinations/santorini",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624294035005,
+    "uuid": "f65cf2f5-d1c9-4b9a-846c-82e576922b14",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "40982a284b433403eebb5db763e9d1b488336fed",
+    "timestamp": "1792592504"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624294035005,
+      "name": "Destinations",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:47.115Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "destinations/santorini",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "destinations/santorini",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "destinations/santorini",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -10,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230857307069892,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

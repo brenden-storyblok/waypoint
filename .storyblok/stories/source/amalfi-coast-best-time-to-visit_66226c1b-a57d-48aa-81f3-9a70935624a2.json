@@ -1,0 +1,160 @@
+{
+  "name": "When is the best time to visit the Amalfi Coast?",
+  "parent_id": 230624347930176,
+  "group_id": "51fea476-1ecf-440d-a148-639d173c840b",
+  "alternates": [],
+  "created_at": "2026-10-15T07:20:07.685Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T08:00:37.476Z",
+  "published_at": "2026-10-15T08:00:36.161Z",
+  "id": 230847314696893,
+  "uuid": "66226c1b-a57d-48aa-81f3-9a70935624a2",
+  "is_folder": false,
+  "content": {
+    "_uid": "3a4961fe-9cdd-4a80-b976-da071c927d5f",
+    "answer": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "May, June and September bring warm days and swimmable water with fewer crowds.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "July and August are the busiest months. Ferries run on a seasonal schedule, and some hotels and restaurants close in winter.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question": "When is the best time to visit?",
+    "component": "faq_item"
+  },
+  "published": true,
+  "slug": "amalfi-coast-best-time-to-visit",
+  "path": null,
+  "full_slug": "data/faqs/amalfi-coast-best-time-to-visit",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624347930176,
+    "uuid": "684d4de1-a03c-4454-9b91-22940d23aff3",
+    "name": "FAQs",
+    "slug": "faqs",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "b8b03a1c8920a61f7409919aa9e8afc67e9edeb5",
+    "timestamp": "1792592496"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624347930176,
+      "name": "FAQs",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "faqs",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:36.161Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/faqs/amalfi-coast-best-time-to-visit",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/faqs/amalfi-coast-best-time-to-visit",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/faqs/amalfi-coast-best-time-to-visit",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -190,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230857267043683,
+  "variant_type": null,
+  "taxonomy_terms": [
+    {
+      "id": "230851169421370",
+      "display_name": "Amalfi Coast",
+      "name": "amalfi-coast",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    },
+    {
+      "id": "230850699671607",
+      "display_name": "Italy",
+      "name": "italy",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    }
+  ],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

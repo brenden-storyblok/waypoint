@@ -1,0 +1,189 @@
+{
+  "name": "New Orleans",
+  "parent_id": 230624294035005,
+  "group_id": "202539e4-6764-4d10-a3c2-47aec391840b",
+  "alternates": [],
+  "created_at": "2026-10-15T14:34:03.813Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:34:03.861Z",
+  "published_at": "2026-10-15T14:34:03.849Z",
+  "id": 230953958690581,
+  "uuid": "b6904dd8-2b24-4540-8260-ffde87f3966f",
+  "is_folder": false,
+  "content": {
+    "_uid": "db4a54e8-10b5-4c6e-8415-5b52e705e629",
+    "body": [
+      {
+        "_uid": "724e87e7-06b6-43a9-8175-c2637ccc69e9",
+        "component": "destination_hero"
+      },
+      {
+        "_uid": "3039ead5-4cf5-4463-88ec-7b3d42e2c358",
+        "headline": "Why New Orleans",
+        "component": "destination_usps"
+      },
+      {
+        "_uid": "4e1dc357-61cd-46d0-9569-fa29e72db121",
+        "headline": "About New Orleans",
+        "component": "destination_bio"
+      },
+      {
+        "_uid": "b195439a-5458-477e-bac6-a0a7699fbbb6",
+        "headline": "New Orleans in pictures",
+        "component": "destination_gallery"
+      },
+      {
+        "_uid": "1053a5c5-d60a-4a2c-b82f-a7a5b5fcec0c",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The RTA runs the buses, the St. Charles, Canal and Riverfront streetcars, and the ferries across the river. Pay with the Le Pass app or exact cash; a bus or streetcar ride costs $1.25.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "A taxi from Louis Armstrong airport to the French Quarter takes about 25 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "The St. Charles streetcar from Canal Street to Audubon Park takes about 40 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "The French Quarter runs 13 blocks from Canal Street to Esplanade Avenue.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "Getting around",
+        "component": "text_block"
+      }
+    ],
+    "component": "destination_page",
+    "destination": "0c309231-0cb6-4178-9e07-1c7d8b82133d"
+  },
+  "published": true,
+  "slug": "new-orleans",
+  "path": null,
+  "full_slug": "destinations/new-orleans",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624294035005,
+    "uuid": "f65cf2f5-d1c9-4b9a-846c-82e576922b14",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "7a7baba9bb2a2bfc45f31d2d5b7d15148ad9e25c",
+    "timestamp": "1792592493"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624294035005,
+      "name": "Destinations",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:34:03.849Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "destinations/new-orleans",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "destinations/new-orleans",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "destinations/new-orleans",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -370,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230953958759592,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

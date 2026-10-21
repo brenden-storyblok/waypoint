@@ -1,0 +1,305 @@
+{
+  "name": "Amsterdam",
+  "parent_id": 230624344329791,
+  "group_id": "e0976ab9-82df-4ea7-98f6-cd5942be117d",
+  "alternates": [],
+  "created_at": "2026-10-15T14:27:49.109Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T15:02:53.390Z",
+  "published_at": "2026-10-15T15:02:53.377Z",
+  "id": 230952423894688,
+  "uuid": "e7a90910-4c92-44c7-baf2-4e2efcd22ecf",
+  "is_folder": false,
+  "content": {
+    "_uid": "fa3864ec-5bcc-42c3-9976-7adc9d969c0f",
+    "name": "Amsterdam",
+    "usps": [
+      {
+        "_uid": "ade71176-2246-43a6-a71e-5a993f85060c",
+        "text": "The 17th-century canal ring inside the Singelgracht became a UNESCO World Heritage site in 2010.",
+        "title": "A ring of canals",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "ed121bf8-526f-4ef2-9f62-c84404d070b1",
+        "text": "The Rijksmuseum and the Van Gogh Museum stand on the same square, Museumplein.",
+        "title": "Rembrandt and Van Gogh",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "2af637af-77a9-4f65-a68f-f1eea6f59ded",
+        "text": "The flat centre has separate cycle lanes on most main streets, and the garage under Centraal Station holds about 7,000 bikes.",
+        "title": "Built for bikes",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "0107f793-991c-4de5-b57a-e6b288b21f48",
+        "text": "Wood-panelled bars in the Jordaan serve fried bitterballen with mustard next to a glass of local beer.",
+        "title": "Brown cafés and bitterballen",
+        "component": "usp_item"
+      }
+    ],
+    "region": "North Holland",
+    "country": "netherlands",
+    "gallery": [
+      {
+        "id": 230951931530600,
+        "alt": "Tall narrow canal houses in brick and white stone reflect in the water in late sun.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/f703fce239/amsterdam-houses.jpg",
+        "copyright": "Javier M. / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230951997037932,
+        "alt": "Street lamps glow along a canal at dusk, with lit windows and moored boats under a grey sky.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/0c4ba01f8e/amsterdam-dusk.jpg",
+        "copyright": "Azhar J / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230952066043248,
+        "alt": "Bicycles lean against green iron railings above a canal lined with elms and houseboats.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/ca41e4520b/amsterdam-bikes.jpg",
+        "copyright": "Jace & Afsoon / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1731"
+        }
+      },
+      {
+        "id": 230952135105918,
+        "alt": "Gabled canal houses reflect in still water beside an autumn tree.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/6b87ad9435/amsterdam-gables.jpg",
+        "copyright": "Matheo JBT / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3001"
+        }
+      },
+      {
+        "id": 230952197868934,
+        "alt": "A row of canal houses with step and bell gables, a young tree and bicycles parked along the quay.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/104e3d48d5/amsterdam-storefront.jpg",
+        "copyright": "Robin Benzrihem / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3600"
+        }
+      },
+      {
+        "id": 230959693918529,
+        "alt": "A neon sign reading \"Old Sailor, Bar Cafe Pub\" with a Popeye figure holding a beer hangs on a brick facade at night, above a red awning.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/45b1512dce/amsterdam-old-sailor.jpg",
+        "copyright": "Pradheep Rajendirane / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3600"
+        }
+      }
+    ],
+    "summary": "Seventeenth-century canal rings, tall gabled houses and bikes chained to every bridge. A capital you cross by bicycle and see best from the water.",
+    "component": "destination",
+    "attributes": [
+      "city",
+      "culture"
+    ],
+    "hero_image": {
+      "id": 230951866936668,
+      "alt": "Small boats line a wide tree-shaded canal that runs between brick houses toward a low bridge.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/559cdf942a/amsterdam-boats.jpg",
+      "copyright": "Adrien Olichon / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1600"
+      }
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Amsterdam sits on the IJ in North Holland, where a 13th-century dam on the Amstel river gave the city its name. Four main canals, the Singel, Herengracht, Keizersgracht and Prinsengracht, curve around the old centre in half rings.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Most of the canal ring was dug in the 17th century, when Amsterdam ships traded from the Baltic to Asia. Merchants built tall, narrow houses with hooks in the gables to hoist goods to the upper floors. The Rijksmuseum holds Rembrandt's Night Watch, and the brown cafés of the Jordaan fill up after work.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "April brings tulips to the flower stalls, and King's Day at the end of the month turns the canals orange. Late spring and September have mild weather and thinner crowds. Anne Frank House tickets are sold online only, so book before you travel.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230952135105918,
+      "alt": "Gabled canal houses reflect in still water beside an autumn tree.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/6b87ad9435/amsterdam-gables.jpg",
+      "copyright": "Matheo JBT / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x3001"
+      }
+    },
+    "image_landscape": {
+      "id": 230951931530600,
+      "alt": "Tall narrow canal houses in brick and white stone reflect in the water in late sun.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/f703fce239/amsterdam-houses.jpg",
+      "copyright": "Javier M. / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1600"
+      }
+    }
+  },
+  "published": true,
+  "slug": "amsterdam",
+  "path": null,
+  "full_slug": "data/destinations/amsterdam",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "b8b03a1c8920a61f7409919aa9e8afc67e9edeb5",
+    "timestamp": "1792592496"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:27:49.148Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/amsterdam",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/amsterdam",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/amsterdam",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -180,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230961042804022,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

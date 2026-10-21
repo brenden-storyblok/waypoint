@@ -1,0 +1,189 @@
+{
+  "name": "Dubrovnik",
+  "parent_id": 230624294035005,
+  "group_id": "fea9a203-fb6f-4bf3-b279-5a5c091ff1b4",
+  "alternates": [],
+  "created_at": "2026-10-15T14:23:26.510Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:23:26.583Z",
+  "published_at": "2026-10-15T14:23:26.565Z",
+  "id": 230951348317386,
+  "uuid": "6aafbf14-6ffd-47e4-841f-17e5bf7d2f9f",
+  "is_folder": false,
+  "content": {
+    "_uid": "66e67f3f-1e67-49f8-a101-f0d9b65109eb",
+    "body": [
+      {
+        "_uid": "c18f4d6b-96d5-43b7-9e3d-3d450092567e",
+        "component": "destination_hero"
+      },
+      {
+        "_uid": "e7b28121-a6ca-43b4-ad17-bd98a65d2270",
+        "headline": "Why Dubrovnik",
+        "component": "destination_usps"
+      },
+      {
+        "_uid": "324bd8d4-1a5d-475d-82d4-9e4e91f2d111",
+        "headline": "About Dubrovnik",
+        "component": "destination_bio"
+      },
+      {
+        "_uid": "92428a9d-55e2-4877-b04b-49652189c327",
+        "headline": "Dubrovnik in pictures",
+        "component": "destination_gallery"
+      },
+      {
+        "_uid": "4ff57340-47ae-4952-8b11-0e7caa676971",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The Old Town is car-free, so walk it. Libertas city buses link the Pile Gate with the Gruž ferry port, Lapad and the hotels along the coast.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "The airport shuttle bus reaches the Pile Gate in about 30 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "City buses from Gruž port to the Pile Gate take about 15 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "The cable car ride up Mount Srđ takes about 4 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "Getting around",
+        "component": "text_block"
+      }
+    ],
+    "component": "destination_page",
+    "destination": "433347fc-0ec2-4c4b-9318-06d7f95c890f"
+  },
+  "published": true,
+  "slug": "dubrovnik",
+  "path": null,
+  "full_slug": "destinations/dubrovnik",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624294035005,
+    "uuid": "f65cf2f5-d1c9-4b9a-846c-82e576922b14",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "9d5d0e440e0e141dda98d947fea9262e701fc1e2",
+    "timestamp": "1792592495"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624294035005,
+      "name": "Destinations",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:23:26.565Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "destinations/dubrovnik",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "destinations/dubrovnik",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "destinations/dubrovnik",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -210,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230951348421720,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

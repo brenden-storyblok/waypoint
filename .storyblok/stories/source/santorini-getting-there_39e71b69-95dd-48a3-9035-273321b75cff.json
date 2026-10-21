@@ -1,0 +1,160 @@
+{
+  "name": "How do I get to Santorini?",
+  "parent_id": 230624347930176,
+  "group_id": "49507412-9fd5-4e87-9570-26df678b4eb9",
+  "alternates": [],
+  "created_at": "2026-10-15T07:17:27.065Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T08:00:36.977Z",
+  "published_at": "2026-10-15T08:00:36.161Z",
+  "id": 230846656809596,
+  "uuid": "39e71b69-95dd-48a3-9035-273321b75cff",
+  "is_folder": false,
+  "content": {
+    "_uid": "6f1c1c0e-3b0a-4d57-9a54-0a1d3b7f7a02",
+    "answer": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Fly or take a ferry. Santorini airport sits near Fira and has frequent flights from Athens, which take about 45 minutes.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ferries leave Piraeus, the port of Athens, and also connect from other Cyclades islands. Crossings from Piraeus take roughly 5 to 8 hours.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question": "How do I get there?",
+    "component": "faq_item"
+  },
+  "published": true,
+  "slug": "santorini-getting-there",
+  "path": null,
+  "full_slug": "data/faqs/santorini-getting-there",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624347930176,
+    "uuid": "684d4de1-a03c-4454-9b91-22940d23aff3",
+    "name": "FAQs",
+    "slug": "faqs",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "1c6ee6c384e2502d103e10e793d5c19576df78ad",
+    "timestamp": "1792592499"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624347930176,
+      "name": "FAQs",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "faqs",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:36.161Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/faqs/santorini-getting-there",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/faqs/santorini-getting-there",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/faqs/santorini-getting-there",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -100,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230857264999765,
+  "variant_type": null,
+  "taxonomy_terms": [
+    {
+      "id": "230851230324796",
+      "display_name": "Greece",
+      "name": "greece",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    },
+    {
+      "id": "230851260839997",
+      "display_name": "Santorini",
+      "name": "santorini",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    }
+  ],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

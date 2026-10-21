@@ -1,0 +1,160 @@
+{
+  "name": "Do I need a car in the Bavarian Alps?",
+  "parent_id": 230624347930176,
+  "group_id": "0322d98b-ff95-40f5-a291-10aa3b2fdff1",
+  "alternates": [],
+  "created_at": "2026-10-15T07:18:04.913Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T08:00:37.138Z",
+  "published_at": "2026-10-15T08:00:36.161Z",
+  "id": 230846811839140,
+  "uuid": "04c2efd6-ce02-47c5-8694-a8fadcc85826",
+  "is_folder": false,
+  "content": {
+    "_uid": "6f1c2a0e-3b7d-4c55-9a11-2d4e8b7a0c02",
+    "answer": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "No. Regional trains run from Munich to Garmisch-Partenkirchen and to Berchtesgaden. RVO buses and cable cars cover most trailheads and lakes.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "A car helps only for remote side valleys and early starts.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question": "Do I need a car?",
+    "component": "faq_item"
+  },
+  "published": true,
+  "slug": "bavarian-alps-do-i-need-a-car",
+  "path": null,
+  "full_slug": "data/faqs/bavarian-alps-do-i-need-a-car",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624347930176,
+    "uuid": "684d4de1-a03c-4454-9b91-22940d23aff3",
+    "name": "FAQs",
+    "slug": "faqs",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "092662d2050bcd55e4f77fc21c2166cce78a93b2",
+    "timestamp": "1792592498"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624347930176,
+      "name": "FAQs",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "faqs",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:36.161Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/faqs/bavarian-alps-do-i-need-a-car",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/faqs/bavarian-alps-do-i-need-a-car",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/faqs/bavarian-alps-do-i-need-a-car",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -130,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230857265659226,
+  "variant_type": null,
+  "taxonomy_terms": [
+    {
+      "id": "230851130366009",
+      "display_name": "Bavaria",
+      "name": "bavaria",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    },
+    {
+      "id": "230850677905462",
+      "display_name": "Germany",
+      "name": "germany",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    }
+  ],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

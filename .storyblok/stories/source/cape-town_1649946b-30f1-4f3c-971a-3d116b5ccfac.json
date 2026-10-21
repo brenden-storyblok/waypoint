@@ -1,0 +1,294 @@
+{
+  "name": "Cape Town",
+  "parent_id": 230624344329791,
+  "group_id": "e70eb18b-2e73-470c-a872-4d4756feb109",
+  "alternates": [],
+  "created_at": "2026-10-15T14:21:23.121Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:21:23.181Z",
+  "published_at": "2026-10-15T14:21:23.167Z",
+  "id": 230950842895204,
+  "uuid": "1649946b-30f1-4f3c-971a-3d116b5ccfac",
+  "is_folder": false,
+  "content": {
+    "_uid": "6e17cfba-163b-4bf8-ae05-63af6c4b1892",
+    "name": "Cape Town",
+    "usps": [
+      {
+        "_uid": "db54f623-ea63-4073-8674-fedef277ff91",
+        "text": "Rotating cable cars climb from Tafelberg Road to the summit in about five minutes.",
+        "title": "Table Mountain cableway",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "9105997c-e971-437a-89cc-ef81914d697f",
+        "text": "A colony of endangered African penguins nests on the sand at Simon's Town on False Bay.",
+        "title": "Penguins at Boulders Beach",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "15feb408-82ea-41e7-a4e9-075809bb7a90",
+        "text": "Ferries from the V&A Waterfront run to the prison where Nelson Mandela was held for 18 years.",
+        "title": "Robben Island",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "80a5986d-a13f-451c-92ca-7c4649eeab66",
+        "text": "Stellenbosch and Franschhoek, both under 90 minutes by car, have grown wine since the 17th century.",
+        "title": "Winelands next door",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Western Cape",
+    "country": "south-africa",
+    "gallery": [
+      {
+        "id": 230950425742494,
+        "alt": "Turquoise surf breaks on a beach below the Twelve Apostles ridge in late afternoon light.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/a140bd60ad/cape-town-twelve-apostles.jpg",
+        "copyright": "kylefromthenorth™️ / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3600"
+        }
+      },
+      {
+        "id": 230950430715039,
+        "alt": "African penguins gather on white sand between granite boulders at the water's edge.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/ba9bdc3536/cape-town-penguins.jpg",
+        "copyright": "Casey Allen / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230950435376289,
+        "alt": "A cable car climbs toward Table Mountain above a sea of cloud, with Lion's Head poking through.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/fa38f095ed/cape-town-cable-car.jpg",
+        "copyright": "Thomas Bennie / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x4267"
+        }
+      },
+      {
+        "id": 230950439656610,
+        "alt": "A row of brightly painted wooden beach huts lines a wide white beach.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/a5bf6e5140/cape-town-beach-houses.jpg",
+        "copyright": "Arno Smit / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1419"
+        }
+      },
+      {
+        "id": 230950444072099,
+        "alt": "The sun sets over the Atlantic beside the Twelve Apostles and the beach houses below them.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/15bacd4cfe/cape-town-sunset-coast.jpg",
+        "copyright": "Janan / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      }
+    ],
+    "summary": "A flat-topped mountain over the city and two oceans within an hour's drive. Penguins, vineyards and Atlantic beaches fit into a single week.",
+    "component": "destination",
+    "attributes": [
+      "city",
+      "coast",
+      "beach",
+      "nature",
+      "wildlife"
+    ],
+    "hero_image": {
+      "id": 230950420208790,
+      "alt": "Table Mountain and Lion's Head rise behind the city, with Green Point and the stadium on the Atlantic shore.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/468fb0f322/cape-town-aerial.jpg",
+      "copyright": "Tobias Reich / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1600"
+      }
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Cape Town spreads around Table Bay below Table Mountain, whose flat summit stands about 1,085 metres high. The Cape Peninsula runs south from the city to Cape Point, with cold Atlantic beaches on its west side and False Bay on its east.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The Dutch East India Company set up a supply station here in 1652. The Cape Malay families of the Bo-Kaap keep their painted houses, their bobotie and their koeksisters. Nelson Mandela spent 18 years in prison on Robben Island, out in the bay.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "December to March is dry and hot, though the south-easter can blow for days. Check that the cableway is running before you head up, as wind closes it.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230950425742494,
+      "alt": "Turquoise surf breaks on a beach below the Twelve Apostles ridge in late afternoon light.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/a140bd60ad/cape-town-twelve-apostles.jpg",
+      "copyright": "kylefromthenorth™️ / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x3600"
+      }
+    },
+    "image_landscape": {
+      "id": 230950430715039,
+      "alt": "African penguins gather on white sand between granite boulders at the water's edge.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/ba9bdc3536/cape-town-penguins.jpg",
+      "copyright": "Casey Allen / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1600"
+      }
+    }
+  },
+  "published": true,
+  "slug": "cape-town",
+  "path": null,
+  "full_slug": "data/destinations/cape-town",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "1c6ee6c384e2502d103e10e793d5c19576df78ad",
+    "timestamp": "1792592499"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:21:23.167Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/cape-town",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/cape-town",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/cape-town",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -100,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230950842998669,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": 230952314625424,
+  "alt": "The Golden Gate Bridge spans the strait from a rocky Marin headland, with the San Francisco skyline across the bay.",
+  "asset_folder_id": null,
+  "content_length": 629009,
+  "content_type": "image/jpeg",
+  "copyright": "Maarten van den Heuvel / Unsplash",
+  "expire_at": null,
+  "ext_id": null,
+  "filename": "https://a.storyblok.com/f/295888311565739/22af639752/san-francisco-golden-gate.jpg",
+  "focus": null,
+  "internal_tag_ids": [],
+  "is_private": false,
+  "locked": false,
+  "meta_data": {
+    "size": "2400x1350"
+  },
+  "publish_at": null,
+  "short_filename": "san-francisco-golden-gate.jpg",
+  "source": null,
+  "space_id": 295888311565739,
+  "title": "Golden Gate Bridge",
+  "created_at": "2026-10-15T14:27:22.435Z",
+  "updated_at": "2026-10-15T14:27:42.638Z",
+  "deleted_at": null,
+  "internal_tags_list": []
+}

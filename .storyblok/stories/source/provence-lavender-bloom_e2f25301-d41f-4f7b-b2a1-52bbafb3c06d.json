@@ -1,0 +1,160 @@
+{
+  "name": "When does lavender bloom in Provence?",
+  "parent_id": 230624347930176,
+  "group_id": "7e54909c-84e2-4586-9c49-aa74e5efb8f1",
+  "alternates": [],
+  "created_at": "2026-10-15T07:18:10.449Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T08:00:37.221Z",
+  "published_at": "2026-10-15T08:00:36.161Z",
+  "id": 230846834498216,
+  "uuid": "e2f25301-d41f-4f7b-b2a1-52bbafb3c06d",
+  "is_folder": false,
+  "content": {
+    "_uid": "d6cbed4d-ab74-4cf4-99d8-a9951f5e990f",
+    "answer": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Most fields bloom from late June into July. The peak usually falls in the first half of July.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Harvest starts soon after, so earlier is safer if you want full colour. Timing shifts a little with each year's weather.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question": "When does lavender bloom?",
+    "component": "faq_item"
+  },
+  "published": true,
+  "slug": "provence-lavender-bloom",
+  "path": null,
+  "full_slug": "data/faqs/provence-lavender-bloom",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624347930176,
+    "uuid": "684d4de1-a03c-4454-9b91-22940d23aff3",
+    "name": "FAQs",
+    "slug": "faqs",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "8a0924dbc567e4e05d09aa7c3d4282b078266666",
+    "timestamp": "1792592497"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624347930176,
+      "name": "FAQs",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "faqs",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:36.161Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/faqs/provence-lavender-bloom",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/faqs/provence-lavender-bloom",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/faqs/provence-lavender-bloom",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -150,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230857265974621,
+  "variant_type": null,
+  "taxonomy_terms": [
+    {
+      "id": "230850657503285",
+      "display_name": "France",
+      "name": "france",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    },
+    {
+      "id": "230851098155064",
+      "display_name": "Provence",
+      "name": "provence",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    }
+  ],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

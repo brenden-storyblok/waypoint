@@ -1,0 +1,292 @@
+{
+  "name": "Maui",
+  "parent_id": 230624344329791,
+  "group_id": "42854706-64f0-4071-94da-314ad3e04da6",
+  "alternates": [],
+  "created_at": "2026-10-15T14:18:05.056Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:18:05.115Z",
+  "published_at": "2026-10-15T14:18:05.101Z",
+  "id": 230950031620903,
+  "uuid": "5c8dd6a9-6053-4ff1-be1a-b29ac8ea7ebd",
+  "is_folder": false,
+  "content": {
+    "_uid": "1be59836-91d8-48bd-b6d9-bed67f81707d",
+    "name": "Maui",
+    "usps": [
+      {
+        "_uid": "15318bf7-08ef-426d-bf0c-dab88718de9f",
+        "text": "The Haleakalā summit sits at 3,055 metres, and sunrise visits need a park reservation.",
+        "title": "Sunrise above the clouds",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "99e22e4e-8cbf-41d2-b8b9-6ed71cd2ead7",
+        "text": "The Hana Highway crosses 59 bridges on its way along the rainforest coast of East Maui.",
+        "title": "The road to Hana",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "6d318a36-4507-4617-bfe5-334afc0b8838",
+        "text": "Thousands of humpback whales calve each winter in the warm channels between Maui, Lānaʻi and Molokaʻi.",
+        "title": "Humpback winter",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "aa309ae4-6d09-41ea-9af5-66b3441452c6",
+        "text": "Molokini, a crescent-shaped volcanic crater off the south coast, shelters about 250 species of fish.",
+        "title": "Snorkel a sunken crater",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Hawaii",
+    "country": "united-states",
+    "gallery": [
+      {
+        "id": 230948409527166,
+        "alt": "Palm trees line a rocky shore of black lava stone, with a cloud-capped mountain across the blue water.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/a68c11c3fd/maui-palms.jpg",
+        "copyright": "Luke Scarpino / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230948424117127,
+        "alt": "Footprints run along a golden beach between leaning palm trees, green shrubs and gentle surf.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/64f2975ce2/maui-coast.jpg",
+        "copyright": "Neora Aylon / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3200"
+        }
+      },
+      {
+        "id": 230948419124102,
+        "alt": "A humpback whale lifts its tail out of deep blue water, with clouds and an island ridge behind.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/62b856d250/maui-whale.jpg",
+        "copyright": "Abigail Lynn / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1607"
+        }
+      },
+      {
+        "id": 230948428483464,
+        "alt": "Colourful surfboards stand upright beside a thatched beach hut under tall coconut palms.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/dda3eca381/maui-surfboards.jpg",
+        "copyright": "Luke Scarpino / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3600"
+        }
+      },
+      {
+        "id": 230948414438274,
+        "alt": "A rainbow drops through grey clouds onto green mountain ridges lit by low sun.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/836c20154b/maui-rainbow.jpg",
+        "copyright": "Look Up Look Down Photography / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1554"
+        }
+      }
+    ],
+    "summary": "Two volcanoes joined by a green isthmus and ringed with beaches. Watch sunrise above the clouds on Haleakalā, then snorkel a sunken crater.",
+    "component": "destination",
+    "attributes": [
+      "island",
+      "beach",
+      "nature"
+    ],
+    "hero_image": {
+      "id": 230948187069275,
+      "alt": "Palm trees and black lava rock frame a small sandy cove at sunset, with surf washing over the shore.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/1ed27e3e24/maui-sunset.jpg",
+      "copyright": "Ganapathy Kumar / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1602"
+      }
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Maui is the second-largest Hawaiian island, built by two volcanoes joined by a low central valley. Haleakalā rises to 3,055 metres in the east, while the older West Maui Mountains catch the rain in the west.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Polynesian voyagers settled the island centuries before Europeans arrived. Lahaina served as the royal capital of the Hawaiian Kingdom in the early 1800s and later as a whaling port, until a wildfire destroyed much of the town in August 2023. Shave ice and plate lunches of kalua pork and rice sell from roadside stands.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Humpback whales arrive from December to April, with the most sightings from January to March. April, May, September and October bring fewer visitors. Book the Haleakalā sunrise reservation early, as slots open 60 days ahead and go fast.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230948424117127,
+      "alt": "Footprints run along a golden beach between leaning palm trees, green shrubs and gentle surf.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/64f2975ce2/maui-coast.jpg",
+      "copyright": "Neora Aylon / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x3200"
+      }
+    },
+    "image_landscape": {
+      "id": 230948409527166,
+      "alt": "Palm trees line a rocky shore of black lava stone, with a cloud-capped mountain across the blue water.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/a68c11c3fd/maui-palms.jpg",
+      "copyright": "Luke Scarpino / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1600"
+      }
+    }
+  },
+  "published": true,
+  "slug": "maui",
+  "path": null,
+  "full_slug": "data/destinations/maui",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "caa2aadceeac380918a2d2012a5809b9091612c5",
+    "timestamp": "1792592500"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:18:05.101Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/maui",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/maui",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/maui",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -70,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230950031718918,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

@@ -1,0 +1,199 @@
+{
+  "name": "Bavarian Alps",
+  "parent_id": 230624294035005,
+  "group_id": "0262998a-2b12-441f-bef1-2248ef4f71e1",
+  "alternates": [],
+  "created_at": "2026-10-15T07:18:31.247Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T08:00:47.291Z",
+  "published_at": "2026-10-15T08:00:47.115Z",
+  "id": 230846919695023,
+  "uuid": "c38df776-7ff9-4bd2-b659-efb345c975e9",
+  "is_folder": false,
+  "content": {
+    "_uid": "9c4f5d31-6e0a-4f88-ad44-5a7b1e0d3f01",
+    "body": [
+      {
+        "_uid": "ad5a6e42-7f1b-4a99-be55-6b8c2f1e4a01",
+        "component": "destination_hero"
+      },
+      {
+        "_uid": "ad5a6e42-7f1b-4a99-be55-6b8c2f1e4a02",
+        "headline": "Why Bavarian Alps",
+        "component": "destination_usps"
+      },
+      {
+        "_uid": "ad5a6e42-7f1b-4a99-be55-6b8c2f1e4a03",
+        "headline": "About Bavarian Alps",
+        "component": "destination_bio"
+      },
+      {
+        "_uid": "ad5a6e42-7f1b-4a99-be55-6b8c2f1e4a04",
+        "headline": "Bavarian Alps in pictures",
+        "component": "destination_gallery"
+      },
+      {
+        "_uid": "ad5a6e42-7f1b-4a99-be55-6b8c2f1e4a05",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Trains and buses reach most sights. A Bayern-Ticket covers regional trains and many local buses for a day.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Regional trains run from Munich to Garmisch-Partenkirchen and to Berchtesgaden.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "RVO buses link villages, lakes and trailheads.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Cable cars save the steepest climbs and run to the Zugspitze summit.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "Getting around",
+        "component": "text_block"
+      },
+      {
+        "_uid": "ad5a6e42-7f1b-4a99-be55-6b8c2f1e4a06",
+        "faqs": [
+          "6be605eb-df2e-4a72-8053-9ef611b59990",
+          "04c2efd6-ce02-47c5-8694-a8fadcc85826",
+          "64a140fe-0a53-4983-bde6-735d9e310912"
+        ],
+        "headline": "Before you go",
+        "component": "faq_section"
+      }
+    ],
+    "component": "destination_page",
+    "destination": "7e2fc354-d07b-43c6-bb01-6a71ff5154ac"
+  },
+  "published": true,
+  "slug": "bavarian-alps",
+  "path": null,
+  "full_slug": "destinations/bavarian-alps",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624294035005,
+    "uuid": "f65cf2f5-d1c9-4b9a-846c-82e576922b14",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "09415f6f67eee6434beda3616b9a277075f4324a",
+    "timestamp": "1792592503"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624294035005,
+      "name": "Destinations",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:47.115Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "destinations/bavarian-alps",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "destinations/bavarian-alps",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "destinations/bavarian-alps",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -20,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230857307237830,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

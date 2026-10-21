@@ -1,0 +1,292 @@
+{
+  "name": "Bavarian Alps",
+  "parent_id": 230624344329791,
+  "group_id": "13a887c2-6477-4c50-9fcb-87380997d49f",
+  "alternates": [],
+  "created_at": "2026-10-15T07:18:23.125Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T12:26:59.977Z",
+  "published_at": "2026-10-15T12:26:59.951Z",
+  "id": 230846886427309,
+  "uuid": "7e2fc354-d07b-43c6-bb01-6a71ff5154ac",
+  "is_folder": false,
+  "content": {
+    "_uid": "7a2d3b1f-4c8e-4d66-8b22-3e5f9c8b1d01",
+    "name": "Bavarian Alps",
+    "usps": [
+      {
+        "_uid": "8b3e4c20-5d9f-4e77-9c33-4f6a0d9c2e01",
+        "text": "The Zugspitze reaches 2,962 metres. Cable cars run to the summit from the Eibsee and from Garmisch.",
+        "title": "Germany's highest peak",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "8b3e4c20-5d9f-4e77-9c33-4f6a0d9c2e02",
+        "text": "Electric boats cross the lake to St. Bartholomä, a church with red onion domes at the foot of the Watzmann massif.",
+        "title": "A boat ride on the Königssee",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "8b3e4c20-5d9f-4e77-9c33-4f6a0d9c2e03",
+        "text": "Ludwig II began this hilltop castle in 1869. It stands near Füssen, above Hohenschwangau.",
+        "title": "Neuschwanstein Castle",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "8b3e4c20-5d9f-4e77-9c33-4f6a0d9c2e04",
+        "text": "Marked trails link alpine huts that serve hot meals and offer beds. Book overnight stays ahead in summer.",
+        "title": "Hut-to-hut hiking",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Bavaria",
+    "country": "germany",
+    "gallery": [
+      {
+        "id": 230846547456669,
+        "alt": "Neuschwanstein Castle on its wooded rock, framed by branches, with a lake and green fields behind",
+        "name": "",
+        "focus": "",
+        "title": "Neuschwanstein Castle",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/359df38054/bavarian-alps-neuschwanstein-spring.jpg",
+        "copyright": "Kay Mayer / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1800"
+        }
+      },
+      {
+        "id": 230846543274651,
+        "alt": "Snow-dusted Zugspitze massif reflected in the still water of the Eibsee under heavy clouds",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/a8a881604f/bavarian-alps-eibsee-zugspitze-dawn.jpg",
+        "copyright": "Daniel Seßler / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3596"
+        }
+      },
+      {
+        "id": 230846551470751,
+        "alt": "Zugspitze range and forested shore mirrored in the calm Eibsee at dusk",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/fdaa977051/bavarian-alps-eibsee-reflection.jpg",
+        "copyright": "Philipp / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230846555701921,
+        "alt": "Neuschwanstein Castle seen from below, with its tall tower against a dark forested rock face under grey sky",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/4d8477b9e2/bavarian-alps-neuschwanstein-autumn.jpg",
+        "copyright": "Mike Yukhtenko / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230846559584931,
+        "alt": "Wooden farmhouses on a green alpine meadow above Hintersee, with low mist over the forest",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/a976414741/bavarian-alps-hintersee-meadow-farmhouses.jpg",
+        "copyright": "Markus Spiske / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      }
+    ],
+    "summary": "Limestone peaks, green lakes and a fairy-tale castle, all a train ride from Munich. Germany's high country, with a hut at the end of most trails.",
+    "component": "destination",
+    "attributes": [
+      "nature",
+      "mountains"
+    ],
+    "hero_image": {
+      "id": 230846460334736,
+      "alt": "St. Bartholomä pilgrimage church with red onion domes on the Königssee shore, with steep limestone mountains behind",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/971a0fde52/bavarian-alps-konigssee-st-bartholoma.jpg",
+      "copyright": "Wolfgang Weiser / Unsplash",
+      "fieldtype": "asset"
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The Bavarian Alps run along Germany's southern border with Austria. The range holds the Zugspitze, the country's highest peak at 2,962 metres, and lakes such as the Eibsee and the Königssee.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Two areas draw most visitors. Garmisch-Partenkirchen sits below the Zugspitze, and Berchtesgaden lies near the Austrian border. King Ludwig II began building Neuschwanstein in 1869 above the valley near Füssen. Villages keep painted farmhouses and onion-domed churches.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "June to early October is the main hiking season, when huts and cable cars are open. Winter brings skiing and quieter trails. Bring layers, since weather on the high ground changes fast.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230846543274651,
+      "alt": "Snow-dusted Zugspitze massif reflected in the still water of the Eibsee under heavy clouds",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/a8a881604f/bavarian-alps-eibsee-zugspitze-dawn.jpg",
+      "copyright": "Daniel Seßler / Unsplash",
+      "fieldtype": "asset"
+    },
+    "image_landscape": {
+      "id": 230846547456669,
+      "alt": "Neuschwanstein Castle on its wooded rock, framed by branches, with a lake and green fields behind",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/359df38054/bavarian-alps-neuschwanstein-spring.jpg",
+      "copyright": "Kay Mayer / Unsplash",
+      "fieldtype": "asset"
+    }
+  },
+  "published": true,
+  "slug": "bavarian-alps",
+  "path": null,
+  "full_slug": "data/destinations/bavarian-alps",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "09415f6f67eee6434beda3616b9a277075f4324a",
+    "timestamp": "1792592503"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:36.161Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/bavarian-alps",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/bavarian-alps",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/bavarian-alps",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -20,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230922731151744,
+  "variant_type": null,
+  "taxonomy_terms": [
+    {
+      "id": "230850677905462",
+      "display_name": "Germany",
+      "name": "germany",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    }
+  ],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

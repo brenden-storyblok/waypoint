@@ -1,0 +1,291 @@
+{
+  "name": "Grand Canyon",
+  "parent_id": 230624344329791,
+  "group_id": "92058058-b133-407a-aabf-06ac15cfef98",
+  "alternates": [],
+  "created_at": "2026-10-15T14:26:14.070Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:26:14.129Z",
+  "published_at": "2026-10-15T14:26:14.115Z",
+  "id": 230952034619026,
+  "uuid": "33ab30a8-3cb9-4780-a391-16576e35a50d",
+  "is_folder": false,
+  "content": {
+    "_uid": "9255941f-d820-4fff-90d9-7c38aae349f6",
+    "name": "Grand Canyon",
+    "usps": [
+      {
+        "_uid": "d6e9d28b-a4e1-4df7-a71f-690f44f0e70f",
+        "text": "This Hermit Road viewpoint looks west over a long stretch of the Colorado River.",
+        "title": "Sunset at Hopi Point",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "78adf23b-053d-4879-8038-2da71bf9ec56",
+        "text": "The Bright Angel Trail drops about 1,300 m over 16 km to Phantom Ranch.",
+        "title": "Rim to river on foot",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "d7fb5c30-049e-4839-942f-766122b7135c",
+        "text": "The falls sit on Havasupai land, a 16 km hike from the trailhead with a permit.",
+        "title": "Turquoise water at Havasu Falls",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "ca90f174-b1ea-4acc-ad67-b70cba64783b",
+        "text": "The Rim Trail links viewpoints from the South Kaibab Trailhead to Hermits Rest.",
+        "title": "21 km of rim walking",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Arizona",
+    "country": "united-states",
+    "gallery": [
+      {
+        "id": 230951447555358,
+        "alt": "Visitors line a railed viewpoint on a limestone outcrop above the canyon in late afternoon light.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/2d9e2b7795/grand-canyon-viewpoint.jpg",
+        "copyright": "Stig-Ove Pettersen / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230951565516072,
+        "alt": "The green Colorado River winds between red and ochre rock walls far below the canyon rim.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/f7fc70e9d2/grand-canyon-river-bend.jpg",
+        "copyright": "Sonaal Bangera / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1800"
+        }
+      },
+      {
+        "id": 230951727578434,
+        "alt": "Pine branches frame orange sunlit cliffs and buttes stretching to the far rim under a clear sky.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/ce60b8419d/grand-canyon-pines.jpg",
+        "copyright": "Parsa Mahmoudi / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3595"
+        }
+      },
+      {
+        "id": 230951647644980,
+        "alt": "Red rock and desert scrub on the rim in the foreground, with the Colorado River curving through grey layered cliffs below.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/208dbcf4fd/grand-canyon-colorado-river.jpg",
+        "copyright": "Omer Nezih Gerek / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1590"
+        }
+      },
+      {
+        "id": 230951834144087,
+        "alt": "Havasu Falls pours into a turquoise pool ringed by cottonwoods and red canyon walls.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/d75b1f15d7/grand-canyon-havasu-falls.jpg",
+        "copyright": "Jan Kronies / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      }
+    ],
+    "summary": "A canyon 446 km long and up to 1.8 km deep, cut by the Colorado River. Watch sunset from the South Rim, then hike below it at dawn.",
+    "component": "destination",
+    "attributes": [
+      "nature",
+      "desert"
+    ],
+    "hero_image": {
+      "id": 230951341350167,
+      "alt": "Low sun lights layered red buttes and a thin bend of the Colorado River deep in the Grand Canyon.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/c0d75c2e08/grand-canyon-rim-view.jpg",
+      "copyright": "Jason Thompson / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1600"
+      }
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The Grand Canyon cuts through the Colorado Plateau in northern Arizona. The Colorado River runs 446 km through it, and the canyon is up to 29 km wide. The South Rim stands near 2,100 m and the North Rim about 300 m higher.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The walls expose close to two billion years of rock, from Vishnu Schist at the river to Kaibab limestone at the rim. Eleven tribes, including the Havasupai, Hualapai and Navajo, have ties to the canyon. Theodore Roosevelt protected it in 1908, and it became a national park in 1919.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "March to May and September to November bring cooler hiking weather. The South Rim is open all year, while North Rim services close from mid-October to mid-May. Carry more water than you think: the inner canyon passes 40°C in summer.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230951727578434,
+      "alt": "Pine branches frame orange sunlit cliffs and buttes stretching to the far rim under a clear sky.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/ce60b8419d/grand-canyon-pines.jpg",
+      "copyright": "Parsa Mahmoudi / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x3595"
+      }
+    },
+    "image_landscape": {
+      "id": 230951565516072,
+      "alt": "The green Colorado River winds between red and ochre rock walls far below the canyon rim.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/f7fc70e9d2/grand-canyon-river-bend.jpg",
+      "copyright": "Sonaal Bangera / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1800"
+      }
+    }
+  },
+  "published": true,
+  "slug": "grand-canyon",
+  "path": null,
+  "full_slug": "data/destinations/grand-canyon",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "b8b03a1c8920a61f7409919aa9e8afc67e9edeb5",
+    "timestamp": "1792592496"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:26:14.115Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/grand-canyon",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/grand-canyon",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/grand-canyon",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -170,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230952034720617,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

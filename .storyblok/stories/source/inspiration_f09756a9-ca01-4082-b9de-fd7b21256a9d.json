@@ -1,0 +1,158 @@
+{
+  "name": "Inspiration",
+  "parent_id": null,
+  "group_id": "adcd8ef2-2fcf-429a-b91d-cab7447b23a7",
+  "alternates": [],
+  "created_at": "2026-10-15T13:20:10.606Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-16T14:31:17.010Z",
+  "published_at": "2026-10-16T14:31:17.000Z",
+  "id": 230935800264293,
+  "uuid": "f09756a9-ca01-4082-b9de-fd7b21256a9d",
+  "is_folder": false,
+  "content": {
+    "_uid": "fa436e1a-acf5-420e-ba94-d519fcea91b8",
+    "body": [
+      {
+        "_uid": "b97a1cdb-e273-4f0d-9fb8-9d2260c84bc7",
+        "carousel": true,
+        "headline": "Beach Destinations",
+        "component": "destination_grid",
+        "countries": [],
+        "attributes": [
+          "beach",
+          "island"
+        ],
+        "clear_label": "Clear all",
+        "destinations": [],
+        "country_label": "Country",
+        "empty_message": "No destinations match your search.",
+        "search_enabled": false,
+        "attributes_label": "Attributes",
+        "search_placeholder": "Search destinations"
+      },
+      {
+        "_uid": "428bb1b5-9681-4759-bfc5-46d9d03275f9",
+        "carousel": true,
+        "headline": "Jump Into Nature",
+        "component": "destination_grid",
+        "countries": [],
+        "attributes": [
+          "mountains",
+          "nature",
+          "countryside",
+          "wildlife"
+        ],
+        "clear_label": "Clear all",
+        "destinations": [],
+        "country_label": "Country",
+        "empty_message": "No destinations match your search.",
+        "search_enabled": false,
+        "attributes_label": "Attributes",
+        "search_placeholder": "Search destinations"
+      },
+      {
+        "_uid": "23b1113c-4bb6-4da1-887f-57c4a1a8c8c6",
+        "carousel": true,
+        "headline": "Vibrant Cities",
+        "component": "destination_grid",
+        "countries": [],
+        "attributes": [
+          "city"
+        ],
+        "clear_label": "Clear all",
+        "destinations": [],
+        "country_label": "Country",
+        "empty_message": "No destinations match your search.",
+        "search_enabled": false,
+        "attributes_label": "Attributes",
+        "search_placeholder": "Search destinations"
+      },
+      {
+        "_uid": "85aac99a-69da-4577-9c9f-b07b811cdf74",
+        "carousel": true,
+        "headline": "Explore the USA",
+        "component": "destination_grid",
+        "countries": [
+          "united-states"
+        ],
+        "attributes": [],
+        "clear_label": "Clear all",
+        "destinations": [],
+        "country_label": "Country",
+        "empty_message": "No destinations match your search.",
+        "search_enabled": false,
+        "attributes_label": "Attributes",
+        "search_placeholder": "Search destinations"
+      }
+    ],
+    "component": "page"
+  },
+  "published": true,
+  "slug": "inspiration",
+  "path": null,
+  "full_slug": "inspiration",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": null,
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "2c2f07c4584a59d56c087dacd155a68fb2621db6",
+    "timestamp": "1792592505"
+  },
+  "pinned": false,
+  "breadcrumbs": [],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:00:29.322Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "inspiration",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "inspiration",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "inspiration",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": 0,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 231307169609639,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

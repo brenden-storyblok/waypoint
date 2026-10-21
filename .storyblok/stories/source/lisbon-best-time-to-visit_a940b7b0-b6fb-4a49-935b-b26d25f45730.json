@@ -1,0 +1,151 @@
+{
+  "name": "When is the best time to visit Lisbon?",
+  "parent_id": 230624347930176,
+  "group_id": "99c51c49-62b6-4cee-a5e2-d8c0ddb4cf14",
+  "alternates": [],
+  "created_at": "2026-10-14T16:21:59.207Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T08:00:36.449Z",
+  "published_at": "2026-10-15T08:00:36.161Z",
+  "id": 230626587493573,
+  "uuid": "a940b7b0-b6fb-4a49-935b-b26d25f45730",
+  "is_folder": false,
+  "content": {
+    "_uid": "6932ac39-37db-41da-88e8-0fda24b73f74",
+    "answer": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "April to June and September to October. Days stay warm, and the queues at Belém and the castle stay short.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question": "When is the best time to visit Lisbon?",
+    "component": "faq_item"
+  },
+  "published": true,
+  "slug": "lisbon-best-time-to-visit",
+  "path": null,
+  "full_slug": "data/faqs/lisbon-best-time-to-visit",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624347930176,
+    "uuid": "684d4de1-a03c-4454-9b91-22940d23aff3",
+    "name": "FAQs",
+    "slug": "faqs",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "2c2f07c4584a59d56c087dacd155a68fb2621db6",
+    "timestamp": "1792592505"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624347930176,
+      "name": "FAQs",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "faqs",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:36.161Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/faqs/lisbon-best-time-to-visit",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/faqs/lisbon-best-time-to-visit",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/faqs/lisbon-best-time-to-visit",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": 0,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230857262787912,
+  "variant_type": null,
+  "taxonomy_terms": [
+    {
+      "id": "230846207203379",
+      "display_name": "Lisbon",
+      "name": "lisbon",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    },
+    {
+      "id": "230845758261298",
+      "display_name": "Portugal",
+      "name": "portugal",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    }
+  ],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

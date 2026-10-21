@@ -1,0 +1,199 @@
+{
+  "name": "Amalfi Coast",
+  "parent_id": 230624294035005,
+  "group_id": "a9232c03-2c3d-4d30-939b-0de89b5e0b8b",
+  "alternates": [],
+  "created_at": "2026-10-15T07:20:34.354Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T08:00:47.382Z",
+  "published_at": "2026-10-15T08:00:47.115Z",
+  "id": 230847423937218,
+  "uuid": "438a2c52-1f47-4a99-8ef2-1f74666dfba3",
+  "is_folder": false,
+  "content": {
+    "_uid": "84e4bd4e-4b79-45f3-a6de-d1bc311f1c23",
+    "body": [
+      {
+        "_uid": "1a6f3c52-8d0e-4b7a-9c14-5e2b7a0d6f11",
+        "component": "destination_hero"
+      },
+      {
+        "_uid": "2b7e4d63-9e1f-4c8b-8d25-6f3c8b1e7a22",
+        "headline": "Why the Amalfi Coast",
+        "component": "destination_usps"
+      },
+      {
+        "_uid": "3c8f5e74-af20-4d9c-9e36-7a4d9c2f8b33",
+        "headline": "About the Amalfi Coast",
+        "component": "destination_bio"
+      },
+      {
+        "_uid": "4d9a6f85-b031-4ead-af47-8b5ead3a9c44",
+        "headline": "The Amalfi Coast in pictures",
+        "component": "destination_gallery"
+      },
+      {
+        "_uid": "5eab7096-c142-4fbe-b058-9c6fbe4bad55",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The coast road is slow and crowded in summer, so most visitors travel by bus, boat or on foot.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Ferries link the main towns on a seasonal schedule.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "SITA buses run along the coast road between the towns.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "The Path of the Gods is a walking trail above the sea.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "Getting around",
+        "component": "text_block"
+      },
+      {
+        "_uid": "6fbc81a7-d253-4acf-a169-ad70cf5cbe66",
+        "faqs": [
+          "e46431f0-5a2d-42fa-ac57-b7ff018cc1fa",
+          "66226c1b-a57d-48aa-81f3-9a70935624a2",
+          "34c9b1d6-f9f0-4400-ada7-7c479f8af063"
+        ],
+        "headline": "Before you go",
+        "component": "faq_section"
+      }
+    ],
+    "component": "destination_page",
+    "destination": "9328b74a-df5b-4a00-aa5d-e55334dfd894"
+  },
+  "published": true,
+  "slug": "amalfi-coast",
+  "path": null,
+  "full_slug": "destinations/amalfi-coast",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624294035005,
+    "uuid": "f65cf2f5-d1c9-4b9a-846c-82e576922b14",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "37120912aeebad9eab55de18e9eee6460c1efc49",
+    "timestamp": "1792592502"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624294035005,
+      "name": "Destinations",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:47.115Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "destinations/amalfi-coast",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "destinations/amalfi-coast",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "destinations/amalfi-coast",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -40,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230857307581897,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": 230950132587622,
+  "alt": "A lone bison grazes golden grassland beside a calm river, with snow-capped peaks beyond the pine forest.",
+  "asset_folder_id": null,
+  "content_length": 1165658,
+  "content_type": "image/jpeg",
+  "copyright": "Steven Cordes / Unsplash",
+  "expire_at": null,
+  "ext_id": null,
+  "filename": "https://a.storyblok.com/f/295888311565739/fd00a25069/yellowstone-meadow.jpg",
+  "focus": null,
+  "internal_tag_ids": [],
+  "is_private": false,
+  "locked": false,
+  "meta_data": {
+    "size": "2400x3600"
+  },
+  "publish_at": null,
+  "short_filename": "yellowstone-meadow.jpg",
+  "source": null,
+  "space_id": 295888311565739,
+  "title": "Bison by the river",
+  "created_at": "2026-10-15T14:18:29.711Z",
+  "updated_at": "2026-10-15T14:19:53.447Z",
+  "deleted_at": null,
+  "internal_tags_list": []
+}

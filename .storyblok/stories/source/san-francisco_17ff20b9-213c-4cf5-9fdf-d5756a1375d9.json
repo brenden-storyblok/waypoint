@@ -1,0 +1,189 @@
+{
+  "name": "San Francisco",
+  "parent_id": 230624294035005,
+  "group_id": "78d4c88e-98c2-414d-9a97-8153eb919a96",
+  "alternates": [],
+  "created_at": "2026-10-15T14:30:01.758Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:30:01.817Z",
+  "published_at": "2026-10-15T14:30:01.803Z",
+  "id": 230952967237305,
+  "uuid": "17ff20b9-213c-4cf5-9fdf-d5756a1375d9",
+  "is_folder": false,
+  "content": {
+    "_uid": "59696172-0ef9-4fa6-9619-1eac94b159e0",
+    "body": [
+      {
+        "_uid": "169779a9-9b86-401b-b043-ad9216e57935",
+        "component": "destination_hero"
+      },
+      {
+        "_uid": "6735ff9f-cae3-47da-bf2b-38c1c5c741e7",
+        "headline": "Why San Francisco",
+        "component": "destination_usps"
+      },
+      {
+        "_uid": "2cd94b4a-3dfd-46dc-a193-62748a6ae8ed",
+        "headline": "About San Francisco",
+        "component": "destination_bio"
+      },
+      {
+        "_uid": "1d95e61c-5665-45ea-9be9-e0d073e65fd0",
+        "headline": "San Francisco in pictures",
+        "component": "destination_gallery"
+      },
+      {
+        "_uid": "d0c95288-6492-4fdf-bf91-2eeb438afae2",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Muni runs the buses, light rail, historic streetcars and cable cars, and BART links the city to the airport and the East Bay. A Clipper card or phone pays for both; a cable car ride costs $8.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "BART from SFO to Powell Street takes about 30 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "The ferry from Pier 33 to Alcatraz takes about 15 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Walking across the Golden Gate Bridge and back is about 5.4 km.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "Getting around",
+        "component": "text_block"
+      }
+    ],
+    "component": "destination_page",
+    "destination": "cb725689-5cab-4857-9e75-f8701dd452f3"
+  },
+  "published": true,
+  "slug": "san-francisco",
+  "path": null,
+  "full_slug": "destinations/san-francisco",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624294035005,
+    "uuid": "f65cf2f5-d1c9-4b9a-846c-82e576922b14",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "7a7baba9bb2a2bfc45f31d2d5b7d15148ad9e25c",
+    "timestamp": "1792592493"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624294035005,
+      "name": "Destinations",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:30:01.803Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "destinations/san-francisco",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "destinations/san-francisco",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "destinations/san-francisco",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -350,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230952967328989,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

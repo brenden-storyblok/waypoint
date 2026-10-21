@@ -1,0 +1,292 @@
+{
+  "name": "New Orleans",
+  "parent_id": 230624344329791,
+  "group_id": "c4bcde7e-723a-4349-9fe8-b7012d00eb50",
+  "alternates": [],
+  "created_at": "2026-10-15T14:33:54.393Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:33:54.448Z",
+  "published_at": "2026-10-15T14:33:54.433Z",
+  "id": 230953920106258,
+  "uuid": "0c309231-0cb6-4178-9e07-1c7d8b82133d",
+  "is_folder": false,
+  "content": {
+    "_uid": "987af73c-759c-4fbd-8e61-237a7123aa05",
+    "name": "New Orleans",
+    "usps": [
+      {
+        "_uid": "9b7ef655-fc46-46be-b2cb-a90155deeb94",
+        "text": "Clubs like the Spotted Cat Music Club book live bands every night of the week.",
+        "title": "Live music on Frenchmen Street",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "9384f3de-f1fd-4ee5-8b25-8bba98ef0549",
+        "text": "The French Market coffee stand has served beignets and chicory café au lait since 1862.",
+        "title": "Beignets at Café du Monde",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "c34c9b79-4c2e-4834-b949-22d47785f1d6",
+        "text": "The St. Charles line, running since 1835, is the oldest continuously operating street railway in the world.",
+        "title": "Streetcars under the oaks",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "5552de77-d568-4f7e-8abd-ed382fc467a5",
+        "text": "St. Louis Cathedral, rebuilt in 1850, faces the square where engineers laid out the city in 1721.",
+        "title": "Jackson Square",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Louisiana",
+    "country": "united-states",
+    "gallery": [
+      {
+        "id": 230953331846669,
+        "alt": "A young brass band with trombone, trumpet, drums and sousaphone plays at night on the corner of Frenchmen and Chartres streets.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/d7860e31d9/new-orleans-frenchmen-street.jpg",
+        "copyright": "Robson Hatsukami Morgan / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1605"
+        }
+      },
+      {
+        "id": 230953515642402,
+        "alt": "Green St. Charles streetcar 904 rolls under spreading live oaks on the neutral ground.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/7b3238b8f4/new-orleans-st-charles-streetcar.jpg",
+        "copyright": "Chelsea Audibert / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3278"
+        }
+      },
+      {
+        "id": 230953611066921,
+        "alt": "Hanging ferns fill the curved cast-iron galleries of a red brick corner building in the French Quarter.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/0f056cb489/new-orleans-iron-balconies.jpg",
+        "copyright": "Aya Salman / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230953424268821,
+        "alt": "Crowds walk Bourbon Street under iron balconies hung with purple, green and gold bunting.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/1c4fd5bad1/new-orleans-bourbon-street.jpg",
+        "copyright": "Kristina Volgenau / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230953701482034,
+        "alt": "Downtown hotel towers and the riverfront light up the Mississippi River at night.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/5aae05babd/new-orleans-riverfront-night.jpg",
+        "copyright": "iSawRed / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1350"
+        }
+      }
+    ],
+    "summary": "A port city in a bend of the Mississippi, founded by the French in 1718. Brass bands on Frenchmen Street, beignets at dawn and gumbo at any hour.",
+    "component": "destination",
+    "attributes": [
+      "city",
+      "culture",
+      "food"
+    ],
+    "hero_image": {
+      "id": 230953240411658,
+      "alt": "St. Louis Cathedral's three white spires rise behind palms and the fountain in Jackson Square.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/e522c373d2/new-orleans-st-louis-cathedral.jpg",
+      "copyright": "Steve Lussier / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1800"
+      }
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "New Orleans sits in a tight bend of the Mississippi River, upriver from the Gulf of Mexico, with Lake Pontchartrain to the north. The bend gave it the name Crescent City. Much of the city lies below sea level behind levees.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Jean-Baptiste Le Moyne de Bienville founded the city for France in 1718. Spain ruled it for nearly 40 years before the 1803 Louisiana Purchase, and most French Quarter buildings date from after the fires of 1788 and 1794. Jazz grew here in the early 1900s out of brass bands, blues and church music.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "February to May brings mild weather and the biggest festivals, Mardi Gras and Jazz Fest. Summer is hot and humid, and hurricane season runs from June to November.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230953515642402,
+      "alt": "Green St. Charles streetcar 904 rolls under spreading live oaks on the neutral ground.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/7b3238b8f4/new-orleans-st-charles-streetcar.jpg",
+      "copyright": "Chelsea Audibert / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x3278"
+      }
+    },
+    "image_landscape": {
+      "id": 230953611066921,
+      "alt": "Hanging ferns fill the curved cast-iron galleries of a red brick corner building in the French Quarter.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/0f056cb489/new-orleans-iron-balconies.jpg",
+      "copyright": "Aya Salman / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1600"
+      }
+    }
+  },
+  "published": true,
+  "slug": "new-orleans",
+  "path": null,
+  "full_slug": "data/destinations/new-orleans",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "9d5d0e440e0e141dda98d947fea9262e701fc1e2",
+    "timestamp": "1792592495"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:33:54.433Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/new-orleans",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/new-orleans",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/new-orleans",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -210,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230953920179302,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

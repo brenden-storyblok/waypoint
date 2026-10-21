@@ -1,0 +1,160 @@
+{
+  "name": "When is the best time to visit Seville?",
+  "parent_id": 230624347930176,
+  "group_id": "b6b5248f-a9a2-486f-a7b1-3575764ba4bc",
+  "alternates": [],
+  "created_at": "2026-10-15T07:20:51.095Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T08:00:37.610Z",
+  "published_at": "2026-10-15T08:00:36.161Z",
+  "id": 230847492520652,
+  "uuid": "a2f0cf8a-368d-41cd-a8dd-a58f63cca57b",
+  "is_folder": false,
+  "content": {
+    "_uid": "6a1c0b52-3f1e-4d8e-9a77-1b2c3d4e5f01",
+    "answer": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "March to May and October to November. Days are warm and the streets are comfortable to walk.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "July and August often pass 35°C (95°F). If you come then, plan sightseeing for early morning and evening.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question": "When is the best time to visit?",
+    "component": "faq_item"
+  },
+  "published": true,
+  "slug": "seville-best-time",
+  "path": null,
+  "full_slug": "data/faqs/seville-best-time",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624347930176,
+    "uuid": "684d4de1-a03c-4454-9b91-22940d23aff3",
+    "name": "FAQs",
+    "slug": "faqs",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "9d5d0e440e0e141dda98d947fea9262e701fc1e2",
+    "timestamp": "1792592495"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624347930176,
+      "name": "FAQs",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "faqs",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:36.161Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/faqs/seville-best-time",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/faqs/seville-best-time",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/faqs/seville-best-time",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -210,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230857267563880,
+  "variant_type": null,
+  "taxonomy_terms": [
+    {
+      "id": "230851206502459",
+      "display_name": "Seville",
+      "name": "seville",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    },
+    {
+      "id": "230850638682164",
+      "display_name": "Spain",
+      "name": "spain",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    }
+  ],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

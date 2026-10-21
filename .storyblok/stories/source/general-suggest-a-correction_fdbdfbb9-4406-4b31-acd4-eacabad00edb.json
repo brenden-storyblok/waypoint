@@ -1,0 +1,139 @@
+{
+  "name": "How can I suggest a correction?",
+  "parent_id": 230624347930176,
+  "group_id": "57c5b049-4c92-4dcb-8ee6-90305e7c8bf8",
+  "alternates": [],
+  "created_at": "2026-10-15T07:15:50.560Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T08:00:36.897Z",
+  "published_at": "2026-10-15T08:00:36.161Z",
+  "id": 230846261525105,
+  "uuid": "fdbdfbb9-4406-4b31-acd4-eacabad00edb",
+  "is_folder": false,
+  "content": {
+    "_uid": "f6c9bcd7-a084-4b6f-8db5-6e70acdb5c66",
+    "answer": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Use the Contact page. Tell us which page and which detail needs a fix.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question": "How can I suggest a correction?",
+    "component": "faq_item"
+  },
+  "published": true,
+  "slug": "general-suggest-a-correction",
+  "path": null,
+  "full_slug": "data/faqs/general-suggest-a-correction",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624347930176,
+    "uuid": "684d4de1-a03c-4454-9b91-22940d23aff3",
+    "name": "FAQs",
+    "slug": "faqs",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "caa2aadceeac380918a2d2012a5809b9091612c5",
+    "timestamp": "1792592500"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624347930176,
+      "name": "FAQs",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "faqs",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:36.161Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/faqs/general-suggest-a-correction",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/faqs/general-suggest-a-correction",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/faqs/general-suggest-a-correction",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -80,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230857264672083,
+  "variant_type": null,
+  "taxonomy_terms": [
+    {
+      "id": "230852509141055",
+      "display_name": "Waypoint",
+      "name": "waypoint",
+      "taxonomy_id": "230852480141374",
+      "taxonomy": {
+        "id": "230852480141374",
+        "name": "topics",
+        "display_name": "Topics",
+        "deleted_at": null
+      }
+    }
+  ],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

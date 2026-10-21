@@ -1,0 +1,154 @@
+{
+  "name": "Help",
+  "parent_id": 0,
+  "group_id": "361b82c3-f4b7-4476-ac82-23351d473ad1",
+  "alternates": [],
+  "created_at": "2026-10-15T07:15:57.336Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T09:34:21.835Z",
+  "published_at": "2026-10-15T09:34:21.825Z",
+  "id": 230846289267314,
+  "uuid": "080548ac-4979-4f3b-abf4-4e99252b1edb",
+  "is_folder": false,
+  "content": {
+    "_uid": "11a2b3c4-d5e6-4f70-8a91-b2c3d4e5f601",
+    "body": [
+      {
+        "_uid": "22b3c4d5-e6f7-4081-9ba2-c3d4e5f60712",
+        "image": {
+          "id": 230880277015387,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "https://a.storyblok.com/f/295888311565739/768x573/1291f87999/penguine.jpeg",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {},
+          "is_external_url": false
+        },
+        "intro": "Answers to common questions about Waypoint and how we work.",
+        "headline": "Help",
+        "component": "hero"
+      },
+      {
+        "_uid": "33c4d5e6-f708-4192-8cb3-d4e5f6071823",
+        "faqs": [
+          "e3559bbc-5db0-4ec2-bf99-a76d19a2cc0e",
+          "b126e15c-ef23-4394-8371-ff8d4a8cab37",
+          "cda0e7d9-e504-4be3-8ae4-50849cdf23c0",
+          "b30b0956-7321-46ce-a6b1-e31bf1a88cec",
+          "e2f06b68-c012-4b6d-86f9-fd8480d11cdf",
+          "fdbdfbb9-4406-4b31-acd4-eacabad00edb"
+        ],
+        "headline": "Common questions",
+        "component": "faq_section"
+      },
+      {
+        "_uid": "44d5e6f7-0819-42a3-9dc4-e5f607182934",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "If you cannot find your answer here, visit the ",
+                  "type": "text"
+                },
+                {
+                  "text": "Contact page",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "/contact",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " and send us a message.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "Still have a question?",
+        "component": "text_block"
+      }
+    ],
+    "component": "page"
+  },
+  "published": true,
+  "slug": "help",
+  "path": null,
+  "full_slug": "help",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": null,
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "37120912aeebad9eab55de18e9eee6460c1efc49",
+    "timestamp": "1792592502"
+  },
+  "pinned": false,
+  "breadcrumbs": [],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:47.097Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "help",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "help",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "help",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -40,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230880304300630,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

@@ -66,6 +66,47 @@ Back in Storyblok, open the **Home** story to start editing.
 
 Happy building!
 
+## Restore the content to a new space
+
+The `.storyblok/` directory holds a copy of the space content in a `source` folder per type: `datasources/source`, `assets/source`, `components/source` and `stories/source`. You can push that copy into a new, empty space with the [Storyblok CLI](https://www.storyblok.com/docs/tooling/cli). You need the ID of the new space only.
+
+Log in first, in the same region as the new space:
+
+```sh
+storyblok login
+```
+
+Then push in this order, replacing `<NEW_SPACE_ID>` with the ID of the new space. `--from source` tells the CLI to read the local files from the `source` folders.
+
+```sh
+# 1. Datasources: components can read their options from a datasource
+storyblok datasources push --from source --space <NEW_SPACE_ID>
+
+# 2. Assets: the push writes a manifest that maps old asset IDs to new ones
+storyblok assets push --from source --space <NEW_SPACE_ID>
+
+# 3. Components: stories need their content types to exist
+storyblok components push --from source --space <NEW_SPACE_ID>
+
+# 4. Stories: the push uses the asset manifest to rewrite asset references
+storyblok stories push --from source --space <NEW_SPACE_ID> --dry-run
+storyblok stories push --from source --space <NEW_SPACE_ID>
+```
+
+> [!TIP]
+> `assets push` and `stories push` accept `--dry-run`. Run it first to preview what the push creates. Add `--publish` to `stories push` to publish every story it creates.
+
+> [!IMPORTANT]
+> Keep the `manifest.jsonl` files under `.storyblok/assets/` and `.storyblok/stories/`. The CLI reads them to update what it already created, so a second push does not duplicate assets or stories.
+
+To refresh the copy from the original space, pull each type and move the result into `source`. The CLI writes pulls to a folder named after the space ID, so `storyblok stories pull --space <ORIGINAL_SPACE_ID>` lands in `.storyblok/stories/<ORIGINAL_SPACE_ID>`.
+
+See the CLI reference for each command:
+[`datasources push`](https://www.storyblok.com/docs/tooling/cli/datasources/push),
+[`assets push`](https://www.storyblok.com/docs/tooling/cli/assets/push),
+[`components push`](https://www.storyblok.com/docs/tooling/cli/components/push) and
+[`stories push`](https://www.storyblok.com/docs/tooling/cli/stories/push).
+
 ## Resources
 
 - To learn more about what you can do with Storyblok, visit [our documentation and learning hub](https://www.storyblok.com/docs).

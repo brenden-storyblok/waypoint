@@ -1,0 +1,189 @@
+{
+  "name": "Chiang Mai",
+  "parent_id": 230624294035005,
+  "group_id": "d729e47c-c105-41a5-b2b5-019917cafb1f",
+  "alternates": [],
+  "created_at": "2026-10-15T14:28:17.502Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:28:17.554Z",
+  "published_at": "2026-10-15T14:28:17.541Z",
+  "id": 230952540204711,
+  "uuid": "829fcb57-98ef-4e57-9775-b881921baf0f",
+  "is_folder": false,
+  "content": {
+    "_uid": "cb302a1d-20b8-4122-ac1f-2622e73bbe4a",
+    "body": [
+      {
+        "_uid": "29bc34af-b5a4-4c58-8e11-dc855f95db51",
+        "component": "destination_hero"
+      },
+      {
+        "_uid": "87b3a96f-d416-4d1d-895f-48fe27b53aff",
+        "headline": "Why Chiang Mai",
+        "component": "destination_usps"
+      },
+      {
+        "_uid": "f4a8bc78-7bc3-4a43-b6e3-faf137a13b9b",
+        "headline": "About Chiang Mai",
+        "component": "destination_bio"
+      },
+      {
+        "_uid": "23e678c7-26f9-465b-b83a-51cab35b590c",
+        "headline": "Chiang Mai in pictures",
+        "component": "destination_gallery"
+      },
+      {
+        "_uid": "cbb69c08-cef9-473a-9ece-aaf15605cd40",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Red shared pickup trucks called songthaew run fixed and flexible routes around the city. Agree the fare before you climb in, or book a car through the Grab app. The old city is small enough to cross on foot.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Chiang Mai Airport is about 15 minutes by car from the old city.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "A songthaew up the mountain road to Doi Suthep takes about 40 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Flights from Bangkok take about 1 hour 15 minutes, and the overnight train takes 11 to 13 hours.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "Getting around",
+        "component": "text_block"
+      }
+    ],
+    "component": "destination_page",
+    "destination": "2a7d7f6f-0478-430d-bbc7-15d2374204ae"
+  },
+  "published": true,
+  "slug": "chiang-mai",
+  "path": null,
+  "full_slug": "destinations/chiang-mai",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624294035005,
+    "uuid": "f65cf2f5-d1c9-4b9a-846c-82e576922b14",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "7a7baba9bb2a2bfc45f31d2d5b7d15148ad9e25c",
+    "timestamp": "1792592493"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624294035005,
+      "name": "Destinations",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:28:17.541Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "destinations/chiang-mai",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "destinations/chiang-mai",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "destinations/chiang-mai",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -330,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230952540278938,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

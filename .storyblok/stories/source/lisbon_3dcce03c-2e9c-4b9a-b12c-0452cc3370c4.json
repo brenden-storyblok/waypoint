@@ -1,0 +1,293 @@
+{
+  "name": "Lisbon",
+  "parent_id": 230624344329791,
+  "group_id": "fdedb9fc-b0ed-4ccd-ae9c-4d9ebcfbd2f7",
+  "alternates": [],
+  "created_at": "2026-10-14T16:23:57.864Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T12:27:37.255Z",
+  "published_at": "2026-10-15T12:27:37.229Z",
+  "id": 230627073516755,
+  "uuid": "3dcce03c-2e9c-4b9a-b12c-0452cc3370c4",
+  "is_folder": false,
+  "content": {
+    "_uid": "1403cba2-2aad-4371-9a24-54b0687a93bb",
+    "name": "Lisbon",
+    "usps": [
+      {
+        "_uid": "733fe7a4-d409-47f0-9d75-bbb8f53fa925",
+        "text": "Miradouros like Senhora do Monte and São Pedro de Alcântara look over red roofs to the river.",
+        "title": "A viewpoint on every hill",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "4685983e-71b5-486b-aa77-bef9f7548080",
+        "text": "The 1930s Remodelado trams climb lanes too narrow for buses.",
+        "title": "Tram 28 through Alfama",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "c1aca3d2-b114-4039-8e80-78d5ba2fc350",
+        "text": "Belém bakeries have served the custard tart since 1837.",
+        "title": "Pastéis de nata, fresh",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "75e6c992-7153-4a03-a08e-588109460343",
+        "text": "Cascais and Estoril sit 40 minutes west on the coastal line.",
+        "title": "Beaches by train",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Lisbon Region",
+    "country": "portugal",
+    "gallery": [
+      {
+        "id": 230626319068799,
+        "alt": "Yellow tram on a cobbled street between yellow and white buildings in Baixa",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/58b7f98e59/lisbon-yellow-tram.jpg",
+        "copyright": "Aayush Gupta / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1596"
+        }
+      },
+      {
+        "id": 230626322783872,
+        "alt": "Rua Augusta Arch on Praça do Comércio under a clear blue sky",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/2cc445fa69/lisbon-rua-augusta-arch.jpg",
+        "copyright": "Kristijan Arsov / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3600"
+        }
+      },
+      {
+        "id": 230626327199361,
+        "alt": "25 de Abril Bridge at sunset with light trails from traffic",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/3234b1ff46/lisbon-25-de-abril-bridge.jpg",
+        "copyright": "User_Pascal / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230626311458429,
+        "alt": "Lisbon city lights coming on under an orange sunset sky",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/bc50cb0478/lisbon-city-lights-sunset.jpg",
+        "copyright": "Thomas Winkler / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230626315271806,
+        "alt": "Visitors walking toward Belém Tower on a sunny day",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/df6ae18752/lisbon-belem-tower.jpg",
+        "copyright": "Fausto Ribeiro / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3609"
+        }
+      }
+    ],
+    "summary": "Seven hills, yellow trams and the Atlantic light that painters chase. A capital you walk uphill and remember downhill.",
+    "component": "destination",
+    "attributes": [
+      "city",
+      "beach",
+      "culture"
+    ],
+    "hero_image": {
+      "id": 230626307366524,
+      "alt": "Alfama rooftops at dusk with the dome of the National Pantheon and the Tagus river behind",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/b6aa0fe4e0/lisbon-alfama-rooftops-dusk.jpg",
+      "copyright": "Aleksandr Zaitsev / Unsplash",
+      "fieldtype": "asset"
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Lisbon spreads across the hills on the north bank of the Tagus estuary, where the river widens before it meets the Atlantic.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The 1755 earthquake levelled much of the city. Baixa was rebuilt on a grid, while Alfama and Mouraria kept their medieval tangle of stairways and laundry lines. Fado drifts out of tascas after dark.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Spring and early autumn bring warm days without summer crowds. Comfortable shoes matter more than anything else you pack.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230626315271806,
+      "alt": "Visitors walking toward Belém Tower on a sunny day",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/df6ae18752/lisbon-belem-tower.jpg",
+      "copyright": "Fausto Ribeiro / Unsplash",
+      "fieldtype": "asset"
+    },
+    "image_landscape": {
+      "id": 230626311458429,
+      "alt": "Lisbon city lights coming on under an orange sunset sky",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/bc50cb0478/lisbon-city-lights-sunset.jpg",
+      "copyright": "Thomas Winkler / Unsplash",
+      "fieldtype": "asset"
+    }
+  },
+  "published": true,
+  "slug": "lisbon",
+  "path": null,
+  "full_slug": "data/destinations/lisbon",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "2c2f07c4584a59d56c087dacd155a68fb2621db6",
+    "timestamp": "1792592505"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:36.161Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/lisbon",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/lisbon",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/lisbon",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": 0,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230922883801594,
+  "variant_type": null,
+  "taxonomy_terms": [
+    {
+      "id": "230845758261298",
+      "display_name": "Portugal",
+      "name": "portugal",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    }
+  ],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

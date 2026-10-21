@@ -1,0 +1,180 @@
+{
+  "name": "Footer",
+  "parent_id": 230624289754684,
+  "group_id": "5e6281d0-2ad8-448e-a317-f0c9ab00020a",
+  "alternates": [],
+  "created_at": "2026-10-14T16:12:54.471Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T08:00:47.431Z",
+  "published_at": "2026-10-15T08:00:47.121Z",
+  "id": 230624356290114,
+  "uuid": "fb8f4c4d-eea7-4896-a40a-bcaa33c3c700",
+  "is_folder": false,
+  "content": {
+    "_uid": "1f713eab-14c6-4c48-97b5-994de8d7d41c",
+    "columns": [
+      {
+        "_uid": "48221cc3-6401-4365-9c2e-4ac2263f8c46",
+        "links": [
+          {
+            "_uid": "603827c6-86fe-419c-b31d-8fcacd2eb687",
+            "link": {
+              "url": "/destinations",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "/destinations"
+            },
+            "label": "All destinations",
+            "component": "nav_link"
+          }
+        ],
+        "headline": "Destinations",
+        "component": "footer_column"
+      },
+      {
+        "_uid": "ce401ff0-dc02-4bfa-8ff9-1037075a34b7",
+        "links": [
+          {
+            "_uid": "25dff9b7-ec9c-4fe3-ad4e-0a3af1cb8c37",
+            "link": {
+              "url": "/about",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "/about"
+            },
+            "label": "How we pick",
+            "component": "nav_link"
+          },
+          {
+            "_uid": "6738c7e8-633d-4fcb-9ce9-670729f82ab6",
+            "link": {
+              "url": "/contact",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "/contact"
+            },
+            "label": "Contact",
+            "component": "nav_link"
+          }
+        ],
+        "headline": "Waypoint",
+        "component": "footer_column"
+      },
+      {
+        "_uid": "58cb4996-c216-420f-89e4-764162a8ded2",
+        "links": [
+          {
+            "_uid": "53c839f2-9ad5-4bc9-8281-7726e6528706",
+            "link": {
+              "url": "/privacy",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "/privacy"
+            },
+            "label": "Privacy",
+            "component": "nav_link"
+          },
+          {
+            "_uid": "eec62d58-90cd-4aa5-96fa-380ef59ca2c3",
+            "link": {
+              "url": "/imprint",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "/imprint"
+            },
+            "label": "Imprint",
+            "component": "nav_link"
+          }
+        ],
+        "headline": "Legal",
+        "component": "footer_column"
+      }
+    ],
+    "component": "footer",
+    "legal_text": "© 2026 Waypoint"
+  },
+  "published": true,
+  "slug": "footer",
+  "path": null,
+  "full_slug": "global/footer",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624289754684,
+    "uuid": "d388e075-f8f6-4ac7-9888-35e34e16cf0e",
+    "name": "Global",
+    "slug": "global",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "40982a284b433403eebb5db763e9d1b488336fed",
+    "timestamp": "1792592504"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624289754684,
+      "name": "Global",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "global",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-14T16:12:54.542Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "global/footer",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "global/footer",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "global/footer",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -10,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230857307823563,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

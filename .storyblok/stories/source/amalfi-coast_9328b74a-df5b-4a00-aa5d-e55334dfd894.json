@@ -1,0 +1,293 @@
+{
+  "name": "Amalfi Coast",
+  "parent_id": 230624344329791,
+  "group_id": "a8f7b8af-c072-4aca-9f12-fecc683b4c66",
+  "alternates": [],
+  "created_at": "2026-10-15T07:20:26.082Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T12:26:20.159Z",
+  "published_at": "2026-10-15T12:26:20.136Z",
+  "id": 230847390059201,
+  "uuid": "9328b74a-df5b-4a00-aa5d-e55334dfd894",
+  "is_folder": false,
+  "content": {
+    "_uid": "382ab9d9-9790-4758-8ae6-02867e093c53",
+    "name": "Amalfi Coast",
+    "usps": [
+      {
+        "_uid": "5b0d6a1e-2c43-4f0e-9a51-0c7e1f3b8a01",
+        "text": "A cliff trail links Bomerano and Nocelle high above the sea.",
+        "title": "The Path of the Gods",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "8c4e2f77-31b5-4d6a-b0e2-6a9d54c1e702",
+        "text": "Villa Rufolo and Villa Cimbrone look down on the coast from the hills above Amalfi.",
+        "title": "Ravello's garden terraces",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "d17a93b5-6e08-4c2f-8f14-3be0a5d27c03",
+        "text": "Seasonal boats connect Amalfi, Positano and Salerno and skip the coast road.",
+        "title": "Ferries between towns",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "e92f40c8-7a15-4b3d-a6c9-12d8f0b45e04",
+        "text": "Terraced groves grow the lemons that go into the local limoncello.",
+        "title": "Lemons and limoncello",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Campania",
+    "country": "italy",
+    "gallery": [
+      {
+        "id": 230846897259190,
+        "alt": "Houses clinging to a dark cliff above the sea under heavy clouds, seen from a boat",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/e021f49363/amalfi-coast-positano-from-sea.jpg",
+        "copyright": "Ryan James Christopher / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3254"
+        }
+      },
+      {
+        "id": 230846884151986,
+        "alt": "Colourful buildings on the cliff above Amalfi harbour, with a white boat on turquoise water",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/843b86754c/amalfi-coast-amalfi-town.jpg",
+        "copyright": "Tom Podmore / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230846879920817,
+        "alt": "Pastel houses climbing the hill above Positano beach, with the sea in the foreground and mountains behind",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/20f87cceae/amalfi-coast-positano-beach.jpg",
+        "copyright": "James Dant / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3000"
+        }
+      },
+      {
+        "id": 230846888379059,
+        "alt": "Positano lit up at dusk, with a church dome on the right and a calm bay under a pink sky",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/d0061bb33e/amalfi-coast-positano-dusk.jpg",
+        "copyright": "Sebastian Leonhardt / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1604"
+        }
+      },
+      {
+        "id": 230846892782261,
+        "alt": "Steep cliffs along the Amalfi Coast with white villas, a tunnel mouth and small boats on blue water",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/c4538117f8/amalfi-coast-cliffs-and-sea.jpg",
+        "copyright": "Chang / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1800"
+        }
+      }
+    ],
+    "summary": "Pastel towns stacked on limestone cliffs above the Tyrrhenian Sea. A coast you reach by ferry and see on foot.",
+    "component": "destination",
+    "attributes": [
+      "beach",
+      "coast",
+      "food"
+    ],
+    "hero_image": {
+      "id": 230846876258992,
+      "alt": "Positano houses stacked on a steep green cliff above a bay with boats and a pebble beach",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/7b32bd75cd/amalfi-coast-positano-hillside.jpg",
+      "copyright": "Letizia Agosta / Unsplash",
+      "fieldtype": "asset"
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The Amalfi Coast runs along the southern edge of the Sorrento Peninsula in Campania. Steep cliffs drop to the sea, and the towns of Positano, Amalfi and Atrani cling to the slopes.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Villages sit on terraces cut into the hillside, linked by stairways and the narrow SS163 coast road. Lemon groves grow on the terraces. Ravello looks down on the coast from the heights above Amalfi.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "May, June and September are the best months. Ferries and buses beat the road in summer, and sturdy shoes matter on the stairs.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230846879920817,
+      "alt": "Pastel houses climbing the hill above Positano beach, with the sea in the foreground and mountains behind",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/20f87cceae/amalfi-coast-positano-beach.jpg",
+      "copyright": "James Dant / Unsplash",
+      "fieldtype": "asset"
+    },
+    "image_landscape": {
+      "id": 230846884151986,
+      "alt": "Colourful buildings on the cliff above Amalfi harbour, with a white boat on turquoise water",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/843b86754c/amalfi-coast-amalfi-town.jpg",
+      "copyright": "Tom Podmore / Unsplash",
+      "fieldtype": "asset"
+    }
+  },
+  "published": true,
+  "slug": "amalfi-coast",
+  "path": null,
+  "full_slug": "data/destinations/amalfi-coast",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "37120912aeebad9eab55de18e9eee6460c1efc49",
+    "timestamp": "1792592502"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:36.161Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/amalfi-coast",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/amalfi-coast",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/amalfi-coast",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -40,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230922568073445,
+  "variant_type": null,
+  "taxonomy_terms": [
+    {
+      "id": "230850699671607",
+      "display_name": "Italy",
+      "name": "italy",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    }
+  ],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

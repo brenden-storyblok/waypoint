@@ -1,0 +1,189 @@
+{
+  "name": "Cape Town",
+  "parent_id": 230624294035005,
+  "group_id": "e7e7509d-40f4-44f6-a76b-9e5de0d11031",
+  "alternates": [],
+  "created_at": "2026-10-15T14:21:32.150Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:21:32.205Z",
+  "published_at": "2026-10-15T14:21:32.189Z",
+  "id": 230950879877991,
+  "uuid": "8444b055-866b-4a44-ad06-dbec077d1245",
+  "is_folder": false,
+  "content": {
+    "_uid": "fed9aaac-7fa0-44b4-b475-b0fc13148190",
+    "body": [
+      {
+        "_uid": "44586a42-84bd-44c9-8476-3a945b51dae6",
+        "component": "destination_hero"
+      },
+      {
+        "_uid": "1ced8ae6-ae16-470c-8317-53871ad54c23",
+        "headline": "Why Cape Town",
+        "component": "destination_usps"
+      },
+      {
+        "_uid": "5d9b1ced-ca63-45fc-bc55-d7a0e218db63",
+        "headline": "About Cape Town",
+        "component": "destination_bio"
+      },
+      {
+        "_uid": "86959310-f0cd-427a-9c04-f4885cc3b16b",
+        "headline": "Cape Town in pictures",
+        "component": "destination_gallery"
+      },
+      {
+        "_uid": "03cedca4-a4c9-4636-85a8-b77456222e2a",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Most visitors use ride-hailing apps or a hire car, since public transport is thin outside the centre. MyCiTi buses link the airport, the city centre, the Waterfront and the Atlantic seaboard as far as Hout Bay.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Cape Town International to the city centre is about 20 km, around 25 minutes by car.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Cape Point is about 70 km south of the city, roughly 90 minutes by road.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "The Robben Island ferry from the V&A Waterfront takes about 30 minutes each way.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "Getting around",
+        "component": "text_block"
+      }
+    ],
+    "component": "destination_page",
+    "destination": "1649946b-30f1-4f3c-971a-3d116b5ccfac"
+  },
+  "published": true,
+  "slug": "cape-town",
+  "path": null,
+  "full_slug": "destinations/cape-town",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624294035005,
+    "uuid": "f65cf2f5-d1c9-4b9a-846c-82e576922b14",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "8a0924dbc567e4e05d09aa7c3d4282b078266666",
+    "timestamp": "1792592497"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624294035005,
+      "name": "Destinations",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:21:32.189Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "destinations/cape-town",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "destinations/cape-town",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "destinations/cape-town",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -150,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230950879952825,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

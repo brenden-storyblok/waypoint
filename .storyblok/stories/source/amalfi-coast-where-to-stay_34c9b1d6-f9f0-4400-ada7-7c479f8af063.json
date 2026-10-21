@@ -1,0 +1,160 @@
+{
+  "name": "Where should I stay on the Amalfi Coast?",
+  "parent_id": 230624347930176,
+  "group_id": "bfc6f92d-693c-4c73-bd18-6afb1e43d239",
+  "alternates": [],
+  "created_at": "2026-10-15T07:20:08.782Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T08:00:37.515Z",
+  "published_at": "2026-10-15T08:00:36.161Z",
+  "id": 230847319198399,
+  "uuid": "34c9b1d6-f9f0-4400-ada7-7c479f8af063",
+  "is_folder": false,
+  "content": {
+    "_uid": "a18bb14f-c025-4d7a-976a-d5cbf179c4ba",
+    "answer": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Amalfi is the most central base for buses and ferries. Positano is the most photographed town, but it is steep and full of stairs.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ravello sits high above the coast and is quiet in the evening.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question": "Where should I stay?",
+    "component": "faq_item"
+  },
+  "published": true,
+  "slug": "amalfi-coast-where-to-stay",
+  "path": null,
+  "full_slug": "data/faqs/amalfi-coast-where-to-stay",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624347930176,
+    "uuid": "684d4de1-a03c-4454-9b91-22940d23aff3",
+    "name": "FAQs",
+    "slug": "faqs",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "9d5d0e440e0e141dda98d947fea9262e701fc1e2",
+    "timestamp": "1792592495"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624347930176,
+      "name": "FAQs",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "faqs",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:36.161Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/faqs/amalfi-coast-where-to-stay",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/faqs/amalfi-coast-where-to-stay",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/faqs/amalfi-coast-where-to-stay",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -200,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230857267195237,
+  "variant_type": null,
+  "taxonomy_terms": [
+    {
+      "id": "230851169421370",
+      "display_name": "Amalfi Coast",
+      "name": "amalfi-coast",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    },
+    {
+      "id": "230850699671607",
+      "display_name": "Italy",
+      "name": "italy",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    }
+  ],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

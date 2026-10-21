@@ -1,0 +1,189 @@
+{
+  "name": "Maui",
+  "parent_id": 230624294035005,
+  "group_id": "568cf2ed-9346-41a0-a812-4162ff697eaf",
+  "alternates": [],
+  "created_at": "2026-10-15T14:18:12.420Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:18:12.491Z",
+  "published_at": "2026-10-15T14:18:12.475Z",
+  "id": 230950061808424,
+  "uuid": "a6cdbd6c-e514-4a81-bb8f-ffa0caa0e1a8",
+  "is_folder": false,
+  "content": {
+    "_uid": "9875dd51-b33e-4d46-a072-967fa4c6f395",
+    "body": [
+      {
+        "_uid": "ce597a2d-96d3-4931-9245-474075e44c94",
+        "component": "destination_hero"
+      },
+      {
+        "_uid": "f46f05a5-1556-4809-80bd-2514aaac1aca",
+        "headline": "Why Maui",
+        "component": "destination_usps"
+      },
+      {
+        "_uid": "6cd50f9d-a4f0-42ad-af6c-213356c17fb9",
+        "headline": "About Maui",
+        "component": "destination_bio"
+      },
+      {
+        "_uid": "e8afc27b-7f14-40a0-9434-357498f1d954",
+        "headline": "Maui in pictures",
+        "component": "destination_gallery"
+      },
+      {
+        "_uid": "ade218ce-62ab-4cd4-b176-e6615d06bfc2",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Rent a car at Kahului Airport (OGG). The Maui Bus links the main towns, but routes thin out beyond the central valley and the resort coasts.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Kahului Airport to Wailea takes about 30 minutes by car.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Kahului to Kāʻanapali takes about 45 minutes on the Honoapiʻilani Highway.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Kahului to the Haleakalā summit takes about 2 hours up a road of switchbacks.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "Getting around",
+        "component": "text_block"
+      }
+    ],
+    "component": "destination_page",
+    "destination": "5c8dd6a9-6053-4ff1-be1a-b29ac8ea7ebd"
+  },
+  "published": true,
+  "slug": "maui",
+  "path": null,
+  "full_slug": "destinations/maui",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624294035005,
+    "uuid": "f65cf2f5-d1c9-4b9a-846c-82e576922b14",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "caa2aadceeac380918a2d2012a5809b9091612c5",
+    "timestamp": "1792592500"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624294035005,
+      "name": "Destinations",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:18:12.475Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "destinations/maui",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "destinations/maui",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "destinations/maui",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -90,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230950061918805,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

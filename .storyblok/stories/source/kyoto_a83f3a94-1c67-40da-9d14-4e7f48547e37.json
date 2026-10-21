@@ -1,0 +1,292 @@
+{
+  "name": "Kyoto",
+  "parent_id": 230624344329791,
+  "group_id": "20a10d5f-49dd-498b-9cda-9e6c73122cda",
+  "alternates": [],
+  "created_at": "2026-10-15T14:22:19.849Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:22:19.908Z",
+  "published_at": "2026-10-15T14:22:19.894Z",
+  "id": 230951075265398,
+  "uuid": "a83f3a94-1c67-40da-9d14-4e7f48547e37",
+  "is_folder": false,
+  "content": {
+    "_uid": "a8bb5f36-4902-4da2-85e3-749a733e55e8",
+    "name": "Kyoto",
+    "usps": [
+      {
+        "_uid": "ab53ec10-8471-438c-9095-d39a6c8f6cbb",
+        "text": "Emperors ruled from Kyoto from 794 until the court moved to Tokyo in 1868.",
+        "title": "A thousand years of capital",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "1af2e978-bdbb-4a48-8d85-0a73bf5848ea",
+        "text": "Thousands of vermilion gates line the trails that climb Mount Inari behind Fushimi Inari Taisha.",
+        "title": "Torii up the mountain",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "55cd1f95-2fb2-4cb4-b157-37f38bee0776",
+        "text": "Nishiki Market runs five blocks through the centre, selling pickles, tofu, sweets and grilled skewers.",
+        "title": "Kyoto's Kitchen",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "abf7e3f1-8c0a-4c7b-907c-820481d70e70",
+        "text": "Kinkaku-ji's top two floors are covered in gold leaf and reflect in the Kyoko-chi pond.",
+        "title": "Gold on the water",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Kansai",
+    "country": "japan",
+    "gallery": [
+      {
+        "id": 230948374416246,
+        "alt": "The five-storey Yasaka pagoda rises above a sloping stone lane of wooden houses under an orange sunset sky.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/3e2726dd04/kyoto-yasaka.jpg",
+        "copyright": "Roméo A. / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3600"
+        }
+      },
+      {
+        "id": 230948378884983,
+        "alt": "A stone path runs through a tunnel of orange torii gates inscribed with black characters at Fushimi Inari.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/fad7a5932a/kyoto-torii.jpg",
+        "copyright": "David Emrich / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230950853541083,
+        "alt": "The gold-leaf Kinkaku-ji pavilion sits on its pond behind a pruned pine under a clear blue sky.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/265195ccaf/kyoto-kinkakuji.jpg",
+        "copyright": "Aibolat Askhar / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230948393208699,
+        "alt": "Visitors walk a fenced path between towering green bamboo stalks in the Arashiyama grove.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/ebe3dbd330/kyoto-bamboo.jpg",
+        "copyright": "David Emrich / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3593"
+        }
+      },
+      {
+        "id": 230950914546912,
+        "alt": "A red temple hall and arched red bridge reflect in a green pond surrounded by maple trees.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/5355c10524/kyoto-redtemple.jpg",
+        "copyright": "David Emrich / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3594"
+        }
+      }
+    ],
+    "summary": "Japan's capital for more than a thousand years, with temple bells, wooden teahouses and torii tunnels up the hills. A city you learn on foot and by bus.",
+    "component": "destination",
+    "attributes": [
+      "city",
+      "culture",
+      "food"
+    ],
+    "hero_image": {
+      "id": 230948370107253,
+      "alt": "The Kiyomizu-dera pagoda stands above autumn trees with Kyoto and its western mountains behind at dusk.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/3da4435b8f/kyoto-kiyomizu.jpg",
+      "copyright": "Su San Lee / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1600"
+      }
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Kyoto sits in a basin in western Honshu, walled by mountains on three sides. The Kamo River runs north to south through the centre, and the Higashiyama hills rise along its eastern edge.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The city was founded as Heian-kyo in 794 and stayed the imperial capital until 1868. Its streets still follow the original grid. The UNESCO listing for ancient Kyoto covers 17 sites, from Kiyomizu-dera to the gold-leaf Kinkaku-ji. In Gion, geiko and maiko still walk to evening appointments along Hanamikoji.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Late March to early April brings cherry blossom, and mid to late November brings red maples. Both seasons are busy, so reach Fushimi Inari or Arashiyama before 8am.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230948374416246,
+      "alt": "The five-storey Yasaka pagoda rises above a sloping stone lane of wooden houses under an orange sunset sky.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/3e2726dd04/kyoto-yasaka.jpg",
+      "copyright": "Roméo A. / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x3600"
+      }
+    },
+    "image_landscape": {
+      "id": 230950853541083,
+      "alt": "The gold-leaf Kinkaku-ji pavilion sits on its pond behind a pruned pine under a clear blue sky.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/265195ccaf/kyoto-kinkakuji.jpg",
+      "copyright": "Aibolat Askhar / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1600"
+      }
+    }
+  },
+  "published": true,
+  "slug": "kyoto",
+  "path": null,
+  "full_slug": "data/destinations/kyoto",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "092662d2050bcd55e4f77fc21c2166cce78a93b2",
+    "timestamp": "1792592498"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:22:19.894Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/kyoto",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/kyoto",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/kyoto",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -120,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230951075352858,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

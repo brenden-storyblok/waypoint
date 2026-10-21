@@ -1,0 +1,162 @@
+[
+  {
+    "id": 230922040954261,
+    "name": "Destination Attributes",
+    "slug": "destination-attributes",
+    "dimensions": [],
+    "created_at": "2026-10-15T12:24:11.403Z",
+    "updated_at": "2026-10-15T12:24:11.403Z",
+    "entries": [
+      {
+        "id": 230922082397526,
+        "name": "Beach",
+        "value": "beach"
+      },
+      {
+        "id": 230922086456663,
+        "name": "Nature",
+        "value": "nature"
+      },
+      {
+        "id": 230922090483032,
+        "name": "City",
+        "value": "city"
+      },
+      {
+        "id": 230922094751065,
+        "name": "Mountains",
+        "value": "mountains"
+      },
+      {
+        "id": 230922098834778,
+        "name": "Coast",
+        "value": "coast"
+      },
+      {
+        "id": 230922103082331,
+        "name": "Island",
+        "value": "island"
+      },
+      {
+        "id": 230922107288924,
+        "name": "Countryside",
+        "value": "countryside"
+      },
+      {
+        "id": 230922111511901,
+        "name": "Culture",
+        "value": "culture"
+      },
+      {
+        "id": 230947563356852,
+        "name": "Wildlife",
+        "value": "wildlife"
+      },
+      {
+        "id": 230947565830837,
+        "name": "Desert",
+        "value": "desert"
+      },
+      {
+        "id": 230922115681630,
+        "name": "Food",
+        "value": "food"
+      }
+    ]
+  },
+  {
+    "id": 230619952143326,
+    "name": "Countries",
+    "slug": "countries",
+    "dimensions": [],
+    "created_at": "2026-10-14T15:54:59.248Z",
+    "updated_at": "2026-10-14T15:54:59.248Z",
+    "entries": [
+      {
+        "id": 230619985759358,
+        "name": "France",
+        "value": "france"
+      },
+      {
+        "id": 230619989974143,
+        "name": "Spain",
+        "value": "spain"
+      },
+      {
+        "id": 230619994520704,
+        "name": "Italy",
+        "value": "italy"
+      },
+      {
+        "id": 230619998088321,
+        "name": "Greece",
+        "value": "greece"
+      },
+      {
+        "id": 230620003138690,
+        "name": "Portugal",
+        "value": "portugal"
+      },
+      {
+        "id": 230947516060329,
+        "name": "United States",
+        "value": "united-states"
+      },
+      {
+        "id": 230947520680618,
+        "name": "Croatia",
+        "value": "croatia"
+      },
+      {
+        "id": 230947524887211,
+        "name": "Netherlands",
+        "value": "netherlands"
+      },
+      {
+        "id": 230947529749164,
+        "name": "United Kingdom",
+        "value": "united-kingdom"
+      },
+      {
+        "id": 230947534185133,
+        "name": "Morocco",
+        "value": "morocco"
+      },
+      {
+        "id": 230947538629294,
+        "name": "South Africa",
+        "value": "south-africa"
+      },
+      {
+        "id": 230947543601839,
+        "name": "Tanzania",
+        "value": "tanzania"
+      },
+      {
+        "id": 230947548185264,
+        "name": "Japan",
+        "value": "japan"
+      },
+      {
+        "id": 230947552662193,
+        "name": "Indonesia",
+        "value": "indonesia"
+      },
+      {
+        "id": 230947556987570,
+        "name": "Vietnam",
+        "value": "vietnam"
+      },
+      {
+        "id": 230947560354483,
+        "name": "Thailand",
+        "value": "thailand"
+      },
+      {
+        "id": 230619982228605,
+        "name": "Germany",
+        "value": "germany"
+      }
+    ]
+  }
+]

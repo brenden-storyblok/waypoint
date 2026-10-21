@@ -1,0 +1,189 @@
+{
+  "name": "Scottish Highlands",
+  "parent_id": 230624294035005,
+  "group_id": "e722c465-6004-43b8-abad-6e8642ebea72",
+  "alternates": [],
+  "created_at": "2026-10-15T14:15:23.879Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:15:23.942Z",
+  "published_at": "2026-10-15T14:15:23.925Z",
+  "id": 230949371451149,
+  "uuid": "e513a009-daec-4b48-aea7-5999e6801c62",
+  "is_folder": false,
+  "content": {
+    "_uid": "997a34bc-e59a-41cc-9969-d5b38658dd2a",
+    "body": [
+      {
+        "_uid": "f08649ab-85cf-4702-83ce-be2037dca614",
+        "component": "destination_hero"
+      },
+      {
+        "_uid": "463dd957-ec88-43c4-bf63-0b3c2dbe28b7",
+        "headline": "Why Scottish Highlands",
+        "component": "destination_usps"
+      },
+      {
+        "_uid": "1bac19e4-303d-4bd1-9455-8e5494fbdbbf",
+        "headline": "About Scottish Highlands",
+        "component": "destination_bio"
+      },
+      {
+        "_uid": "094f8d8a-357d-42e1-befb-65099cdd45f7",
+        "headline": "Scottish Highlands in pictures",
+        "component": "destination_gallery"
+      },
+      {
+        "_uid": "d14c7888-b09b-44f1-af39-2acc70629ce9",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "A car gives the most freedom, but many roads in the north and west are single-track with passing places. ScotRail runs the West Highland Line and the Highland Main Line, and Citylink coaches link the towns.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Edinburgh to Inverness by train takes about 3 hours 30 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Glasgow Queen Street to Fort William on the West Highland Line takes just under 4 hours.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "The drive from Inverness to the Skye Bridge at Kyle of Lochalsh is about 130 kilometres.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "Getting around",
+        "component": "text_block"
+      }
+    ],
+    "component": "destination_page",
+    "destination": "7c70b6ff-0470-4954-aaac-5853790c6cd9"
+  },
+  "published": true,
+  "slug": "scottish-highlands",
+  "path": null,
+  "full_slug": "destinations/scottish-highlands",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624294035005,
+    "uuid": "f65cf2f5-d1c9-4b9a-846c-82e576922b14",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "64feb09f487e6210a422038da98f79f53180e644",
+    "timestamp": "1792592501"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624294035005,
+      "name": "Destinations",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:15:23.925Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "destinations/scottish-highlands",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "destinations/scottish-highlands",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "destinations/scottish-highlands",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -70,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230949371536909,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

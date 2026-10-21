@@ -1,0 +1,199 @@
+{
+  "name": "Lisbon",
+  "parent_id": 230624294035005,
+  "group_id": "e54b596c-a892-42eb-a2ad-5b0afb6fc5d9",
+  "alternates": [],
+  "created_at": "2026-10-14T16:24:10.077Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T08:00:47.211Z",
+  "published_at": "2026-10-15T08:00:47.115Z",
+  "id": 230627123545302,
+  "uuid": "b4ea9a5a-383c-4713-8e2c-3dd0e228e769",
+  "is_folder": false,
+  "content": {
+    "_uid": "edfe297d-953b-4ac4-b7a3-1950f15e5325",
+    "body": [
+      {
+        "_uid": "3748cf41-2be3-4b10-b984-24c9df6eb39f",
+        "component": "destination_hero"
+      },
+      {
+        "_uid": "080b6525-dd4c-414f-ae7c-0edc26fabb2b",
+        "headline": "Why Lisbon",
+        "component": "destination_usps"
+      },
+      {
+        "_uid": "aa9387f8-75bd-4e14-a2dc-6f928417e713",
+        "headline": "About Lisbon",
+        "component": "destination_bio"
+      },
+      {
+        "_uid": "1b2deebe-e8d5-43e2-b239-a38e9b31f84f",
+        "headline": "Lisbon in pictures",
+        "component": "destination_gallery"
+      },
+      {
+        "_uid": "83d20b83-7b6d-4795-b3ed-ee0d4f8b78de",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "A Viva Viagem card covers the metro, trams, buses and the Santa Justa lift. Load it with zapping credit and tap in.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Metro from the airport to the centre takes about 25 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Ferries cross to Cacilhas every 10 to 20 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Funiculars save the steepest climbs in Bica and Glória.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "Getting around",
+        "component": "text_block"
+      },
+      {
+        "_uid": "7e87ced5-2ef2-4336-b057-e3ae1ba44b13",
+        "faqs": [
+          "a940b7b0-b6fb-4a49-935b-b26d25f45730",
+          "59938eae-2279-4f95-b29c-2476ad6c88ef",
+          "9d6a5b2c-b623-408e-a029-6fc5ac363983"
+        ],
+        "headline": "Before you go",
+        "component": "faq_section"
+      }
+    ],
+    "component": "destination_page",
+    "destination": "3dcce03c-2e9c-4b9a-b12c-0452cc3370c4"
+  },
+  "published": true,
+  "slug": "lisbon",
+  "path": null,
+  "full_slug": "destinations/lisbon",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624294035005,
+    "uuid": "f65cf2f5-d1c9-4b9a-846c-82e576922b14",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "2c2f07c4584a59d56c087dacd155a68fb2621db6",
+    "timestamp": "1792592505"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624294035005,
+      "name": "Destinations",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:47.115Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "destinations/lisbon",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "destinations/lisbon",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "destinations/lisbon",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": 0,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230857306901955,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

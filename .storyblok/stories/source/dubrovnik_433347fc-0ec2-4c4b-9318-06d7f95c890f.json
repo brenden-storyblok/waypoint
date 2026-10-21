@@ -1,0 +1,292 @@
+{
+  "name": "Dubrovnik",
+  "parent_id": 230624344329791,
+  "group_id": "908f9b02-6237-4e83-9aaf-f65d0a5c7bef",
+  "alternates": [],
+  "created_at": "2026-10-15T14:23:03.472Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:23:03.521Z",
+  "published_at": "2026-10-15T14:23:03.508Z",
+  "id": 230951253920915,
+  "uuid": "433347fc-0ec2-4c4b-9318-06d7f95c890f",
+  "is_folder": false,
+  "content": {
+    "_uid": "67f9bbb1-bcb2-4af2-bf6c-b847490d9d06",
+    "name": "Dubrovnik",
+    "usps": [
+      {
+        "_uid": "cf51fc1e-dd31-4f71-9fea-8c3b3d54ba7f",
+        "text": "The city walls run for about 1,940 metres around the Old Town and rise up to 25 metres high.",
+        "title": "Two kilometres of walls",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "188550d9-916d-4945-b940-34c7f1696f76",
+        "text": "The main street runs about 300 metres from the Pile Gate to the old port, paved in limestone worn smooth.",
+        "title": "Polished Stradun",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "f5e9759b-85b8-4976-a1ac-4f3868f29272",
+        "text": "Boats from the old harbour reach the island's pine woods, rock pools and peacocks in about 15 minutes.",
+        "title": "Lokrum by boat",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "a578380d-db25-4a4e-aad3-ba4537f282e7",
+        "text": "The cable car climbs to 405 metres on Mount Srđ for a view over the Old Town and the Elaphiti Islands.",
+        "title": "Cable car to Srđ",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Dalmatia",
+    "country": "croatia",
+    "gallery": [
+      {
+        "id": 230950808644810,
+        "alt": "Stone fortress walls and orange-roofed houses of the Old Town rise from the deep blue Adriatic.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/ac3d997e9b/dubrovnik-waterfront.jpg",
+        "copyright": "Ivan Ivankovic / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1350"
+        }
+      },
+      {
+        "id": 230950816939222,
+        "alt": "A stone bell tower and sea walls seen through an opening in the fortifications, with blue water and a green headland behind.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/518294d8b9/dubrovnik-belltower.jpg",
+        "copyright": "Arber Pacara / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3600"
+        }
+      },
+      {
+        "id": 230950812662988,
+        "alt": "Visitors walk the top of the stone city walls, with the wooded island of Lokrum across the water.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/554db6ee0e/dubrovnik-stradun.jpg",
+        "copyright": "Patricia Jekki / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230950820752599,
+        "alt": "Onofrio's domed stone fountain stands in a paved square, seen from above, with people crossing between pale limestone houses.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/9bea8df1cb/dubrovnik-street.jpg",
+        "copyright": "Hannah Suddaby / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3200"
+        }
+      },
+      {
+        "id": 230950825569496,
+        "alt": "Orange kayaks float in a clear green cove below cliffs, pines and stone houses.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/57ce282bd7/dubrovnik-kayaks.jpg",
+        "copyright": "Cat Bassano / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x4335"
+        }
+      }
+    ],
+    "summary": "A limestone city inside two kilometres of medieval walls on the Adriatic. Walk the ramparts in the morning and swim off the rocks by afternoon.",
+    "component": "destination",
+    "attributes": [
+      "coast",
+      "culture",
+      "beach"
+    ],
+    "hero_image": {
+      "id": 230950803975369,
+      "alt": "The walled Old Town of Dubrovnik juts into turquoise water, its old harbour full of small boats below orange roofs.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/a4ffee1283/dubrovnik-aerial.jpg",
+      "copyright": "Spencer Davis / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1599"
+      }
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Dubrovnik sits at the southern tip of Croatia, on a narrow strip of coast between the Adriatic and the limestone slopes of Mount Srđ. The Old Town fills a rocky headland, with the wooded island of Lokrum a short boat ride offshore.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "For centuries the city ran itself as the Republic of Ragusa, a merchant state that traded across the Mediterranean until Napoleon's forces ended it in 1808. Most of the Baroque streets date from the rebuilding after the 1667 earthquake. UNESCO listed the Old Town in 1979, and the walls withstood shelling again in 1991 and 1992.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "May, June and late September have warm sea water and fewer cruise passengers than July and August. Walk the walls when they open in the morning, before the heat and the crowds build. Order black risotto with cuttlefish ink or oysters from nearby Ston.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230950816939222,
+      "alt": "A stone bell tower and sea walls seen through an opening in the fortifications, with blue water and a green headland behind.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/518294d8b9/dubrovnik-belltower.jpg",
+      "copyright": "Arber Pacara / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x3600"
+      }
+    },
+    "image_landscape": {
+      "id": 230950808644810,
+      "alt": "Stone fortress walls and orange-roofed houses of the Old Town rise from the deep blue Adriatic.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/ac3d997e9b/dubrovnik-waterfront.jpg",
+      "copyright": "Ivan Ivankovic / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1350"
+      }
+    }
+  },
+  "published": true,
+  "slug": "dubrovnik",
+  "path": null,
+  "full_slug": "data/destinations/dubrovnik",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "092662d2050bcd55e4f77fc21c2166cce78a93b2",
+    "timestamp": "1792592498"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:23:03.508Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/dubrovnik",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/dubrovnik",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/dubrovnik",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -130,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230951253996301,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

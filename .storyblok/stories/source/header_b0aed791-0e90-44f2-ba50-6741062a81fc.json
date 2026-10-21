@@ -1,0 +1,150 @@
+{
+  "name": "Header",
+  "parent_id": 230624289754684,
+  "group_id": "2481953c-382d-4587-9d77-5989d12c19c1",
+  "alternates": [],
+  "created_at": "2026-10-14T16:12:53.437Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T08:00:47.333Z",
+  "published_at": "2026-10-15T08:00:47.121Z",
+  "id": 230624352017985,
+  "uuid": "b0aed791-0e90-44f2-ba50-6741062a81fc",
+  "is_folder": false,
+  "content": {
+    "cta": [
+      {
+        "_uid": "6a504d1a-2330-4161-8f8b-a67670875d3d",
+        "link": {
+          "url": "/destinations",
+          "linktype": "url",
+          "fieldtype": "multilink",
+          "cached_url": "/destinations"
+        },
+        "label": "Plan a trip",
+        "variant": "primary",
+        "component": "button"
+      }
+    ],
+    "nav": [
+      {
+        "_uid": "b32946ff-5b46-412c-a874-6c6a5f4f4bf3",
+        "link": {
+          "url": "/destinations",
+          "linktype": "url",
+          "fieldtype": "multilink",
+          "cached_url": "/destinations"
+        },
+        "label": "Destinations",
+        "component": "nav_link"
+      },
+      {
+        "_uid": "435c1932-4853-4254-b333-c911327d5207",
+        "link": {
+          "url": "/inspiration",
+          "linktype": "url",
+          "fieldtype": "multilink",
+          "cached_url": "/inspiration"
+        },
+        "label": "Inspiration",
+        "component": "nav_link"
+      },
+      {
+        "_uid": "8a98e882-4ab7-47c8-a481-432fd9fc78d8",
+        "link": {
+          "url": "/help",
+          "linktype": "url",
+          "fieldtype": "multilink",
+          "cached_url": "/help"
+        },
+        "label": "Help",
+        "component": "nav_link"
+      }
+    ],
+    "_uid": "28f7e440-2be7-478e-a9ab-491c0bf93fdf",
+    "component": "header"
+  },
+  "published": true,
+  "slug": "header",
+  "path": null,
+  "full_slug": "global/header",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624289754684,
+    "uuid": "d388e075-f8f6-4ac7-9888-35e34e16cf0e",
+    "name": "Global",
+    "slug": "global",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "6d31d67d6de34a8df65196365cfa3e69480c38f7",
+    "timestamp": "1792592506"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624289754684,
+      "name": "Global",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "global",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-14T16:12:53.480Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "global/header",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "global/header",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "global/header",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": 0,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230857307360711,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

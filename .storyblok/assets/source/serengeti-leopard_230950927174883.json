@@ -1,0 +1,27 @@
+{
+  "id": 230950927174883,
+  "alt": "A leopard sleeps draped over an acacia branch with its legs and tail hanging down.",
+  "asset_folder_id": null,
+  "content_length": 1228582,
+  "content_type": "image/jpeg",
+  "copyright": "Denice Alex / Unsplash",
+  "expire_at": null,
+  "ext_id": null,
+  "filename": "https://a.storyblok.com/f/295888311565739/bd9225e2bd/serengeti-leopard.jpg",
+  "focus": null,
+  "internal_tag_ids": [],
+  "is_private": false,
+  "locked": false,
+  "meta_data": {
+    "size": "2400x3600"
+  },
+  "publish_at": null,
+  "short_filename": "serengeti-leopard.jpg",
+  "source": null,
+  "space_id": 295888311565739,
+  "title": "Leopard in an acacia",
+  "created_at": "2026-10-15T14:21:43.702Z",
+  "updated_at": "2026-10-15T14:22:42.375Z",
+  "deleted_at": null,
+  "internal_tags_list": []
+}

@@ -1,0 +1,292 @@
+{
+  "name": "San Francisco",
+  "parent_id": 230624344329791,
+  "group_id": "0fa87bd2-3b9a-4bf8-90d3-525811114548",
+  "alternates": [],
+  "created_at": "2026-10-15T14:29:53.265Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:29:53.317Z",
+  "published_at": "2026-10-15T14:29:53.304Z",
+  "id": 230952932445878,
+  "uuid": "cb725689-5cab-4857-9e75-f8701dd452f3",
+  "is_folder": false,
+  "content": {
+    "_uid": "1486baf6-4459-4e5e-9386-aae0cbed3def",
+    "name": "San Francisco",
+    "usps": [
+      {
+        "_uid": "85479ad9-3192-412f-b97a-027a7f699989",
+        "text": "The 1937 bridge is 2.7 km long, and you can cross it on foot or by bike.",
+        "title": "Walk the Golden Gate",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "2146439e-8d0a-402b-931f-e09364894d87",
+        "text": "The Powell-Hyde, Powell-Mason and California Street cable car lines are a National Historic Landmark.",
+        "title": "Ride a moving landmark",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "280f5ff9-89f6-4992-8aa1-1a968b5370c8",
+        "text": "Boats leave Pier 33 for the island's former federal prison, which closed in 1963.",
+        "title": "Alcatraz by ferry",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "30f6b1c6-a7b2-49d9-801a-51b57c183744",
+        "text": "Order a Mission burrito on 24th Street, then try Boudin, which has baked sourdough since 1849.",
+        "title": "Burritos and sourdough",
+        "component": "usp_item"
+      }
+    ],
+    "region": "California",
+    "country": "united-states",
+    "gallery": [
+      {
+        "id": 230952397749684,
+        "alt": "A row of pastel Victorian houses at Alamo Square, with the Transamerica Pyramid and downtown towers behind at sunset.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/b854fca7b1/san-francisco-painted-ladies.jpg",
+        "copyright": "Joshua Sortino / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1601"
+        }
+      },
+      {
+        "id": 230952562327004,
+        "alt": "A California Street cable car climbs toward Stockton Street, with a Bay Bridge tower glowing at the end of the street.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/b524347427/san-francisco-cable-car.jpg",
+        "copyright": "Amogh Manjunath / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3001"
+        }
+      },
+      {
+        "id": 230952480075197,
+        "alt": "Brick switchbacks and hydrangeas on Lombard Street look out to Coit Tower and the Bay Bridge.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/b5093dfe86/san-francisco-lombard.jpg",
+        "copyright": "Braden Collum / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230952731102695,
+        "alt": "The Golden Gate Bridge's steel arch rises over the brick walls of Fort Point, with the Marin hills across the strait.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/bbd90b76c0/san-francisco-fort-point.jpg",
+        "copyright": "Ragnar Vorel / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1601"
+        }
+      },
+      {
+        "id": 230952648179167,
+        "alt": "A green Powell and Hyde cable car heads downhill toward the Transamerica Pyramid and the Bay Bridge.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/f26173f3af/san-francisco-hyde-street.jpg",
+        "copyright": "Daniel J. Schwarz / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3600"
+        }
+      }
+    ],
+    "summary": "More than 40 hills on a peninsula between the Pacific and the bay, climbed by cable cars since 1873. Eat sourdough and a Mission burrito, then walk the Golden Gate Bridge.",
+    "component": "destination",
+    "attributes": [
+      "city",
+      "coast",
+      "food"
+    ],
+    "hero_image": {
+      "id": 230952314625424,
+      "alt": "The Golden Gate Bridge spans the strait from a rocky Marin headland, with the San Francisco skyline across the bay.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/22af639752/san-francisco-golden-gate.jpg",
+      "copyright": "Maarten van den Heuvel / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1350"
+      }
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "San Francisco covers the tip of a peninsula between the Pacific Ocean and San Francisco Bay. The city fits into about 120 square km, and more than 40 hills rise inside it, from Nob Hill to Twin Peaks.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The 1849 Gold Rush turned a settlement of about 1,000 people into a city of around 25,000 within a year. The 1906 earthquake and fire destroyed about 80 percent of it. Chinatown, founded in the 1850s, is the oldest in North America.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "September and October are the warmest months, when the summer fog lifts. Pack layers all year, as fog can drop the temperature fast from one neighbourhood to the next.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230952562327004,
+      "alt": "A California Street cable car climbs toward Stockton Street, with a Bay Bridge tower glowing at the end of the street.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/b524347427/san-francisco-cable-car.jpg",
+      "copyright": "Amogh Manjunath / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x3001"
+      }
+    },
+    "image_landscape": {
+      "id": 230952397749684,
+      "alt": "A row of pastel Victorian houses at Alamo Square, with the Transamerica Pyramid and downtown towers behind at sunset.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/b854fca7b1/san-francisco-painted-ladies.jpg",
+      "copyright": "Joshua Sortino / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1601"
+      }
+    }
+  },
+  "published": true,
+  "slug": "san-francisco",
+  "path": null,
+  "full_slug": "data/destinations/san-francisco",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "ca20359998d10526c94eb4aba0bf30ef94b08466",
+    "timestamp": "1792592494"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:29:53.304Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/san-francisco",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/san-francisco",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/san-francisco",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -200,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230952932521125,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

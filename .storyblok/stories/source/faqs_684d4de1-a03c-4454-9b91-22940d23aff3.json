@@ -1,0 +1,101 @@
+{
+  "name": "FAQs",
+  "parent_id": 230624297602622,
+  "group_id": "2bb2f2cf-f14f-4f8c-ab77-dc72dc7b2dbe",
+  "alternates": [],
+  "created_at": "2026-10-14T16:12:52.437Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T08:00:36.393Z",
+  "published_at": "2026-10-15T08:00:36.161Z",
+  "id": 230624347930176,
+  "uuid": "684d4de1-a03c-4454-9b91-22940d23aff3",
+  "is_folder": true,
+  "content": {
+    "body": [],
+    "component": "page"
+  },
+  "published": true,
+  "slug": "faqs",
+  "path": null,
+  "full_slug": "data/faqs",
+  "default_root": "faq_item",
+  "disble_fe_editor": true,
+  "disable_fe_editor": true,
+  "parent": {
+    "id": 230624297602622,
+    "uuid": "67795443-ca02-47a0-9a2c-d11de7615c6c",
+    "name": "Data",
+    "slug": "data",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "2c2f07c4584a59d56c087dacd155a68fb2621db6",
+    "timestamp": "1792592505"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:36.161Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/faqs",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/faqs",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/faqs",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -10,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230857262599495,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

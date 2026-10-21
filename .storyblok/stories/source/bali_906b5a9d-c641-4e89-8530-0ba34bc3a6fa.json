@@ -1,0 +1,189 @@
+{
+  "name": "Bali",
+  "parent_id": 230624294035005,
+  "group_id": "de893320-66cf-4b23-ab9a-67b271bfeeca",
+  "alternates": [],
+  "created_at": "2026-10-15T14:24:10.331Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-16T08:35:56.305Z",
+  "published_at": "2026-10-15T14:24:10.382Z",
+  "id": 230951527800028,
+  "uuid": "906b5a9d-c641-4e89-8530-0ba34bc3a6fa",
+  "is_folder": false,
+  "content": {
+    "_uid": "ca094ea8-cb65-4485-bdc4-ab329d6b66d1",
+    "body": [
+      {
+        "_uid": "56187a08-e7fb-4207-b14a-abd384044921",
+        "component": "destination_hero"
+      },
+      {
+        "_uid": "bfea5bbf-a6e6-4196-94bc-73ae6e9b1d19",
+        "headline": "Why Bali",
+        "component": "destination_usps"
+      },
+      {
+        "_uid": "57227c6d-0fef-4828-a089-2592331c5c22",
+        "headline": "About Bali",
+        "component": "destination_bio"
+      },
+      {
+        "_uid": "881e3a1a-f103-44f2-87bd-f36ced389515",
+        "headline": "Bali in pictures",
+        "component": "destination_gallery"
+      },
+      {
+        "_uid": "d4f069da-deb6-4ac8-aa7f-5b7d85fe0127",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Bali has little public transport. Most visitors book cars through the Grab or Gojek apps, or hire a driver for the day. Traffic in the south is slow, so plan short hops.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "A car from Ngurah Rai Airport to Ubud takes about 1 hour 30 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Fast boats from Sanur to Nusa Penida take 30 to 45 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Ubud to Tegallalang is about 20 minutes by car or scooter.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "Getting around",
+        "component": "text_block"
+      }
+    ],
+    "component": "destination_page",
+    "destination": "761ae965-0b10-451f-ab12-338f67bc2597"
+  },
+  "published": true,
+  "slug": "bali",
+  "path": null,
+  "full_slug": "destinations/bali",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624294035005,
+    "uuid": "f65cf2f5-d1c9-4b9a-846c-82e576922b14",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": true,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "ca20359998d10526c94eb4aba0bf30ef94b08466",
+    "timestamp": "1792592494"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624294035005,
+      "name": "Destinations",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:24:10.382Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "destinations/bali",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "destinations/bali",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "destinations/bali",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -250,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230951527904845,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

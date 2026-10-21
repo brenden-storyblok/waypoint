@@ -1,0 +1,259 @@
+{
+  "name": "Home",
+  "parent_id": 0,
+  "group_id": "1c597840-d999-430a-90b6-672c692a2ff9",
+  "alternates": [],
+  "created_at": "2026-10-14T16:13:00.635Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-16T14:31:34.331Z",
+  "published_at": "2026-10-16T14:31:34.321Z",
+  "id": 230624381500995,
+  "uuid": "3573b5aa-4d6a-4e79-9078-2f08f72b4003",
+  "is_folder": false,
+  "content": {
+    "_uid": "04a2f65f-131f-46bb-b204-19ab97ce2c15",
+    "body": [
+      {
+        "cta": [
+          {
+            "_uid": "fe7d09db-bba3-4425-9d10-934166d62fc7",
+            "link": {
+              "url": "/destinations",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "/destinations"
+            },
+            "label": "Find a destination",
+            "variant": "primary",
+            "component": "button"
+          },
+          {
+            "_uid": "15e833dd-180f-4081-9a8d-3d5fc04a973c",
+            "link": {
+              "url": "/about",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "/about"
+            },
+            "label": "How we pick",
+            "variant": "tertiary",
+            "component": "button"
+          }
+        ],
+        "_uid": "59d12c1e-41d8-4249-99bb-a079cf5a1548",
+        "image": {
+          "id": 230846329668228,
+          "alt": "Cliffside houses in Oia stepping down toward the castle ruins and the caldera",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "https://a.storyblok.com/f/295888311565739/fe376fca5e/santorini-oia-castle-ruins.jpg",
+          "copyright": "Dawid Tkocz / Unsplash",
+          "fieldtype": "asset",
+          "meta_data": {
+            "size": "2400x1600"
+          },
+          "is_external_url": false
+        },
+        "intro": "Browse destinations around the world, and find your perfect getaway. ",
+        "headline": "Every trip starts with a waypoint",
+        "component": "hero"
+      },
+      {
+        "_uid": "86601f10-79d5-43b9-be8d-afb07403794d",
+        "carousel": true,
+        "headline": "Top destinations",
+        "component": "destination_grid",
+        "countries": [],
+        "attributes": [],
+        "clear_label": "Clear all",
+        "destinations": [
+          "514abc54-f596-47e5-92e1-d86f76a675a3",
+          "00c09d68-57ae-46e2-945d-154779d68fd1",
+          "9328b74a-df5b-4a00-aa5d-e55334dfd894",
+          "7901bdb6-3c8b-46d6-ab0f-2b76535f4173",
+          "ae062cbc-5fe7-4a7e-b432-ec6eede5915c",
+          "e7a90910-4c92-44c7-baf2-4e2efcd22ecf"
+        ],
+        "country_label": "Country",
+        "empty_message": "No destinations match your search.",
+        "search_enabled": false,
+        "attributes_label": "Attributes",
+        "search_placeholder": "Search destinations"
+      },
+      {
+        "_uid": "f202f4ba-de41-4e40-aed0-c771a356b6ee",
+        "body": [
+          {
+            "gap": "",
+            "_uid": "6f8ceb1f-7c1f-4316-8e5b-bd41d3a9ce1e",
+            "mode": "flex",
+            "items": [
+              {
+                "_uid": "331f2772-8a81-420c-8114-41feec44a349",
+                "link": {
+                  "id": "dbcf6ae6-1dac-40d6-ac76-446831ff5ddd",
+                  "url": "",
+                  "linktype": "story",
+                  "fieldtype": "multilink",
+                  "cached_url": "destinations/"
+                },
+                "label": "Browse our other destinations",
+                "variant": "primary",
+                "component": "button"
+              },
+              {
+                "_uid": "dd176c85-607c-41d0-a287-8d6e8ecdd5aa",
+                "link": {
+                  "id": "f09756a9-ca01-4082-b9de-fd7b21256a9d",
+                  "url": "",
+                  "linktype": "story",
+                  "fieldtype": "multilink",
+                  "cached_url": "inspiration"
+                },
+                "label": "Get Inspired",
+                "variant": "secondary",
+                "component": "button"
+              }
+            ],
+            "gap_lg": "",
+            "gap_md": "",
+            "gap_xl": "",
+            "component": "layout",
+            "flex_wrap": "",
+            "flex_align": "",
+            "grid_align": "center",
+            "flex_justify": "center",
+            "flex_wrap_lg": "",
+            "flex_wrap_md": "",
+            "flex_wrap_xl": "",
+            "grid_columns": "1",
+            "flex_align_lg": "",
+            "flex_align_md": "",
+            "flex_align_xl": "",
+            "grid_align_lg": "",
+            "grid_align_md": "",
+            "grid_align_xl": "",
+            "flex_direction": "row",
+            "flex_justify_lg": "",
+            "flex_justify_md": "",
+            "flex_justify_xl": "",
+            "grid_columns_lg": "",
+            "grid_columns_md": "2",
+            "grid_columns_xl": "",
+            "flex_item_sizing": "content",
+            "flex_direction_lg": "",
+            "flex_direction_md": "",
+            "flex_direction_xl": "",
+            "flex_item_sizing_lg": "",
+            "flex_item_sizing_md": "",
+            "flex_item_sizing_xl": ""
+          }
+        ],
+        "padding": "compact",
+        "headline": "Need more ideas?",
+        "component": "section",
+        "background": "accent",
+        "full_bleed": false,
+        "headline_position": "start"
+      },
+      {
+        "_uid": "c0d312d6-e8a5-4349-ba2e-db3bfd3ca22f",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Every destination on Waypoint is a place our editors have visited in more than one season. We write about what we would tell a friend: when to go, where to stay and what to skip.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "We add a new destination only after it has earned a second trip.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "How we pick",
+        "component": "text_block"
+      }
+    ],
+    "component": "page"
+  },
+  "published": true,
+  "slug": "home",
+  "path": null,
+  "full_slug": "home",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": null,
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "09415f6f67eee6434beda3616b9a277075f4324a",
+    "timestamp": "1792592503"
+  },
+  "pinned": false,
+  "breadcrumbs": [],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:47.098Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "home",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "home",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "home",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -30,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 231307240572976,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

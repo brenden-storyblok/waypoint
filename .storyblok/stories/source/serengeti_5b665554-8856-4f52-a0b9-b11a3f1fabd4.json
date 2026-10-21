@@ -1,0 +1,189 @@
+{
+  "name": "Serengeti",
+  "parent_id": 230624294035005,
+  "group_id": "1a57e1bc-189f-4301-873f-96690b95d004",
+  "alternates": [],
+  "created_at": "2026-10-15T14:23:30.626Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:23:30.686Z",
+  "published_at": "2026-10-15T14:23:30.672Z",
+  "id": 230951365164236,
+  "uuid": "5b665554-8856-4f52-a0b9-b11a3f1fabd4",
+  "is_folder": false,
+  "content": {
+    "_uid": "87e7a455-827d-423c-bc4c-2a3c455d1e3f",
+    "body": [
+      {
+        "_uid": "c23f667b-2ce2-4628-b1f8-fb9745706795",
+        "component": "destination_hero"
+      },
+      {
+        "_uid": "013bd854-8eee-4860-9a46-180ca4c2b300",
+        "headline": "Why Serengeti",
+        "component": "destination_usps"
+      },
+      {
+        "_uid": "d1bbe07e-39ce-4ad7-b5b1-51f8d15d8653",
+        "headline": "About Serengeti",
+        "component": "destination_bio"
+      },
+      {
+        "_uid": "933ecdc3-1b8f-4bbb-bd52-84421b3377be",
+        "headline": "Serengeti in pictures",
+        "component": "destination_gallery"
+      },
+      {
+        "_uid": "0cd49a7b-ff06-4ac9-addd-ad6bdb73ef59",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Most visitors travel with a driver-guide in an open-roof 4x4, since game drives follow tracks across open grassland. Light aircraft link Arusha with airstrips inside the park, such as Seronera in the centre.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Arusha to Seronera by road is about 330 km, a full day's drive via the Ngorongoro highlands.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Scheduled flights from Arusha to Seronera take under 2 hours, depending on stops.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "The drive from Seronera north to the Mara River takes 4 to 5 hours.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "Getting around",
+        "component": "text_block"
+      }
+    ],
+    "component": "destination_page",
+    "destination": "91418f92-24a4-453f-8e00-0d91a02c134f"
+  },
+  "published": true,
+  "slug": "serengeti",
+  "path": null,
+  "full_slug": "destinations/serengeti",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624294035005,
+    "uuid": "f65cf2f5-d1c9-4b9a-846c-82e576922b14",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "ca20359998d10526c94eb4aba0bf30ef94b08466",
+    "timestamp": "1792592494"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624294035005,
+      "name": "Destinations",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:23:30.672Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "destinations/serengeti",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "destinations/serengeti",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "destinations/serengeti",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -230,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230951365264529,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

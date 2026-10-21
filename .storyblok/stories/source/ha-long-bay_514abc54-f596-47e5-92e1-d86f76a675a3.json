@@ -1,0 +1,291 @@
+{
+  "name": "Ha Long Bay",
+  "parent_id": 230624344329791,
+  "group_id": "93360da7-a508-442e-b424-11cd8a551bc0",
+  "alternates": [],
+  "created_at": "2026-10-15T14:25:48.048Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:25:48.100Z",
+  "published_at": "2026-10-15T14:25:48.085Z",
+  "id": 230951928028810,
+  "uuid": "514abc54-f596-47e5-92e1-d86f76a675a3",
+  "is_folder": false,
+  "content": {
+    "_uid": "487a1e58-fe8a-49d6-9aeb-b323f8c57fb3",
+    "name": "Ha Long Bay",
+    "usps": [
+      {
+        "_uid": "c8665554-b52e-4f6d-a95c-6a099ed38869",
+        "text": "Overnight junks anchor among the karsts, so you wake to the islands before the day boats sail from Tuan Chau.",
+        "title": "A night on the bay",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "216a744d-8ce7-4aa2-82a3-e18406a456b1",
+        "text": "Sung Sot, the Surprise Cave, opens into chambers of stalactites high inside an island.",
+        "title": "Caves inside the islands",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "15f8647a-9fca-4641-a9c9-69a516cb4672",
+        "text": "Kayaks slip under low rock arches into enclosed lagoons that larger boats cannot reach.",
+        "title": "Paddle through the arches",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "3a8ba332-1c78-4257-9396-2135f75b30cc",
+        "text": "South of Ha Long, Lan Ha Bay off Cat Ba Island has the same karsts with fewer boats.",
+        "title": "Lan Ha Bay next door",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Quang Ninh",
+    "country": "vietnam",
+    "gallery": [
+      {
+        "id": 230951575919914,
+        "alt": "A wooden tender boat flying the Vietnamese flag crosses green water toward limestone islands.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/6f42a00523/ha-long-bay-longboat.jpg",
+        "copyright": "Marina Lobato / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3200"
+        }
+      },
+      {
+        "id": 230951580695852,
+        "alt": "Rowing boats pass under a jungle-covered limestone arch into a sheltered lagoon.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/0639b8bce9/ha-long-bay-cave-boat.jpg",
+        "copyright": "Jacek Janiczak / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x4099"
+        }
+      },
+      {
+        "id": 230951584963885,
+        "alt": "Boats moor in a turquoise cove ringed by sheer karst cliffs and a sand beach.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/552b6ee3d4/ha-long-bay-lobato.jpg",
+        "copyright": "Marina Lobato / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1174"
+        }
+      },
+      {
+        "id": 230951589743919,
+        "alt": "Kayakers paddle beneath a stalactite-hung cave roof toward sunlit karst walls.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/b7ed6623a7/ha-long-bay-cave-kayak.jpg",
+        "copyright": "Duc Nguyen / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230951594941744,
+        "alt": "Floating houses on tyre-lined rafts sit below tall limestone pillars as a small boat motors past.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/670865a421/ha-long-bay-dixon.jpg",
+        "copyright": "Dwayne Dixon / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1920"
+        }
+      }
+    ],
+    "summary": "Close to 2,000 limestone islands rising from green water in the Gulf of Tonkin. You see it from the deck of a junk and the seat of a kayak.",
+    "component": "destination",
+    "attributes": [
+      "coast",
+      "nature"
+    ],
+    "hero_image": {
+      "id": 230951571082537,
+      "alt": "Cruise boats anchor among hundreds of limestone karst islands under a pink and blue sunset sky.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/3c19513b22/ha-long-bay-sunset.jpg",
+      "copyright": "Vivu Vietnam / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1529"
+      }
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ha Long Bay lies in the Gulf of Tonkin in northeast Vietnam, about 170 kilometres east of Hanoi. Close to 2,000 limestone islands and pillars rise from the water, many hollowed by caves and ringed by small beaches. Lan Ha Bay and Cat Ba Island continue the karst landscape to the south.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The name means descending dragon, after a legend of dragons that spat out jewels to form the islands. UNESCO listed the bay in 1994. Fishing families once lived in floating villages like Cua Van, and a few rafts and fish farms remain. Grilled squid cakes, cha muc, are the local dish.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "March to May and September to November bring calm water and clear views. Summer brings storms that can cancel sailings. Book an overnight cruise to see the bay at dawn, before the day boats arrive.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230951575919914,
+      "alt": "A wooden tender boat flying the Vietnamese flag crosses green water toward limestone islands.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/6f42a00523/ha-long-bay-longboat.jpg",
+      "copyright": "Marina Lobato / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x3200"
+      }
+    },
+    "image_landscape": {
+      "id": 230951584963885,
+      "alt": "Boats moor in a turquoise cove ringed by sheer karst cliffs and a sand beach.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/552b6ee3d4/ha-long-bay-lobato.jpg",
+      "copyright": "Marina Lobato / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1174"
+      }
+    }
+  },
+  "published": true,
+  "slug": "ha-long-bay",
+  "path": null,
+  "full_slug": "data/destinations/ha-long-bay",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "8a0924dbc567e4e05d09aa7c3d4282b078266666",
+    "timestamp": "1792592497"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:25:48.085Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/ha-long-bay",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/ha-long-bay",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/ha-long-bay",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -160,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230951928101525,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

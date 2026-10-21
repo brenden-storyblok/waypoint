@@ -1,0 +1,292 @@
+{
+  "name": "Scottish Highlands",
+  "parent_id": 230624344329791,
+  "group_id": "cf1e73bd-33c7-4122-8588-ffb3c1d82b04",
+  "alternates": [],
+  "created_at": "2026-10-15T14:12:35.130Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:12:35.198Z",
+  "published_at": "2026-10-15T14:12:35.182Z",
+  "id": 230948680241847,
+  "uuid": "7c70b6ff-0470-4954-aaac-5853790c6cd9",
+  "is_folder": false,
+  "content": {
+    "_uid": "503d21e2-a460-40e2-acfd-6b75f1ad49d3",
+    "name": "Scottish Highlands",
+    "usps": [
+      {
+        "_uid": "e2076435-4a9c-400c-802f-9669a5ef24da",
+        "text": "Ben Nevis tops out at 1,345 metres, and the Mountain Track up from Glen Nevis takes most of a day.",
+        "title": "Britain's highest summit",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "0f1d101d-0bd9-41fd-bdd2-d7a9fcae42e2",
+        "text": "Eilean Donan was rebuilt between 1912 and 1932, while Kilchurn on Loch Awe is a 15th-century Campbell ruin.",
+        "title": "Castles on the lochs",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "dab98f3d-b1a7-4fe6-b7c2-6f7a5cc550a3",
+        "text": "Summer steam trains cross the 21-arch Glenfinnan Viaduct on the line from Fort William to Mallaig.",
+        "title": "The Jacobite steam train",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "2c9b80ec-08f7-4e03-af49-54729ab8f6ab",
+        "text": "Speyside, on the eastern side of the Highlands, has more malt distilleries than any other Scotch whisky region.",
+        "title": "Whisky country",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Scotland",
+    "country": "united-kingdom",
+    "gallery": [
+      {
+        "id": 230948341435248,
+        "alt": "The rock pinnacles of the Old Man of Storr rise above green slopes and lochs on the Isle of Skye.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/88f20a200b/scottish-highlands-storr.jpg",
+        "copyright": "Reuben Teo / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1602"
+        }
+      },
+      {
+        "id": 230948354493299,
+        "alt": "A white cottage sits at the foot of steep green mountains beside a still loch.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/5eed8dc844/scottish-highlands-cottage.jpg",
+        "copyright": "Mitchell Trotter / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3593"
+        }
+      },
+      {
+        "id": 230948345777009,
+        "alt": "Shaggy Highland cattle rest on a grassy slope below bare mountain peaks under a blue sky.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/d8cdb44333/scottish-highlands-cow.jpg",
+        "copyright": "Piotr Musioł / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1543"
+        }
+      },
+      {
+        "id": 230948359080820,
+        "alt": "The Glenfinnan Monument stands at the head of Loch Shiel with wooded mountains on both shores at dusk.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/a2c7e4d7b4/scottish-highlands-glenfinnan.jpg",
+        "copyright": "Katia De Juan / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1351"
+        }
+      },
+      {
+        "id": 230948350065522,
+        "alt": "A narrow road winds through a brown glen between dark, snow-dusted mountains under grey cloud.",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/aa04d2f4e6/scottish-highlands-glen-road.jpg",
+        "copyright": "Malcolm Lightbody / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      }
+    ],
+    "summary": "Mountains, sea lochs and castle ruins under fast-moving weather. Britain's highest peak and its emptiest roads share the same map.",
+    "component": "destination",
+    "attributes": [
+      "nature",
+      "mountains",
+      "countryside"
+    ],
+    "hero_image": {
+      "id": 230948200880989,
+      "alt": "The ruins of Kilchurn Castle reflected in the still water of Loch Awe below snow-capped hills.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/ae20749404/scottish-highlands-kilchurn.jpg",
+      "copyright": "Connor Mollison / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1600"
+      }
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The Highlands cover the north and west of Scotland, beyond the Highland Boundary Fault that runs from Arran to Stonehaven. Ben Nevis rises 1,345 metres above Fort William, and the Great Glen cuts a straight line from there to Inverness through Loch Ness.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Clans held this land for centuries until the Jacobite defeat at Culloden in 1746. The Clearances that followed emptied whole glens for sheep, and ruined crofts still mark the hillsides. Gaelic survives on road signs and in the speech of the west coast and islands.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "May and September bring the driest spells and fewer midges than high summer. Carry a waterproof on every walk, since the weather on the tops can turn within the hour.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230948354493299,
+      "alt": "A white cottage sits at the foot of steep green mountains beside a still loch.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/5eed8dc844/scottish-highlands-cottage.jpg",
+      "copyright": "Mitchell Trotter / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x3593"
+      }
+    },
+    "image_landscape": {
+      "id": 230948341435248,
+      "alt": "The rock pinnacles of the Old Man of Storr rise above green slopes and lochs on the Isle of Skye.",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/88f20a200b/scottish-highlands-storr.jpg",
+      "copyright": "Reuben Teo / Unsplash",
+      "fieldtype": "asset",
+      "meta_data": {
+        "size": "2400x1602"
+      }
+    }
+  },
+  "published": true,
+  "slug": "scottish-highlands",
+  "path": null,
+  "full_slug": "data/destinations/scottish-highlands",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "64feb09f487e6210a422038da98f79f53180e644",
+    "timestamp": "1792592501"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:12:35.182Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/scottish-highlands",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/scottish-highlands",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/scottish-highlands",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -60,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230948680339847,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

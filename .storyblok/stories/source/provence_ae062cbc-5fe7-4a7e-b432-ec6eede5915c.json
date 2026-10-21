@@ -1,0 +1,293 @@
+{
+  "name": "Provence",
+  "parent_id": 230624344329791,
+  "group_id": "122b155e-7744-4ebf-8373-3e2473e90b75",
+  "alternates": [],
+  "created_at": "2026-10-15T07:18:30.848Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T12:26:39.343Z",
+  "published_at": "2026-10-15T12:26:39.321Z",
+  "id": 230846918064814,
+  "uuid": "ae062cbc-5fe7-4a7e-b432-ec6eede5915c",
+  "is_folder": false,
+  "content": {
+    "_uid": "bc6f4da7-ce46-4426-8576-cfc5d4c06874",
+    "name": "Provence",
+    "usps": [
+      {
+        "_uid": "5b0a6e0e-8d57-4c1e-9a7b-1a2f3c4d5e01",
+        "text": "Fields on the Valensole plateau and near Sénanque Abbey turn purple from late June.",
+        "title": "Lavender in July",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "5b0a6e0e-8d57-4c1e-9a7b-1a2f3c4d5e02",
+        "text": "Gordes and Roussillon sit on ridges, with walls of pale stone or ochre.",
+        "title": "Hill villages of the Luberon",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "5b0a6e0e-8d57-4c1e-9a7b-1a2f3c4d5e03",
+        "text": "Aix-en-Provence fills its squares with stalls of olives, cheese and fruit.",
+        "title": "Markets for every meal",
+        "component": "usp_item"
+      },
+      {
+        "_uid": "5b0a6e0e-8d57-4c1e-9a7b-1a2f3c4d5e04",
+        "text": "Dry rosé from nearby vineyards is the usual pour on a shaded terrace.",
+        "title": "Rosé with lunch",
+        "component": "usp_item"
+      }
+    ],
+    "region": "Provence-Alpes-Côte d'Azur",
+    "country": "france",
+    "gallery": [
+      {
+        "id": 230846559404706,
+        "alt": "Pale stone apse and bell tower of Sénanque Abbey with a wooded hillside behind",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/46dc7a1fb7/provence-senanque-abbey.jpg",
+        "copyright": "Artem R / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3600"
+        }
+      },
+      {
+        "id": 230846551347870,
+        "alt": "Curved rows of purple lavender meeting a blue sky with thin cloud",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/81ba1762d1/provence-lavender-rows.jpg",
+        "copyright": "le Sixième Rêve / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230846555460256,
+        "alt": "Ochre-coloured houses of Roussillon on a hilltop, seen through green trees",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/ece26c3250/provence-roussillon-village.jpg",
+        "copyright": "Chelsea Essig / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1600"
+        }
+      },
+      {
+        "id": 230846546342556,
+        "alt": "Lavender rows beside a dirt track and a pale pink clary sage field, with a mountain and blue sky behind",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/eacf63ebdb/provence-lavender-blue-sky.jpg",
+        "copyright": "Thomas Despeyroux / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x3600"
+        }
+      },
+      {
+        "id": 230846563816100,
+        "alt": "Stone houses, castle and church tower of Gordes on a hillside above green scrub",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/295888311565739/ead30551f6/provence-gordes-hill-village.jpg",
+        "copyright": "Sébastien Jermer / Unsplash",
+        "fieldtype": "asset",
+        "meta_data": {
+          "size": "2400x1800"
+        }
+      }
+    ],
+    "summary": "Lavender rows, ochre villages and market squares in the south of France. A region best taken slowly, by car.",
+    "component": "destination",
+    "attributes": [
+      "nature",
+      "countryside",
+      "food"
+    ],
+    "hero_image": {
+      "id": 230846542242458,
+      "alt": "Rows of lavender in bloom on the Valensole plateau under a pink and violet dusk sky with mountains on the horizon",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/7111464a6b/provence-valensole-lavender.jpg",
+      "copyright": "Antony BEC / Unsplash",
+      "fieldtype": "asset"
+    },
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Provence covers the southeast of France, from the Rhône valley east toward the Alps and south to the Mediterranean. Its landscapes change quickly: limestone ridges, vineyards, olive groves and plateaus of lavender.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Villages such as Gordes and Roussillon sit on hilltops in the Luberon, built from pale stone or ochre-coloured walls. The Cistercian abbey at Sénanque stands in a valley close to Gordes. Aix-en-Provence adds shaded avenues, fountains and daily markets.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Late June and July bring the lavender bloom and the largest crowds. May, early June and September are quieter and still warm. Book rooms early for July.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "image_portrait": {
+      "id": 230846546342556,
+      "alt": "Lavender rows beside a dirt track and a pale pink clary sage field, with a mountain and blue sky behind",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/eacf63ebdb/provence-lavender-blue-sky.jpg",
+      "copyright": "Thomas Despeyroux / Unsplash",
+      "fieldtype": "asset"
+    },
+    "image_landscape": {
+      "id": 230846563816100,
+      "alt": "Stone houses, castle and church tower of Gordes on a hillside above green scrub",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "filename": "https://a.storyblok.com/f/295888311565739/ead30551f6/provence-gordes-hill-village.jpg",
+      "copyright": "Sébastien Jermer / Unsplash",
+      "fieldtype": "asset"
+    }
+  },
+  "published": true,
+  "slug": "provence",
+  "path": null,
+  "full_slug": "data/destinations/provence",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624344329791,
+    "uuid": "ea2f1dfc-a512-4bd6-925c-93450d66485a",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": true
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "09415f6f67eee6434beda3616b9a277075f4324a",
+    "timestamp": "1792592503"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624297602622,
+      "name": "Data",
+      "parent_id": 0,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "data",
+      "translated_slugs": []
+    },
+    {
+      "id": 230624344329791,
+      "name": "Destinations",
+      "parent_id": 230624297602622,
+      "disble_fe_editor": true,
+      "disable_fe_editor": true,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T08:00:36.161Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "data/destinations/provence",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "data/destinations/provence",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "data/destinations/provence",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -30,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230922646642997,
+  "variant_type": null,
+  "taxonomy_terms": [
+    {
+      "id": "230850657503285",
+      "display_name": "France",
+      "name": "france",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    }
+  ],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}

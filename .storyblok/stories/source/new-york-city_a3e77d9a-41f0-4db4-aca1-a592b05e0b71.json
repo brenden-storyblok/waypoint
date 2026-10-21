@@ -1,0 +1,189 @@
+{
+  "name": "New York City",
+  "parent_id": 230624294035005,
+  "group_id": "c6a636ad-541a-46ea-9e77-534034a3364d",
+  "alternates": [],
+  "created_at": "2026-10-15T14:21:45.264Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-10-15T14:21:45.329Z",
+  "published_at": "2026-10-15T14:21:45.313Z",
+  "id": 230950933601132,
+  "uuid": "a3e77d9a-41f0-4db4-aca1-a592b05e0b71",
+  "is_folder": false,
+  "content": {
+    "_uid": "9864e697-d57d-4520-8951-04fedb78743f",
+    "body": [
+      {
+        "_uid": "2940b19a-a1b9-438c-8f41-7ebe3775e715",
+        "component": "destination_hero"
+      },
+      {
+        "_uid": "0059b06a-d8b1-4f34-b728-a0773310054b",
+        "headline": "Why New York City",
+        "component": "destination_usps"
+      },
+      {
+        "_uid": "adda625c-d719-4a1f-a2cb-e6707a5f09be",
+        "headline": "About New York City",
+        "component": "destination_bio"
+      },
+      {
+        "_uid": "5c53e91e-1dbd-4657-b0c4-ec2f2603374d",
+        "headline": "New York City in pictures",
+        "component": "destination_gallery"
+      },
+      {
+        "_uid": "bca4e9c4-718b-4017-a2d7-894e7cc82313",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The subway runs 24 hours a day. Tap a contactless card or phone on the OMNY reader; after 12 paid rides in 7 days, the rest of that week rides free.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "AirTrain and subway from JFK to Midtown take about 60 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "The free Staten Island Ferry crosses the harbour in 25 minutes and passes the Statue of Liberty.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Twenty Manhattan street blocks north or south make about 1.6 km.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline": "Getting around",
+        "component": "text_block"
+      }
+    ],
+    "component": "destination_page",
+    "destination": "00c09d68-57ae-46e2-945d-154779d68fd1"
+  },
+  "published": true,
+  "slug": "new-york-city",
+  "path": null,
+  "full_slug": "destinations/new-york-city",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 230624294035005,
+    "uuid": "f65cf2f5-d1c9-4b9a-846c-82e576922b14",
+    "name": "Destinations",
+    "slug": "destinations",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "b8b03a1c8920a61f7409919aa9e8afc67e9edeb5",
+    "timestamp": "1792592496"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 230624294035005,
+      "name": "Destinations",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "destinations",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-10-15T14:21:45.313Z",
+  "last_author": {
+    "id": 101311551064572,
+    "userid": "brenden.niedermeyer@storyblok.com",
+    "friendly_name": "Brenden Niedermeyer"
+  },
+  "last_author_id": 101311551064572,
+  "user_ids": [],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [
+    {
+      "path": "destinations/new-york-city",
+      "name": null,
+      "lang": "de",
+      "published": false
+    },
+    {
+      "path": "destinations/new-york-city",
+      "name": null,
+      "lang": "es",
+      "published": false
+    },
+    {
+      "path": "destinations/new-york-city",
+      "name": null,
+      "lang": "fr",
+      "published": false
+    }
+  ],
+  "position": -170,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 230950933708815,
+  "variant_type": null,
+  "taxonomy_terms": [],
+  "experiment_ids": [],
+  "release_ids": [],
+  "stage": null,
+  "stages": [],
+  "assigned_users_per_language": {},
+  "favourite_for_user_ids": []
+}
