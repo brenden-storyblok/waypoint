@@ -1,6 +1,5 @@
 // Writes .storybook/fixtures.data.json from the CLI pull in .storyblok. Stories
-// import the JSON, so both Storybook (Vite) and the /design-sync converter
-// (esbuild) compile them; neither supports the other's glob import.
+// import the JSON.
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 
 const storiesDir = new URL('../.storyblok/stories/source/', import.meta.url);

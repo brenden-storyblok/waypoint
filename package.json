@@ -2,7 +2,6 @@
 	"name": "blueprint-core-nextjs",
 	"version": "0.1.0",
 	"private": true,
-	"types": ".design-sync/index.d.ts",
 	"scripts": {
 		"dev": "next dev --experimental-https",
 		"build": "next build",
