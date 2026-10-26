@@ -48,3 +48,6 @@ certificates
 
 # Agent worktrees: other checkouts that Tailwind must not scan for classes
 .claude/worktrees/
+# storybook
+storybook-static
+.storybook/fixtures.data.json

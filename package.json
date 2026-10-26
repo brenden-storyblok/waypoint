@@ -7,7 +7,12 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "eslint .",
-		"test": "vitest run"
+		"test": "vitest run",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build",
+		"storybook:fixtures": "node .storybook/build-fixtures.mjs",
+		"prestorybook": "npm run storybook:fixtures",
+		"prebuild-storybook": "npm run storybook:fixtures"
 	},
 	"dependencies": {
 		"@storyblok/react": "^7.3.1",
@@ -17,11 +22,14 @@
 	},
 	"devDependencies": {
 		"@netlify/plugin-nextjs": "^5.15.13",
+		"@storybook/nextjs-vite": "^10.6.4",
 		"@tailwindcss/postcss": "^4.3.3",
 		"@tailwindcss/typography": "^0.5.20",
 		"eslint": "^9.39.5",
 		"eslint-config-next": "^16.3.5",
+		"storybook": "^10.6.4",
 		"tailwindcss": "^4.3.3",
+		"vite": "^7.3.7",
 		"vitest": "^3.2.7"
 	}
 }

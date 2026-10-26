@@ -1,6 +1,11 @@
 import eslintConfig from "eslint-config-next/core-web-vitals";
 
 export default [
-  { ignores: [".claude/**"] },
+  {
+    ignores: [
+      ".claude/**",
+      "storybook-static/**",
+    ],
+  },
   ...eslintConfig,
 ];
