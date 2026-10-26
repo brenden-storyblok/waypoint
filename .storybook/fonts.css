@@ -1,0 +1,10 @@
+/* The families src/app/layout.js loads with next/font, as a static stylesheet.
+   next/font sets its variables at runtime, which /design-sync can't scrape;
+   this file puts the same families and weights in Storybook's compiled CSS. */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+:root {
+	--font-next-display: 'Bricolage Grotesque';
+	--font-next-serif: 'Source Serif 4';
+	--font-next-mono: 'JetBrains Mono';
+}

@@ -48,3 +48,14 @@ certificates
 
 # Agent worktrees: other checkouts that Tailwind must not scan for classes
 .claude/worktrees/
+# storybook
+storybook-static
+.storybook/fixtures.data.json
+
+# design-sync
+.design-sync/sb-reference/
+.design-sync/learnings/
+.design-sync/.cache/
+.design-sync/node_modules
+.ds-sync/
+ds-bundle/
