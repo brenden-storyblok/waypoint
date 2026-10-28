@@ -140,3 +140,16 @@ export const Interactive = {
 		);
 	},
 };
+
+/**
+ * A phone viewport with the Country panel open: the search box and the panel
+ * span the full width, the panel sits below the controls row over the cards,
+ * rows use 16px text, and the footer shows Done. Check the layout here and tick
+ * boxes; Done closes the panel.
+ */
+export const PhoneOpenPanel = {
+	args: Interactive.args,
+	render: Interactive.render,
+	globals: { viewport: { value: 'mobile2', isRotated: false } },
+	play: OpenPanel.play,
+};

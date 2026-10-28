@@ -21,6 +21,7 @@ import { useEffect, useRef } from 'react';
  *   onToggle  (value) => void; omit for the static render
  *   onClear   () => void empties this group; omit for the static render
  *   clearLabel  the footer Clear button's text
+ *   doneLabel   the footer Done button's text; the button shows below sm only
  *
  * Renders nothing when there are no options. A group with one option still shows.
  */
@@ -32,17 +33,23 @@ const FilterSelect = ({
 	onToggle,
 	onClear,
 	clearLabel,
+	doneLabel,
 }) => {
 	const disclosureRef = useRef(null);
 
-	// Escape closes the open panel and moves focus to its trigger. A press
-	// outside the disclosure closes it, and a press inside leaves it open.
+	// Close the open panel and move focus to its trigger.
+	const closeAndFocusTrigger = () => {
+		const disclosure = disclosureRef.current;
+		if (!disclosure?.open) return;
+		disclosure.open = false;
+		disclosure.querySelector('summary').focus();
+	};
+
+	// Escape closes the open panel. A press outside the disclosure closes it,
+	// and a press inside leaves it open.
 	useEffect(() => {
 		const handleKeyDown = (event) => {
-			const disclosure = disclosureRef.current;
-			if (event.key !== 'Escape' || !disclosure?.open) return;
-			disclosure.open = false;
-			disclosure.querySelector('summary').focus();
+			if (event.key === 'Escape') closeAndFocusTrigger();
 		};
 		const handlePointerDown = (event) => {
 			const disclosure = disclosureRef.current;
@@ -75,20 +82,20 @@ const FilterSelect = ({
 				</svg>
 			</summary>
 			<div
-				className="absolute inset-x-0 z-10 mt-2 max-h-80 overflow-y-auto rounded-md border border-mist-200 bg-white p-2 shadow-lg sm:inset-x-auto sm:w-70 dark:border-deep-sea-700 dark:bg-deep-sea-800"
+				className="absolute inset-x-0 top-full z-10 mt-2 max-h-80 overflow-y-auto rounded-md border border-mist-200 bg-white p-2 shadow-lg sm:inset-x-auto sm:top-auto sm:w-70 dark:border-deep-sea-700 dark:bg-deep-sea-800"
 				role="group"
 				aria-label={heading}
 			>
 				{options.map(({ value, label }) => (
 					<label
 						key={value}
-						className="flex cursor-pointer items-center gap-2.5 rounded-sm px-2 py-2.5 font-serif text-sm text-deep-sea-900 hover:bg-mist-100 sm:py-1.5 dark:text-frost-200 dark:hover:bg-deep-sea-700"
+						className="flex cursor-pointer items-center gap-2.5 rounded-sm px-2 py-2.5 font-serif text-base text-deep-sea-900 hover:bg-mist-100 sm:py-1.5 sm:text-sm dark:text-frost-200 dark:hover:bg-deep-sea-700"
 					>
 						<input
 							type="checkbox"
 							name={name}
 							value={value}
-							className="size-4 shrink-0 cursor-pointer appearance-none rounded-sm border border-mist-200 bg-white checked:border-deep-sea-900 checked:bg-deep-sea-900 dark:border-deep-sea-700 dark:bg-deep-sea-800 dark:checked:border-frost-200 dark:checked:bg-frost-200"
+							className="size-4.5 shrink-0 sm:size-4 cursor-pointer appearance-none rounded-sm border border-mist-200 bg-white checked:border-deep-sea-900 checked:bg-deep-sea-900 dark:border-deep-sea-700 dark:bg-deep-sea-800 dark:checked:border-frost-200 dark:checked:bg-frost-200"
 							{...(onToggle
 								? {
 										checked: selected.includes(value),
@@ -99,13 +106,20 @@ const FilterSelect = ({
 						{label}
 					</label>
 				))}
-				<div className="mt-2 flex justify-end border-t border-mist-200 px-2 pt-2 dark:border-deep-sea-700">
+				<div className="mt-2 flex items-center justify-between gap-2 border-t border-mist-200 px-2 pt-2 sm:justify-end dark:border-deep-sea-700">
 					<button
 						type="button"
 						className="cursor-pointer rounded-sm px-2 py-1 font-serif text-sm text-deep-sea-900 hover:bg-mist-100 dark:text-frost-200 dark:hover:bg-deep-sea-700"
 						onClick={onClear}
 					>
 						{clearLabel}
+					</button>
+					<button
+						type="button"
+						className="cursor-pointer rounded-sm bg-deep-sea-900 px-4 py-1.5 font-serif text-sm text-white sm:hidden dark:bg-frost-200 dark:text-deep-sea-900"
+						onClick={closeAndFocusTrigger}
+					>
+						{doneLabel}
 					</button>
 				</div>
 			</div>

@@ -230,6 +230,60 @@ describe('DestinationSearchView', () => {
 		});
 	});
 
+	describe('Done in the panel footer on a phone', () => {
+		const panelFor = (html, heading) =>
+			html.match(
+				new RegExp(`<details [^>]*><summary[^>]*>.*?${heading}.*?</details>`),
+			)[0];
+		const doneButtonIn = (panel) =>
+			panel.match(/<button type="button" ([^>]*)>(Done|Finish)<\/button>/);
+
+		it('shows a Done button in each panel', () => {
+			const html = renderPool({ handlers });
+			for (const heading of ['Country', 'Type of place']) {
+				expect(doneButtonIn(panelFor(html, heading))?.[2]).toBe('Done');
+			}
+		});
+
+		it('uses the editor label instead of the default', () => {
+			const html = renderPool({
+				handlers,
+				texts: { ...texts, doneLabel: 'Finish' },
+			});
+			expect(doneButtonIn(panelFor(html, 'Country'))?.[2]).toBe('Finish');
+			expect(panelFor(html, 'Country')).not.toContain('>Done</button>');
+		});
+
+		it('hides Done from the sm breakpoint up', () => {
+			const html = renderPool({ handlers });
+			expect(doneButtonIn(panelFor(html, 'Country'))[1]).toContain(
+				'sm:hidden',
+			);
+		});
+
+		it('keeps Done in the server render too', () => {
+			expect(doneButtonIn(panelFor(renderPool(), 'Country'))?.[2]).toBe(
+				'Done',
+			);
+		});
+	});
+
+	describe('phone panel layout', () => {
+		it('makes the search box full width and the panel span the controls row below it', () => {
+			const html = renderPool({ handlers });
+			expect(html).toMatch(/<input type="search"[^>]* class="w-full /);
+			const panel = html.match(/<div class="([^"]*)" role="group"/)[1];
+			expect(panel).toContain('inset-x-0');
+			expect(panel).toContain('top-full');
+		});
+
+		it('uses 16px row text and 18px checkboxes below sm', () => {
+			const html = renderPool({ handlers });
+			expect(html).toMatch(/<label [^>]*class="[^"]*text-base sm:text-sm/);
+			expect(html).toMatch(/<input type="checkbox"[^>]*size-4\.5 [^"]*sm:size-4/);
+		});
+	});
+
 	describe('controls row', () => {
 		it('shows Clear all as a link when there are no choices on the server', () => {
 			const html = renderPool({ clearHref: '?_storyblok=1' });

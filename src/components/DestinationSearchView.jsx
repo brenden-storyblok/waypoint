@@ -86,6 +86,7 @@ const DestinationSearchView = ({
 					onToggle={toggle('countries')}
 					onClear={clearGroup('countries')}
 					clearLabel={texts.clearGroupLabel}
+					doneLabel={texts.doneLabel}
 				/>
 				<FilterSelect
 					heading={texts.attributesLabel}
@@ -95,6 +96,7 @@ const DestinationSearchView = ({
 					onToggle={toggle('attributes')}
 					onClear={clearGroup('attributes')}
 					clearLabel={texts.clearGroupLabel}
+					doneLabel={texts.doneLabel}
 				/>
 				{handlers ? (
 					<button

@@ -25,7 +25,11 @@ const withRoom = (Story) => (
 const meta = {
 	title: 'Search/FilterSelect',
 	component: FilterSelect,
-	args: { selected: [], clearLabel: grid.clear_group_label || 'Clear' },
+	args: {
+		selected: [],
+		clearLabel: grid.clear_group_label || 'Clear',
+		doneLabel: grid.done_label || 'Done',
+	},
 	decorators: [withRoom],
 };
 
