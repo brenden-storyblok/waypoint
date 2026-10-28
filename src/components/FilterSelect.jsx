@@ -1,3 +1,5 @@
+import { useEffect, useRef } from 'react';
+
 /**
  * One Filter group as a multi-select dropdown, e.g. Countries or Destination
  * Attributes. A native <details> disclosure: the <summary> is the trigger, a
@@ -21,9 +23,33 @@
  * Renders nothing when there are no options. A group with one option still shows.
  */
 const FilterSelect = ({ heading, name, options, selected, onToggle }) => {
+	const disclosureRef = useRef(null);
+
+	// Escape closes the open panel and moves focus to its trigger. A press
+	// outside the disclosure closes it, and a press inside leaves it open.
+	useEffect(() => {
+		const handleKeyDown = (event) => {
+			const disclosure = disclosureRef.current;
+			if (event.key !== 'Escape' || !disclosure?.open) return;
+			disclosure.open = false;
+			disclosure.querySelector('summary').focus();
+		};
+		const handlePointerDown = (event) => {
+			const disclosure = disclosureRef.current;
+			if (!disclosure?.open || disclosure.contains(event.target)) return;
+			disclosure.open = false;
+		};
+		document.addEventListener('keydown', handleKeyDown);
+		document.addEventListener('pointerdown', handlePointerDown);
+		return () => {
+			document.removeEventListener('keydown', handleKeyDown);
+			document.removeEventListener('pointerdown', handlePointerDown);
+		};
+	}, []);
+
 	if (!options.length) return null;
 	return (
-		<details name="filters" className="group sm:relative">
+		<details ref={disclosureRef} name="filters" className="group sm:relative">
 			<summary className="flex cursor-pointer list-none items-center gap-2 rounded-full border border-mist-200 bg-white px-4 py-2.5 font-serif text-lg text-deep-sea-900 hover:border-deep-sea-900 group-open:border-deep-sea-900 dark:border-deep-sea-700 dark:bg-deep-sea-800 dark:text-frost-200 dark:hover:border-frost-200 dark:group-open:border-frost-200 [&::-webkit-details-marker]:hidden">
 				<span>{heading}</span>
 				{selected.length > 0 && <span>{`· ${selected.length}`}</span>}
