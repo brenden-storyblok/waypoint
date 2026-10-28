@@ -279,7 +279,7 @@ describe('DestinationSearchView', () => {
 
 		it('uses 16px row text and 18px checkboxes below sm', () => {
 			const html = renderPool({ handlers });
-			expect(html).toMatch(/<label [^>]*class="[^"]*text-base sm:text-sm/);
+			expect(html).toMatch(/<label [^>]*class="[^"]*text-base [^"]*sm:text-sm/);
 			expect(html).toMatch(/<input type="checkbox"[^>]*size-4\.5 [^"]*sm:size-4/);
 		});
 	});
