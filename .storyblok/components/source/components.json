@@ -256,7 +256,7 @@
     "display_name": "Destination grid",
     "description": null,
     "created_at": "2026-10-14T15:55:45.667Z",
-    "updated_at": "2026-10-16T14:12:02.584Z",
+    "updated_at": "2026-10-28T17:11:01.676Z",
     "id": 230620142261129,
     "schema": {
       "headline": {
@@ -374,6 +374,24 @@
         "default_value": "Country",
         "description": "Heading above the Country chips.",
         "id": "AIEFNQd3TbGJIxmZDzHBjg"
+      },
+      "clear_group_label": {
+        "type": "text",
+        "pos": 11,
+        "display_name": "Clear group label",
+        "translatable": true,
+        "default_value": "Clear",
+        "description": "Button in each Filter panel that empties that group.",
+        "id": "Fw2HCWYHTX69BP_YjR8OoA"
+      },
+      "done_label": {
+        "type": "text",
+        "pos": 12,
+        "display_name": "Done label",
+        "translatable": true,
+        "default_value": "Done",
+        "description": "Button that closes a Filter panel on a phone.",
+        "id": "F9KRRslLSYehmBU4IBzsng"
       }
     },
     "image": null,
