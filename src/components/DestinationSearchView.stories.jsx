@@ -44,6 +44,8 @@ const texts = {
 	attributesLabel: grid.attributes_label,
 	emptyMessage: grid.empty_message,
 	clearLabel: grid.clear_label,
+	clearGroupLabel: grid.clear_group_label || 'Clear',
+	doneLabel: grid.done_label || 'Done',
 };
 
 const noChoices = { text: '', countries: [], attributes: [] };
@@ -131,6 +133,8 @@ export const Interactive = {
 					onText: (text) => setChoices((current) => ({ ...current, text })),
 					onToggle: toggleIn,
 					onClear: () => setChoices(noChoices),
+					onClearGroup: (group) =>
+						setChoices((current) => ({ ...current, [group]: [] })),
 				}}
 			/>
 		);

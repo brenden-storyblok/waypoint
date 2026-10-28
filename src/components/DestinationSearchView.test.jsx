@@ -9,6 +9,8 @@ const texts = {
 	attributesLabel: 'Type of place',
 	emptyMessage: 'No places match.',
 	clearLabel: 'Clear all',
+	clearGroupLabel: 'Clear',
+	doneLabel: 'Done',
 };
 
 const lisbon = {
@@ -31,7 +33,12 @@ const labels = {
 };
 
 const noop = () => {};
-const handlers = { onText: noop, onToggle: noop, onClear: noop };
+const handlers = {
+	onText: noop,
+	onToggle: noop,
+	onClear: noop,
+	onClearGroup: noop,
+};
 
 const renderPool = ({ query, ...props } = {}) => {
 	const choices = parseChoices(query);
@@ -189,6 +196,37 @@ describe('DestinationSearchView', () => {
 			expect(html).toMatch(/<summary[^>]*>.*?Country/);
 			expect(html).not.toContain('Type of place');
 			expect(html.match(/<details /g)).toHaveLength(1);
+		});
+	});
+
+	describe('Clear in the panel footer', () => {
+		// The panel of the <details> whose summary shows `heading`.
+		const panelFor = (html, heading) =>
+			html.match(
+				new RegExp(`<details [^>]*><summary[^>]*>.*?${heading}.*?</details>`),
+			)[0];
+
+		it('shows a Clear button with the editor label in each panel', () => {
+			const html = renderPool({ handlers });
+			for (const heading of ['Country', 'Type of place']) {
+				expect(panelFor(html, heading)).toMatch(
+					/<button type="button" [^>]*>Clear<\/button>/,
+				);
+			}
+		});
+
+		it('uses the editor label instead of a default', () => {
+			const html = renderPool({
+				handlers,
+				texts: { ...texts, clearGroupLabel: 'Reset' },
+			});
+			expect(panelFor(html, 'Country')).toContain('>Reset</button>');
+			expect(panelFor(html, 'Country')).not.toContain('>Clear</button>');
+		});
+
+		it('keeps Clear all in the controls row apart from the panel Clear', () => {
+			const html = renderPool({ handlers });
+			expect(panelFor(html, 'Country')).not.toContain('Clear all');
 		});
 	});
 

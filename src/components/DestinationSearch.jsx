@@ -16,7 +16,8 @@ import { parseChoices, searchDestinations } from '@/lib/destinationSearch';
  *   labels     display labels for the module, e.g. { countries, attributes }
  *   cards      { [uuid]: rendered DestinationCard }
  *   texts      { placeholder, countryLabel, attributesLabel, emptyMessage,
- *              clearLabel }
+ *              clearLabel,
+ *              clearGroupLabel, doneLabel }
  */
 const DestinationSearch = ({ headline, pool, labels, cards, texts }) => {
 	const [choices, setChoices] = useSearchChoices();
@@ -42,6 +43,10 @@ const DestinationSearch = ({ headline, pool, labels, cards, texts }) => {
 				? selected.filter((selectedValue) => selectedValue !== value)
 				: [...selected, value];
 			setChoices({ ...shown, [group]: next });
+		},
+		// Empties one Filter group (a key of choices); the rest stay as they were.
+		onClearGroup: (group) => {
+			setChoices({ ...shown, [group]: [] });
 		},
 		onClear: () => {
 			const none = parseChoices();

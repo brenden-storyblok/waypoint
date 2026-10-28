@@ -185,6 +185,8 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 		attributesLabel: blok.attributes_label,
 		emptyMessage: blok.empty_message,
 		clearLabel: blok.clear_label,
+		clearGroupLabel: blok.clear_group_label || 'Clear',
+		doneLabel: blok.done_label || 'Done',
 	};
 	// The fallback is the same grid, filtered on the server, so a shared
 	// link never flashes the full Pool.

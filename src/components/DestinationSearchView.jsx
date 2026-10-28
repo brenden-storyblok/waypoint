@@ -16,7 +16,8 @@ import { placesLabel } from '@/lib/destinationSearch';
  *   result     a searchDestinations result
  *   cards      { [uuid]: rendered DestinationCard } for every Destination in the Pool
  *   texts      { placeholder, countryLabel, attributesLabel, emptyMessage,
- *              clearLabel } from the editor
+ *              clearLabel,
+ *              clearGroupLabel, doneLabel } from the editor
  *   choices    the visitor's choices (parseChoices): the Search Text in the
  *              search box and the selected options
  *   handlers   the browser's event handlers; omit for the static fallback:
@@ -24,6 +25,7 @@ import { placesLabel } from '@/lib/destinationSearch';
  *                onToggle  (group, value) => void toggles one option; group is
  *                          a key of result.chips, e.g. 'countries'
  *                onClear   () => void
+ *                onClearGroup  (group) => void empties one Filter group
  *   clearHref  the static fallback's Clear all link (clearChoicesHref)
  */
 const DestinationSearchView = ({
@@ -39,6 +41,8 @@ const DestinationSearchView = ({
 	const clearClass = `${buttonClasses('secondary', 'sm')} cursor-pointer bg-transparent text-deep-sea-900 dark:text-frost-200`;
 	const toggle = (group) =>
 		handlers && ((value) => handlers.onToggle(group, value));
+	const clearGroup = (group) =>
+		handlers && (() => handlers.onClearGroup(group));
 
 	return (
 		<>
@@ -80,6 +84,8 @@ const DestinationSearchView = ({
 					options={result.chips.countries}
 					selected={choices.countries}
 					onToggle={toggle('countries')}
+					onClear={clearGroup('countries')}
+					clearLabel={texts.clearGroupLabel}
 				/>
 				<FilterSelect
 					heading={texts.attributesLabel}
@@ -87,6 +93,8 @@ const DestinationSearchView = ({
 					options={result.chips.attributes}
 					selected={choices.attributes}
 					onToggle={toggle('attributes')}
+					onClear={clearGroup('attributes')}
+					clearLabel={texts.clearGroupLabel}
 				/>
 				{handlers ? (
 					<button

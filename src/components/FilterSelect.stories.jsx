@@ -25,7 +25,7 @@ const withRoom = (Story) => (
 const meta = {
 	title: 'Search/FilterSelect',
 	component: FilterSelect,
-	args: { selected: [] },
+	args: { selected: [], clearLabel: grid.clear_group_label || 'Clear' },
 	decorators: [withRoom],
 };
 
@@ -67,7 +67,7 @@ export const SingleOption = {
  */
 export const Dark = { args: WithSelection.args };
 
-/** Tick a box to toggle it. Without `onToggle` the boxes only show the selection. */
+/** Tick a box to toggle it, and press Clear in the footer to empty the group. Without `onToggle` the boxes only show the selection. */
 export const Interactive = {
 	args: Countries.args,
 	render: function Render(args) {
@@ -78,6 +78,13 @@ export const Interactive = {
 					? current.filter((selectedValue) => selectedValue !== value)
 					: [...current, value],
 			);
-		return <FilterSelect {...args} selected={selected} onToggle={toggle} />;
+		return (
+			<FilterSelect
+				{...args}
+				selected={selected}
+				onToggle={toggle}
+				onClear={() => setSelected([])}
+			/>
+		);
 	},
 };

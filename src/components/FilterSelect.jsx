@@ -17,10 +17,20 @@
  *   options   [{ value, label }] from a searchDestinations result's `chips`
  *   selected  [value] the selected options
  *   onToggle  (value) => void; omit for the static render
+ *   onClear   () => void empties this group; omit for the static render
+ *   clearLabel  the footer Clear button's text
  *
  * Renders nothing when there are no options. A group with one option still shows.
  */
-const FilterSelect = ({ heading, name, options, selected, onToggle }) => {
+const FilterSelect = ({
+	heading,
+	name,
+	options,
+	selected,
+	onToggle,
+	onClear,
+	clearLabel,
+}) => {
 	if (!options.length) return null;
 	return (
 		<details name="filters" className="group sm:relative">
@@ -63,6 +73,15 @@ const FilterSelect = ({ heading, name, options, selected, onToggle }) => {
 						{label}
 					</label>
 				))}
+				<div className="mt-2 flex justify-end border-t border-mist-200 px-2 pt-2 dark:border-deep-sea-700">
+					<button
+						type="button"
+						className="cursor-pointer rounded-sm px-2 py-1 font-serif text-sm text-deep-sea-900 hover:bg-mist-100 dark:text-frost-200 dark:hover:bg-deep-sea-700"
+						onClick={onClear}
+					>
+						{clearLabel}
+					</button>
+				</div>
 			</div>
 		</details>
 	);
