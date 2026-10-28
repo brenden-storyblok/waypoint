@@ -52,7 +52,7 @@ const searchWith = (choices) =>
 	searchDestinations({ destinations: records, choices, labels });
 
 /**
- * The searchable grid's markup: count, Search Text box, Filter chips, cards and
+ * The searchable grid's markup: count, Search Text box, Filter dropdowns, cards and
  * the empty message. Without `handlers` it is the server's static form.
  */
 const meta = {
@@ -63,7 +63,7 @@ const meta = {
 
 export default meta;
 
-/** The whole Pool: nothing is narrowed. */
+/** The whole Pool: nothing is narrowed and no trigger shows a badge. */
 export const FullPool = {
 	args: { result: searchWith(noChoices), choices: noChoices },
 };
@@ -76,6 +76,32 @@ export const Narrowed = {
 	})(),
 };
 
+/** Choices in both groups: each trigger shows its "· N" badge and the boxes are ticked. */
+export const ChoicesInBothGroups = {
+	args: (() => {
+		const choices = {
+			...noChoices,
+			countries: ['italy', 'spain'],
+			attributes: ['beach'],
+		};
+		return { result: searchWith(choices), choices };
+	})(),
+};
+
+/** The Country panel open, floating below its trigger. */
+export const OpenPanel = {
+	args: FullPool.args,
+	play: ({ canvasElement }) => {
+		canvasElement.querySelector('details').open = true;
+	},
+};
+
+/**
+ * Dark mode follows the operating system (see the dark-mode ADR). Switch the
+ * browser or OS to dark to see the dark palette.
+ */
+export const Dark = { args: ChoicesInBothGroups.args, play: OpenPanel.play };
+
 /** Nothing matches. The static form's Clear all is a link, set with `clearHref`. */
 export const NoMatches = {
 	args: (() => {
@@ -84,7 +110,7 @@ export const NoMatches = {
 	})(),
 };
 
-/** With `handlers` the search box and chips work, as inside DestinationSearch. */
+/** With `handlers` the search box and Filter dropdowns work, as inside DestinationSearch. */
 export const Interactive = {
 	args: { result: searchWith(noChoices), choices: noChoices },
 	render: function Render(args) {
