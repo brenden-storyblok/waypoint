@@ -27,8 +27,8 @@ const meta = {
 	component: FilterSelect,
 	args: {
 		selected: [],
-		clearLabel: grid.clear_group_label || 'Clear',
-		doneLabel: grid.done_label || 'Done',
+		clearGroupLabel: 'Clear',
+		doneLabel: 'Done',
 	},
 	decorators: [withRoom],
 };
@@ -87,7 +87,7 @@ export const Interactive = {
 				{...args}
 				selected={selected}
 				onToggle={toggle}
-				onClear={() => setSelected([])}
+				onClearGroup={() => setSelected([])}
 			/>
 		);
 	},

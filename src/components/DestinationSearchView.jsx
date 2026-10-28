@@ -16,8 +16,7 @@ import { placesLabel } from '@/lib/destinationSearch';
  *   result     a searchDestinations result
  *   cards      { [uuid]: rendered DestinationCard } for every Destination in the Pool
  *   texts      { placeholder, countryLabel, attributesLabel, emptyMessage,
- *              clearLabel,
- *              clearGroupLabel, doneLabel } from the editor
+ *              clearLabel, clearGroupLabel, doneLabel } from the editor
  *   choices    the visitor's choices (parseChoices): the Search Text in the
  *              search box and the selected options
  *   handlers   the browser's event handlers; omit for the static fallback:
@@ -84,8 +83,8 @@ const DestinationSearchView = ({
 					options={result.chips.countries}
 					selected={choices.countries}
 					onToggle={toggle('countries')}
-					onClear={clearGroup('countries')}
-					clearLabel={texts.clearGroupLabel}
+					onClearGroup={clearGroup('countries')}
+					clearGroupLabel={texts.clearGroupLabel}
 					doneLabel={texts.doneLabel}
 				/>
 				<FilterSelect
@@ -94,8 +93,8 @@ const DestinationSearchView = ({
 					options={result.chips.attributes}
 					selected={choices.attributes}
 					onToggle={toggle('attributes')}
-					onClear={clearGroup('attributes')}
-					clearLabel={texts.clearGroupLabel}
+					onClearGroup={clearGroup('attributes')}
+					clearGroupLabel={texts.clearGroupLabel}
 					doneLabel={texts.doneLabel}
 				/>
 				{handlers ? (

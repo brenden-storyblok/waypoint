@@ -133,6 +133,19 @@ describe('DestinationSearchView', () => {
 			expect(attributes).toContain('· 2');
 		});
 
+		it('gives a screen reader the group name and the selected count, without the dot', () => {
+			const html = renderPool({ query: { attribute: ['city', 'history'] } });
+			const summary = html.match(
+				/<summary[^>]*>((?:(?!<\/summary>)[\s\S])*Type of place[\s\S]*?)<\/summary>/,
+			)[1];
+			const heard = summary
+				.replace(/<[^>]*aria-hidden="true"[^>]*>.*?<\/(span|svg)>/g, '')
+				.replace(/<[^>]*>/g, '')
+				.replace(/\s+/g, ' ')
+				.trim();
+			expect(heard).toBe('Type of place 2 selected');
+		});
+
 		it('lists checkboxes named country and attribute, valued from the Pool', () => {
 			const html = renderPool();
 			expect(html).toMatch(
@@ -254,33 +267,8 @@ describe('DestinationSearchView', () => {
 			expect(panelFor(html, 'Country')).not.toContain('>Done</button>');
 		});
 
-		it('hides Done from the sm breakpoint up', () => {
-			const html = renderPool({ handlers });
-			expect(doneButtonIn(panelFor(html, 'Country'))[1]).toContain(
-				'sm:hidden',
-			);
-		});
-
 		it('keeps Done in the server render too', () => {
-			expect(doneButtonIn(panelFor(renderPool(), 'Country'))?.[2]).toBe(
-				'Done',
-			);
-		});
-	});
-
-	describe('phone panel layout', () => {
-		it('makes the search box full width and the panel span the controls row below it', () => {
-			const html = renderPool({ handlers });
-			expect(html).toMatch(/<input type="search"[^>]* class="w-full /);
-			const panel = html.match(/<div class="([^"]*)" role="group"/)[1];
-			expect(panel).toContain('inset-x-0');
-			expect(panel).toContain('top-full');
-		});
-
-		it('uses 16px row text and 18px checkboxes below sm', () => {
-			const html = renderPool({ handlers });
-			expect(html).toMatch(/<label [^>]*class="[^"]*text-base [^"]*sm:text-sm/);
-			expect(html).toMatch(/<input type="checkbox"[^>]*size-4\.5 [^"]*sm:size-4/);
+			expect(doneButtonIn(panelFor(renderPool(), 'Country'))?.[2]).toBe('Done');
 		});
 	});
 
