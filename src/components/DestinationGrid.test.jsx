@@ -187,4 +187,18 @@ describe('DestinationGrid', () => {
 		expect(html).toContain('role="search"');
 		expect(html).toContain('href="/destinations/lisbon"');
 	});
+	describe('panel button labels', () => {
+		const searching = { search_enabled: true, destinations: [lisbon, porto] };
+
+		it('falls back to Clear when the editor leaves the label empty', async () => {
+			const html = await render(searching);
+			expect(html).toContain('>Clear</button>');
+		});
+
+		it('shows the editor label for the group Clear button', async () => {
+			const html = await render({ ...searching, clear_group_label: 'Reset' });
+			expect(html).toContain('>Reset</button>');
+			expect(html).not.toContain('>Clear</button>');
+		});
+	});
 });

@@ -1,11 +1,11 @@
 import { Fragment } from 'react';
-import FilterChips from './FilterChips';
+import FilterSelect from './FilterSelect';
 import { buttonClasses } from './buttonClasses';
 import { placesLabel } from '@/lib/destinationSearch';
 
 /**
  * The searchable destination grid's markup: head with count, search box,
- * Filter chips, cards, and the empty message with Clear all.
+ * Filter dropdowns, cards, and the empty message with Clear all.
  *
  * Renders on the server as the Suspense fallback (no handlers: the search box
  * submits a plain GET form and Clear all is a link) and in the browser inside
@@ -16,14 +16,15 @@ import { placesLabel } from '@/lib/destinationSearch';
  *   result     a searchDestinations result
  *   cards      { [uuid]: rendered DestinationCard } for every Destination in the Pool
  *   texts      { placeholder, countryLabel, attributesLabel, emptyMessage,
- *              clearLabel } from the editor
+ *              clearLabel, clearGroupLabel, doneLabel } from the editor
  *   choices    the visitor's choices (parseChoices): the Search Text in the
- *              search box and the selected chips
+ *              search box and the selected options
  *   handlers   the browser's event handlers; omit for the static fallback:
  *                onText    (text) => void
- *                onToggle  (group, value) => void toggles one chip; group is
+ *                onToggle  (group, value) => void toggles one option; group is
  *                          a key of result.chips, e.g. 'countries'
  *                onClear   () => void
+ *                onClearGroup  (group) => void empties one Filter group
  *   clearHref  the static fallback's Clear all link (clearChoicesHref)
  */
 const DestinationSearchView = ({
@@ -39,6 +40,8 @@ const DestinationSearchView = ({
 	const clearClass = `${buttonClasses('secondary', 'sm')} cursor-pointer bg-transparent text-deep-sea-900 dark:text-frost-200`;
 	const toggle = (group) =>
 		handlers && ((value) => handlers.onToggle(group, value));
+	const clearGroup = (group) =>
+		handlers && (() => handlers.onClearGroup(group));
 
 	return (
 		<>
@@ -57,13 +60,13 @@ const DestinationSearchView = ({
 			</div>
 			<form
 				role="search"
-				className="mb-8"
+				className="relative mb-8 flex flex-wrap items-center gap-3"
 				onSubmit={handlers ? (event) => event.preventDefault() : undefined}
 			>
 				<input
 					type="search"
 					name="q"
-					className="w-full max-w-120 rounded-full border border-mist-200 bg-white px-4.5 py-3 font-serif text-lg text-deep-sea-900 dark:border-deep-sea-700 dark:bg-deep-sea-800 dark:text-frost-200"
+					className="w-full rounded-full border border-mist-200 bg-white px-4.5 py-3 font-serif text-lg text-deep-sea-900 sm:w-120 dark:border-deep-sea-700 dark:bg-deep-sea-800 dark:text-frost-200"
 					aria-label={texts.placeholder}
 					placeholder={texts.placeholder}
 					autoComplete="off"
@@ -74,21 +77,40 @@ const DestinationSearchView = ({
 							}
 						: { defaultValue: choices.text })}
 				/>
-			</form>
-			<div className="mb-8 grid gap-3 empty:hidden">
-				<FilterChips
+				<FilterSelect
 					heading={texts.countryLabel}
-					chips={result.chips.countries}
+					name="country"
+					options={result.chips.countries}
 					selected={choices.countries}
 					onToggle={toggle('countries')}
+					onClearGroup={clearGroup('countries')}
+					clearGroupLabel={texts.clearGroupLabel}
+					doneLabel={texts.doneLabel}
 				/>
-				<FilterChips
+				<FilterSelect
 					heading={texts.attributesLabel}
-					chips={result.chips.attributes}
+					name="attribute"
+					options={result.chips.attributes}
 					selected={choices.attributes}
 					onToggle={toggle('attributes')}
+					onClearGroup={clearGroup('attributes')}
+					clearGroupLabel={texts.clearGroupLabel}
+					doneLabel={texts.doneLabel}
 				/>
-			</div>
+				{handlers ? (
+					<button
+						type="button"
+						className={clearClass}
+						onClick={handlers.onClear}
+					>
+						{texts.clearLabel}
+					</button>
+				) : (
+					<a className={clearClass} href={clearHref}>
+						{texts.clearLabel}
+					</a>
+				)}
+			</form>
 			{result.visible.length > 0 ? (
 				<div className="grid grid-cols-1 gap-x-6 gap-y-7 sm:grid-cols-2 md:grid-cols-3">
 					{result.visible.map((destination) => (
