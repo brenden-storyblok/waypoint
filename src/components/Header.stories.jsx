@@ -1,4 +1,4 @@
-import { story } from '../../.storybook/fixtures';
+import { destination, story } from '../../.storybook/fixtures';
 import Header from './Header';
 
 const header = story('global/header').content;
@@ -23,8 +23,15 @@ export const WithoutCta = {
 const logoSvg =
 	"<svg xmlns='http://www.w3.org/2000/svg' width='400' height='100'><rect width='400' height='100' rx='12' fill='#0f766e'/><text x='200' y='66' font-size='48' font-family='sans-serif' fill='white' text-anchor='middle'>waypoint</text></svg>";
 
-/** An SVG logo keeps its original URL; the `#.svg` suffix marks the data URI as SVG for the passthrough. */
+/** A raster logo from a fixture image asset: the loader resizes it and its `meta_data.size` sets the width. */
 export const WithLogo = {
+	args: {
+		blok: { ...header, logo: destination('lisbon').hero_image },
+	},
+};
+
+/** An SVG logo keeps its original URL; the `#.svg` suffix marks the data URI as SVG for the passthrough. */
+export const WithSvgLogo = {
 	args: {
 		blok: {
 			...header,

@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 import Header from '@/components/Header';
+import { firstImage } from '@/test/firstImage';
 
 const logoAsset = (overrides) => ({
 	filename: 'https://a.storyblok.com/f/1/logo.png',
@@ -10,7 +11,7 @@ const logoAsset = (overrides) => ({
 
 const renderImage = (logo) => {
 	const html = renderToStaticMarkup(<Header blok={{ _uid: 'header', logo }} />);
-	return html.match(/<img [^>]*>/)[0];
+	return firstImage(html);
 };
 
 describe('Header', () => {
@@ -23,7 +24,7 @@ describe('Header', () => {
 				}}
 			/>,
 		);
-		const image = html.match(/<img [^>]*>/)[0];
+		const image = firstImage(html);
 		expect(image).toContain('width="96"');
 		expect(image).toContain('height="32"');
 		expect(image).toContain('alt="Waypoint"');

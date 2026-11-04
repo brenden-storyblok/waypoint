@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 import DestinationGallery from './DestinationGallery';
+import { firstImage } from '@/test/firstImage';
 
 const blok = { _uid: 'gallery-uid', component: 'destination_gallery' };
 
@@ -76,8 +77,6 @@ describe('DestinationGallery', () => {
 		expect(html).toContain('>1 image</span>');
 	});
 });
-
-const firstImage = (html) => /<img [^>]*>/.exec(html)[0];
 
 describe('DestinationGallery images', () => {
 	const renderGallery = (gallery) =>

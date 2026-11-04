@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 import Hero from '@/components/Hero';
+import { firstImage } from '@/test/firstImage';
 
 const heroImage = {
 	filename: 'https://a.storyblok.com/f/1/hero.jpg',
@@ -19,7 +20,7 @@ const heroBlok = (image) => ({
 describe('Hero', () => {
 	it('renders its image eagerly with high fetch priority at Storyblok widths', () => {
 		const html = renderToStaticMarkup(<Hero blok={heroBlok(heroImage)} />);
-		const image = html.match(/<img [^>]*>/)[0];
+		const image = firstImage(html);
 		expect(image).toContain('alt="Trams on a hill"');
 		expect(image).toContain('loading="eager"');
 		expect(image).toContain('fetchPriority="high"');

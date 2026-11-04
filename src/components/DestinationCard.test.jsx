@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 import DestinationCard from '@/components/DestinationCard';
+import { firstImage } from '@/test/firstImage';
 
 const lisbon = {
 	uuid: 'lisbon-uuid',
@@ -23,7 +24,7 @@ describe('DestinationCard', () => {
 		);
 		expect(html).toMatch(/^<a [^>]*href="\/destinations\/lisbon">/);
 		expect(html).toMatch(/<\/a>$/);
-		const image = html.match(/<img [^>]*>/)[0];
+		const image = firstImage(html);
 		expect(image).toContain('alt="Trams on a hill"');
 		expect(image).toContain('loading="lazy"');
 		expect(image).toContain(

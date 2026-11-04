@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 import DestinationHero from '@/components/DestinationHero';
+import { firstImage } from '@/test/firstImage';
 
 const lisbon = {
 	name: 'Lisbon',
@@ -21,7 +22,7 @@ describe('DestinationHero', () => {
 		const html = renderToStaticMarkup(
 			<DestinationHero blok={heroBlok} destination={lisbon} />,
 		);
-		const image = html.match(/<img [^>]*>/)[0];
+		const image = firstImage(html);
 		expect(image).toContain('alt="Trams on a hill"');
 		expect(image).toContain('loading="eager"');
 		expect(image).toContain('fetchPriority="high"');
