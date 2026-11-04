@@ -52,3 +52,9 @@ _Avoid_: Grid (reserved for a Pool's listing), container, columns
 **Breakpoint**:
 A screen width at which a Layout's arrangement can change. A setting left empty at a Breakpoint inherits the value from the next narrower one.
 _Avoid_: Screen size, device
+
+### Images
+
+**Focus Point**:
+The spot an editor marks on an image as its subject. A cropped image keeps the Focus Point in frame. Storyblok's Image Service documentation explains how crops use it: https://www.storyblok.com/docs/api/image-service
+_Avoid_: Focal point, hotspot, center
