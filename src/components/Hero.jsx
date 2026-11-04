@@ -39,7 +39,7 @@ const Hero = async ({ blok }) => {
 					</div>
 				)}
 			</div>
-			<div className="relative min-h-71.5 bg-placeholder md:min-h-104.5">
+			<div className="relative min-h-78.75 bg-placeholder md:min-h-115">
 				<StoryblokImage
 					asset={blok.image}
 					blurDataURL={blurDataURL}
