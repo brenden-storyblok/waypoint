@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 import Hero from '@/components/Hero';
 import { firstImage } from '@/test/firstImage';
@@ -17,9 +17,24 @@ const heroBlok = (image) => ({
 	image,
 });
 
+const blurBytes = Buffer.from('tiny');
+const stubBlurFetch = () => {
+	const fetchStub = vi.fn().mockResolvedValue(
+		new Response(blurBytes, { headers: { 'content-type': 'image/jpeg' } }),
+	);
+	vi.stubGlobal('fetch', fetchStub);
+	return fetchStub;
+};
+
+const renderHero = async (blok) =>
+	renderToStaticMarkup(await Hero({ blok }));
+
+afterEach(() => vi.unstubAllGlobals());
+
 describe('Hero', () => {
-	it('renders its image eagerly with high fetch priority at Storyblok widths', () => {
-		const html = renderToStaticMarkup(<Hero blok={heroBlok(heroImage)} />);
+	it('renders its image eagerly with high fetch priority at Storyblok widths', async () => {
+		stubBlurFetch();
+		const html = await renderHero(heroBlok(heroImage));
 		const image = firstImage(html);
 		expect(image).toContain('alt="Trams on a hill"');
 		expect(image).toContain('loading="eager"');
@@ -32,10 +47,30 @@ describe('Hero', () => {
 		expect(html).toContain('© Jane Doe</small>');
 	});
 
-	it('renders no image and no credit when the Hero has no image', () => {
-		const html = renderToStaticMarkup(<Hero blok={heroBlok(null)} />);
+	it('shows a blur placeholder fetched from the Image Service', async () => {
+		const fetchStub = stubBlurFetch();
+		const image = firstImage(await renderHero(heroBlok(heroImage)));
+		expect(fetchStub.mock.calls[0][0]).toBe(
+			'https://a.storyblok.com/f/1/hero.jpg/m/16x0/filters:quality(75)',
+		);
+		expect(image).toContain(
+			`data:image/jpeg;base64,${blurBytes.toString('base64')}`,
+		);
+	});
+
+	it('renders the image without a placeholder when the fetch fails', async () => {
+		vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new Error('offline')));
+		const image = firstImage(await renderHero(heroBlok(heroImage)));
+		expect(image).not.toContain('background-image');
+		expect(image).toContain('alt="Trams on a hill"');
+	});
+
+	it('renders no image and no credit when the Hero has no image', async () => {
+		const fetchStub = stubBlurFetch();
+		const html = await renderHero(heroBlok(null));
 		expect(html).not.toContain('<img');
 		expect(html).not.toContain('<small');
 		expect(html).toContain('Find your next city');
+		expect(fetchStub).not.toHaveBeenCalled();
 	});
 });

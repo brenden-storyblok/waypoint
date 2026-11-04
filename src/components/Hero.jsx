@@ -2,6 +2,7 @@ import {
 	storyblokEditable,
 	StoryblokServerComponent,
 } from '@storyblok/react/rsc';
+import { blurDataUrl } from '@/lib/blurDataUrl';
 import ImageCredit from './ImageCredit';
 import StoryblokImage from './StoryblokImage';
 
@@ -9,8 +10,9 @@ import StoryblokImage from './StoryblokImage';
 // below md the image stacks full width.
 const IMAGE_SIZES = '(min-width: 768px) 49vw, 100vw';
 
-const Hero = ({ blok }) => {
+const Hero = async ({ blok }) => {
 	const hasImage = Boolean(blok.image?.filename);
+	const blurDataURL = await blurDataUrl(blok.image);
 
 	return (
 		<section
@@ -40,6 +42,7 @@ const Hero = ({ blok }) => {
 			<div className="relative min-h-65 bg-placeholder md:min-h-95">
 				<StoryblokImage
 					asset={blok.image}
+					blurDataURL={blurDataURL}
 					fill
 					sizes={IMAGE_SIZES}
 					loading="eager"

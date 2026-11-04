@@ -83,6 +83,19 @@ describe('StoryblokImage', () => {
 		expect(html).toContain('loading="eager"');
 	});
 
+	it('renders the blur background when it gets a blurDataURL', () => {
+		const html = render({
+			asset: asset(),
+			blurDataURL: 'data:image/jpeg;base64,AAAA',
+		});
+		expect(html).toContain('background-image:url(');
+		expect(html).toContain('data:image/jpeg;base64,AAAA');
+	});
+
+	it('renders no blur background without a blurDataURL', () => {
+		expect(render({ asset: asset() })).not.toContain('background-image');
+	});
+
 	it('ignores a caller src', () => {
 		const html = render({ asset: asset(), src: 'https://evil.test/x.jpg' });
 		expect(html).not.toContain('evil.test');

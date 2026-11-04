@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 import DestinationHero from '@/components/DestinationHero';
 import { firstImage } from '@/test/firstImage';
@@ -17,11 +17,24 @@ const lisbon = {
 
 const heroBlok = { _uid: 'destination-hero-uid' };
 
+const blurBytes = Buffer.from('tiny');
+const stubBlurFetch = () => {
+	const fetchStub = vi.fn().mockResolvedValue(
+		new Response(blurBytes, { headers: { 'content-type': 'image/jpeg' } }),
+	);
+	vi.stubGlobal('fetch', fetchStub);
+	return fetchStub;
+};
+
+const renderHero = async (destination) =>
+	renderToStaticMarkup(await DestinationHero({ blok: heroBlok, destination }));
+
+afterEach(() => vi.unstubAllGlobals());
+
 describe('DestinationHero', () => {
-	it('renders its full-width image eagerly with high fetch priority', () => {
-		const html = renderToStaticMarkup(
-			<DestinationHero blok={heroBlok} destination={lisbon} />,
-		);
+	it('renders its full-width image eagerly with high fetch priority', async () => {
+		stubBlurFetch();
+		const html = await renderHero(lisbon);
 		const image = firstImage(html);
 		expect(image).toContain('alt="Trams on a hill"');
 		expect(image).toContain('loading="eager"');
@@ -34,15 +47,34 @@ describe('DestinationHero', () => {
 		expect(html).toContain('© Jane Doe</small>');
 	});
 
-	it('renders no image and no credit when the Destination has no hero image', () => {
-		const html = renderToStaticMarkup(
-			<DestinationHero
-				blok={heroBlok}
-				destination={{ ...lisbon, hero_image: null }}
-			/>,
+	it('shows a blur placeholder fetched from the Image Service', async () => {
+		const fetchStub = stubBlurFetch();
+		const image = firstImage(await renderHero(lisbon));
+		expect(fetchStub.mock.calls[0][0]).toBe(
+			'https://a.storyblok.com/f/1/lisbon.jpg/m/16x0/filters:quality(75)',
 		);
+		expect(image).toContain(
+			`data:image/jpeg;base64,${blurBytes.toString('base64')}`,
+		);
+	});
+
+	it('renders the image without a placeholder when the fetch fails', async () => {
+		vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new Error('offline')));
+		const image = firstImage(await renderHero(lisbon));
+		expect(image).not.toContain('background-image');
+		expect(image).toContain('alt="Trams on a hill"');
+	});
+
+	it('renders no image and no credit when the Destination has no hero image', async () => {
+		const fetchStub = stubBlurFetch();
+		const html = await renderHero({ ...lisbon, hero_image: null });
 		expect(html).not.toContain('<img');
 		expect(html).not.toContain('<small');
 		expect(html).toContain('Lisbon</h1>');
+		expect(fetchStub).not.toHaveBeenCalled();
+	});
+
+	it('renders nothing without a destination', async () => {
+		expect(await renderHero(null)).toBe('');
 	});
 });
