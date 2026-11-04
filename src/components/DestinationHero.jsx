@@ -3,6 +3,9 @@ import { fetchBlurDataUrl } from '@/lib/fetchBlurDataUrl';
 import ImageCredit from './ImageCredit';
 import StoryblokImage from './StoryblokImage';
 
+// A hero is the largest image on its page, so it uses 85 over the default 75.
+const HERO_QUALITY = 85;
+
 const capitalise = (value) =>
 	value ? value.charAt(0).toUpperCase() + value.slice(1) : '';
 
@@ -28,6 +31,7 @@ const DestinationHero = async ({ blok, destination }) => {
 					sizes="100vw"
 					loading="eager"
 					fetchPriority="high"
+					quality={HERO_QUALITY}
 					className="bg-placeholder object-cover"
 				/>
 			</div>

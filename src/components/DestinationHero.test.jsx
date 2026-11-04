@@ -34,7 +34,7 @@ describe('DestinationHero', () => {
 		expect(image).toContain('fetchPriority="high"');
 		expect(image).toContain('sizes="100vw"');
 		expect(image).toContain(
-			'https://a.storyblok.com/f/1/lisbon.jpg/m/640x0/filters:quality(75) 640w',
+			'https://a.storyblok.com/f/1/lisbon.jpg/m/640x0/filters:quality(85) 640w',
 		);
 		expect(image).not.toContain('/smart');
 		expect(html).toContain('© Jane Doe</small>');
