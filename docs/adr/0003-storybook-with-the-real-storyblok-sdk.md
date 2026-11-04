@@ -10,7 +10,7 @@ Every presentational component has Storybook stories. They render with the insta
 
 ## Consequences
 
-- `features.experimentalRSC` in `.storybook/main.js` wraps each story in `<Suspense>`, so async components that await only mocked modules render in the browser. Hero and DestinationHero have stories this way. `.storybook/preview.jsx` calls `sb.mock()` on `src/lib/blurDataUrl.js`, and Storybook swaps in `src/lib/__mocks__/blurDataUrl.js`, which returns a fixed data URI. The real utility needs `Buffer` and a cross-origin fetch.
+- `features.experimentalRSC` in `.storybook/main.js` wraps each story in `<Suspense>`, so async components that await only mocked modules render in the browser. Hero and DestinationHero have stories this way. `.storybook/preview.jsx` calls `sb.mock()` on `src/lib/fetchBlurDataUrl.js`, and Storybook swaps in `src/lib/__mocks__/fetchBlurDataUrl.js`, which returns a fixed data URI. The real utility needs `Buffer` and a cross-origin fetch.
 - Async components that fetch from Storyblok and components that read the URL get no stories: DestinationGrid, DestinationSearch, Page and DestinationPage. Their views have stories.
 - Storybook loads the site's Google fonts from `.storybook/fonts.css`, because Storybook doesn't run next/font. The decorator in `.storybook/preview.jsx` carries the root classes from `src/app/layout.js`. Both copy layout.js and need the same change when it changes.
 - `npm run storybook:fixtures` regenerates the fixtures; Storybook runs it before it starts or builds.

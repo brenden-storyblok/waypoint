@@ -2,6 +2,8 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 import DestinationHero from '@/components/DestinationHero';
 import { firstImage } from '@/test/firstImage';
+import { imageBytes, imageResponse } from '@/test/imageResponse';
+import { stubFetch } from '@/test/stubFetch';
 
 const lisbon = {
 	name: 'Lisbon',
@@ -17,15 +19,6 @@ const lisbon = {
 
 const heroBlok = { _uid: 'destination-hero-uid' };
 
-const blurBytes = Buffer.from('tiny');
-const stubBlurFetch = () => {
-	const fetchStub = vi.fn().mockResolvedValue(
-		new Response(blurBytes, { headers: { 'content-type': 'image/jpeg' } }),
-	);
-	vi.stubGlobal('fetch', fetchStub);
-	return fetchStub;
-};
-
 const renderHero = async (destination) =>
 	renderToStaticMarkup(await DestinationHero({ blok: heroBlok, destination }));
 
@@ -33,7 +26,7 @@ afterEach(() => vi.unstubAllGlobals());
 
 describe('DestinationHero', () => {
 	it('renders its full-width image eagerly with high fetch priority', async () => {
-		stubBlurFetch();
+		stubFetch(imageResponse());
 		const html = await renderHero(lisbon);
 		const image = firstImage(html);
 		expect(image).toContain('alt="Trams on a hill"');
@@ -48,13 +41,13 @@ describe('DestinationHero', () => {
 	});
 
 	it('shows a blur placeholder fetched from the Image Service', async () => {
-		const fetchStub = stubBlurFetch();
+		const fetchStub = stubFetch(imageResponse());
 		const image = firstImage(await renderHero(lisbon));
 		expect(fetchStub.mock.calls[0][0]).toBe(
 			'https://a.storyblok.com/f/1/lisbon.jpg/m/16x0/filters:quality(75)',
 		);
 		expect(image).toContain(
-			`data:image/jpeg;base64,${blurBytes.toString('base64')}`,
+			`data:image/jpeg;base64,${imageBytes.toString('base64')}`,
 		);
 	});
 
@@ -66,7 +59,7 @@ describe('DestinationHero', () => {
 	});
 
 	it('renders no image and no credit when the Destination has no hero image', async () => {
-		const fetchStub = stubBlurFetch();
+		const fetchStub = stubFetch(imageResponse());
 		const html = await renderHero({ ...lisbon, hero_image: null });
 		expect(html).not.toContain('<img');
 		expect(html).not.toContain('<small');

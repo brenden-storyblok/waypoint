@@ -4,9 +4,9 @@ import '../src/app/globals.css';
 // Registers every block with the SDK, as the app does.
 import '../src/lib/storyblok';
 
-// The heroes await blurDataUrl, which needs Node and a cross-origin fetch.
-// Storybook redirects it to src/lib/__mocks__/blurDataUrl.js.
-sb.mock(import('../src/lib/blurDataUrl.js'));
+// The heroes await fetchBlurDataUrl, which needs Node and a cross-origin fetch.
+// Storybook redirects it to src/lib/__mocks__/fetchBlurDataUrl.js.
+sb.mock(import('../src/lib/fetchBlurDataUrl.js'));
 
 /** @type { import('@storybook/nextjs-vite').Preview } */
 const preview = {

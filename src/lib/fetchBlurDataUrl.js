@@ -13,7 +13,7 @@ const TIMEOUT_MS = 3000;
  * `undefined` for an asset without a filename, for SVG and GIF files, and when
  * the fetch fails or times out.
  */
-export async function blurDataUrl(asset, { crop } = {}) {
+export async function fetchBlurDataUrl(asset, { crop } = {}) {
 	if (!asset?.filename || PASSTHROUGH_EXTENSION.test(asset.filename)) return;
 	try {
 		const response = await fetch(

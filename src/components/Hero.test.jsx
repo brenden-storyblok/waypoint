@@ -2,6 +2,8 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 import Hero from '@/components/Hero';
 import { firstImage } from '@/test/firstImage';
+import { imageBytes, imageResponse } from '@/test/imageResponse';
+import { stubFetch } from '@/test/stubFetch';
 
 const heroImage = {
 	filename: 'https://a.storyblok.com/f/1/hero.jpg',
@@ -17,15 +19,6 @@ const heroBlok = (image) => ({
 	image,
 });
 
-const blurBytes = Buffer.from('tiny');
-const stubBlurFetch = () => {
-	const fetchStub = vi.fn().mockResolvedValue(
-		new Response(blurBytes, { headers: { 'content-type': 'image/jpeg' } }),
-	);
-	vi.stubGlobal('fetch', fetchStub);
-	return fetchStub;
-};
-
 const renderHero = async (blok) =>
 	renderToStaticMarkup(await Hero({ blok }));
 
@@ -33,7 +26,7 @@ afterEach(() => vi.unstubAllGlobals());
 
 describe('Hero', () => {
 	it('renders its image eagerly with high fetch priority at Storyblok widths', async () => {
-		stubBlurFetch();
+		stubFetch(imageResponse());
 		const html = await renderHero(heroBlok(heroImage));
 		const image = firstImage(html);
 		expect(image).toContain('alt="Trams on a hill"');
@@ -48,13 +41,13 @@ describe('Hero', () => {
 	});
 
 	it('shows a blur placeholder fetched from the Image Service', async () => {
-		const fetchStub = stubBlurFetch();
+		const fetchStub = stubFetch(imageResponse());
 		const image = firstImage(await renderHero(heroBlok(heroImage)));
 		expect(fetchStub.mock.calls[0][0]).toBe(
 			'https://a.storyblok.com/f/1/hero.jpg/m/16x0/filters:quality(75)',
 		);
 		expect(image).toContain(
-			`data:image/jpeg;base64,${blurBytes.toString('base64')}`,
+			`data:image/jpeg;base64,${imageBytes.toString('base64')}`,
 		);
 	});
 
@@ -66,7 +59,7 @@ describe('Hero', () => {
 	});
 
 	it('renders no image and no credit when the Hero has no image', async () => {
-		const fetchStub = stubBlurFetch();
+		const fetchStub = stubFetch(imageResponse());
 		const html = await renderHero(heroBlok(null));
 		expect(html).not.toContain('<img');
 		expect(html).not.toContain('<small');

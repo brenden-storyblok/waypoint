@@ -35,7 +35,7 @@ export const NoImage = {
 	args: { blok: { ...homeHero, image: null } },
 };
 
-/** The photo shows with its blur placeholder, without a credit. */
+/** Renders the photo with no credit. */
 export const NoCredit = {
 	args: { blok: { ...homeHero, image: { ...homeHero.image, copyright: '' } } },
 };

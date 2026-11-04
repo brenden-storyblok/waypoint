@@ -20,8 +20,8 @@ The loader reads the Focus Point from the asset's `focus` property. A component 
 
 ## Addendum: blur placeholders for the heroes
 
-Hero and DestinationHero show a blurred placeholder while their photo loads. Both are async Server Components. Each awaits `blurDataUrl(asset, { crop })` from `src/lib/blurDataUrl.js`, which fetches a 16px-wide version of the asset from the Image Service on the server and returns a base64 `data:` URI. The heroes pass it to `StoryblokImage` as `blurDataURL`, and `StoryblokImage` then sets `placeholder="blur"`. The utility caches each fetch for a day with `next: { revalidate }`, gives up after three seconds, and returns `undefined` on any failure, so the hero renders without a placeholder.
+Hero and DestinationHero show a blurred placeholder while their photo loads. Both are async Server Components. Each awaits `fetchBlurDataUrl(asset, { crop })` from `src/lib/fetchBlurDataUrl.js`, which fetches a 16px-wide version of the asset from the Image Service on the server and returns a base64 `data:` URI. The heroes pass it to `StoryblokImage` as `blurDataURL`, and `StoryblokImage` then sets `placeholder="blur"`. The utility caches each fetch for a day with `next: { revalidate }`, gives up after three seconds, and returns `undefined` on any failure, so the hero renders without a placeholder.
 
-`storyblokImageUrl(asset, { width, crop, quality })` in `src/lib/images.js` builds every Image Service URL. The `StoryblokImage` loader and `blurDataUrl` both call it, so the placeholder gets the same crop and Focus Point as the full image. The loader stays in the client component.
+`storyblokImageUrl(asset, { width, crop, quality })` in `src/lib/images.js` builds every Image Service URL. The `StoryblokImage` loader and `fetchBlurDataUrl` both call it, so the placeholder gets the same crop and Focus Point as the full image. The loader stays in the client component.
 
 - **A server wrapper around `StoryblokImage` that fetches the placeholder**: rejected. Only the heroes need placeholders, so they call the utility themselves. Cards, gallery tiles and the Header logo stay unchanged.

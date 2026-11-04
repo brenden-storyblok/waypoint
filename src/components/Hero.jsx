@@ -2,7 +2,7 @@ import {
 	storyblokEditable,
 	StoryblokServerComponent,
 } from '@storyblok/react/rsc';
-import { blurDataUrl } from '@/lib/blurDataUrl';
+import { fetchBlurDataUrl } from '@/lib/fetchBlurDataUrl';
 import ImageCredit from './ImageCredit';
 import StoryblokImage from './StoryblokImage';
 
@@ -12,7 +12,7 @@ const IMAGE_SIZES = '(min-width: 768px) 49vw, 100vw';
 
 const Hero = async ({ blok }) => {
 	const hasImage = Boolean(blok.image?.filename);
-	const blurDataURL = await blurDataUrl(blok.image);
+	const blurDataURL = await fetchBlurDataUrl(blok.image);
 
 	return (
 		<section

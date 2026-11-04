@@ -1,5 +1,5 @@
 import { storyblokEditable } from '@storyblok/react/rsc';
-import { blurDataUrl } from '@/lib/blurDataUrl';
+import { fetchBlurDataUrl } from '@/lib/fetchBlurDataUrl';
 import ImageCredit from './ImageCredit';
 import StoryblokImage from './StoryblokImage';
 
@@ -9,7 +9,7 @@ const capitalise = (value) =>
 const DestinationHero = async ({ blok, destination }) => {
 	if (!destination) return null;
 
-	const blurDataURL = await blurDataUrl(destination.hero_image);
+	const blurDataURL = await fetchBlurDataUrl(destination.hero_image);
 	const hasImage = Boolean(destination.hero_image?.filename);
 	const place = [destination.region, capitalise(destination.country)]
 		.filter(Boolean)
