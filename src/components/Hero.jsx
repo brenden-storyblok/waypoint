@@ -2,11 +2,20 @@ import {
 	storyblokEditable,
 	StoryblokServerComponent,
 } from '@storyblok/react/rsc';
-import { imageUrl, imageAlt } from '@/lib/images';
+import { fetchBlurDataUrl } from '@/lib/fetchBlurDataUrl';
 import ImageCredit from './ImageCredit';
+import StoryblokImage from './StoryblokImage';
 
-const Hero = ({ blok }) => {
-	const src = imageUrl(blok.image, 1200, 0);
+// A hero is the largest image on its page, so it uses 85 over the default 75.
+const HERO_QUALITY = 85;
+
+// The image column is half the section from md (1.05fr of 2.05fr, about 49vw);
+// below md the image stacks full width.
+const IMAGE_SIZES = '(min-width: 768px) 49vw, 100vw';
+
+const Hero = async ({ blok }) => {
+	const hasImage = Boolean(blok.image?.filename);
+	const blurDataURL = await fetchBlurDataUrl(blok.image);
 
 	return (
 		<section
@@ -33,16 +42,18 @@ const Hero = ({ blok }) => {
 					</div>
 				)}
 			</div>
-			<div className="relative min-h-65 bg-placeholder md:min-h-95">
-				{src && (
-					// eslint-disable-next-line @next/next/no-img-element
-					<img
-						className="block size-full bg-placeholder object-cover"
-						src={src}
-						alt={imageAlt(blok.image)}
-					/>
-				)}
-				{src && <ImageCredit asset={blok.image} />}
+			<div className="relative min-h-78.75 bg-placeholder md:min-h-[50vh]">
+				<StoryblokImage
+					asset={blok.image}
+					blurDataURL={blurDataURL}
+					fill
+					sizes={IMAGE_SIZES}
+					loading="eager"
+					fetchPriority="high"
+					quality={HERO_QUALITY}
+					className="bg-placeholder object-cover"
+				/>
+				{hasImage && <ImageCredit asset={blok.image} />}
 			</div>
 		</section>
 	);

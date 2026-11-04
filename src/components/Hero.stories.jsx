@@ -34,3 +34,8 @@ export const HeadlineOnly = {
 export const NoImage = {
 	args: { blok: { ...homeHero, image: null } },
 };
+
+/** Renders the photo with no credit. */
+export const NoCredit = {
+	args: { blok: { ...homeHero, image: { ...homeHero.image, copyright: '' } } },
+};

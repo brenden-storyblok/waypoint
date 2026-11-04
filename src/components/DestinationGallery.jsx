@@ -1,7 +1,7 @@
 import { storyblokEditable } from '@storyblok/react/rsc';
-import { imageUrl, imageAlt } from '@/lib/images';
 import { bentoLayout } from '@/lib/bento';
 import ImageCredit from './ImageCredit';
+import StoryblokImage from './StoryblokImage';
 
 // Literal span classes so Tailwind generates each one bentoLayout can return.
 // Below md the gallery has 2 columns (narrow spans); from md it has 4 (wide spans).
@@ -24,6 +24,22 @@ const tileSpans = ({ wide, narrow }) =>
 	]
 		.filter(Boolean)
 		.join(' ');
+
+// The image width a tile needs, from the columns it spans. Below md the grid
+// has 2 columns, so a span is a share of the viewport. From md it has 4, each
+// about a quarter of the viewport. Past xl the container stops at 1184px: four
+// columns of 287px with 12px gaps, so a span of n columns is 299n - 12 pixels.
+const NARROW_COLUMNS = 2;
+const WIDE_COLUMNS = 4;
+const MAX_COLUMN_PX = 287;
+const GAP_PX = 12;
+
+const tileSizes = ({ wide, narrow }) => {
+	const maxWidth = wide.cols * (MAX_COLUMN_PX + GAP_PX) - GAP_PX;
+	const wideShare = (wide.cols / WIDE_COLUMNS) * 100;
+	const narrowShare = (narrow.cols / NARROW_COLUMNS) * 100;
+	return `(min-width: 1280px) ${maxWidth}px, (min-width: 768px) ${wideShare}vw, ${narrowShare}vw`;
+};
 
 const DestinationGallery = ({ blok, destination }) => {
 	if (!destination) return null;
@@ -51,12 +67,11 @@ const DestinationGallery = ({ blok, destination }) => {
 							key={tile.asset.id ?? tile.asset.filename}
 							className={`relative min-h-0 min-w-0 ${tileSpans(tile)}`}
 						>
-							{/* eslint-disable-next-line @next/next/no-img-element */}
-							<img
-								className="block size-full rounded-md bg-placeholder object-cover"
-								src={imageUrl(tile.asset, 900, 0)}
-								alt={imageAlt(tile.asset)}
-								loading="lazy"
+							<StoryblokImage
+								asset={tile.asset}
+								fill
+								sizes={tileSizes(tile)}
+								className="rounded-md bg-placeholder object-cover"
 							/>
 							<ImageCredit asset={tile.asset} />
 						</div>

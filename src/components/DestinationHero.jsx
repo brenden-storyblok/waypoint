@@ -1,14 +1,19 @@
 import { storyblokEditable } from '@storyblok/react/rsc';
-import { imageUrl, imageAlt } from '@/lib/images';
+import { fetchBlurDataUrl } from '@/lib/fetchBlurDataUrl';
 import ImageCredit from './ImageCredit';
+import StoryblokImage from './StoryblokImage';
+
+// A hero is the largest image on its page, so it uses 85 over the default 75.
+const HERO_QUALITY = 85;
 
 const capitalise = (value) =>
 	value ? value.charAt(0).toUpperCase() + value.slice(1) : '';
 
-const DestinationHero = ({ blok, destination }) => {
+const DestinationHero = async ({ blok, destination }) => {
 	if (!destination) return null;
 
-	const src = imageUrl(destination.hero_image, 2000, 0);
+	const blurDataURL = await fetchBlurDataUrl(destination.hero_image);
+	const hasImage = Boolean(destination.hero_image?.filename);
 	const place = [destination.region, capitalise(destination.country)]
 		.filter(Boolean)
 		.join(' · ');
@@ -19,14 +24,16 @@ const DestinationHero = ({ blok, destination }) => {
 			className="relative flex min-h-120 items-end overflow-hidden bg-placeholder text-white sm:min-h-140"
 		>
 			<div className="absolute inset-0">
-				{src && (
-					// eslint-disable-next-line @next/next/no-img-element
-					<img
-						className="block size-full bg-placeholder object-cover"
-						src={src}
-						alt={imageAlt(destination.hero_image)}
-					/>
-				)}
+				<StoryblokImage
+					asset={destination.hero_image}
+					blurDataURL={blurDataURL}
+					fill
+					sizes="100vw"
+					loading="eager"
+					fetchPriority="high"
+					quality={HERO_QUALITY}
+					className="bg-placeholder object-cover"
+				/>
 			</div>
 			<div className="absolute inset-0 bg-linear-to-b from-shade-0 from-30% to-shade-70" />
 			<div className="relative mx-auto grid w-full max-w-7xl gap-3.5 px-gutter py-14">
@@ -42,7 +49,7 @@ const DestinationHero = ({ blok, destination }) => {
 					<p className="max-w-[38ch] text-xl">{destination.summary}</p>
 				)}
 			</div>
-			{src && <ImageCredit asset={destination.hero_image} />}
+			{hasImage && <ImageCredit asset={destination.hero_image} />}
 		</section>
 	);
 };

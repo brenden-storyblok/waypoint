@@ -1,5 +1,6 @@
-import { story } from '../../.storybook/fixtures';
+import { bloks, destinationPageHref, story } from '../../.storybook/fixtures';
 import DestinationCard from './DestinationCard';
+import DestinationCarousel from './DestinationCarousel';
 
 const lisbon = story('data/destinations/lisbon');
 
@@ -8,11 +9,14 @@ const meta = {
 	title: 'Destinations/DestinationCard',
 	component: DestinationCard,
 	decorators: [
-		(Story) => (
-			<div className="max-w-sm">
+		(Story, context) =>
+			context.parameters.fullWidth ? (
 				<Story />
-			</div>
-		),
+			) : (
+				<div className="max-w-sm">
+					<Story />
+				</div>
+			),
 	],
 };
 
@@ -34,5 +38,27 @@ export const NoImage = {
 			...lisbon,
 			content: { ...lisbon.content, hero_image: null },
 		},
+	},
+};
+
+/** The same card inside the Carousel, a Client Component: the image still gets its srcset. */
+export const InCarousel = {
+	parameters: { fullWidth: true },
+	render: () => {
+		const [grid] = bloks('home', 'destination_grid');
+		return (
+			<DestinationCarousel
+				headline={grid.headline}
+				placesLabel={`${grid.destinations.length} places`}
+			>
+				{grid.destinations.map((destination) => (
+					<DestinationCard
+						key={destination.uuid}
+						destination={destination}
+						href={destinationPageHref(destination.uuid)}
+					/>
+				))}
+			</DestinationCarousel>
+		);
 	},
 };
