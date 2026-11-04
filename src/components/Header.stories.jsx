@@ -20,6 +20,23 @@ export const WithoutCta = {
 	args: { blok: { ...header, cta: [] } },
 };
 
+const logoSvg =
+	"<svg xmlns='http://www.w3.org/2000/svg' width='400' height='100'><rect width='400' height='100' rx='12' fill='#0f766e'/><text x='200' y='66' font-size='48' font-family='sans-serif' fill='white' text-anchor='middle'>waypoint</text></svg>";
+
+/** An SVG logo keeps its original URL; the `#.svg` suffix marks the data URI as SVG for the passthrough. */
+export const WithLogo = {
+	args: {
+		blok: {
+			...header,
+			logo: {
+				filename: `data:image/svg+xml,${encodeURIComponent(logoSvg)}#.svg`,
+				alt: 'Waypoint',
+				meta_data: { size: '400x100' },
+			},
+		},
+	},
+};
+
 /** Below the md Breakpoint the nav hides; the CTA shows from sm up. */
 export const Narrow = {
 	args: { blok: header },

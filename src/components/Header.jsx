@@ -3,10 +3,20 @@ import {
 	storyblokEditable,
 	StoryblokServerComponent,
 } from '@storyblok/react/rsc';
-import { imageUrl, imageAlt } from '@/lib/images';
+import StoryblokImage from './StoryblokImage';
+
+const LOGO_HEIGHT = 32;
+const FALLBACK_RATIO = 4;
+
+/** Width at the logo height, from the asset's "WxH" size, else 4:1. */
+const logoWidth = (logo) => {
+	const [width, height] = (logo.meta_data?.size || '').split('x').map(Number);
+	const ratio = width > 0 && height > 0 ? width / height : FALLBACK_RATIO;
+	return Math.round(LOGO_HEIGHT * ratio);
+};
 
 const Header = ({ blok }) => {
-	const logo = imageUrl(blok.logo, 0, 64);
+	const hasLogo = Boolean(blok.logo?.filename);
 	return (
 		<header
 			{...storyblokEditable(blok)}
@@ -17,13 +27,12 @@ const Header = ({ blok }) => {
 					className="font-display text-xl font-extrabold tracking-tight no-underline"
 					href="/"
 				>
-					{logo ? (
-						// eslint-disable-next-line @next/next/no-img-element
-						<img
+					{hasLogo ? (
+						<StoryblokImage
+							asset={blok.logo}
+							height={LOGO_HEIGHT}
+							width={logoWidth(blok.logo)}
 							className="block h-8 w-auto"
-							src={logo}
-							alt={imageAlt(blok.logo)}
-							loading="lazy"
 						/>
 					) : (
 						<>
