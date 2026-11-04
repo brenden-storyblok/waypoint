@@ -23,8 +23,11 @@ describe('DestinationCard', () => {
 		);
 		expect(html).toMatch(/^<a [^>]*href="\/destinations\/lisbon">/);
 		expect(html).toMatch(/<\/a>$/);
-		expect(html).toMatch(
-			/<img [^>]*src="https:\/\/a.storyblok.com\/f\/1\/lisbon.jpg\/m\/800x1000\/smart\/filters:format\(webp\)" alt="Trams on a hill" loading="lazy"\/>/,
+		const image = html.match(/<img [^>]*>/)[0];
+		expect(image).toContain('alt="Trams on a hill"');
+		expect(image).toContain('loading="lazy"');
+		expect(image).toContain(
+			'https://a.storyblok.com/f/1/lisbon.jpg/m/640x800/smart/filters:quality(75) 640w',
 		);
 		expect(html).toContain('© Jane Doe</small>');
 		expect(html).toMatch(/<h3 [^>]*>Lisbon<\/h3>/);
