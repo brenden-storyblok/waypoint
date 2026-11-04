@@ -76,3 +76,45 @@ describe('DestinationGallery', () => {
 		expect(html).toContain('>1 image</span>');
 	});
 });
+
+const firstImage = (html) => /<img [^>]*>/.exec(html)[0];
+
+describe('DestinationGallery images', () => {
+	const renderGallery = (gallery) =>
+		renderToStaticMarkup(
+			<DestinationGallery blok={blok} destination={{ gallery }} />,
+		);
+
+	it('serves each photo uncropped through the Storyblok image service', () => {
+		const image = firstImage(renderGallery([asset('square', '1000x1000')]));
+		expect(image).toContain(
+			'src="https://a.storyblok.com/f/1/square.jpg/m/3840x0/filters:quality(75)"',
+		);
+		expect(image).not.toContain('/smart');
+		expect(image).not.toContain('focal(');
+	});
+
+	it('loads photos lazily and fills the tile', () => {
+		const image = firstImage(renderGallery([asset('square', '1000x1000')]));
+		expect(image).toContain('loading="lazy"');
+		expect(image).toContain('data-nimg="fill"');
+	});
+
+	// A full-width tile needs the whole row at every width.
+	it('sizes a full-grid tile to the viewport', () => {
+		const image = firstImage(renderGallery([asset('square', '1000x1000')]));
+		expect(image).toContain(
+			'sizes="(min-width: 1280px) 1184px, (min-width: 768px) 100vw, 100vw"',
+		);
+	});
+
+	// A one-cell tile is half the row below md and a quarter of it from md.
+	it('sizes a one-cell tile to its column', () => {
+		const html = renderGallery(
+			['one', 'two', 'three', 'four'].map((name) => asset(name, '1600x900')),
+		);
+		expect(firstImage(html)).toContain(
+			'sizes="(min-width: 1280px) 287px, (min-width: 768px) 25vw, 50vw"',
+		);
+	});
+});
