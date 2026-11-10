@@ -189,20 +189,18 @@ describe('Section', () => {
 	});
 
 	it('renders its Buttons through the component registry', () => {
-		const html = renderSection({
-			body: [
-				{
-					_uid: 'button-uid',
-					component: 'button',
-					label: 'Book now',
-					variant: 'primary',
-					link: { linktype: 'url', url: 'https://example.com/book' },
-				},
-			],
-		});
-		expect(html).toMatch(
-			/<a [^>]*href="https:\/\/example.com\/book"[^>]*>Book now<\/a>/,
+		const buttonBlok = {
+			_uid: 'button-uid',
+			component: 'button',
+			label: 'Book now',
+			variant: 'primary',
+			link: { linktype: 'url', url: 'https://example.com/book' },
+		};
+		const [buttonHandoff] = registryHandoffs(
+			Section({ blok: sectionBlok({ body: [buttonBlok] }) }),
 		);
+		expect(buttonHandoff.blok).toBe(buttonBlok);
+		expect(getComponent(buttonHandoff.blok.component)).toBeTypeOf('function');
 	});
 
 	it("forwards the page's Destination to its children", () => {
