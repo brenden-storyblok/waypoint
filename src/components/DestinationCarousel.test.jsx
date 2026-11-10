@@ -8,6 +8,7 @@ const render = (props) =>
 			headline="More places"
 			placesLabel="2 places"
 			label="Destinations"
+			roleDescription="carousel"
 			previousLabel="Previous destinations"
 			nextLabel="Next destinations"
 			{...props}

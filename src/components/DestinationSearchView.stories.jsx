@@ -7,6 +7,7 @@ import {
 } from '../../.storybook/fixtures';
 import DestinationCard from './DestinationCard';
 import DestinationSearchView from './DestinationSearchView';
+import { countryName } from '@/lib/countryName';
 import { searchDestinations } from '@/lib/destinationSearch';
 
 const [grid] = bloks('destinations/', 'destination_grid');
@@ -34,6 +35,8 @@ const cards = Object.fromEntries(
 			key={destination.uuid}
 			destination={destination}
 			href={destinationPageHref(destination.uuid)}
+			countryLabel={countryName(labels.countries, destination.content.country)}
+			exploreTemplate="Explore {name}"
 		/>,
 	]),
 );

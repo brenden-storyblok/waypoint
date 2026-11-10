@@ -1,20 +1,25 @@
 import { storyblokEditable } from '@storyblok/react/rsc';
+import { getCurrentLanguage } from '@/lib/currentLanguage';
+import { countryName } from '@/lib/countryName';
 import { fetchBlurDataUrl } from '@/lib/fetchBlurDataUrl';
+import { loadLabels } from '@/lib/labels';
 import ImageCredit from './ImageCredit';
 import StoryblokImage from './StoryblokImage';
 
 // A hero is the largest image on its page, so it uses 85 over the default 75.
 const HERO_QUALITY = 85;
 
-const capitalise = (value) =>
-	value ? value.charAt(0).toUpperCase() + value.slice(1) : '';
-
 const DestinationHero = async ({ blok, destination }) => {
 	if (!destination) return null;
 
+	const language = await getCurrentLanguage();
+	const countries = await loadLabels('countries', language);
 	const blurDataURL = await fetchBlurDataUrl(destination.hero_image);
 	const hasImage = Boolean(destination.hero_image?.filename);
-	const place = [destination.region, capitalise(destination.country)]
+	const place = [
+		destination.region,
+		countryName(countries, destination.country),
+	]
 		.filter(Boolean)
 		.join(' · ');
 

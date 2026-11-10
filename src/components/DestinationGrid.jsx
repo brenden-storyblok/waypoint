@@ -5,6 +5,7 @@ import DestinationSearch from './DestinationSearch';
 import DestinationSearchView from './DestinationSearchView';
 import { storyblokEditable } from '@storyblok/react/rsc';
 import { getStoryblokApi } from '@/lib/storyblok';
+import { countryName } from '@/lib/countryName';
 import { getLabel, loadLabels } from '@/lib/labels';
 import { getCurrentLanguage } from '@/lib/currentLanguage';
 import { deliveryLanguageParams, storyHref } from '@/lib/language';
@@ -100,9 +101,12 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 		other: await getLabel('places-other', language),
 		filtered: await getLabel('places-filtered', language),
 	};
+	// Cards name their Country in every mode, so the labels load regardless.
+	const countryLabels = await loadLabels('countries', language);
+	const exploreTemplate = await getLabel('card-explore', language);
 	const labels = search
 		? {
-				countries: await loadLabels('countries', language),
+				countries: countryLabels,
 				attributes: await loadLabels('destination-attributes', language),
 			}
 		: {};
@@ -126,6 +130,8 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 			key={destination.uuid}
 			destination={destination}
 			href={hrefs[destination.uuid]}
+			countryLabel={countryName(countryLabels, destination.content?.country)}
+			exploreTemplate={exploreTemplate}
 		/>
 	);
 
@@ -146,6 +152,7 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 						: undefined
 				}
 				label={await getLabel('carousel-label', language)}
+				roleDescription={await getLabel('carousel-roledescription', language)}
 				previousLabel={await getLabel('carousel-previous', language)}
 				nextLabel={await getLabel('carousel-next', language)}
 			>

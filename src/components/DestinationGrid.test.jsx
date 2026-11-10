@@ -40,22 +40,33 @@ const uiLabelEntries = [
 	['places-other', '{count} places', '{count} Orte'],
 	['places-filtered', '{shown} of {total} places', '{shown} von {total} Orten'],
 	['filter-selected', '{count} selected', '{count} ausgewählt'],
+	['card-explore', 'Explore {name}', '{name} entdecken'],
+	['carousel-roledescription', 'carousel', 'Karussell'],
 ].map(([value, name, german]) => ({
 	value,
 	name,
 	dimension_value: german,
 }));
 
+// The countries datasource as the Delivery API serves it.
+const countryEntries = [
+	{ value: 'portugal', name: 'Portugal', dimension_value: 'Portugal DE' },
+];
+
 const serveUiLabels = () =>
-	getAll.mockImplementation(async (path, query) =>
-		path === 'cdn/datasource_entries' && query.datasource === 'ui-labels'
-			? uiLabelEntries.map((entry) => ({
+	getAll.mockImplementation(async (path, query) => {
+		const entries = {
+			'ui-labels': uiLabelEntries,
+			countries: countryEntries,
+		}[query?.datasource];
+		return path === 'cdn/datasource_entries' && entries
+			? entries.map((entry) => ({
 					...entry,
 					// The Delivery API sends the translation only with a dimension.
 					dimension_value: query.dimension ? entry.dimension_value : null,
 				}))
-			: [],
-	);
+			: [];
+	});
 
 // The query loadAllDestinations sent to the Delivery API.
 const sentQuery = () => getAll.mock.calls[0][1];
@@ -241,6 +252,46 @@ describe('DestinationGrid', () => {
 		expect(html).toContain('role="search"');
 		expect(html).toContain('href="/destinations/lisbon"');
 	});
+	describe('card text', () => {
+		const cardPools = {
+			'a grid': { carousel: false },
+			'a Carousel': { carousel: true },
+			'a searchable grid': { search_enabled: true },
+		};
+
+		for (const [kind, settings] of Object.entries(cardPools)) {
+			it(`shows the English Country label and explore text in ${kind}`, async () => {
+				const html = await render({ ...settings, destinations: [lisbon] });
+				expect(html).toMatch(/<span [^>]*>Portugal<\/span>/);
+				expect(html).toContain('Explore Lisbon →');
+			});
+
+			it(`shows the German Country label and explore text in ${kind}`, async () => {
+				getCurrentLanguage.mockResolvedValue('de');
+				const html = await render({ ...settings, destinations: [lisbon] });
+				expect(html).toMatch(/<span [^>]*>Portugal DE<\/span>/);
+				expect(html).toContain('Lisbon entdecken →');
+				expect(html).not.toContain('Explore');
+			});
+		}
+
+		it('capitalises a Country key the countries datasource lacks', async () => {
+			const oslo = {
+				uuid: 'oslo',
+				content: { name: 'Oslo', country: 'norway' },
+			};
+			const html = await render({ carousel: false, destinations: [oslo] });
+			expect(html).toMatch(/<span [^>]*>Norway<\/span>/);
+		});
+
+		it('names the Carousel role in the current Language', async () => {
+			getCurrentLanguage.mockResolvedValue('de');
+			const html = await render({ carousel: true, destinations: [lisbon] });
+			expect(html).toContain('aria-roledescription="Karussell"');
+			expect(html).not.toContain('aria-roledescription="carousel"');
+		});
+	});
+
 	describe('in a Language', () => {
 		const pool = { destinations: [lisbon], carousel: true };
 
