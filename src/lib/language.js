@@ -28,3 +28,29 @@ export function parsePath(pathname) {
 /** Delivery API parameters that select a Language; English needs none. */
 export const deliveryLanguageParams = (language) =>
 	language === DEFAULT_LANGUAGE ? {} : { language };
+
+const SEARCH_TEXT_PARAM = 'q';
+
+/**
+ * The switcher's options for the page at `pathname` (the visitor-facing path,
+ * prefixed or not) with the query string `search`: one per Language, in the
+ * Language's own name, pointing at the same slug. Filter params and unknown
+ * params carry over; Search Text (`q`) is dropped because words typed in one
+ * Language may match nothing in another.
+ */
+export function switcherTargets({ language, pathname, search = '' }) {
+	const { slug } = parsePath(pathname);
+	const params = new URLSearchParams(search);
+	params.delete(SEARCH_TEXT_PARAM);
+	const query = params.toString();
+	return LANGUAGES.map(({ code, label }) => {
+		const prefix = code === DEFAULT_LANGUAGE ? '' : `/${code}`;
+		const path = slug === HOME_SLUG ? prefix || '/' : `${prefix}/${slug}`;
+		return {
+			code,
+			label,
+			href: query ? `${path}?${query}` : path,
+			current: code === language,
+		};
+	});
+}
