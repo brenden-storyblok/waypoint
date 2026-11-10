@@ -4,7 +4,7 @@
     "display_name": "Button",
     "description": null,
     "created_at": "2026-10-14T15:55:18.396Z",
-    "updated_at": "2026-10-16T10:02:15.378Z",
+    "updated_at": "2026-11-10T20:19:05.462Z",
     "id": 230620030559107,
     "schema": {
       "label": {
@@ -20,7 +20,10 @@
         "pos": 1,
         "display_name": "Link",
         "required": true,
-        "id": "M-2KIEhlTi6OKQFSLBjkoA"
+        "translatable": true,
+        "id": "M-2KIEhlTi6OKQFSLBjkoA",
+        "show_anchor": false,
+        "allow_custom_attributes": false
       },
       "variant": {
         "type": "option",
@@ -256,7 +259,7 @@
     "display_name": "Destination grid",
     "description": null,
     "created_at": "2026-10-14T15:55:45.667Z",
-    "updated_at": "2026-10-28T17:11:01.676Z",
+    "updated_at": "2026-11-10T20:22:40.531Z",
     "id": 230620142261129,
     "schema": {
       "headline": {
@@ -331,67 +334,6 @@
           }
         ],
         "id": "kYpaVoTiTDy86m5ZQM5wqQ"
-      },
-      "search_placeholder": {
-        "type": "text",
-        "pos": 6,
-        "display_name": "Search placeholder",
-        "translatable": true,
-        "default_value": "Search destinations",
-        "id": "f5S4JkQASuaJDt_dZpoWeQ"
-      },
-      "empty_message": {
-        "type": "text",
-        "pos": 7,
-        "display_name": "Empty message",
-        "translatable": true,
-        "default_value": "No destinations match your search.",
-        "description": "Shown when nothing matches the visitor's search.",
-        "id": "E35AVOoBSUKY5KgieZQQNw"
-      },
-      "clear_label": {
-        "type": "text",
-        "pos": 8,
-        "display_name": "Clear all label",
-        "translatable": true,
-        "default_value": "Clear all",
-        "id": "nbDgvXfsTQK6GNvsqY0IUQ"
-      },
-      "attributes_label": {
-        "type": "text",
-        "pos": 9,
-        "display_name": "Attributes label",
-        "translatable": true,
-        "default_value": "Attributes",
-        "description": "Heading above the Destination Attribute chips.",
-        "id": "xHX8322BSgeixF00ajFk_Q"
-      },
-      "country_label": {
-        "type": "text",
-        "pos": 10,
-        "display_name": "Country label",
-        "translatable": true,
-        "default_value": "Country",
-        "description": "Heading above the Country chips.",
-        "id": "AIEFNQd3TbGJIxmZDzHBjg"
-      },
-      "clear_group_label": {
-        "type": "text",
-        "pos": 11,
-        "display_name": "Clear group label",
-        "translatable": true,
-        "default_value": "Clear",
-        "description": "Button in each Filter panel that empties that group.",
-        "id": "Fw2HCWYHTX69BP_YjR8OoA"
-      },
-      "done_label": {
-        "type": "text",
-        "pos": 12,
-        "display_name": "Done label",
-        "translatable": true,
-        "default_value": "Done",
-        "description": "Button that closes a Filter panel on a phone.",
-        "id": "F9KRRslLSYehmBU4IBzsng"
       }
     },
     "image": null,
@@ -561,7 +503,7 @@
     "display_name": "FAQ section",
     "description": null,
     "created_at": "2026-10-14T15:55:46.626Z",
-    "updated_at": "2026-10-14T15:55:46.626Z",
+    "updated_at": "2026-11-06T15:03:39.000Z",
     "id": 230620146181002,
     "schema": {
       "headline": {
@@ -580,7 +522,8 @@
           "faq_item"
         ],
         "required": true,
-        "id": "ee-huHhDQ7OBd71DW0mKPA"
+        "id": "ee-huHhDQ7OBd71DW0mKPA",
+        "translatable": true
       }
     },
     "image": null,
@@ -2345,7 +2288,7 @@
     "display_name": "Nav link",
     "description": null,
     "created_at": "2026-10-14T16:06:12.260Z",
-    "updated_at": "2026-10-14T16:06:12.260Z",
+    "updated_at": "2026-11-10T20:19:06.125Z",
     "id": 230622708790206,
     "schema": {
       "label": {
@@ -2361,6 +2304,7 @@
         "pos": 1,
         "display_name": "Link",
         "required": true,
+        "translatable": true,
         "id": "gBI27HBqRQaoeaen860GQQ"
       }
     },
