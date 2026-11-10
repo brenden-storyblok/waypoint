@@ -53,6 +53,20 @@ _Avoid_: Grid (reserved for a Pool's listing), container, columns
 A screen width at which a Layout's arrangement can change. A setting left empty at a Breakpoint inherits the value from the next narrower one.
 _Avoid_: Screen size, device
 
+### Languages
+
+**Language**:
+A language a visitor can read Waypoint in: English, German, Spanish or French. Each page exists once and carries its copy in every Language.
+_Avoid_: Locale, translation, market
+
+**Default Language**:
+English. A field an editor leaves untranslated shows its English copy.
+_Avoid_: Fallback language, base language
+
+**UI Label**:
+A piece of interface copy that belongs to no single block, such as a carousel button's accessible name. Editors translate UI Labels alongside page content.
+_Avoid_: String, message, dictionary entry
+
 ### Images
 
 **Focus Point**:
