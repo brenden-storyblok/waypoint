@@ -8,6 +8,7 @@ import {
 	isLanguage,
 	linkHref,
 	parsePath,
+	slugFromSegments,
 	storyHref,
 	switcherTargets,
 } from '@/lib/language';
@@ -298,5 +299,18 @@ describe('alternateLanguages', () => {
 	it('points x-default at the English URL', () => {
 		const alternates = alternateLanguages('about');
 		expect(alternates['x-default']).toBe(alternates.en);
+	});
+});
+
+describe('slugFromSegments', () => {
+	it('joins catch-all route segments into a story slug', () => {
+		expect(slugFromSegments(['destinations', 'lisbon'])).toBe(
+			'destinations/lisbon',
+		);
+	});
+
+	it('reads a missing or empty catch-all as the home slug', () => {
+		expect(slugFromSegments(undefined)).toBe('home');
+		expect(slugFromSegments([])).toBe('home');
 	});
 });
