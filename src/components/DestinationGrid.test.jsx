@@ -7,11 +7,18 @@ vi.mock('@/lib/storyblok', () => ({
 	getStoryblokApi: () => ({ getAll, get }),
 }));
 
+const getCurrentLanguage = vi.fn();
+vi.mock('@/lib/currentLanguage', () => ({ getCurrentLanguage }));
+
 const {
 	default: DestinationGrid,
 	loadAllDestinations,
 	loadDestinations,
 } = await import('@/components/DestinationGrid');
+
+beforeEach(() => {
+	getCurrentLanguage.mockResolvedValue('en');
+});
 
 // The query loadAllDestinations sent to the Delivery API.
 const sentQuery = () => getAll.mock.calls[0][1];
@@ -187,6 +194,33 @@ describe('DestinationGrid', () => {
 		expect(html).toContain('role="search"');
 		expect(html).toContain('href="/destinations/lisbon"');
 	});
+	describe('in a Language', () => {
+		const pool = { destinations: [lisbon], carousel: true };
+
+		it('asks Storyblok for German Destinations and page lookups', async () => {
+			getCurrentLanguage.mockResolvedValue('de');
+			await render({
+				carousel: true,
+				destinations: [],
+				countries: ['portugal'],
+			});
+			await render(pool);
+			expect(getAll.mock.calls[0][1].language).toBe('de');
+			expect(get.mock.calls[0][1].language).toBe('de');
+		});
+
+		it('sends no language parameter for English', async () => {
+			await render({
+				carousel: true,
+				destinations: [],
+				countries: ['portugal'],
+			});
+			await render(pool);
+			expect(getAll.mock.calls[0][1]).not.toHaveProperty('language');
+			expect(get.mock.calls[0][1]).not.toHaveProperty('language');
+		});
+	});
+
 	describe('panel button labels', () => {
 		const searching = { search_enabled: true, destinations: [lisbon, porto] };
 

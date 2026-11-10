@@ -6,6 +6,8 @@ import DestinationSearchView from './DestinationSearchView';
 import { storyblokEditable } from '@storyblok/react/rsc';
 import { getStoryblokApi } from '@/lib/storyblok';
 import { storyHref } from '@/lib/links';
+import { getCurrentLanguage } from '@/lib/currentLanguage';
+import { deliveryLanguageParams } from '@/lib/language';
 import {
 	clearChoicesHref,
 	parseChoices,
@@ -16,10 +18,12 @@ import {
 async function findPages(uuids) {
 	const hrefs = {};
 	if (!uuids.length) return hrefs;
+	const language = await getCurrentLanguage();
 	try {
 		const { data } = await getStoryblokApi().get('cdn/stories', {
 			version: 'draft',
 			content_type: 'destination_page',
+			...deliveryLanguageParams(language),
 			filter_query: { destination: { in: uuids.join(',') } },
 			per_page: 100,
 		});
@@ -37,6 +41,7 @@ async function findPages(uuids) {
 // `countries` and that carries any of `attributes`. An empty setting
 // filters nothing.
 export async function loadAllDestinations({ countries = [], attributes = [] }) {
+	const language = await getCurrentLanguage();
 	const filterQuery = {};
 	if (countries.length) filterQuery.country = { in: countries.join(',') };
 	if (attributes.length) {
@@ -48,6 +53,7 @@ export async function loadAllDestinations({ countries = [], attributes = [] }) {
 			{
 				version: 'draft',
 				content_type: 'destination',
+				...deliveryLanguageParams(language),
 				...(Object.keys(filterQuery).length && { filter_query: filterQuery }),
 			},
 			'stories',
