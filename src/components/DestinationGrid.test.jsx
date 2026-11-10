@@ -209,6 +209,12 @@ describe('DestinationGrid', () => {
 			expect(get.mock.calls[0][1].language).toBe('de');
 		});
 
+		it('links each Destination card to its German page', async () => {
+			getCurrentLanguage.mockResolvedValue('de');
+			const html = await render(pool);
+			expect(html).toContain('href="/de/destinations/lisbon"');
+		});
+
 		it('sends no language parameter for English', async () => {
 			await render({
 				carousel: true,

@@ -4,7 +4,7 @@
     "display_name": "Button",
     "description": null,
     "created_at": "2026-10-14T15:55:18.396Z",
-    "updated_at": "2026-10-16T10:02:15.378Z",
+    "updated_at": "2026-11-10T20:19:05.462Z",
     "id": 230620030559107,
     "schema": {
       "label": {
@@ -20,7 +20,10 @@
         "pos": 1,
         "display_name": "Link",
         "required": true,
-        "id": "M-2KIEhlTi6OKQFSLBjkoA"
+        "translatable": true,
+        "id": "M-2KIEhlTi6OKQFSLBjkoA",
+        "show_anchor": false,
+        "allow_custom_attributes": false
       },
       "variant": {
         "type": "option",
@@ -561,7 +564,7 @@
     "display_name": "FAQ section",
     "description": null,
     "created_at": "2026-10-14T15:55:46.626Z",
-    "updated_at": "2026-10-14T15:55:46.626Z",
+    "updated_at": "2026-11-06T15:03:39.000Z",
     "id": 230620146181002,
     "schema": {
       "headline": {
@@ -580,7 +583,8 @@
           "faq_item"
         ],
         "required": true,
-        "id": "ee-huHhDQ7OBd71DW0mKPA"
+        "id": "ee-huHhDQ7OBd71DW0mKPA",
+        "translatable": true
       }
     },
     "image": null,
@@ -2345,7 +2349,7 @@
     "display_name": "Nav link",
     "description": null,
     "created_at": "2026-10-14T16:06:12.260Z",
-    "updated_at": "2026-10-14T16:06:12.260Z",
+    "updated_at": "2026-11-10T20:19:06.125Z",
     "id": 230622708790206,
     "schema": {
       "label": {
@@ -2361,6 +2365,7 @@
         "pos": 1,
         "display_name": "Link",
         "required": true,
+        "translatable": true,
         "id": "gBI27HBqRQaoeaen860GQQ"
       }
     },

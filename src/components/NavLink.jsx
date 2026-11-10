@@ -1,12 +1,13 @@
 import { storyblokEditable } from '@storyblok/react/rsc';
-import { resolveLink } from '@/lib/links';
+import { getCurrentLanguage } from '@/lib/currentLanguage';
+import { linkHref } from '@/lib/language';
 
 // The parent (Header nav, FooterColumn) sets the hover style for its links
-const NavLink = ({ blok }) => (
+const NavLink = async ({ blok }) => (
 	<a
 		{...storyblokEditable(blok)}
 		className="no-underline"
-		href={resolveLink(blok.link)}
+		href={linkHref(blok.link, await getCurrentLanguage())}
 	>
 		{blok.label}
 	</a>

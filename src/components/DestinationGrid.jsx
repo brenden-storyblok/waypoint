@@ -5,10 +5,9 @@ import DestinationSearch from './DestinationSearch';
 import DestinationSearchView from './DestinationSearchView';
 import { storyblokEditable } from '@storyblok/react/rsc';
 import { getStoryblokApi } from '@/lib/storyblok';
-import { storyHref } from '@/lib/links';
 import { loadLabels } from '@/lib/labels';
 import { getCurrentLanguage } from '@/lib/currentLanguage';
-import { deliveryLanguageParams } from '@/lib/language';
+import { deliveryLanguageParams, storyHref } from '@/lib/language';
 import {
 	clearChoicesHref,
 	parseChoices,
@@ -30,7 +29,7 @@ async function findPages(uuids) {
 		});
 		for (const page of data?.stories || []) {
 			const id = page.content?.destination;
-			if (id) hrefs[id] = storyHref(page);
+			if (id) hrefs[id] = storyHref(page, language);
 		}
 	} catch (error) {
 		console.error('DestinationGrid: page lookup failed', error);
