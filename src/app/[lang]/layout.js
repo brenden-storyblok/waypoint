@@ -3,10 +3,13 @@ import {
 	Source_Serif_4,
 	JetBrains_Mono,
 } from 'next/font/google';
+import { notFound } from 'next/navigation';
 import { StoryblokServerComponent } from '@storyblok/react/rsc';
-import './globals.css';
+import '../globals.css';
 import StoryblokProvider from '@/components/StoryblokProvider';
 import { getStoryblokApi } from '@/lib/storyblok';
+import { getCurrentLanguage } from '@/lib/currentLanguage';
+import { LANGUAGES, deliveryLanguageParams, isLanguage } from '@/lib/language';
 
 const display = Bricolage_Grotesque({
 	subsets: ['latin'],
@@ -31,11 +34,12 @@ export const metadata = {
 };
 
 /** Loads the header and footer stories from the global/ folder in one request. */
-async function getGlobalStories() {
+async function getGlobalStories(language) {
 	try {
 		const { data } = await getStoryblokApi().get('cdn/stories', {
 			version: 'draft',
 			starts_with: 'global/',
+			...deliveryLanguageParams(language),
 		});
 		const byComponent = Object.fromEntries(
 			data.stories.map((story) => [story.content?.component, story]),
@@ -47,13 +51,21 @@ async function getGlobalStories() {
 	}
 }
 
+/** Only the four Languages are routes; any other first segment is a 404. */
+export const dynamicParams = false;
+
+export const generateStaticParams = () =>
+	LANGUAGES.map(({ code }) => ({ lang: code }));
+
 export default async function RootLayout({ children }) {
-	const { header, footer } = await getGlobalStories();
+	const language = await getCurrentLanguage();
+	if (!isLanguage(language)) notFound();
+	const { header, footer } = await getGlobalStories(language);
 
 	return (
 		<StoryblokProvider>
 			<html
-				lang="en"
+				lang={language}
 				className={`${display.variable} ${serif.variable} ${mono.variable} scheme-light-dark motion-safe:scroll-smooth`}
 			>
 				<head>

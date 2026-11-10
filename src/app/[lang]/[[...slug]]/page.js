@@ -1,6 +1,8 @@
 import { notFound } from 'next/navigation';
 import { StoryblokStory } from '@storyblok/react/rsc';
 import { getStoryblokApi, RESOLVE_RELATIONS } from '@/lib/storyblok';
+import { getCurrentLanguage } from '@/lib/currentLanguage';
+import { deliveryLanguageParams } from '@/lib/language';
 
 // Folders that hold data records or site chrome, never routable pages.
 const NON_ROUTABLE_PREFIXES = ['data/', 'global/'];
@@ -16,8 +18,11 @@ export default async function Page({ params, searchParams }) {
 		notFound();
 	}
 
+	const language = await getCurrentLanguage();
+
 	let sbParams = {
 		version: 'draft',
+		...deliveryLanguageParams(language),
 		resolve_relations: RESOLVE_RELATIONS.join(','),
 	};
 
