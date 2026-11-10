@@ -64,20 +64,29 @@ const Arrow = ({ direction }) => (
  * step a full view of whole cards at a time and hide when every card fits.
  *
  * Props:
- *   headline     the grid headline; the region is named "Destinations"
- *                without one
+ *   headline     the grid headline; without one the region is named by `label`
+ *   label        the region's name when there is no headline
+ *   previousLabel  the Previous button's accessible name
+ *   nextLabel    the Next button's accessible name
  *   placesLabel  the Destination count, e.g. "6 places"; left out for an
  *                empty Pool
  *   children     one rendered DestinationCard per Destination, in Pool order
  */
-const DestinationCarousel = ({ headline, placesLabel, children }) => {
+const DestinationCarousel = ({
+	headline,
+	placesLabel,
+	label,
+	previousLabel,
+	nextLabel,
+	children,
+}) => {
 	const headlineId = useId();
 	const listId = useId();
 	const listRef = useRef(null);
 	const [position, setPosition] = useState(INITIAL_POSITION);
 	const labelProps = headline
 		? { 'aria-labelledby': headlineId }
-		: { 'aria-label': 'Destinations' };
+		: { 'aria-label': label };
 
 	const cardCount = Children.count(children);
 
@@ -136,7 +145,7 @@ const DestinationCarousel = ({ headline, placesLabel, children }) => {
 					<div className="flex gap-2" hidden={!position.overflows}>
 						<button
 							type="button"
-							aria-label="Previous destinations"
+							aria-label={previousLabel}
 							aria-controls={listId}
 							aria-disabled={position.atStart}
 							className={ARROW_CLASS}
@@ -146,7 +155,7 @@ const DestinationCarousel = ({ headline, placesLabel, children }) => {
 						</button>
 						<button
 							type="button"
-							aria-label="Next destinations"
+							aria-label={nextLabel}
 							aria-controls={listId}
 							aria-disabled={position.atEnd}
 							className={ARROW_CLASS}

@@ -5,7 +5,7 @@ import DestinationSearch from './DestinationSearch';
 import DestinationSearchView from './DestinationSearchView';
 import { storyblokEditable } from '@storyblok/react/rsc';
 import { getStoryblokApi } from '@/lib/storyblok';
-import { loadLabels } from '@/lib/labels';
+import { getLabel, loadLabels } from '@/lib/labels';
 import { getCurrentLanguage } from '@/lib/currentLanguage';
 import { deliveryLanguageParams, storyHref } from '@/lib/language';
 import {
@@ -138,6 +138,9 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 				placesLabel={
 					destinations.length > 0 ? placesLabel(searchResult) : undefined
 				}
+				label={await getLabel('carousel-label', language)}
+				previousLabel={await getLabel('carousel-previous', language)}
+				nextLabel={await getLabel('carousel-next', language)}
 			>
 				{destinations.map(card)}
 			</DestinationCarousel>,
@@ -170,13 +173,13 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 		destinations.map((destination) => [destination.uuid, card(destination)]),
 	);
 	const texts = {
-		placeholder: blok.search_placeholder,
-		countryLabel: blok.country_label,
-		attributesLabel: blok.attributes_label,
-		emptyMessage: blok.empty_message,
-		clearLabel: blok.clear_label,
-		clearGroupLabel: blok.clear_group_label || 'Clear',
-		doneLabel: blok.done_label || 'Done',
+		placeholder: await getLabel('search-placeholder', language),
+		countryLabel: await getLabel('country-heading', language),
+		attributesLabel: await getLabel('attributes-heading', language),
+		emptyMessage: await getLabel('empty-message', language),
+		clearLabel: await getLabel('clear-all', language),
+		clearGroupLabel: await getLabel('clear-group', language),
+		doneLabel: await getLabel('done', language),
 	};
 	// The fallback is the same grid, filtered on the server, so a shared
 	// link never flashes the full Pool.
