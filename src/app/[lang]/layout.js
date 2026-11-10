@@ -28,9 +28,11 @@ const mono = JetBrains_Mono({
 	variable: '--font-next-mono',
 });
 
+// Title and description are UI Labels, set per page in generateMetadata.
+// The repo had no site URL, so absolute URLs (hreflang alternates) resolve
+// against SITE_URL, falling back to the local dev origin.
 export const metadata = {
-	title: 'Waypoint',
-	description: 'European destinations our editors keep going back to.',
+	metadataBase: new URL(process.env.SITE_URL || 'http://localhost:3000'),
 };
 
 /** Loads the header and footer stories from the global/ folder in one request. */
@@ -70,11 +72,6 @@ export default async function RootLayout({ children }) {
 			>
 				<head>
 					<meta name="robots" content="noindex, nofollow" />
-					<meta name="title" content="Waypoint" />
-					<meta
-						name="description"
-						content="European destinations our editors keep going back to."
-					/>
 					<meta
 						name="keywords"
 						content="European destinations, travel, travel planning, travel tips, travel inspiration, travel guides, travel destinations, travel destinations in Europe, travel destinations in the world, travel destinations in the USA, travel destinations in Asia, travel destinations in Africa, travel destinations in South America, travel destinations in North America, travel destinations in Europe, travel destinations in the world, travel destinations in the USA, travel destinations in Asia, travel destinations in Africa, travel destinations in South America, travel destinations in North America"

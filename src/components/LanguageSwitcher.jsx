@@ -5,15 +5,12 @@ import Link from 'next/link';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { switcherTargets } from '@/lib/language';
 
-/** Hardcoded for now; #52 moves it to UI Labels. */
-const ACCESSIBLE_NAME = 'Language';
-
 /**
  * The options as a disclosure: the summary shows the current code on narrow
  * screens and the current Language's name from md up; the list holds one link
  * per Language.
  */
-function SwitcherView({ language, pathname, search }) {
+function SwitcherView({ language, label, pathname, search }) {
 	const targets = switcherTargets({ language, pathname, search });
 	const current = targets.find((target) => target.current);
 	const detailsRef = useRef(null);
@@ -41,7 +38,7 @@ function SwitcherView({ language, pathname, search }) {
 	}, []);
 
 	return (
-		<nav aria-label={ACCESSIBLE_NAME} className="relative font-display text-sm">
+		<nav aria-label={label}className="relative font-display text-sm">
 			<details className="group" ref={detailsRef}>
 				<summary
 					ref={summaryRef}
@@ -69,24 +66,36 @@ function SwitcherView({ language, pathname, search }) {
 	);
 }
 
-function SwitcherWithQuery({ language, pathname }) {
+function SwitcherWithQuery({ language, label, pathname }) {
 	const search = useSearchParams()?.toString() ?? '';
 	return (
-		<SwitcherView language={language} pathname={pathname} search={search} />
+		<SwitcherView
+			language={language}
+			label={label}
+			pathname={pathname}
+			search={search}
+		/>
 	);
 }
 
 /**
  * Client Component: the target hrefs depend on the visitor's path and query,
- * which only the router knows. `language` comes from the server Header.
+ * which only the router knows. `language` and `label` (the accessible name,
+ * a UI Label) come from the server Header.
  */
-export default function LanguageSwitcher({ language }) {
+export default function LanguageSwitcher({ language, label }) {
 	const pathname = usePathname() ?? '/';
 	return (
 		<Suspense
-			fallback={<SwitcherView language={language} pathname={pathname} />}
+			fallback={
+				<SwitcherView language={language} label={label} pathname={pathname} />
+			}
 		>
-			<SwitcherWithQuery language={language} pathname={pathname} />
+			<SwitcherWithQuery
+				language={language}
+				label={label}
+				pathname={pathname}
+			/>
 		</Suspense>
 	);
 }
