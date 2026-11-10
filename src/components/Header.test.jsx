@@ -51,8 +51,8 @@ describe('Header language switcher', () => {
 
 	it('marks the current Language as current and no other', async () => {
 		const html = await renderSwitcher('de');
-		expect(html.match(/aria-current="true"/g)).toHaveLength(1);
-		expect(html).toMatch(/aria-current="true"[^>]*>Deutsch/);
+		expect(html.match(/aria-current="page"/g)).toHaveLength(1);
+		expect(html).toMatch(/aria-current="page"[^>]*>Deutsch/);
 	});
 
 	it('shows the current code as the compact control', async () => {

@@ -53,8 +53,8 @@ function SwitcherView({ language, label, pathname, search }) {
 								href={target.href}
 								lang={target.code}
 								hrefLang={target.code}
-								aria-current={target.current ? 'true' : undefined}
-								className="block px-3 py-1.5 no-underline hover:bg-mist-100 aria-[current=true]:font-semibold dark:hover:bg-deep-sea-800"
+								aria-current={target.current ? 'page' : undefined}
+								className="block px-3 py-1.5 no-underline hover:bg-mist-100 aria-[current=page]:font-semibold dark:hover:bg-deep-sea-800"
 							>
 								{target.label}
 							</Link>
