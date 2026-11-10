@@ -28,13 +28,6 @@ const mono = JetBrains_Mono({
 	variable: '--font-next-mono',
 });
 
-// Title and description are UI Labels, set per page in generateMetadata.
-// The repo had no site URL, so absolute URLs (hreflang alternates) resolve
-// against SITE_URL, falling back to the local dev origin.
-export const metadata = {
-	metadataBase: new URL(process.env.SITE_URL || 'http://localhost:3000'),
-};
-
 /** Loads the header and footer stories from the global/ folder in one request. */
 async function getGlobalStories(language) {
 	try {
