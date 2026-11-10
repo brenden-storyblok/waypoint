@@ -1,6 +1,6 @@
 'use client';
 
-import { Suspense } from 'react';
+import { Suspense, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { switcherTargets } from '@/lib/language';
@@ -16,10 +16,36 @@ const ACCESSIBLE_NAME = 'Language';
 function SwitcherView({ language, pathname, search }) {
 	const targets = switcherTargets({ language, pathname, search });
 	const current = targets.find((target) => target.current);
+	const detailsRef = useRef(null);
+	const summaryRef = useRef(null);
+
+	// Close on a click outside the disclosure, and on Escape (focus returns to
+	// the summary so keyboard users keep their place).
+	useEffect(() => {
+		const closeOnOutsideClick = (event) => {
+			const details = detailsRef.current;
+			if (details?.open && !details.contains(event.target)) details.open = false;
+		};
+		const closeOnEscape = (event) => {
+			const details = detailsRef.current;
+			if (event.key !== 'Escape' || !details?.open) return;
+			details.open = false;
+			summaryRef.current?.focus();
+		};
+		document.addEventListener('click', closeOnOutsideClick);
+		document.addEventListener('keydown', closeOnEscape);
+		return () => {
+			document.removeEventListener('click', closeOnOutsideClick);
+			document.removeEventListener('keydown', closeOnEscape);
+		};
+	}, []);
+
 	return (
 		<nav aria-label={ACCESSIBLE_NAME} className="relative font-display text-sm">
-			<details className="group">
-				<summary className="flex cursor-pointer list-none items-center gap-1 rounded-sm px-2 py-1 text-slate-500 marker:content-none hover:text-deep-sea-900 dark:text-slate-300 dark:hover:text-frost-200 [&::-webkit-details-marker]:hidden">
+			<details className="group" ref={detailsRef}>
+				<summary
+					ref={summaryRef}
+					className="flex cursor-pointer list-none items-center gap-1 rounded-sm px-2 py-1 text-slate-500 marker:content-none hover:text-deep-sea-900 dark:text-slate-300 dark:hover:text-frost-200 [&::-webkit-details-marker]:hidden">
 					<span className="md:hidden">{language.toUpperCase()}</span>
 					<span className="hidden md:inline">{current?.label}</span>
 				</summary>

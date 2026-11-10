@@ -3,7 +3,7 @@ import {
 	storyblokEditable,
 	StoryblokServerComponent,
 } from '@storyblok/react/rsc';
-import { DEFAULT_LANGUAGE } from '@/lib/language';
+import { getCurrentLanguage } from '@/lib/currentLanguage';
 import LanguageSwitcher from './LanguageSwitcher';
 import StoryblokImage from './StoryblokImage';
 
@@ -17,8 +17,8 @@ const logoWidth = (logo) => {
 	return Math.round(LOGO_HEIGHT * ratio);
 };
 
-/** `language` is the current Language, passed down by the root layout. */
-const Header = ({ blok, language = DEFAULT_LANGUAGE }) => {
+const Header = async ({ blok }) => {
+	const language = await getCurrentLanguage();
 	const hasLogo = Boolean(blok.logo?.filename);
 	return (
 		<header

@@ -18,7 +18,13 @@ export const Default = {
 
 /** The switcher marks the Language the page is in; below md it shows only the code. */
 export const InGerman = {
-	args: { blok: header, language: 'de' },
+	args: { blok: header },
+	beforeEach: () => {
+		globalThis.storybookLanguage = 'de';
+		return () => {
+			delete globalThis.storybookLanguage;
+		};
+	},
 };
 
 export const WithoutCta = {

@@ -93,12 +93,7 @@ export default async function RootLayout({ children }) {
 					<meta name="apple-mobile-web-app-title" content="Waypoint" />
 				</head>
 				<body className="bg-mist-50 font-serif text-lg leading-relaxed text-pretty text-deep-sea-900 antialiased dark:bg-deep-sea-950 dark:text-frost-200">
-					{header && (
-						<StoryblokServerComponent
-							blok={header.content}
-							language={language}
-						/>
-					)}
+					{header && <StoryblokServerComponent blok={header.content} />}
 					{children}
 					{footer && <StoryblokServerComponent blok={footer.content} />}
 				</body>
