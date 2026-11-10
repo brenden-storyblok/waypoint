@@ -4,6 +4,7 @@ import {
 	StoryblokServerComponent,
 } from '@storyblok/react/rsc';
 import { getCurrentLanguage } from '@/lib/currentLanguage';
+import { homeHref } from '@/lib/language';
 import LanguageSwitcher from './LanguageSwitcher';
 import StoryblokImage from './StoryblokImage';
 
@@ -18,8 +19,8 @@ const logoWidth = (logo) => {
 };
 
 const Header = async ({ blok }) => {
-	const language = await getCurrentLanguage();
 	const hasLogo = Boolean(blok.logo?.filename);
+	const language = await getCurrentLanguage();
 	return (
 		<header
 			{...storyblokEditable(blok)}
@@ -28,7 +29,7 @@ const Header = async ({ blok }) => {
 			<div className="mx-auto flex max-w-7xl items-center gap-6 px-gutter py-4.5">
 				<Link
 					className="font-display text-xl font-extrabold tracking-tight no-underline"
-					href="/"
+					href={homeHref(language)}
 				>
 					{hasLogo ? (
 						<StoryblokImage

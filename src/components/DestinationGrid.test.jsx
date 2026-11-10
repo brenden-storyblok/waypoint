@@ -209,6 +209,12 @@ describe('DestinationGrid', () => {
 			expect(get.mock.calls[0][1].language).toBe('de');
 		});
 
+		it('links each Destination card to its German page', async () => {
+			getCurrentLanguage.mockResolvedValue('de');
+			const html = await render(pool);
+			expect(html).toContain('href="/de/destinations/lisbon"');
+		});
+
 		it('sends no language parameter for English', async () => {
 			await render({
 				carousel: true,
@@ -218,6 +224,55 @@ describe('DestinationGrid', () => {
 			await render(pool);
 			expect(getAll.mock.calls[0][1]).not.toHaveProperty('language');
 			expect(get.mock.calls[0][1]).not.toHaveProperty('language');
+		});
+	});
+
+	describe('Filter labels', () => {
+		const searching = { search_enabled: true, destinations: [lisbon, porto] };
+		const entries = {
+			countries: [
+				{ value: 'portugal', name: 'Portugal', dimension_value: 'Portugal DE' },
+			],
+			'destination-attributes': [
+				{ value: 'beach', name: 'Beach', dimension_value: null },
+			],
+		};
+		const datasourceCalls = () =>
+			getAll.mock.calls.filter(([path]) => path === 'cdn/datasource_entries');
+
+		beforeEach(() => {
+			getAll.mockImplementation(async (path, query) =>
+				path === 'cdn/datasource_entries' ? entries[query.datasource] : [],
+			);
+		});
+
+		it('asks for the German dimension of both datasources', async () => {
+			getCurrentLanguage.mockResolvedValue('de');
+			await render(searching);
+			const calls = datasourceCalls();
+			expect(calls.map(([, query]) => query)).toEqual([
+				{ datasource: 'countries', dimension: 'de' },
+				{ datasource: 'destination-attributes', dimension: 'de' },
+			]);
+		});
+
+		it('sends no dimension for English', async () => {
+			await render(searching);
+			for (const [, query] of datasourceCalls()) {
+				expect(query).not.toHaveProperty('dimension');
+			}
+			expect(datasourceCalls()).toHaveLength(2);
+		});
+
+		it('shows the translated label, and the English one when the entry has no translation', async () => {
+			getCurrentLanguage.mockResolvedValue('de');
+			const beachy = {
+				...lisbon,
+				content: { ...lisbon.content, attributes: ['beach'] },
+			};
+			const html = await render({ ...searching, destinations: [beachy] });
+			expect(html).toContain('Portugal DE');
+			expect(html).toContain('Beach');
 		});
 	});
 

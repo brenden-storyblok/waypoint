@@ -6,7 +6,8 @@ const config = {
 	stories: ['../src/**/*.stories.jsx'],
 	// Wraps each story in Suspense, so async Server Components render.
 	features: { experimentalRSC: true },
-	// next/root-params only resolves in the Next compiler; stub it here.
+	// next/root-params only resolves in the Next compiler; the stub reads English
+	// unless a story sets globalThis.storybookLanguage.
 	viteFinal: (viteConfig) => ({
 		...viteConfig,
 		resolve: {

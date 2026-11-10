@@ -1,18 +1,19 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
-import Header from '@/components/Header';
-import { getCurrentLanguage } from '@/lib/currentLanguage';
 import { firstImage } from '@/test/firstImage';
 
-vi.mock('@/lib/currentLanguage', () => ({ getCurrentLanguage: vi.fn() }));
+const getCurrentLanguage = vi.fn();
+vi.mock('@/lib/currentLanguage', () => ({ getCurrentLanguage }));
+
+const { default: Header } = await import('@/components/Header');
 
 beforeEach(() => {
-	vi.mocked(getCurrentLanguage).mockResolvedValue('en');
+	getCurrentLanguage.mockResolvedValue('en');
 });
 
 /** Header is an async Server Component: await it, then render the element. */
-const renderHeader = async (blok) =>
-	renderToStaticMarkup(await Header({ blok: { _uid: 'header', ...blok } }));
+const render = async (fields) =>
+	renderToStaticMarkup(await Header({ blok: { _uid: 'header', ...fields } }));
 
 const logoAsset = (overrides) => ({
 	filename: 'https://a.storyblok.com/f/1/logo.png',
@@ -20,12 +21,12 @@ const logoAsset = (overrides) => ({
 	...overrides,
 });
 
-const renderImage = async (logo) => firstImage(await renderHeader({ logo }));
+const renderImage = async (logo) => firstImage(await render({ logo }));
 
 describe('Header language switcher', () => {
 	const renderSwitcher = async (language) => {
-		vi.mocked(getCurrentLanguage).mockResolvedValue(language);
-		return renderHeader({});
+		getCurrentLanguage.mockResolvedValue(language);
+		return render({});
 	};
 
 	it('offers the four Languages by their own names', async () => {
@@ -55,7 +56,7 @@ describe('Header language switcher', () => {
 
 describe('Header', () => {
 	it('sizes the logo to 32px high with a width from the asset ratio', async () => {
-		const html = await renderHeader({
+		const html = await render({
 			logo: logoAsset({ meta_data: { size: '1200x400' } }),
 		});
 		const image = firstImage(html);
@@ -76,9 +77,7 @@ describe('Header', () => {
 	});
 
 	it('falls back to a 4:1 ratio when the size cannot be parsed', async () => {
-		const image = await renderImage(
-			logoAsset({ meta_data: { size: 'wide' } }),
-		);
+		const image = await renderImage(logoAsset({ meta_data: { size: 'wide' } }));
 		expect(image).toContain('width="128"');
 	});
 
@@ -95,8 +94,19 @@ describe('Header', () => {
 	});
 
 	it('shows the text wordmark when there is no logo', async () => {
-		const html = await renderHeader({ logo: null });
+		const html = await render({ logo: null });
 		expect(html).not.toContain('<img');
 		expect(html).toMatch(/way<span [^>]*>point<\/span>/);
+	});
+
+	it('links the logo to / in English', async () => {
+		const html = await render({ logo: null });
+		expect(html).toMatch(/<a [^>]*href="\/"/);
+	});
+
+	it('links the logo to the German home in German', async () => {
+		getCurrentLanguage.mockResolvedValue('de');
+		const html = await render({ logo: null });
+		expect(html).toMatch(/<a [^>]*href="\/de"/);
 	});
 });
