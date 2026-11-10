@@ -16,6 +16,11 @@ export const Default = {
 	args: { blok: header },
 };
 
+/** The switcher marks the Language the page is in; below md it shows only the code. */
+export const InGerman = {
+	args: { blok: header, language: 'de' },
+};
+
 export const WithoutCta = {
 	args: { blok: { ...header, cta: [] } },
 };

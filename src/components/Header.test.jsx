@@ -14,6 +14,37 @@ const renderImage = (logo) => {
 	return firstImage(html);
 };
 
+describe('Header language switcher', () => {
+	const renderSwitcher = (language) =>
+		renderToStaticMarkup(
+			<Header blok={{ _uid: 'header' }} language={language} />,
+		);
+
+	it('offers the four Languages by their own names', () => {
+		const html = renderSwitcher('en');
+		for (const label of ['English', 'Deutsch', 'Español', 'Français']) {
+			expect(html).toContain(label);
+		}
+		for (const href of ['href="/"', 'href="/de"', 'href="/es"', 'href="/fr"']) {
+			expect(html).toContain(href);
+		}
+	});
+
+	it('is a navigation landmark named Language', () => {
+		expect(renderSwitcher('en')).toContain('aria-label="Language"');
+	});
+
+	it('marks the current Language as current and no other', () => {
+		const html = renderSwitcher('de');
+		expect(html.match(/aria-current="true"/g)).toHaveLength(1);
+		expect(html).toMatch(/aria-current="true"[^>]*>Deutsch/);
+	});
+
+	it('shows the current code as the compact control', () => {
+		expect(renderSwitcher('fr')).toMatch(/<span[^>]*>FR<\/span>/);
+	});
+});
+
 describe('Header', () => {
 	it('sizes the logo to 32px high with a width from the asset ratio', () => {
 		const html = renderToStaticMarkup(
@@ -32,7 +63,7 @@ describe('Header', () => {
 		expect(image).toContain(
 			'https://a.storyblok.com/f/1/logo.png/m/96x0/filters:quality(75)',
 		);
-		expect(html).not.toContain('<span');
+		expect(html).not.toMatch(/way<span/);
 	});
 
 	it('falls back to a 4:1 ratio when the logo has no size', () => {

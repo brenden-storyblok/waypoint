@@ -3,6 +3,8 @@ import {
 	storyblokEditable,
 	StoryblokServerComponent,
 } from '@storyblok/react/rsc';
+import { DEFAULT_LANGUAGE } from '@/lib/language';
+import LanguageSwitcher from './LanguageSwitcher';
 import StoryblokImage from './StoryblokImage';
 
 const LOGO_HEIGHT = 32;
@@ -15,7 +17,8 @@ const logoWidth = (logo) => {
 	return Math.round(LOGO_HEIGHT * ratio);
 };
 
-const Header = ({ blok }) => {
+/** `language` is the current Language, passed down by the root layout. */
+const Header = ({ blok, language = DEFAULT_LANGUAGE }) => {
 	const hasLogo = Boolean(blok.logo?.filename);
 	return (
 		<header
@@ -48,14 +51,17 @@ const Header = ({ blok }) => {
 						<StoryblokServerComponent blok={navBlok} key={navBlok._uid} />
 					))}
 				</nav>
-				<div className="ms-auto hidden sm:flex md:ms-0">
-					{(blok.cta || []).map((ctaBlok) => (
-						<StoryblokServerComponent
-							blok={ctaBlok}
-							key={ctaBlok._uid}
-							size="sm"
-						/>
-					))}
+				<div className="ms-auto flex items-center gap-4 md:ms-0">
+					<LanguageSwitcher language={language} />
+					<div className="hidden sm:flex">
+						{(blok.cta || []).map((ctaBlok) => (
+							<StoryblokServerComponent
+								blok={ctaBlok}
+								key={ctaBlok._uid}
+								size="sm"
+							/>
+						))}
+					</div>
 				</div>
 			</div>
 		</header>
