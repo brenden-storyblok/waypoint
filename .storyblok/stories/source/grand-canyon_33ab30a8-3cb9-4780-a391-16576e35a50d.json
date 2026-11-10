@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:26:14.129Z",
-  "published_at": "2026-10-15T14:26:14.115Z",
+  "updated_at": "2026-11-10T21:12:20.671Z",
+  "published_at": "2026-11-10T21:12:20.657Z",
   "id": 230952034619026,
   "uuid": "33ab30a8-3cb9-4780-a391-16576e35a50d",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "d6e9d28b-a4e1-4df7-a71f-690f44f0e70f",
         "text": "This Hermit Road viewpoint looks west over a long stretch of the Colorado River.",
         "title": "Sunset at Hopi Point",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Dieser Aussichtspunkt an der Hermit Road blickt nach Westen über einen langen Abschnitt des Colorado River.",
+        "text__i18n__es": "Este mirador de Hermit Road da al oeste sobre un largo tramo del río Colorado.",
+        "text__i18n__fr": "Ce point de vue de Hermit Road donne à l'ouest sur un long tronçon du fleuve Colorado.",
+        "title__i18n__de": "Sonnenuntergang am Hopi Point",
+        "title__i18n__es": "Atardecer en Hopi Point",
+        "title__i18n__fr": "Coucher de soleil à Hopi Point"
       },
       {
         "_uid": "78adf23b-053d-4879-8038-2da71bf9ec56",
         "text": "The Bright Angel Trail drops about 1,300 m over 16 km to Phantom Ranch.",
         "title": "Rim to river on foot",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Der Bright Angel Trail fällt auf 16 km etwa 1.300 m bis zur Phantom Ranch ab.",
+        "text__i18n__es": "El Bright Angel Trail desciende unos 1.300 m a lo largo de 16 km hasta Phantom Ranch.",
+        "text__i18n__fr": "Le Bright Angel Trail descend d'environ 1 300 m sur 16 km jusqu'à Phantom Ranch.",
+        "title__i18n__de": "Zu Fuß vom Rand zum Fluss",
+        "title__i18n__es": "Del borde al río a pie",
+        "title__i18n__fr": "Du bord au fleuve à pied"
       },
       {
         "_uid": "d7fb5c30-049e-4839-942f-766122b7135c",
         "text": "The falls sit on Havasupai land, a 16 km hike from the trailhead with a permit.",
         "title": "Turquoise water at Havasu Falls",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Die Wasserfälle liegen auf dem Land der Havasupai, eine 16 km lange Wanderung ab dem Ausgangspunkt, mit Genehmigung.",
+        "text__i18n__es": "Las cascadas están en tierras de los havasupai, a 16 km de sendero desde el punto de partida y con permiso.",
+        "text__i18n__fr": "Les chutes se trouvent sur les terres des Havasupai, à 16 km de marche depuis le départ du sentier, avec un permis.",
+        "title__i18n__de": "Türkisfarbenes Wasser an den Havasu Falls",
+        "title__i18n__es": "Agua turquesa en las cascadas Havasu",
+        "title__i18n__fr": "Eau turquoise aux chutes Havasu"
       },
       {
         "_uid": "ca90f174-b1ea-4acc-ad67-b70cba64783b",
         "text": "The Rim Trail links viewpoints from the South Kaibab Trailhead to Hermits Rest.",
         "title": "21 km of rim walking",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Der Rim Trail verbindet Aussichtspunkte vom South Kaibab Trailhead bis nach Hermits Rest.",
+        "text__i18n__es": "El Rim Trail une los miradores desde el South Kaibab Trailhead hasta Hermits Rest.",
+        "text__i18n__fr": "Le Rim Trail relie les points de vue depuis le South Kaibab Trailhead jusqu'à Hermits Rest.",
+        "title__i18n__de": "21 km Wandern am Rand",
+        "title__i18n__es": "21 km caminando por el borde",
+        "title__i18n__fr": "21 km de marche le long du bord"
       }
     ],
     "region": "Arizona",
@@ -181,6 +205,9 @@
         "size": "2400x3595"
       }
     },
+    "name__i18n__de": "Grand Canyon",
+    "name__i18n__es": "Gran Cañón",
+    "name__i18n__fr": "Grand Canyon",
     "image_landscape": {
       "id": 230951565516072,
       "alt": "The green Colorado River winds between red and ochre rock walls far below the canyon rim.",
@@ -194,6 +221,108 @@
       "meta_data": {
         "size": "2400x1800"
       }
+    },
+    "region__i18n__de": "Arizona",
+    "region__i18n__es": "Arizona",
+    "region__i18n__fr": "Arizona",
+    "summary__i18n__de": "Eine 446 km lange und bis zu 1,8 km tiefe Schlucht, die der Colorado River gegraben hat. Sieh dir den Sonnenuntergang vom South Rim an und wandere im Morgengrauen unterhalb davon.",
+    "summary__i18n__es": "Un cañón de 446 km de largo y hasta 1,8 km de profundidad, excavado por el río Colorado. Contempla el atardecer desde el South Rim y luego recorre sus senderos al amanecer.",
+    "summary__i18n__fr": "Un canyon de 446 km de long et jusqu'à 1,8 km de profondeur, creusé par le fleuve Colorado. Regardez le coucher de soleil depuis le South Rim, puis marchez en contrebas à l'aube.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Der Grand Canyon durchschneidet das Colorado-Plateau im Norden von Arizona. Der Colorado River fließt auf 446 km durch ihn hindurch, und die Schlucht ist bis zu 29 km breit. Der South Rim liegt auf knapp 2.100 m, der North Rim etwa 300 m höher.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Die Felswände legen Gestein aus fast zwei Milliarden Jahren frei, vom Vishnu-Schiefer am Fluss bis zum Kaibab-Kalkstein am Rand. Elf Stammesgemeinschaften, darunter die Havasupai, Hualapai und Navajo, sind mit dem Canyon verbunden. Theodore Roosevelt stellte ihn 1908 unter Schutz, und 1919 wurde er ein Nationalpark.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Von März bis Mai und von September bis November ist das Wanderwetter kühler. Der South Rim ist das ganze Jahr geöffnet, während die Angebote am North Rim von Mitte Oktober bis Mitte Mai schließen. Nimm mehr Wasser mit, als du denkst: Im Inneren des Canyons werden im Sommer mehr als 40 °C erreicht.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El Gran Cañón atraviesa la meseta del Colorado, en el norte de Arizona. El río Colorado lo recorre a lo largo de 446 km, y el cañón alcanza hasta 29 km de ancho. El South Rim se alza cerca de los 2.100 m y el North Rim unos 300 m más arriba.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Las paredes dejan al descubierto casi dos mil millones de años de roca, desde el esquisto Vishnu junto al río hasta la caliza Kaibab en el borde. Once tribus, entre ellas los havasupai, los hualapai y los navajo, tienen vínculos con el cañón. Theodore Roosevelt lo protegió en 1908, y en 1919 se convirtió en parque nacional.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De marzo a mayo y de septiembre a noviembre el clima es más fresco para hacer senderismo. El South Rim está abierto todo el año, mientras que los servicios del North Rim cierran de mediados de octubre a mediados de mayo. Lleva más agua de la que crees: el interior del cañón supera los 40 °C en verano.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Le Grand Canyon entaille le plateau du Colorado, dans le nord de l'Arizona. Le fleuve Colorado le parcourt sur 446 km, et le canyon atteint jusqu'à 29 km de large. Le South Rim s'élève à près de 2 100 m, et le North Rim à environ 300 m de plus.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Les parois exposent près de deux milliards d'années de roche, du schiste de Vishnu au bord du fleuve au calcaire de Kaibab sur le rebord. Onze tribus, dont les Havasupai, les Hualapai et les Navajo, ont des liens avec le canyon. Theodore Roosevelt l'a protégé en 1908, et il est devenu parc national en 1919.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De mars à mai et de septembre à novembre, le temps est plus frais pour la randonnée. Le South Rim est ouvert toute l'année, tandis que les services du North Rim ferment de la mi-octobre à la mi-mai. Emportez plus d'eau que vous ne le pensez : l'intérieur du canyon dépasse 40 °C en été.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -215,8 +344,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "b8b03a1c8920a61f7409919aa9e8afc67e9edeb5",
-    "timestamp": "1792592496"
+    "token": "092bdce533db0e40a42887e6776d631b999feee5",
+    "timestamp": "1794347517"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -258,28 +387,59 @@
       "path": "data/destinations/grand-canyon",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/grand-canyon",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/grand-canyon",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -170,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255748787633,
+      "story_id": 230952034619026,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:08.664Z",
+      "published_at": "2026-11-10T21:23:08.664Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255751863731,
+      "story_id": 230952034619026,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:09.416Z",
+      "published_at": "2026-11-10T21:23:09.416Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255754993079,
+      "story_id": 230952034619026,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:10.179Z",
+      "published_at": "2026-11-10T21:23:10.179Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230952034720617,
+  "current_version_id": 240253093396488,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

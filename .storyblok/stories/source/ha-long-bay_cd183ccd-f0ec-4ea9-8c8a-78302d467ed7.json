@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:25:54.669Z",
-  "published_at": "2026-10-15T14:25:54.650Z",
+  "updated_at": "2026-11-10T20:56:08.469Z",
+  "published_at": "2026-11-10T20:56:08.448Z",
   "id": 230951954869899,
   "uuid": "cd183ccd-f0ec-4ea9-8c8a-78302d467ed7",
   "is_folder": false,
@@ -22,17 +22,26 @@
       {
         "_uid": "dec59e7e-7fb1-4c7f-91c7-7bfdb61a00fa",
         "headline": "Why Ha Long Bay",
-        "component": "destination_usps"
+        "component": "destination_usps",
+        "headline__i18n__de": "Warum die Halong-Bucht",
+        "headline__i18n__es": "Por qué la bahía de Ha Long",
+        "headline__i18n__fr": "Pourquoi la baie d'Along"
       },
       {
         "_uid": "90768ea0-e51c-4200-9fd4-e33b859b9597",
         "headline": "About Ha Long Bay",
-        "component": "destination_bio"
+        "component": "destination_bio",
+        "headline__i18n__de": "Über die Halong-Bucht",
+        "headline__i18n__es": "Sobre la bahía de Ha Long",
+        "headline__i18n__fr": "À propos de la baie d'Along"
       },
       {
         "_uid": "3f303c1c-b589-4c20-b165-54fb9d7862bd",
         "headline": "Ha Long Bay in pictures",
-        "component": "destination_gallery"
+        "component": "destination_gallery",
+        "headline__i18n__de": "Die Halong-Bucht in Bildern",
+        "headline__i18n__es": "La bahía de Ha Long en imágenes",
+        "headline__i18n__fr": "La baie d'Along en images"
       },
       {
         "_uid": "71513305-c727-477f-ad5e-8f9f2875133b",
@@ -98,7 +107,193 @@
           ]
         },
         "headline": "Getting around",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Die meisten Besucher kommen von Hanoi mit dem Kreuzfahrt-Shuttlebus oder dem Privatwagen über die Schnellstraße. Tagesboote und Übernachtungs-Dschunken legen in den Häfen Tuan Chau und Bai Chay ab.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Von Hanoi nach Ha Long dauert die Fahrt über die Schnellstraße etwa 2 Stunden 30 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Der Flughafen Van Don International liegt etwa 50 Kilometer von der Stadt Ha Long entfernt.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Tagesfahrten in der Bucht dauern ab Hafen etwa 4 bis 6 Stunden bis zur Rückkehr.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La mayoría de los visitantes llegan desde Hanói en el autobús lanzadera de los cruceros o en coche privado por la autopista. Los barcos de día y los juncos con pernocta salen de los puertos de Tuan Chau y Bai Chay.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De Hanói a Ha Long por la autopista se tardan unas 2 horas y 30 minutos.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "El aeropuerto internacional de Van Don está a unos 50 kilómetros de la ciudad de Ha Long.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Los cruceros de un día por la bahía duran de 4 a 6 horas aproximadamente, ida y vuelta desde el puerto.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La plupart des visiteurs viennent de Hanoï en navette de croisière ou en voiture privée par l'autoroute. Les bateaux de la journée et les jonques de nuit partent des ports de Tuan Chau et de Bai Chay.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De Hanoï à Along, le trajet par l'autoroute prend environ 2 h 30.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "L'aéroport international de Van Don se trouve à environ 50 kilomètres de la ville d'Along.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Les croisières d'une journée dans la baie durent environ 4 à 6 heures, aller-retour depuis le port.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Unterwegs",
+        "headline__i18n__es": "Cómo moverse",
+        "headline__i18n__fr": "Se déplacer"
       }
     ],
     "component": "destination_page",
@@ -123,8 +318,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "ca20359998d10526c94eb4aba0bf30ef94b08466",
-    "timestamp": "1792592494"
+    "token": "460f1b555d13b977e611d6862b0cff7837ea7559",
+    "timestamp": "1794347515"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -156,28 +351,59 @@
       "path": "destinations/ha-long-bay",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/ha-long-bay",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/ha-long-bay",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -270,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255611542900,
+      "story_id": 230951954869899,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:35.157Z",
+      "published_at": "2026-11-10T21:22:35.157Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255742893482,
+      "story_id": 230951954869899,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:07.226Z",
+      "published_at": "2026-11-10T21:23:07.226Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255867309538,
+      "story_id": 230951954869899,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:37.601Z",
+      "published_at": "2026-11-10T21:23:37.601Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230951954995924,
+  "current_version_id": 240249092967812,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

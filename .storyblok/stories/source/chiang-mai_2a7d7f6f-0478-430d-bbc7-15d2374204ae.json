@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:28:10.012Z",
-  "published_at": "2026-10-15T14:28:09.996Z",
+  "updated_at": "2026-11-10T21:14:15.849Z",
+  "published_at": "2026-11-10T21:14:15.836Z",
   "id": 230952505978534,
   "uuid": "2a7d7f6f-0478-430d-bbc7-15d2374204ae",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "f03232ea-83d0-4b1f-a603-3e50602bca84",
         "text": "A naga staircase of more than 300 steps climbs to the gold chedi of Wat Phra That Doi Suthep.",
         "title": "Temple on the mountain",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Eine Naga-Treppe mit mehr als 300 Stufen führt zum goldenen Chedi des Wat Phra That Doi Suthep.",
+        "text__i18n__es": "Una escalera de nagas de más de 300 escalones sube hasta el chedi dorado del Wat Phra That Doi Suthep.",
+        "text__i18n__fr": "Un escalier orné de nagas, de plus de 300 marches, mène au chedi doré du Wat Phra That Doi Suthep.",
+        "title__i18n__de": "Tempel auf dem Berg",
+        "title__i18n__es": "Un templo en la montaña",
+        "title__i18n__fr": "Un temple sur la montagne"
       },
       {
         "_uid": "50bd98d1-d37e-4a09-bf1f-c0210ca1efbc",
         "text": "Wat Chiang Man, inside the moat, dates from the city's founding in the 1290s.",
         "title": "The old Lanna capital",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Der Wat Chiang Man innerhalb des Wassergrabens stammt aus der Gründungszeit der Stadt in den 1290er-Jahren.",
+        "text__i18n__es": "El Wat Chiang Man, dentro del foso, data de la fundación de la ciudad en la década de 1290.",
+        "text__i18n__fr": "Le Wat Chiang Man, à l'intérieur des douves, date de la fondation de la ville dans les années 1290.",
+        "title__i18n__de": "Die alte Hauptstadt von Lanna",
+        "title__i18n__es": "La antigua capital de Lanna",
+        "title__i18n__fr": "L'ancienne capitale du Lanna"
       },
       {
         "_uid": "a7f7fb3f-9733-40f0-a51c-6b35b46ad359",
         "text": "The north's curry noodle soup comes topped with crisp fried noodles, pickled mustard greens and lime.",
         "title": "A bowl of khao soi",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Die Curry-Nudelsuppe des Nordens wird mit knusprig frittierten Nudeln, eingelegtem Senfgrün und Limette serviert.",
+        "text__i18n__es": "La sopa de fideos al curry del norte se sirve con fideos fritos crujientes, mostaza en vinagre y lima.",
+        "text__i18n__fr": "La soupe de nouilles au curry du Nord est garnie de nouilles frites croustillantes, de moutarde marinée et de citron vert.",
+        "title__i18n__de": "Eine Schale Khao Soi",
+        "title__i18n__es": "Un tazón de khao soi",
+        "title__i18n__fr": "Un bol de khao soi"
       },
       {
         "_uid": "15ac9cdc-14d2-4a01-af62-04f1a11f2dbb",
         "text": "Every Sunday evening, Ratchadamnoen Road closes to traffic for a market that runs from Tha Phae Gate.",
         "title": "Sunday Walking Street",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Jeden Sonntagabend wird die Ratchadamnoen Road für den Verkehr gesperrt, und ab dem Tha-Phae-Tor erstreckt sich ein Markt.",
+        "text__i18n__es": "Todos los domingos por la tarde se corta al tráfico la calle Ratchadamnoen para un mercado que arranca en la puerta de Tha Phae.",
+        "text__i18n__fr": "Chaque dimanche soir, la Ratchadamnoen Road est fermée à la circulation pour un marché qui part de la porte de Tha Phae.",
+        "title__i18n__de": "Sunday Walking Street",
+        "title__i18n__es": "Sunday Walking Street",
+        "title__i18n__fr": "Sunday Walking Street"
       }
     ],
     "region": "Northern Thailand",
@@ -183,6 +207,9 @@
         "size": "2400x3596"
       }
     },
+    "name__i18n__de": "Chiang Mai",
+    "name__i18n__es": "Chiang Mai",
+    "name__i18n__fr": "Chiang Mai",
     "image_landscape": {
       "id": 230952132332925,
       "alt": "A carved gold archway frames the gilded chedi of Wat Phra That Doi Suthep, with Buddha statues and yellow flowers at its base.",
@@ -196,6 +223,108 @@
       "meta_data": {
         "size": "2400x1600"
       }
+    },
+    "region__i18n__de": "Nordthailand",
+    "region__i18n__es": "Norte de Tailandia",
+    "region__i18n__fr": "Nord de la Thaïlande",
+    "summary__i18n__de": "Eine Altstadt mit Wassergraben und Lanna-Tempeln unterhalb der bewaldeten Hänge des Doi Suthep. Komm wegen des Khao Soi, bleib wegen der kühlen Bergmorgen.",
+    "summary__i18n__es": "Una ciudad vieja rodeada por un foso, con templos lanna, bajo las laderas boscosas del Doi Suthep. Ven por el khao soi y quédate por las frescas mañanas de montaña.",
+    "summary__i18n__fr": "Une vieille ville entourée de douves, avec ses temples lanna, au pied des pentes boisées du Doi Suthep. Venez pour le khao soi, restez pour les matins frais de montagne.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Chiang Mai liegt in einem Tal am Fluss Ping, etwa 700 Kilometer nördlich von Bangkok. Der Doi Suthep erhebt sich am westlichen Stadtrand auf 1.676 Meter, und weiter in Richtung der Grenze zu Myanmar steigen die Berge noch höher an.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "König Mangrai gründete die Stadt 1296 als Hauptstadt des Königreichs Lanna. Backsteinmauern und ein quadratischer Wassergraben umgeben noch heute die Altstadt, in der mehr als 30 Tempel stehen, darunter der Wat Chiang Man und der Wat Chedi Luang. Im Morgengrauen gehen Mönche in safrangelben Gewändern durch die Gassen. Khao Soi, eine Curry-Nudelsuppe, und die Wurst Sai Ua sind die Gerichte des Nordens, die man bestellen sollte.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Von November bis Februar sind die Tage kühl und trocken, und im November findet das Laternenfest Yi Peng statt. März und April sind heiß und dunstig, weil Felder abgebrannt werden. Für Tempelbesuche sollten Schultern und Knie bedeckt sein.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Chiang Mai se encuentra en un valle junto al río Ping, unos 700 kilómetros al norte de Bangkok. El Doi Suthep se eleva hasta los 1.676 metros en el extremo occidental de la ciudad, y cordilleras más altas siguen hacia la frontera con Myanmar.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El rey Mangrai fundó la ciudad en 1296 como capital del reino de Lanna. Muros de ladrillo y un foso cuadrado siguen rodeando el casco antiguo, que alberga más de 30 templos, entre ellos el Wat Chiang Man y el Wat Chedi Luang. Al amanecer, los monjes con túnicas azafrán recorren las callejuelas. El khao soi, una sopa de fideos al curry, y la salchicha sai ua son los platos del norte que hay que pedir.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De noviembre a febrero los días son frescos y secos, y el festival de farolillos Yi Peng se celebra en noviembre. Marzo y abril son calurosos y brumosos por la quema de cultivos. Para visitar los templos, vístete con los hombros y las rodillas cubiertos.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Chiang Mai se trouve dans une vallée, sur la rivière Ping, à environ 700 kilomètres au nord de Bangkok. Le Doi Suthep s'élève à 1 676 mètres à la lisière ouest de la ville, et des massifs plus hauts se prolongent vers la frontière avec le Myanmar.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Le roi Mangrai a fondé la ville en 1296 comme capitale du royaume du Lanna. Des remparts de brique et des douves carrées encadrent encore la vieille ville, qui compte plus de 30 temples, dont le Wat Chiang Man et le Wat Chedi Luang. Des moines en robe safran parcourent les ruelles à l'aube. Le khao soi, une soupe de nouilles au curry, et la saucisse sai ua sont les plats du Nord à commander.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De novembre à février, les journées sont fraîches et sèches, et la fête des lanternes Yi Peng a lieu en novembre. Mars et avril sont chauds et brumeux à cause du brûlage des cultures. Pour visiter les temples, couvrez-vous les épaules et les genoux.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -217,8 +346,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "9d5d0e440e0e141dda98d947fea9262e701fc1e2",
-    "timestamp": "1792592495"
+    "token": "092bdce533db0e40a42887e6776d631b999feee5",
+    "timestamp": "1794347517"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -260,28 +389,59 @@
       "path": "data/destinations/chiang-mai",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/chiang-mai",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/chiang-mai",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -190,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255615925625,
+      "story_id": 230952505978534,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:36.227Z",
+      "published_at": "2026-11-10T21:22:36.227Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255618739581,
+      "story_id": 230952505978534,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:36.913Z",
+      "published_at": "2026-11-10T21:22:36.913Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255622151554,
+      "story_id": 230952505978534,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:37.746Z",
+      "published_at": "2026-11-10T21:22:37.746Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230952509366318,
+  "current_version_id": 240253566157343,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

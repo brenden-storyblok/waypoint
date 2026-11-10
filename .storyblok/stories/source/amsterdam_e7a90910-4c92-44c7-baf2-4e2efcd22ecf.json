@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T15:02:53.390Z",
-  "published_at": "2026-10-15T15:02:53.377Z",
+  "updated_at": "2026-11-10T21:13:19.168Z",
+  "published_at": "2026-11-10T21:13:19.153Z",
   "id": 230952423894688,
   "uuid": "e7a90910-4c92-44c7-baf2-4e2efcd22ecf",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "ade71176-2246-43a6-a71e-5a993f85060c",
         "text": "The 17th-century canal ring inside the Singelgracht became a UNESCO World Heritage site in 2010.",
         "title": "A ring of canals",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Der Grachtengürtel aus dem 17. Jahrhundert innerhalb der Singelgracht wurde 2010 zum UNESCO-Welterbe.",
+        "text__i18n__es": "El anillo de canales del siglo XVII dentro del Singelgracht fue declarado Patrimonio de la Humanidad por la UNESCO en 2010.",
+        "text__i18n__fr": "La ceinture de canaux du XVIIe siècle à l'intérieur du Singelgracht est inscrite au patrimoine mondial de l'UNESCO depuis 2010.",
+        "title__i18n__de": "Ein Ring aus Grachten",
+        "title__i18n__es": "Un anillo de canales",
+        "title__i18n__fr": "Une ceinture de canaux"
       },
       {
         "_uid": "ed121bf8-526f-4ef2-9f62-c84404d070b1",
         "text": "The Rijksmuseum and the Van Gogh Museum stand on the same square, Museumplein.",
         "title": "Rembrandt and Van Gogh",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Das Rijksmuseum und das Van Gogh Museum stehen am selben Platz, dem Museumplein.",
+        "text__i18n__es": "El Rijksmuseum y el Museo Van Gogh se encuentran en la misma plaza, la Museumplein.",
+        "text__i18n__fr": "Le Rijksmuseum et le Musée Van Gogh se dressent sur la même place, la Museumplein.",
+        "title__i18n__de": "Rembrandt und Van Gogh",
+        "title__i18n__es": "Rembrandt y Van Gogh",
+        "title__i18n__fr": "Rembrandt et Van Gogh"
       },
       {
         "_uid": "2af637af-77a9-4f65-a68f-f1eea6f59ded",
         "text": "The flat centre has separate cycle lanes on most main streets, and the garage under Centraal Station holds about 7,000 bikes.",
         "title": "Built for bikes",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Das flache Zentrum hat an den meisten Hauptstraßen eigene Radwege, und das Parkhaus unter dem Centraal Station fasst etwa 7.000 Fahrräder.",
+        "text__i18n__es": "El centro, llano, tiene carriles bici separados en la mayoría de las calles principales, y el aparcamiento bajo la Estación Central acoge unas 7.000 bicicletas.",
+        "text__i18n__fr": "Le centre, plat, compte des pistes cyclables séparées sur la plupart des grands axes, et le garage sous la gare centrale accueille environ 7 000 vélos.",
+        "title__i18n__de": "Für Fahrräder gebaut",
+        "title__i18n__es": "Pensada para las bicis",
+        "title__i18n__fr": "Conçue pour les vélos"
       },
       {
         "_uid": "0107f793-991c-4de5-b57a-e6b288b21f48",
         "text": "Wood-panelled bars in the Jordaan serve fried bitterballen with mustard next to a glass of local beer.",
         "title": "Brown cafés and bitterballen",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "In holzvertäfelten Kneipen im Jordaan gibt es frittierte Bitterballen mit Senf zu einem Glas Bier aus der Region.",
+        "text__i18n__es": "En los bares con paneles de madera del Jordaan sirven bitterballen fritos con mostaza junto a una copa de cerveza local.",
+        "text__i18n__fr": "Dans les bars lambrissés du Jordaan, on sert des bitterballen frits avec de la moutarde, accompagnés d'une bière locale.",
+        "title__i18n__de": "Braune Cafés und Bitterballen",
+        "title__i18n__es": "Cafés marrones y bitterballen",
+        "title__i18n__fr": "Cafés bruns et bitterballen"
       }
     ],
     "region": "North Holland",
@@ -195,6 +219,9 @@
         "size": "2400x3001"
       }
     },
+    "name__i18n__de": "Amsterdam",
+    "name__i18n__es": "Ámsterdam",
+    "name__i18n__fr": "Amsterdam",
     "image_landscape": {
       "id": 230951931530600,
       "alt": "Tall narrow canal houses in brick and white stone reflect in the water in late sun.",
@@ -208,6 +235,108 @@
       "meta_data": {
         "size": "2400x1600"
       }
+    },
+    "region__i18n__de": "Nordholland",
+    "region__i18n__es": "Holanda Septentrional",
+    "region__i18n__fr": "Hollande-Septentrionale",
+    "summary__i18n__de": "Grachtengürtel aus dem 17. Jahrhundert, hohe Giebelhäuser und Fahrräder, die an jeder Brücke angekettet sind. Eine Hauptstadt, die man mit dem Rad durchquert und am besten vom Wasser aus sieht.",
+    "summary__i18n__es": "Anillos de canales del siglo XVII, altas casas con hastiales y bicicletas encadenadas en cada puente. Una capital que se recorre en bicicleta y se ve mejor desde el agua.",
+    "summary__i18n__fr": "Des ceintures de canaux du XVIIe siècle, de hautes maisons à pignons et des vélos enchaînés à chaque pont. Une capitale que l'on traverse à vélo et que l'on voit mieux depuis l'eau.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Amsterdam liegt am IJ in Nordholland, wo ein Damm aus dem 13. Jahrhundert am Fluss Amstel der Stadt ihren Namen gab. Vier Hauptgrachten, die Singel, Herengracht, Keizersgracht und Prinsengracht, ziehen sich in Halbringen um das alte Zentrum.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Der Großteil des Grachtengürtels wurde im 17. Jahrhundert angelegt, als Amsterdamer Schiffe von der Ostsee bis nach Asien Handel trieben. Kaufleute bauten hohe, schmale Häuser mit Haken in den Giebeln, um Waren in die oberen Stockwerke zu hieven. Im Rijksmuseum hängt Rembrandts Nachtwache, und die braunen Cafés im Jordaan füllen sich nach Feierabend.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Im April gibt es Tulpen an den Blumenständen, und der Koningsdag am Monatsende färbt die Grachten orange. Im späten Frühling und im September ist das Wetter mild und es sind weniger Besucher unterwegs. Tickets für das Anne-Frank-Haus gibt es nur online, buche also vor der Reise.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ámsterdam se asienta junto al IJ, en Holanda Septentrional, donde una presa del siglo XIII sobre el río Amstel dio nombre a la ciudad. Cuatro canales principales, el Singel, el Herengracht, el Keizersgracht y el Prinsengracht, rodean el casco antiguo en semicírculos.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Casi todo el anillo de canales se excavó en el siglo XVII, cuando los barcos de Ámsterdam comerciaban desde el Báltico hasta Asia. Los comerciantes construyeron casas altas y estrechas con ganchos en los hastiales para izar las mercancías a los pisos superiores. El Rijksmuseum alberga La ronda de noche de Rembrandt, y los cafés marrones del Jordaan se llenan después del trabajo.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "En abril llegan los tulipanes a los puestos de flores, y el Día del Rey, a finales de mes, tiñe los canales de naranja. A finales de primavera y en septiembre hace buen tiempo y hay menos gente. Las entradas de la Casa de Ana Frank se venden solo por internet, así que resérvalas antes de viajar.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Amsterdam s'étend sur l'IJ, en Hollande-Septentrionale, où un barrage du XIIIe siècle sur l'Amstel a donné son nom à la ville. Quatre canaux principaux, le Singel, le Herengracht, le Keizersgracht et le Prinsengracht, dessinent des demi-cercles autour du centre ancien.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La plus grande partie de la ceinture de canaux a été creusée au XVIIe siècle, quand les navires d'Amsterdam commerçaient de la Baltique à l'Asie. Les marchands ont bâti des maisons hautes et étroites, dotées de crochets dans les pignons pour hisser les marchandises aux étages. Le Rijksmuseum abrite La Ronde de nuit de Rembrandt, et les cafés bruns du Jordaan se remplissent après le travail.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "En avril, les tulipes arrivent sur les étals de fleurs, et la Fête du Roi, à la fin du mois, teint les canaux en orange. La fin du printemps et septembre offrent un temps doux et moins de monde. Les billets de la Maison d'Anne Frank se vendent uniquement en ligne, alors réservez avant de partir.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -229,8 +358,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "b8b03a1c8920a61f7409919aa9e8afc67e9edeb5",
-    "timestamp": "1792592496"
+    "token": "7e4110f83bd1226fe14dce67559a17a46fd56d1c",
+    "timestamp": "1794347518"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -272,28 +401,59 @@
       "path": "data/destinations/amsterdam",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/amsterdam",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/amsterdam",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -180,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255740521896,
+      "story_id": 230952423894688,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:06.645Z",
+      "published_at": "2026-11-10T21:23:06.645Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255743352235,
+      "story_id": 230952423894688,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:07.336Z",
+      "published_at": "2026-11-10T21:23:07.336Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255745953198,
+      "story_id": 230952423894688,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:07.972Z",
+      "published_at": "2026-11-10T21:23:07.972Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230961042804022,
+  "current_version_id": 240253333967071,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

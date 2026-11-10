@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:23:30.686Z",
-  "published_at": "2026-10-15T14:23:30.672Z",
+  "updated_at": "2026-11-10T21:05:53.256Z",
+  "published_at": "2026-11-10T21:05:53.241Z",
   "id": 230951365164236,
   "uuid": "5b665554-8856-4f52-a0b9-b11a3f1fabd4",
   "is_folder": false,
@@ -22,17 +22,26 @@
       {
         "_uid": "013bd854-8eee-4860-9a46-180ca4c2b300",
         "headline": "Why Serengeti",
-        "component": "destination_usps"
+        "component": "destination_usps",
+        "headline__i18n__de": "Warum die Serengeti",
+        "headline__i18n__es": "Por qué el Serengueti",
+        "headline__i18n__fr": "Pourquoi le Serengeti"
       },
       {
         "_uid": "d1bbe07e-39ce-4ad7-b5b1-51f8d15d8653",
         "headline": "About Serengeti",
-        "component": "destination_bio"
+        "component": "destination_bio",
+        "headline__i18n__de": "Über die Serengeti",
+        "headline__i18n__es": "Sobre el Serengueti",
+        "headline__i18n__fr": "À propos du Serengeti"
       },
       {
         "_uid": "933ecdc3-1b8f-4bbb-bd52-84421b3377be",
         "headline": "Serengeti in pictures",
-        "component": "destination_gallery"
+        "component": "destination_gallery",
+        "headline__i18n__de": "Die Serengeti in Bildern",
+        "headline__i18n__es": "El Serengueti en imágenes",
+        "headline__i18n__fr": "Le Serengeti en images"
       },
       {
         "_uid": "0cd49a7b-ff06-4ac9-addd-ad6bdb73ef59",
@@ -98,7 +107,193 @@
           ]
         },
         "headline": "Getting around",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Die meisten Besucher reisen mit einem Fahrer-Guide in einem Geländewagen mit offenem Dach, denn Pirschfahrten folgen Pisten durch das offene Grasland. Kleinflugzeuge verbinden Arusha mit Landepisten im Park, etwa Seronera in der Mitte.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Von Arusha nach Seronera sind es auf der Straße etwa 330 km, eine ganztägige Fahrt durch das Hochland von Ngorongoro.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Linienflüge von Arusha nach Seronera dauern je nach Zwischenstopps weniger als 2 Stunden.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Die Fahrt von Seronera nach Norden zum Mara-Fluss dauert 4 bis 5 Stunden.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La mayoría de los visitantes viajan con un conductor-guía en un 4x4 de techo abierto, ya que los safaris siguen pistas por las llanuras abiertas. Avionetas conectan Arusha con las pistas de aterrizaje del interior del parque, como Seronera, en el centro.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De Arusha a Seronera por carretera hay unos 330 km, un día entero de viaje por las tierras altas de Ngorongoro.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Los vuelos regulares de Arusha a Seronera duran menos de 2 horas, según las escalas.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "El trayecto desde Seronera hacia el norte hasta el río Mara dura de 4 a 5 horas.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La plupart des visiteurs voyagent avec un chauffeur-guide dans un 4x4 à toit ouvrant, car les safaris suivent des pistes à travers la savane. Des avions légers relient Arusha à des pistes d'atterrissage situées dans le parc, comme Seronera, au centre.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "D'Arusha à Seronera, il y a environ 330 km par la route, une journée entière de trajet via les hautes terres du Ngorongoro.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Les vols réguliers d'Arusha à Seronera durent moins de 2 heures, selon les escales.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Le trajet de Seronera vers le nord jusqu'à la rivière Mara dure de 4 à 5 heures.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Unterwegs",
+        "headline__i18n__es": "Cómo moverse",
+        "headline__i18n__fr": "Se déplacer"
       }
     ],
     "component": "destination_page",
@@ -123,8 +318,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "ca20359998d10526c94eb4aba0bf30ef94b08466",
-    "timestamp": "1792592494"
+    "token": "1ecfba03a0213079a03e8706ff33e69b15fea55c",
+    "timestamp": "1794347516"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -156,28 +351,59 @@
       "path": "destinations/serengeti",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/serengeti",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/serengeti",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -230,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255617609083,
+      "story_id": 230951365164236,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:36.639Z",
+      "published_at": "2026-11-10T21:22:36.639Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255748537776,
+      "story_id": 230951365164236,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:08.603Z",
+      "published_at": "2026-11-10T21:23:08.603Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255872581094,
+      "story_id": 230951365164236,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:38.887Z",
+      "published_at": "2026-11-10T21:23:38.887Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230951365264529,
+  "current_version_id": 240251507488642,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

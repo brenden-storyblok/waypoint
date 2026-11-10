@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-16T08:35:52.862Z",
-  "published_at": "2026-10-16T08:35:52.847Z",
+  "updated_at": "2026-11-10T21:17:49.667Z",
+  "published_at": "2026-11-10T21:17:49.646Z",
   "id": 230951497182425,
   "uuid": "761ae965-0b10-451f-ab12-338f67bc2597",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "277268d8-81e0-4cfc-a8bf-d6f86e43add7",
         "text": "Tanah Lot stands on a rock in the surf, and Ulun Danu Bratan's shrines sit on the edge of a crater lake.",
         "title": "Temples on the water",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Tanah Lot steht auf einem Felsen in der Brandung, und die Schreine von Ulun Danu Bratan liegen am Rand eines Kratersees.",
+        "text__i18n__es": "Tanah Lot se alza sobre una roca entre las olas, y los santuarios de Ulun Danu Bratan se encuentran a orillas de un lago de cráter.",
+        "text__i18n__fr": "Tanah Lot se dresse sur un rocher dans les vagues, et les sanctuaires d'Ulun Danu Bratan bordent un lac de cratère.",
+        "title__i18n__de": "Tempel auf dem Wasser",
+        "title__i18n__es": "Templos sobre el agua",
+        "title__i18n__fr": "Des temples sur l'eau"
       },
       {
         "_uid": "2792194e-fde8-4981-9f4d-e7d61a931e93",
         "text": "The water-sharing system behind Jatiluwih and Tegallalang dates back more than a thousand years.",
         "title": "Terraces shaped by subak",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Das Wasserverteilungssystem hinter Jatiluwih und Tegallalang ist mehr als tausend Jahre alt.",
+        "text__i18n__es": "El sistema de reparto del agua que sustenta Jatiluwih y Tegallalang tiene más de mil años de antigüedad.",
+        "text__i18n__fr": "Le système de partage de l'eau qui alimente Jatiluwih et Tegallalang remonte à plus de mille ans.",
+        "title__i18n__de": "Vom Subak geformte Terrassen",
+        "title__i18n__es": "Terrazas moldeadas por el subak",
+        "title__i18n__fr": "Des terrasses façonnées par le subak"
       },
       {
         "_uid": "beb4c78a-1212-4263-b829-14b083ac002e",
         "text": "Legong and Kecak performances run most evenings in Ubud's palace and temple courtyards.",
         "title": "Ubud's dance stages",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Legong- und Kecak-Aufführungen finden fast jeden Abend in den Palast- und Tempelhöfen von Ubud statt.",
+        "text__i18n__es": "Las representaciones de legong y kecak se celebran casi todas las noches en los patios de palacios y templos de Ubud.",
+        "text__i18n__fr": "Des spectacles de legong et de kecak ont lieu presque chaque soir dans les cours des palais et des temples d'Ubud.",
+        "title__i18n__de": "Die Tanzbühnen von Ubud",
+        "title__i18n__es": "Los escenarios de danza de Ubud",
+        "title__i18n__fr": "Les scènes de danse d'Ubud"
       },
       {
         "_uid": "c09d3ffc-d4b8-4e3a-8766-d25583795163",
         "text": "Fast boats from Sanur reach the cliffs and coves of Nusa Penida in under an hour.",
         "title": "Nusa Penida by boat",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Schnellboote von Sanur erreichen die Klippen und Buchten von Nusa Penida in weniger als einer Stunde.",
+        "text__i18n__es": "Las lanchas rápidas desde Sanur llegan a los acantilados y calas de Nusa Penida en menos de una hora.",
+        "text__i18n__fr": "Des bateaux rapides au départ de Sanur rejoignent les falaises et les criques de Nusa Penida en moins d'une heure.",
+        "title__i18n__de": "Nusa Penida per Boot",
+        "title__i18n__es": "Nusa Penida en barco",
+        "title__i18n__fr": "Nusa Penida en bateau"
       }
     ],
     "region": "Lesser Sunda Islands",
@@ -183,6 +207,9 @@
         "size": "2400x3185"
       }
     },
+    "name__i18n__de": "Bali",
+    "name__i18n__es": "Bali",
+    "name__i18n__fr": "Bali",
     "image_landscape": {
       "id": 230951158406399,
       "alt": "Tanah Lot temple sits on a rock outcrop above wet tidal flats as the sun sets behind it.",
@@ -196,6 +223,108 @@
       "meta_data": {
         "size": "2400x1600"
       }
+    },
+    "region__i18n__de": "Kleine Sundainseln",
+    "region__i18n__es": "Islas menores de la Sonda",
+    "region__i18n__fr": "Petites îles de la Sonde",
+    "summary__i18n__de": "Vulkane, Reisterrassen und Meerestempel auf einer hinduistischen Insel in einem mehrheitlich muslimischen Land. Blumenopfer liegen vor jeder Haustür.",
+    "summary__i18n__es": "Volcanes, terrazas de arroz y templos marinos en una isla hindú de un país de mayoría musulmana. Ofrendas de flores adornan todas las puertas.",
+    "summary__i18n__fr": "Volcans, rizières en terrasses et temples marins sur une île hindoue dans un pays à majorité musulmane. Des offrandes de fleurs ornent chaque seuil.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Bali liegt zwischen Java und Lombok, eine Vulkaninsel, umgeben von Surfstränden. Der Gunung Agung erhebt sich im Osten über 3.000 Meter, und Kraterseen wie der Bratan liegen im kühlen zentralen Hochland.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Die meisten Balinesen sind Hindus, und jedes Dorf pflegt seine eigenen Tempel und seinen eigenen Festkalender. Das Subak-System verteilt das Wasser zwischen den Reisterrassen über Kanäle, die von Tempelräten verwaltet werden; die UNESCO nahm es 2012 in die Welterbeliste auf. Ubud ist das Zentrum für Tanz, Malerei und Holzschnitzerei. Probiere Babi Guling, Sate Lilit und Nasi Campur in einem Warung.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Die Trockenzeit dauert von April bis Oktober. An Nyepi, dem balinesischen Neujahr im März, verstummt die ganze Insel für einen Tag und der Flughafen schließt. Prüfe das Datum also vor der Buchung.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Bali se encuentra entre Java y Lombok, una isla volcánica rodeada de playas para surfear. El monte Agung supera los 3.000 metros en el este, y lagos de cráter como el Bratan se hallan en las frescas tierras altas del centro.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La mayoría de los balineses son hindúes, y cada aldea tiene sus propios templos y su calendario de festivales. El sistema subak reparte el agua entre las terrazas de arroz mediante canales gestionados por consejos de los templos, y la UNESCO lo inscribió en 2012. Ubud es el centro de la danza, la pintura y la talla de madera. Prueba el babi guling, el sate lilit y el nasi campur en un warung.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La estación seca va de abril a octubre. En Nyepi, el Año Nuevo balinés, en marzo, toda la isla guarda silencio durante un día y el aeropuerto cierra, así que comprueba la fecha antes de reservar.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Bali s'étend entre Java et Lombok, une île volcanique ceinte de plages de surf. Le mont Agung dépasse 3 000 mètres à l'est, et des lacs de cratère comme le Bratan reposent dans les hautes terres fraîches du centre.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La plupart des Balinais sont hindous, et chaque village possède ses propres temples et son calendrier de fêtes. Le système du subak répartit l'eau entre les rizières en terrasses grâce à des canaux gérés par des conseils de temple, et l'UNESCO l'a inscrit en 2012. Ubud est le centre de la danse, de la peinture et de la sculpture sur bois. Goûtez le babi guling, le sate lilit et le nasi campur dans un warung.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La saison sèche dure d'avril à octobre. Pour Nyepi, le Nouvel An balinais en mars, toute l'île fait silence pendant une journée et l'aéroport ferme : vérifiez donc la date avant de réserver.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -217,8 +346,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "8a0924dbc567e4e05d09aa7c3d4282b078266666",
-    "timestamp": "1792592497"
+    "token": "20bd344db12814cfc193f4cd8a237f3c8019e738",
+    "timestamp": "1794347519"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -260,28 +389,59 @@
       "path": "data/destinations/bali",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/bali",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/bali",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -150,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255805578699,
+      "story_id": 230951497182425,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:22.529Z",
+      "published_at": "2026-11-10T21:23:22.529Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255808671181,
+      "story_id": 230951497182425,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:23.285Z",
+      "published_at": "2026-11-10T21:23:23.285Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255811530191,
+      "story_id": 230951497182425,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:23.982Z",
+      "published_at": "2026-11-10T21:23:23.982Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 231219825799315,
+  "current_version_id": 240254418580777,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

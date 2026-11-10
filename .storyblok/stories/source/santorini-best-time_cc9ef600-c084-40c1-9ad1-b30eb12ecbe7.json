@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:36.941Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T20:57:38.088Z",
+  "published_at": "2026-11-10T20:57:38.058Z",
   "id": 230846651308667,
   "uuid": "cc9ef600-c084-40c1-9ad1-b30eb12ecbe7",
   "is_folder": false,
@@ -38,7 +38,79 @@
       ]
     },
     "question": "When is the best time to visit?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Von Ende April bis Anfang Juni und von Mitte September bis Oktober. Das Wetter ist warm genug für den Strand, und auf den Wegen ist es ruhiger.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Juli und August sind die heißesten und vollsten Monate. Viele Hotels und Restaurants schließen von November bis März.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De finales de abril a principios de junio y de mediados de septiembre a octubre. Hace calor suficiente para la playa y los senderos están más tranquilos.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Julio y agosto son los meses más calurosos y con más gente. Muchos hoteles y restaurantes cierran de noviembre a marzo.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De fin avril à début juin et de la mi-septembre à octobre. Il fait assez chaud pour la plage et les sentiers sont plus calmes.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Juillet et août sont les mois les plus chauds et les plus fréquentés. De nombreux hôtels et restaurants ferment de novembre à mars.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Wann ist die beste Reisezeit?",
+    "question__i18n__es": "¿Cuál es la mejor época para visitar?",
+    "question__i18n__fr": "Quelle est la meilleure période pour y aller ?"
   },
   "published": true,
   "slug": "santorini-best-time",
@@ -59,8 +131,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "caa2aadceeac380918a2d2012a5809b9091612c5",
-    "timestamp": "1792592500"
+    "token": "7e4406ae17d0a7648e464efba64ee982555c6ed7",
+    "timestamp": "1794347522"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -102,28 +174,134 @@
       "path": "data/faqs/santorini-best-time",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/santorini-best-time",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/santorini-best-time",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -90,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255869484515,
+      "story_id": 230846651308667,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:38.132Z",
+      "published_at": "2026-11-10T21:23:38.132Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230851230324796",
+          "display_name": "Greece",
+          "name": "greece",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851260839997",
+          "display_name": "Santorini",
+          "name": "santorini",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255872155109,
+      "story_id": 230846651308667,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:38.783Z",
+      "published_at": "2026-11-10T21:23:38.783Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230851230324796",
+          "display_name": "Greece",
+          "name": "greece",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851260839997",
+          "display_name": "Santorini",
+          "name": "santorini",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255875247591,
+      "story_id": 230846651308667,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:39.539Z",
+      "published_at": "2026-11-10T21:23:39.539Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230851230324796",
+          "display_name": "Greece",
+          "name": "greece",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851260839997",
+          "display_name": "Santorini",
+          "name": "santorini",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857264827732,
+  "current_version_id": 240249440542457,
   "variant_type": null,
   "taxonomy_terms": [
     {

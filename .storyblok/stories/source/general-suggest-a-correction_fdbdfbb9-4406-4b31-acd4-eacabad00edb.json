@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:36.897Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T21:06:45.666Z",
+  "published_at": "2026-11-10T21:06:45.642Z",
   "id": 230846261525105,
   "uuid": "fdbdfbb9-4406-4b31-acd4-eacabad00edb",
   "is_folder": false,
@@ -29,7 +29,52 @@
       ]
     },
     "question": "How can I suggest a correction?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Nutze die Kontaktseite. Teile uns mit, welche Seite und welches Detail korrigiert werden muss.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Usa la página de contacto. Indícanos qué página y qué dato hay que corregir.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Utilisez la page Contact. Indiquez-nous quelle page et quel détail doivent être corrigés.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Wie kann ich eine Korrektur vorschlagen?",
+    "question__i18n__es": "¿Cómo puedo sugerir una corrección?",
+    "question__i18n__fr": "Comment puis-je suggérer une correction ?"
   },
   "published": true,
   "slug": "general-suggest-a-correction",
@@ -50,8 +95,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "caa2aadceeac380918a2d2012a5809b9091612c5",
-    "timestamp": "1792592500"
+    "token": "7e4406ae17d0a7648e464efba64ee982555c6ed7",
+    "timestamp": "1794347522"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -93,28 +138,98 @@
       "path": "data/faqs/general-suggest-a-correction",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/general-suggest-a-correction",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/general-suggest-a-correction",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -80,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255877885417,
+      "story_id": 230846261525105,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:40.183Z",
+      "published_at": "2026-11-10T21:23:40.183Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230852509141055",
+          "display_name": "Waypoint",
+          "name": "waypoint",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255881084395,
+      "story_id": 230846261525105,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:40.963Z",
+      "published_at": "2026-11-10T21:23:40.963Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230852509141055",
+          "display_name": "Waypoint",
+          "name": "waypoint",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255884299758,
+      "story_id": 230846261525105,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:41.749Z",
+      "published_at": "2026-11-10T21:23:41.749Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230852509141055",
+          "display_name": "Waypoint",
+          "name": "waypoint",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857264672083,
+  "current_version_id": 240251674359801,
   "variant_type": null,
   "taxonomy_terms": [
     {

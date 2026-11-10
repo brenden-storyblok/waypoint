@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:29:53.317Z",
-  "published_at": "2026-10-15T14:29:53.304Z",
+  "updated_at": "2026-11-10T21:14:57.303Z",
+  "published_at": "2026-11-10T21:14:57.288Z",
   "id": 230952932445878,
   "uuid": "cb725689-5cab-4857-9e75-f8701dd452f3",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "85479ad9-3192-412f-b97a-027a7f699989",
         "text": "The 1937 bridge is 2.7 km long, and you can cross it on foot or by bike.",
         "title": "Walk the Golden Gate",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Die 1937 eröffnete Brücke ist 2,7 km lang und lässt sich zu Fuß oder mit dem Fahrrad überqueren.",
+        "text__i18n__es": "El puente, inaugurado en 1937, mide 2,7 km de largo y se puede cruzar a pie o en bicicleta.",
+        "text__i18n__fr": "Le pont, inauguré en 1937, mesure 2,7 km de long et se traverse à pied ou à vélo.",
+        "title__i18n__de": "Zu Fuß über die Golden Gate Bridge",
+        "title__i18n__es": "Cruza el Golden Gate a pie",
+        "title__i18n__fr": "Traverser le Golden Gate à pied"
       },
       {
         "_uid": "2146439e-8d0a-402b-931f-e09364894d87",
         "text": "The Powell-Hyde, Powell-Mason and California Street cable car lines are a National Historic Landmark.",
         "title": "Ride a moving landmark",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Die Cable-Car-Linien Powell-Hyde, Powell-Mason und California Street sind ein National Historic Landmark.",
+        "text__i18n__es": "Las líneas de cable car Powell-Hyde, Powell-Mason y California Street son Monumento Histórico Nacional.",
+        "text__i18n__fr": "Les lignes de cable car Powell-Hyde, Powell-Mason et California Street sont classées National Historic Landmark.",
+        "title__i18n__de": "Mit einem rollenden Wahrzeichen fahren",
+        "title__i18n__es": "Viaja en un monumento en movimiento",
+        "title__i18n__fr": "Monter à bord d'un monument roulant"
       },
       {
         "_uid": "280f5ff9-89f6-4992-8aa1-1a968b5370c8",
         "text": "Boats leave Pier 33 for the island's former federal prison, which closed in 1963.",
         "title": "Alcatraz by ferry",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Von Pier 33 fahren Boote zum ehemaligen Bundesgefängnis auf der Insel, das 1963 geschlossen wurde.",
+        "text__i18n__es": "Desde el Pier 33 salen barcos hacia la antigua prisión federal de la isla, cerrada en 1963.",
+        "text__i18n__fr": "Des bateaux partent du Pier 33 vers l'ancienne prison fédérale de l'île, fermée en 1963.",
+        "title__i18n__de": "Mit der Fähre nach Alcatraz",
+        "title__i18n__es": "Alcatraz en ferri",
+        "title__i18n__fr": "Alcatraz en ferry"
       },
       {
         "_uid": "30f6b1c6-a7b2-49d9-801a-51b57c183744",
         "text": "Order a Mission burrito on 24th Street, then try Boudin, which has baked sourdough since 1849.",
         "title": "Burritos and sourdough",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Bestell einen Mission Burrito auf der 24th Street und probier dann Boudin, wo seit 1849 Sauerteigbrot gebacken wird.",
+        "text__i18n__es": "Pide un burrito estilo Mission en la calle 24 y prueba después Boudin, que hornea pan de masa madre desde 1849.",
+        "text__i18n__fr": "Commandez un burrito du Mission sur la 24th Street, puis goûtez à Boudin, qui cuit du pain au levain depuis 1849.",
+        "title__i18n__de": "Burritos und Sauerteigbrot",
+        "title__i18n__es": "Burritos y pan de masa madre",
+        "title__i18n__fr": "Burritos et pain au levain"
       }
     ],
     "region": "California",
@@ -182,6 +206,9 @@
         "size": "2400x3001"
       }
     },
+    "name__i18n__de": "San Francisco",
+    "name__i18n__es": "San Francisco",
+    "name__i18n__fr": "San Francisco",
     "image_landscape": {
       "id": 230952397749684,
       "alt": "A row of pastel Victorian houses at Alamo Square, with the Transamerica Pyramid and downtown towers behind at sunset.",
@@ -195,6 +222,108 @@
       "meta_data": {
         "size": "2400x1601"
       }
+    },
+    "region__i18n__de": "Kalifornien",
+    "region__i18n__es": "California",
+    "region__i18n__fr": "Californie",
+    "summary__i18n__de": "Über 40 Hügel auf einer Halbinsel zwischen Pazifik und Bucht, seit 1873 von Cable Cars erklommen. Probier Sauerteigbrot und einen Mission Burrito und spazier dann über die Golden Gate Bridge.",
+    "summary__i18n__es": "Más de 40 colinas en una península entre el Pacífico y la bahía, que los cable cars suben desde 1873. Prueba el pan de masa madre y un burrito estilo Mission, y luego cruza a pie el puente Golden Gate.",
+    "summary__i18n__fr": "Plus de 40 collines sur une presqu'île entre le Pacifique et la baie, gravies par les cable cars depuis 1873. Goûtez le pain au levain et un burrito du Mission, puis traversez le Golden Gate Bridge à pied.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "San Francisco liegt an der Spitze einer Halbinsel zwischen dem Pazifik und der San Francisco Bay. Die Stadt umfasst rund 120 Quadratkilometer, und innerhalb der Stadtgrenzen erheben sich über 40 Hügel, vom Nob Hill bis zu den Twin Peaks.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Der Goldrausch von 1849 machte aus einer Siedlung mit etwa 1.000 Einwohnern innerhalb eines Jahres eine Stadt mit rund 25.000. Das Erdbeben und das Feuer von 1906 zerstörten etwa 80 Prozent der Stadt. Chinatown, in den 1850er-Jahren gegründet, ist das älteste in Nordamerika.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "September und Oktober sind die wärmsten Monate, wenn sich der Sommernebel lichtet. Pack das ganze Jahr über mehrere Schichten ein, denn der Nebel lässt die Temperatur von einem Viertel zum nächsten schnell sinken.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "San Francisco ocupa la punta de una península entre el océano Pacífico y la bahía de San Francisco. La ciudad abarca unos 120 km² y dentro de ella se alzan más de 40 colinas, desde Nob Hill hasta Twin Peaks.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La fiebre del oro de 1849 convirtió un asentamiento de unas 1.000 personas en una ciudad de unas 25.000 en menos de un año. El terremoto y el incendio de 1906 destruyeron cerca del 80 por ciento de ella. Chinatown, fundado en la década de 1850, es el más antiguo de Norteamérica.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Septiembre y octubre son los meses más cálidos, cuando se levanta la niebla del verano. Lleva ropa de abrigo por capas durante todo el año, ya que la niebla puede bajar la temperatura rápidamente de un barrio a otro.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "San Francisco occupe l'extrémité d'une presqu'île entre l'océan Pacifique et la baie de San Francisco. La ville s'étend sur environ 120 km², et plus de 40 collines s'y dressent, de Nob Hill à Twin Peaks.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La ruée vers l'or de 1849 a transformé une bourgade d'environ 1 000 habitants en une ville d'environ 25 000 en moins d'un an. Le tremblement de terre et l'incendie de 1906 en ont détruit près de 80 %. Chinatown, fondé dans les années 1850, est le plus ancien d'Amérique du Nord.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Septembre et octobre sont les mois les plus chauds, lorsque le brouillard estival se lève. Prévoyez des vêtements à superposer toute l'année : le brouillard peut faire chuter rapidement la température d'un quartier à l'autre.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -216,8 +345,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "ca20359998d10526c94eb4aba0bf30ef94b08466",
-    "timestamp": "1792592494"
+    "token": "092bdce533db0e40a42887e6776d631b999feee5",
+    "timestamp": "1794347517"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -259,28 +388,59 @@
       "path": "data/destinations/san-francisco",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/san-francisco",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/san-francisco",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -200,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255606496621,
+      "story_id": 230952932445878,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:33.925Z",
+      "published_at": "2026-11-10T21:22:33.925Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255610129777,
+      "story_id": 230952932445878,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:34.812Z",
+      "published_at": "2026-11-10T21:22:34.812Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255613304181,
+      "story_id": 230952932445878,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:35.587Z",
+      "published_at": "2026-11-10T21:22:35.587Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230952932521125,
+  "current_version_id": 240253735920342,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

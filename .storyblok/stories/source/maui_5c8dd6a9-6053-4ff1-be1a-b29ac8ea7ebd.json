@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:18:05.115Z",
-  "published_at": "2026-10-15T14:18:05.101Z",
+  "updated_at": "2026-11-10T21:10:19.940Z",
+  "published_at": "2026-11-10T21:10:19.921Z",
   "id": 230950031620903,
   "uuid": "5c8dd6a9-6053-4ff1-be1a-b29ac8ea7ebd",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "15318bf7-08ef-426d-bf0c-dab88718de9f",
         "text": "The Haleakalā summit sits at 3,055 metres, and sunrise visits need a park reservation.",
         "title": "Sunrise above the clouds",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Der Gipfel des Haleakalā liegt auf 3.055 Metern, und für Sonnenaufgangsbesuche ist eine Parkreservierung nötig.",
+        "text__i18n__es": "La cumbre del Haleakalā se alza a 3055 metros, y las visitas al amanecer requieren reserva en el parque.",
+        "text__i18n__fr": "Le sommet du Haleakalā culmine à 3 055 mètres, et les visites au lever du soleil nécessitent une réservation auprès du parc.",
+        "title__i18n__de": "Sonnenaufgang über den Wolken",
+        "title__i18n__es": "Amanecer sobre las nubes",
+        "title__i18n__fr": "Le lever du soleil au-dessus des nuages"
       },
       {
         "_uid": "99e22e4e-8cbf-41d2-b8b9-6ed71cd2ead7",
         "text": "The Hana Highway crosses 59 bridges on its way along the rainforest coast of East Maui.",
         "title": "The road to Hana",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Der Hana Highway führt über 59 Brücken entlang der Regenwaldküste im Osten Mauis.",
+        "text__i18n__es": "La Hana Highway cruza 59 puentes a lo largo de la costa de selva tropical del este de Maui.",
+        "text__i18n__fr": "La Hana Highway franchit 59 ponts le long de la côte couverte de forêt tropicale de l'est de Maui.",
+        "title__i18n__de": "Die Straße nach Hana",
+        "title__i18n__es": "La carretera a Hana",
+        "title__i18n__fr": "La route de Hana"
       },
       {
         "_uid": "6d318a36-4507-4617-bfe5-334afc0b8838",
         "text": "Thousands of humpback whales calve each winter in the warm channels between Maui, Lānaʻi and Molokaʻi.",
         "title": "Humpback winter",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Jeden Winter bringen Tausende Buckelwale in den warmen Meerengen zwischen Maui, Lānaʻi und Molokaʻi ihre Kälber zur Welt.",
+        "text__i18n__es": "Miles de ballenas jorobadas dan a luz cada invierno en los cálidos canales entre Maui, Lānaʻi y Molokaʻi.",
+        "text__i18n__fr": "Chaque hiver, des milliers de baleines à bosse mettent bas dans les chenaux chauds entre Maui, Lānaʻi et Molokaʻi.",
+        "title__i18n__de": "Winter der Buckelwale",
+        "title__i18n__es": "Invierno de ballenas jorobadas",
+        "title__i18n__fr": "L'hiver des baleines à bosse"
       },
       {
         "_uid": "aa309ae4-6d09-41ea-9af5-66b3441452c6",
         "text": "Molokini, a crescent-shaped volcanic crater off the south coast, shelters about 250 species of fish.",
         "title": "Snorkel a sunken crater",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Molokini, ein halbmondförmiger Vulkankrater vor der Südküste, bietet rund 250 Fischarten Schutz.",
+        "text__i18n__es": "Molokini, un cráter volcánico en forma de media luna frente a la costa sur, alberga unas 250 especies de peces.",
+        "text__i18n__fr": "Molokini, un cratère volcanique en forme de croissant au large de la côte sud, abrite environ 250 espèces de poissons.",
+        "title__i18n__de": "Schnorcheln in einem versunkenen Krater",
+        "title__i18n__es": "Snorkel en un cráter sumergido",
+        "title__i18n__fr": "Snorkeling dans un cratère immergé"
       }
     ],
     "region": "Hawaii",
@@ -182,6 +206,9 @@
         "size": "2400x3200"
       }
     },
+    "name__i18n__de": "Maui",
+    "name__i18n__es": "Maui",
+    "name__i18n__fr": "Maui",
     "image_landscape": {
       "id": 230948409527166,
       "alt": "Palm trees line a rocky shore of black lava stone, with a cloud-capped mountain across the blue water.",
@@ -195,6 +222,108 @@
       "meta_data": {
         "size": "2400x1600"
       }
+    },
+    "region__i18n__de": "Hawaii",
+    "region__i18n__es": "Hawái",
+    "region__i18n__fr": "Hawaï",
+    "summary__i18n__de": "Zwei Vulkane, verbunden durch eine grüne Landenge und umringt von Stränden. Erlebe den Sonnenaufgang über den Wolken auf dem Haleakalā und schnorchle dann in einem versunkenen Krater.",
+    "summary__i18n__es": "Dos volcanes unidos por un istmo verde y rodeados de playas. Contempla el amanecer sobre las nubes en el Haleakalā y luego haz snorkel en un cráter sumergido.",
+    "summary__i18n__fr": "Deux volcans reliés par un isthme verdoyant et bordés de plages. Admirez le lever du soleil au-dessus des nuages sur le Haleakalā, puis explorez un cratère immergé avec un masque et un tuba.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Maui ist die zweitgrößte Hawaii-Insel, entstanden aus zwei Vulkanen, die durch ein niedriges Tal in der Mitte verbunden sind. Der Haleakalā erhebt sich im Osten auf 3.055 Meter, während die älteren West Maui Mountains im Westen den Regen auffangen.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Polynesische Seefahrer besiedelten die Insel Jahrhunderte, bevor die Europäer eintrafen. Lahaina war Anfang des 19. Jahrhunderts die königliche Hauptstadt des Königreichs Hawaii und später ein Walfanghafen, bis ein Waldbrand im August 2023 große Teile der Stadt zerstörte. Shave Ice und Plate Lunches mit Kalua-Schweinefleisch und Reis werden an Straßenständen verkauft.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Buckelwale treffen von Dezember bis April ein, die meisten Sichtungen gibt es von Januar bis März. Im April, Mai, September und Oktober sind weniger Besucher unterwegs. Buche die Reservierung für den Sonnenaufgang auf dem Haleakalā frühzeitig, denn die Termine werden 60 Tage im Voraus freigeschaltet und sind schnell vergeben.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Maui es la segunda isla más grande de Hawái, formada por dos volcanes unidos por un valle central bajo. El Haleakalā se eleva hasta los 3055 metros en el este, mientras que las más antiguas montañas de West Maui reciben la lluvia en el oeste.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Navegantes polinesios poblaron la isla siglos antes de la llegada de los europeos. Lahaina fue la capital real del Reino de Hawái a principios del siglo XIX y después un puerto ballenero, hasta que un incendio forestal destruyó gran parte de la localidad en agosto de 2023. El shave ice y los plate lunches de cerdo kalua con arroz se venden en puestos al borde de la carretera.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Las ballenas jorobadas llegan de diciembre a abril, con más avistamientos de enero a marzo. En abril, mayo, septiembre y octubre hay menos visitantes. Reserva con antelación el amanecer en el Haleakalā, ya que las plazas se abren con 60 días de antelación y se agotan rápido.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Maui est la deuxième plus grande île d'Hawaï, formée par deux volcans reliés par une vallée centrale basse. Le Haleakalā s'élève à 3 055 mètres à l'est, tandis que les plus anciennes montagnes de West Maui captent la pluie à l'ouest.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Des navigateurs polynésiens se sont installés sur l'île des siècles avant l'arrivée des Européens. Lahaina a été la capitale royale du royaume d'Hawaï au début du XIXe siècle, puis un port baleinier, jusqu'à ce qu'un incendie détruise une grande partie de la ville en août 2023. Le shave ice et les plate lunches de porc kalua au riz se vendent dans des stands au bord des routes.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Les baleines à bosse arrivent de décembre à avril, avec le plus d'observations de janvier à mars. Avril, mai, septembre et octobre attirent moins de visiteurs. Réservez tôt le lever du soleil sur le Haleakalā, car les créneaux ouvrent 60 jours à l'avance et partent vite.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -216,8 +345,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "caa2aadceeac380918a2d2012a5809b9091612c5",
-    "timestamp": "1792592500"
+    "token": "7e4406ae17d0a7648e464efba64ee982555c6ed7",
+    "timestamp": "1794347522"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -259,28 +388,59 @@
       "path": "data/destinations/maui",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/maui",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/maui",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -70,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240256022044186,
+      "story_id": 230950031620903,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:15.377Z",
+      "published_at": "2026-11-10T21:24:15.377Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240256024636955,
+      "story_id": 230950031620903,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:16.010Z",
+      "published_at": "2026-11-10T21:24:16.010Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240256027696668,
+      "story_id": 230950031620903,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:16.757Z",
+      "published_at": "2026-11-10T21:24:16.757Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230950031718918,
+  "current_version_id": 240252599766094,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

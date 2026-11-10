@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:21:32.205Z",
-  "published_at": "2026-10-15T14:21:32.189Z",
+  "updated_at": "2026-11-10T21:12:14.027Z",
+  "published_at": "2026-11-10T21:12:14.014Z",
   "id": 230950879877991,
   "uuid": "8444b055-866b-4a44-ad06-dbec077d1245",
   "is_folder": false,
@@ -22,17 +22,26 @@
       {
         "_uid": "1ced8ae6-ae16-470c-8317-53871ad54c23",
         "headline": "Why Cape Town",
-        "component": "destination_usps"
+        "component": "destination_usps",
+        "headline__i18n__de": "Warum Kapstadt",
+        "headline__i18n__es": "Por qué Ciudad del Cabo",
+        "headline__i18n__fr": "Pourquoi Le Cap"
       },
       {
         "_uid": "5d9b1ced-ca63-45fc-bc55-d7a0e218db63",
         "headline": "About Cape Town",
-        "component": "destination_bio"
+        "component": "destination_bio",
+        "headline__i18n__de": "Über Kapstadt",
+        "headline__i18n__es": "Sobre Ciudad del Cabo",
+        "headline__i18n__fr": "À propos du Cap"
       },
       {
         "_uid": "86959310-f0cd-427a-9c04-f4885cc3b16b",
         "headline": "Cape Town in pictures",
-        "component": "destination_gallery"
+        "component": "destination_gallery",
+        "headline__i18n__de": "Kapstadt in Bildern",
+        "headline__i18n__es": "Ciudad del Cabo en imágenes",
+        "headline__i18n__fr": "Le Cap en images"
       },
       {
         "_uid": "03cedca4-a4c9-4636-85a8-b77456222e2a",
@@ -98,7 +107,193 @@
           ]
         },
         "headline": "Getting around",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Die meisten Besucher nutzen Fahrdienst-Apps oder einen Mietwagen, da der öffentliche Nahverkehr außerhalb des Zentrums dünn ist. MyCiTi-Busse verbinden den Flughafen, die Innenstadt, die Waterfront und die Atlantikküste bis Hout Bay.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Vom Cape Town International in die Innenstadt sind es etwa 20 km, mit dem Auto rund 25 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Cape Point liegt etwa 70 km südlich der Stadt, auf der Straße rund 90 Minuten entfernt.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Die Fähre nach Robben Island vom V&A Waterfront braucht pro Strecke etwa 30 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La mayoría de los visitantes usa aplicaciones de transporte o un coche de alquiler, ya que el transporte público es escaso fuera del centro. Los autobuses MyCiTi conectan el aeropuerto, el centro, el Waterfront y la costa atlántica hasta Hout Bay.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Del aeropuerto internacional de Ciudad del Cabo al centro hay unos 20 km, unos 25 minutos en coche.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Cape Point está a unos 70 km al sur de la ciudad, a unos 90 minutos por carretera.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "El ferri a la isla Robben desde el V&A Waterfront tarda unos 30 minutos por trayecto.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La plupart des visiteurs utilisent des applications de VTC ou une voiture de location, car les transports en commun sont rares en dehors du centre. Les bus MyCiTi relient l'aéroport, le centre-ville, le Waterfront et le littoral atlantique jusqu'à Hout Bay.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De l'aéroport international du Cap au centre-ville, il y a environ 20 km, soit 25 minutes en voiture.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Cape Point se trouve à environ 70 km au sud de la ville, soit 90 minutes de route.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Le ferry pour l'île Robben depuis le V&A Waterfront met environ 30 minutes dans chaque sens.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Unterwegs",
+        "headline__i18n__es": "Cómo moverse",
+        "headline__i18n__fr": "Se déplacer"
       }
     ],
     "component": "destination_page",
@@ -123,8 +318,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "8a0924dbc567e4e05d09aa7c3d4282b078266666",
-    "timestamp": "1792592497"
+    "token": "20bd344db12814cfc193f4cd8a237f3c8019e738",
+    "timestamp": "1794347519"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -156,28 +351,59 @@
       "path": "destinations/cape-town",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/cape-town",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/cape-town",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -150,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255630749063,
+      "story_id": 230950879877991,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:39.847Z",
+      "published_at": "2026-11-10T21:22:39.847Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255760473530,
+      "story_id": 230950879877991,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:11.517Z",
+      "published_at": "2026-11-10T21:23:11.517Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255884275181,
+      "story_id": 230950879877991,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:41.743Z",
+      "published_at": "2026-11-10T21:23:41.743Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230950879952825,
+  "current_version_id": 240253067186158,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

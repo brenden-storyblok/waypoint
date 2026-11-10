@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:37.258Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T20:56:26.824Z",
+  "published_at": "2026-11-10T20:56:26.799Z",
   "id": 230846839052969,
   "uuid": "fb4bb1bb-662e-434c-bea2-7ab46d162aa9",
   "is_folder": false,
@@ -38,7 +38,79 @@
       ]
     },
     "question": "Do I need a car?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Für die Bergdörfer und Lavendelfelder: ja. Die Bahn fährt dorthin nicht, und Busse verkehren selten.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Aix-en-Provence und Avignon lassen sich auch ohne Auto besuchen. Beide haben einen TGV-Bahnhof.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Para los pueblos de montaña y los campos de lavanda, sí. El tren no llega hasta allí y los autobuses pasan con poca frecuencia.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Puedes visitar Aix-en-Provence y Aviñón sin coche. Ambas tienen estación de TGV.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Pour les villages perchés et les champs de lavande, oui. Le train n'y va pas et les bus sont peu fréquents.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Vous pouvez visiter Aix-en-Provence et Avignon sans voiture. Les deux ont une gare TGV.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Brauche ich ein Auto?",
+    "question__i18n__es": "¿Necesito coche?",
+    "question__i18n__fr": "Ai-je besoin d'une voiture ?"
   },
   "published": true,
   "slug": "provence-do-i-need-a-car",
@@ -59,8 +131,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "8a0924dbc567e4e05d09aa7c3d4282b078266666",
-    "timestamp": "1792592497"
+    "token": "20bd344db12814cfc193f4cd8a237f3c8019e738",
+    "timestamp": "1794347519"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -102,28 +174,134 @@
       "path": "data/faqs/provence-do-i-need-a-car",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/provence-do-i-need-a-car",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/provence-do-i-need-a-car",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -160,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255734082978,
+      "story_id": 230846839052969,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:05.075Z",
+      "published_at": "2026-11-10T21:23:05.075Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230850657503285",
+          "display_name": "France",
+          "name": "france",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851098155064",
+          "display_name": "Provence",
+          "name": "provence",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255736790436,
+      "story_id": 230846839052969,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:05.736Z",
+      "published_at": "2026-11-10T21:23:05.736Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230850657503285",
+          "display_name": "France",
+          "name": "france",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851098155064",
+          "display_name": "Provence",
+          "name": "provence",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255739248038,
+      "story_id": 230846839052969,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:06.336Z",
+      "published_at": "2026-11-10T21:23:06.336Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230850657503285",
+          "display_name": "France",
+          "name": "france",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851098155064",
+          "display_name": "Provence",
+          "name": "provence",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857266146654,
+  "current_version_id": 240249149726141,
   "variant_type": null,
   "taxonomy_terms": [
     {

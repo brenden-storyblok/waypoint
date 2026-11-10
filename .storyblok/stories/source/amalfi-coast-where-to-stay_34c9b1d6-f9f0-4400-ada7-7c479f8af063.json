@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:37.515Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T20:55:49.537Z",
+  "published_at": "2026-11-10T20:55:49.508Z",
   "id": 230847319198399,
   "uuid": "34c9b1d6-f9f0-4400-ada7-7c479f8af063",
   "is_folder": false,
@@ -38,7 +38,79 @@
       ]
     },
     "question": "Where should I stay?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Amalfi ist der zentralste Standort für Busse und Fähren. Positano ist der am häufigsten fotografierte Ort, aber er ist steil und voller Treppen.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ravello liegt hoch über der Küste und ist abends ruhig.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Amalfi es la base más céntrica para los autobuses y los ferris. Positano es el pueblo más fotografiado, pero es empinado y está lleno de escaleras.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ravello se alza muy por encima de la costa y por la noche es tranquilo.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Amalfi est la base la plus centrale pour les bus et les ferries. Positano est la ville la plus photographiée, mais elle est escarpée et pleine d'escaliers.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ravello domine la côte de très haut et reste calme le soir.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Wo sollte ich übernachten?",
+    "question__i18n__es": "¿Dónde debería alojarme?",
+    "question__i18n__fr": "Où dois-je séjourner ?"
   },
   "published": true,
   "slug": "amalfi-coast-where-to-stay",
@@ -59,8 +131,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "9d5d0e440e0e141dda98d947fea9262e701fc1e2",
-    "timestamp": "1792592495"
+    "token": "092bdce533db0e40a42887e6776d631b999feee5",
+    "timestamp": "1794347517"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -102,28 +174,134 @@
       "path": "data/faqs/amalfi-coast-where-to-stay",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/amalfi-coast-where-to-stay",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/amalfi-coast-where-to-stay",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -200,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255621442943,
+      "story_id": 230847319198399,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:37.574Z",
+      "published_at": "2026-11-10T21:22:37.574Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230850699671607",
+          "display_name": "Italy",
+          "name": "italy",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851169421370",
+          "display_name": "Amalfi Coast",
+          "name": "amalfi-coast",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255625190788,
+      "story_id": 230847319198399,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:38.490Z",
+      "published_at": "2026-11-10T21:22:38.490Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230850699671607",
+          "display_name": "Italy",
+          "name": "italy",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851169421370",
+          "display_name": "Amalfi Coast",
+          "name": "amalfi-coast",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255628021126,
+      "story_id": 230847319198399,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:39.181Z",
+      "published_at": "2026-11-10T21:22:39.181Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230850699671607",
+          "display_name": "Italy",
+          "name": "italy",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851169421370",
+          "display_name": "Amalfi Coast",
+          "name": "amalfi-coast",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857267195237,
+  "current_version_id": 240248998993192,
   "variant_type": null,
   "taxonomy_terms": [
     {

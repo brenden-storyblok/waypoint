@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:37.176Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T21:06:10.610Z",
+  "published_at": "2026-11-10T21:06:10.582Z",
   "id": 230846816234151,
   "uuid": "64a140fe-0a53-4983-bde6-735d9e310912",
   "is_folder": false,
@@ -38,7 +38,79 @@
       ]
     },
     "question": "Can I visit Neuschwanstein without a ticket booked ahead?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Du kannst ohne Ticket zum Schloss hinaufgehen und es von außen ansehen. Der Zutritt zu den Räumen ist nur mit einer Führung zu festen Zeiten möglich.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Buche in der Saison vorab online. Tickets vor Ort im Ticket-Center in Hohenschwangau sind oft ausverkauft.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Puedes subir y ver el castillo desde fuera sin entrada. El acceso a las salas es solo mediante visita guiada con horario fijo.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Reserva en línea con antelación en temporada. Las entradas que se venden en persona en el centro de venta de entradas de Hohenschwangau suelen agotarse.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Vous pouvez monter voir le château de l'extérieur sans billet. L'accès aux salles se fait uniquement par visite guidée à horaire fixe.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Réservez en ligne à l'avance en saison. Les billets vendus sur place au centre de billetterie de Hohenschwangau sont souvent épuisés.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Kann ich Schloss Neuschwanstein ohne vorab gebuchtes Ticket besichtigen?",
+    "question__i18n__es": "¿Puedo visitar Neuschwanstein sin una entrada reservada con antelación?",
+    "question__i18n__fr": "Puis-je visiter Neuschwanstein sans billet réservé à l'avance ?"
   },
   "published": true,
   "slug": "bavarian-alps-neuschwanstein-tickets",
@@ -59,8 +131,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "092662d2050bcd55e4f77fc21c2166cce78a93b2",
-    "timestamp": "1792592498"
+    "token": "9ce030a66ffc9a88f90accf5913b9568a5ad298b",
+    "timestamp": "1794347520"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -102,28 +174,134 @@
       "path": "data/faqs/bavarian-alps-neuschwanstein-tickets",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/bavarian-alps-neuschwanstein-tickets",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/bavarian-alps-neuschwanstein-tickets",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -140,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255751884212,
+      "story_id": 230846816234151,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:09.421Z",
+      "published_at": "2026-11-10T21:23:09.421Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230850677905462",
+          "display_name": "Germany",
+          "name": "germany",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851130366009",
+          "display_name": "Bavaria",
+          "name": "bavaria",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255754804662,
+      "story_id": 230846816234151,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:10.134Z",
+      "published_at": "2026-11-10T21:23:10.134Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230850677905462",
+          "display_name": "Germany",
+          "name": "germany",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851130366009",
+          "display_name": "Bavaria",
+          "name": "bavaria",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255758347705,
+      "story_id": 230846816234151,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:10.998Z",
+      "published_at": "2026-11-10T21:23:10.998Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230850677905462",
+          "display_name": "Germany",
+          "name": "germany",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851130366009",
+          "display_name": "Bavaria",
+          "name": "bavaria",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857265810780,
+  "current_version_id": 240251529590673,
   "variant_type": null,
   "taxonomy_terms": [
     {

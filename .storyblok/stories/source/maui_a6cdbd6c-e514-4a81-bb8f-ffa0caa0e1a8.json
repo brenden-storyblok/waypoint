@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:18:12.491Z",
-  "published_at": "2026-10-15T14:18:12.475Z",
+  "updated_at": "2026-11-10T21:10:43.742Z",
+  "published_at": "2026-11-10T21:10:43.730Z",
   "id": 230950061808424,
   "uuid": "a6cdbd6c-e514-4a81-bb8f-ffa0caa0e1a8",
   "is_folder": false,
@@ -22,17 +22,26 @@
       {
         "_uid": "f46f05a5-1556-4809-80bd-2514aaac1aca",
         "headline": "Why Maui",
-        "component": "destination_usps"
+        "component": "destination_usps",
+        "headline__i18n__de": "Warum Maui",
+        "headline__i18n__es": "Por qué Maui",
+        "headline__i18n__fr": "Pourquoi Maui"
       },
       {
         "_uid": "6cd50f9d-a4f0-42ad-af6c-213356c17fb9",
         "headline": "About Maui",
-        "component": "destination_bio"
+        "component": "destination_bio",
+        "headline__i18n__de": "Über Maui",
+        "headline__i18n__es": "Sobre Maui",
+        "headline__i18n__fr": "À propos de Maui"
       },
       {
         "_uid": "e8afc27b-7f14-40a0-9434-357498f1d954",
         "headline": "Maui in pictures",
-        "component": "destination_gallery"
+        "component": "destination_gallery",
+        "headline__i18n__de": "Maui in Bildern",
+        "headline__i18n__es": "Maui en imágenes",
+        "headline__i18n__fr": "Maui en images"
       },
       {
         "_uid": "ade218ce-62ab-4cd4-b176-e6615d06bfc2",
@@ -98,7 +107,193 @@
           ]
         },
         "headline": "Getting around",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Miete am Flughafen Kahului (OGG) ein Auto. Der Maui Bus verbindet die größeren Orte, doch jenseits des zentralen Tals und der Resortküsten wird das Netz dünn.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Vom Flughafen Kahului nach Wailea sind es mit dem Auto etwa 30 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Von Kahului nach Kāʻanapali braucht man auf dem Honoapiʻilani Highway etwa 45 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Von Kahului zum Gipfel des Haleakalā sind es etwa 2 Stunden auf einer Straße mit Serpentinen.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Alquila un coche en el aeropuerto de Kahului (OGG). El Maui Bus conecta las principales localidades, pero las rutas escasean más allá del valle central y las costas turísticas.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Del aeropuerto de Kahului a Wailea se tardan unos 30 minutos en coche.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De Kahului a Kāʻanapali se tardan unos 45 minutos por la Honoapiʻilani Highway.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De Kahului a la cumbre del Haleakalā se tardan unas 2 horas por una carretera de curvas cerradas.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Louez une voiture à l'aéroport de Kahului (OGG). Le Maui Bus relie les principales villes, mais les lignes se font rares au-delà de la vallée centrale et des côtes balnéaires.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De l'aéroport de Kahului à Wailea, comptez environ 30 minutes en voiture.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De Kahului à Kāʻanapali, comptez environ 45 minutes par la Honoapiʻilani Highway.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De Kahului au sommet du Haleakalā, comptez environ 2 heures sur une route en lacets.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Unterwegs",
+        "headline__i18n__es": "Cómo moverse",
+        "headline__i18n__fr": "Se déplacer"
       }
     ],
     "component": "destination_page",
@@ -123,8 +318,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "caa2aadceeac380918a2d2012a5809b9091612c5",
-    "timestamp": "1792592500"
+    "token": "7e4406ae17d0a7648e464efba64ee982555c6ed7",
+    "timestamp": "1794347522"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -156,28 +351,59 @@
       "path": "destinations/maui",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/maui",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/maui",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -90,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255639813514,
+      "story_id": 230950061808424,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:42.059Z",
+      "published_at": "2026-11-10T21:22:42.059Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255769529789,
+      "story_id": 230950061808424,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:13.729Z",
+      "published_at": "2026-11-10T21:23:13.729Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255892889073,
+      "story_id": 230950061808424,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:43.846Z",
+      "published_at": "2026-11-10T21:23:43.846Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230950061918805,
+  "current_version_id": 240252697337020,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

@@ -75,7 +75,7 @@
     "display_name": "Destination",
     "description": null,
     "created_at": "2026-10-14T15:55:27.887Z",
-    "updated_at": "2026-10-15T14:53:38.956Z",
+    "updated_at": "2026-11-10T21:41:09.107Z",
     "id": 230620069430149,
     "schema": {
       "name": {
@@ -133,6 +133,7 @@
           "images"
         ],
         "required": true,
+        "translatable": false,
         "description": "Primary image, used in the destination hero and on cards",
         "id": "2OJhhaK1QQG8vcdKPAzL8A"
       },
@@ -143,6 +144,7 @@
         "filetypes": [
           "images"
         ],
+        "translatable": false,
         "id": "eViw7U4FTAGJIKePmOWfvA"
       },
       "image_landscape": {
@@ -152,6 +154,7 @@
         "filetypes": [
           "images"
         ],
+        "translatable": false,
         "id": "bhwNvMHLS3eaWmZggZMVdg"
       },
       "gallery": {
@@ -161,6 +164,7 @@
         "filetypes": [
           "images"
         ],
+        "translatable": false,
         "id": "G80nLLTgSHWEvFA-X4SRwQ"
       },
       "usps": {
@@ -632,7 +636,7 @@
     "display_name": "Header",
     "description": null,
     "created_at": "2026-10-14T16:06:29.595Z",
-    "updated_at": "2026-10-14T16:08:29.496Z",
+    "updated_at": "2026-11-10T21:41:07.894Z",
     "id": 230622779786177,
     "schema": {
       "logo": {
@@ -642,6 +646,7 @@
         "filetypes": [
           "images"
         ],
+        "translatable": false,
         "id": "p40ahczSTRGUv1ztBfjMdw"
       },
       "nav": {
@@ -687,7 +692,7 @@
     "display_name": "Hero",
     "description": null,
     "created_at": "2026-10-14T15:55:43.572Z",
-    "updated_at": "2026-10-14T15:55:43.572Z",
+    "updated_at": "2026-11-10T21:41:08.500Z",
     "id": 230620133680007,
     "schema": {
       "headline": {
@@ -712,6 +717,7 @@
         "filetypes": [
           "images"
         ],
+        "translatable": false,
         "id": "oR3NZNHLTMmoW8oonnfhnA"
       },
       "cta": {

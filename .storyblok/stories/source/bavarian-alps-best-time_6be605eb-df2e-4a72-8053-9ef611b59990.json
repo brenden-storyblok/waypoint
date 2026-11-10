@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:37.101Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T20:57:03.393Z",
+  "published_at": "2026-11-10T20:57:03.364Z",
   "id": 230846807046819,
   "uuid": "6be605eb-df2e-4a72-8053-9ef611b59990",
   "is_folder": false,
@@ -38,7 +38,79 @@
       ]
     },
     "question": "When is the best time to visit?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Von Juni bis Anfang Oktober eignet sich die Region zum Wandern, Baden in Seen und für Seilbahnfahrten. Die Berghütten sind meist in dieser Zeit geöffnet.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Im Winter gibt es Skifahren rund um Garmisch-Partenkirchen und ruhige Schneespaziergänge. An Sommerwochenenden ist es auf Schloss Neuschwanstein und am Königssee voll.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De junio a principios de octubre es ideal para el senderismo, el baño en los lagos y los teleféricos. La mayoría de los refugios de montaña abren en esta temporada.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El invierno trae esquí en los alrededores de Garmisch-Partenkirchen y tranquilos paseos por la nieve. Los fines de semana de verano hay mucha gente en Neuschwanstein y en el Königssee.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De juin à début octobre convient à la randonnée, à la baignade dans les lacs et aux téléphériques. La plupart des refuges de montagne ouvrent pendant cette saison.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "L'hiver apporte le ski autour de Garmisch-Partenkirchen et de paisibles promenades dans la neige. Les week-ends d'été, il y a foule à Neuschwanstein et sur le Königssee.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Wann ist die beste Reisezeit?",
+    "question__i18n__es": "¿Cuál es la mejor época para visitar?",
+    "question__i18n__fr": "Quelle est la meilleure période pour y aller ?"
   },
   "published": true,
   "slug": "bavarian-alps-best-time",
@@ -59,8 +131,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "1c6ee6c384e2502d103e10e793d5c19576df78ad",
-    "timestamp": "1792592499"
+    "token": "c33351fca276f5ca874fc3520da4103c5e9bfdf2",
+    "timestamp": "1794347521"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -102,28 +174,134 @@
       "path": "data/faqs/bavarian-alps-best-time",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/bavarian-alps-best-time",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/bavarian-alps-best-time",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -120,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255806262732,
+      "story_id": 230846807046819,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:22.697Z",
+      "published_at": "2026-11-10T21:23:22.697Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230850677905462",
+          "display_name": "Germany",
+          "name": "germany",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851130366009",
+          "display_name": "Bavaria",
+          "name": "bavaria",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255809383886,
+      "story_id": 230846807046819,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:23.458Z",
+      "published_at": "2026-11-10T21:23:23.458Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230850677905462",
+          "display_name": "Germany",
+          "name": "germany",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851130366009",
+          "display_name": "Bavaria",
+          "name": "bavaria",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255812230608,
+      "story_id": 230846807046819,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:24.154Z",
+      "published_at": "2026-11-10T21:23:24.154Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230850677905462",
+          "display_name": "Germany",
+          "name": "germany",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851130366009",
+          "display_name": "Bavaria",
+          "name": "bavaria",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857265511769,
+  "current_version_id": 240249300901472,
   "variant_type": null,
   "taxonomy_terms": [
     {

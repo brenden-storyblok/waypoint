@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:47.333Z",
-  "published_at": "2026-10-15T08:00:47.121Z",
+  "updated_at": "2026-11-10T20:55:13.580Z",
+  "published_at": "2026-11-10T20:55:13.551Z",
   "id": 230624352017985,
   "uuid": "b0aed791-0e90-44f2-ba50-6741062a81fc",
   "is_folder": false,
@@ -24,7 +24,10 @@
         },
         "label": "Plan a trip",
         "variant": "primary",
-        "component": "button"
+        "component": "button",
+        "label__i18n__de": "Reise planen",
+        "label__i18n__es": "Planifica tu viaje",
+        "label__i18n__fr": "Planifier un voyage"
       }
     ],
     "nav": [
@@ -37,7 +40,10 @@
           "cached_url": "/destinations"
         },
         "label": "Destinations",
-        "component": "nav_link"
+        "component": "nav_link",
+        "label__i18n__de": "Reiseziele",
+        "label__i18n__es": "Destinos",
+        "label__i18n__fr": "Destinations"
       },
       {
         "_uid": "435c1932-4853-4254-b333-c911327d5207",
@@ -48,7 +54,10 @@
           "cached_url": "/inspiration"
         },
         "label": "Inspiration",
-        "component": "nav_link"
+        "component": "nav_link",
+        "label__i18n__de": "Inspiration",
+        "label__i18n__es": "Inspiración",
+        "label__i18n__fr": "Inspiration"
       },
       {
         "_uid": "8a98e882-4ab7-47c8-a481-432fd9fc78d8",
@@ -59,7 +68,10 @@
           "cached_url": "/help"
         },
         "label": "Help",
-        "component": "nav_link"
+        "component": "nav_link",
+        "label__i18n__de": "Hilfe",
+        "label__i18n__es": "Ayuda",
+        "label__i18n__fr": "Aide"
       }
     ],
     "_uid": "28f7e440-2be7-478e-a9ab-491c0bf93fdf",
@@ -84,8 +96,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "6d31d67d6de34a8df65196365cfa3e69480c38f7",
-    "timestamp": "1792592506"
+    "token": "61e3bae6a86a51429d317bae5848afd389ddb122",
+    "timestamp": "1794347528"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -117,28 +129,59 @@
       "path": "global/header",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "global/header",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "global/header",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": 0,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255550106969,
+      "story_id": 230624352017985,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:20.159Z",
+      "published_at": "2026-11-10T21:22:20.159Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255604628842,
+      "story_id": 230624352017985,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:33.470Z",
+      "published_at": "2026-11-10T21:22:33.470Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255653813647,
+      "story_id": 230624352017985,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:45.478Z",
+      "published_at": "2026-11-10T21:22:45.478Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857307360711,
+  "current_version_id": 240248863493302,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

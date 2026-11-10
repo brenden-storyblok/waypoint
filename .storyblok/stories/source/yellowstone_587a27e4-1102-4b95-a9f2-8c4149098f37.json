@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:20:15.962Z",
-  "published_at": "2026-10-15T14:20:15.948Z",
+  "updated_at": "2026-11-10T21:12:51.389Z",
+  "published_at": "2026-11-10T21:12:51.376Z",
   "id": 230950567586648,
   "uuid": "587a27e4-1102-4b95-a9f2-8c4149098f37",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "58c4d754-1db4-4eb3-8008-0f25d73c7ca1",
         "text": "The park holds about 500 active geysers, from Old Faithful to the rarely erupting Steamboat.",
         "title": "Half the world's geysers",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Im Park gibt es rund 500 aktive Geysire, vom Old Faithful bis zum nur selten ausbrechenden Steamboat.",
+        "text__i18n__es": "El parque alberga unos 500 géiseres activos, desde el Old Faithful hasta el Steamboat, que rara vez entra en erupción.",
+        "text__i18n__fr": "Le parc compte environ 500 geysers actifs, d'Old Faithful au Steamboat, qui n'entre que rarement en éruption.",
+        "title__i18n__de": "Die Hälfte aller Geysire der Welt",
+        "title__i18n__es": "La mitad de los géiseres del mundo",
+        "title__i18n__fr": "La moitié des geysers du monde"
       },
       {
         "_uid": "eed89879-195c-4875-ab8e-60ba75259c05",
         "text": "The largest hot spring in the United States is about 110 metres across, ringed in orange and yellow microbial mats.",
         "title": "Grand Prismatic Spring",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Die größte heiße Quelle der Vereinigten Staaten misst rund 110 Meter im Durchmesser und ist von orangefarbenen und gelben Mikrobenmatten umgeben.",
+        "text__i18n__es": "La fuente termal más grande de Estados Unidos mide unos 110 metros de ancho y está rodeada de tapetes microbianos naranjas y amarillos.",
+        "text__i18n__fr": "La plus grande source chaude des États-Unis mesure environ 110 mètres de large et est cernée de tapis microbiens orange et jaunes.",
+        "title__i18n__de": "Grand Prismatic Spring",
+        "title__i18n__es": "Grand Prismatic Spring",
+        "title__i18n__fr": "Grand Prismatic Spring"
       },
       {
         "_uid": "ad41b139-89f7-4013-98c3-c2d97612d287",
         "text": "Yellowstone is the only place in the United States where bison have lived continuously since prehistoric times.",
         "title": "Wild bison herds",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Yellowstone ist der einzige Ort in den Vereinigten Staaten, an dem Bisons seit prähistorischer Zeit durchgehend leben.",
+        "text__i18n__es": "Yellowstone es el único lugar de Estados Unidos donde los bisontes han vivido de forma continua desde la prehistoria.",
+        "text__i18n__fr": "Yellowstone est le seul endroit des États-Unis où les bisons vivent sans interruption depuis la préhistoire.",
+        "title__i18n__de": "Wilde Bisonherden",
+        "title__i18n__es": "Manadas de bisontes salvajes",
+        "title__i18n__fr": "Des troupeaux de bisons sauvages"
       },
       {
         "_uid": "e4a0461d-0930-4c73-b2fc-3c898fbbc5e4",
         "text": "Wolves reintroduced in 1995 roam the Lamar Valley, best watched at dawn with a spotting scope.",
         "title": "Wolves in the Lamar Valley",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Die 1995 wieder angesiedelten Wölfe streifen durch das Lamar Valley und lassen sich am besten im Morgengrauen mit einem Spektiv beobachten.",
+        "text__i18n__es": "Los lobos reintroducidos en 1995 recorren el valle de Lamar y se observan mejor al amanecer con un telescopio terrestre.",
+        "text__i18n__fr": "Les loups réintroduits en 1995 sillonnent la vallée de Lamar et s'observent mieux à l'aube avec une longue-vue.",
+        "title__i18n__de": "Wölfe im Lamar Valley",
+        "title__i18n__es": "Lobos en el valle de Lamar",
+        "title__i18n__fr": "Des loups dans la vallée de Lamar"
       }
     ],
     "region": "Wyoming",
@@ -182,6 +206,9 @@
         "size": "2400x3600"
       }
     },
+    "name__i18n__de": "Yellowstone",
+    "name__i18n__es": "Yellowstone",
+    "name__i18n__fr": "Yellowstone",
     "image_landscape": {
       "id": 230950118882402,
       "alt": "A rainbow hangs in the spray above the Yellowstone River as it cuts through steep yellow and pink canyon walls.",
@@ -195,6 +222,108 @@
       "meta_data": {
         "size": "2400x1600"
       }
+    },
+    "region__i18n__de": "Wyoming",
+    "region__i18n__es": "Wyoming",
+    "region__i18n__fr": "Wyoming",
+    "summary__i18n__de": "Geysire, kochende Quellen und ein Canyon in der Farbe seines Namens. Bisonherden grasen hier noch immer, wie schon seit Tausenden von Jahren.",
+    "summary__i18n__es": "Géiseres, fuentes hirvientes y un cañón del color que le da nombre. Las manadas de bisontes siguen pastando donde lo han hecho durante miles de años.",
+    "summary__i18n__fr": "Des geysers, des sources bouillonnantes et un canyon de la couleur de son nom. Des troupeaux de bisons y paissent encore, comme depuis des milliers d'années.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Yellowstone liegt auf einem hohen Vulkanplateau im Nordwesten von Wyoming, mit Ausläufern nach Montana und Idaho. Unter dem Park liegt die Caldera eines Supervulkans, die über 10.000 hydrothermale Erscheinungen speist, darunter etwa die Hälfte aller Geysire der Welt.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "1872 erklärte der Kongress Yellowstone zum ersten Nationalpark der Welt. Der Old Faithful bricht etwa alle 90 Minuten aus, und der Yellowstone River stürzt an den Lower Falls 94 Meter in einen Canyon aus gelbem Gestein. Graue Wölfe kehrten 1995 in den Park zurück und jagen heute Wapitis im Lamar Valley.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Die meisten Parkstraßen sind von Ende April bis Anfang November geöffnet. Im Juni und September sind die Straßen offen und es ist weniger los. Bleibe in den Geysirbecken auf den Holzstegen, denn die Kruste über kochendem Wasser kann dünn sein.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Yellowstone se encuentra sobre una alta meseta volcánica en la esquina noroeste de Wyoming, con extremos que se adentran en Montana e Idaho. Bajo ella yace la caldera de un supervolcán que alimenta más de 10 000 manifestaciones hidrotermales, entre ellas cerca de la mitad de los géiseres del mundo.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "En 1872 el Congreso designó Yellowstone como el primer parque nacional del mundo. El Old Faithful entra en erupción aproximadamente cada 90 minutos, y el río Yellowstone cae 94 metros en las Lower Falls hacia un cañón de roca amarilla. Los lobos grises regresaron al parque en 1995 y ahora cazan alces en el valle de Lamar.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La mayoría de las carreteras del parque abren desde finales de abril hasta principios de noviembre. Junio y septiembre ofrecen carreteras abiertas y menos multitudes. Mantente en las pasarelas de las cuencas de géiseres, donde la corteza sobre el agua hirviendo puede ser fina.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Yellowstone repose sur un haut plateau volcanique dans le nord-ouest du Wyoming, avec des franges qui s'étendent jusqu'au Montana et à l'Idaho. La caldeira d'un supervolcan se trouve sous le parc et alimente plus de 10 000 manifestations hydrothermales, dont environ la moitié des geysers du monde.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "En 1872, le Congrès a fait de Yellowstone le premier parc national du monde. Old Faithful entre en éruption environ toutes les 90 minutes, et la rivière Yellowstone chute de 94 mètres aux Lower Falls dans un canyon de roche jaune. Les loups gris sont revenus dans le parc en 1995 et chassent aujourd'hui le wapiti dans la vallée de Lamar.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La plupart des routes du parc ouvrent de fin avril à début novembre. Juin et septembre offrent des routes ouvertes et moins de monde. Restez sur les passerelles dans les bassins de geysers, où la croûte au-dessus de l'eau bouillante peut être mince.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -216,8 +345,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "caa2aadceeac380918a2d2012a5809b9091612c5",
-    "timestamp": "1792592500"
+    "token": "c33351fca276f5ca874fc3520da4103c5e9bfdf2",
+    "timestamp": "1794347521"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -259,28 +388,59 @@
       "path": "data/destinations/yellowstone",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/yellowstone",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/yellowstone",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -90,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255968419339,
+      "story_id": 230950567586648,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:02.286Z",
+      "published_at": "2026-11-10T21:24:02.286Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255971167756,
+      "story_id": 230950567586648,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:02.958Z",
+      "published_at": "2026-11-10T21:24:02.958Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255973879309,
+      "story_id": 230950567586648,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:03.617Z",
+      "published_at": "2026-11-10T21:24:03.617Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230950567669191,
+  "current_version_id": 240253220175970,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

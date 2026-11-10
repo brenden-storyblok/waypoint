@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:36.449Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T20:58:43.831Z",
+  "published_at": "2026-11-10T20:58:43.799Z",
   "id": 230626587493573,
   "uuid": "a940b7b0-b6fb-4a49-935b-b26d25f45730",
   "is_folder": false,
@@ -29,7 +29,52 @@
       ]
     },
     "question": "When is the best time to visit Lisbon?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "April bis Juni und September bis Oktober. Die Tage bleiben warm, und die Warteschlangen in Belém und an der Burg bleiben kurz.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De abril a junio y de septiembre a octubre. Los días siguen siendo cálidos y las colas en Belém y en el castillo se mantienen cortas.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "D'avril à juin et de septembre à octobre. Les journées restent chaudes et les files d'attente à Belém et au château restent courtes.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Wann ist die beste Reisezeit für Lissabon?",
+    "question__i18n__es": "¿Cuál es la mejor época para visitar Lisboa?",
+    "question__i18n__fr": "Quelle est la meilleure période pour visiter Lisbonne ?"
   },
   "published": true,
   "slug": "lisbon-best-time-to-visit",
@@ -50,8 +95,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "2c2f07c4584a59d56c087dacd155a68fb2621db6",
-    "timestamp": "1792592505"
+    "token": "61e3bae6a86a51429d317bae5848afd389ddb122",
+    "timestamp": "1794347528"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -93,28 +138,134 @@
       "path": "data/faqs/lisbon-best-time-to-visit",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/lisbon-best-time-to-visit",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/lisbon-best-time-to-visit",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": 0,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240256062553632,
+      "story_id": 230626587493573,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:25.268Z",
+      "published_at": "2026-11-10T21:24:25.268Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230845758261298",
+          "display_name": "Portugal",
+          "name": "portugal",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230846207203379",
+          "display_name": "Lisbon",
+          "name": "lisbon",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256065547809,
+      "story_id": 230626587493573,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:26.000Z",
+      "published_at": "2026-11-10T21:24:26.000Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230845758261298",
+          "display_name": "Portugal",
+          "name": "portugal",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230846207203379",
+          "display_name": "Lisbon",
+          "name": "lisbon",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256068357666,
+      "story_id": 230626587493573,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:26.685Z",
+      "published_at": "2026-11-10T21:24:26.685Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230845758261298",
+          "display_name": "Portugal",
+          "name": "portugal",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230846207203379",
+          "display_name": "Lisbon",
+          "name": "lisbon",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857262787912,
+  "current_version_id": 240249716731890,
   "variant_type": null,
   "taxonomy_terms": [
     {

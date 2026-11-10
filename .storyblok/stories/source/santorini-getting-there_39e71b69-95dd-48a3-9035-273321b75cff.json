@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:36.977Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T21:06:11.301Z",
+  "published_at": "2026-11-10T21:06:11.266Z",
   "id": 230846656809596,
   "uuid": "39e71b69-95dd-48a3-9035-273321b75cff",
   "is_folder": false,
@@ -38,7 +38,79 @@
       ]
     },
     "question": "How do I get there?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Du kannst fliegen oder die Fähre nehmen. Der Flughafen von Santorin liegt in der Nähe von Fira und hat häufige Flüge ab Athen, die etwa 45 Minuten dauern.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Fähren fahren ab Piräus, dem Hafen von Athen, und verbinden Santorin auch mit anderen Kykladeninseln. Die Überfahrt ab Piräus dauert etwa 5 bis 8 Stunden.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "En avión o en ferri. El aeropuerto de Santorini está cerca de Fira y tiene vuelos frecuentes desde Atenas, que duran unos 45 minutos.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los ferris salen del Pireo, el puerto de Atenas, y también conectan con otras islas de las Cícladas. La travesía desde el Pireo dura entre 5 y 8 horas aproximadamente.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Prenez l'avion ou le ferry. L'aéroport de Santorin se trouve près de Fira et propose de fréquents vols depuis Athènes, d'une durée d'environ 45 minutes.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Les ferries partent du Pirée, le port d'Athènes, et relient aussi d'autres îles des Cyclades. La traversée depuis le Pirée dure environ 5 à 8 heures.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Wie komme ich dorthin?",
+    "question__i18n__es": "¿Cómo llego?",
+    "question__i18n__fr": "Comment s'y rendre ?"
   },
   "published": true,
   "slug": "santorini-getting-there",
@@ -59,8 +131,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "1c6ee6c384e2502d103e10e793d5c19576df78ad",
-    "timestamp": "1792592499"
+    "token": "9ce030a66ffc9a88f90accf5913b9568a5ad298b",
+    "timestamp": "1794347520"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -102,28 +174,134 @@
       "path": "data/faqs/santorini-getting-there",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/santorini-getting-there",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/santorini-getting-there",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -100,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255860973020,
+      "story_id": 230846656809596,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:36.053Z",
+      "published_at": "2026-11-10T21:23:36.053Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230851230324796",
+          "display_name": "Greece",
+          "name": "greece",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851260839997",
+          "display_name": "Santorini",
+          "name": "santorini",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255863696863,
+      "story_id": 230846656809596,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:36.718Z",
+      "published_at": "2026-11-10T21:23:36.718Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230851230324796",
+          "display_name": "Greece",
+          "name": "greece",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851260839997",
+          "display_name": "Santorini",
+          "name": "santorini",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255866351073,
+      "story_id": 230846656809596,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:37.368Z",
+      "published_at": "2026-11-10T21:23:37.368Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230851230324796",
+          "display_name": "Greece",
+          "name": "greece",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851260839997",
+          "display_name": "Santorini",
+          "name": "santorini",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857264999765,
+  "current_version_id": 240251532687252,
   "variant_type": null,
   "taxonomy_terms": [
     {

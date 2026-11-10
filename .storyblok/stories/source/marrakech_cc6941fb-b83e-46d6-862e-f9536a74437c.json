@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:19:21.196Z",
-  "published_at": "2026-10-15T14:19:21.181Z",
+  "updated_at": "2026-11-10T21:11:14.489Z",
+  "published_at": "2026-11-10T21:11:14.472Z",
   "id": 230950343248700,
   "uuid": "cc6941fb-b83e-46d6-862e-f9536a74437c",
   "is_folder": false,
@@ -22,17 +22,26 @@
       {
         "_uid": "0459d144-e3cd-4e5a-9d53-d33d0dc578d5",
         "headline": "Why Marrakech",
-        "component": "destination_usps"
+        "component": "destination_usps",
+        "headline__i18n__de": "Warum Marrakesch",
+        "headline__i18n__es": "Por qué Marrakech",
+        "headline__i18n__fr": "Pourquoi Marrakech"
       },
       {
         "_uid": "b3e77cc5-c15d-4844-9fb3-9286d47266aa",
         "headline": "About Marrakech",
-        "component": "destination_bio"
+        "component": "destination_bio",
+        "headline__i18n__de": "Über Marrakesch",
+        "headline__i18n__es": "Sobre Marrakech",
+        "headline__i18n__fr": "À propos de Marrakech"
       },
       {
         "_uid": "d07f00da-14a0-4037-8ed0-b8d331a5cb41",
         "headline": "Marrakech in pictures",
-        "component": "destination_gallery"
+        "component": "destination_gallery",
+        "headline__i18n__de": "Marrakesch in Bildern",
+        "headline__i18n__es": "Marrakech en imágenes",
+        "headline__i18n__fr": "Marrakech en images"
       },
       {
         "_uid": "8c20d410-fa0c-49b0-aeec-867251bef606",
@@ -98,7 +107,193 @@
           ]
         },
         "headline": "Getting around",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Die Medina ist eine Stadt zum Zufußgehen, und die meisten ihrer Gassen sind zu schmal für Autos. Beige Petit Taxis bringen dich zu Zielen außerhalb der Stadtmauern; bitte den Fahrer, das Taxameter einzuschalten, oder vereinbare den Fahrpreis, bevor du einsteigst.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Der Flughafen Menara liegt etwa 6 km von Jemaa el-Fna entfernt, mit dem Taxi rund 15 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Züge von Marrakesch nach Casablanca brauchen weniger als 3 Stunden.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Imlil, der Ausgangspunkt für den Toubkal, ist etwa 90 Minuten mit dem Auto entfernt.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La medina es una ciudad para recorrer a pie, y la mayoría de sus callejones son demasiado estrechos para los coches. Los petits taxis beige cubren los trayectos fuera de las murallas; pide al conductor que ponga el taxímetro o acuerda la tarifa antes de subir.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "El aeropuerto de Menara está a unos 6 km de Jemaa el-Fna, unos 15 minutos en taxi.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Los trenes de Marrakech a Casablanca tardan menos de 3 horas.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Imlil, el punto de partida hacia el Toubkal, está a unos 90 minutos por carretera.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La médina se visite à pied, et la plupart de ses ruelles sont trop étroites pour les voitures. Les petits taxis beiges assurent les trajets au-delà des remparts ; demandez au chauffeur d'enclencher le compteur ou convenez du prix avant de monter.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "L'aéroport de Menara se trouve à environ 6 km de Jemaa el-Fna, soit 15 minutes en taxi.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Les trains de Marrakech à Casablanca prennent moins de 3 heures.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Imlil, point de départ de l'ascension du Toubkal, est à environ 90 minutes de route.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Unterwegs",
+        "headline__i18n__es": "Cómo moverse",
+        "headline__i18n__fr": "Se déplacer"
       }
     ],
     "component": "destination_page",
@@ -123,8 +318,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "1c6ee6c384e2502d103e10e793d5c19576df78ad",
-    "timestamp": "1792592499"
+    "token": "c33351fca276f5ca874fc3520da4103c5e9bfdf2",
+    "timestamp": "1794347521"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -156,28 +351,59 @@
       "path": "destinations/marrakech",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/marrakech",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/marrakech",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -110,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255636544905,
+      "story_id": 230950343248700,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:41.262Z",
+      "published_at": "2026-11-10T21:22:41.262Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255766269372,
+      "story_id": 230950343248700,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:12.931Z",
+      "published_at": "2026-11-10T21:23:12.931Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255889980912,
+      "story_id": 230950343248700,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:43.135Z",
+      "published_at": "2026-11-10T21:23:43.135Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230950343334971,
+  "current_version_id": 240252823137596,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

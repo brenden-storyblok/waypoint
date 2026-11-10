@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:37.436Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T20:56:25.346Z",
+  "published_at": "2026-11-10T20:56:25.315Z",
   "id": 230847310150332,
   "uuid": "e46431f0-5a2d-42fa-ac57-b7ff018cc1fa",
   "is_folder": false,
@@ -38,7 +38,79 @@
       ]
     },
     "question": "Do I need a car?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Nein. Die Küstenstraße SS163 ist schmal und im Sommer nur langsam befahrbar, und Parkplätze in den Orten sind knapp und teuer.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "SITA-Busse und saisonale Fähren verbinden die wichtigsten Orte.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "No. La carretera de la costa, la SS163, es estrecha y lenta en verano, y aparcar en los pueblos es difícil y caro.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los autobuses de SITA y los ferris de temporada conectan las principales localidades.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Non. La route côtière, la SS163, est étroite et lente en été, et le stationnement dans les villes est rare et coûteux.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Les bus SITA et les ferries saisonniers relient les principales villes.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Brauche ich ein Auto?",
+    "question__i18n__es": "¿Necesito coche?",
+    "question__i18n__fr": "Ai-je besoin d'une voiture ?"
   },
   "published": true,
   "slug": "amalfi-coast-do-i-need-a-car",
@@ -59,8 +131,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "b8b03a1c8920a61f7409919aa9e8afc67e9edeb5",
-    "timestamp": "1792592496"
+    "token": "7e4110f83bd1226fe14dce67559a17a46fd56d1c",
+    "timestamp": "1794347518"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -102,28 +174,134 @@
       "path": "data/faqs/amalfi-coast-do-i-need-a-car",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/amalfi-coast-do-i-need-a-car",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/amalfi-coast-do-i-need-a-car",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -180,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255672782234,
+      "story_id": 230847310150332,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:50.110Z",
+      "published_at": "2026-11-10T21:22:50.110Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230850699671607",
+          "display_name": "Italy",
+          "name": "italy",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851169421370",
+          "display_name": "Amalfi Coast",
+          "name": "amalfi-coast",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255675350427,
+      "story_id": 230847310150332,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:50.737Z",
+      "published_at": "2026-11-10T21:22:50.737Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230850699671607",
+          "display_name": "Italy",
+          "name": "italy",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851169421370",
+          "display_name": "Amalfi Coast",
+          "name": "amalfi-coast",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255678082460,
+      "story_id": 230847310150332,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:51.403Z",
+      "published_at": "2026-11-10T21:22:51.403Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230850699671607",
+          "display_name": "Italy",
+          "name": "italy",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851169421370",
+          "display_name": "Amalfi Coast",
+          "name": "amalfi-coast",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857266875746,
+  "current_version_id": 240249143471542,
   "variant_type": null,
   "taxonomy_terms": [
     {

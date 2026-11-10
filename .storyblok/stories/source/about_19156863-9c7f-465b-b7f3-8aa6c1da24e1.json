@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-16T13:49:10.469Z",
-  "published_at": "2026-10-16T13:49:10.456Z",
+  "updated_at": "2026-11-10T21:04:02.320Z",
+  "published_at": "2026-11-10T21:04:02.300Z",
   "id": 231292059093148,
   "uuid": "19156863-9c7f-465b-b7f3-8aa6c1da24e1",
   "is_folder": false,
@@ -27,7 +27,10 @@
             },
             "label": "Browse destinations",
             "variant": "primary",
-            "component": "button"
+            "component": "button",
+            "label__i18n__de": "Reiseziele entdecken",
+            "label__i18n__es": "Explorar destinos",
+            "label__i18n__fr": "Parcourir les destinations"
           }
         ],
         "_uid": "660a5ebe-9ddc-47ec-89d6-c80a3b846a15",
@@ -48,7 +51,13 @@
         },
         "intro": "An editorial travel guide to places worth a second trip.",
         "headline": "About Waypoint",
-        "component": "hero"
+        "component": "hero",
+        "intro__i18n__de": "Ein redaktioneller Reiseführer zu Orten, die eine zweite Reise wert sind.",
+        "intro__i18n__es": "Una guía de viaje editorial sobre lugares que merecen un segundo viaje.",
+        "intro__i18n__fr": "Un guide de voyage éditorial sur des lieux qui méritent un deuxième voyage.",
+        "headline__i18n__de": "Über Waypoint",
+        "headline__i18n__es": "Sobre Waypoint",
+        "headline__i18n__fr": "À propos de Waypoint"
       },
       {
         "_uid": "2c0c4883-882d-4292-9a41-5a07265b9764",
@@ -76,7 +85,79 @@
           ]
         },
         "headline": "Who we are",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Waypoint ist ein redaktioneller Reiseführer. Unsere Redakteure beschreiben jedes Reiseziel einmal mit allem, was man für die Planung eines Besuchs braucht: wann man fahren sollte, wo man übernachten kann und wie man sich fortbewegt.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Wir verkaufen keine Reisen. Du planst und buchst bei wem du möchtest.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Waypoint es una guía editorial. Nuestros editores describen cada destino una sola vez, con lo que un viajero necesita para planificar una visita: cuándo ir, dónde alojarse y cómo moverse.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "No vendemos viajes. Tú planificas y reservas con quien elijas.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Waypoint est un guide éditorial. Nos rédacteurs décrivent chaque destination une seule fois, avec ce dont un voyageur a besoin pour préparer sa visite : quand partir, où dormir et comment se déplacer.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Nous ne vendons pas de voyages. Vous planifiez et réservez auprès de qui vous voulez.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Wer wir sind",
+        "headline__i18n__es": "Quiénes somos",
+        "headline__i18n__fr": "Qui sommes-nous"
       },
       {
         "_uid": "a1bd5df7-ba08-44c7-80bf-348d6fcf3c8b",
@@ -91,14 +172,20 @@
             },
             "label": "Get inspired",
             "variant": "primary",
-            "component": "button"
+            "component": "button",
+            "label__i18n__de": "Lass dich inspirieren",
+            "label__i18n__es": "Inspírate",
+            "label__i18n__fr": "Laissez-vous inspirer"
           }
         ],
         "padding": "compact",
         "headline": "Not sure where to go?",
         "component": "section",
         "background": "accent",
-        "headline_position": "start"
+        "headline_position": "start",
+        "headline__i18n__de": "Unsicher, wohin die Reise gehen soll?",
+        "headline__i18n__es": "¿No sabes dónde ir?",
+        "headline__i18n__fr": "Vous ne savez pas où partir ?"
       },
       {
         "_uid": "9dd62064-f365-49cb-a2fc-f14497f94d2a",
@@ -117,7 +204,52 @@
           ]
         },
         "headline": "How we choose destinations",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Unsere Redakteure wählen Orte aus, die sie in mehr als einer Jahreszeit besucht haben. Wir fügen ein Reiseziel erst hinzu, nachdem es sich eine zweite Reise verdient hat.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Nuestros editores eligen lugares que han visitado en más de una temporada. Solo añadimos un destino después de que se haya ganado un segundo viaje.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Nos rédacteurs choisissent des lieux qu’ils ont visités en plus d’une saison. Nous n’ajoutons une destination qu’après qu’elle a mérité un deuxième voyage.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Wie wir Reiseziele auswählen",
+        "headline__i18n__es": "Cómo elegimos los destinos",
+        "headline__i18n__fr": "Comment nous choisissons les destinations"
       },
       {
         "_uid": "b0a6ece3-a4a3-4faf-91b4-6ff19cb91d3a",
@@ -136,7 +268,52 @@
           ]
         },
         "headline": "How we stay independent",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Waypoint kennzeichnet jeden Partnerlink auf der Seite, sodass du ihn vor dem Klicken erkennen kannst.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Waypoint marca cualquier enlace de socios en la página, para que puedas verlo antes de hacer clic.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Waypoint signale tout lien partenaire sur la page, afin que vous puissiez le voir avant de cliquer.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Wie wir unabhängig bleiben",
+        "headline__i18n__es": "Cómo mantenemos nuestra independencia",
+        "headline__i18n__fr": "Comment nous restons indépendants"
       },
       {
         "_uid": "138537e0-b831-47cf-bf3d-c5281c141c67",
@@ -151,14 +328,20 @@
             },
             "label": "Search destinations",
             "variant": "primary",
-            "component": "button"
+            "component": "button",
+            "label__i18n__de": "Reiseziele suchen",
+            "label__i18n__es": "Buscar destinos",
+            "label__i18n__fr": "Rechercher des destinations"
           }
         ],
         "padding": "compact",
         "headline": "Already have a place in mind?",
         "component": "section",
         "background": "inverse",
-        "headline_position": "start"
+        "headline_position": "start",
+        "headline__i18n__de": "Hast du schon ein Ziel im Kopf?",
+        "headline__i18n__es": "¿Ya tienes un lugar en mente?",
+        "headline__i18n__fr": "Vous avez déjà un lieu en tête ?"
       },
       {
         "_uid": "1c92f0f5-2946-45b6-b600-0ee8edfd9b93",
@@ -173,14 +356,20 @@
             },
             "label": "Visit Help",
             "variant": "secondary",
-            "component": "button"
+            "component": "button",
+            "label__i18n__de": "Zur Hilfe",
+            "label__i18n__es": "Visitar Ayuda",
+            "label__i18n__fr": "Consulter l’aide"
           }
         ],
         "padding": "compact",
         "headline": "Have a question?",
         "component": "section",
         "background": "surface",
-        "headline_position": "start"
+        "headline_position": "start",
+        "headline__i18n__de": "Hast du eine Frage?",
+        "headline__i18n__es": "¿Tienes alguna pregunta?",
+        "headline__i18n__fr": "Une question ?"
       }
     ],
     "component": "page"
@@ -198,8 +387,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "64feb09f487e6210a422038da98f79f53180e644",
-    "timestamp": "1792592501"
+    "token": "2216a31313fb0e4b3f2c99c4ddb4a5e377206812",
+    "timestamp": "1794347523"
   },
   "pinned": false,
   "breadcrumbs": [],
@@ -220,28 +409,59 @@
       "path": "about",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "about",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "about",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -50,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255558753630,
+      "story_id": 231292059093148,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:22.269Z",
+      "published_at": "2026-11-10T21:22:22.269Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255613578614,
+      "story_id": 231292059093148,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:35.654Z",
+      "published_at": "2026-11-10T21:22:35.654Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255662816659,
+      "story_id": 231292059093148,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:47.675Z",
+      "published_at": "2026-11-10T21:22:47.675Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 231296820875386,
+  "current_version_id": 240251026478617,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

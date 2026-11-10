@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:36.499Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T20:58:43.058Z",
+  "published_at": "2026-11-10T20:58:43.036Z",
   "id": 230626592093382,
   "uuid": "59938eae-2279-4f95-b29c-2476ad6c88ef",
   "is_folder": false,
@@ -29,7 +29,52 @@
       ]
     },
     "question": "Do I need a car?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Nein. U-Bahn, Straßenbahnen und Vorortzüge erreichen alles in der Stadt und entlang der Küste.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "No. El metro, los tranvías y los trenes de cercanías llegan a todo en la ciudad y a lo largo de la costa.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Non. Le métro, les tramways et les trains de banlieue desservent tout en ville et le long de la côte.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Brauche ich ein Auto?",
+    "question__i18n__es": "¿Necesito coche?",
+    "question__i18n__fr": "Ai-je besoin d'une voiture ?"
   },
   "published": true,
   "slug": "lisbon-do-i-need-a-car",
@@ -50,8 +95,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "40982a284b433403eebb5db763e9d1b488336fed",
-    "timestamp": "1792592504"
+    "token": "b3c508685ecd57d6f3ab82b81631d2db26fbd0f6",
+    "timestamp": "1794347526"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -93,28 +138,134 @@
       "path": "data/faqs/lisbon-do-i-need-a-car",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/lisbon-do-i-need-a-car",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/lisbon-do-i-need-a-car",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -10,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240256053153309,
+      "story_id": 230626592093382,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:22.973Z",
+      "published_at": "2026-11-10T21:24:22.973Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230845758261298",
+          "display_name": "Portugal",
+          "name": "portugal",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230846207203379",
+          "display_name": "Lisbon",
+          "name": "lisbon",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256056516126,
+      "story_id": 230626592093382,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:23.794Z",
+      "published_at": "2026-11-10T21:24:23.794Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230845758261298",
+          "display_name": "Portugal",
+          "name": "portugal",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230846207203379",
+          "display_name": "Lisbon",
+          "name": "lisbon",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256059534879,
+      "story_id": 230626592093382,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:24.531Z",
+      "published_at": "2026-11-10T21:24:24.531Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230845758261298",
+          "display_name": "Portugal",
+          "name": "portugal",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230846207203379",
+          "display_name": "Lisbon",
+          "name": "lisbon",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857263009097,
+  "current_version_id": 240249714200559,
   "variant_type": null,
   "taxonomy_terms": [
     {

@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T12:26:59.977Z",
-  "published_at": "2026-10-15T12:26:59.951Z",
+  "updated_at": "2026-11-10T21:05:15.559Z",
+  "published_at": "2026-11-10T21:05:15.534Z",
   "id": 230846886427309,
   "uuid": "7e2fc354-d07b-43c6-bb01-6a71ff5154ac",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "8b3e4c20-5d9f-4e77-9c33-4f6a0d9c2e01",
         "text": "The Zugspitze reaches 2,962 metres. Cable cars run to the summit from the Eibsee and from Garmisch.",
         "title": "Germany's highest peak",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Die Zugspitze ist 2.962 Meter hoch. Seilbahnen fahren vom Eibsee und von Garmisch zum Gipfel.",
+        "text__i18n__es": "La Zugspitze alcanza los 2962 metros. Los teleféricos suben a la cumbre desde el Eibsee y desde Garmisch.",
+        "text__i18n__fr": "La Zugspitze culmine à 2 962 mètres. Des téléphériques montent au sommet depuis l'Eibsee et depuis Garmisch.",
+        "title__i18n__de": "Deutschlands höchster Gipfel",
+        "title__i18n__es": "La cumbre más alta de Alemania",
+        "title__i18n__fr": "Le plus haut sommet d'Allemagne"
       },
       {
         "_uid": "8b3e4c20-5d9f-4e77-9c33-4f6a0d9c2e02",
         "text": "Electric boats cross the lake to St. Bartholomä, a church with red onion domes at the foot of the Watzmann massif.",
         "title": "A boat ride on the Königssee",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Elektroboote fahren über den See nach St. Bartholomä, einer Kirche mit roten Zwiebeltürmen am Fuß des Watzmann-Massivs.",
+        "text__i18n__es": "Barcos eléctricos cruzan el lago hasta St. Bartholomä, una iglesia con cúpulas de cebolla rojas a los pies del macizo del Watzmann.",
+        "text__i18n__fr": "Des bateaux électriques traversent le lac jusqu'à St. Bartholomä, une église aux bulbes rouges au pied du massif du Watzmann.",
+        "title__i18n__de": "Eine Bootsfahrt auf dem Königssee",
+        "title__i18n__es": "Un paseo en barco por el Königssee",
+        "title__i18n__fr": "Une balade en bateau sur le Königssee"
       },
       {
         "_uid": "8b3e4c20-5d9f-4e77-9c33-4f6a0d9c2e03",
         "text": "Ludwig II began this hilltop castle in 1869. It stands near Füssen, above Hohenschwangau.",
         "title": "Neuschwanstein Castle",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Ludwig II. begann 1869 mit dem Bau dieses Schlosses auf dem Berg. Es steht bei Füssen, oberhalb von Hohenschwangau.",
+        "text__i18n__es": "Luis II comenzó este castillo en lo alto de una colina en 1869. Se alza cerca de Füssen, sobre Hohenschwangau.",
+        "text__i18n__fr": "Louis II a commencé la construction de ce château perché en 1869. Il se dresse près de Füssen, au-dessus de Hohenschwangau.",
+        "title__i18n__de": "Schloss Neuschwanstein",
+        "title__i18n__es": "Castillo de Neuschwanstein",
+        "title__i18n__fr": "Château de Neuschwanstein"
       },
       {
         "_uid": "8b3e4c20-5d9f-4e77-9c33-4f6a0d9c2e04",
         "text": "Marked trails link alpine huts that serve hot meals and offer beds. Book overnight stays ahead in summer.",
         "title": "Hut-to-hut hiking",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Markierte Wege verbinden Berghütten, die warme Mahlzeiten servieren und Betten anbieten. Übernachtungen solltest du im Sommer vorab buchen.",
+        "text__i18n__es": "Senderos señalizados conectan refugios de montaña que sirven comidas calientes y ofrecen camas. Reserva las noches con antelación en verano.",
+        "text__i18n__fr": "Des sentiers balisés relient des refuges de montagne qui servent des repas chauds et proposent des lits. Réservez vos nuits à l'avance en été.",
+        "title__i18n__de": "Hüttenwanderung",
+        "title__i18n__es": "Senderismo de refugio en refugio",
+        "title__i18n__fr": "Randonnée de refuge en refuge"
       }
     ],
     "region": "Bavaria",
@@ -173,6 +197,9 @@
       "copyright": "Daniel Seßler / Unsplash",
       "fieldtype": "asset"
     },
+    "name__i18n__de": "Bayerische Alpen",
+    "name__i18n__es": "Alpes bávaros",
+    "name__i18n__fr": "Alpes bavaroises",
     "image_landscape": {
       "id": 230846547456669,
       "alt": "Neuschwanstein Castle on its wooded rock, framed by branches, with a lake and green fields behind",
@@ -182,6 +209,108 @@
       "filename": "https://a.storyblok.com/f/295888311565739/359df38054/bavarian-alps-neuschwanstein-spring.jpg",
       "copyright": "Kay Mayer / Unsplash",
       "fieldtype": "asset"
+    },
+    "region__i18n__de": "Bayern",
+    "region__i18n__es": "Baviera",
+    "region__i18n__fr": "Bavière",
+    "summary__i18n__de": "Kalksteingipfel, grüne Seen und ein Märchenschloss, alles eine Zugfahrt von München entfernt. Deutschlands Hochgebirge, mit einer Hütte am Ende der meisten Wege.",
+    "summary__i18n__es": "Cumbres calizas, lagos verdes y un castillo de cuento, todo a un trayecto en tren de Múnich. La alta montaña de Alemania, con un refugio al final de la mayoría de los senderos.",
+    "summary__i18n__fr": "Sommets calcaires, lacs verts et château de conte de fées, à un trajet en train de Munich. La haute montagne allemande, avec un refuge au bout de la plupart des sentiers.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Die Bayerischen Alpen verlaufen entlang der deutschen Südgrenze zu Österreich. Im Gebirge liegen die Zugspitze, mit 2.962 Metern der höchste Berg des Landes, sowie Seen wie der Eibsee und der Königssee.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Zwei Gegenden ziehen die meisten Besucher an. Garmisch-Partenkirchen liegt unterhalb der Zugspitze, Berchtesgaden nahe der österreichischen Grenze. König Ludwig II. begann 1869 mit dem Bau von Neuschwanstein oberhalb des Tals bei Füssen. In den Dörfern gibt es bemalte Bauernhäuser und Kirchen mit Zwiebeltürmen.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Von Juni bis Anfang Oktober ist die Hauptwandersaison, wenn Hütten und Seilbahnen geöffnet sind. Der Winter bringt Skifahren und ruhigere Wege. Nimm mehrere Schichten Kleidung mit, denn das Wetter im Hochgebirge ändert sich schnell.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los Alpes bávaros recorren la frontera sur de Alemania con Austria. La cordillera alberga la Zugspitze, la cumbre más alta del país con 2962 metros, y lagos como el Eibsee y el Königssee.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Dos zonas atraen a la mayoría de los visitantes. Garmisch-Partenkirchen se encuentra al pie de la Zugspitze y Berchtesgaden, cerca de la frontera austriaca. El rey Luis II comenzó a construir Neuschwanstein en 1869, sobre el valle cercano a Füssen. Los pueblos conservan casas de labranza pintadas e iglesias con cúpulas de cebolla.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De junio a principios de octubre es la temporada principal de senderismo, cuando están abiertos los refugios y los teleféricos. El invierno trae esquí y senderos más tranquilos. Lleva ropa por capas, porque el tiempo en las zonas altas cambia rápido.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Les Alpes bavaroises longent la frontière sud de l'Allemagne avec l'Autriche. Le massif abrite la Zugspitze, plus haut sommet du pays avec 2 962 mètres, et des lacs comme l'Eibsee et le Königssee.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Deux zones attirent la plupart des visiteurs. Garmisch-Partenkirchen s'étend sous la Zugspitze et Berchtesgaden se trouve près de la frontière autrichienne. Le roi Louis II a commencé à construire Neuschwanstein en 1869, au-dessus de la vallée près de Füssen. Les villages conservent des fermes peintes et des églises à bulbes.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De juin à début octobre, c'est la principale saison de randonnée, quand les refuges et les téléphériques sont ouverts. L'hiver apporte le ski et des sentiers plus calmes. Prévoyez plusieurs couches de vêtements, car le temps en haute montagne change vite.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -203,8 +332,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "09415f6f67eee6434beda3616b9a277075f4324a",
-    "timestamp": "1792592503"
+    "token": "e5843636d7673e0d8482a9ecb8eae4db8fad27bc",
+    "timestamp": "1794347524"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -246,28 +375,98 @@
       "path": "data/destinations/bavarian-alps",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/bavarian-alps",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/bavarian-alps",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -20,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240256177139246,
+      "story_id": 230846886427309,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:53.242Z",
+      "published_at": "2026-11-10T21:24:53.242Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230850677905462",
+          "display_name": "Germany",
+          "name": "germany",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256180600367,
+      "story_id": 230846886427309,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:54.087Z",
+      "published_at": "2026-11-10T21:24:54.087Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230850677905462",
+          "display_name": "Germany",
+          "name": "germany",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256183537200,
+      "story_id": 230846886427309,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:54.804Z",
+      "published_at": "2026-11-10T21:24:54.804Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230850677905462",
+          "display_name": "Germany",
+          "name": "germany",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230922731151744,
+  "current_version_id": 240251353065230,
   "variant_type": null,
   "taxonomy_terms": [
     {

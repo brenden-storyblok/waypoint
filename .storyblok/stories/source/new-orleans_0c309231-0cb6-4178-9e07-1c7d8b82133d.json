@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:33:54.448Z",
-  "published_at": "2026-10-15T14:33:54.433Z",
+  "updated_at": "2026-11-10T20:55:40.212Z",
+  "published_at": "2026-11-10T20:55:40.193Z",
   "id": 230953920106258,
   "uuid": "0c309231-0cb6-4178-9e07-1c7d8b82133d",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "9b7ef655-fc46-46be-b2cb-a90155deeb94",
         "text": "Clubs like the Spotted Cat Music Club book live bands every night of the week.",
         "title": "Live music on Frenchmen Street",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Clubs wie der Spotted Cat Music Club buchen an jedem Abend der Woche Livebands.",
+        "text__i18n__es": "Locales como el Spotted Cat Music Club programan música en directo todas las noches de la semana.",
+        "text__i18n__fr": "Des clubs comme le Spotted Cat Music Club programment des groupes en concert tous les soirs de la semaine.",
+        "title__i18n__de": "Livemusik auf der Frenchmen Street",
+        "title__i18n__es": "Música en directo en Frenchmen Street",
+        "title__i18n__fr": "Musique live sur Frenchmen Street"
       },
       {
         "_uid": "9384f3de-f1fd-4ee5-8b25-8bba98ef0549",
         "text": "The French Market coffee stand has served beignets and chicory café au lait since 1862.",
         "title": "Beignets at Café du Monde",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Der Kaffeestand am French Market serviert seit 1862 Beignets und Café au Lait mit Zichorie.",
+        "text__i18n__es": "El puesto de café del French Market sirve buñuelos beignets y café au lait con achicoria desde 1862.",
+        "text__i18n__fr": "Le café du French Market sert des beignets et du café au lait à la chicorée depuis 1862.",
+        "title__i18n__de": "Beignets im Café du Monde",
+        "title__i18n__es": "Beignets en el Café du Monde",
+        "title__i18n__fr": "Beignets au Café du Monde"
       },
       {
         "_uid": "c34c9b79-4c2e-4834-b949-22d47785f1d6",
         "text": "The St. Charles line, running since 1835, is the oldest continuously operating street railway in the world.",
         "title": "Streetcars under the oaks",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Die St.-Charles-Linie, die seit 1835 verkehrt, ist die älteste ununterbrochen betriebene Straßenbahn der Welt.",
+        "text__i18n__es": "La línea St. Charles, en servicio desde 1835, es el tranvía de funcionamiento continuo más antiguo del mundo.",
+        "text__i18n__fr": "La ligne St. Charles, en service depuis 1835, est le plus ancien tramway du monde encore en exploitation continue.",
+        "title__i18n__de": "Straßenbahnen unter den Eichen",
+        "title__i18n__es": "Tranvías bajo los robles",
+        "title__i18n__fr": "Tramways sous les chênes"
       },
       {
         "_uid": "5552de77-d568-4f7e-8abd-ed382fc467a5",
         "text": "St. Louis Cathedral, rebuilt in 1850, faces the square where engineers laid out the city in 1721.",
         "title": "Jackson Square",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Die 1850 wiedererrichtete St. Louis Cathedral blickt auf den Platz, an dem Ingenieure die Stadt 1721 angelegt haben.",
+        "text__i18n__es": "La catedral de San Luis, reconstruida en 1850, da a la plaza donde los ingenieros trazaron la ciudad en 1721.",
+        "text__i18n__fr": "La cathédrale Saint-Louis, reconstruite en 1850, donne sur la place où des ingénieurs ont tracé le plan de la ville en 1721.",
+        "title__i18n__de": "Jackson Square",
+        "title__i18n__es": "Jackson Square",
+        "title__i18n__fr": "Jackson Square"
       }
     ],
     "region": "Louisiana",
@@ -182,6 +206,9 @@
         "size": "2400x3278"
       }
     },
+    "name__i18n__de": "New Orleans",
+    "name__i18n__es": "Nueva Orleans",
+    "name__i18n__fr": "La Nouvelle-Orléans",
     "image_landscape": {
       "id": 230953611066921,
       "alt": "Hanging ferns fill the curved cast-iron galleries of a red brick corner building in the French Quarter.",
@@ -195,6 +222,108 @@
       "meta_data": {
         "size": "2400x1600"
       }
+    },
+    "region__i18n__de": "Louisiana",
+    "region__i18n__es": "Luisiana",
+    "region__i18n__fr": "Louisiane",
+    "summary__i18n__de": "Eine Hafenstadt in einer Biegung des Mississippi, 1718 von den Franzosen gegründet. Brass Bands auf der Frenchmen Street, Beignets im Morgengrauen und Gumbo zu jeder Stunde.",
+    "summary__i18n__es": "Una ciudad portuaria en un meandro del Misisipi, fundada por los franceses en 1718. Bandas de metales en Frenchmen Street, beignets al amanecer y gumbo a cualquier hora.",
+    "summary__i18n__fr": "Une ville portuaire dans un méandre du Mississippi, fondée par les Français en 1718. Fanfares sur Frenchmen Street, beignets à l'aube et gumbo à toute heure.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "New Orleans liegt in einer engen Biegung des Mississippi, flussaufwärts vom Golf von Mexiko und südlich des Lake Pontchartrain. Wegen dieser Biegung heißt die Stadt Crescent City, die Stadt der Mondsichel. Große Teile der Stadt liegen hinter Deichen unter dem Meeresspiegel.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Jean-Baptiste Le Moyne de Bienville gründete die Stadt 1718 für Frankreich. Fast 40 Jahre lang herrschte Spanien über sie, bevor 1803 der Louisiana Purchase folgte. Die meisten Gebäude im French Quarter stammen aus der Zeit nach den Bränden von 1788 und 1794. Der Jazz entstand hier Anfang des 20. Jahrhunderts aus Brass Bands, Blues und Kirchenmusik.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Von Februar bis Mai ist das Wetter mild, und die größten Festivals finden statt, Mardi Gras und das Jazz Fest. Der Sommer ist heiß und schwül, und die Hurrikansaison dauert von Juni bis November.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Nueva Orleans se asienta en un cerrado meandro del río Misisipi, río arriba del golfo de México, con el lago Pontchartrain al norte. Ese meandro le dio el nombre de Crescent City, la ciudad de la media luna. Gran parte de la ciudad está por debajo del nivel del mar, protegida por diques.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Jean-Baptiste Le Moyne de Bienville fundó la ciudad para Francia en 1718. España la gobernó durante casi 40 años antes de la compra de Luisiana de 1803, y la mayoría de los edificios del Barrio Francés son posteriores a los incendios de 1788 y 1794. El jazz nació aquí a principios del siglo XX a partir de las bandas de metales, el blues y la música religiosa.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De febrero a mayo hace buen tiempo y se celebran los mayores festivales, el Mardi Gras y el Jazz Fest. El verano es caluroso y húmedo, y la temporada de huracanes va de junio a noviembre.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La Nouvelle-Orléans occupe un étroit méandre du Mississippi, en amont du golfe du Mexique, avec le lac Pontchartrain au nord. Ce méandre lui a valu le surnom de Crescent City, la ville du croissant. Une grande partie de la ville se trouve sous le niveau de la mer, protégée par des digues.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Jean-Baptiste Le Moyne de Bienville a fondé la ville pour la France en 1718. L'Espagne l'a gouvernée pendant près de 40 ans avant l'achat de la Louisiane en 1803, et la plupart des bâtiments du Vieux Carré datent d'après les incendies de 1788 et de 1794. Le jazz est né ici au début du XXe siècle à partir des fanfares, du blues et de la musique religieuse.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De février à mai, le temps est doux et les plus grands festivals ont lieu, le Mardi gras et le Jazz Fest. L'été est chaud et humide, et la saison des ouragans dure de juin à novembre.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -216,8 +345,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "9d5d0e440e0e141dda98d947fea9262e701fc1e2",
-    "timestamp": "1792592495"
+    "token": "1ecfba03a0213079a03e8706ff33e69b15fea55c",
+    "timestamp": "1794347516"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -259,28 +388,59 @@
       "path": "data/destinations/new-orleans",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/new-orleans",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/new-orleans",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -210,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255554637147,
+      "story_id": 230953920106258,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:21.264Z",
+      "published_at": "2026-11-10T21:22:21.264Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255557176669,
+      "story_id": 230953920106258,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:21.885Z",
+      "published_at": "2026-11-10T21:22:21.885Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255560047968,
+      "story_id": 230953920106258,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:22.586Z",
+      "published_at": "2026-11-10T21:22:22.586Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230953920179302,
+  "current_version_id": 240248971021583,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:47.291Z",
-  "published_at": "2026-10-15T08:00:47.115Z",
+  "updated_at": "2026-11-10T20:58:02.696Z",
+  "published_at": "2026-11-10T20:58:02.678Z",
   "id": 230846919695023,
   "uuid": "c38df776-7ff9-4bd2-b659-efb345c975e9",
   "is_folder": false,
@@ -22,17 +22,26 @@
       {
         "_uid": "ad5a6e42-7f1b-4a99-be55-6b8c2f1e4a02",
         "headline": "Why Bavarian Alps",
-        "component": "destination_usps"
+        "component": "destination_usps",
+        "headline__i18n__de": "Warum die Bayerischen Alpen",
+        "headline__i18n__es": "Por qué los Alpes bávaros",
+        "headline__i18n__fr": "Pourquoi les Alpes bavaroises"
       },
       {
         "_uid": "ad5a6e42-7f1b-4a99-be55-6b8c2f1e4a03",
         "headline": "About Bavarian Alps",
-        "component": "destination_bio"
+        "component": "destination_bio",
+        "headline__i18n__de": "Über die Bayerischen Alpen",
+        "headline__i18n__es": "Sobre los Alpes bávaros",
+        "headline__i18n__fr": "À propos des Alpes bavaroises"
       },
       {
         "_uid": "ad5a6e42-7f1b-4a99-be55-6b8c2f1e4a04",
         "headline": "Bavarian Alps in pictures",
-        "component": "destination_gallery"
+        "component": "destination_gallery",
+        "headline__i18n__de": "Die Bayerischen Alpen in Bildern",
+        "headline__i18n__es": "Los Alpes bávaros en imágenes",
+        "headline__i18n__fr": "Les Alpes bavaroises en images"
       },
       {
         "_uid": "ad5a6e42-7f1b-4a99-be55-6b8c2f1e4a05",
@@ -98,17 +107,212 @@
           ]
         },
         "headline": "Getting around",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Züge und Busse erreichen die meisten Sehenswürdigkeiten. Ein Bayern-Ticket gilt einen Tag lang für Regionalzüge und viele Ortsbusse.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Regionalzüge fahren von München nach Garmisch-Partenkirchen und nach Berchtesgaden.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "RVO-Busse verbinden Dörfer, Seen und Wanderausgangspunkte.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Seilbahnen ersparen die steilsten Anstiege und fahren bis zum Zugspitzgipfel.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Los trenes y autobuses llegan a casi todos los lugares de interés. Un Bayern-Ticket cubre durante un día los trenes regionales y muchos autobuses locales.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Los trenes regionales circulan de Múnich a Garmisch-Partenkirchen y a Berchtesgaden.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Los autobuses RVO conectan pueblos, lagos y puntos de partida de rutas.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Los teleféricos ahorran las subidas más empinadas y llegan hasta la cumbre de la Zugspitze.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Les trains et les bus desservent la plupart des sites. Un Bayern-Ticket couvre pendant une journée les trains régionaux et de nombreux bus locaux.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Des trains régionaux relient Munich à Garmisch-Partenkirchen et à Berchtesgaden.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Les bus RVO relient villages, lacs et départs de sentiers.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Les téléphériques évitent les montées les plus raides et vont jusqu'au sommet de la Zugspitze.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Unterwegs",
+        "headline__i18n__es": "Cómo moverse",
+        "headline__i18n__fr": "Se déplacer"
       },
       {
         "_uid": "ad5a6e42-7f1b-4a99-be55-6b8c2f1e4a06",
         "faqs": [
           "6be605eb-df2e-4a72-8053-9ef611b59990",
           "04c2efd6-ce02-47c5-8694-a8fadcc85826",
-          "64a140fe-0a53-4983-bde6-735d9e310912"
+          "64a140fe-0a53-4983-bde6-735d9e310912",
+          "66226c1b-a57d-48aa-81f3-9a70935624a2"
         ],
         "headline": "Before you go",
-        "component": "faq_section"
+        "component": "faq_section",
+        "faqs__i18n__de": [
+          "e46431f0-5a2d-42fa-ac57-b7ff018cc1fa",
+          "6be605eb-df2e-4a72-8053-9ef611b59990",
+          "66226c1b-a57d-48aa-81f3-9a70935624a2"
+        ],
+        "headline__i18n__de": "Vor der Reise",
+        "headline__i18n__es": "Antes de viajar",
+        "headline__i18n__fr": "Avant de partir"
       }
     ],
     "component": "destination_page",
@@ -133,8 +337,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "09415f6f67eee6434beda3616b9a277075f4324a",
-    "timestamp": "1792592503"
+    "token": "e5843636d7673e0d8482a9ecb8eae4db8fad27bc",
+    "timestamp": "1794347524"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -166,28 +370,59 @@
       "path": "destinations/bavarian-alps",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/bavarian-alps",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/bavarian-alps",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -20,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 238746966289402,
+      "story_id": 230846919695023,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-06T15:03:53.564Z",
+      "published_at": "2026-11-10T21:22:45.547Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255783505346,
+      "story_id": 230846919695023,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:17.141Z",
+      "published_at": "2026-11-10T21:23:17.141Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255907433976,
+      "story_id": 230846919695023,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:47.397Z",
+      "published_at": "2026-11-10T21:23:47.397Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857307237830,
+  "current_version_id": 240249564315491,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

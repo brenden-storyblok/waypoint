@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:37.221Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T20:56:27.499Z",
+  "published_at": "2026-11-10T20:56:27.466Z",
   "id": 230846834498216,
   "uuid": "e2f25301-d41f-4f7b-b2a1-52bbafb3c06d",
   "is_folder": false,
@@ -38,7 +38,79 @@
       ]
     },
     "question": "When does lavender bloom?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Die meisten Felder blühen von Ende Juni bis in den Juli. Der Höhepunkt liegt meist in der ersten Julihälfte.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Die Ernte beginnt bald danach. Wer die volle Farbenpracht sehen will, reist daher lieber etwas früher. Der Zeitpunkt verschiebt sich je nach Wetter des Jahres leicht.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La mayoría de los campos florecen desde finales de junio hasta julio. El punto álgido suele caer en la primera quincena de julio.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La cosecha empieza poco después, así que es más seguro ir antes si quieres ver todo el color. Las fechas varían un poco según el tiempo de cada año.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La plupart des champs fleurissent de fin juin à juillet. Le pic tombe en général dans la première quinzaine de juillet.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La récolte commence peu après, mieux vaut donc venir plutôt tôt pour profiter de toutes les couleurs. Les dates varient un peu selon la météo de chaque année.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Wann blüht der Lavendel?",
+    "question__i18n__es": "¿Cuándo florece la lavanda?",
+    "question__i18n__fr": "Quand la lavande fleurit-elle ?"
   },
   "published": true,
   "slug": "provence-lavender-bloom",
@@ -59,8 +131,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "8a0924dbc567e4e05d09aa7c3d4282b078266666",
-    "timestamp": "1792592497"
+    "token": "20bd344db12814cfc193f4cd8a237f3c8019e738",
+    "timestamp": "1794347519"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -102,28 +174,134 @@
       "path": "data/faqs/provence-lavender-bloom",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/provence-lavender-bloom",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/provence-lavender-bloom",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -150,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255741840809,
+      "story_id": 230846834498216,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:06.969Z",
+      "published_at": "2026-11-10T21:23:06.969Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230850657503285",
+          "display_name": "France",
+          "name": "france",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851098155064",
+          "display_name": "Provence",
+          "name": "provence",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255744912812,
+      "story_id": 230846834498216,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:07.718Z",
+      "published_at": "2026-11-10T21:23:07.718Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230850657503285",
+          "display_name": "France",
+          "name": "france",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851098155064",
+          "display_name": "Provence",
+          "name": "provence",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255748140463,
+      "story_id": 230846834498216,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:08.506Z",
+      "published_at": "2026-11-10T21:23:08.506Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230850657503285",
+          "display_name": "France",
+          "name": "france",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851098155064",
+          "display_name": "Provence",
+          "name": "provence",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857265974621,
+  "current_version_id": 240249152724417,
   "variant_type": null,
   "taxonomy_terms": [
     {

@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:12:35.198Z",
-  "published_at": "2026-10-15T14:12:35.182Z",
+  "updated_at": "2026-11-10T21:08:17.299Z",
+  "published_at": "2026-11-10T21:08:17.285Z",
   "id": 230948680241847,
   "uuid": "7c70b6ff-0470-4954-aaac-5853790c6cd9",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "e2076435-4a9c-400c-802f-9669a5ef24da",
         "text": "Ben Nevis tops out at 1,345 metres, and the Mountain Track up from Glen Nevis takes most of a day.",
         "title": "Britain's highest summit",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Der Ben Nevis ist 1.345 Meter hoch, und der Mountain Track von Glen Nevis hinauf dauert fast einen ganzen Tag.",
+        "text__i18n__es": "El Ben Nevis alcanza los 1345 metros, y la ruta Mountain Track desde Glen Nevis lleva casi un día entero.",
+        "text__i18n__fr": "Le Ben Nevis culmine à 1 345 mètres, et la Mountain Track au départ de Glen Nevis prend presque une journée entière.",
+        "title__i18n__de": "Der höchste Gipfel Großbritanniens",
+        "title__i18n__es": "La cumbre más alta de Gran Bretaña",
+        "title__i18n__fr": "Le plus haut sommet de Grande-Bretagne"
       },
       {
         "_uid": "0f1d101d-0bd9-41fd-bdd2-d7a9fcae42e2",
         "text": "Eilean Donan was rebuilt between 1912 and 1932, while Kilchurn on Loch Awe is a 15th-century Campbell ruin.",
         "title": "Castles on the lochs",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Eilean Donan wurde zwischen 1912 und 1932 wieder aufgebaut, während Kilchurn am Loch Awe eine Ruine der Campbells aus dem 15. Jahrhundert ist.",
+        "text__i18n__es": "Eilean Donan fue reconstruido entre 1912 y 1932, mientras que Kilchurn, en el Loch Awe, es una ruina de los Campbell del siglo XV.",
+        "text__i18n__fr": "Eilean Donan a été reconstruit entre 1912 et 1932, tandis que Kilchurn, sur le Loch Awe, est une ruine des Campbell datant du XVe siècle.",
+        "title__i18n__de": "Burgen an den Lochs",
+        "title__i18n__es": "Castillos en los lagos",
+        "title__i18n__fr": "Des châteaux au bord des lochs"
       },
       {
         "_uid": "dab98f3d-b1a7-4fe6-b7c2-6f7a5cc550a3",
         "text": "Summer steam trains cross the 21-arch Glenfinnan Viaduct on the line from Fort William to Mallaig.",
         "title": "The Jacobite steam train",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Im Sommer fahren Dampfzüge auf der Strecke von Fort William nach Mallaig über das Glenfinnan-Viadukt mit 21 Bögen.",
+        "text__i18n__es": "En verano, los trenes de vapor cruzan el viaducto de Glenfinnan, de 21 arcos, en la línea de Fort William a Mallaig.",
+        "text__i18n__fr": "En été, des trains à vapeur franchissent le viaduc de Glenfinnan, long de 21 arches, sur la ligne de Fort William à Mallaig.",
+        "title__i18n__de": "Der Dampfzug Jacobite",
+        "title__i18n__es": "El tren de vapor Jacobite",
+        "title__i18n__fr": "Le train à vapeur Jacobite"
       },
       {
         "_uid": "2c9b80ec-08f7-4e03-af49-54729ab8f6ab",
         "text": "Speyside, on the eastern side of the Highlands, has more malt distilleries than any other Scotch whisky region.",
         "title": "Whisky country",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Speyside im Osten des Hochlands hat mehr Malt-Brennereien als jede andere schottische Whisky-Region.",
+        "text__i18n__es": "Speyside, en la parte oriental de las Tierras Altas, tiene más destilerías de malta que cualquier otra región de whisky escocés.",
+        "text__i18n__fr": "Le Speyside, à l'est des Highlands, compte plus de distilleries de malt que n'importe quelle autre région de whisky écossais.",
+        "title__i18n__de": "Whisky-Land",
+        "title__i18n__es": "Tierra de whisky",
+        "title__i18n__fr": "Le pays du whisky"
       }
     ],
     "region": "Scotland",
@@ -182,6 +206,9 @@
         "size": "2400x3593"
       }
     },
+    "name__i18n__de": "Schottisches Hochland",
+    "name__i18n__es": "Tierras Altas de Escocia",
+    "name__i18n__fr": "Highlands écossaises",
     "image_landscape": {
       "id": 230948341435248,
       "alt": "The rock pinnacles of the Old Man of Storr rise above green slopes and lochs on the Isle of Skye.",
@@ -195,6 +222,108 @@
       "meta_data": {
         "size": "2400x1602"
       }
+    },
+    "region__i18n__de": "Schottland",
+    "region__i18n__es": "Escocia",
+    "region__i18n__fr": "Écosse",
+    "summary__i18n__de": "Berge, Meeresarme und Burgruinen unter schnell wechselndem Wetter. Der höchste Gipfel Großbritanniens und seine leersten Straßen teilen sich dieselbe Karte.",
+    "summary__i18n__es": "Montañas, brazos de mar y ruinas de castillos bajo un tiempo que cambia rápido. El pico más alto de Gran Bretaña y sus carreteras más vacías comparten el mismo mapa.",
+    "summary__i18n__fr": "Des montagnes, des bras de mer et des ruines de châteaux sous un ciel changeant. Le plus haut sommet de Grande-Bretagne et ses routes les plus désertes figurent sur la même carte.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Das Hochland umfasst den Norden und Westen Schottlands, jenseits der Highland Boundary Fault, die von Arran bis Stonehaven verläuft. Der Ben Nevis erhebt sich 1.345 Meter über Fort William, und das Great Glen zieht von dort in gerader Linie durch Loch Ness bis nach Inverness.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Clans beherrschten dieses Land jahrhundertelang, bis die Jakobiten 1746 bei Culloden besiegt wurden. Die darauf folgenden Highland Clearances entvölkerten ganze Täler zugunsten der Schafe, und verfallene Crofter-Höfe prägen noch heute die Hänge. Gälisch lebt auf Straßenschildern und in der Sprache der Westküste und der Inseln fort.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Mai und September bringen die trockensten Phasen und weniger Mücken als der Hochsommer. Nimm auf jede Wanderung wasserdichte Kleidung mit, denn das Wetter auf den Gipfeln kann binnen einer Stunde umschlagen.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Las Tierras Altas cubren el norte y el oeste de Escocia, más allá de la falla de Highland Boundary, que va de Arran a Stonehaven. El Ben Nevis se alza 1345 metros sobre Fort William, y el Great Glen traza desde allí una línea recta hasta Inverness a través del Loch Ness.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los clanes dominaron esta tierra durante siglos, hasta la derrota jacobita en Culloden en 1746. Las Clearances que siguieron vaciaron valles enteros para dar paso a las ovejas, y las ruinas de las antiguas granjas todavía marcan las laderas. El gaélico sobrevive en los letreros de las carreteras y en el habla de la costa oeste y las islas.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Mayo y septiembre traen los periodos más secos y menos mosquitos que el pleno verano. Lleva un impermeable en cada caminata, ya que el tiempo en las cumbres puede cambiar en menos de una hora.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Les Highlands couvrent le nord et l'ouest de l'Écosse, au-delà de la faille des Highland Boundary, qui va d'Arran à Stonehaven. Le Ben Nevis s'élève à 1 345 mètres au-dessus de Fort William, et le Great Glen trace de là une ligne droite jusqu'à Inverness en traversant le Loch Ness.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Les clans ont tenu ces terres pendant des siècles, jusqu'à la défaite jacobite à Culloden en 1746. Les Clearances qui ont suivi ont vidé des vallées entières au profit des moutons, et les ruines des anciennes fermes marquent encore les versants. Le gaélique survit sur les panneaux routiers et dans le parler de la côte ouest et des îles.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Mai et septembre offrent les périodes les plus sèches et moins de moucherons qu'en plein été. Emportez un vêtement imperméable pour chaque randonnée, car le temps sur les sommets peut tourner en moins d'une heure.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -216,8 +345,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "64feb09f487e6210a422038da98f79f53180e644",
-    "timestamp": "1792592501"
+    "token": "2216a31313fb0e4b3f2c99c4ddb4a5e377206812",
+    "timestamp": "1794347523"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -259,28 +388,59 @@
       "path": "data/destinations/scottish-highlands",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/scottish-highlands",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/scottish-highlands",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -60,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240256069787171,
+      "story_id": 230948680241847,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:27.033Z",
+      "published_at": "2026-11-10T21:24:27.033Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240256072433188,
+      "story_id": 230948680241847,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:27.680Z",
+      "published_at": "2026-11-10T21:24:27.680Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240256075722277,
+      "story_id": 230948680241847,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:28.483Z",
+      "published_at": "2026-11-10T21:24:28.483Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230948680339847,
+  "current_version_id": 240252097517989,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

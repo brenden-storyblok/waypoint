@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:37.476Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T20:55:50.258Z",
+  "published_at": "2026-11-10T20:55:50.225Z",
   "id": 230847314696893,
   "uuid": "66226c1b-a57d-48aa-81f3-9a70935624a2",
   "is_folder": false,
@@ -38,7 +38,79 @@
       ]
     },
     "question": "When is the best time to visit?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Mai, Juni und September bringen warme Tage und badetaugliches Wasser bei weniger Andrang.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Juli und August sind die geschäftigsten Monate. Die Fähren verkehren nach einem saisonalen Fahrplan, und einige Hotels und Restaurants schließen im Winter.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Mayo, junio y septiembre traen días cálidos y agua apta para el baño, con menos aglomeraciones.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Julio y agosto son los meses con más gente. Los ferris siguen un horario estacional y algunos hoteles y restaurantes cierran en invierno.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Mai, juin et septembre offrent des journées chaudes et une eau propice à la baignade, avec moins de monde.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Juillet et août sont les mois les plus fréquentés. Les ferries suivent un horaire saisonnier, et certains hôtels et restaurants ferment en hiver.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Wann ist die beste Reisezeit?",
+    "question__i18n__es": "¿Cuál es la mejor época para visitar?",
+    "question__i18n__fr": "Quelle est la meilleure période pour y aller ?"
   },
   "published": true,
   "slug": "amalfi-coast-best-time-to-visit",
@@ -59,8 +131,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "b8b03a1c8920a61f7409919aa9e8afc67e9edeb5",
-    "timestamp": "1792592496"
+    "token": "7e4110f83bd1226fe14dce67559a17a46fd56d1c",
+    "timestamp": "1794347518"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -102,28 +174,134 @@
       "path": "data/faqs/amalfi-coast-best-time-to-visit",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/amalfi-coast-best-time-to-visit",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/amalfi-coast-best-time-to-visit",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -190,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255664610708,
+      "story_id": 230847314696893,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:48.111Z",
+      "published_at": "2026-11-10T21:22:48.111Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230850699671607",
+          "display_name": "Italy",
+          "name": "italy",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851169421370",
+          "display_name": "Amalfi Coast",
+          "name": "amalfi-coast",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255667404182,
+      "story_id": 230847314696893,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:48.796Z",
+      "published_at": "2026-11-10T21:22:48.796Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230850699671607",
+          "display_name": "Italy",
+          "name": "italy",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851169421370",
+          "display_name": "Amalfi Coast",
+          "name": "amalfi-coast",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255670267288,
+      "story_id": 230847314696893,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:49.495Z",
+      "published_at": "2026-11-10T21:22:49.495Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230850699671607",
+          "display_name": "Italy",
+          "name": "italy",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851169421370",
+          "display_name": "Amalfi Coast",
+          "name": "amalfi-coast",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857267043683,
+  "current_version_id": 240249001729325,
   "variant_type": null,
   "taxonomy_terms": [
     {

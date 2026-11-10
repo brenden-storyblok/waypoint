@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:47.431Z",
-  "published_at": "2026-10-15T08:00:47.121Z",
+  "updated_at": "2026-11-10T20:55:31.381Z",
+  "published_at": "2026-11-10T20:55:31.362Z",
   "id": 230624356290114,
   "uuid": "fb8f4c4d-eea7-4896-a40a-bcaa33c3c700",
   "is_folder": false,
@@ -27,11 +27,17 @@
               "cached_url": "/destinations"
             },
             "label": "All destinations",
-            "component": "nav_link"
+            "component": "nav_link",
+            "label__i18n__de": "Alle Reiseziele",
+            "label__i18n__es": "Todos los destinos",
+            "label__i18n__fr": "Toutes les destinations"
           }
         ],
         "headline": "Destinations",
-        "component": "footer_column"
+        "component": "footer_column",
+        "headline__i18n__de": "Reiseziele",
+        "headline__i18n__es": "Destinos",
+        "headline__i18n__fr": "Destinations"
       },
       {
         "_uid": "ce401ff0-dc02-4bfa-8ff9-1037075a34b7",
@@ -45,7 +51,10 @@
               "cached_url": "/about"
             },
             "label": "How we pick",
-            "component": "nav_link"
+            "component": "nav_link",
+            "label__i18n__de": "So wählen wir aus",
+            "label__i18n__es": "Cómo elegimos",
+            "label__i18n__fr": "Notre façon de choisir"
           },
           {
             "_uid": "6738c7e8-633d-4fcb-9ce9-670729f82ab6",
@@ -56,7 +65,10 @@
               "cached_url": "/contact"
             },
             "label": "Contact",
-            "component": "nav_link"
+            "component": "nav_link",
+            "label__i18n__de": "Kontakt",
+            "label__i18n__es": "Contacto",
+            "label__i18n__fr": "Contact"
           }
         ],
         "headline": "Waypoint",
@@ -74,7 +86,10 @@
               "cached_url": "/privacy"
             },
             "label": "Privacy",
-            "component": "nav_link"
+            "component": "nav_link",
+            "label__i18n__de": "Datenschutz",
+            "label__i18n__es": "Privacidad",
+            "label__i18n__fr": "Confidentialité"
           },
           {
             "_uid": "eec62d58-90cd-4aa5-96fa-380ef59ca2c3",
@@ -85,11 +100,17 @@
               "cached_url": "/imprint"
             },
             "label": "Imprint",
-            "component": "nav_link"
+            "component": "nav_link",
+            "label__i18n__de": "Impressum",
+            "label__i18n__es": "Aviso legal",
+            "label__i18n__fr": "Mentions légales"
           }
         ],
         "headline": "Legal",
-        "component": "footer_column"
+        "component": "footer_column",
+        "headline__i18n__de": "Rechtliches",
+        "headline__i18n__es": "Información legal",
+        "headline__i18n__fr": "Mentions légales"
       }
     ],
     "component": "footer",
@@ -114,8 +135,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "40982a284b433403eebb5db763e9d1b488336fed",
-    "timestamp": "1792592504"
+    "token": "23e69d4cac7e99ce0227a4548f8854d79a3612c1",
+    "timestamp": "1794347525"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -147,28 +168,59 @@
       "path": "global/footer",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "global/footer",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "global/footer",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -10,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255553084762,
+      "story_id": 230624356290114,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:20.885Z",
+      "published_at": "2026-11-10T21:22:20.885Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255607237998,
+      "story_id": 230624356290114,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:34.107Z",
+      "published_at": "2026-11-10T21:22:34.107Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255657409937,
+      "story_id": 230624356290114,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:46.356Z",
+      "published_at": "2026-11-10T21:22:46.356Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857307823563,
+  "current_version_id": 240248937286908,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

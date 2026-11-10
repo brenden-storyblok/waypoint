@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:37.707Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T20:55:12.462Z",
+  "published_at": "2026-11-10T20:55:12.433Z",
   "id": 230847502174928,
   "uuid": "d1a627e0-ce86-4640-ad8e-cb7f30317ba0",
   "is_folder": false,
@@ -38,7 +38,79 @@
       ]
     },
     "question": "How many days do I need?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Zwei volle Tage reichen für die Kathedrale, den Real Alcázar und die Plaza de España.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Mit drei Tagen bleibt Zeit für Triana, Las Setas und eine Flamenco-Show.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Dos días completos bastan para la Catedral, el Real Alcázar y la Plaza de España.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Con tres días hay tiempo para Triana, las Setas y un espectáculo de flamenco.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Deux jours complets suffisent pour la cathédrale, le Real Alcázar et la Plaza de España.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Avec trois jours, vous aurez le temps de découvrir Triana, Las Setas et un spectacle de flamenco.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Wie viele Tage brauche ich?",
+    "question__i18n__es": "¿Cuántos días necesito?",
+    "question__i18n__fr": "Combien de jours me faut-il ?"
   },
   "published": true,
   "slug": "seville-how-many-days",
@@ -59,8 +131,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "ca20359998d10526c94eb4aba0bf30ef94b08466",
-    "timestamp": "1792592494"
+    "token": "1ecfba03a0213079a03e8706ff33e69b15fea55c",
+    "timestamp": "1794347516"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -102,28 +174,134 @@
       "path": "data/faqs/seville-how-many-days",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/seville-how-many-days",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/seville-how-many-days",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -230,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255559769439,
+      "story_id": 230847502174928,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:22.517Z",
+      "published_at": "2026-11-10T21:22:22.517Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230850638682164",
+          "display_name": "Spain",
+          "name": "spain",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851206502459",
+          "display_name": "Seville",
+          "name": "seville",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255562419554,
+      "story_id": 230847502174928,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:23.165Z",
+      "published_at": "2026-11-10T21:22:23.165Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230850638682164",
+          "display_name": "Spain",
+          "name": "spain",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851206502459",
+          "display_name": "Seville",
+          "name": "seville",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255565720932,
+      "story_id": 230847502174928,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:23.971Z",
+      "published_at": "2026-11-10T21:22:23.971Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230850638682164",
+          "display_name": "Spain",
+          "name": "spain",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851206502459",
+          "display_name": "Seville",
+          "name": "seville",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857267985771,
+  "current_version_id": 240248866647225,
   "variant_type": null,
   "taxonomy_terms": [
     {

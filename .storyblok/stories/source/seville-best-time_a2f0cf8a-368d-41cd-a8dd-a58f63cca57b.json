@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:37.610Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T21:05:17.304Z",
+  "published_at": "2026-11-10T21:05:17.277Z",
   "id": 230847492520652,
   "uuid": "a2f0cf8a-368d-41cd-a8dd-a58f63cca57b",
   "is_folder": false,
@@ -38,7 +38,79 @@
       ]
     },
     "question": "When is the best time to visit?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "März bis Mai und Oktober bis November. Die Tage sind warm, und die Straßen lassen sich angenehm zu Fuß erkunden.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Im Juli und August werden oft mehr als 35 °C erreicht. Wenn du dann kommst, plane Besichtigungen für den frühen Morgen und den Abend.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De marzo a mayo y de octubre a noviembre. Los días son cálidos y se pasea cómodamente por las calles.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "En julio y agosto se superan a menudo los 35 °C. Si vienes entonces, planifica las visitas para primera hora de la mañana y la tarde-noche.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De mars à mai et d'octobre à novembre. Les journées sont chaudes et il est agréable de se promener dans les rues.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "En juillet et en août, il dépasse souvent 35 °C. Si vous venez à cette période, prévoyez vos visites tôt le matin et en soirée.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Wann ist die beste Reisezeit?",
+    "question__i18n__es": "¿Cuál es la mejor época para visitar?",
+    "question__i18n__fr": "Quelle est la meilleure période pour y aller ?"
   },
   "published": true,
   "slug": "seville-best-time",
@@ -59,8 +131,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "9d5d0e440e0e141dda98d947fea9262e701fc1e2",
-    "timestamp": "1792592495"
+    "token": "1ecfba03a0213079a03e8706ff33e69b15fea55c",
+    "timestamp": "1794347516"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -102,28 +174,134 @@
       "path": "data/faqs/seville-best-time",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/seville-best-time",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/seville-best-time",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -210,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255611092339,
+      "story_id": 230847492520652,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:35.048Z",
+      "published_at": "2026-11-10T21:22:35.048Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230850638682164",
+          "display_name": "Spain",
+          "name": "spain",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851206502459",
+          "display_name": "Seville",
+          "name": "seville",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255614463351,
+      "story_id": 230847492520652,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:35.870Z",
+      "published_at": "2026-11-10T21:22:35.870Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230850638682164",
+          "display_name": "Spain",
+          "name": "spain",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851206502459",
+          "display_name": "Seville",
+          "name": "seville",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255617617276,
+      "story_id": 230847492520652,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:36.641Z",
+      "published_at": "2026-11-10T21:22:36.641Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230850638682164",
+          "display_name": "Spain",
+          "name": "spain",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851206502459",
+          "display_name": "Seville",
+          "name": "seville",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857267563880,
+  "current_version_id": 240251314161390,
   "variant_type": null,
   "taxonomy_terms": [
     {
