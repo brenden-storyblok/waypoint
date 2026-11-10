@@ -6,6 +6,7 @@ import DestinationSearchView from './DestinationSearchView';
 import { storyblokEditable } from '@storyblok/react/rsc';
 import { getStoryblokApi } from '@/lib/storyblok';
 import { storyHref } from '@/lib/links';
+import { loadLabels } from '@/lib/labels';
 import { getCurrentLanguage } from '@/lib/currentLanguage';
 import { deliveryLanguageParams } from '@/lib/language';
 import {
@@ -72,23 +73,6 @@ const toRecord = (story) => ({
 	attributes: story.content?.attributes || [],
 });
 
-// Labels from a datasource, in datasource order: { value: label }.
-async function loadLabels(datasource) {
-	try {
-		const entries = await getStoryblokApi().getAll(
-			'cdn/datasource_entries',
-			{ datasource },
-			'datasource_entries',
-		);
-		return Object.fromEntries(
-			entries.map((entry) => [entry.value, entry.name]),
-		);
-	} catch (error) {
-		console.error(`DestinationGrid: ${datasource} labels failed`, error);
-		return {};
-	}
-}
-
 // The Destination stories the grid's Pool is filtered from: the picked
 // Destinations in the editor order when the editor picked any, otherwise
 // every Destination in the grid's Countries and Destination Attributes.
@@ -106,6 +90,7 @@ export async function loadDestinations(blok) {
 }
 
 const DestinationGrid = async ({ blok, searchParams }) => {
+	const language = await getCurrentLanguage();
 	const stories = await loadDestinations(blok);
 	const storyByUuid = new Map(stories.map((story) => [story.uuid, story]));
 
@@ -113,8 +98,8 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 	const search = Boolean(blok.search_enabled);
 	const labels = search
 		? {
-				countries: await loadLabels('countries'),
-				attributes: await loadLabels('destination-attributes'),
+				countries: await loadLabels('countries', language),
+				attributes: await loadLabels('destination-attributes', language),
 			}
 		: {};
 	const choices = parseChoices(search ? searchParams : undefined);
