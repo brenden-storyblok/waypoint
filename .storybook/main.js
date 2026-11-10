@@ -6,7 +6,8 @@ const config = {
 	stories: ['../src/**/*.stories.jsx'],
 	// Wraps each story in Suspense, so async Server Components render.
 	features: { experimentalRSC: true },
-	// next/root-params only resolves in the Next compiler; stories read English.
+	// next/root-params only resolves in the Next compiler; the stub reads English
+	// unless a story sets globalThis.storybookLanguage.
 	viteFinal: (viteConfig) => ({
 		...viteConfig,
 		resolve: {
@@ -14,7 +15,7 @@ const config = {
 			alias: {
 				...viteConfig.resolve?.alias,
 				'next/root-params': fileURLToPath(
-					new URL('../src/test/rootParams.js', import.meta.url),
+					new URL('./rootParams.js', import.meta.url),
 				),
 			},
 		},

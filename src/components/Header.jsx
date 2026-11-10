@@ -5,6 +5,7 @@ import {
 } from '@storyblok/react/rsc';
 import { getCurrentLanguage } from '@/lib/currentLanguage';
 import { homeHref } from '@/lib/language';
+import LanguageSwitcher from './LanguageSwitcher';
 import StoryblokImage from './StoryblokImage';
 
 const LOGO_HEIGHT = 32;
@@ -51,14 +52,17 @@ const Header = async ({ blok }) => {
 						<StoryblokServerComponent blok={navBlok} key={navBlok._uid} />
 					))}
 				</nav>
-				<div className="ms-auto hidden sm:flex md:ms-0">
-					{(blok.cta || []).map((ctaBlok) => (
-						<StoryblokServerComponent
-							blok={ctaBlok}
-							key={ctaBlok._uid}
-							size="sm"
-						/>
-					))}
+				<div className="ms-auto flex items-center gap-4 md:ms-0">
+					<LanguageSwitcher language={language} />
+					<div className="hidden sm:flex">
+						{(blok.cta || []).map((ctaBlok) => (
+							<StoryblokServerComponent
+								blok={ctaBlok}
+								key={ctaBlok._uid}
+								size="sm"
+							/>
+						))}
+					</div>
 				</div>
 			</div>
 		</header>
