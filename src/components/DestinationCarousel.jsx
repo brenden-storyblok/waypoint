@@ -66,6 +66,7 @@ const Arrow = ({ direction }) => (
  * Props:
  *   headline     the grid headline; without one the region is named by `label`
  *   label        the region's name when there is no headline
+ *   roleDescription  what a screen reader calls the region, e.g. "carousel"
  *   previousLabel  the Previous button's accessible name
  *   nextLabel    the Next button's accessible name
  *   placesLabel  the Destination count, e.g. "6 places"; left out for an
@@ -76,6 +77,7 @@ const DestinationCarousel = ({
 	headline,
 	placesLabel,
 	label,
+	roleDescription,
 	previousLabel,
 	nextLabel,
 	children,
@@ -125,7 +127,7 @@ const DestinationCarousel = ({
 	};
 
 	return (
-		<section aria-roledescription="carousel" {...labelProps}>
+		<section aria-roledescription={roleDescription} {...labelProps}>
 			<div className="mb-8 flex flex-wrap items-end justify-between gap-4">
 				{headline && (
 					<h2
