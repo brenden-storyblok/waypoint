@@ -16,7 +16,8 @@ import { placesLabel } from '@/lib/destinationSearch';
  *   result     a searchDestinations result
  *   cards      { [uuid]: rendered DestinationCard } for every Destination in the Pool
  *   texts      { placeholder, countryLabel, attributesLabel, emptyMessage,
- *              clearLabel, clearGroupLabel, doneLabel } from ui-labels
+ *              clearLabel, clearGroupLabel, doneLabel, selectedTemplate,
+ *              placesTemplates: { one, other, filtered } } from ui-labels
  *   choices    the visitor's choices (parseChoices): the Search Text in the
  *              search box and the selected options
  *   handlers   the browser's event handlers; omit for the static fallback:
@@ -55,7 +56,7 @@ const DestinationSearchView = ({
 					className="font-mono text-xs text-slate-500 dark:text-slate-300"
 					aria-live="polite"
 				>
-					{placesLabel(result)}
+					{placesLabel(result, texts.placesTemplates)}
 				</span>
 			</div>
 			<form
@@ -84,6 +85,7 @@ const DestinationSearchView = ({
 					selected={choices.countries}
 					onToggle={toggle('countries')}
 					onClearGroup={clearGroup('countries')}
+					selectedTemplate={texts.selectedTemplate}
 					clearGroupLabel={texts.clearGroupLabel}
 					doneLabel={texts.doneLabel}
 				/>
@@ -94,6 +96,7 @@ const DestinationSearchView = ({
 					selected={choices.attributes}
 					onToggle={toggle('attributes')}
 					onClearGroup={clearGroup('attributes')}
+					selectedTemplate={texts.selectedTemplate}
 					clearGroupLabel={texts.clearGroupLabel}
 					doneLabel={texts.doneLabel}
 				/>

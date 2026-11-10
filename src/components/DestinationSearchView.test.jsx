@@ -11,6 +11,12 @@ const texts = {
 	clearLabel: 'Clear all',
 	clearGroupLabel: 'Clear',
 	doneLabel: 'Done',
+	selectedTemplate: '{count} selected',
+	placesTemplates: {
+		one: '{count} place',
+		other: '{count} places',
+		filtered: '{shown} of {total} places',
+	},
 };
 
 const lisbon = {
@@ -144,6 +150,15 @@ describe('DestinationSearchView', () => {
 				.replace(/\s+/g, ' ')
 				.trim();
 			expect(heard).toBe('Type of place 2 selected');
+		});
+
+		it('words the selected count with the selectedTemplate', () => {
+			const html = renderPool({
+				query: { attribute: ['city', 'history'] },
+				texts: { ...texts, selectedTemplate: '{count} ausgewählt' },
+			});
+			expect(html).toContain('2 ausgewählt');
+			expect(html).not.toContain('2 selected');
 		});
 
 		it('lists checkboxes named country and attribute, valued from the Pool', () => {

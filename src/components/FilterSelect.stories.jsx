@@ -27,6 +27,7 @@ const meta = {
 	component: FilterSelect,
 	args: {
 		selected: [],
+		selectedTemplate: '{count} selected',
 		clearGroupLabel: 'Clear',
 		doneLabel: 'Done',
 	},

@@ -16,7 +16,8 @@ import { parseChoices, searchDestinations } from '@/lib/destinationSearch';
  *   labels     display labels for the module, e.g. { countries, attributes }
  *   cards      { [uuid]: rendered DestinationCard }
  *   texts      { placeholder, countryLabel, attributesLabel, emptyMessage,
- *              clearLabel, clearGroupLabel, doneLabel }
+ *              clearLabel, clearGroupLabel, doneLabel, selectedTemplate,
+ *              placesTemplates: { one, other, filtered } }
  */
 const DestinationSearch = ({ headline, pool, labels, cards, texts }) => {
 	const [choices, setChoices] = useSearchChoices();

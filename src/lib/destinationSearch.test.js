@@ -7,6 +7,13 @@ import {
 	serialiseChoices,
 } from '@/lib/destinationSearch';
 
+// The UI Labels the count line is built from.
+const placesTemplates = {
+	one: '{count} place',
+	other: '{count} places',
+	filtered: '{shown} of {total} places',
+};
+
 // The six Destinations in space 295888311565739, in Delivery API order.
 const seville = {
 	uuid: '7901bdb6-3c8b-46d6-ab0f-2b76535f4173',
@@ -377,7 +384,7 @@ describe('Country Filters', () => {
 		expect(names(result.visible)).toEqual(['Amalfi Coast', 'Santorini']);
 		expect(result.counts).toEqual({ visible: 2, pool: 6 });
 		expect(result.narrowed).toBe(true);
-		expect(placesLabel(result)).toBe('2 of 6 places');
+		expect(placesLabel(result, placesTemplates)).toBe('2 of 6 places');
 	});
 
 	it('combine with Search Text: a Destination passes both', () => {
@@ -414,15 +421,28 @@ describe('Country Filters', () => {
 });
 
 describe('placesLabel', () => {
+	it('is worded by the templates it is given', () => {
+		const german = {
+			one: '{count} Ort',
+			other: '{count} Orte',
+			filtered: '{shown} von {total} Orten',
+		};
+		expect(placesLabel(search('lis'), german)).toBe('1 von 6 Orten');
+		expect(placesLabel(search(''), german)).toBe('6 Orte');
+		expect(placesLabel(search('', { destinations: [lisbon] }), german)).toBe(
+			'1 Ort',
+		);
+	});
+
 	it('reads "X of Y places" while Search Text narrows the Pool', () => {
-		expect(placesLabel(search('lis'))).toBe('1 of 6 places');
-		expect(placesLabel(search('oslo'))).toBe('0 of 6 places');
+		expect(placesLabel(search('lis'), placesTemplates)).toBe('1 of 6 places');
+		expect(placesLabel(search('oslo'), placesTemplates)).toBe('0 of 6 places');
 	});
 
 	it('reads "Y places" with no Search Text', () => {
-		expect(placesLabel(search(''))).toBe('6 places');
-		expect(placesLabel(search(' '))).toBe('6 places');
-		expect(placesLabel(search('', { destinations: [lisbon] }))).toBe('1 place');
+		expect(placesLabel(search(''), placesTemplates)).toBe('6 places');
+		expect(placesLabel(search(' '), placesTemplates)).toBe('6 places');
+		expect(placesLabel(search('', { destinations: [lisbon] }), placesTemplates)).toBe('1 place');
 	});
 });
 
@@ -608,7 +628,7 @@ describe('Destination Attribute Filters', () => {
 			'Lisbon',
 		]);
 		expect(result.counts).toEqual({ visible: 3, pool: 6 });
-		expect(placesLabel(result)).toBe('3 of 6 places');
+		expect(placesLabel(result, placesTemplates)).toBe('3 of 6 places');
 	});
 
 	it('show Destinations carrying any selected one', () => {
@@ -644,7 +664,7 @@ describe('Destination Attribute Filters', () => {
 			labels: { countries: countryLabels, attributes: attributeLabels },
 		});
 		expect(names(result.visible)).toEqual(['Lisbon']);
-		expect(placesLabel(result)).toBe('1 of 6 places');
+		expect(placesLabel(result, placesTemplates)).toBe('1 of 6 places');
 	});
 
 	it('ignore a Destination Attribute no Destination in the Pool carries', () => {
