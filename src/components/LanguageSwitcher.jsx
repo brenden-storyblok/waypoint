@@ -21,7 +21,8 @@ function SwitcherView({ language, label, pathname, search }) {
 	useEffect(() => {
 		const closeOnOutsideClick = (event) => {
 			const details = detailsRef.current;
-			if (details?.open && !details.contains(event.target)) details.open = false;
+			if (details?.open && !details.contains(event.target))
+				details.open = false;
 		};
 		const closeOnEscape = (event) => {
 			const details = detailsRef.current;
@@ -38,11 +39,12 @@ function SwitcherView({ language, label, pathname, search }) {
 	}, []);
 
 	return (
-		<nav aria-label={label}className="relative font-display text-sm">
+		<nav aria-label={label} className="relative font-display text-sm">
 			<details className="group" ref={detailsRef}>
 				<summary
 					ref={summaryRef}
-					className="flex cursor-pointer list-none items-center gap-1 rounded-sm px-2 py-1 text-slate-500 marker:content-none hover:text-deep-sea-900 dark:text-slate-300 dark:hover:text-frost-200 [&::-webkit-details-marker]:hidden">
+					className="flex cursor-pointer list-none items-center gap-1 rounded-sm px-2 py-1 text-slate-500 marker:content-none hover:text-deep-sea-900 dark:text-slate-300 dark:hover:text-frost-200 [&::-webkit-details-marker]:hidden"
+				>
 					<span className="md:hidden">{language.toUpperCase()}</span>
 					<span className="hidden md:inline">{current?.label}</span>
 				</summary>

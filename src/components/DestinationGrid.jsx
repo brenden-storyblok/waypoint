@@ -141,7 +141,9 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 			<DestinationCarousel
 				headline={blok.headline}
 				placesLabel={
-					destinations.length > 0 ? placesLabel(searchResult, placesTemplates) : undefined
+					destinations.length > 0
+						? placesLabel(searchResult, placesTemplates)
+						: undefined
 				}
 				label={await getLabel('carousel-label', language)}
 				previousLabel={await getLabel('carousel-previous', language)}

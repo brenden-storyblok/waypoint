@@ -442,7 +442,9 @@ describe('placesLabel', () => {
 	it('reads "Y places" with no Search Text', () => {
 		expect(placesLabel(search(''), placesTemplates)).toBe('6 places');
 		expect(placesLabel(search(' '), placesTemplates)).toBe('6 places');
-		expect(placesLabel(search('', { destinations: [lisbon] }), placesTemplates)).toBe('1 place');
+		expect(
+			placesLabel(search('', { destinations: [lisbon] }), placesTemplates),
+		).toBe('1 place');
 	});
 });
 
