@@ -1,10 +1,6 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 
-const getCurrentLanguage = vi.fn();
-vi.mock('@/lib/currentLanguage', () => ({ getCurrentLanguage }));
-
-const getLabel = vi.fn();
-vi.mock('@/lib/labels', () => ({ getLabel }));
+vi.mock('@/lib/currentLanguage', () => ({ getCurrentLanguage: vi.fn() }));
 
 vi.mock('@/lib/storyblok', () => ({
 	getStoryblokApi: vi.fn(),
@@ -15,19 +11,14 @@ vi.mock('next/navigation', () => ({ notFound: vi.fn() }));
 
 const { generateMetadata } = await import('./page');
 
-beforeEach(() => {
-	getCurrentLanguage.mockResolvedValue('en');
-	getLabel.mockImplementation(async (key, language) => `${key}:${language}`);
-});
-
-const metadataFor = (slug) => generateMetadata({ params: Promise.resolve({ slug }) });
+const metadataFor = (slug) =>
+	generateMetadata({ params: Promise.resolve({ slug }) });
 
 describe('generateMetadata', () => {
-	it('reads title and description from UI Labels in the page Language', async () => {
-		getCurrentLanguage.mockResolvedValue('fr');
+	it('leaves title and description to the layout', async () => {
 		const metadata = await metadataFor(undefined);
-		expect(metadata.title).toBe('site-title:fr');
-		expect(metadata.description).toBe('site-description:fr');
+		expect(metadata).not.toHaveProperty('title');
+		expect(metadata).not.toHaveProperty('description');
 	});
 
 	it('emits hreflang alternates for the page slug', async () => {
