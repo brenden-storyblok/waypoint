@@ -17,6 +17,8 @@ const config = {
 				'next/root-params': fileURLToPath(
 					new URL('./rootParams.js', import.meta.url),
 				),
+				// Labels come from a datasource; the stub needs no API.
+				'@/lib/labels': fileURLToPath(new URL('./labels.js', import.meta.url)),
 			},
 		},
 	}),

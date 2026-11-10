@@ -61,6 +61,18 @@ const withPrefix = (slug, language) => {
 	return `${prefix}/${path}`;
 };
 
+/**
+ * hreflang alternates for the page at `slug`: one URL per Language plus
+ * `x-default`, which is the English URL. Paths are relative; Next resolves
+ * them against `metadataBase`.
+ */
+export function alternateLanguages(slug) {
+	const alternates = Object.fromEntries(
+		LANGUAGES.map(({ code }) => [code, withPrefix(slug, code)]),
+	);
+	return { ...alternates, 'x-default': alternates[DEFAULT_LANGUAGE] };
+}
+
 /** Href of a Language's home page: `/` for English, `/<code>` otherwise. */
 export const homeHref = (language) => withPrefix('', language);
 

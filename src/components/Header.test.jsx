@@ -5,10 +5,14 @@ import { firstImage } from '@/test/firstImage';
 const getCurrentLanguage = vi.fn();
 vi.mock('@/lib/currentLanguage', () => ({ getCurrentLanguage }));
 
+const getLabel = vi.fn();
+vi.mock('@/lib/labels', () => ({ getLabel }));
+
 const { default: Header } = await import('@/components/Header');
 
 beforeEach(() => {
 	getCurrentLanguage.mockResolvedValue('en');
+	getLabel.mockImplementation(async (key, language) => `${key}:${language}`);
 });
 
 /** Header is an async Server Component: await it, then render the element. */
@@ -39,8 +43,10 @@ describe('Header language switcher', () => {
 		}
 	});
 
-	it('is a navigation landmark named Language', async () => {
-		expect(await renderSwitcher('en')).toContain('aria-label="Language"');
+	it('is a navigation landmark named by the switcher-label UI Label', async () => {
+		expect(await renderSwitcher('de')).toContain(
+			'aria-label="switcher-label:de"',
+		);
 	});
 
 	it('marks the current Language as current and no other', async () => {

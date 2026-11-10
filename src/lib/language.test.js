@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import {
 	DEFAULT_LANGUAGE,
 	LANGUAGES,
+	alternateLanguages,
 	deliveryLanguageParams,
 	homeHref,
 	isLanguage,
@@ -270,5 +271,32 @@ describe('homeHref', () => {
 	it('is / in English and /<code> otherwise', () => {
 		expect(homeHref('en')).toBe('/');
 		expect(homeHref('fr')).toBe('/fr');
+	});
+});
+
+describe('alternateLanguages', () => {
+	it('maps every Language and x-default for the home page', () => {
+		expect(alternateLanguages('home')).toEqual({
+			en: '/',
+			de: '/de',
+			es: '/es',
+			fr: '/fr',
+			'x-default': '/',
+		});
+	});
+
+	it('prefixes the slug per Language, English unprefixed', () => {
+		expect(alternateLanguages('destinations/lisbon')).toEqual({
+			en: '/destinations/lisbon',
+			de: '/de/destinations/lisbon',
+			es: '/es/destinations/lisbon',
+			fr: '/fr/destinations/lisbon',
+			'x-default': '/destinations/lisbon',
+		});
+	});
+
+	it('points x-default at the English URL', () => {
+		const alternates = alternateLanguages('about');
+		expect(alternates['x-default']).toBe(alternates.en);
 	});
 });

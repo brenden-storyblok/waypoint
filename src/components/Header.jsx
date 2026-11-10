@@ -5,6 +5,7 @@ import {
 } from '@storyblok/react/rsc';
 import { getCurrentLanguage } from '@/lib/currentLanguage';
 import { homeHref } from '@/lib/language';
+import { getLabel } from '@/lib/labels';
 import LanguageSwitcher from './LanguageSwitcher';
 import StoryblokImage from './StoryblokImage';
 
@@ -21,6 +22,7 @@ const logoWidth = (logo) => {
 const Header = async ({ blok }) => {
 	const hasLogo = Boolean(blok.logo?.filename);
 	const language = await getCurrentLanguage();
+	const switcherLabel = await getLabel('switcher-label', language);
 	return (
 		<header
 			{...storyblokEditable(blok)}
@@ -53,7 +55,7 @@ const Header = async ({ blok }) => {
 					))}
 				</nav>
 				<div className="ms-auto flex items-center gap-4 md:ms-0">
-					<LanguageSwitcher language={language} />
+					<LanguageSwitcher language={language} label={switcherLabel} />
 					<div className="hidden sm:flex">
 						{(blok.cta || []).map((ctaBlok) => (
 							<StoryblokServerComponent

@@ -28,11 +28,6 @@ const mono = JetBrains_Mono({
 	variable: '--font-next-mono',
 });
 
-export const metadata = {
-	title: 'Waypoint',
-	description: 'European destinations our editors keep going back to.',
-};
-
 /** Loads the header and footer stories from the global/ folder in one request. */
 async function getGlobalStories(language) {
 	try {
@@ -70,11 +65,6 @@ export default async function RootLayout({ children }) {
 			>
 				<head>
 					<meta name="robots" content="noindex, nofollow" />
-					<meta name="title" content="Waypoint" />
-					<meta
-						name="description"
-						content="European destinations our editors keep going back to."
-					/>
 					<meta
 						name="keywords"
 						content="European destinations, travel, travel planning, travel tips, travel inspiration, travel guides, travel destinations, travel destinations in Europe, travel destinations in the world, travel destinations in the USA, travel destinations in Asia, travel destinations in Africa, travel destinations in South America, travel destinations in North America, travel destinations in Europe, travel destinations in the world, travel destinations in the USA, travel destinations in Asia, travel destinations in Africa, travel destinations in South America, travel destinations in North America"
