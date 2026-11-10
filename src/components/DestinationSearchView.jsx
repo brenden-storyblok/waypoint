@@ -16,7 +16,7 @@ import { placesLabel } from '@/lib/destinationSearch';
  *   result     a searchDestinations result
  *   cards      { [uuid]: rendered DestinationCard } for every Destination in the Pool
  *   texts      { placeholder, countryLabel, attributesLabel, emptyMessage,
- *              clearLabel, clearGroupLabel, doneLabel } from the editor
+ *              clearLabel, clearGroupLabel, doneLabel } from ui-labels
  *   choices    the visitor's choices (parseChoices): the Search Text in the
  *              search box and the selected options
  *   handlers   the browser's event handlers; omit for the static fallback:

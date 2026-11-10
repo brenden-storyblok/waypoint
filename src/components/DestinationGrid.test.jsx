@@ -232,11 +232,16 @@ describe('DestinationGrid', () => {
 			],
 		};
 		const datasourceCalls = () =>
-			getAll.mock.calls.filter(([path]) => path === 'cdn/datasource_entries');
+			getAll.mock.calls.filter(
+				([path, query]) =>
+					path === 'cdn/datasource_entries' && query.datasource !== 'ui-labels',
+			);
 
 		beforeEach(() => {
 			getAll.mockImplementation(async (path, query) =>
-				path === 'cdn/datasource_entries' ? entries[query.datasource] : [],
+				path === 'cdn/datasource_entries'
+					? (entries[query.datasource] ?? [])
+					: [],
 			);
 		});
 
@@ -270,18 +275,103 @@ describe('DestinationGrid', () => {
 		});
 	});
 
-	describe('panel button labels', () => {
-		const searching = { search_enabled: true, destinations: [lisbon, porto] };
+	describe('UI Labels', () => {
+		const uiLabels = [
+			['search-placeholder', 'Search destinations', 'Reiseziele suchen'],
+			[
+				'empty-message',
+				'No destinations match your search.',
+				'Keine Reiseziele entsprechen Ihrer Suche.',
+			],
+			['clear-all', 'Clear all', 'Alle löschen'],
+			['attributes-heading', 'Attributes', 'Merkmale'],
+			['country-heading', 'Country', 'Land'],
+			['clear-group', 'Clear', 'Löschen'],
+			['done', 'Done', 'Fertig'],
+			['carousel-label', 'Destinations', 'Reiseziele'],
+			['carousel-previous', 'Previous destinations', 'Vorherige Reiseziele'],
+			['carousel-next', 'Next destinations', 'Nächste Reiseziele'],
+		].map(([value, name, german]) => ({
+			value,
+			name,
+			dimension_value: german,
+		}));
+		const beachy = {
+			...lisbon,
+			content: { ...lisbon.content, attributes: ['beach'] },
+		};
+		const searching = { search_enabled: true, destinations: [beachy, porto] };
 
-		it('falls back to Clear when the editor leaves the label empty', async () => {
-			const html = await render(searching);
-			expect(html).toContain('>Clear</button>');
+		beforeEach(() => {
+			getAll.mockImplementation(async (path, query) =>
+				path === 'cdn/datasource_entries' && query.datasource === 'ui-labels'
+					? uiLabels.map((entry) => ({
+							...entry,
+							// The Delivery API sends the translation only with a dimension.
+							dimension_value: query.dimension ? entry.dimension_value : null,
+						}))
+					: [],
+			);
 		});
 
-		it('shows the editor label for the group Clear button', async () => {
-			const html = await render({ ...searching, clear_group_label: 'Reset' });
-			expect(html).toContain('>Reset</button>');
+		it('shows the English grid controls from ui-labels', async () => {
+			const html = await render(searching);
+			expect(html).toContain('placeholder="Search destinations"');
+			expect(html).toContain('>Clear</button>');
+			expect(html).toContain('>Done</button>');
+			expect(html).toContain('>Attributes<');
+			expect(html).toContain('>Country<');
+		});
+
+		it('shows the German grid controls and asks for the German dimension', async () => {
+			getCurrentLanguage.mockResolvedValue('de');
+			const html = await render(searching);
+			expect(html).toContain('placeholder="Reiseziele suchen"');
+			expect(html).toContain('>Löschen</button>');
+			expect(html).toContain('>Fertig</button>');
+			expect(html).toContain('>Merkmale<');
+			expect(html).toContain('>Land<');
 			expect(html).not.toContain('>Clear</button>');
+			const queries = getAll.mock.calls.map(([, query]) => query);
+			expect(queries).toContainEqual({
+				datasource: 'ui-labels',
+				dimension: 'de',
+			});
+		});
+
+		it('shows the German empty message and Clear all', async () => {
+			getCurrentLanguage.mockResolvedValue('de');
+			const html = await render({ ...searching, destinations: [] });
+			expect(html).toContain('Keine Reiseziele entsprechen Ihrer Suche.');
+			expect(html).toContain('Alle löschen');
+		});
+
+		it('ignores label values stored on the grid blok', async () => {
+			const html = await render({ ...searching, clear_group_label: 'Reset' });
+			expect(html).not.toContain('Reset');
+		});
+
+		it('shows the English carousel labels', async () => {
+			const html = await render({
+				carousel: true,
+				headline: '',
+				destinations: [lisbon, porto],
+			});
+			expect(html).toContain('aria-label="Destinations"');
+			expect(html).toContain('aria-label="Previous destinations"');
+			expect(html).toContain('aria-label="Next destinations"');
+		});
+
+		it('shows the German carousel labels', async () => {
+			getCurrentLanguage.mockResolvedValue('de');
+			const html = await render({
+				carousel: true,
+				headline: '',
+				destinations: [lisbon, porto],
+			});
+			expect(html).toContain('aria-label="Reiseziele"');
+			expect(html).toContain('aria-label="Vorherige Reiseziele"');
+			expect(html).toContain('aria-label="Nächste Reiseziele"');
 		});
 	});
 });

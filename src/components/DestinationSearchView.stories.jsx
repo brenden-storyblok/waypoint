@@ -38,14 +38,15 @@ const cards = Object.fromEntries(
 	]),
 );
 
+// The English ui-labels the grid reads on the server.
 const texts = {
-	placeholder: grid.search_placeholder,
-	countryLabel: grid.country_label,
-	attributesLabel: grid.attributes_label,
-	emptyMessage: grid.empty_message,
-	clearLabel: grid.clear_label,
-	clearGroupLabel: grid.clear_group_label || 'Clear',
-	doneLabel: grid.done_label || 'Done',
+	placeholder: 'Search destinations',
+	countryLabel: 'Country',
+	attributesLabel: 'Attributes',
+	emptyMessage: 'No destinations match your search.',
+	clearLabel: 'Clear all',
+	clearGroupLabel: 'Clear',
+	doneLabel: 'Done',
 };
 
 const noChoices = { text: '', countries: [], attributes: [] };
