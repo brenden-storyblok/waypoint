@@ -47,6 +47,12 @@ const texts = {
 	clearLabel: 'Clear all',
 	clearGroupLabel: 'Clear',
 	doneLabel: 'Done',
+	selectedTemplate: '{count} selected',
+	placesTemplates: {
+		one: '{count} place',
+		other: '{count} places',
+		filtered: '{shown} of {total} places',
+	},
 };
 
 const noChoices = { text: '', countries: [], attributes: [] };

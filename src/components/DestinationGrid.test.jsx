@@ -20,6 +20,43 @@ beforeEach(() => {
 	getCurrentLanguage.mockResolvedValue('en');
 });
 
+// The ui-labels datasource as the Delivery API serves it.
+const uiLabelEntries = [
+	['search-placeholder', 'Search destinations', 'Reiseziele suchen'],
+	[
+		'empty-message',
+		'No destinations match your search.',
+		'Keine Reiseziele entsprechen Ihrer Suche.',
+	],
+	['clear-all', 'Clear all', 'Alle löschen'],
+	['attributes-heading', 'Attributes', 'Merkmale'],
+	['country-heading', 'Country', 'Land'],
+	['clear-group', 'Clear', 'Löschen'],
+	['done', 'Done', 'Fertig'],
+	['carousel-label', 'Destinations', 'Reiseziele'],
+	['carousel-previous', 'Previous destinations', 'Vorherige Reiseziele'],
+	['carousel-next', 'Next destinations', 'Nächste Reiseziele'],
+	['places-one', '{count} place', '{count} Ort'],
+	['places-other', '{count} places', '{count} Orte'],
+	['places-filtered', '{shown} of {total} places', '{shown} von {total} Orten'],
+	['filter-selected', '{count} selected', '{count} ausgewählt'],
+].map(([value, name, german]) => ({
+	value,
+	name,
+	dimension_value: german,
+}));
+
+const serveUiLabels = () =>
+	getAll.mockImplementation(async (path, query) =>
+		path === 'cdn/datasource_entries' && query.datasource === 'ui-labels'
+			? uiLabelEntries.map((entry) => ({
+					...entry,
+					// The Delivery API sends the translation only with a dimension.
+					dimension_value: query.dimension ? entry.dimension_value : null,
+				}))
+			: [],
+	);
+
 // The query loadAllDestinations sent to the Delivery API.
 const sentQuery = () => getAll.mock.calls[0][1];
 
@@ -153,7 +190,7 @@ describe('DestinationGrid', () => {
 
 	beforeEach(() => {
 		getAll.mockReset();
-		getAll.mockResolvedValue([]);
+		serveUiLabels();
 		get.mockReset();
 		get.mockResolvedValue({ data: { stories: [lisbonPage] } });
 	});
@@ -166,6 +203,16 @@ describe('DestinationGrid', () => {
 		expect(html).toContain('aria-roledescription="carousel"');
 		expect(html).toMatch(/<li[^>]*><a [^>]*href="\/destinations\/lisbon"/);
 		expect(html).toContain('2 places');
+	});
+
+	it('words the Destination count with the UI Labels of the current Language', async () => {
+		getCurrentLanguage.mockResolvedValue('de');
+		const html = await render({
+			carousel: true,
+			destinations: [lisbon, porto],
+		});
+		expect(html).toContain('2 Orte');
+		expect(html).not.toContain('2 places');
 	});
 
 	it('hides the Destination count of a Carousel with an empty Pool', async () => {
@@ -282,43 +329,13 @@ describe('DestinationGrid', () => {
 	});
 
 	describe('UI Labels', () => {
-		const uiLabels = [
-			['search-placeholder', 'Search destinations', 'Reiseziele suchen'],
-			[
-				'empty-message',
-				'No destinations match your search.',
-				'Keine Reiseziele entsprechen Ihrer Suche.',
-			],
-			['clear-all', 'Clear all', 'Alle löschen'],
-			['attributes-heading', 'Attributes', 'Merkmale'],
-			['country-heading', 'Country', 'Land'],
-			['clear-group', 'Clear', 'Löschen'],
-			['done', 'Done', 'Fertig'],
-			['carousel-label', 'Destinations', 'Reiseziele'],
-			['carousel-previous', 'Previous destinations', 'Vorherige Reiseziele'],
-			['carousel-next', 'Next destinations', 'Nächste Reiseziele'],
-		].map(([value, name, german]) => ({
-			value,
-			name,
-			dimension_value: german,
-		}));
 		const beachy = {
 			...lisbon,
 			content: { ...lisbon.content, attributes: ['beach'] },
 		};
 		const searching = { search_enabled: true, destinations: [beachy, porto] };
 
-		beforeEach(() => {
-			getAll.mockImplementation(async (path, query) =>
-				path === 'cdn/datasource_entries' && query.datasource === 'ui-labels'
-					? uiLabels.map((entry) => ({
-							...entry,
-							// The Delivery API sends the translation only with a dimension.
-							dimension_value: query.dimension ? entry.dimension_value : null,
-						}))
-					: [],
-			);
-		});
+		beforeEach(serveUiLabels);
 
 		it('shows the English grid controls from ui-labels', async () => {
 			const html = await render(searching);

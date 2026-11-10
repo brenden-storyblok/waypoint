@@ -14,6 +14,13 @@ export const isLanguage = (code) =>
 const HOME_SLUG = 'home';
 
 /**
+ * The story slug for the segments of a request path (a catch-all route's
+ * `slug` param): joined with `/`, or the home slug when there are none.
+ */
+export const slugFromSegments = (segments) =>
+	segments?.length ? segments.join('/') : HOME_SLUG;
+
+/**
  * Splits a request path into its Language and story slug. Only a known code
  * as the first segment is a prefix; anything else belongs to the slug of an
  * English page. `prefixed` tells the proxy whether the path carried a code.
@@ -22,7 +29,7 @@ export function parsePath(pathname) {
 	const segments = pathname.split('/').filter(Boolean);
 	const prefixed = isLanguage(segments[0]);
 	const language = prefixed ? segments.shift() : DEFAULT_LANGUAGE;
-	return { language, slug: segments.join('/') || HOME_SLUG, prefixed };
+	return { language, slug: slugFromSegments(segments), prefixed };
 }
 
 /** Delivery API parameters that select a Language; English needs none. */

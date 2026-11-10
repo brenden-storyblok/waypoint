@@ -9,6 +9,7 @@ import '../globals.css';
 import StoryblokProvider from '@/components/StoryblokProvider';
 import { getStoryblokApi } from '@/lib/storyblok';
 import { getCurrentLanguage } from '@/lib/currentLanguage';
+import { getLabel } from '@/lib/labels';
 import { LANGUAGES, deliveryLanguageParams, isLanguage } from '@/lib/language';
 
 const display = Bricolage_Grotesque({
@@ -51,6 +52,19 @@ export const dynamicParams = false;
 
 export const generateStaticParams = () =>
 	LANGUAGES.map(({ code }) => ({ lang: code }));
+
+/**
+ * The default title and description, UI Labels in the current Language. Pages
+ * inherit them, and so do the 404 and error pages, which have no metadata of
+ * their own.
+ */
+export async function generateMetadata() {
+	const language = await getCurrentLanguage();
+	return {
+		title: await getLabel('site-title', language),
+		description: await getLabel('site-description', language),
+	};
+}
 
 export default async function RootLayout({ children }) {
 	const language = await getCurrentLanguage();

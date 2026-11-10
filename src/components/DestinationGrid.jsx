@@ -95,6 +95,11 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 
 	// With search off the grid ignores the URL and shows the whole Pool.
 	const search = Boolean(blok.search_enabled);
+	const placesTemplates = {
+		one: await getLabel('places-one', language),
+		other: await getLabel('places-other', language),
+		filtered: await getLabel('places-filtered', language),
+	};
 	const labels = search
 		? {
 				countries: await loadLabels('countries', language),
@@ -136,7 +141,9 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 			<DestinationCarousel
 				headline={blok.headline}
 				placesLabel={
-					destinations.length > 0 ? placesLabel(searchResult) : undefined
+					destinations.length > 0
+						? placesLabel(searchResult, placesTemplates)
+						: undefined
 				}
 				label={await getLabel('carousel-label', language)}
 				previousLabel={await getLabel('carousel-previous', language)}
@@ -158,7 +165,7 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 					)}
 					{destinations.length > 0 && (
 						<span className="font-mono text-xs text-slate-500 dark:text-slate-300">
-							{placesLabel(searchResult)}
+							{placesLabel(searchResult, placesTemplates)}
 						</span>
 					)}
 				</div>
@@ -180,6 +187,8 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 		clearLabel: await getLabel('clear-all', language),
 		clearGroupLabel: await getLabel('clear-group', language),
 		doneLabel: await getLabel('done', language),
+		selectedTemplate: await getLabel('filter-selected', language),
+		placesTemplates,
 	};
 	// The fallback is the same grid, filtered on the server, so a shared
 	// link never flashes the full Pool.
