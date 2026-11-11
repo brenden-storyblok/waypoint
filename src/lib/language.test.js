@@ -227,9 +227,37 @@ describe('linkHref', () => {
 				code,
 			),
 		).toBe('https://example.com/book#x');
-		expect(linkHref({ linktype: 'url', url: '/de/partner' }, code)).toBe(
-			'/de/partner',
+		expect(linkHref({ linktype: 'url', url: '//cdn.example.com/x' }, code)).toBe(
+			'//cdn.example.com/x',
 		);
+	});
+
+	it('prefixes a url link to a site path with the Language', () => {
+		expect(linkHref({ linktype: 'url', url: '/destinations' }, 'en')).toBe(
+			'/destinations',
+		);
+		expect(linkHref({ linktype: 'url', url: '/destinations' }, 'de')).toBe(
+			'/de/destinations',
+		);
+		expect(linkHref({ linktype: 'url', url: '/' }, 'fr')).toBe('/fr');
+	});
+
+	it('swaps the Language code already on a site path', () => {
+		expect(linkHref({ linktype: 'url', url: '/de/partner' }, 'fr')).toBe(
+			'/fr/partner',
+		);
+		expect(linkHref({ linktype: 'url', url: '/de/partner' }, 'en')).toBe(
+			'/partner',
+		);
+	});
+
+	it('keeps the query and anchor on a site path', () => {
+		expect(
+			linkHref(
+				{ linktype: 'url', url: '/destinations?country=pt', anchor: 'grid' },
+				'es',
+			),
+		).toBe('/es/destinations?country=pt#grid');
 	});
 
 	it.each(['en', 'de'])('renders an email link as mailto in %s', (code) => {
@@ -265,6 +293,15 @@ describe('storyHref', () => {
 	it('maps the home story to the Language home', () => {
 		expect(storyHref({ full_slug: 'home' }, 'en')).toBe('/');
 		expect(storyHref({ full_slug: 'home' }, 'es')).toBe('/es');
+	});
+
+	// The Delivery API prefixes full_slug with the code when asked for a
+	// Language, e.g. de/destinations/lisbon.
+	it('drops the Language code the Delivery API puts on full_slug', () => {
+		expect(storyHref({ full_slug: 'de/destinations/lisbon' }, 'de')).toBe(
+			'/de/destinations/lisbon',
+		);
+		expect(storyHref({ full_slug: 'fr/home' }, 'fr')).toBe('/fr');
 	});
 });
 

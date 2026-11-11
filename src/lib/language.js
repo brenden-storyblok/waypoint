@@ -61,10 +61,13 @@ export function switcherTargets({ language, pathname, search = '' }) {
 	});
 }
 
+// The Delivery API returns full_slug with the Language code on it
+// (de/destinations/lisbon) when a request names a Language, so parsePath
+// drops any code before the target prefix goes on.
 const withPrefix = (slug, language) => {
-	const path = slug.replace(/^\/+/, '');
+	const path = parsePath(slug).slug;
 	const prefix = language === DEFAULT_LANGUAGE ? '' : `/${language}`;
-	if (!path || path === HOME_SLUG) return prefix || '/';
+	if (path === HOME_SLUG) return prefix || '/';
 	return `${prefix}/${path}`;
 };
 
@@ -87,9 +90,19 @@ export const homeHref = (language) => withPrefix('', language);
 export const storyHref = (story, language) =>
 	withPrefix(story?.full_slug || '', language);
 
+// A path on this site (/about), as opposed to another host
+// (https://..., //cdn...) or a fragment.
+const isSitePath = (url) => url.startsWith('/') && !url.startsWith('//');
+
+const splitQuery = (url) => {
+	const index = url.indexOf('?');
+	return index === -1 ? [url, ''] : [url.slice(0, index), url.slice(index)];
+};
+
 /**
  * Turns a Storyblok multilink value into an href in a Language. Story links
- * take the Language's prefix; url, email and asset links render as written.
+ * and url links to a site path (/about) take the Language's prefix; other url
+ * links, email and asset links render as written.
  */
 export function linkHref(link, language) {
 	if (!link) return '#';
@@ -103,8 +116,13 @@ export function linkHref(link, language) {
 		}
 		case 'email':
 			return `mailto:${link.email || link.url}`;
+		case 'url': {
+			const url = link.url || link.cached_url || '';
+			if (!isSitePath(url)) return `${url || '#'}${anchor}`;
+			const [path, query] = splitQuery(url);
+			return `${withPrefix(path, language)}${query}${anchor}`;
+		}
 		case 'asset':
-		case 'url':
 		default:
 			return `${link.url || link.cached_url || '#'}${anchor}`;
 	}
