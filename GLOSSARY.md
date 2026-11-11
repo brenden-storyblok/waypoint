@@ -72,3 +72,13 @@ _Avoid_: String, message, dictionary entry
 **Focus Point**:
 The spot an editor marks on an image as its subject. A cropped image keeps the Focus Point in frame. Storyblok's Image Service documentation explains how crops use it: https://www.storyblok.com/docs/api/image-service
 _Avoid_: Focal point, hotspot, center
+
+### Caching
+
+**Cache Version**:
+The number Storyblok uses to key cached Delivery API responses, read from `space.version` on the current space. Waypoint sends it as `cv` with every published read so that a refresh reuses the CDN copy of the current content. Storyblok's caching documentation explains it: https://www.storyblok.com/docs/concepts/caching
+_Avoid_: Cache key, space version, timestamp
+
+**Draft Mode**:
+The state a Visual Editor preview puts the site in. Pages render draft content and skip the cache. Visitors always see published content.
+_Avoid_: Preview mode, edit mode
