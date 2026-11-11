@@ -9,8 +9,8 @@ vi.mock('@/lib/storyblok', () => ({
 	getStoryblokApi: () => ({ getAll }),
 }));
 
-const getCurrentLanguage = vi.fn();
-vi.mock('@/lib/currentLanguage', () => ({ getCurrentLanguage }));
+const lang = vi.fn();
+vi.mock('next/root-params', () => ({ lang }));
 
 const { default: DestinationHero } =
 	await import('@/components/DestinationHero');
@@ -38,7 +38,7 @@ const renderHero = async (destination) =>
 	renderToStaticMarkup(await DestinationHero({ blok: heroBlok, destination }));
 
 beforeEach(() => {
-	getCurrentLanguage.mockResolvedValue('en');
+	lang.mockResolvedValue('en');
 	getAll.mockReset();
 	getAll.mockImplementation(async (path, query) =>
 		path === 'cdn/datasource_entries' && query.datasource === 'countries'
@@ -103,7 +103,7 @@ describe('DestinationHero', () => {
 
 	it('shows the German Country label in German', async () => {
 		stubFetch(imageResponse());
-		getCurrentLanguage.mockResolvedValue('de');
+		lang.mockResolvedValue('de');
 		const html = await renderHero(lisbon);
 		expect(html).toContain('>Europe · Portugal DE</div>');
 		expect(getAll.mock.calls[0][1]).toMatchObject({

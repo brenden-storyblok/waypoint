@@ -3,11 +3,11 @@ import {
 	storyblokEditable,
 	StoryblokServerComponent,
 } from '@storyblok/react/rsc';
-import { getCurrentLanguage } from '@/lib/currentLanguage';
+import { lang } from 'next/root-params';
 import { homeHref } from '@/lib/language';
 
 const Footer = async ({ blok }) => {
-	const language = await getCurrentLanguage();
+	const language = await lang();
 	return (
 		<footer
 			{...storyblokEditable(blok)}

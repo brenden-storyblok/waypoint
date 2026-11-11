@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 
-vi.mock('@/lib/currentLanguage', () => ({ getCurrentLanguage: vi.fn() }));
+vi.mock('next/root-params', () => ({ lang: vi.fn() }));
 
 vi.mock('@/lib/storyblok', () => ({
 	getStoryblokApi: vi.fn(),

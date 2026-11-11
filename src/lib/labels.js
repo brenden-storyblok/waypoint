@@ -1,4 +1,5 @@
 import { cache } from 'react';
+import { lang } from 'next/root-params';
 import { getStoryblokApi } from '@/lib/storyblok';
 import { DEFAULT_LANGUAGE } from '@/lib/language';
 
@@ -33,8 +34,8 @@ export const loadLabels = cache(async (datasource, language) => {
 	}
 });
 
-/** One UI Label in a Language, or the key itself when no entry matches. */
-export async function getLabel(key, language) {
-	const labels = await loadLabels(UI_LABELS, language);
+/** One UI Label in the current Language, or the key itself when no entry matches. */
+export async function getLabel(key) {
+	const labels = await loadLabels(UI_LABELS, await lang());
 	return Object.hasOwn(labels, key) ? labels[key] : key;
 }

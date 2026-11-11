@@ -7,8 +7,8 @@ vi.mock('@/lib/storyblok', () => ({
 	getStoryblokApi: () => ({ getAll, get }),
 }));
 
-const getCurrentLanguage = vi.fn();
-vi.mock('@/lib/currentLanguage', () => ({ getCurrentLanguage }));
+const lang = vi.fn();
+vi.mock('next/root-params', () => ({ lang }));
 
 const {
 	default: DestinationGrid,
@@ -17,7 +17,7 @@ const {
 } = await import('@/components/DestinationGrid');
 
 beforeEach(() => {
-	getCurrentLanguage.mockResolvedValue('en');
+	lang.mockResolvedValue('en');
 });
 
 // The ui-labels datasource as the Delivery API serves it.
@@ -217,7 +217,7 @@ describe('DestinationGrid', () => {
 	});
 
 	it('words the Destination count with the UI Labels of the current Language', async () => {
-		getCurrentLanguage.mockResolvedValue('de');
+		lang.mockResolvedValue('de');
 		const html = await render({
 			carousel: true,
 			destinations: [lisbon, porto],
@@ -267,7 +267,7 @@ describe('DestinationGrid', () => {
 			});
 
 			it(`shows the German Country label and explore text in ${kind}`, async () => {
-				getCurrentLanguage.mockResolvedValue('de');
+				lang.mockResolvedValue('de');
 				const html = await render({ ...settings, destinations: [lisbon] });
 				expect(html).toMatch(/<span [^>]*>Portugal DE<\/span>/);
 				expect(html).toContain('Lisbon entdecken →');
@@ -285,7 +285,7 @@ describe('DestinationGrid', () => {
 		});
 
 		it('names the Carousel role in the current Language', async () => {
-			getCurrentLanguage.mockResolvedValue('de');
+			lang.mockResolvedValue('de');
 			const html = await render({ carousel: true, destinations: [lisbon] });
 			expect(html).toContain('aria-roledescription="Karussell"');
 			expect(html).not.toContain('aria-roledescription="carousel"');
@@ -296,7 +296,7 @@ describe('DestinationGrid', () => {
 		const pool = { destinations: [lisbon], carousel: true };
 
 		it('asks Storyblok for German Destinations and page lookups', async () => {
-			getCurrentLanguage.mockResolvedValue('de');
+			lang.mockResolvedValue('de');
 			await render({
 				carousel: true,
 				destinations: [],
@@ -308,7 +308,7 @@ describe('DestinationGrid', () => {
 		});
 
 		it('links each Destination card to its German page', async () => {
-			getCurrentLanguage.mockResolvedValue('de');
+			lang.mockResolvedValue('de');
 			const html = await render(pool);
 			expect(html).toContain('href="/de/destinations/lisbon"');
 		});
@@ -350,7 +350,7 @@ describe('DestinationGrid', () => {
 		});
 
 		it('asks for the German dimension of both datasources', async () => {
-			getCurrentLanguage.mockResolvedValue('de');
+			lang.mockResolvedValue('de');
 			await render(searching);
 			const calls = datasourceCalls();
 			expect(calls.map(([, query]) => query)).toEqual([
@@ -368,7 +368,7 @@ describe('DestinationGrid', () => {
 		});
 
 		it('shows the translated label, and the English one when the entry has no translation', async () => {
-			getCurrentLanguage.mockResolvedValue('de');
+			lang.mockResolvedValue('de');
 			const beachy = {
 				...lisbon,
 				content: { ...lisbon.content, attributes: ['beach'] },
@@ -398,7 +398,7 @@ describe('DestinationGrid', () => {
 		});
 
 		it('shows the German grid controls and asks for the German dimension', async () => {
-			getCurrentLanguage.mockResolvedValue('de');
+			lang.mockResolvedValue('de');
 			const html = await render(searching);
 			expect(html).toContain('placeholder="Reiseziele suchen"');
 			expect(html).toContain('>Löschen</button>');
@@ -414,7 +414,7 @@ describe('DestinationGrid', () => {
 		});
 
 		it('shows the German empty message and Clear all', async () => {
-			getCurrentLanguage.mockResolvedValue('de');
+			lang.mockResolvedValue('de');
 			const html = await render({ ...searching, destinations: [] });
 			expect(html).toContain('Keine Reiseziele entsprechen Ihrer Suche.');
 			expect(html).toContain('Alle löschen');
@@ -437,7 +437,7 @@ describe('DestinationGrid', () => {
 		});
 
 		it('shows the German carousel labels', async () => {
-			getCurrentLanguage.mockResolvedValue('de');
+			lang.mockResolvedValue('de');
 			const html = await render({
 				carousel: true,
 				headline: '',

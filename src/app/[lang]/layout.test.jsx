@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
-const getCurrentLanguage = vi.fn();
-vi.mock('@/lib/currentLanguage', () => ({ getCurrentLanguage }));
+const lang = vi.fn();
+vi.mock('next/root-params', () => ({ lang }));
 
 const getLabel = vi.fn();
 vi.mock('@/lib/labels', () => ({ getLabel }));
@@ -16,20 +16,19 @@ vi.mock('next/font/google', () => {
 });
 vi.mock('next/navigation', () => ({ notFound: vi.fn() }));
 vi.mock('@storyblok/react/rsc', () => ({ StoryblokServerComponent: vi.fn() }));
-vi.mock('@/components/StoryblokProvider', () => ({ default: vi.fn() }));
 vi.mock('@/lib/storyblok', () => ({ getStoryblokApi: vi.fn() }));
 vi.mock('../globals.css', () => ({}));
 
 const { generateMetadata } = await import('./layout');
 
 beforeEach(() => {
-	getCurrentLanguage.mockResolvedValue('en');
-	getLabel.mockImplementation(async (key, language) => `${key}:${language}`);
+	lang.mockResolvedValue('en');
+	getLabel.mockImplementation(async (key) => `${key}:${await lang()}`);
 });
 
 describe('generateMetadata', () => {
 	it('gives every page, 404s included, a title and description from UI Labels in the current Language', async () => {
-		getCurrentLanguage.mockResolvedValue('fr');
+		lang.mockResolvedValue('fr');
 		const metadata = await generateMetadata();
 		expect(metadata.title).toBe('site-title:fr');
 		expect(metadata.description).toBe('site-description:fr');

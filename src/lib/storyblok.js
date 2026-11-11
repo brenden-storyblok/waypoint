@@ -16,8 +16,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import NavLink from '@/components/NavLink';
 import FooterColumn from '@/components/FooterColumn';
-import { storyblokInit } from '@storyblok/react/rsc';
-import { storyblokConfig } from '@/lib/storyblokConfig';
+import { apiPlugin, storyblokInit } from '@storyblok/react/rsc';
 
 /** Relations the Delivery API resolves into full stories in one request. */
 export const RESOLVE_RELATIONS = [
@@ -27,7 +26,8 @@ export const RESOLVE_RELATIONS = [
 ];
 
 export const getStoryblokApi = storyblokInit({
-	...storyblokConfig,
+	accessToken: process.env.STORYBLOK_DELIVERY_API_TOKEN,
+	use: [apiPlugin],
 	components: {
 		page: Page,
 		hero: Hero,
@@ -47,5 +47,13 @@ export const getStoryblokApi = storyblokInit({
 		footer: Footer,
 		nav_link: NavLink,
 		footer_column: FooterColumn,
+	},
+	apiOptions: {
+		/** Set the correct region for your space. Learn more: https://www.storyblok.com/docs/packages/storyblok-js#example-region-parameter */
+		region: process.env.STORYBLOK_REGION || 'eu',
+		/** The following code is only required when creating a Storyblok space directly via the Blueprints feature. */
+		endpoint: process.env.STORYBLOK_API_BASE_URL
+			? `${new URL(process.env.STORYBLOK_API_BASE_URL).origin}/v2`
+			: undefined,
 	},
 });

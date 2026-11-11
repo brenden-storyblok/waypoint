@@ -3,7 +3,7 @@ import {
 	storyblokEditable,
 	StoryblokServerComponent,
 } from '@storyblok/react/rsc';
-import { getCurrentLanguage } from '@/lib/currentLanguage';
+import { lang } from 'next/root-params';
 import { homeHref } from '@/lib/language';
 import { getLabel } from '@/lib/labels';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -21,8 +21,8 @@ const logoWidth = (logo) => {
 
 const Header = async ({ blok }) => {
 	const hasLogo = Boolean(blok.logo?.filename);
-	const language = await getCurrentLanguage();
-	const switcherLabel = await getLabel('switcher-label', language);
+	const language = await lang();
+	const switcherLabel = await getLabel('switcher-label');
 	return (
 		<header
 			{...storyblokEditable(blok)}

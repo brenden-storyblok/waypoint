@@ -7,7 +7,7 @@ import { storyblokEditable } from '@storyblok/react/rsc';
 import { getStoryblokApi } from '@/lib/storyblok';
 import { countryName } from '@/lib/countryName';
 import { getLabel, loadLabels } from '@/lib/labels';
-import { getCurrentLanguage } from '@/lib/currentLanguage';
+import { lang } from 'next/root-params';
 import { deliveryLanguageParams, storyHref } from '@/lib/language';
 import {
 	clearChoicesHref,
@@ -19,7 +19,7 @@ import {
 async function findPages(uuids) {
 	const hrefs = {};
 	if (!uuids.length) return hrefs;
-	const language = await getCurrentLanguage();
+	const language = await lang();
 	try {
 		const { data } = await getStoryblokApi().get('cdn/stories', {
 			version: 'draft',
@@ -42,7 +42,7 @@ async function findPages(uuids) {
 // `countries` and that carries any of `attributes`. An empty setting
 // filters nothing.
 export async function loadAllDestinations({ countries = [], attributes = [] }) {
-	const language = await getCurrentLanguage();
+	const language = await lang();
 	const filterQuery = {};
 	if (countries.length) filterQuery.country = { in: countries.join(',') };
 	if (attributes.length) {
@@ -90,20 +90,20 @@ export async function loadDestinations(blok) {
 }
 
 const DestinationGrid = async ({ blok, searchParams }) => {
-	const language = await getCurrentLanguage();
+	const language = await lang();
 	const stories = await loadDestinations(blok);
 	const storyByUuid = new Map(stories.map((story) => [story.uuid, story]));
 
 	// With search off the grid ignores the URL and shows the whole Pool.
 	const search = Boolean(blok.search_enabled);
 	const placesTemplates = {
-		one: await getLabel('places-one', language),
-		other: await getLabel('places-other', language),
-		filtered: await getLabel('places-filtered', language),
+		one: await getLabel('places-one'),
+		other: await getLabel('places-other'),
+		filtered: await getLabel('places-filtered'),
 	};
 	// Cards name their Country in every mode, so the labels load regardless.
 	const countryLabels = await loadLabels('countries', language);
-	const exploreTemplate = await getLabel('card-explore', language);
+	const exploreTemplate = await getLabel('card-explore');
 	const labels = search
 		? {
 				countries: countryLabels,
@@ -151,10 +151,10 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 						? placesLabel(searchResult, placesTemplates)
 						: undefined
 				}
-				label={await getLabel('carousel-label', language)}
-				roleDescription={await getLabel('carousel-roledescription', language)}
-				previousLabel={await getLabel('carousel-previous', language)}
-				nextLabel={await getLabel('carousel-next', language)}
+				label={await getLabel('carousel-label')}
+				roleDescription={await getLabel('carousel-roledescription')}
+				previousLabel={await getLabel('carousel-previous')}
+				nextLabel={await getLabel('carousel-next')}
 			>
 				{destinations.map(card)}
 			</DestinationCarousel>,
@@ -187,14 +187,14 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 		destinations.map((destination) => [destination.uuid, card(destination)]),
 	);
 	const texts = {
-		placeholder: await getLabel('search-placeholder', language),
-		countryLabel: await getLabel('country-heading', language),
-		attributesLabel: await getLabel('attributes-heading', language),
-		emptyMessage: await getLabel('empty-message', language),
-		clearLabel: await getLabel('clear-all', language),
-		clearGroupLabel: await getLabel('clear-group', language),
-		doneLabel: await getLabel('done', language),
-		selectedTemplate: await getLabel('filter-selected', language),
+		placeholder: await getLabel('search-placeholder'),
+		countryLabel: await getLabel('country-heading'),
+		attributesLabel: await getLabel('attributes-heading'),
+		emptyMessage: await getLabel('empty-message'),
+		clearLabel: await getLabel('clear-all'),
+		clearGroupLabel: await getLabel('clear-group'),
+		doneLabel: await getLabel('done'),
+		selectedTemplate: await getLabel('filter-selected'),
 		placesTemplates,
 	};
 	// The fallback is the same grid, filtered on the server, so a shared
