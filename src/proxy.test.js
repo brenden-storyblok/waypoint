@@ -10,32 +10,37 @@ const requestTo = (path, { cookie } = {}) =>
 const rewrittenTo = (response) =>
 	new URL(response.headers.get('x-middleware-rewrite'));
 
+// The page the proxy tells the draft route to return to, sent as a request header.
+const draftPathOf = (response) =>
+	response.headers.get('x-middleware-request-x-draft-path');
+
 const TOKEN_PARAMS =
 	'_storyblok=98765&_storyblok_tk[space_id]=12345&_storyblok_tk[timestamp]=1700000000&_storyblok_tk[token]=abc';
 
 describe('proxy', () => {
 	describe('Visual Editor preview requests', () => {
 		it('diverts a request carrying _storyblok_tk params to the draft route', () => {
-			const target = rewrittenTo(
-				proxy(requestTo(`/de/destinations/lisbon?${TOKEN_PARAMS}`)),
+			const response = proxy(
+				requestTo(`/de/destinations/lisbon?${TOKEN_PARAMS}`),
 			);
-			expect(target.pathname).toBe('/api/draft');
-			expect(target.searchParams.get('_draft_path')).toBe(
-				'/de/destinations/lisbon',
-			);
+			expect(rewrittenTo(response).pathname).toBe('/api/draft');
+			// A rewrite drops query params the proxy adds, so the path travels as a
+			// request header.
+			expect(draftPathOf(response)).toBe('/de/destinations/lisbon');
 		});
 
 		it('hands the draft route the Visual Editor params untouched', () => {
-			const target = rewrittenTo(proxy(requestTo(`/?${TOKEN_PARAMS}`)));
+			const response = proxy(requestTo(`/?${TOKEN_PARAMS}`));
+			const target = rewrittenTo(response);
 			expect(target.searchParams.get('_storyblok_tk[token]')).toBe('abc');
 			expect(target.searchParams.get('_storyblok')).toBe('98765');
-			expect(target.searchParams.get('_draft_path')).toBe('/');
+			expect(draftPathOf(response)).toBe('/');
 		});
 
 		it('diverts an unprefixed English path too', () => {
-			const target = rewrittenTo(proxy(requestTo(`/about?${TOKEN_PARAMS}`)));
-			expect(target.pathname).toBe('/api/draft');
-			expect(target.searchParams.get('_draft_path')).toBe('/about');
+			const response = proxy(requestTo(`/about?${TOKEN_PARAMS}`));
+			expect(rewrittenTo(response).pathname).toBe('/api/draft');
+			expect(draftPathOf(response)).toBe('/about');
 		});
 
 		it('diverts even when a Draft Mode cookie is present, since it may be stale', () => {

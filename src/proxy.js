@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { parsePath, DEFAULT_LANGUAGE } from '@/lib/language';
-import { DRAFT_PATH_PARAM, hasPreviewParams } from '@/lib/draftRoute';
+import { DRAFT_PATH_HEADER, hasPreviewParams } from '@/lib/draftRoute';
 
 /**
  * English keeps its unprefixed URLs: they are rewritten to /en/... inside the
@@ -24,8 +24,9 @@ export function proxy(request) {
 	if (hasPreviewParams(searchParams)) {
 		const url = request.nextUrl.clone();
 		url.pathname = '/api/draft';
-		url.searchParams.set(DRAFT_PATH_PARAM, pathname);
-		return NextResponse.rewrite(url);
+		const requestHeaders = new Headers(request.headers);
+		requestHeaders.set(DRAFT_PATH_HEADER, pathname);
+		return NextResponse.rewrite(url, { request: { headers: requestHeaders } });
 	}
 
 	const { language, prefixed } = parsePath(pathname);

@@ -26,8 +26,7 @@ const requestWith = (storyblokParams, path = '/de/destinations/lisbon') => {
 	url.searchParams.set('_storyblok', '98765');
 	url.searchParams.set('_storyblok_c', 'page');
 	url.searchParams.set('_storyblok_lang', 'de');
-	url.searchParams.set('_draft_path', path);
-	return new Request(url);
+	return new Request(url, { headers: { 'x-draft-path': path } });
 };
 
 const validParams = {
@@ -59,7 +58,6 @@ describe('the draft route', () => {
 		expect(searchParams.get('_storyblok')).toBe('98765');
 		expect(searchParams.get('_storyblok_c')).toBe('page');
 		expect(searchParams.get('_storyblok_lang')).toBe('de');
-		expect(searchParams.has('_draft_path')).toBe(false);
 	});
 
 	it('drops every _storyblok_tk param, so the redirect cannot loop back', async () => {

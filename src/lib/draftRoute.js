@@ -1,5 +1,8 @@
-/** The query param the proxy adds for the draft route: the page the editor asked for. */
-export const DRAFT_PATH_PARAM = '_draft_path';
+/**
+ * The request header the proxy sets for the draft route: the page the editor
+ * asked for. A rewrite drops query params the proxy adds, so a header carries it.
+ */
+export const DRAFT_PATH_HEADER = 'x-draft-path';
 
 /** The Visual Editor's signed-token params; the draft route verifies and strips them. */
 export const PREVIEW_TOKEN_PREFIX = '_storyblok_tk';
