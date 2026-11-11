@@ -33,4 +33,39 @@ describe('generateMetadata', () => {
 		expect(metadata.title).toBe('site-title:fr');
 		expect(metadata.description).toBe('site-description:fr');
 	});
+
+	describe('metadataBase', () => {
+		const originFor = async (env) => {
+			for (const [name, value] of Object.entries(env)) vi.stubEnv(name, value);
+			const { metadataBase } = await generateMetadata();
+			vi.unstubAllEnvs();
+			return metadataBase.href;
+		};
+		const vercelHosts = {
+			VERCEL_PROJECT_PRODUCTION_URL: 'waypoint.example.com',
+			VERCEL_URL: 'waypoint-abc123.vercel.app',
+		};
+
+		it('uses the production domain on Vercel production deploys', async () => {
+			expect(
+				await originFor({ ...vercelHosts, VERCEL_ENV: 'production' }),
+			).toBe('https://waypoint.example.com/');
+		});
+
+		it('uses the deployment URL on Vercel previews', async () => {
+			expect(await originFor({ ...vercelHosts, VERCEL_ENV: 'preview' })).toBe(
+				'https://waypoint-abc123.vercel.app/',
+			);
+		});
+
+		it('falls back to localhost outside Vercel', async () => {
+			expect(
+				await originFor({
+					VERCEL_ENV: '',
+					VERCEL_URL: '',
+					VERCEL_PROJECT_PRODUCTION_URL: '',
+				}),
+			).toBe('http://localhost:3000/');
+		});
+	});
 });

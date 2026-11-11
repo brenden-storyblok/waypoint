@@ -46,6 +46,19 @@ async function getGlobalStories(language) {
 	}
 }
 
+/**
+ * The site origin from Vercel's system env vars: the production domain on
+ * production deploys, the deployment URL on previews, localhost elsewhere.
+ * Vercel sets both hosts without a protocol.
+ */
+function siteOrigin() {
+	const host =
+		process.env.VERCEL_ENV === 'production'
+			? process.env.VERCEL_PROJECT_PRODUCTION_URL
+			: process.env.VERCEL_URL;
+	return new URL(host ? `https://${host}` : 'http://localhost:3000');
+}
+
 /** Only the four Languages are routes; any other first segment is a 404. */
 export const dynamicParams = false;
 
@@ -55,10 +68,12 @@ export const generateStaticParams = () =>
 /**
  * The default title and description, UI Labels in the current Language. Pages
  * inherit them, and so do the 404 and error pages, which have no metadata of
- * their own.
+ * their own. `metadataBase` turns relative metadata URLs (hreflang alternates)
+ * into full URLs on this deployment's origin.
  */
 export async function generateMetadata() {
 	return {
+		metadataBase: siteOrigin(),
 		title: await getLabel('site-title'),
 		description: await getLabel('site-description'),
 	};
