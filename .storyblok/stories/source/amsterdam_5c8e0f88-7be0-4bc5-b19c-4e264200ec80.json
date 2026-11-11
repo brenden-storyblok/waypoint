@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T15:02:55.100Z",
-  "published_at": "2026-10-15T14:27:56.523Z",
+  "updated_at": "2026-11-10T21:13:18.364Z",
+  "published_at": "2026-11-10T21:13:18.351Z",
   "id": 230952454102689,
   "uuid": "5c8e0f88-7be0-4bc5-b19c-4e264200ec80",
   "is_folder": false,
@@ -22,17 +22,26 @@
       {
         "_uid": "0518ae9b-0037-4eb9-a7d3-57f87076555c",
         "headline": "Why Amsterdam",
-        "component": "destination_usps"
+        "component": "destination_usps",
+        "headline__i18n__de": "Warum Amsterdam",
+        "headline__i18n__es": "Por qué Ámsterdam",
+        "headline__i18n__fr": "Pourquoi Amsterdam"
       },
       {
         "_uid": "60e6ecf7-707a-4792-a323-fe50ba8433be",
         "headline": "About Amsterdam",
-        "component": "destination_bio"
+        "component": "destination_bio",
+        "headline__i18n__de": "Über Amsterdam",
+        "headline__i18n__es": "Sobre Ámsterdam",
+        "headline__i18n__fr": "À propos d'Amsterdam"
       },
       {
         "_uid": "0edff29c-f9cf-4fba-a3f0-3165a71ab42a",
         "headline": "Amsterdam in pictures",
-        "component": "destination_gallery"
+        "component": "destination_gallery",
+        "headline__i18n__de": "Amsterdam in Bildern",
+        "headline__i18n__es": "Ámsterdam en imágenes",
+        "headline__i18n__fr": "Amsterdam en images"
       },
       {
         "_uid": "985c7101-e111-48e9-a87c-ef849c8a7ef5",
@@ -98,7 +107,193 @@
           ]
         },
         "headline": "Getting around",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Die GVB betreibt Straßenbahnen, U-Bahn, Busse und die kostenlosen Fähren über das IJ. Checke mit einer kontaktlosen Bankkarte ein und aus oder kaufe ein GVB-Tagesticket, und miete ein Fahrrad für den Grachtengürtel.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Züge vom Flughafen Schiphol zum Centraal Station brauchen etwa 15 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Die kostenlose Fähre von hinter dem Centraal Station nach Buiksloterweg in Noord setzt in etwa 5 Minuten über.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Mit dem Rad vom Centraal Station zum Rijksmuseum sind es etwa 3 km, die Fahrt dauert etwa 15 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "GVB gestiona los tranvías, el metro, los autobuses y los ferris gratuitos que cruzan el IJ. Pasa la tarjeta bancaria sin contacto al entrar y al salir, o compra un billete de día de GVB, y alquila una bicicleta para recorrer el anillo de canales.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Los trenes del aeropuerto de Schiphol a la Estación Central tardan unos 15 minutos.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "El ferri gratuito desde la parte trasera de la Estación Central hasta Buiksloterweg, en Noord, cruza en unos 5 minutos.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "En bicicleta, de la Estación Central al Rijksmuseum hay unos 3 km y se tardan unos 15 minutos.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La GVB exploite les tramways, le métro, les bus et les ferries gratuits qui traversent l'IJ. Validez avec une carte bancaire sans contact à l'entrée et à la sortie ou achetez un ticket journée GVB, et louez un vélo pour parcourir la ceinture de canaux.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Les trains de l'aéroport de Schiphol à la gare centrale mettent environ 15 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Le ferry gratuit au départ de l'arrière de la gare centrale vers Buiksloterweg, dans le Noord, traverse en 5 minutes environ.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "À vélo, de la gare centrale au Rijksmuseum, il y a environ 3 km et il faut compter 15 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Unterwegs",
+        "headline__i18n__es": "Cómo moverse",
+        "headline__i18n__fr": "Se déplacer"
       }
     ],
     "component": "destination_page",
@@ -123,8 +318,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "7a7baba9bb2a2bfc45f31d2d5b7d15148ad9e25c",
-    "timestamp": "1792592493"
+    "token": "460f1b555d13b977e611d6862b0cff7837ea7559",
+    "timestamp": "1794347515"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -156,28 +351,59 @@
       "path": "destinations/amsterdam",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/amsterdam",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/amsterdam",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -310,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255606025580,
+      "story_id": 230952454102689,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:33.811Z",
+      "published_at": "2026-11-10T21:22:33.811Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255737752997,
+      "story_id": 230952454102689,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:05.970Z",
+      "published_at": "2026-11-10T21:23:05.970Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255861546461,
+      "story_id": 230952454102689,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:36.194Z",
+      "published_at": "2026-11-10T21:23:36.194Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230952454184850,
+  "current_version_id": 240253330694361,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

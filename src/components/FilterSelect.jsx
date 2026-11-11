@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { fillTemplate } from '@/lib/template';
 
 /**
  * One Filter group as a multi-select dropdown, e.g. Countries or Destination
@@ -23,6 +24,7 @@ import { useEffect, useRef } from 'react';
  *   selected  [value] the selected options
  *   onToggle  (value) => void; omit for the static render
  *   onClearGroup   () => void empties this group; omit for the static render
+ *   selectedTemplate  the screen reader's count, e.g. "{count} selected"
  *   clearGroupLabel  the footer Clear button's text
  *   doneLabel   the footer Done button's text; the button shows below sm only
  *
@@ -35,6 +37,7 @@ const FilterSelect = ({
 	selected,
 	onToggle,
 	onClearGroup,
+	selectedTemplate,
 	clearGroupLabel,
 	doneLabel,
 }) => {
@@ -81,7 +84,7 @@ const FilterSelect = ({
 				{selected.length > 0 && (
 					<>
 						<span aria-hidden="true">{`· ${selected.length}`}</span>
-						<span className="sr-only">{` ${selected.length} selected`}</span>
+						<span className="sr-only">{` ${fillTemplate(selectedTemplate, { count: selected.length })}`}</span>
 					</>
 				)}
 				<svg

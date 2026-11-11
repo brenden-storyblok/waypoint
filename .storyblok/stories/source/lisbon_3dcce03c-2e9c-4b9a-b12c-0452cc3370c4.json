@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T12:27:37.255Z",
-  "published_at": "2026-10-15T12:27:37.229Z",
+  "updated_at": "2026-11-10T21:03:33.531Z",
+  "published_at": "2026-11-10T21:03:33.508Z",
   "id": 230627073516755,
   "uuid": "3dcce03c-2e9c-4b9a-b12c-0452cc3370c4",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "733fe7a4-d409-47f0-9d75-bbb8f53fa925",
         "text": "Miradouros like Senhora do Monte and São Pedro de Alcântara look over red roofs to the river.",
         "title": "A viewpoint on every hill",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Miradouros wie Senhora do Monte und São Pedro de Alcântara blicken über rote Dächer hinweg bis zum Fluss.",
+        "text__i18n__es": "Miradouros como el de Senhora do Monte y el de São Pedro de Alcântara dominan los tejados rojos hasta el río.",
+        "text__i18n__fr": "Des miradouros comme Senhora do Monte et São Pedro de Alcântara dominent les toits rouges jusqu'au fleuve.",
+        "title__i18n__de": "Ein Aussichtspunkt auf jedem Hügel",
+        "title__i18n__es": "Un mirador en cada colina",
+        "title__i18n__fr": "Un belvédère sur chaque colline"
       },
       {
         "_uid": "4685983e-71b5-486b-aa77-bef9f7548080",
         "text": "The 1930s Remodelado trams climb lanes too narrow for buses.",
         "title": "Tram 28 through Alfama",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Die Remodelado-Straßenbahnen aus den 1930er-Jahren fahren durch Gassen, die für Busse zu eng sind.",
+        "text__i18n__es": "Los tranvías Remodelado de los años treinta suben por callejuelas demasiado estrechas para los autobuses.",
+        "text__i18n__fr": "Les tramways Remodelado des années 1930 gravissent des ruelles trop étroites pour les bus.",
+        "title__i18n__de": "Straßenbahn 28 durch die Alfama",
+        "title__i18n__es": "El tranvía 28 por Alfama",
+        "title__i18n__fr": "Le tramway 28 à travers l'Alfama"
       },
       {
         "_uid": "c1aca3d2-b114-4039-8e80-78d5ba2fc350",
         "text": "Belém bakeries have served the custard tart since 1837.",
         "title": "Pastéis de nata, fresh",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Bäckereien in Belém servieren das Puddingtörtchen seit 1837.",
+        "text__i18n__es": "Las panaderías de Belém sirven el pastelito de nata desde 1837.",
+        "text__i18n__fr": "Les boulangeries de Belém servent la tartelette à la crème depuis 1837.",
+        "title__i18n__de": "Pastéis de nata, frisch",
+        "title__i18n__es": "Pastéis de nata, recién hechos",
+        "title__i18n__fr": "Pastéis de nata, tout frais"
       },
       {
         "_uid": "75e6c992-7153-4a03-a08e-588109460343",
         "text": "Cascais and Estoril sit 40 minutes west on the coastal line.",
         "title": "Beaches by train",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Cascais und Estoril liegen 40 Minuten westlich an der Küstenlinie.",
+        "text__i18n__es": "Cascais y Estoril están a 40 minutos hacia el oeste por la línea de la costa.",
+        "text__i18n__fr": "Cascais et Estoril se trouvent à 40 minutes vers l'ouest sur la ligne côtière.",
+        "title__i18n__de": "Strände mit dem Zug",
+        "title__i18n__es": "Playas en tren",
+        "title__i18n__fr": "Des plages en train"
       }
     ],
     "region": "Lisbon Region",
@@ -174,6 +198,9 @@
       "copyright": "Fausto Ribeiro / Unsplash",
       "fieldtype": "asset"
     },
+    "name__i18n__de": "Lissabon",
+    "name__i18n__es": "Lisboa",
+    "name__i18n__fr": "Lisbonne",
     "image_landscape": {
       "id": 230626311458429,
       "alt": "Lisbon city lights coming on under an orange sunset sky",
@@ -183,6 +210,108 @@
       "filename": "https://a.storyblok.com/f/295888311565739/bc50cb0478/lisbon-city-lights-sunset.jpg",
       "copyright": "Thomas Winkler / Unsplash",
       "fieldtype": "asset"
+    },
+    "region__i18n__de": "Region Lissabon",
+    "region__i18n__es": "Región de Lisboa",
+    "region__i18n__fr": "Région de Lisbonne",
+    "summary__i18n__de": "Sieben Hügel, gelbe Straßenbahnen und das atlantische Licht, dem Maler nachjagen. Eine Hauptstadt, die man bergauf erwandert und bergab in Erinnerung behält.",
+    "summary__i18n__es": "Siete colinas, tranvías amarillos y la luz atlántica que persiguen los pintores. Una capital que se sube a pie y se recuerda cuesta abajo.",
+    "summary__i18n__fr": "Sept collines, des tramways jaunes et la lumière atlantique que les peintres poursuivent. Une capitale que l'on monte à pied et dont on se souvient en descendant.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Lissabon breitet sich über die Hügel am Nordufer des Tejo-Mündungsgebiets aus, wo sich der Fluss weitet, bevor er auf den Atlantik trifft.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Das Erdbeben von 1755 legte einen großen Teil der Stadt in Schutt und Asche. Die Baixa wurde im Raster neu errichtet, während Alfama und Mouraria ihr mittelalterliches Gewirr aus Treppen und Wäscheleinen bewahrten. Nach Einbruch der Dunkelheit dringt Fado aus den Tascas.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Frühling und Frühherbst bringen warme Tage ohne den Andrang des Sommers. Bequeme Schuhe sind wichtiger als alles andere in deinem Gepäck.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Lisboa se extiende por las colinas de la orilla norte del estuario del Tajo, donde el río se ensancha antes de encontrarse con el Atlántico.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El terremoto de 1755 arrasó gran parte de la ciudad. La Baixa se reconstruyó en cuadrícula, mientras que Alfama y Mouraria conservaron su enredo medieval de escaleras y tendederos. El fado se escapa de las tascas al caer la noche.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La primavera y el principio del otoño traen días cálidos sin las multitudes del verano. El calzado cómodo importa más que cualquier otra cosa que lleves en la maleta.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Lisbonne s'étend sur les collines de la rive nord de l'estuaire du Tage, là où le fleuve s'élargit avant de rejoindre l'Atlantique.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Le tremblement de terre de 1755 a anéanti une grande partie de la ville. La Baixa a été reconstruite selon un plan en damier, tandis qu'Alfama et Mouraria ont gardé leur enchevêtrement médiéval d'escaliers et de lessives. Le fado s'échappe des tascas après la tombée de la nuit.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Le printemps et le début de l'automne offrent des journées chaudes sans la foule de l'été. De bonnes chaussures comptent plus que tout le reste dans votre valise.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -204,8 +333,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "2c2f07c4584a59d56c087dacd155a68fb2621db6",
-    "timestamp": "1792592505"
+    "token": "f15d414bf7222c454aa3b54c0f049da8b17bc434",
+    "timestamp": "1794347527"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -247,28 +376,98 @@
       "path": "data/destinations/lisbon",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/lisbon",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/lisbon",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": 0,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240256223067700,
+      "story_id": 230627073516755,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:25:04.455Z",
+      "published_at": "2026-11-10T21:25:04.455Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230845758261298",
+          "display_name": "Portugal",
+          "name": "portugal",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256226483765,
+      "story_id": 230627073516755,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:25:05.290Z",
+      "published_at": "2026-11-10T21:25:05.290Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230845758261298",
+          "display_name": "Portugal",
+          "name": "portugal",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256229678646,
+      "story_id": 230627073516755,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:25:06.069Z",
+      "published_at": "2026-11-10T21:25:06.069Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230845758261298",
+          "display_name": "Portugal",
+          "name": "portugal",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230922883801594,
+  "current_version_id": 240250935182775,
   "variant_type": null,
   "taxonomy_terms": [
     {

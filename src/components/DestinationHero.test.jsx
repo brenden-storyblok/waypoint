@@ -1,9 +1,24 @@
-import { afterEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
-import DestinationHero from '@/components/DestinationHero';
 import { firstImage } from '@/test/firstImage';
 import { imageBytes, imageResponse } from '@/test/imageResponse';
 import { stubFetch } from '@/test/stubFetch';
+
+const getAll = vi.fn();
+vi.mock('@/lib/storyblok', () => ({
+	getStoryblokApi: () => ({ getAll }),
+}));
+
+const lang = vi.fn();
+vi.mock('next/root-params', () => ({ lang }));
+
+const { default: DestinationHero } =
+	await import('@/components/DestinationHero');
+
+// The countries datasource as the Delivery API serves it.
+const countryEntries = [
+	{ value: 'portugal', name: 'Portugal', dimension_value: 'Portugal DE' },
+];
 
 const lisbon = {
 	name: 'Lisbon',
@@ -21,6 +36,19 @@ const heroBlok = { _uid: 'destination-hero-uid' };
 
 const renderHero = async (destination) =>
 	renderToStaticMarkup(await DestinationHero({ blok: heroBlok, destination }));
+
+beforeEach(() => {
+	lang.mockResolvedValue('en');
+	getAll.mockReset();
+	getAll.mockImplementation(async (path, query) =>
+		path === 'cdn/datasource_entries' && query.datasource === 'countries'
+			? countryEntries.map((entry) => ({
+					...entry,
+					dimension_value: query.dimension ? entry.dimension_value : null,
+				}))
+			: [],
+	);
+});
 
 afterEach(() => vi.unstubAllGlobals());
 
@@ -65,6 +93,30 @@ describe('DestinationHero', () => {
 		expect(html).not.toContain('<small');
 		expect(html).toContain('Lisbon</h1>');
 		expect(fetchStub).not.toHaveBeenCalled();
+	});
+
+	it('shows the region and the English Country name above the name', async () => {
+		stubFetch(imageResponse());
+		const html = await renderHero(lisbon);
+		expect(html).toContain('>Europe · Portugal</div>');
+	});
+
+	it('shows the German Country label in German', async () => {
+		stubFetch(imageResponse());
+		lang.mockResolvedValue('de');
+		const html = await renderHero(lisbon);
+		expect(html).toContain('>Europe · Portugal DE</div>');
+		expect(getAll.mock.calls[0][1]).toMatchObject({
+			datasource: 'countries',
+			dimension: 'de',
+		});
+	});
+
+	it('capitalises the stored key when the countries datasource lacks it', async () => {
+		stubFetch(imageResponse());
+		getAll.mockResolvedValue([]);
+		const html = await renderHero({ ...lisbon, country: 'norway' });
+		expect(html).toContain('>Europe · Norway</div>');
 	});
 
 	it('renders nothing without a destination', async () => {

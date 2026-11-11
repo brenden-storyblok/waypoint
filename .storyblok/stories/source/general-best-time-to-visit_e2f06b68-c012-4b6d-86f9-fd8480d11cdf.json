@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:36.858Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T20:57:39.482Z",
+  "published_at": "2026-11-10T20:57:39.433Z",
   "id": 230846256933488,
   "uuid": "e2f06b68-c012-4b6d-86f9-fd8480d11cdf",
   "is_folder": false,
@@ -38,7 +38,79 @@
       ]
     },
     "question": "When is the best time to visit southern Europe?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Frühling und Herbst sind die besten Jahreszeiten. Das Wetter ist mild, und es ist weniger los.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Der Sommer ist heiß und voll.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La primavera y el otoño son las mejores estaciones. El tiempo es suave y hay menos gente.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El verano es caluroso y concurrido.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Le printemps et l'automne sont les meilleures saisons. Le temps est doux et il y a moins de monde.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "L'été est chaud et très fréquenté.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Wann ist die beste Reisezeit für Südeuropa?",
+    "question__i18n__es": "¿Cuál es la mejor época para visitar el sur de Europa?",
+    "question__i18n__fr": "Quelle est la meilleure période pour visiter le sud de l'Europe ?"
   },
   "published": true,
   "slug": "general-best-time-to-visit",
@@ -59,8 +131,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "64feb09f487e6210a422038da98f79f53180e644",
-    "timestamp": "1792592501"
+    "token": "2216a31313fb0e4b3f2c99c4ddb4a5e377206812",
+    "timestamp": "1794347523"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -102,28 +174,98 @@
       "path": "data/faqs/general-best-time-to-visit",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/general-best-time-to-visit",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/general-best-time-to-visit",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -70,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255920287231,
+      "story_id": 230846256933488,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:50.535Z",
+      "published_at": "2026-11-10T21:23:50.535Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230852538165312",
+          "display_name": "Travel",
+          "name": "travel",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255923006976,
+      "story_id": 230846256933488,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:51.198Z",
+      "published_at": "2026-11-10T21:23:51.198Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230852538165312",
+          "display_name": "Travel",
+          "name": "travel",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255925833217,
+      "story_id": 230846256933488,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:51.889Z",
+      "published_at": "2026-11-10T21:23:51.889Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230852538165312",
+          "display_name": "Travel",
+          "name": "travel",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857264495954,
+  "current_version_id": 240249446907648,
   "variant_type": null,
   "taxonomy_terms": [
     {

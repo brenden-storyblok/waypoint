@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T12:26:39.343Z",
-  "published_at": "2026-10-15T12:26:39.321Z",
+  "updated_at": "2026-11-10T21:06:02.859Z",
+  "published_at": "2026-11-10T21:06:02.842Z",
   "id": 230846918064814,
   "uuid": "ae062cbc-5fe7-4a7e-b432-ec6eede5915c",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "5b0a6e0e-8d57-4c1e-9a7b-1a2f3c4d5e01",
         "text": "Fields on the Valensole plateau and near Sénanque Abbey turn purple from late June.",
         "title": "Lavender in July",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Die Felder auf dem Plateau von Valensole und in der Nähe der Abtei Sénanque färben sich ab Ende Juni violett.",
+        "text__i18n__es": "Los campos de la meseta de Valensole y los cercanos a la abadía de Sénanque se tornan púrpura a partir de finales de junio.",
+        "text__i18n__fr": "Les champs du plateau de Valensole et ceux proches de l'abbaye de Sénanque virent au violet dès la fin juin.",
+        "title__i18n__de": "Lavendel im Juli",
+        "title__i18n__es": "Lavanda en julio",
+        "title__i18n__fr": "La lavande en juillet"
       },
       {
         "_uid": "5b0a6e0e-8d57-4c1e-9a7b-1a2f3c4d5e02",
         "text": "Gordes and Roussillon sit on ridges, with walls of pale stone or ochre.",
         "title": "Hill villages of the Luberon",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Gordes und Roussillon liegen auf Bergrücken, mit Mauern aus hellem Stein oder Ocker.",
+        "text__i18n__es": "Gordes y Roussillon se alzan sobre crestas, con muros de piedra clara u ocre.",
+        "text__i18n__fr": "Gordes et Roussillon se dressent sur des crêtes, avec des murs de pierre claire ou d'ocre.",
+        "title__i18n__de": "Bergdörfer im Luberon",
+        "title__i18n__es": "Pueblos de colina del Luberon",
+        "title__i18n__fr": "Les villages perchés du Luberon"
       },
       {
         "_uid": "5b0a6e0e-8d57-4c1e-9a7b-1a2f3c4d5e03",
         "text": "Aix-en-Provence fills its squares with stalls of olives, cheese and fruit.",
         "title": "Markets for every meal",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Aix-en-Provence füllt seine Plätze mit Ständen voller Oliven, Käse und Obst.",
+        "text__i18n__es": "Aix-en-Provence llena sus plazas de puestos de aceitunas, queso y fruta.",
+        "text__i18n__fr": "Aix-en-Provence remplit ses places d'étals d'olives, de fromage et de fruits.",
+        "title__i18n__de": "Märkte für jede Mahlzeit",
+        "title__i18n__es": "Mercados para cada comida",
+        "title__i18n__fr": "Des marchés pour chaque repas"
       },
       {
         "_uid": "5b0a6e0e-8d57-4c1e-9a7b-1a2f3c4d5e04",
         "text": "Dry rosé from nearby vineyards is the usual pour on a shaded terrace.",
         "title": "Rosé with lunch",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Trockener Rosé aus den Weingärten der Umgebung ist auf einer schattigen Terrasse das übliche Getränk.",
+        "text__i18n__es": "El rosé seco de los viñedos cercanos es lo habitual en una terraza a la sombra.",
+        "text__i18n__fr": "Le rosé sec des vignobles voisins est le verre habituel sur une terrasse ombragée.",
+        "title__i18n__de": "Rosé zum Mittagessen",
+        "title__i18n__es": "Rosé con el almuerzo",
+        "title__i18n__fr": "Du rosé pour le déjeuner"
       }
     ],
     "region": "Provence-Alpes-Côte d'Azur",
@@ -174,6 +198,9 @@
       "copyright": "Thomas Despeyroux / Unsplash",
       "fieldtype": "asset"
     },
+    "name__i18n__de": "Provence",
+    "name__i18n__es": "Provenza",
+    "name__i18n__fr": "Provence",
     "image_landscape": {
       "id": 230846563816100,
       "alt": "Stone houses, castle and church tower of Gordes on a hillside above green scrub",
@@ -183,6 +210,108 @@
       "filename": "https://a.storyblok.com/f/295888311565739/ead30551f6/provence-gordes-hill-village.jpg",
       "copyright": "Sébastien Jermer / Unsplash",
       "fieldtype": "asset"
+    },
+    "region__i18n__de": "Provence-Alpes-Côte d'Azur",
+    "region__i18n__es": "Provenza-Alpes-Costa Azul",
+    "region__i18n__fr": "Provence-Alpes-Côte d'Azur",
+    "summary__i18n__de": "Lavendelreihen, ockerfarbene Dörfer und Marktplätze im Süden Frankreichs. Eine Region, die man am besten langsam und mit dem Auto erkundet.",
+    "summary__i18n__es": "Hileras de lavanda, pueblos ocres y plazas de mercado en el sur de Francia. Una región para recorrer sin prisa, en coche.",
+    "summary__i18n__fr": "Rangs de lavande, villages ocre et places de marché dans le sud de la France. Une région à découvrir lentement, en voiture.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Die Provence umfasst den Südosten Frankreichs, vom Rhônetal nach Osten Richtung Alpen und nach Süden bis zum Mittelmeer. Ihre Landschaften wechseln schnell: Kalksteinrücken, Weingärten, Olivenhaine und Lavendelplateaus.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Dörfer wie Gordes und Roussillon liegen auf Hügelkuppen im Luberon und sind aus hellem Stein oder mit ockerfarbenen Mauern gebaut. Die Zisterzienserabtei Sénanque steht in einem Tal nahe Gordes. Aix-en-Provence bietet schattige Alleen, Brunnen und tägliche Märkte.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ende Juni und Juli bringen die Lavendelblüte und den größten Andrang. Mai, Anfang Juni und September sind ruhiger und immer noch warm. Zimmer für Juli solltest du frühzeitig buchen.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La Provenza ocupa el sureste de Francia, desde el valle del Ródano hacia el este, en dirección a los Alpes, y hacia el sur hasta el Mediterráneo. Sus paisajes cambian rápido: crestas calcáreas, viñedos, olivares y mesetas de lavanda.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Pueblos como Gordes y Roussillon se asientan en lo alto de las colinas del Luberon, construidos con piedra clara o muros de color ocre. La abadía cisterciense de Sénanque se alza en un valle cercano a Gordes. Aix-en-Provence suma avenidas sombreadas, fuentes y mercados diarios.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "A finales de junio y en julio llegan la floración de la lavanda y las mayores multitudes. Mayo, principios de junio y septiembre son más tranquilos y siguen siendo cálidos. Reserva alojamiento con antelación para julio.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La Provence couvre le sud-est de la France, de la vallée du Rhône vers l'est en direction des Alpes et vers le sud jusqu'à la Méditerranée. Ses paysages changent vite : crêtes calcaires, vignobles, oliveraies et plateaux de lavande.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Des villages comme Gordes et Roussillon se perchent sur les collines du Luberon, bâtis en pierre claire ou en murs ocre. L'abbaye cistercienne de Sénanque se trouve dans une vallée proche de Gordes. Aix-en-Provence ajoute des avenues ombragées, des fontaines et des marchés quotidiens.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Fin juin et juillet apportent la floraison de la lavande et la plus grande affluence. Mai, début juin et septembre sont plus calmes et restent chauds. Réservez tôt pour juillet.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -204,8 +333,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "09415f6f67eee6434beda3616b9a277075f4324a",
-    "timestamp": "1792592503"
+    "token": "23e69d4cac7e99ce0227a4548f8854d79a3612c1",
+    "timestamp": "1794347525"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -247,28 +376,98 @@
       "path": "data/destinations/provence",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/provence",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/provence",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -30,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240256130686507,
+      "story_id": 230846918064814,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:41.900Z",
+      "published_at": "2026-11-10T21:24:41.900Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230850657503285",
+          "display_name": "France",
+          "name": "france",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256133467692,
+      "story_id": 230846918064814,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:42.580Z",
+      "published_at": "2026-11-10T21:24:42.580Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230850657503285",
+          "display_name": "France",
+          "name": "france",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256136412717,
+      "story_id": 230846918064814,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:43.299Z",
+      "published_at": "2026-11-10T21:24:43.299Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230850657503285",
+          "display_name": "France",
+          "name": "france",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230922646642997,
+  "current_version_id": 240251546822560,
   "variant_type": null,
   "taxonomy_terms": [
     {

@@ -1,15 +1,17 @@
 import { storyblokEditable } from '@storyblok/react/rsc';
-import { resolveLink } from '@/lib/links';
+import { lang } from 'next/root-params';
+import { linkHref } from '@/lib/language';
 import { VARIANT_CLASSES, buttonClasses } from './buttonClasses';
 
-const Button = ({ blok, size }) => {
+const Button = async ({ blok, size }) => {
 	const variant = VARIANT_CLASSES[blok.variant] ? blok.variant : 'primary';
+	const language = await lang();
 
 	return (
 		<a
 			{...storyblokEditable(blok)}
 			className={buttonClasses(variant, size === 'sm' ? 'sm' : 'regular')}
-			href={resolveLink(blok.link)}
+			href={linkHref(blok.link, language)}
 		>
 			{blok.label}
 		</a>

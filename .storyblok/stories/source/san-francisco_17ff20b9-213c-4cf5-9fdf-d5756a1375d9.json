@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:30:01.817Z",
-  "published_at": "2026-10-15T14:30:01.803Z",
+  "updated_at": "2026-11-10T20:56:56.739Z",
+  "published_at": "2026-11-10T20:56:56.720Z",
   "id": 230952967237305,
   "uuid": "17ff20b9-213c-4cf5-9fdf-d5756a1375d9",
   "is_folder": false,
@@ -22,17 +22,26 @@
       {
         "_uid": "6735ff9f-cae3-47da-bf2b-38c1c5c741e7",
         "headline": "Why San Francisco",
-        "component": "destination_usps"
+        "component": "destination_usps",
+        "headline__i18n__de": "Warum San Francisco",
+        "headline__i18n__es": "Por qué San Francisco",
+        "headline__i18n__fr": "Pourquoi San Francisco"
       },
       {
         "_uid": "2cd94b4a-3dfd-46dc-a193-62748a6ae8ed",
         "headline": "About San Francisco",
-        "component": "destination_bio"
+        "component": "destination_bio",
+        "headline__i18n__de": "Über San Francisco",
+        "headline__i18n__es": "Sobre San Francisco",
+        "headline__i18n__fr": "À propos de San Francisco"
       },
       {
         "_uid": "1d95e61c-5665-45ea-9be9-e0d073e65fd0",
         "headline": "San Francisco in pictures",
-        "component": "destination_gallery"
+        "component": "destination_gallery",
+        "headline__i18n__de": "San Francisco in Bildern",
+        "headline__i18n__es": "San Francisco en imágenes",
+        "headline__i18n__fr": "San Francisco en images"
       },
       {
         "_uid": "d0c95288-6492-4fdf-bf91-2eeb438afae2",
@@ -98,7 +107,193 @@
           ]
         },
         "headline": "Getting around",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Die Muni betreibt Busse, Stadtbahn, historische Straßenbahnen und Cable Cars, und die BART verbindet die Stadt mit dem Flughafen und der East Bay. Beides lässt sich mit einer Clipper Card oder dem Smartphone bezahlen; eine Fahrt mit dem Cable Car kostet 8 $.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Die BART vom SFO zur Powell Street braucht etwa 30 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Die Fähre von Pier 33 nach Alcatraz braucht etwa 15 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Hin und zurück zu Fuß über die Golden Gate Bridge sind es etwa 5,4 km.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Muni gestiona los autobuses, el tren ligero, los tranvías históricos y los cable cars, y BART conecta la ciudad con el aeropuerto y East Bay. Se puede pagar ambos con una tarjeta Clipper o con el móvil; un viaje en cable car cuesta 8 $.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "El BART desde SFO hasta Powell Street tarda unos 30 minutos.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "El ferri desde el Pier 33 hasta Alcatraz tarda unos 15 minutos.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Cruzar a pie el puente Golden Gate y volver son unos 5,4 km.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La Muni exploite les bus, le tramway léger, les tramways historiques et les cable cars, et le BART relie la ville à l'aéroport et à l'East Bay. Une carte Clipper ou un téléphone permet de payer les deux ; un trajet en cable car coûte 8 $.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Le BART de SFO à Powell Street met environ 30 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Le ferry du Pier 33 à Alcatraz met environ 15 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Traverser le Golden Gate Bridge à pied, aller-retour, représente environ 5,4 km.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Unterwegs",
+        "headline__i18n__es": "Cómo moverse",
+        "headline__i18n__fr": "Se déplacer"
       }
     ],
     "component": "destination_page",
@@ -123,8 +318,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "7a7baba9bb2a2bfc45f31d2d5b7d15148ad9e25c",
-    "timestamp": "1792592493"
+    "token": "460f1b555d13b977e611d6862b0cff7837ea7559",
+    "timestamp": "1794347515"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -156,28 +351,59 @@
       "path": "destinations/san-francisco",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/san-francisco",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/san-francisco",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -350,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255600262503,
+      "story_id": 230952967237305,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:32.404Z",
+      "published_at": "2026-11-10T21:22:32.404Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255732608417,
+      "story_id": 230952967237305,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:04.715Z",
+      "published_at": "2026-11-10T21:23:04.715Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255855582680,
+      "story_id": 230952967237305,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:34.737Z",
+      "published_at": "2026-11-10T21:23:34.737Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230952967328989,
+  "current_version_id": 240249293008471,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

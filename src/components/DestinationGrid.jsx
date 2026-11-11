@@ -5,7 +5,10 @@ import DestinationSearch from './DestinationSearch';
 import DestinationSearchView from './DestinationSearchView';
 import { storyblokEditable } from '@storyblok/react/rsc';
 import { getStoryblokApi } from '@/lib/storyblok';
-import { storyHref } from '@/lib/links';
+import { countryName } from '@/lib/countryName';
+import { getLabel, loadLabels } from '@/lib/labels';
+import { lang } from 'next/root-params';
+import { deliveryLanguageParams, storyHref } from '@/lib/language';
 import {
 	clearChoicesHref,
 	parseChoices,
@@ -16,16 +19,18 @@ import {
 async function findPages(uuids) {
 	const hrefs = {};
 	if (!uuids.length) return hrefs;
+	const language = await lang();
 	try {
 		const { data } = await getStoryblokApi().get('cdn/stories', {
 			version: 'draft',
 			content_type: 'destination_page',
+			...deliveryLanguageParams(language),
 			filter_query: { destination: { in: uuids.join(',') } },
 			per_page: 100,
 		});
 		for (const page of data?.stories || []) {
 			const id = page.content?.destination;
-			if (id) hrefs[id] = storyHref(page);
+			if (id) hrefs[id] = storyHref(page, language);
 		}
 	} catch (error) {
 		console.error('DestinationGrid: page lookup failed', error);
@@ -37,6 +42,7 @@ async function findPages(uuids) {
 // `countries` and that carries any of `attributes`. An empty setting
 // filters nothing.
 export async function loadAllDestinations({ countries = [], attributes = [] }) {
+	const language = await lang();
 	const filterQuery = {};
 	if (countries.length) filterQuery.country = { in: countries.join(',') };
 	if (attributes.length) {
@@ -48,6 +54,7 @@ export async function loadAllDestinations({ countries = [], attributes = [] }) {
 			{
 				version: 'draft',
 				content_type: 'destination',
+				...deliveryLanguageParams(language),
 				...(Object.keys(filterQuery).length && { filter_query: filterQuery }),
 			},
 			'stories',
@@ -66,23 +73,6 @@ const toRecord = (story) => ({
 	attributes: story.content?.attributes || [],
 });
 
-// Labels from a datasource, in datasource order: { value: label }.
-async function loadLabels(datasource) {
-	try {
-		const entries = await getStoryblokApi().getAll(
-			'cdn/datasource_entries',
-			{ datasource },
-			'datasource_entries',
-		);
-		return Object.fromEntries(
-			entries.map((entry) => [entry.value, entry.name]),
-		);
-	} catch (error) {
-		console.error(`DestinationGrid: ${datasource} labels failed`, error);
-		return {};
-	}
-}
-
 // The Destination stories the grid's Pool is filtered from: the picked
 // Destinations in the editor order when the editor picked any, otherwise
 // every Destination in the grid's Countries and Destination Attributes.
@@ -100,15 +90,24 @@ export async function loadDestinations(blok) {
 }
 
 const DestinationGrid = async ({ blok, searchParams }) => {
+	const language = await lang();
 	const stories = await loadDestinations(blok);
 	const storyByUuid = new Map(stories.map((story) => [story.uuid, story]));
 
 	// With search off the grid ignores the URL and shows the whole Pool.
 	const search = Boolean(blok.search_enabled);
+	const placesTemplates = {
+		one: await getLabel('places-one'),
+		other: await getLabel('places-other'),
+		filtered: await getLabel('places-filtered'),
+	};
+	// Cards name their Country in every mode, so the labels load regardless.
+	const countryLabels = await loadLabels('countries', language);
+	const exploreTemplate = await getLabel('card-explore');
 	const labels = search
 		? {
-				countries: await loadLabels('countries'),
-				attributes: await loadLabels('destination-attributes'),
+				countries: countryLabels,
+				attributes: await loadLabels('destination-attributes', language),
 			}
 		: {};
 	const choices = parseChoices(search ? searchParams : undefined);
@@ -131,6 +130,8 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 			key={destination.uuid}
 			destination={destination}
 			href={hrefs[destination.uuid]}
+			countryLabel={countryName(countryLabels, destination.content?.country)}
+			exploreTemplate={exploreTemplate}
 		/>
 	);
 
@@ -146,8 +147,14 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 			<DestinationCarousel
 				headline={blok.headline}
 				placesLabel={
-					destinations.length > 0 ? placesLabel(searchResult) : undefined
+					destinations.length > 0
+						? placesLabel(searchResult, placesTemplates)
+						: undefined
 				}
+				label={await getLabel('carousel-label')}
+				roleDescription={await getLabel('carousel-roledescription')}
+				previousLabel={await getLabel('carousel-previous')}
+				nextLabel={await getLabel('carousel-next')}
 			>
 				{destinations.map(card)}
 			</DestinationCarousel>,
@@ -165,7 +172,7 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 					)}
 					{destinations.length > 0 && (
 						<span className="font-mono text-xs text-slate-500 dark:text-slate-300">
-							{placesLabel(searchResult)}
+							{placesLabel(searchResult, placesTemplates)}
 						</span>
 					)}
 				</div>
@@ -180,13 +187,15 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 		destinations.map((destination) => [destination.uuid, card(destination)]),
 	);
 	const texts = {
-		placeholder: blok.search_placeholder,
-		countryLabel: blok.country_label,
-		attributesLabel: blok.attributes_label,
-		emptyMessage: blok.empty_message,
-		clearLabel: blok.clear_label,
-		clearGroupLabel: blok.clear_group_label || 'Clear',
-		doneLabel: blok.done_label || 'Done',
+		placeholder: await getLabel('search-placeholder'),
+		countryLabel: await getLabel('country-heading'),
+		attributesLabel: await getLabel('attributes-heading'),
+		emptyMessage: await getLabel('empty-message'),
+		clearLabel: await getLabel('clear-all'),
+		clearGroupLabel: await getLabel('clear-group'),
+		doneLabel: await getLabel('done'),
+		selectedTemplate: await getLabel('filter-selected'),
+		placesTemplates,
 	};
 	// The fallback is the same grid, filtered on the server, so a shared
 	// link never flashes the full Pool.

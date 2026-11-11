@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:25:48.100Z",
-  "published_at": "2026-10-15T14:25:48.085Z",
+  "updated_at": "2026-11-10T21:11:23.846Z",
+  "published_at": "2026-11-10T21:11:23.831Z",
   "id": 230951928028810,
   "uuid": "514abc54-f596-47e5-92e1-d86f76a675a3",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "c8665554-b52e-4f6d-a95c-6a099ed38869",
         "text": "Overnight junks anchor among the karsts, so you wake to the islands before the day boats sail from Tuan Chau.",
         "title": "A night on the bay",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Übernachtungs-Dschunken ankern zwischen den Karstfelsen, sodass du inmitten der Inseln aufwachst, bevor die Tagesboote von Tuan Chau ablegen.",
+        "text__i18n__es": "Los juncos con pernocta fondean entre los karsts, así que te despiertas rodeado de islas antes de que zarpen los barcos de día desde Tuan Chau.",
+        "text__i18n__fr": "Les jonques de nuit mouillent parmi les pitons karstiques : vous vous réveillez au milieu des îles avant que les bateaux de la journée n'appareillent de Tuan Chau.",
+        "title__i18n__de": "Eine Nacht in der Bucht",
+        "title__i18n__es": "Una noche en la bahía",
+        "title__i18n__fr": "Une nuit dans la baie"
       },
       {
         "_uid": "216a744d-8ce7-4aa2-82a3-e18406a456b1",
         "text": "Sung Sot, the Surprise Cave, opens into chambers of stalactites high inside an island.",
         "title": "Caves inside the islands",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Sung Sot, die Überraschungshöhle, öffnet sich hoch im Inneren einer Insel zu Kammern voller Stalaktiten.",
+        "text__i18n__es": "Sung Sot, la Cueva de la Sorpresa, se abre en cámaras de estalactitas en lo alto de una isla.",
+        "text__i18n__fr": "Sung Sot, la grotte des Surprises, s'ouvre sur des salles de stalactites perchées au cœur d'une île.",
+        "title__i18n__de": "Höhlen im Inneren der Inseln",
+        "title__i18n__es": "Cuevas dentro de las islas",
+        "title__i18n__fr": "Des grottes au cœur des îles"
       },
       {
         "_uid": "15f8647a-9fca-4641-a9c9-69a516cb4672",
         "text": "Kayaks slip under low rock arches into enclosed lagoons that larger boats cannot reach.",
         "title": "Paddle through the arches",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Kajaks gleiten unter niedrigen Felsbögen hindurch in abgeschlossene Lagunen, die größere Boote nicht erreichen.",
+        "text__i18n__es": "Los kayaks se deslizan bajo arcos de roca bajos hasta lagunas cerradas a las que los barcos grandes no llegan.",
+        "text__i18n__fr": "Les kayaks se faufilent sous des arches rocheuses basses jusqu'à des lagons fermés que les grands bateaux ne peuvent atteindre.",
+        "title__i18n__de": "Paddeln durch die Felsbögen",
+        "title__i18n__es": "Rema a través de los arcos",
+        "title__i18n__fr": "Pagayer sous les arches"
       },
       {
         "_uid": "3a8ba332-1c78-4257-9396-2135f75b30cc",
         "text": "South of Ha Long, Lan Ha Bay off Cat Ba Island has the same karsts with fewer boats.",
         "title": "Lan Ha Bay next door",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Südlich von Ha Long bietet die Lan-Ha-Bucht vor der Insel Cat Ba dieselben Karstfelsen mit weniger Booten.",
+        "text__i18n__es": "Al sur de Ha Long, la bahía de Lan Ha, junto a la isla de Cat Ba, ofrece los mismos karsts con menos barcos.",
+        "text__i18n__fr": "Au sud d'Along, la baie de Lan Ha, près de l'île de Cat Ba, offre les mêmes pitons karstiques avec moins de bateaux.",
+        "title__i18n__de": "Die Lan-Ha-Bucht nebenan",
+        "title__i18n__es": "La bahía de Lan Ha, al lado",
+        "title__i18n__fr": "La baie de Lan Ha, juste à côté"
       }
     ],
     "region": "Quang Ninh",
@@ -181,6 +205,9 @@
         "size": "2400x3200"
       }
     },
+    "name__i18n__de": "Halong-Bucht",
+    "name__i18n__es": "Bahía de Ha Long",
+    "name__i18n__fr": "Baie d'Along",
     "image_landscape": {
       "id": 230951584963885,
       "alt": "Boats moor in a turquoise cove ringed by sheer karst cliffs and a sand beach.",
@@ -189,11 +216,113 @@
       "title": "",
       "source": "",
       "filename": "https://a.storyblok.com/f/295888311565739/552b6ee3d4/ha-long-bay-lobato.jpg",
-      "copyright": "Marina Lobato / Unsplash",
+      "copyright": "Vivu Vietnam / Unsplash",
       "fieldtype": "asset",
       "meta_data": {
         "size": "2400x1174"
       }
+    },
+    "region__i18n__de": "Quang Ninh",
+    "region__i18n__es": "Quang Ninh",
+    "region__i18n__fr": "Quang Ninh",
+    "summary__i18n__de": "Fast 2.000 Kalksteininseln ragen im Golf von Tonkin aus grünem Wasser. Du erlebst sie vom Deck einer Dschunke und vom Sitz eines Kajaks aus.",
+    "summary__i18n__es": "Cerca de 2.000 islas calizas que emergen de aguas verdes en el golfo de Tonkín. Se disfruta desde la cubierta de un junco y desde el asiento de un kayak.",
+    "summary__i18n__fr": "Près de 2 000 îles calcaires émergeant d'une eau verte dans le golfe du Tonkin. On les découvre depuis le pont d'une jonque ou depuis un kayak.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Die Halong-Bucht liegt im Golf von Tonkin im Nordosten Vietnams, etwa 170 Kilometer östlich von Hanoi. Fast 2.000 Kalksteininseln und -säulen ragen aus dem Wasser, viele von Höhlen durchzogen und von kleinen Stränden gesäumt. Die Lan-Ha-Bucht und die Insel Cat Ba setzen die Karstlandschaft nach Süden fort.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Der Name bedeutet „herabsteigender Drache“ und geht auf eine Legende zurück, in der Drachen Juwelen ausspuckten, aus denen die Inseln entstanden. 1994 nahm die UNESCO die Bucht in ihre Welterbeliste auf. Fischerfamilien lebten einst in schwimmenden Dörfern wie Cua Van, und einige Flöße und Fischfarmen sind geblieben. Gegrillte Tintenfischfrikadellen, Cha Muc, sind das Gericht der Region.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Von März bis Mai und von September bis November sind das Wasser ruhig und die Sicht klar. Im Sommer können Stürme Fahrten ausfallen lassen. Buche eine Übernachtungskreuzfahrt, um die Bucht im Morgengrauen zu erleben, bevor die Tagesboote eintreffen.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La bahía de Ha Long se encuentra en el golfo de Tonkín, en el noreste de Vietnam, a unos 170 kilómetros al este de Hanói. Cerca de 2.000 islas y pilares de piedra caliza emergen del agua, muchos horadados por cuevas y rodeados de pequeñas playas. La bahía de Lan Ha y la isla de Cat Ba prolongan el paisaje kárstico hacia el sur.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El nombre significa dragón descendente, por una leyenda en la que unos dragones escupieron joyas que formaron las islas. La UNESCO inscribió la bahía en 1994. Antiguamente, familias de pescadores vivían en aldeas flotantes como Cua Van, y aún quedan algunas balsas y piscifactorías. Los buñuelos de calamar a la parrilla, cha muc, son el plato local.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De marzo a mayo y de septiembre a noviembre el agua está en calma y la visibilidad es buena. En verano las tormentas pueden cancelar travesías. Reserva un crucero con pernocta para ver la bahía al amanecer, antes de que lleguen los barcos de día.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La baie d'Along se trouve dans le golfe du Tonkin, au nord-est du Vietnam, à environ 170 kilomètres à l'est de Hanoï. Près de 2 000 îles et piliers calcaires émergent de l'eau, nombre d'entre eux creusés de grottes et bordés de petites plages. La baie de Lan Ha et l'île de Cat Ba prolongent le paysage karstique vers le sud.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Le nom signifie dragon descendant, d'après une légende selon laquelle des dragons crachèrent des joyaux qui formèrent les îles. L'UNESCO a inscrit la baie en 1994. Des familles de pêcheurs vivaient autrefois dans des villages flottants comme Cua Van, et quelques radeaux et fermes piscicoles subsistent. Les galettes de calamar grillées, cha muc, sont la spécialité locale.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De mars à mai et de septembre à novembre, l'eau est calme et la visibilité bonne. L'été apporte des orages qui peuvent annuler les traversées. Réservez une croisière avec nuit à bord pour voir la baie à l'aube, avant l'arrivée des bateaux de la journée.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -215,8 +344,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "8a0924dbc567e4e05d09aa7c3d4282b078266666",
-    "timestamp": "1792592497"
+    "token": "20bd344db12814cfc193f4cd8a237f3c8019e738",
+    "timestamp": "1794347519"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -258,28 +387,59 @@
       "path": "data/destinations/ha-long-bay",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/ha-long-bay",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/ha-long-bay",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -160,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255797067205,
+      "story_id": 230951928028810,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:20.450Z",
+      "published_at": "2026-11-10T21:23:20.450Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255799745991,
+      "story_id": 230951928028810,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:21.105Z",
+      "published_at": "2026-11-10T21:23:21.105Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255802699209,
+      "story_id": 230951928028810,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:21.826Z",
+      "published_at": "2026-11-10T21:23:21.826Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230951928101525,
+  "current_version_id": 240252861496680,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T13:15:22.933Z",
-  "published_at": "2026-10-15T13:15:22.917Z",
+  "updated_at": "2026-11-10T20:58:05.379Z",
+  "published_at": "2026-11-10T20:58:05.360Z",
   "id": 230934306647423,
   "uuid": "dbcf6ae6-1dac-40d6-ac76-446831ff5ddd",
   "is_folder": false,
@@ -35,7 +35,10 @@
         },
         "intro": "",
         "headline": "Find your perfect holiday",
-        "component": "hero"
+        "component": "hero",
+        "headline__i18n__de": "Finde deinen perfekten Urlaub",
+        "headline__i18n__es": "Encuentra tus vacaciones perfectas",
+        "headline__i18n__fr": "Trouvez les vacances parfaites"
       },
       {
         "_uid": "0510df41-5238-4ba6-977e-c8b841e6f7f9",
@@ -48,8 +51,23 @@
         "country_label": "Country",
         "empty_message": "No destinations match your search.",
         "search_enabled": true,
-        "attributes_label": "Attributes",
-        "search_placeholder": "Search destinations"
+        "attributes_label": "Highlights",
+        "search_placeholder": "Search destinations",
+        "clear_label__i18n__de": "Alle löschen",
+        "clear_label__i18n__es": "Borrar todo",
+        "clear_label__i18n__fr": "Tout effacer",
+        "country_label__i18n__de": "Land",
+        "country_label__i18n__es": "País",
+        "country_label__i18n__fr": "Pays",
+        "empty_message__i18n__de": "Keine Reiseziele entsprechen deiner Suche.",
+        "empty_message__i18n__es": "Ningún destino coincide con tu búsqueda.",
+        "empty_message__i18n__fr": "Aucune destination ne correspond à votre recherche.",
+        "attributes_label__i18n__de": "Highlights",
+        "attributes_label__i18n__es": "Aspectos destacados",
+        "attributes_label__i18n__fr": "Points forts",
+        "search_placeholder__i18n__de": "Reiseziele suchen",
+        "search_placeholder__i18n__es": "Buscar destinos",
+        "search_placeholder__i18n__fr": "Rechercher des destinations"
       }
     ],
     "component": "page"
@@ -73,8 +91,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "7a7baba9bb2a2bfc45f31d2d5b7d15148ad9e25c",
-    "timestamp": "1792592493"
+    "token": "460f1b555d13b977e611d6862b0cff7837ea7559",
+    "timestamp": "1794347515"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -106,28 +124,59 @@
       "path": "destinations/",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -380,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255567293797,
+      "story_id": 230934306647423,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:24.355Z",
+      "published_at": "2026-11-10T21:22:24.355Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255621967233,
+      "story_id": 230934306647423,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:37.703Z",
+      "published_at": "2026-11-10T21:22:37.703Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255671631257,
+      "story_id": 230934306647423,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:49.828Z",
+      "published_at": "2026-11-10T21:22:49.828Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230934621706478,
+  "current_version_id": 240249578012529,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

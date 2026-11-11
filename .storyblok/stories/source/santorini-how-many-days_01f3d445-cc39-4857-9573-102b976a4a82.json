@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:37.022Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T20:57:04.186Z",
+  "published_at": "2026-11-10T20:57:04.157Z",
   "id": 230846661450365,
   "uuid": "01f3d445-cc39-4857-9573-102b976a4a82",
   "is_folder": false,
@@ -38,7 +38,79 @@
       ]
     },
     "question": "How many days do I need?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Drei Tage reichen für Fira, Oia, einen Strand und ein Weingut.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Mit einem vierten Tag bleibt Zeit für Akrotiri und eine Bootsfahrt auf der Caldera.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Tres días bastan para Fira, Oia, una playa y una bodega.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Añade un cuarto día para Akrotiri y una excursión en barco por la caldera.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Trois jours suffisent pour Fira, Oia, une plage et un domaine viticole.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ajoutez un quatrième jour pour Akrotiri et une excursion en bateau sur la caldeira.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Wie viele Tage brauche ich?",
+    "question__i18n__es": "¿Cuántos días necesito?",
+    "question__i18n__fr": "Combien de jours me faut-il ?"
   },
   "published": true,
   "slug": "santorini-how-many-days",
@@ -59,8 +131,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "1c6ee6c384e2502d103e10e793d5c19576df78ad",
-    "timestamp": "1792592499"
+    "token": "c33351fca276f5ca874fc3520da4103c5e9bfdf2",
+    "timestamp": "1794347521"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -102,28 +174,134 @@
       "path": "data/faqs/santorini-how-many-days",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/santorini-how-many-days",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/santorini-how-many-days",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -110,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255814757841,
+      "story_id": 230846661450365,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:24.771Z",
+      "published_at": "2026-11-10T21:23:24.771Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230851230324796",
+          "display_name": "Greece",
+          "name": "greece",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851260839997",
+          "display_name": "Santorini",
+          "name": "santorini",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255817383378,
+      "story_id": 230846661450365,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:25.411Z",
+      "published_at": "2026-11-10T21:23:25.411Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230851230324796",
+          "display_name": "Greece",
+          "name": "greece",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851260839997",
+          "display_name": "Santorini",
+          "name": "santorini",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255820627411,
+      "story_id": 230846661450365,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:26.204Z",
+      "published_at": "2026-11-10T21:23:26.204Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230851230324796",
+          "display_name": "Greece",
+          "name": "greece",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851260839997",
+          "display_name": "Santorini",
+          "name": "santorini",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857265167702,
+  "current_version_id": 240249303580258,
   "variant_type": null,
   "taxonomy_terms": [
     {

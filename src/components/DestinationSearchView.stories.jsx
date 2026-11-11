@@ -7,6 +7,7 @@ import {
 } from '../../.storybook/fixtures';
 import DestinationCard from './DestinationCard';
 import DestinationSearchView from './DestinationSearchView';
+import { countryName } from '@/lib/countryName';
 import { searchDestinations } from '@/lib/destinationSearch';
 
 const [grid] = bloks('destinations/', 'destination_grid');
@@ -34,18 +35,27 @@ const cards = Object.fromEntries(
 			key={destination.uuid}
 			destination={destination}
 			href={destinationPageHref(destination.uuid)}
+			countryLabel={countryName(labels.countries, destination.content.country)}
+			exploreTemplate="Explore {name}"
 		/>,
 	]),
 );
 
+// The English ui-labels the grid reads on the server.
 const texts = {
-	placeholder: grid.search_placeholder,
-	countryLabel: grid.country_label,
-	attributesLabel: grid.attributes_label,
-	emptyMessage: grid.empty_message,
-	clearLabel: grid.clear_label,
-	clearGroupLabel: grid.clear_group_label || 'Clear',
-	doneLabel: grid.done_label || 'Done',
+	placeholder: 'Search destinations',
+	countryLabel: 'Country',
+	attributesLabel: 'Attributes',
+	emptyMessage: 'No destinations match your search.',
+	clearLabel: 'Clear all',
+	clearGroupLabel: 'Clear',
+	doneLabel: 'Done',
+	selectedTemplate: '{count} selected',
+	placesTemplates: {
+		one: '{count} place',
+		other: '{count} places',
+		filtered: '{shown} of {total} places',
+	},
 };
 
 const noChoices = { text: '', countries: [], attributes: [] };

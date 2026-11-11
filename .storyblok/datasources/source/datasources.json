@@ -1,161 +1,614 @@
 [
   {
-    "id": 230922040954261,
-    "name": "Destination Attributes",
-    "slug": "destination-attributes",
-    "dimensions": [],
-    "created_at": "2026-10-15T12:24:11.403Z",
-    "updated_at": "2026-10-15T12:24:11.403Z",
-    "entries": [
-      {
-        "id": 230922082397526,
-        "name": "Beach",
-        "value": "beach"
-      },
-      {
-        "id": 230922086456663,
-        "name": "Nature",
-        "value": "nature"
-      },
-      {
-        "id": 230922090483032,
-        "name": "City",
-        "value": "city"
-      },
-      {
-        "id": 230922094751065,
-        "name": "Mountains",
-        "value": "mountains"
-      },
-      {
-        "id": 230922098834778,
-        "name": "Coast",
-        "value": "coast"
-      },
-      {
-        "id": 230922103082331,
-        "name": "Island",
-        "value": "island"
-      },
-      {
-        "id": 230922107288924,
-        "name": "Countryside",
-        "value": "countryside"
-      },
-      {
-        "id": 230922111511901,
-        "name": "Culture",
-        "value": "culture"
-      },
-      {
-        "id": 230947563356852,
-        "name": "Wildlife",
-        "value": "wildlife"
-      },
-      {
-        "id": 230947565830837,
-        "name": "Desert",
-        "value": "desert"
-      },
-      {
-        "id": 230922115681630,
-        "name": "Food",
-        "value": "food"
-      }
-    ]
-  },
-  {
     "id": 230619952143326,
     "name": "Countries",
     "slug": "countries",
-    "dimensions": [],
+    "dimensions": [
+      {
+        "id": 240237475290566,
+        "name": "German",
+        "entry_value": "de",
+        "datasource_id": 230619952143326,
+        "created_at": "2026-11-10T20:08:47.363Z",
+        "updated_at": "2026-11-10T20:08:47.363Z",
+        "space_environment_id": null,
+        "space_id": null
+      },
+      {
+        "id": 240237475372487,
+        "name": "Spanish",
+        "entry_value": "es",
+        "datasource_id": 230619952143326,
+        "created_at": "2026-11-10T20:08:47.384Z",
+        "updated_at": "2026-11-10T20:08:47.384Z",
+        "space_environment_id": null,
+        "space_id": null
+      },
+      {
+        "id": 240237475409352,
+        "name": "French",
+        "entry_value": "fr",
+        "datasource_id": 230619952143326,
+        "created_at": "2026-11-10T20:08:47.394Z",
+        "updated_at": "2026-11-10T20:08:47.394Z",
+        "space_environment_id": null,
+        "space_id": null
+      }
+    ],
     "created_at": "2026-10-14T15:54:59.248Z",
-    "updated_at": "2026-10-14T15:54:59.248Z",
+    "updated_at": "2026-11-10T20:08:47.403Z",
     "entries": [
       {
         "id": 230619985759358,
         "name": "France",
-        "value": "france"
+        "value": "france",
+        "dimension_values": {
+          "de": "Frankreich",
+          "es": "Francia",
+          "fr": "France"
+        }
       },
       {
         "id": 230619989974143,
         "name": "Spain",
-        "value": "spain"
+        "value": "spain",
+        "dimension_values": {
+          "de": "Spanien",
+          "es": "España",
+          "fr": "Espagne"
+        }
       },
       {
         "id": 230619994520704,
         "name": "Italy",
-        "value": "italy"
+        "value": "italy",
+        "dimension_values": {
+          "de": "Italien",
+          "es": "Italia",
+          "fr": "Italie"
+        }
       },
       {
         "id": 230619998088321,
         "name": "Greece",
-        "value": "greece"
+        "value": "greece",
+        "dimension_values": {
+          "de": "Griechenland",
+          "es": "Grecia",
+          "fr": "Grèce"
+        }
       },
       {
         "id": 230620003138690,
         "name": "Portugal",
-        "value": "portugal"
+        "value": "portugal",
+        "dimension_values": {
+          "de": "Portugal",
+          "es": "Portugal",
+          "fr": "Portugal"
+        }
       },
       {
         "id": 230947516060329,
         "name": "United States",
-        "value": "united-states"
+        "value": "united-states",
+        "dimension_values": {
+          "de": "Vereinigte Staaten",
+          "es": "Estados Unidos",
+          "fr": "États-Unis"
+        }
       },
       {
         "id": 230947520680618,
         "name": "Croatia",
-        "value": "croatia"
+        "value": "croatia",
+        "dimension_values": {
+          "de": "Kroatien",
+          "es": "Croacia",
+          "fr": "Croatie"
+        }
       },
       {
         "id": 230947524887211,
         "name": "Netherlands",
-        "value": "netherlands"
+        "value": "netherlands",
+        "dimension_values": {
+          "de": "Niederlande",
+          "es": "Países Bajos",
+          "fr": "Pays-Bas"
+        }
       },
       {
         "id": 230947529749164,
         "name": "United Kingdom",
-        "value": "united-kingdom"
+        "value": "united-kingdom",
+        "dimension_values": {
+          "de": "Vereinigtes Königreich",
+          "es": "Reino Unido",
+          "fr": "Royaume-Uni"
+        }
       },
       {
         "id": 230947534185133,
         "name": "Morocco",
-        "value": "morocco"
+        "value": "morocco",
+        "dimension_values": {
+          "de": "Marokko",
+          "es": "Marruecos",
+          "fr": "Maroc"
+        }
       },
       {
         "id": 230947538629294,
         "name": "South Africa",
-        "value": "south-africa"
+        "value": "south-africa",
+        "dimension_values": {
+          "de": "Südafrika",
+          "es": "Sudáfrica",
+          "fr": "Afrique du Sud"
+        }
       },
       {
         "id": 230947543601839,
         "name": "Tanzania",
-        "value": "tanzania"
+        "value": "tanzania",
+        "dimension_values": {
+          "de": "Tansania",
+          "es": "Tanzania",
+          "fr": "Tanzanie"
+        }
       },
       {
         "id": 230947548185264,
         "name": "Japan",
-        "value": "japan"
+        "value": "japan",
+        "dimension_values": {
+          "de": "Japan",
+          "es": "Japón",
+          "fr": "Japon"
+        }
       },
       {
         "id": 230947552662193,
         "name": "Indonesia",
-        "value": "indonesia"
+        "value": "indonesia",
+        "dimension_values": {
+          "de": "Indonesien",
+          "es": "Indonesia",
+          "fr": "Indonésie"
+        }
       },
       {
         "id": 230947556987570,
         "name": "Vietnam",
-        "value": "vietnam"
+        "value": "vietnam",
+        "dimension_values": {
+          "de": "Vietnam",
+          "es": "Vietnam",
+          "fr": "Viêt Nam"
+        }
       },
       {
         "id": 230947560354483,
         "name": "Thailand",
-        "value": "thailand"
+        "value": "thailand",
+        "dimension_values": {
+          "de": "Thailand",
+          "es": "Tailandia",
+          "fr": "Thaïlande"
+        }
       },
       {
         "id": 230619982228605,
         "name": "Germany",
-        "value": "germany"
+        "value": "germany",
+        "dimension_values": {
+          "de": "Deutschland",
+          "es": "Alemania",
+          "fr": "Allemagne"
+        }
+      }
+    ]
+  },
+  {
+    "id": 230922040954261,
+    "name": "Destination Attributes",
+    "slug": "destination-attributes",
+    "dimensions": [
+      {
+        "id": 240237477936585,
+        "name": "German",
+        "entry_value": "de",
+        "datasource_id": 230922040954261,
+        "created_at": "2026-11-10T20:08:48.010Z",
+        "updated_at": "2026-11-10T20:08:48.010Z",
+        "space_environment_id": null,
+        "space_id": null
+      },
+      {
+        "id": 240237477948874,
+        "name": "Spanish",
+        "entry_value": "es",
+        "datasource_id": 230922040954261,
+        "created_at": "2026-11-10T20:08:48.014Z",
+        "updated_at": "2026-11-10T20:08:48.014Z",
+        "space_environment_id": null,
+        "space_id": null
+      },
+      {
+        "id": 240237477952971,
+        "name": "French",
+        "entry_value": "fr",
+        "datasource_id": 230922040954261,
+        "created_at": "2026-11-10T20:08:48.015Z",
+        "updated_at": "2026-11-10T20:08:48.015Z",
+        "space_environment_id": null,
+        "space_id": null
+      }
+    ],
+    "created_at": "2026-10-15T12:24:11.403Z",
+    "updated_at": "2026-11-10T20:08:48.016Z",
+    "entries": [
+      {
+        "id": 230922082397526,
+        "name": "Beach",
+        "value": "beach",
+        "dimension_values": {
+          "de": "Strand",
+          "es": "Playa",
+          "fr": "Plage"
+        }
+      },
+      {
+        "id": 230922086456663,
+        "name": "Nature",
+        "value": "nature",
+        "dimension_values": {
+          "de": "Natur",
+          "es": "Naturaleza",
+          "fr": "Nature"
+        }
+      },
+      {
+        "id": 230922090483032,
+        "name": "City",
+        "value": "city",
+        "dimension_values": {
+          "de": "Stadt",
+          "es": "Ciudad",
+          "fr": "Ville"
+        }
+      },
+      {
+        "id": 230922094751065,
+        "name": "Mountains",
+        "value": "mountains",
+        "dimension_values": {
+          "de": "Berge",
+          "es": "Montañas",
+          "fr": "Montagnes"
+        }
+      },
+      {
+        "id": 230922098834778,
+        "name": "Coast",
+        "value": "coast",
+        "dimension_values": {
+          "de": "Küste",
+          "es": "Costa",
+          "fr": "Côte"
+        }
+      },
+      {
+        "id": 230922103082331,
+        "name": "Island",
+        "value": "island",
+        "dimension_values": {
+          "de": "Insel",
+          "es": "Isla",
+          "fr": "Île"
+        }
+      },
+      {
+        "id": 230922107288924,
+        "name": "Countryside",
+        "value": "countryside",
+        "dimension_values": {
+          "de": "Land",
+          "es": "Campo",
+          "fr": "Campagne"
+        }
+      },
+      {
+        "id": 230922111511901,
+        "name": "Culture",
+        "value": "culture",
+        "dimension_values": {
+          "de": "Kultur",
+          "es": "Cultura",
+          "fr": "Culture"
+        }
+      },
+      {
+        "id": 230947563356852,
+        "name": "Wildlife",
+        "value": "wildlife",
+        "dimension_values": {
+          "de": "Tierwelt",
+          "es": "Vida silvestre",
+          "fr": "Faune"
+        }
+      },
+      {
+        "id": 230947565830837,
+        "name": "Desert",
+        "value": "desert",
+        "dimension_values": {
+          "de": "Wüste",
+          "es": "Desierto",
+          "fr": "Désert"
+        }
+      },
+      {
+        "id": 230922115681630,
+        "name": "Food",
+        "value": "food",
+        "dimension_values": {
+          "de": "Essen",
+          "es": "Gastronomía",
+          "fr": "Gastronomie"
+        }
+      }
+    ]
+  },
+  {
+    "id": 240237608903738,
+    "name": "UI Labels",
+    "slug": "ui-labels",
+    "dimensions": [
+      {
+        "id": 240237608943052,
+        "name": "German",
+        "entry_value": "de",
+        "datasource_id": 240237608903738,
+        "created_at": "2026-11-10T20:09:19.994Z",
+        "updated_at": "2026-11-10T20:09:19.994Z",
+        "space_environment_id": null,
+        "space_id": null
+      },
+      {
+        "id": 240237608955341,
+        "name": "Spanish",
+        "entry_value": "es",
+        "datasource_id": 240237608903738,
+        "created_at": "2026-11-10T20:09:19.997Z",
+        "updated_at": "2026-11-10T20:09:19.997Z",
+        "space_environment_id": null,
+        "space_id": null
+      },
+      {
+        "id": 240237608959438,
+        "name": "French",
+        "entry_value": "fr",
+        "datasource_id": 240237608903738,
+        "created_at": "2026-11-10T20:09:19.998Z",
+        "updated_at": "2026-11-10T20:09:19.998Z",
+        "space_environment_id": null,
+        "space_id": null
+      }
+    ],
+    "created_at": "2026-11-10T20:09:19.985Z",
+    "updated_at": "2026-11-10T20:09:19.999Z",
+    "entries": [
+      {
+        "id": 240237647932943,
+        "name": "No destinations match your search.",
+        "value": "empty-message",
+        "dimension_values": {
+          "de": "Keine Reiseziele entsprechen Ihrer Suche.",
+          "es": "No hay destinos que coincidan con tu búsqueda.",
+          "fr": "Aucune destination ne correspond à votre recherche."
+        }
+      },
+      {
+        "id": 240237651136016,
+        "name": "Clear all",
+        "value": "clear-all",
+        "dimension_values": {
+          "de": "Alle löschen",
+          "es": "Borrar todo",
+          "fr": "Tout effacer"
+        }
+      },
+      {
+        "id": 240237654265362,
+        "name": "Attributes",
+        "value": "attributes-heading",
+        "dimension_values": {
+          "de": "Merkmale",
+          "es": "Atributos",
+          "fr": "Attributs"
+        }
+      },
+      {
+        "id": 240237657341459,
+        "name": "Country",
+        "value": "country-heading",
+        "dimension_values": {
+          "de": "Land",
+          "es": "País",
+          "fr": "Pays"
+        }
+      },
+      {
+        "id": 240237660347924,
+        "name": "Clear",
+        "value": "clear-group",
+        "dimension_values": {
+          "de": "Löschen",
+          "es": "Borrar",
+          "fr": "Effacer"
+        }
+      },
+      {
+        "id": 240237663329813,
+        "name": "Done",
+        "value": "done",
+        "dimension_values": {
+          "de": "Fertig",
+          "es": "Listo",
+          "fr": "Terminé"
+        }
+      },
+      {
+        "id": 240237666086423,
+        "name": "Destinations",
+        "value": "carousel-label",
+        "dimension_values": {
+          "de": "Reiseziele",
+          "es": "Destinos",
+          "fr": "Destinations"
+        }
+      },
+      {
+        "id": 240237668847128,
+        "name": "Previous destinations",
+        "value": "carousel-previous",
+        "dimension_values": {
+          "de": "Vorherige Reiseziele",
+          "es": "Destinos anteriores",
+          "fr": "Destinations précédentes"
+        }
+      },
+      {
+        "id": 240237671738905,
+        "name": "Next destinations",
+        "value": "carousel-next",
+        "dimension_values": {
+          "de": "Nächste Reiseziele",
+          "es": "Destinos siguientes",
+          "fr": "Destinations suivantes"
+        }
+      },
+      {
+        "id": 240237674364443,
+        "name": "Language",
+        "value": "switcher-label",
+        "dimension_values": {
+          "de": "Sprache",
+          "es": "Idioma",
+          "fr": "Langue"
+        }
+      },
+      {
+        "id": 240237676817948,
+        "name": "Waypoint",
+        "value": "site-title",
+        "dimension_values": {
+          "de": "Waypoint",
+          "es": "Waypoint",
+          "fr": "Waypoint"
+        }
+      },
+      {
+        "id": 240237679255069,
+        "name": "European destinations our editors keep going back to.",
+        "value": "site-description",
+        "dimension_values": {
+          "de": "Europäische Reiseziele, zu denen unsere Redaktion immer wieder zurückkehrt.",
+          "es": "Destinos europeos a los que nuestro equipo editorial siempre vuelve.",
+          "fr": "Des destinations européennes auxquelles nos rédacteurs reviennent sans cesse."
+        }
+      },
+      {
+        "id": 240237644934670,
+        "name": "Search destinations",
+        "value": "search-placeholder",
+        "dimension_values": {
+          "de": "Reiseziele suchen",
+          "es": "Buscar destinos",
+          "fr": "Rechercher des destinations"
+        }
+      },
+      {
+        "id": 240244555809131,
+        "name": "{count} place",
+        "value": "places-one",
+        "dimension_values": {
+          "de": "{count} Ort",
+          "es": "{count} lugar",
+          "fr": "{count} lieu"
+        }
+      },
+      {
+        "id": 240244558709100,
+        "name": "{count} places",
+        "value": "places-other",
+        "dimension_values": {
+          "de": "{count} Orte",
+          "es": "{count} lugares",
+          "fr": "{count} lieux"
+        }
+      },
+      {
+        "id": 240244561674605,
+        "name": "{shown} of {total} places",
+        "value": "places-filtered",
+        "dimension_values": {
+          "de": "{shown} von {total} Orten",
+          "es": "{shown} de {total} lugares",
+          "fr": "{shown} sur {total} lieux"
+        }
+      },
+      {
+        "id": 240244564357486,
+        "name": "{count} selected",
+        "value": "filter-selected",
+        "dimension_values": {
+          "de": "{count} ausgewählt",
+          "es": "{count} seleccionados",
+          "fr": "{count} sélectionnés"
+        }
+      },
+      {
+        "id": 240248139727260,
+        "name": "Explore {name}",
+        "value": "card-explore",
+        "dimension_values": {
+          "de": "{name} entdecken",
+          "es": "Descubre {name}",
+          "fr": "Découvrir {name}"
+        }
+      },
+      {
+        "id": 240248142324125,
+        "name": "{count} image",
+        "value": "image-one",
+        "dimension_values": {
+          "de": "{count} Bild",
+          "es": "{count} imagen",
+          "fr": "{count} image"
+        }
+      },
+      {
+        "id": 240248145011102,
+        "name": "{count} images",
+        "value": "image-other",
+        "dimension_values": {
+          "de": "{count} Bilder",
+          "es": "{count} imágenes",
+          "fr": "{count} images"
+        }
+      },
+      {
+        "id": 240248147841439,
+        "name": "carousel",
+        "value": "carousel-roledescription",
+        "dimension_values": {
+          "de": "Karussell",
+          "es": "carrusel",
+          "fr": "carrousel"
+        }
       }
     ]
   }

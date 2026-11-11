@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T09:34:21.835Z",
-  "published_at": "2026-10-15T09:34:21.825Z",
+  "updated_at": "2026-11-10T20:57:35.368Z",
+  "published_at": "2026-11-10T20:57:35.351Z",
   "id": 230846289267314,
   "uuid": "080548ac-4979-4f3b-abf4-4e99252b1edb",
   "is_folder": false,
@@ -32,7 +32,13 @@
         },
         "intro": "Answers to common questions about Waypoint and how we work.",
         "headline": "Help",
-        "component": "hero"
+        "component": "hero",
+        "intro__i18n__de": "Antworten auf häufige Fragen zu Waypoint und zu unserer Arbeitsweise.",
+        "intro__i18n__es": "Respuestas a las preguntas frecuentes sobre Waypoint y cómo trabajamos.",
+        "intro__i18n__fr": "Des réponses aux questions courantes sur Waypoint et notre façon de travailler.",
+        "headline__i18n__de": "Hilfe",
+        "headline__i18n__es": "Ayuda",
+        "headline__i18n__fr": "Aide"
       },
       {
         "_uid": "33c4d5e6-f708-4192-8cb3-d4e5f6071823",
@@ -45,7 +51,10 @@
           "fdbdfbb9-4406-4b31-acd4-eacabad00edb"
         ],
         "headline": "Common questions",
-        "component": "faq_section"
+        "component": "faq_section",
+        "headline__i18n__de": "Häufige Fragen",
+        "headline__i18n__es": "Preguntas frecuentes",
+        "headline__i18n__fr": "Questions fréquentes"
       },
       {
         "_uid": "44d5e6f7-0819-42a3-9dc4-e5f607182934",
@@ -81,7 +90,103 @@
           ]
         },
         "headline": "Still have a question?",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Wenn du hier keine Antwort findest, besuche die ",
+                  "type": "text"
+                },
+                {
+                  "text": "Kontaktseite",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "/contact",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " und schick uns eine Nachricht.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Si no encuentras tu respuesta aquí, visita la ",
+                  "type": "text"
+                },
+                {
+                  "text": "página de contacto",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "/contact",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " y envíanos un mensaje.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Si vous ne trouvez pas votre réponse ici, consultez la ",
+                  "type": "text"
+                },
+                {
+                  "text": "page Contact",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "/contact",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " et envoyez-nous un message.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Noch Fragen?",
+        "headline__i18n__es": "¿Todavía tienes preguntas?",
+        "headline__i18n__fr": "Encore une question ?"
       }
     ],
     "component": "page"
@@ -99,8 +204,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "37120912aeebad9eab55de18e9eee6460c1efc49",
-    "timestamp": "1792592502"
+    "token": "23e69d4cac7e99ce0227a4548f8854d79a3612c1",
+    "timestamp": "1794347525"
   },
   "pinned": false,
   "breadcrumbs": [],
@@ -121,28 +226,59 @@
       "path": "help",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "help",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "help",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -40,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255561375073,
+      "story_id": 230846289267314,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:22.908Z",
+      "published_at": "2026-11-10T21:22:22.908Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255616126330,
+      "story_id": 230846289267314,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:36.277Z",
+      "published_at": "2026-11-10T21:22:36.277Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255665962389,
+      "story_id": 230846289267314,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:48.444Z",
+      "published_at": "2026-11-10T21:22:48.444Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230880304300630,
+  "current_version_id": 240249440513784,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

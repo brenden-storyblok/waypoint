@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:15:23.942Z",
-  "published_at": "2026-10-15T14:15:23.925Z",
+  "updated_at": "2026-11-10T21:08:38.704Z",
+  "published_at": "2026-11-10T21:08:38.689Z",
   "id": 230949371451149,
   "uuid": "e513a009-daec-4b48-aea7-5999e6801c62",
   "is_folder": false,
@@ -22,17 +22,26 @@
       {
         "_uid": "463dd957-ec88-43c4-bf63-0b3c2dbe28b7",
         "headline": "Why Scottish Highlands",
-        "component": "destination_usps"
+        "component": "destination_usps",
+        "headline__i18n__de": "Warum das Schottische Hochland",
+        "headline__i18n__es": "Por qué las Tierras Altas de Escocia",
+        "headline__i18n__fr": "Pourquoi les Highlands écossaises"
       },
       {
         "_uid": "1bac19e4-303d-4bd1-9455-8e5494fbdbbf",
         "headline": "About Scottish Highlands",
-        "component": "destination_bio"
+        "component": "destination_bio",
+        "headline__i18n__de": "Über das Schottische Hochland",
+        "headline__i18n__es": "Sobre las Tierras Altas de Escocia",
+        "headline__i18n__fr": "À propos des Highlands écossaises"
       },
       {
         "_uid": "094f8d8a-357d-42e1-befb-65099cdd45f7",
         "headline": "Scottish Highlands in pictures",
-        "component": "destination_gallery"
+        "component": "destination_gallery",
+        "headline__i18n__de": "Das Schottische Hochland in Bildern",
+        "headline__i18n__es": "Las Tierras Altas de Escocia en imágenes",
+        "headline__i18n__fr": "Les Highlands écossaises en images"
       },
       {
         "_uid": "d14c7888-b09b-44f1-af39-2acc70629ce9",
@@ -98,7 +107,193 @@
           ]
         },
         "headline": "Getting around",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Mit einem Auto bist du am freiesten, doch viele Straßen im Norden und Westen sind einspurig mit Ausweichstellen. ScotRail betreibt die West Highland Line und die Highland Main Line, und Citylink-Busse verbinden die Orte.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Von Edinburgh nach Inverness dauert die Zugfahrt etwa 3 Stunden 30 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Von Glasgow Queen Street nach Fort William auf der West Highland Line braucht man knapp 4 Stunden.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Die Fahrt von Inverness zur Skye Bridge bei Kyle of Lochalsh ist etwa 130 Kilometer lang.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Un coche da la mayor libertad, pero muchas carreteras del norte y el oeste son de un solo carril con zonas de cruce. ScotRail opera la West Highland Line y la Highland Main Line, y los autocares de Citylink conectan las localidades.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De Edimburgo a Inverness en tren se tardan unas 3 horas y 30 minutos.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De Glasgow Queen Street a Fort William por la West Highland Line se tarda poco menos de 4 horas.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "El trayecto en coche de Inverness al puente de Skye en Kyle of Lochalsh es de unos 130 kilómetros.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La voiture offre le plus de liberté, mais de nombreuses routes du nord et de l'ouest sont à voie unique avec des zones de croisement. ScotRail exploite la West Highland Line et la Highland Main Line, et les autocars Citylink relient les villes.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "D'Édimbourg à Inverness en train, comptez environ 3 heures 30.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De Glasgow Queen Street à Fort William par la West Highland Line, il faut un peu moins de 4 heures.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Le trajet en voiture d'Inverness au pont de Skye à Kyle of Lochalsh représente environ 130 kilomètres.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Unterwegs",
+        "headline__i18n__es": "Cómo moverse",
+        "headline__i18n__fr": "Se déplacer"
       }
     ],
     "component": "destination_page",
@@ -123,8 +318,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "64feb09f487e6210a422038da98f79f53180e644",
-    "timestamp": "1792592501"
+    "token": "2216a31313fb0e4b3f2c99c4ddb4a5e377206812",
+    "timestamp": "1794347523"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -156,28 +351,59 @@
       "path": "destinations/scottish-highlands",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/scottish-highlands",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/scottish-highlands",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -70,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255642791307,
+      "story_id": 230949371451149,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:42.786Z",
+      "published_at": "2026-11-10T21:22:42.786Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255772052926,
+      "story_id": 230949371451149,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:14.345Z",
+      "published_at": "2026-11-10T21:23:14.345Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255895727602,
+      "story_id": 230949371451149,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:44.539Z",
+      "published_at": "2026-11-10T21:23:44.539Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230949371536909,
+  "current_version_id": 240252185201181,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:47.331Z",
-  "published_at": "2026-10-15T08:00:47.115Z",
+  "updated_at": "2026-11-10T21:06:23.159Z",
+  "published_at": "2026-11-10T21:06:23.145Z",
   "id": 230846969113267,
   "uuid": "23415140-3e0d-44bb-a9cb-086528e83d54",
   "is_folder": false,
@@ -22,17 +22,26 @@
       {
         "_uid": "9f1c2d3e-4a5b-4c6d-8e7f-0a1b2c3d4e02",
         "headline": "Why Provence",
-        "component": "destination_usps"
+        "component": "destination_usps",
+        "headline__i18n__de": "Warum die Provence",
+        "headline__i18n__es": "Por qué la Provenza",
+        "headline__i18n__fr": "Pourquoi la Provence"
       },
       {
         "_uid": "9f1c2d3e-4a5b-4c6d-8e7f-0a1b2c3d4e03",
         "headline": "About Provence",
-        "component": "destination_bio"
+        "component": "destination_bio",
+        "headline__i18n__de": "Über die Provence",
+        "headline__i18n__es": "Sobre la Provenza",
+        "headline__i18n__fr": "À propos de la Provence"
       },
       {
         "_uid": "9f1c2d3e-4a5b-4c6d-8e7f-0a1b2c3d4e04",
         "headline": "Provence in pictures",
-        "component": "destination_gallery"
+        "component": "destination_gallery",
+        "headline__i18n__de": "Die Provence in Bildern",
+        "headline__i18n__es": "La Provenza en imágenes",
+        "headline__i18n__fr": "La Provence en images"
       },
       {
         "_uid": "9f1c2d3e-4a5b-4c6d-8e7f-0a1b2c3d4e05",
@@ -98,7 +107,193 @@
           ]
         },
         "headline": "Getting around",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Für Dörfer, Abteien und Lavendelfelder ist ein Auto die praktische Wahl. Der öffentliche Nahverkehr deckt die größeren Orte ab.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "TGV-Züge halten in Avignon und Aix-en-Provence.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Die Regionalbusse von ZOU! verbinden die größeren Städte.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Miete am Bahnhof ein Auto und fahre durch die Dörfer des Luberon.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El coche es la opción práctica para pueblos, abadías y campos de lavanda. El transporte público cubre las ciudades principales.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Los trenes TGV paran en Aviñón y Aix-en-Provence.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Los autobuses regionales ZOU! conectan las ciudades más grandes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Alquila un coche en la estación y recorre los pueblos del Luberon.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La voiture est le choix pratique pour les villages, les abbayes et les champs de lavande. Les transports en commun desservent les principales villes.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Les TGV s'arrêtent à Avignon et à Aix-en-Provence.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Les bus régionaux ZOU! relient les villes les plus importantes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Louez une voiture à la gare et parcourez les villages du Luberon.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Unterwegs",
+        "headline__i18n__es": "Cómo moverse",
+        "headline__i18n__fr": "Se déplacer"
       },
       {
         "_uid": "9f1c2d3e-4a5b-4c6d-8e7f-0a1b2c3d4e06",
@@ -108,7 +303,10 @@
           "134fb1dd-5784-44dd-a39e-6d2d4f8f43ff"
         ],
         "headline": "Before you go",
-        "component": "faq_section"
+        "component": "faq_section",
+        "headline__i18n__de": "Vor der Reise",
+        "headline__i18n__es": "Antes de viajar",
+        "headline__i18n__fr": "Avant de partir"
       }
     ],
     "component": "destination_page",
@@ -133,8 +331,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "09415f6f67eee6434beda3616b9a277075f4324a",
-    "timestamp": "1792592503"
+    "token": "23e69d4cac7e99ce0227a4548f8854d79a3612c1",
+    "timestamp": "1794347525"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -166,28 +364,59 @@
       "path": "destinations/provence",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/provence",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/provence",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -30,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255650942350,
+      "story_id": 230846969113267,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:44.777Z",
+      "published_at": "2026-11-10T21:22:44.777Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255780933057,
+      "story_id": 230846969113267,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:16.514Z",
+      "published_at": "2026-11-10T21:23:16.514Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255904493046,
+      "story_id": 230846969113267,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:46.679Z",
+      "published_at": "2026-11-10T21:23:46.679Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857307401672,
+  "current_version_id": 240251630008284,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

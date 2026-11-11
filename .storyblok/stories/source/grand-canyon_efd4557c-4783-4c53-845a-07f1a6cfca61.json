@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:26:22.094Z",
-  "published_at": "2026-10-15T14:26:22.076Z",
+  "updated_at": "2026-11-10T21:12:19.674Z",
+  "published_at": "2026-11-10T21:12:19.661Z",
   "id": 230952067219093,
   "uuid": "efd4557c-4783-4c53-845a-07f1a6cfca61",
   "is_folder": false,
@@ -22,17 +22,26 @@
       {
         "_uid": "d8d3fc75-ae69-4d19-8c65-a56daeea8fd0",
         "headline": "Why Grand Canyon",
-        "component": "destination_usps"
+        "component": "destination_usps",
+        "headline__i18n__de": "Warum der Grand Canyon",
+        "headline__i18n__es": "Por qué el Gran Cañón",
+        "headline__i18n__fr": "Pourquoi le Grand Canyon"
       },
       {
         "_uid": "f6d051d3-883f-44a9-95be-ff28882b11ac",
         "headline": "About Grand Canyon",
-        "component": "destination_bio"
+        "component": "destination_bio",
+        "headline__i18n__de": "Über den Grand Canyon",
+        "headline__i18n__es": "Sobre el Gran Cañón",
+        "headline__i18n__fr": "À propos du Grand Canyon"
       },
       {
         "_uid": "28933b88-f307-4ae3-84a9-3eb4b94584ae",
         "headline": "Grand Canyon in pictures",
-        "component": "destination_gallery"
+        "component": "destination_gallery",
+        "headline__i18n__de": "Der Grand Canyon in Bildern",
+        "headline__i18n__es": "El Gran Cañón en imágenes",
+        "headline__i18n__fr": "Le Grand Canyon en images"
       },
       {
         "_uid": "d8d1809b-a4e1-4a79-9693-9e2c36849244",
@@ -98,7 +107,193 @@
           ]
         },
         "headline": "Getting around",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Kostenlose Shuttlebusse fahren auf vier Routen am South Rim. Die Hermit Road ist vom 1. März bis zum 30. November für private Autos gesperrt, daher bringt dich der Shuttle der Red Route zu ihren Aussichtspunkten.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Von Flagstaff zum South Rim sind es etwa 130 km, eine Fahrt von 90 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Von Las Vegas zum South Rim sind es etwa 450 km, ungefähr 4,5 Stunden mit dem Auto.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Vom South Rim zum North Rim sind es 346 km auf der Straße, etwa 4,5 Stunden.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Los autobuses lanzadera gratuitos recorren cuatro rutas en el South Rim. Hermit Road está cerrada a los coches particulares del 1 de marzo al 30 de noviembre, así que la lanzadera de la Red Route te lleva a sus miradores.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De Flagstaff al South Rim hay unos 130 km, un trayecto de 90 minutos en coche.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De Las Vegas al South Rim hay unos 450 km, aproximadamente 4,5 horas en coche.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Del South Rim al North Rim hay 346 km por carretera, unas 4,5 horas.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Des navettes gratuites desservent quatre itinéraires sur le South Rim. Hermit Road est fermée aux voitures particulières du 1er mars au 30 novembre : la navette de la Red Route vous mène donc à ses points de vue.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De Flagstaff au South Rim, il y a environ 130 km, soit 90 minutes de route.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De Las Vegas au South Rim, il y a environ 450 km, soit environ 4 h 30 en voiture.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Du South Rim au North Rim, il y a 346 km par la route, soit environ 4 h 30.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Unterwegs",
+        "headline__i18n__es": "Cómo moverse",
+        "headline__i18n__fr": "Se déplacer"
       }
     ],
     "component": "destination_page",
@@ -123,8 +318,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "ca20359998d10526c94eb4aba0bf30ef94b08466",
-    "timestamp": "1792592494"
+    "token": "1ecfba03a0213079a03e8706ff33e69b15fea55c",
+    "timestamp": "1794347516"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -156,28 +351,59 @@
       "path": "destinations/grand-canyon",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/grand-canyon",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/grand-canyon",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -290,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255608843632,
+      "story_id": 230952067219093,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:34.499Z",
+      "published_at": "2026-11-10T21:22:34.499Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255740358055,
+      "story_id": 230952067219093,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:06.607Z",
+      "published_at": "2026-11-10T21:23:06.607Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255864659424,
+      "story_id": 230952067219093,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:36.954Z",
+      "published_at": "2026-11-10T21:23:36.954Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230952067320744,
+  "current_version_id": 240253090312198,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

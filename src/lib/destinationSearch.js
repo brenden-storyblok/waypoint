@@ -1,3 +1,5 @@
+import { fillTemplate } from '@/lib/template';
+
 /**
  * Destination search: owns the Pool and filtering rules for a destination
  * grid. Pure: no Storyblok or React imports, so the server render and the
@@ -87,13 +89,20 @@ export function searchDestinations({
 
 /**
  * The count line for a searchDestinations result: "X of Y places" while the
- * visitor's choices narrow the Pool, "Y places" otherwise.
+ * visitor's choices narrow the Pool, "Y places" otherwise. `templates` are the
+ * UI Labels it is worded from: `one` and `other` take `{count}`; `filtered`
+ * is the whole line and takes `{shown}` and `{total}`.
  */
-export function placesLabel({ counts, narrowed }) {
-	const places = (count) => `${count} ${count === 1 ? 'place' : 'places'}`;
-	return narrowed
-		? `${counts.visible} of ${places(counts.pool)}`
-		: places(counts.pool);
+export function placesLabel({ counts, narrowed }, templates) {
+	if (narrowed) {
+		return fillTemplate(templates.filtered, {
+			shown: counts.visible,
+			total: counts.pool,
+		});
+	}
+	return fillTemplate(counts.pool === 1 ? templates.one : templates.other, {
+		count: counts.pool,
+	});
 }
 
 /*

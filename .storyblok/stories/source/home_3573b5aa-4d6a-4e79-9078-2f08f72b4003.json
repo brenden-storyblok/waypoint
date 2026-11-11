@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-16T14:31:34.331Z",
-  "published_at": "2026-10-16T14:31:34.321Z",
+  "updated_at": "2026-11-10T21:04:40.599Z",
+  "published_at": "2026-11-10T21:04:40.580Z",
   "id": 230624381500995,
   "uuid": "3573b5aa-4d6a-4e79-9078-2f08f72b4003",
   "is_folder": false,
@@ -27,7 +27,10 @@
             },
             "label": "Find a destination",
             "variant": "primary",
-            "component": "button"
+            "component": "button",
+            "label__i18n__de": "Finde ein Reiseziel",
+            "label__i18n__es": "Encuentra un destino",
+            "label__i18n__fr": "Trouvez une destination"
           },
           {
             "_uid": "15e833dd-180f-4081-9a8d-3d5fc04a973c",
@@ -39,7 +42,10 @@
             },
             "label": "How we pick",
             "variant": "tertiary",
-            "component": "button"
+            "component": "button",
+            "label__i18n__de": "Wie wir auswählen",
+            "label__i18n__es": "Cómo elegimos",
+            "label__i18n__fr": "Notre façon de choisir"
           }
         ],
         "_uid": "59d12c1e-41d8-4249-99bb-a079cf5a1548",
@@ -60,7 +66,13 @@
         },
         "intro": "Browse destinations around the world, and find your perfect getaway. ",
         "headline": "Every trip starts with a waypoint",
-        "component": "hero"
+        "component": "hero",
+        "intro__i18n__de": "Stöbere in Reisezielen auf der ganzen Welt und finde deinen perfekten Kurzurlaub.",
+        "intro__i18n__es": "Explora destinos de todo el mundo y encuentra tu escapada perfecta.",
+        "intro__i18n__fr": "Parcourez des destinations du monde entier et trouvez votre escapade idéale.",
+        "headline__i18n__de": "Jede Reise beginnt mit einem Waypoint",
+        "headline__i18n__es": "Cada viaje empieza con un waypoint",
+        "headline__i18n__fr": "Chaque voyage commence par un waypoint"
       },
       {
         "_uid": "86601f10-79d5-43b9-be8d-afb07403794d",
@@ -82,7 +94,25 @@
         "empty_message": "No destinations match your search.",
         "search_enabled": false,
         "attributes_label": "Attributes",
-        "search_placeholder": "Search destinations"
+        "headline__i18n__de": "Top-Reiseziele",
+        "headline__i18n__es": "Destinos destacados",
+        "headline__i18n__fr": "Destinations phares",
+        "search_placeholder": "Search destinations",
+        "clear_label__i18n__de": "Alle löschen",
+        "clear_label__i18n__es": "Borrar todo",
+        "clear_label__i18n__fr": "Tout effacer",
+        "country_label__i18n__de": "Land",
+        "country_label__i18n__es": "País",
+        "country_label__i18n__fr": "Pays",
+        "empty_message__i18n__de": "Keine Reiseziele entsprechen deiner Suche.",
+        "empty_message__i18n__es": "Ningún destino coincide con tu búsqueda.",
+        "empty_message__i18n__fr": "Aucune destination ne correspond à votre recherche.",
+        "attributes_label__i18n__de": "Attribute",
+        "attributes_label__i18n__es": "Atributos",
+        "attributes_label__i18n__fr": "Attributs",
+        "search_placeholder__i18n__de": "Reiseziele suchen",
+        "search_placeholder__i18n__es": "Buscar destinos",
+        "search_placeholder__i18n__fr": "Rechercher des destinations"
       },
       {
         "_uid": "f202f4ba-de41-4e40-aed0-c771a356b6ee",
@@ -103,7 +133,10 @@
                 },
                 "label": "Browse our other destinations",
                 "variant": "primary",
-                "component": "button"
+                "component": "button",
+                "label__i18n__de": "Sieh dir unsere anderen Reiseziele an",
+                "label__i18n__es": "Descubre nuestros otros destinos",
+                "label__i18n__fr": "Découvrez nos autres destinations"
               },
               {
                 "_uid": "dd176c85-607c-41d0-a287-8d6e8ecdd5aa",
@@ -116,7 +149,10 @@
                 },
                 "label": "Get Inspired",
                 "variant": "secondary",
-                "component": "button"
+                "component": "button",
+                "label__i18n__de": "Lass dich inspirieren",
+                "label__i18n__es": "Inspírate",
+                "label__i18n__fr": "Laissez-vous inspirer"
               }
             ],
             "gap_lg": "",
@@ -158,7 +194,10 @@
         "component": "section",
         "background": "accent",
         "full_bleed": false,
-        "headline_position": "start"
+        "headline_position": "start",
+        "headline__i18n__de": "Brauchst du mehr Ideen?",
+        "headline__i18n__es": "¿Necesitas más ideas?",
+        "headline__i18n__fr": "Besoin de plus d’idées ?"
       },
       {
         "_uid": "c0d312d6-e8a5-4349-ba2e-db3bfd3ca22f",
@@ -186,7 +225,79 @@
           ]
         },
         "headline": "How we pick",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Jedes Reiseziel auf Waypoint ist ein Ort, den unsere Redakteure in mehr als einer Jahreszeit besucht haben. Wir schreiben so, wie wir es einem Freund erzählen würden: wann man fahren sollte, wo man übernachten kann und was man auslassen kann.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Wir fügen ein neues Reiseziel erst hinzu, nachdem es sich eine zweite Reise verdient hat.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Cada destino de Waypoint es un lugar que nuestros editores han visitado en más de una temporada. Escribimos sobre lo que le contaríamos a un amigo: cuándo ir, dónde alojarse y qué evitar.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Solo añadimos un nuevo destino después de que se haya ganado un segundo viaje.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Chaque destination sur Waypoint est un lieu que nos rédacteurs ont visité en plus d’une saison. Nous écrivons ce que nous dirions à un ami : quand partir, où dormir et ce qu’il vaut mieux éviter.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Nous n’ajoutons une nouvelle destination qu’après qu’elle a mérité un deuxième voyage.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Wie wir auswählen",
+        "headline__i18n__es": "Cómo elegimos",
+        "headline__i18n__fr": "Notre façon de choisir"
       }
     ],
     "component": "page"
@@ -204,8 +315,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "09415f6f67eee6434beda3616b9a277075f4324a",
-    "timestamp": "1792592503"
+    "token": "23e69d4cac7e99ce0227a4548f8854d79a3612c1",
+    "timestamp": "1794347525"
   },
   "pinned": false,
   "breadcrumbs": [],
@@ -226,28 +337,59 @@
       "path": "home",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "home",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "home",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -30,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255556054364,
+      "story_id": 230624381500995,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:21.610Z",
+      "published_at": "2026-11-10T21:22:21.610Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255610166642,
+      "story_id": 230624381500995,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:34.821Z",
+      "published_at": "2026-11-10T21:22:34.821Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255659904402,
+      "story_id": 230624381500995,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:46.965Z",
+      "published_at": "2026-11-10T21:22:46.965Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 231307240572976,
+  "current_version_id": 240251187357318,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

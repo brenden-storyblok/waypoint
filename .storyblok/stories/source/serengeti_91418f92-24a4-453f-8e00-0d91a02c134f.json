@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:23:15.886Z",
-  "published_at": "2026-10-15T14:23:15.872Z",
+  "updated_at": "2026-11-10T21:06:23.323Z",
+  "published_at": "2026-11-10T21:06:23.301Z",
   "id": 230951304531121,
   "uuid": "91418f92-24a4-453f-8e00-0d91a02c134f",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "c83fcd22-c421-4bc4-a45f-25afa4f0e8a0",
         "text": "Around 1.5 million wildebeest circle between the Serengeti and Kenya's Masai Mara each year.",
         "title": "The Great Migration",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Jedes Jahr ziehen rund 1,5 Millionen Gnus im Kreis zwischen der Serengeti und der Masai Mara in Kenia.",
+        "text__i18n__es": "Cada año, alrededor de 1,5 millones de ñus recorren un circuito entre el Serengueti y el Masai Mara de Kenia.",
+        "text__i18n__fr": "Chaque année, environ 1,5 million de gnous parcourent une boucle entre le Serengeti et le Masai Mara, au Kenya.",
+        "title__i18n__de": "Die Große Migration",
+        "title__i18n__es": "La Gran Migración",
+        "title__i18n__fr": "La Grande Migration"
       },
       {
         "_uid": "c1c0d0be-f35a-4e0e-9d71-25ce88b6d6d2",
         "text": "The herds drop most of their calves on the short-grass plains of the south in January and February.",
         "title": "Calving on the southern plains",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Die Herden bringen die meisten ihrer Kälber im Januar und Februar auf den Kurzgrasebenen im Süden zur Welt.",
+        "text__i18n__es": "Las manadas paren a la mayoría de sus crías en las llanuras de hierba corta del sur en enero y febrero.",
+        "text__i18n__fr": "Les troupeaux mettent bas la plupart de leurs petits sur les plaines d'herbe courte du sud en janvier et en février.",
+        "title__i18n__de": "Kälber auf den südlichen Ebenen",
+        "title__i18n__es": "Los partos en las llanuras del sur",
+        "title__i18n__fr": "Les naissances dans les plaines du sud"
       },
       {
         "_uid": "af747a23-ab0d-451c-8f59-a3b0ac82b3bd",
         "text": "Hot-air balloon flights lift off before sunrise near Seronera and end with breakfast in the bush.",
         "title": "Balloons at dawn",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Heißluftballonfahrten starten vor Sonnenaufgang bei Seronera und enden mit einem Frühstück im Busch.",
+        "text__i18n__es": "Los vuelos en globo aerostático despegan antes del amanecer cerca de Seronera y terminan con un desayuno en plena sabana.",
+        "text__i18n__fr": "Les vols en montgolfière décollent avant le lever du soleil près de Seronera et se terminent par un petit-déjeuner dans la brousse.",
+        "title__i18n__de": "Ballons im Morgengrauen",
+        "title__i18n__es": "Globos al amanecer",
+        "title__i18n__fr": "Des montgolfières à l'aube"
       },
       {
         "_uid": "7fd35cfe-05ab-4e85-9494-453ed56f7cdd",
         "text": "Granite outcrops such as the Moru Kopjes give lions and leopards a lookout above the grass.",
         "title": "Big cats on the kopjes",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Granitfelsen wie die Moru-Kopjes bieten Löwen und Leoparden einen Aussichtspunkt über dem Gras.",
+        "text__i18n__es": "Afloramientos de granito como los kopjes de Moru ofrecen a leones y leopardos un mirador sobre la hierba.",
+        "text__i18n__fr": "Des affleurements de granit comme les kopjes de Moru offrent aux lions et aux léopards un poste d'observation au-dessus des herbes.",
+        "title__i18n__de": "Raubkatzen auf den Kopjes",
+        "title__i18n__es": "Grandes felinos en los kopjes",
+        "title__i18n__fr": "Les grands félins sur les kopjes"
       }
     ],
     "region": "Mara and Simiyu",
@@ -181,6 +205,9 @@
         "size": "2400x3600"
       }
     },
+    "name__i18n__de": "Serengeti",
+    "name__i18n__es": "Serengueti",
+    "name__i18n__fr": "Serengeti",
     "image_landscape": {
       "id": 230950932409575,
       "alt": "Wildebeest graze in tall grass while safari vehicles watch the herd stretch to the horizon.",
@@ -194,6 +221,108 @@
       "meta_data": {
         "size": "2400x1599"
       }
+    },
+    "region__i18n__de": "Mara und Simiyu",
+    "region__i18n__es": "Mara y Simiyu",
+    "region__i18n__fr": "Mara et Simiyu",
+    "summary__i18n__de": "Grasebenen bis zum Horizont und die größte Landmigration der Erde. Löwen auf den Kopjes und Ballons über den Flüssen im Morgengrauen.",
+    "summary__i18n__es": "Llanuras de hierba hasta el horizonte y la mayor migración terrestre del planeta. Leones en los kopjes y globos sobre los ríos al amanecer.",
+    "summary__i18n__fr": "Des plaines herbeuses à perte de vue et la plus grande migration terrestre de la planète. Des lions sur les kopjes et des montgolfières au-dessus des rivières à l'aube.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Die Serengeti umfasst etwa 14.750 Quadratkilometer Grasland und Akazienwald im Norden Tansanias. Sie reicht nach Norden bis zur kenianischen Grenze, wo sie an die Masai Mara stößt, und grenzt im Südosten an das Ngorongoro-Schutzgebiet.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Der Name stammt aus dem Maa-Wort für endlose Ebenen. Der Nationalpark wurde 1951 eingerichtet und 1981 zum UNESCO-Welterbe erklärt. Granit-Kopjes durchbrechen den flachen Horizont und geben Raubkatzen einen Ausguck.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Von Juni bis Oktober ist Trockenzeit, mit Flussüberquerungen im Norden ab etwa Juli, während Januar und Februar die Kälberzeit im Süden bringen. Packe neutrale Farben ein, denn Tsetsefliegen werden von Dunkelblau und Schwarz angezogen.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El Serengueti abarca unos 14.750 kilómetros cuadrados de pastizales y bosque de acacias en el norte de Tanzania. Se extiende hacia el norte hasta la frontera con Kenia, donde se une al Masai Mara, y limita al sureste con el Área de Conservación de Ngorongoro.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El nombre procede de la palabra maa que significa llanuras interminables. El parque nacional se creó en 1951 y fue declarado Patrimonio Mundial de la UNESCO en 1981. Los kopjes de granito rompen el horizonte llano y dan a los grandes felinos un lugar desde donde vigilar.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De junio a octubre es la estación seca, con cruces de ríos en el norte a partir de julio aproximadamente, mientras que enero y febrero traen los partos en el sur. Lleva colores neutros, ya que las moscas tse-tsé se sienten atraídas por el azul oscuro y el negro.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Le Serengeti couvre environ 14 750 kilomètres carrés de prairies et de forêt d'acacias dans le nord de la Tanzanie. Il s'étend vers le nord jusqu'à la frontière kényane, où il rejoint le Masai Mara, et jouxte au sud-est l'aire de conservation du Ngorongoro.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Le nom vient du mot maasai désignant les plaines sans fin. Le parc national a été créé en 1951 et inscrit au patrimoine mondial de l'UNESCO en 1981. Des kopjes de granit brisent l'horizon plat et offrent aux grands félins un poste d'observation.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De juin à octobre, c'est la saison sèche, avec des traversées de rivières dans le nord à partir de juillet environ, tandis que janvier et février voient les naissances dans le sud. Emportez des couleurs neutres, car les mouches tsé-tsé sont attirées par le bleu foncé et le noir.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -215,8 +344,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "092662d2050bcd55e4f77fc21c2166cce78a93b2",
-    "timestamp": "1792592498"
+    "token": "20bd344db12814cfc193f4cd8a237f3c8019e738",
+    "timestamp": "1794347519"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -258,28 +387,59 @@
       "path": "data/destinations/serengeti",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/serengeti",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/serengeti",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -140,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255848918484,
+      "story_id": 230951304531121,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:33.109Z",
+      "published_at": "2026-11-10T21:23:33.109Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255851597269,
+      "story_id": 230951304531121,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:33.764Z",
+      "published_at": "2026-11-10T21:23:33.764Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255854468567,
+      "story_id": 230951304531121,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:34.465Z",
+      "published_at": "2026-11-10T21:23:34.465Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230951304627137,
+  "current_version_id": 240251630565341,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

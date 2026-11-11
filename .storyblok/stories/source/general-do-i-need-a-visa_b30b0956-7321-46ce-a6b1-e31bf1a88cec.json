@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:36.793Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T21:06:46.417Z",
+  "published_at": "2026-11-10T21:06:46.392Z",
   "id": 230846252092014,
   "uuid": "b30b0956-7321-46ce-a6b1-e31bf1a88cec",
   "is_folder": false,
@@ -38,7 +38,79 @@
       ]
     },
     "question": "Do I need a visa for these destinations?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Alle sechs Reiseziele liegen im Schengen-Raum. Die Einreisebestimmungen hängen von deiner Staatsangehörigkeit ab.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Prüfe vor der Buchung die offiziellen Reisehinweise deiner eigenen Regierung. Die Regeln können sich ändern.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los seis destinos están en el espacio Schengen. Las normas de entrada dependen de tu nacionalidad.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Consulta las recomendaciones oficiales de viaje de tu propio gobierno antes de reservar. Las normas pueden cambiar.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Les six destinations se trouvent dans l'espace Schengen. Les conditions d'entrée dépendent de votre nationalité.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Consultez les conseils officiels aux voyageurs de votre propre gouvernement avant de réserver. Les règles peuvent changer.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Brauche ich für diese Reiseziele ein Visum?",
+    "question__i18n__es": "¿Necesito visado para estos destinos?",
+    "question__i18n__fr": "Ai-je besoin d'un visa pour ces destinations ?"
   },
   "published": true,
   "slug": "general-do-i-need-a-visa",
@@ -59,8 +131,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "64feb09f487e6210a422038da98f79f53180e644",
-    "timestamp": "1792592501"
+    "token": "2216a31313fb0e4b3f2c99c4ddb4a5e377206812",
+    "timestamp": "1794347523"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -102,28 +174,98 @@
       "path": "data/faqs/general-do-i-need-a-visa",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/general-do-i-need-a-visa",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/general-do-i-need-a-visa",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -60,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255928753666,
+      "story_id": 230846252092014,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:52.602Z",
+      "published_at": "2026-11-10T21:23:52.602Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230852538165312",
+          "display_name": "Travel",
+          "name": "travel",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255931534851,
+      "story_id": 230846252092014,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:53.280Z",
+      "published_at": "2026-11-10T21:23:53.280Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230852538165312",
+          "display_name": "Travel",
+          "name": "travel",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255934479876,
+      "story_id": 230846252092014,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:54.001Z",
+      "published_at": "2026-11-10T21:23:54.001Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230852538165312",
+          "display_name": "Travel",
+          "name": "travel",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857264246096,
+  "current_version_id": 240251678267388,
   "variant_type": null,
   "taxonomy_terms": [
     {

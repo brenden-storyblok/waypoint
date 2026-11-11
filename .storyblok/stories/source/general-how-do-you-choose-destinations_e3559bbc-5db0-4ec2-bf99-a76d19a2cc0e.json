@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:36.662Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T21:06:47.976Z",
+  "published_at": "2026-11-10T21:06:47.948Z",
   "id": 230846195997282,
   "uuid": "e3559bbc-5db0-4ec2-bf99-a76d19a2cc0e",
   "is_folder": false,
@@ -38,7 +38,79 @@
       ]
     },
     "question": "How do you choose destinations?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Unsere Redakteurinnen und Redakteure wählen Orte aus, die sie in mehr als einer Jahreszeit besucht haben.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Wir nehmen ein Reiseziel erst auf, wenn es sich eine zweite Reise verdient hat.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Nuestros editores eligen lugares que han visitado en más de una estación.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Solo añadimos un destino cuando se ha ganado un segundo viaje.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Nos rédacteurs choisissent des lieux qu'ils ont visités à plus d'une saison.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Nous n'ajoutons une destination qu'après qu'elle a mérité un second voyage.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Wie wählt ihr Reiseziele aus?",
+    "question__i18n__es": "¿Cómo eligen los destinos?",
+    "question__i18n__fr": "Comment choisissez-vous les destinations ?"
   },
   "published": true,
   "slug": "general-how-do-you-choose-destinations",
@@ -59,8 +131,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "09415f6f67eee6434beda3616b9a277075f4324a",
-    "timestamp": "1792592503"
+    "token": "e5843636d7673e0d8482a9ecb8eae4db8fad27bc",
+    "timestamp": "1794347524"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -102,28 +174,98 @@
       "path": "data/faqs/general-how-do-you-choose-destinations",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/general-how-do-you-choose-destinations",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/general-how-do-you-choose-destinations",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -30,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255998950929,
+      "story_id": 230846195997282,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:09.739Z",
+      "published_at": "2026-11-10T21:24:09.739Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230852509141055",
+          "display_name": "Waypoint",
+          "name": "waypoint",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256001904146,
+      "story_id": 230846195997282,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:10.461Z",
+      "published_at": "2026-11-10T21:24:10.461Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230852509141055",
+          "display_name": "Waypoint",
+          "name": "waypoint",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256004873747,
+      "story_id": 230846195997282,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:11.186Z",
+      "published_at": "2026-11-10T21:24:11.186Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230852509141055",
+          "display_name": "Waypoint",
+          "name": "waypoint",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857263668556,
+  "current_version_id": 240251684194304,
   "variant_type": null,
   "taxonomy_terms": [
     {

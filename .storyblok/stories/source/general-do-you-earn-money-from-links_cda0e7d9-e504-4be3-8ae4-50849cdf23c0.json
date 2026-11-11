@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:36.755Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T21:06:47.168Z",
+  "published_at": "2026-11-10T21:06:47.137Z",
   "id": 230846247074413,
   "uuid": "cda0e7d9-e504-4be3-8ae4-50849cdf23c0",
   "is_folder": false,
@@ -29,7 +29,52 @@
       ]
     },
     "question": "Do you earn money from links or partners?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Waypoint kennzeichnet jeden Partnerlink auf der Seite, sodass du ihn vor dem Klicken erkennst.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Waypoint marca cualquier enlace de socios en la página, para que lo veas antes de hacer clic.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Waypoint signale tout lien partenaire sur la page, afin que vous le voyiez avant de cliquer.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Verdient ihr Geld mit Links oder Partnern?",
+    "question__i18n__es": "¿Ganan dinero con enlaces o socios?",
+    "question__i18n__fr": "Gagnez-vous de l'argent grâce à des liens ou des partenaires ?"
   },
   "published": true,
   "slug": "general-do-you-earn-money-from-links",
@@ -50,8 +95,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "37120912aeebad9eab55de18e9eee6460c1efc49",
-    "timestamp": "1792592502"
+    "token": "2216a31313fb0e4b3f2c99c4ddb4a5e377206812",
+    "timestamp": "1794347523"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -93,28 +138,98 @@
       "path": "data/faqs/general-do-you-earn-money-from-links",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/general-do-you-earn-money-from-links",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/general-do-you-earn-money-from-links",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -50,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255937031685,
+      "story_id": 230846247074413,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:54.623Z",
+      "published_at": "2026-11-10T21:23:54.623Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230852509141055",
+          "display_name": "Waypoint",
+          "name": "waypoint",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255939968518,
+      "story_id": 230846247074413,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:55.339Z",
+      "published_at": "2026-11-10T21:23:55.339Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230852509141055",
+          "display_name": "Waypoint",
+          "name": "waypoint",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255942999559,
+      "story_id": 230846247074413,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:56.079Z",
+      "published_at": "2026-11-10T21:23:56.079Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230852509141055",
+          "display_name": "Waypoint",
+          "name": "waypoint",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857264090447,
+  "current_version_id": 240251680937982,
   "variant_type": null,
   "taxonomy_terms": [
     {

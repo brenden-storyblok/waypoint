@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:36.544Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T21:06:59.680Z",
+  "published_at": "2026-11-10T21:06:59.652Z",
   "id": 230626595792071,
   "uuid": "9d6a5b2c-b623-408e-a029-6fc5ac363983",
   "is_folder": false,
@@ -29,7 +29,52 @@
       ]
     },
     "question": "Is Lisbon walkable with luggage?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Die Hügel und das Kopfsteinpflaster machen es schwierig. Nimm ein Taxi oder die U-Bahn bis vor die Haustür.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Las cuestas y los adoquines lo hacen difícil. Toma un taxi o el metro hasta la puerta de tu alojamiento.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Les collines et les pavés rendent cela difficile. Prenez un taxi ou le métro jusqu'à votre porte.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Ist Lissabon mit Gepäck gut zu Fuß zu bewältigen?",
+    "question__i18n__es": "¿Se puede recorrer Lisboa a pie con equipaje?",
+    "question__i18n__fr": "Lisbonne est-elle praticable à pied avec des bagages ?"
   },
   "published": true,
   "slug": "lisbon-walkable-with-luggage",
@@ -50,8 +95,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "40982a284b433403eebb5db763e9d1b488336fed",
-    "timestamp": "1792592504"
+    "token": "e5843636d7673e0d8482a9ecb8eae4db8fad27bc",
+    "timestamp": "1794347524"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -93,28 +138,134 @@
       "path": "data/faqs/lisbon-walkable-with-luggage",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/lisbon-walkable-with-luggage",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/lisbon-walkable-with-luggage",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -20,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240256007462420,
+      "story_id": 230626595792071,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:11.816Z",
+      "published_at": "2026-11-10T21:24:11.816Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230845758261298",
+          "display_name": "Portugal",
+          "name": "portugal",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230846207203379",
+          "display_name": "Lisbon",
+          "name": "lisbon",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256010743317,
+      "story_id": 230626595792071,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:12.618Z",
+      "published_at": "2026-11-10T21:24:12.618Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230845758261298",
+          "display_name": "Portugal",
+          "name": "portugal",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230846207203379",
+          "display_name": "Lisbon",
+          "name": "lisbon",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256013401623,
+      "story_id": 230626595792071,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:13.267Z",
+      "published_at": "2026-11-10T21:24:13.267Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230845758261298",
+          "display_name": "Portugal",
+          "name": "portugal",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230846207203379",
+          "display_name": "Lisbon",
+          "name": "lisbon",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857263213898,
+  "current_version_id": 240251763669058,
   "variant_type": null,
   "taxonomy_terms": [
     {

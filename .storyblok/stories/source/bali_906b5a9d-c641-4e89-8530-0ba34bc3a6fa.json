@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-16T08:35:56.305Z",
-  "published_at": "2026-10-15T14:24:10.382Z",
+  "updated_at": "2026-11-10T21:04:54.399Z",
+  "published_at": "2026-11-10T21:04:54.386Z",
   "id": 230951527800028,
   "uuid": "906b5a9d-c641-4e89-8530-0ba34bc3a6fa",
   "is_folder": false,
@@ -22,17 +22,26 @@
       {
         "_uid": "bfea5bbf-a6e6-4196-94bc-73ae6e9b1d19",
         "headline": "Why Bali",
-        "component": "destination_usps"
+        "component": "destination_usps",
+        "headline__i18n__de": "Warum Bali",
+        "headline__i18n__es": "Por qué Bali",
+        "headline__i18n__fr": "Pourquoi Bali"
       },
       {
         "_uid": "57227c6d-0fef-4828-a089-2592331c5c22",
         "headline": "About Bali",
-        "component": "destination_bio"
+        "component": "destination_bio",
+        "headline__i18n__de": "Über Bali",
+        "headline__i18n__es": "Sobre Bali",
+        "headline__i18n__fr": "À propos de Bali"
       },
       {
         "_uid": "881e3a1a-f103-44f2-87bd-f36ced389515",
         "headline": "Bali in pictures",
-        "component": "destination_gallery"
+        "component": "destination_gallery",
+        "headline__i18n__de": "Bali in Bildern",
+        "headline__i18n__es": "Bali en imágenes",
+        "headline__i18n__fr": "Bali en images"
       },
       {
         "_uid": "d4f069da-deb6-4ac8-aa7f-5b7d85fe0127",
@@ -98,7 +107,193 @@
           ]
         },
         "headline": "Getting around",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Bali hat kaum öffentliche Verkehrsmittel. Die meisten Besucher buchen Autos über die Apps Grab oder Gojek oder mieten einen Fahrer für den Tag. Im Süden ist der Verkehr zäh, plane also kurze Strecken.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Mit dem Auto dauert die Fahrt vom Flughafen Ngurah Rai nach Ubud etwa 1 Stunde 30 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Schnellboote von Sanur nach Nusa Penida brauchen 30 bis 45 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Von Ubud nach Tegallalang sind es etwa 20 Minuten mit Auto oder Roller.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Bali apenas tiene transporte público. La mayoría de los visitantes reservan coches con las aplicaciones Grab o Gojek, o contratan un conductor para el día. El tráfico en el sur es lento, así que planifica trayectos cortos.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "En coche, del aeropuerto de Ngurah Rai a Ubud se tarda aproximadamente 1 hora y 30 minutos.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Las lanchas rápidas de Sanur a Nusa Penida tardan de 30 a 45 minutos.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De Ubud a Tegallalang hay unos 20 minutos en coche o en scooter.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Bali offre peu de transports en commun. La plupart des visiteurs réservent des voitures via les applications Grab ou Gojek, ou louent un chauffeur pour la journée. La circulation dans le sud est lente : prévoyez donc de courts trajets.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "En voiture, il faut environ 1 h 30 pour aller de l'aéroport Ngurah Rai à Ubud.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Les bateaux rapides de Sanur à Nusa Penida mettent de 30 à 45 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "D'Ubud à Tegallalang, comptez environ 20 minutes en voiture ou en scooter.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Unterwegs",
+        "headline__i18n__es": "Cómo moverse",
+        "headline__i18n__fr": "Se déplacer"
       }
     ],
     "component": "destination_page",
@@ -119,12 +314,12 @@
     "disble_fe_editor": false
   },
   "is_startpage": false,
-  "unpublished_changes": true,
+  "unpublished_changes": false,
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "ca20359998d10526c94eb4aba0bf30ef94b08466",
-    "timestamp": "1792592494"
+    "token": "092bdce533db0e40a42887e6776d631b999feee5",
+    "timestamp": "1794347517"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -156,28 +351,59 @@
       "path": "destinations/bali",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/bali",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/bali",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -250,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255614500216,
+      "story_id": 230951527800028,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:35.880Z",
+      "published_at": "2026-11-10T21:22:35.880Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255745723821,
+      "story_id": 230951527800028,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:07.917Z",
+      "published_at": "2026-11-10T21:23:07.917Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255869996516,
+      "story_id": 230951527800028,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:38.257Z",
+      "published_at": "2026-11-10T21:23:38.257Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230951527904845,
+  "current_version_id": 240251266442951,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:22:27.362Z",
-  "published_at": "2026-10-15T14:22:27.349Z",
+  "updated_at": "2026-11-10T21:03:34.288Z",
+  "published_at": "2026-11-10T21:03:34.276Z",
   "id": 230951105805326,
   "uuid": "440737d6-a5a0-4d50-8b58-1f28c660ed46",
   "is_folder": false,
@@ -22,17 +22,26 @@
       {
         "_uid": "6afccca1-024a-4660-baff-eb046bf431ad",
         "headline": "Why Kyoto",
-        "component": "destination_usps"
+        "component": "destination_usps",
+        "headline__i18n__de": "Warum Kyoto",
+        "headline__i18n__es": "Por qué Kioto",
+        "headline__i18n__fr": "Pourquoi Kyoto"
       },
       {
         "_uid": "526ab949-c8d1-495d-b67b-36575564ca38",
         "headline": "About Kyoto",
-        "component": "destination_bio"
+        "component": "destination_bio",
+        "headline__i18n__de": "Über Kyoto",
+        "headline__i18n__es": "Sobre Kioto",
+        "headline__i18n__fr": "À propos de Kyoto"
       },
       {
         "_uid": "bd2e8694-74bf-496f-99e2-3792b882697c",
         "headline": "Kyoto in pictures",
-        "component": "destination_gallery"
+        "component": "destination_gallery",
+        "headline__i18n__de": "Kyoto in Bildern",
+        "headline__i18n__es": "Kioto en imágenes",
+        "headline__i18n__fr": "Kyoto en images"
       },
       {
         "_uid": "b0b7ec46-ea41-4e69-8f76-015353b0d7d4",
@@ -98,7 +107,193 @@
           ]
         },
         "headline": "Getting around",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Stadtbusse fahren zu den meisten Tempeln, und zwei U-Bahn-Linien kreuzen das Zentrum. Eine ICOCA-Karte gilt für Busse, U-Bahn und JR-Züge. Checke beim Ein- und Aussteigen ein und aus.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Der Shinkansen Nozomi von Tokio zum Bahnhof Kyoto braucht etwa 2 Stunden 15 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Der Haruka-Express vom Flughafen Kansai zum Bahnhof Kyoto braucht etwa 75 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Der JR-Bahnhof Inari am Fuß des Fushimi Inari ist 5 Minuten vom Bahnhof Kyoto entfernt, auf der Nara-Linie.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Los autobuses urbanos llegan a la mayoría de los templos, y dos líneas de metro cruzan el centro. Una tarjeta ICOCA sirve para autobuses, metro y trenes JR. Pasa la tarjeta al entrar y al salir.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "El shinkansen Nozomi de Tokio a la estación de Kioto tarda unas 2 horas y 15 minutos.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "El expreso Haruka del aeropuerto de Kansai a la estación de Kioto tarda unos 75 minutos.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "La estación JR Inari, al pie del Fushimi Inari, está a 5 minutos de la estación de Kioto en la línea Nara.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Les bus urbains desservent la plupart des temples, et deux lignes de métro traversent le centre. Une carte ICOCA est valable dans les bus, le métro et les trains JR. Badgez à l'entrée et à la sortie.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Le shinkansen Nozomi de Tokyo à la gare de Kyoto met environ 2 h 15.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "L'express Haruka de l'aéroport du Kansai à la gare de Kyoto met environ 75 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "La gare JR d'Inari, au pied du Fushimi Inari, est à 5 minutes de la gare de Kyoto sur la ligne Nara.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Unterwegs",
+        "headline__i18n__es": "Cómo moverse",
+        "headline__i18n__fr": "Se déplacer"
       }
     ],
     "component": "destination_page",
@@ -123,8 +318,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "b8b03a1c8920a61f7409919aa9e8afc67e9edeb5",
-    "timestamp": "1792592496"
+    "token": "7e4110f83bd1226fe14dce67559a17a46fd56d1c",
+    "timestamp": "1794347518"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -156,28 +351,59 @@
       "path": "destinations/kyoto",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/kyoto",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/kyoto",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -190,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255624732035,
+      "story_id": 230951105805326,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:38.377Z",
+      "published_at": "2026-11-10T21:22:38.377Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255754370485,
+      "story_id": 230951105805326,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:10.026Z",
+      "published_at": "2026-11-10T21:23:10.026Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255878102506,
+      "story_id": 230951105805326,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:40.236Z",
+      "published_at": "2026-11-10T21:23:40.236Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230951105884486,
+  "current_version_id": 240250938344890,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

@@ -1,9 +1,27 @@
+import { fileURLToPath } from 'node:url';
+
 /** @type { import('@storybook/nextjs-vite').StorybookConfig } */
 const config = {
 	framework: '@storybook/nextjs-vite',
 	stories: ['../src/**/*.stories.jsx'],
 	// Wraps each story in Suspense, so async Server Components render.
 	features: { experimentalRSC: true },
+	// next/root-params only resolves in the Next compiler; the stub reads English
+	// unless a story sets globalThis.storybookLanguage.
+	viteFinal: (viteConfig) => ({
+		...viteConfig,
+		resolve: {
+			...viteConfig.resolve,
+			alias: {
+				...viteConfig.resolve?.alias,
+				'next/root-params': fileURLToPath(
+					new URL('./rootParams.js', import.meta.url),
+				),
+				// Labels come from a datasource; the stub needs no API.
+				'@/lib/labels': fileURLToPath(new URL('./labels.js', import.meta.url)),
+			},
+		},
+	}),
 };
 
 export default config;

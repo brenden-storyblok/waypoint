@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:20:43.119Z",
-  "published_at": "2026-10-15T14:20:43.105Z",
+  "updated_at": "2026-11-10T21:13:14.548Z",
+  "published_at": "2026-11-10T21:13:14.536Z",
   "id": 230950678846298,
   "uuid": "80de7c05-4381-4cf7-b2e1-bafd1da56721",
   "is_folder": false,
@@ -22,17 +22,26 @@
       {
         "_uid": "34eea7ce-48ed-4fc7-b01d-60c370ed8d49",
         "headline": "Why Yellowstone",
-        "component": "destination_usps"
+        "component": "destination_usps",
+        "headline__i18n__de": "Warum Yellowstone",
+        "headline__i18n__es": "Por qué Yellowstone",
+        "headline__i18n__fr": "Pourquoi Yellowstone"
       },
       {
         "_uid": "24f8f7ee-6489-41b5-93b2-72e2dbbe76b1",
         "headline": "About Yellowstone",
-        "component": "destination_bio"
+        "component": "destination_bio",
+        "headline__i18n__de": "Über Yellowstone",
+        "headline__i18n__es": "Sobre Yellowstone",
+        "headline__i18n__fr": "À propos de Yellowstone"
       },
       {
         "_uid": "4108e700-a888-4424-93d3-ff2902880dda",
         "headline": "Yellowstone in pictures",
-        "component": "destination_gallery"
+        "component": "destination_gallery",
+        "headline__i18n__de": "Yellowstone in Bildern",
+        "headline__i18n__es": "Yellowstone en imágenes",
+        "headline__i18n__fr": "Yellowstone en images"
       },
       {
         "_uid": "22daf93d-3d37-4b79-a79a-890d7b637549",
@@ -98,7 +107,193 @@
           ]
         },
         "headline": "Getting around",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Im Park gibt es keinen öffentlichen Nahverkehr, du fährst also selbst. Die Grand Loop Road verbindet die wichtigsten Sehenswürdigkeiten in einer Acht von etwa 229 Kilometern, und Wildtiere halten oft den Verkehr auf.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Von West Yellowstone zum Old Faithful sind es etwa 50 Kilometer, mit dem Auto rund 1 Stunde.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Vom Old Faithful zur Grand Prismatic Spring sind es etwa 15 Kilometer oder 20 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Von Canyon Village ins Lamar Valley braucht man über den Dunraven Pass etwa 1 Stunde 15 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "No hay transporte público dentro del parque, así que hay que ir en coche. La Grand Loop Road une los principales puntos de interés en un ocho de unos 229 kilómetros, y la fauna suele detener el tráfico.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De West Yellowstone al Old Faithful hay unos 50 kilómetros, aproximadamente 1 hora en coche.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Del Old Faithful a la Grand Prismatic Spring hay unos 15 kilómetros, o 20 minutos.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De Canyon Village al valle de Lamar se tarda aproximadamente 1 hora y 15 minutos por el paso de Dunraven.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Il n'y a pas de transports en commun dans le parc, il faut donc conduire. La Grand Loop Road relie les principaux sites en un huit d'environ 229 kilomètres, et la faune arrête souvent la circulation.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De West Yellowstone à Old Faithful, il y a environ 50 kilomètres, soit 1 heure en voiture.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "D'Old Faithful à Grand Prismatic Spring, il y a environ 15 kilomètres, soit 20 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "De Canyon Village à la vallée de Lamar, il faut environ 1 heure 15 par le col de Dunraven.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Unterwegs",
+        "headline__i18n__es": "Cómo moverse",
+        "headline__i18n__fr": "Se déplacer"
       }
     ],
     "component": "destination_page",
@@ -123,8 +318,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "092662d2050bcd55e4f77fc21c2166cce78a93b2",
-    "timestamp": "1792592498"
+    "token": "c33351fca276f5ca874fc3520da4103c5e9bfdf2",
+    "timestamp": "1794347521"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -156,28 +351,59 @@
       "path": "destinations/yellowstone",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/yellowstone",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/yellowstone",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -130,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255633927560,
+      "story_id": 230950678846298,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:40.622Z",
+      "published_at": "2026-11-10T21:22:40.622Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255763660219,
+      "story_id": 230950678846298,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:12.296Z",
+      "published_at": "2026-11-10T21:23:12.296Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255887351279,
+      "story_id": 230950678846298,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:42.493Z",
+      "published_at": "2026-11-10T21:23:42.493Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230950678916730,
+  "current_version_id": 240253315088583,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

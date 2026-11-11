@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:22:19.908Z",
-  "published_at": "2026-10-15T14:22:19.894Z",
+  "updated_at": "2026-11-10T21:04:00.539Z",
+  "published_at": "2026-11-10T21:04:00.527Z",
   "id": 230951075265398,
   "uuid": "a83f3a94-1c67-40da-9d14-4e7f48547e37",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "ab53ec10-8471-438c-9095-d39a6c8f6cbb",
         "text": "Emperors ruled from Kyoto from 794 until the court moved to Tokyo in 1868.",
         "title": "A thousand years of capital",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Von 794 bis zum Umzug des Hofes nach Tokio im Jahr 1868 regierten die Kaiser von Kyoto aus.",
+        "text__i18n__es": "Los emperadores gobernaron desde Kioto desde el año 794 hasta que la corte se trasladó a Tokio en 1868.",
+        "text__i18n__fr": "Les empereurs ont régné depuis Kyoto de 794 jusqu'au transfert de la cour à Tokyo en 1868.",
+        "title__i18n__de": "Tausend Jahre Hauptstadt",
+        "title__i18n__es": "Mil años de capital",
+        "title__i18n__fr": "Mille ans de capitale"
       },
       {
         "_uid": "1af2e978-bdbb-4a48-8d85-0a73bf5848ea",
         "text": "Thousands of vermilion gates line the trails that climb Mount Inari behind Fushimi Inari Taisha.",
         "title": "Torii up the mountain",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Tausende zinnoberrote Tore säumen die Pfade, die hinter dem Fushimi Inari Taisha den Berg Inari hinaufführen.",
+        "text__i18n__es": "Miles de puertas bermellonas bordean los senderos que suben al monte Inari, detrás del Fushimi Inari Taisha.",
+        "text__i18n__fr": "Des milliers de portiques vermillon bordent les sentiers qui gravissent le mont Inari, derrière le Fushimi Inari Taisha.",
+        "title__i18n__de": "Torii den Berg hinauf",
+        "title__i18n__es": "Torii montaña arriba",
+        "title__i18n__fr": "Des torii jusqu'au sommet"
       },
       {
         "_uid": "55cd1f95-2fb2-4cb4-b157-37f38bee0776",
         "text": "Nishiki Market runs five blocks through the centre, selling pickles, tofu, sweets and grilled skewers.",
         "title": "Kyoto's Kitchen",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Der Nishiki-Markt zieht sich über fünf Häuserblöcke durch das Zentrum und verkauft eingelegtes Gemüse, Tofu, Süßigkeiten und gegrillte Spieße.",
+        "text__i18n__es": "El mercado de Nishiki atraviesa el centro a lo largo de cinco manzanas y vende encurtidos, tofu, dulces y brochetas a la parrilla.",
+        "text__i18n__fr": "Le marché de Nishiki s'étire sur cinq pâtés de maisons au cœur de la ville, avec ses légumes marinés, son tofu, ses douceurs et ses brochettes grillées.",
+        "title__i18n__de": "Kyotos Küche",
+        "title__i18n__es": "La cocina de Kioto",
+        "title__i18n__fr": "La cuisine de Kyoto"
       },
       {
         "_uid": "abf7e3f1-8c0a-4c7b-907c-820481d70e70",
         "text": "Kinkaku-ji's top two floors are covered in gold leaf and reflect in the Kyoko-chi pond.",
         "title": "Gold on the water",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Die oberen zwei Stockwerke des Kinkaku-ji sind mit Blattgold überzogen und spiegeln sich im Teich Kyoko-chi.",
+        "text__i18n__es": "Las dos plantas superiores del Kinkaku-ji están cubiertas de pan de oro y se reflejan en el estanque Kyoko-chi.",
+        "text__i18n__fr": "Les deux étages supérieurs du Kinkaku-ji sont recouverts de feuilles d'or et se reflètent dans l'étang Kyoko-chi.",
+        "title__i18n__de": "Gold auf dem Wasser",
+        "title__i18n__es": "Oro sobre el agua",
+        "title__i18n__fr": "De l'or sur l'eau"
       }
     ],
     "region": "Kansai",
@@ -182,6 +206,9 @@
         "size": "2400x3600"
       }
     },
+    "name__i18n__de": "Kyoto",
+    "name__i18n__es": "Kioto",
+    "name__i18n__fr": "Kyoto",
     "image_landscape": {
       "id": 230950853541083,
       "alt": "The gold-leaf Kinkaku-ji pavilion sits on its pond behind a pruned pine under a clear blue sky.",
@@ -195,6 +222,108 @@
       "meta_data": {
         "size": "2400x1600"
       }
+    },
+    "region__i18n__de": "Kansai",
+    "region__i18n__es": "Kansai",
+    "region__i18n__fr": "Kansai",
+    "summary__i18n__de": "Mehr als tausend Jahre lang Japans Hauptstadt, mit Tempelglocken, hölzernen Teehäusern und Torii-Tunneln die Hügel hinauf. Eine Stadt, die man zu Fuß und mit dem Bus kennenlernt.",
+    "summary__i18n__es": "Capital de Japón durante más de mil años, con campanas de templos, casas de té de madera y túneles de torii colina arriba. Una ciudad que se aprende a pie y en autobús.",
+    "summary__i18n__fr": "Capitale du Japon pendant plus de mille ans, avec ses cloches de temples, ses maisons de thé en bois et ses tunnels de torii sur les collines. Une ville que l'on apprend à connaître à pied et en bus.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Kyoto liegt in einem Becken im Westen von Honshu, auf drei Seiten von Bergen umgeben. Der Kamo-Fluss fließt von Norden nach Süden durch das Zentrum, und die Hügel von Higashiyama erheben sich an seinem östlichen Rand.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Die Stadt wurde 794 als Heian-kyō gegründet und blieb bis 1868 kaiserliche Hauptstadt. Ihre Straßen folgen noch immer dem ursprünglichen Raster. Das UNESCO-Welterbe „Historische Denkmäler des antiken Kyoto“ umfasst 17 Stätten, vom Kiyomizu-dera bis zum blattgoldverkleideten Kinkaku-ji. In Gion gehen Geiko und Maiko noch immer entlang der Hanamikoji zu ihren abendlichen Terminen.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Von Ende März bis Anfang April blühen die Kirschbäume, und von Mitte bis Ende November färben sich die Ahornbäume rot. Beide Jahreszeiten sind gut besucht, erreiche Fushimi Inari oder Arashiyama also vor 8 Uhr.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Kioto se encuentra en una cuenca del oeste de Honshu, rodeada de montañas por tres lados. El río Kamo atraviesa el centro de norte a sur, y las colinas de Higashiyama se alzan a lo largo de su orilla oriental.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La ciudad se fundó como Heian-kyō en el año 794 y siguió siendo la capital imperial hasta 1868. Sus calles todavía siguen la cuadrícula original. La inscripción de la UNESCO de la antigua Kioto abarca 17 sitios, desde el Kiyomizu-dera hasta el Kinkaku-ji cubierto de pan de oro. En Gion, las geiko y las maiko siguen caminando hacia sus citas nocturnas por Hanamikoji.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De finales de marzo a principios de abril llegan los cerezos en flor, y de mediados a finales de noviembre, los arces rojos. Ambas temporadas están muy concurridas, así que llega a Fushimi Inari o a Arashiyama antes de las 8 de la mañana.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Kyoto se trouve dans une cuvette de l'ouest de Honshu, entourée de montagnes sur trois côtés. La rivière Kamo traverse le centre du nord au sud, et les collines de Higashiyama s'élèvent le long de sa rive orientale.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La ville a été fondée sous le nom de Heian-kyō en 794 et est restée la capitale impériale jusqu'en 1868. Ses rues suivent encore le quadrillage d'origine. L'inscription de l'ancienne Kyoto à l'UNESCO couvre 17 sites, du Kiyomizu-dera au Kinkaku-ji recouvert de feuilles d'or. À Gion, les geiko et les maiko se rendent encore à leurs rendez-vous du soir le long de Hanamikoji.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Fin mars et début avril, c'est la saison des cerisiers en fleurs, et de mi-novembre à fin novembre, celle des érables rouges. Ces deux saisons sont très fréquentées : arrivez donc au Fushimi Inari ou à Arashiyama avant 8 h.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -216,8 +345,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "092662d2050bcd55e4f77fc21c2166cce78a93b2",
-    "timestamp": "1792592498"
+    "token": "9ce030a66ffc9a88f90accf5913b9568a5ad298b",
+    "timestamp": "1794347520"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -259,28 +388,59 @@
       "path": "data/destinations/kyoto",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/kyoto",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/kyoto",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -120,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255902498293,
+      "story_id": 230951075265398,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:46.192Z",
+      "published_at": "2026-11-10T21:23:46.192Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255905070583,
+      "story_id": 230951075265398,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:46.818Z",
+      "published_at": "2026-11-10T21:23:46.818Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255908187641,
+      "story_id": 230951075265398,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:47.580Z",
+      "published_at": "2026-11-10T21:23:47.580Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230951075352858,
+  "current_version_id": 240251045811756,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

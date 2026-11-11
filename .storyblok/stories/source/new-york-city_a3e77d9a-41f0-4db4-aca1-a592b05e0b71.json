@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:21:45.329Z",
-  "published_at": "2026-10-15T14:21:45.313Z",
+  "updated_at": "2026-11-10T21:14:12.661Z",
+  "published_at": "2026-11-10T21:14:12.648Z",
   "id": 230950933601132,
   "uuid": "a3e77d9a-41f0-4db4-aca1-a592b05e0b71",
   "is_folder": false,
@@ -22,17 +22,26 @@
       {
         "_uid": "0059b06a-d8b1-4f34-b728-a0773310054b",
         "headline": "Why New York City",
-        "component": "destination_usps"
+        "component": "destination_usps",
+        "headline__i18n__de": "Warum New York City",
+        "headline__i18n__es": "Por qué Nueva York",
+        "headline__i18n__fr": "Pourquoi New York"
       },
       {
         "_uid": "adda625c-d719-4a1f-a2cb-e6707a5f09be",
         "headline": "About New York City",
-        "component": "destination_bio"
+        "component": "destination_bio",
+        "headline__i18n__de": "Über New York City",
+        "headline__i18n__es": "Sobre Nueva York",
+        "headline__i18n__fr": "À propos de New York"
       },
       {
         "_uid": "5c53e91e-1dbd-4657-b0c4-ec2f2603374d",
         "headline": "New York City in pictures",
-        "component": "destination_gallery"
+        "component": "destination_gallery",
+        "headline__i18n__de": "New York City in Bildern",
+        "headline__i18n__es": "Nueva York en imágenes",
+        "headline__i18n__fr": "New York en images"
       },
       {
         "_uid": "bca4e9c4-718b-4017-a2d7-894e7cc82313",
@@ -98,7 +107,193 @@
           ]
         },
         "headline": "Getting around",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Die U-Bahn fährt rund um die Uhr. Halte eine kontaktlose Karte oder dein Smartphone an das OMNY-Lesegerät; nach 12 bezahlten Fahrten innerhalb von 7 Tagen sind alle weiteren Fahrten dieser Woche kostenlos.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Mit AirTrain und U-Bahn dauert die Fahrt vom JFK nach Midtown etwa 60 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Die kostenlose Staten Island Ferry quert den Hafen in 25 Minuten und fährt an der Freiheitsstatue vorbei.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Zwanzig Straßenblöcke in Manhattan nach Norden oder Süden entsprechen etwa 1,6 km.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El metro funciona las 24 horas del día. Acerca una tarjeta sin contacto o el móvil al lector OMNY; tras 12 viajes pagados en 7 días, el resto de los viajes de esa semana son gratis.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "El AirTrain y el metro desde el JFK hasta Midtown tardan unos 60 minutos.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "El ferri gratuito de Staten Island cruza el puerto en 25 minutos y pasa junto a la Estatua de la Libertad.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Veinte manzanas de Manhattan hacia el norte o el sur equivalen a unos 1,6 km.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Le métro fonctionne 24 heures sur 24. Passez une carte sans contact ou votre téléphone sur le lecteur OMNY ; après 12 trajets payés en 7 jours, les trajets suivants de la semaine sont gratuits.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "L'AirTrain et le métro entre JFK et Midtown prennent environ 60 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Le ferry gratuit de Staten Island traverse la baie en 25 minutes et passe devant la statue de la Liberté.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Vingt blocs de rues de Manhattan vers le nord ou le sud représentent environ 1,6 km.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Unterwegs",
+        "headline__i18n__es": "Cómo moverse",
+        "headline__i18n__fr": "Se déplacer"
       }
     ],
     "component": "destination_page",
@@ -123,8 +318,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "b8b03a1c8920a61f7409919aa9e8afc67e9edeb5",
-    "timestamp": "1792592496"
+    "token": "7e4110f83bd1226fe14dce67559a17a46fd56d1c",
+    "timestamp": "1794347518"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -156,28 +351,59 @@
       "path": "destinations/new-york-city",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/new-york-city",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/new-york-city",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -170,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255627885957,
+      "story_id": 230950933601132,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:39.148Z",
+      "published_at": "2026-11-10T21:22:39.148Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255757327800,
+      "story_id": 230950933601132,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:10.750Z",
+      "published_at": "2026-11-10T21:23:10.750Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255881158124,
+      "story_id": 230950933601132,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:40.981Z",
+      "published_at": "2026-11-10T21:23:40.981Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230950933708815,
+  "current_version_id": 240253553107472,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

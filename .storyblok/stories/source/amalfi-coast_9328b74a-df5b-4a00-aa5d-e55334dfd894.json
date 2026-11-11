@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T12:26:20.159Z",
-  "published_at": "2026-10-15T12:26:20.136Z",
+  "updated_at": "2026-11-10T21:16:02.402Z",
+  "published_at": "2026-11-10T21:16:02.385Z",
   "id": 230847390059201,
   "uuid": "9328b74a-df5b-4a00-aa5d-e55334dfd894",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "5b0d6a1e-2c43-4f0e-9a51-0c7e1f3b8a01",
         "text": "A cliff trail links Bomerano and Nocelle high above the sea.",
         "title": "The Path of the Gods",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Ein Klippenweg verbindet Bomerano und Nocelle hoch über dem Meer.",
+        "text__i18n__es": "Un sendero de acantilado une Bomerano y Nocelle, a gran altura sobre el mar.",
+        "text__i18n__fr": "Un sentier en corniche relie Bomerano et Nocelle, très haut au-dessus de la mer.",
+        "title__i18n__de": "Der Pfad der Götter",
+        "title__i18n__es": "El Sendero de los Dioses",
+        "title__i18n__fr": "Le Chemin des Dieux"
       },
       {
         "_uid": "8c4e2f77-31b5-4d6a-b0e2-6a9d54c1e702",
         "text": "Villa Rufolo and Villa Cimbrone look down on the coast from the hills above Amalfi.",
         "title": "Ravello's garden terraces",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Villa Rufolo und Villa Cimbrone blicken von den Hügeln oberhalb von Amalfi auf die Küste hinab.",
+        "text__i18n__es": "Villa Rufolo y Villa Cimbrone miran a la costa desde las colinas por encima de Amalfi.",
+        "text__i18n__fr": "La Villa Rufolo et la Villa Cimbrone dominent la côte depuis les collines au-dessus d'Amalfi.",
+        "title__i18n__de": "Ravellos Gartenterrassen",
+        "title__i18n__es": "Las terrazas ajardinadas de Ravello",
+        "title__i18n__fr": "Les terrasses de jardins de Ravello"
       },
       {
         "_uid": "d17a93b5-6e08-4c2f-8f14-3be0a5d27c03",
         "text": "Seasonal boats connect Amalfi, Positano and Salerno and skip the coast road.",
         "title": "Ferries between towns",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Saisonale Boote verbinden Amalfi, Positano und Salerno und ersparen die Küstenstraße.",
+        "text__i18n__es": "Barcos de temporada conectan Amalfi, Positano y Salerno y evitan la carretera de la costa.",
+        "text__i18n__fr": "Des bateaux saisonniers relient Amalfi, Positano et Salerne et évitent la route côtière.",
+        "title__i18n__de": "Fähren zwischen den Orten",
+        "title__i18n__es": "Ferris entre localidades",
+        "title__i18n__fr": "Ferries entre les villes"
       },
       {
         "_uid": "e92f40c8-7a15-4b3d-a6c9-12d8f0b45e04",
         "text": "Terraced groves grow the lemons that go into the local limoncello.",
         "title": "Lemons and limoncello",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Terrassenhaine lassen die Zitronen wachsen, die in den lokalen Limoncello kommen.",
+        "text__i18n__es": "Bancales de limoneros dan los limones que acaban en el limoncello local.",
+        "text__i18n__fr": "Des vergers en terrasses donnent les citrons qui entrent dans le limoncello local.",
+        "title__i18n__de": "Zitronen und Limoncello",
+        "title__i18n__es": "Limones y limoncello",
+        "title__i18n__fr": "Citrons et limoncello"
       }
     ],
     "region": "Campania",
@@ -174,6 +198,9 @@
       "copyright": "James Dant / Unsplash",
       "fieldtype": "asset"
     },
+    "name__i18n__de": "Amalfi-Küste",
+    "name__i18n__es": "Costa Amalfitana",
+    "name__i18n__fr": "Côte amalfitaine",
     "image_landscape": {
       "id": 230846884151986,
       "alt": "Colourful buildings on the cliff above Amalfi harbour, with a white boat on turquoise water",
@@ -183,6 +210,108 @@
       "filename": "https://a.storyblok.com/f/295888311565739/843b86754c/amalfi-coast-amalfi-town.jpg",
       "copyright": "Tom Podmore / Unsplash",
       "fieldtype": "asset"
+    },
+    "region__i18n__de": "Kampanien",
+    "region__i18n__es": "Campania",
+    "region__i18n__fr": "Campanie",
+    "summary__i18n__de": "Pastellfarbene Städte, die sich auf Kalksteinklippen über dem Tyrrhenischen Meer stapeln. Eine Küste, die man mit der Fähre erreicht und zu Fuß erlebt.",
+    "summary__i18n__es": "Pueblos de colores pastel apilados en acantilados de piedra caliza sobre el mar Tirreno. Una costa a la que se llega en ferri y que se recorre a pie.",
+    "summary__i18n__fr": "Des villes aux couleurs pastel empilées sur des falaises calcaires au-dessus de la mer Tyrrhénienne. Une côte que l'on rejoint en ferry et que l'on découvre à pied.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Die Amalfi-Küste verläuft entlang des Südrands der Halbinsel von Sorrent in Kampanien. Steile Klippen fallen zum Meer ab, und die Städte Positano, Amalfi und Atrani klammern sich an die Hänge.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Dörfer liegen auf Terrassen, die in den Hang geschnitten sind, verbunden durch Treppen und die schmale Küstenstraße SS163. Zitronenhaine wachsen auf den Terrassen. Ravello blickt von den Höhen über Amalfi auf die Küste hinab.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Mai, Juni und September sind die besten Monate. Fähren und Busse sind im Sommer der Straße überlegen, und festes Schuhwerk ist auf den Treppen wichtig.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La Costa Amalfitana se extiende a lo largo del borde sur de la península de Sorrento, en Campania. Acantilados escarpados caen hacia el mar, y las localidades de Positano, Amalfi y Atrani se aferran a las laderas.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los pueblos se asientan en terrazas excavadas en la ladera, unidos por escaleras y por la estrecha carretera SS163. En las terrazas crecen limoneros. Ravello mira a la costa desde las alturas sobre Amalfi.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Mayo, junio y septiembre son los mejores meses. En verano, los ferris y los autobuses superan a la carretera, y el calzado resistente es importante en las escaleras.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La côte amalfitaine longe la bordure sud de la péninsule de Sorrente, en Campanie. De hautes falaises plongent dans la mer, et les villes de Positano, Amalfi et Atrani s'accrochent aux pentes.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Les villages occupent des terrasses taillées dans la colline, reliées par des escaliers et par l'étroite route côtière SS163. Des citronniers poussent sur les terrasses. Ravello domine la côte depuis les hauteurs au-dessus d'Amalfi.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Mai, juin et septembre sont les meilleurs mois. L'été, les ferries et les bus valent mieux que la route, et de bonnes chaussures sont utiles dans les escaliers.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -204,8 +333,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "37120912aeebad9eab55de18e9eee6460c1efc49",
-    "timestamp": "1792592502"
+    "token": "e5843636d7673e0d8482a9ecb8eae4db8fad27bc",
+    "timestamp": "1794347524"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -247,28 +376,98 @@
       "path": "data/destinations/amalfi-coast",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/amalfi-coast",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/amalfi-coast",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -40,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240247556627385,
+      "story_id": 230847390059201,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T20:49:48.625Z",
+      "published_at": "2026-11-10T21:24:39.699Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230850699671607",
+          "display_name": "Italy",
+          "name": "italy",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256124808745,
+      "story_id": 230847390059201,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:40.466Z",
+      "published_at": "2026-11-10T21:24:40.466Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230850699671607",
+          "display_name": "Italy",
+          "name": "italy",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256127942186,
+      "story_id": 230847390059201,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:41.230Z",
+      "published_at": "2026-11-10T21:24:41.230Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230850699671607",
+          "display_name": "Italy",
+          "name": "italy",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230922568073445,
+  "current_version_id": 240254002582564,
   "variant_type": null,
   "taxonomy_terms": [
     {

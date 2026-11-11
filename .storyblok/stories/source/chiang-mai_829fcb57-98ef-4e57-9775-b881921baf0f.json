@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:28:17.554Z",
-  "published_at": "2026-10-15T14:28:17.541Z",
+  "updated_at": "2026-11-10T21:14:15.078Z",
+  "published_at": "2026-11-10T21:14:15.063Z",
   "id": 230952540204711,
   "uuid": "829fcb57-98ef-4e57-9775-b881921baf0f",
   "is_folder": false,
@@ -22,17 +22,26 @@
       {
         "_uid": "87b3a96f-d416-4d1d-895f-48fe27b53aff",
         "headline": "Why Chiang Mai",
-        "component": "destination_usps"
+        "component": "destination_usps",
+        "headline__i18n__de": "Warum Chiang Mai",
+        "headline__i18n__es": "Por qué Chiang Mai",
+        "headline__i18n__fr": "Pourquoi Chiang Mai"
       },
       {
         "_uid": "f4a8bc78-7bc3-4a43-b6e3-faf137a13b9b",
         "headline": "About Chiang Mai",
-        "component": "destination_bio"
+        "component": "destination_bio",
+        "headline__i18n__de": "Über Chiang Mai",
+        "headline__i18n__es": "Sobre Chiang Mai",
+        "headline__i18n__fr": "À propos de Chiang Mai"
       },
       {
         "_uid": "23e678c7-26f9-465b-b83a-51cab35b590c",
         "headline": "Chiang Mai in pictures",
-        "component": "destination_gallery"
+        "component": "destination_gallery",
+        "headline__i18n__de": "Chiang Mai in Bildern",
+        "headline__i18n__es": "Chiang Mai en imágenes",
+        "headline__i18n__fr": "Chiang Mai en images"
       },
       {
         "_uid": "cbb69c08-cef9-473a-9ece-aaf15605cd40",
@@ -98,7 +107,193 @@
           ]
         },
         "headline": "Getting around",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Rote Sammel-Pick-ups, die Songthaews genannt werden, fahren feste und flexible Routen durch die Stadt. Vereinbare den Fahrpreis, bevor du einsteigst, oder bestelle ein Auto über die App Grab. Die Altstadt ist klein genug, um sie zu Fuß zu durchqueren.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Der Flughafen Chiang Mai ist etwa 15 Autominuten von der Altstadt entfernt.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Ein Songthaew die Bergstraße hinauf zum Doi Suthep braucht etwa 40 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Flüge von Bangkok dauern etwa 1 Stunde 15 Minuten, und der Nachtzug braucht 11 bis 13 Stunden.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Unas camionetas rojas compartidas, llamadas songthaew, recorren rutas fijas y flexibles por la ciudad. Acuerda la tarifa antes de subir, o reserva un coche con la app Grab. El casco antiguo es lo bastante pequeño como para recorrerlo a pie.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "El aeropuerto de Chiang Mai está a unos 15 minutos en coche del casco antiguo.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Un songthaew por la carretera de montaña hasta el Doi Suthep tarda unos 40 minutos.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Los vuelos desde Bangkok duran aproximadamente 1 hora y 15 minutos, y el tren nocturno tarda de 11 a 13 horas.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Des camionnettes rouges partagées, appelées songthaews, suivent des itinéraires fixes et flexibles dans la ville. Convenez du prix avant de monter, ou réservez une voiture avec l'appli Grab. La vieille ville est assez petite pour se traverser à pied.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "L'aéroport de Chiang Mai est à environ 15 minutes en voiture de la vieille ville.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Un songthaew sur la route de montagne jusqu'au Doi Suthep met environ 40 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Les vols depuis Bangkok durent environ 1 h 15, et le train de nuit met de 11 à 13 heures.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Unterwegs",
+        "headline__i18n__es": "Cómo moverse",
+        "headline__i18n__fr": "Se déplacer"
       }
     ],
     "component": "destination_page",
@@ -123,8 +318,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "7a7baba9bb2a2bfc45f31d2d5b7d15148ad9e25c",
-    "timestamp": "1792592493"
+    "token": "460f1b555d13b977e611d6862b0cff7837ea7559",
+    "timestamp": "1794347515"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -156,28 +351,59 @@
       "path": "destinations/chiang-mai",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/chiang-mai",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/chiang-mai",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -330,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255603375465,
+      "story_id": 230952540204711,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:33.163Z",
+      "published_at": "2026-11-10T21:22:33.163Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255735213475,
+      "story_id": 230952540204711,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:05.351Z",
+      "published_at": "2026-11-10T21:23:05.351Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255858736602,
+      "story_id": 230952540204711,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:35.507Z",
+      "published_at": "2026-11-10T21:23:35.507Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230952540278938,
+  "current_version_id": 240253562987035,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

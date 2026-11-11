@@ -1,3 +1,4 @@
+import { fillTemplate } from '@/lib/template';
 import ImageCredit from './ImageCredit';
 import StoryblokImage from './StoryblokImage';
 
@@ -6,14 +7,18 @@ import StoryblokImage from './StoryblokImage';
 const CARD_SIZES =
 	'(min-width: 1280px) 380px, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw';
 
-const capitalise = (text) =>
-	text ? text.charAt(0).toUpperCase() + text.slice(1) : '';
-
 /**
  * One Destination as a card. Links to its Destination Page when `href` is set;
- * only a linked card reacts to hover.
+ * only a linked card reacts to hover. Presentational: `countryLabel` is the
+ * Country's label and `exploreTemplate` the link text with a `{name}`
+ * placeholder, both UI copy in the visitor's Language from the server.
  */
-const DestinationCard = ({ destination, href }) => {
+const DestinationCard = ({
+	destination,
+	href,
+	countryLabel,
+	exploreTemplate,
+}) => {
 	const content = destination.content || {};
 	const name = content.name || destination.name;
 	const hasImage = Boolean(content.hero_image?.filename);
@@ -34,15 +39,15 @@ const DestinationCard = ({ destination, href }) => {
 				<h3 className="font-display text-3xl leading-[1.05] font-semibold tracking-[-0.01em] text-balance">
 					{name}
 				</h3>
-				{content.country && (
+				{countryLabel && (
 					<span className="font-mono text-xs tracking-widest text-slate-500 uppercase dark:text-slate-300">
-						{capitalise(content.country)}
+						{countryLabel}
 					</span>
 				)}
 			</div>
-			{href && (
+			{href && exploreTemplate && (
 				<span className="font-display text-sm text-lagoon-700 group-hover:underline dark:text-lagoon-300">
-					Explore {name} →
+					{fillTemplate(exploreTemplate, { name })} →
 				</span>
 			)}
 		</>

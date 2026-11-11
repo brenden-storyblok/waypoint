@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:21:38.680Z",
-  "published_at": "2026-10-15T14:21:38.661Z",
+  "updated_at": "2026-11-10T21:13:51.964Z",
+  "published_at": "2026-11-10T21:13:51.949Z",
   "id": 230950906354539,
   "uuid": "00c09d68-57ae-46e2-945d-154779d68fd1",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "14b185d1-c825-4c2d-8971-7907d34ee709",
         "text": "The 843-acre park runs 51 blocks from 59th Street to 110th Street.",
         "title": "Central Park in the middle",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Der 340 Hektar große Park erstreckt sich über 51 Blocks von der 59th Street bis zur 110th Street.",
+        "text__i18n__es": "El parque, de 340 hectáreas, se extiende a lo largo de 51 manzanas, desde la calle 59 hasta la calle 110.",
+        "text__i18n__fr": "Ce parc de 340 hectares s'étend sur 51 blocs, de la 59e Rue à la 110e Rue.",
+        "title__i18n__de": "Central Park mittendrin",
+        "title__i18n__es": "Central Park en pleno centro",
+        "title__i18n__fr": "Central Park au cœur de la ville"
       },
       {
         "_uid": "c34aaf26-bcac-4db9-a96e-1955f8ccb25e",
         "text": "The 1883 bridge has a raised walkway over the East River with views of Lower Manhattan.",
         "title": "Walk the Brooklyn Bridge",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Die Brücke von 1883 hat einen erhöhten Fußweg über den East River mit Blick auf Lower Manhattan.",
+        "text__i18n__es": "El puente de 1883 tiene una pasarela elevada sobre el East River con vistas al Bajo Manhattan.",
+        "text__i18n__fr": "Le pont de 1883 offre une passerelle surélevée au-dessus de l'East River, avec vue sur Lower Manhattan.",
+        "title__i18n__de": "Über die Brooklyn Bridge spazieren",
+        "title__i18n__es": "Cruza a pie el puente de Brooklyn",
+        "title__i18n__fr": "Traverser le pont de Brooklyn à pied"
       },
       {
         "_uid": "4e74b32f-6101-4ac5-bdaf-caf9a40a596c",
         "text": "The 41 Broadway theatres around Times Square stage shows eight times a week.",
         "title": "Broadway after dark",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Die 41 Broadway-Theater rund um den Times Square spielen achtmal pro Woche.",
+        "text__i18n__es": "Los 41 teatros de Broadway en torno a Times Square ofrecen funciones ocho veces por semana.",
+        "text__i18n__fr": "Les 41 théâtres de Broadway autour de Times Square donnent des spectacles huit fois par semaine.",
+        "title__i18n__de": "Broadway bei Nacht",
+        "title__i18n__es": "Broadway al caer la noche",
+        "title__i18n__fr": "Broadway après la tombée de la nuit"
       },
       {
         "_uid": "380f9f5d-687d-4f6c-a09f-7cd411a96f83",
         "text": "Eat dumplings in Flushing, arepas in Jackson Heights and pastrami at Katz's, open since 1888.",
         "title": "A food map of the world",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Probiere Dumplings in Flushing, Arepas in Jackson Heights und Pastrami bei Katz's, geöffnet seit 1888.",
+        "text__i18n__es": "Prueba los dumplings en Flushing, las arepas en Jackson Heights y el pastrami en Katz's, abierto desde 1888.",
+        "text__i18n__fr": "Goûtez les raviolis de Flushing, les arepas de Jackson Heights et le pastrami de chez Katz's, ouvert depuis 1888.",
+        "title__i18n__de": "Eine kulinarische Weltkarte",
+        "title__i18n__es": "Un mapa gastronómico del mundo",
+        "title__i18n__fr": "Une carte gastronomique du monde"
       }
     ],
     "region": "New York",
@@ -182,6 +206,9 @@
         "size": "2400x3606"
       }
     },
+    "name__i18n__de": "New York City",
+    "name__i18n__es": "Nueva York",
+    "name__i18n__fr": "New York",
     "image_landscape": {
       "id": 230950527012017,
       "alt": "Aerial view south over Central Park's lake and Sheep Meadow toward the Midtown towers and the Hudson River.",
@@ -195,6 +222,108 @@
       "meta_data": {
         "size": "2400x1601"
       }
+    },
+    "region__i18n__de": "New York",
+    "region__i18n__es": "Nueva York",
+    "region__i18n__fr": "New York",
+    "summary__i18n__de": "Fünf Stadtbezirke, 472 U-Bahn-Stationen und eine Skyline, die du aus Filmen kennst. Iss ein Stück Pizza auf der Straße und spaziere dann in der Dämmerung über die Brooklyn Bridge.",
+    "summary__i18n__es": "Cinco distritos, 472 estaciones de metro y un horizonte que ya conoces de las películas. Come una porción de pizza en la calle y luego cruza el puente de Brooklyn al atardecer.",
+    "summary__i18n__fr": "Cinq arrondissements, 472 stations de métro et un panorama que vous connaissez déjà grâce au cinéma. Mangez une part de pizza dans la rue, puis traversez le pont de Brooklyn au crépuscule.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "New York City liegt dort, wo der Hudson River auf den Atlantik trifft, verteilt auf fünf Stadtbezirke auf Inseln und dem Festland. Manhattan ist etwa 21 km lang und folgt einem Straßenraster aus dem Jahr 1811.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Die Niederländer gründeten Neu-Amsterdam an der Spitze Manhattans, und die Engländer benannten es 1664 in New York um. Mehr als 12 Millionen Einwanderer kamen zwischen 1892 und 1954 über Ellis Island ins Land. Bagels, Pastrami auf Roggenbrot und das Dollar-Slice kamen mit ihnen.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Von Ende April bis Juni und von September bis Anfang November ist das Wetter mild. Buche Tickets für die Krone der Freiheitsstatue frühzeitig, denn sie sind Monate im Voraus ausverkauft.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Nueva York se encuentra donde el río Hudson se une al Atlántico, repartida en cinco distritos entre islas y tierra firme. Manhattan mide unos 21 km de largo y sigue una cuadrícula de calles trazada en 1811.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los neerlandeses fundaron Nueva Ámsterdam en la punta de Manhattan, y los ingleses la rebautizaron como Nueva York en 1664. Más de 12 millones de inmigrantes pasaron por Ellis Island entre 1892 y 1954. Con ellos llegaron los bagels, el pastrami sobre pan de centeno y la porción de pizza por un dólar.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De finales de abril a junio y de septiembre a principios de noviembre el clima es templado. Reserva con mucha antelación las entradas para la corona de la Estatua de la Libertad, porque se agotan con meses de adelanto.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "New York se trouve là où l'Hudson rencontre l'Atlantique, répartie en cinq arrondissements sur des îles et sur le continent. Manhattan mesure environ 21 km de long et suit un quadrillage de rues tracé en 1811.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Les Néerlandais ont fondé la Nouvelle-Amsterdam à la pointe de Manhattan, et les Anglais l'ont rebaptisée New York en 1664. Plus de 12 millions d'immigrants sont passés par Ellis Island entre 1892 et 1954. Les bagels, le pastrami sur pain de seigle et la part de pizza à un dollar sont arrivés avec eux.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De fin avril à juin et de septembre à début novembre, le temps est doux. Réservez longtemps à l'avance vos billets pour la couronne de la statue de la Liberté, car ils sont complets des mois à l'avance.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -216,8 +345,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "1c6ee6c384e2502d103e10e793d5c19576df78ad",
-    "timestamp": "1792592499"
+    "token": "c33351fca276f5ca874fc3520da4103c5e9bfdf2",
+    "timestamp": "1794347521"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -259,28 +388,59 @@
       "path": "data/destinations/new-york-city",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/new-york-city",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/new-york-city",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -110,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255911046651,
+      "story_id": 230950906354539,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:48.279Z",
+      "published_at": "2026-11-10T21:23:48.279Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255913913853,
+      "story_id": 230950906354539,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:48.978Z",
+      "published_at": "2026-11-10T21:23:48.978Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255916514814,
+      "story_id": 230950906354539,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:49.613Z",
+      "published_at": "2026-11-10T21:23:49.613Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230950906445804,
+  "current_version_id": 240253468271003,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

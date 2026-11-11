@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:36.714Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T20:58:14.912Z",
+  "published_at": "2026-11-10T20:58:14.894Z",
   "id": 230846242302571,
   "uuid": "b126e15c-ef23-4394-8371-ff8d4a8cab37",
   "is_folder": false,
@@ -29,7 +29,52 @@
       ]
     },
     "question": "Can I book trips through Waypoint?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Nein. Waypoint ist ein redaktioneller Reiseführer. Wir verkaufen keine Reisen.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "No. Waypoint es una guía editorial. No vendemos viajes.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Non. Waypoint est un guide éditorial. Nous ne vendons pas de voyages.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Kann ich über Waypoint Reisen buchen?",
+    "question__i18n__es": "¿Puedo reservar viajes a través de Waypoint?",
+    "question__i18n__fr": "Puis-je réserver des voyages via Waypoint ?"
   },
   "published": true,
   "slug": "general-can-i-book-trips",
@@ -50,8 +95,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "37120912aeebad9eab55de18e9eee6460c1efc49",
-    "timestamp": "1792592502"
+    "token": "23e69d4cac7e99ce0227a4548f8854d79a3612c1",
+    "timestamp": "1794347525"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -93,30 +138,196 @@
       "path": "data/faqs/general-can-i-book-trips",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/general-can-i-book-trips",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/general-can-i-book-trips",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -40,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255990312462,
+      "story_id": 230846242302571,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:07.631Z",
+      "published_at": "2026-11-10T21:24:07.631Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230850657503285",
+          "display_name": "France",
+          "name": "france",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851098155064",
+          "display_name": "Provence",
+          "name": "provence",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230852509141055",
+          "display_name": "Waypoint",
+          "name": "waypoint",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255993310735,
+      "story_id": 230846242302571,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:08.361Z",
+      "published_at": "2026-11-10T21:24:08.361Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230850657503285",
+          "display_name": "France",
+          "name": "france",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851098155064",
+          "display_name": "Provence",
+          "name": "provence",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230852509141055",
+          "display_name": "Waypoint",
+          "name": "waypoint",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255995940368,
+      "story_id": 230846242302571,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:09.005Z",
+      "published_at": "2026-11-10T21:24:09.005Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230850657503285",
+          "display_name": "France",
+          "name": "france",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851098155064",
+          "display_name": "Provence",
+          "name": "provence",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230852509141055",
+          "display_name": "Waypoint",
+          "name": "waypoint",
+          "taxonomy_id": "230852480141374",
+          "taxonomy": {
+            "id": "230852480141374",
+            "name": "topics",
+            "display_name": "Topics",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857263889741,
+  "current_version_id": 240249567874919,
   "variant_type": null,
   "taxonomy_terms": [
+    {
+      "id": "230850657503285",
+      "display_name": "France",
+      "name": "france",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    },
+    {
+      "id": "230851098155064",
+      "display_name": "Provence",
+      "name": "provence",
+      "taxonomy_id": "230845703813169",
+      "taxonomy": {
+        "id": "230845703813169",
+        "name": "destination",
+        "display_name": "Destination",
+        "deleted_at": null
+      }
+    },
     {
       "id": "230852509141055",
       "display_name": "Waypoint",

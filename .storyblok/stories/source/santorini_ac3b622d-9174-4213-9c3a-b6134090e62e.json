@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T12:27:19.515Z",
-  "published_at": "2026-10-15T12:27:19.492Z",
+  "updated_at": "2026-11-10T21:04:31.166Z",
+  "published_at": "2026-11-10T21:04:31.139Z",
   "id": 230846783052449,
   "uuid": "ac3b622d-9174-4213-9c3a-b6134090e62e",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "7a2d9c10-5e0b-4c11-8a31-1b0f6d2e4c11",
         "text": "The caldera path links the two towns along the cliff edge. Plan on about three hours one way.",
         "title": "Fira to Oia on foot",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Der Kraterrandweg verbindet die beiden Orte entlang der Klippenkante. Rechne mit etwa drei Stunden pro Strecke.",
+        "text__i18n__es": "El sendero de la caldera une las dos localidades a lo largo del borde del acantilado. Calcula unas tres horas de ida.",
+        "text__i18n__fr": "Le sentier de la caldeira relie les deux villes le long du bord de la falaise. Comptez environ trois heures pour l'aller.",
+        "title__i18n__de": "Zu Fuß von Fira nach Oia",
+        "title__i18n__es": "De Fira a Oia a pie",
+        "title__i18n__fr": "De Fira à Oia à pied"
       },
       {
         "_uid": "7a2d9c10-5e0b-4c11-8a31-1b0f6d2e4c12",
         "text": "Red Beach, Perissa and Kamari have red, black and dark sand shaped by the volcano.",
         "title": "Volcanic beaches",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Red Beach, Perissa und Kamari haben roten, schwarzen und dunklen Sand, den der Vulkan geformt hat.",
+        "text__i18n__es": "Red Beach, Perissa y Kamari tienen arena roja, negra y oscura moldeada por el volcán.",
+        "text__i18n__fr": "Red Beach, Perissa et Kamari offrent un sable rouge, noir et sombre façonné par le volcan.",
+        "title__i18n__de": "Vulkanstrände",
+        "title__i18n__es": "Playas volcánicas",
+        "title__i18n__fr": "Plages volcaniques"
       },
       {
         "_uid": "7a2d9c10-5e0b-4c11-8a31-1b0f6d2e4c13",
         "text": "Vines grow in low baskets on volcanic soil. Several wineries pour tastings with caldera views.",
         "title": "Assyrtiko wine",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Die Reben wachsen in niedrigen Korbformen auf vulkanischem Boden. Mehrere Weingüter bieten Verkostungen mit Blick auf die Caldera an.",
+        "text__i18n__es": "Las vides crecen en cestas bajas sobre suelo volcánico. Varias bodegas ofrecen catas con vistas a la caldera.",
+        "text__i18n__fr": "Les vignes poussent en paniers bas sur un sol volcanique. Plusieurs domaines proposent des dégustations avec vue sur la caldeira.",
+        "title__i18n__de": "Assyrtiko-Wein",
+        "title__i18n__es": "Vino Assyrtiko",
+        "title__i18n__fr": "Le vin d'Assyrtiko"
       },
       {
         "_uid": "7a2d9c10-5e0b-4c11-8a31-1b0f6d2e4c14",
         "text": "Volcanic ash preserved a Bronze Age settlement. Its multi-storey houses still stand under a covered roof.",
         "title": "Akrotiri, the buried town",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Vulkanasche hat eine bronzezeitliche Siedlung konserviert. Ihre mehrstöckigen Häuser stehen noch heute unter einem Schutzdach.",
+        "text__i18n__es": "La ceniza volcánica conservó un asentamiento de la Edad del Bronce. Sus casas de varios pisos siguen en pie bajo una cubierta.",
+        "text__i18n__fr": "Les cendres volcaniques ont préservé un site de l'âge du bronze. Ses maisons à plusieurs étages se dressent encore sous un toit protecteur.",
+        "title__i18n__de": "Akrotiri, die verschüttete Stadt",
+        "title__i18n__es": "Akrotiri, la ciudad sepultada",
+        "title__i18n__fr": "Akrotiri, la ville ensevelie"
       }
     ],
     "region": "Cyclades",
@@ -173,6 +197,9 @@
       "copyright": "Matthew Waring / Unsplash",
       "fieldtype": "asset"
     },
+    "name__i18n__de": "Santorin",
+    "name__i18n__es": "Santorini",
+    "name__i18n__fr": "Santorin",
     "image_landscape": {
       "id": 230846334071429,
       "alt": "Red volcanic rocks above Red Beach, with catamarans anchored in the bay",
@@ -182,6 +209,108 @@
       "filename": "https://a.storyblok.com/f/295888311565739/85ce2957aa/santorini-red-beach.jpg",
       "copyright": "Ronak Mokashi / Unsplash",
       "fieldtype": "asset"
+    },
+    "region__i18n__de": "Kykladen",
+    "region__i18n__es": "Cícladas",
+    "region__i18n__fr": "Cyclades",
+    "summary__i18n__de": "Ein Halbmond aus weißen Dörfern am Rand eines gefluteten Vulkans. Die Klippen fallen senkrecht in die Caldera ab.",
+    "summary__i18n__es": "Una media luna de pueblos blancos en el borde de un volcán inundado. Los acantilados caen en vertical hacia la caldera.",
+    "summary__i18n__fr": "Un croissant de villages blancs au bord d'un volcan englouti. Les falaises plongent droit dans la caldeira.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Santorin ist der gebogene Rest eines Vulkans in den südlichen Kykladen. Ein gewaltiger Ausbruch in der Bronzezeit ließ die Mitte einstürzen und hinterließ eine Caldera, die heute vom Meer gefüllt ist.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Fira, Imerovigli und Oia reihen sich entlang der Klippenkante. Ihre weißen Häuser und blauen Kirchenkuppeln blicken auf die Caldera. An der äußeren Küste bestehen die Strände aus schwarzem, rotem oder weißem Vulkansand und Kieseln.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Mai, Juni, September und Oktober bringen warmes Meer und weniger Menschen. In Oia ist es bei Sonnenuntergang am vollsten, buche das Abendessen also im Voraus.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Santorini es el resto curvo de un volcán en el sur de las Cícladas. Una enorme erupción de la Edad del Bronce hundió el centro y dejó una caldera, hoy llena de mar.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Fira, Imerovigli y Oia se alinean en el borde del acantilado. Sus casas blancas y cúpulas azules de iglesia miran hacia la caldera. En la costa exterior, las playas son de arena y guijarros volcánicos negros, rojos o blancos.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Mayo, junio, septiembre y octubre traen un mar cálido y menos gente. Oia está más concurrida al atardecer, así que reserva la cena con antelación.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Santorin est le vestige incurvé d'un volcan dans le sud des Cyclades. Une énorme éruption à l'âge du bronze a fait s'effondrer le centre et laissé une caldeira, aujourd'hui remplie par la mer.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Fira, Imerovigli et Oia bordent le rebord de la falaise. Leurs maisons blanches et leurs coupoles d'église bleues font face à la caldeira. Sur la côte extérieure, les plages sont de sable et de galets volcaniques noirs, rouges ou blancs.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Mai, juin, septembre et octobre apportent une mer chaude et moins de monde. Oia est la plus fréquentée au coucher du soleil : réservez donc le dîner à l'avance.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -203,8 +332,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "40982a284b433403eebb5db763e9d1b488336fed",
-    "timestamp": "1792592504"
+    "token": "b3c508685ecd57d6f3ab82b81631d2db26fbd0f6",
+    "timestamp": "1794347526"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -246,28 +375,98 @@
       "path": "data/destinations/santorini",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/santorini",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/santorini",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -10,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240256186342961,
+      "story_id": 230846783052449,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:55.489Z",
+      "published_at": "2026-11-10T21:24:55.489Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230851230324796",
+          "display_name": "Greece",
+          "name": "greece",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256189537842,
+      "story_id": 230846783052449,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:56.268Z",
+      "published_at": "2026-11-10T21:24:56.268Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230851230324796",
+          "display_name": "Greece",
+          "name": "greece",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256192200243,
+      "story_id": 230846783052449,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:56.919Z",
+      "published_at": "2026-11-10T21:24:56.919Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230851230324796",
+          "display_name": "Greece",
+          "name": "greece",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230922811212231,
+  "current_version_id": 240251170371195,
   "variant_type": null,
   "taxonomy_terms": [
     {

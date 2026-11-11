@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T12:26:01.869Z",
-  "published_at": "2026-10-15T12:26:01.836Z",
+  "updated_at": "2026-11-10T21:06:58.242Z",
+  "published_at": "2026-11-10T21:06:58.226Z",
   "id": 230847570557659,
   "uuid": "7901bdb6-3c8b-46d6-ab0f-2b76535f4173",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "6a1c0b52-3f1e-4d8e-9a77-1b2c3d4e6101",
         "text": "The royal palace mixes Moorish and Christian styles, with courtyards, tilework and gardens. Spain's royal family still uses part of it.",
         "title": "The Real Alcázar",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Der Königspalast verbindet maurische und christliche Stile mit Innenhöfen, Fliesenschmuck und Gärten. Die spanische Königsfamilie nutzt noch heute einen Teil davon.",
+        "text__i18n__es": "El palacio real combina estilos moriscos y cristianos, con patios, azulejos y jardines. La familia real española aún utiliza una parte.",
+        "text__i18n__fr": "Le palais royal mêle styles mauresque et chrétien, avec ses patios, ses azulejos et ses jardins. La famille royale d'Espagne en occupe encore une partie.",
+        "title__i18n__de": "Der Real Alcázar",
+        "title__i18n__es": "El Real Alcázar",
+        "title__i18n__fr": "Le Real Alcázar"
       },
       {
         "_uid": "6a1c0b52-3f1e-4d8e-9a77-1b2c3d4e6102",
         "text": "Bars across the river from the centre serve small plates at the counter. Order a few at a time.",
         "title": "Tapas in Triana",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Bars auf der anderen Flussseite des Zentrums servieren kleine Gerichte an der Theke. Bestell am besten nach und nach ein paar davon.",
+        "text__i18n__es": "Los bares al otro lado del río del centro sirven pequeñas raciones en la barra. Pide unas pocas cada vez.",
+        "text__i18n__fr": "Des bars de l'autre côté du fleuve, face au centre, servent de petites assiettes au comptoir. Commandez-en quelques-unes à la fois.",
+        "title__i18n__de": "Tapas in Triana",
+        "title__i18n__es": "Tapas en Triana",
+        "title__i18n__fr": "Tapas à Triana"
       },
       {
         "_uid": "6a1c0b52-3f1e-4d8e-9a77-1b2c3d4e6103",
         "text": "Small tablaos in the old town stage guitar, song and dance in rooms that seat a few dozen.",
         "title": "Flamenco up close",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Kleine Tablaos in der Altstadt bieten Gitarre, Gesang und Tanz in Räumen mit nur wenigen Dutzend Plätzen.",
+        "text__i18n__es": "Pequeños tablaos del casco antiguo ofrecen guitarra, cante y baile en salas con aforo de unas pocas decenas de personas.",
+        "text__i18n__fr": "De petits tablaos de la vieille ville proposent guitare, chant et danse dans des salles de quelques dizaines de places.",
+        "title__i18n__de": "Flamenco hautnah",
+        "title__i18n__es": "Flamenco de cerca",
+        "title__i18n__fr": "Le flamenco de près"
       },
       {
         "_uid": "6a1c0b52-3f1e-4d8e-9a77-1b2c3d4e6104",
         "text": "A brick semicircle with a canal, rowing boats and tiled benches for each Spanish province.",
         "title": "Plaza de España",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Ein Halbrund aus Backstein mit Kanal, Ruderbooten und gefliesten Bänken für jede spanische Provinz.",
+        "text__i18n__es": "Un semicírculo de ladrillo con un canal, barcas de remos y bancos de azulejos para cada provincia española.",
+        "text__i18n__fr": "Un demi-cercle de brique avec un canal, des barques à rames et des bancs en azulejos pour chaque province espagnole.",
+        "title__i18n__de": "Plaza de España",
+        "title__i18n__es": "Plaza de España",
+        "title__i18n__fr": "Plaza de España"
       }
     ],
     "region": "Andalusia",
@@ -174,6 +198,9 @@
       "copyright": "Alex Robertson / Unsplash",
       "fieldtype": "asset"
     },
+    "name__i18n__de": "Sevilla",
+    "name__i18n__es": "Sevilla",
+    "name__i18n__fr": "Séville",
     "image_landscape": {
       "id": 230846325334658,
       "alt": "The Giralda and Seville Cathedral rising above rooftops at sunset",
@@ -183,6 +210,108 @@
       "filename": "https://a.storyblok.com/f/295888311565739/39c59a5b25/seville-giralda-cathedral.jpg",
       "copyright": "Henrique Ferreira / Unsplash",
       "fieldtype": "asset"
+    },
+    "region__i18n__de": "Andalusien",
+    "region__i18n__es": "Andalucía",
+    "region__i18n__fr": "Andalousie",
+    "summary__i18n__de": "Orangenbäume, geflieste Innenhöfe und ein maurischer Palast im Herzen Andalusiens. Eine Stadt, gebaut für lange, ruhige Abende.",
+    "summary__i18n__es": "Naranjos, patios con azulejos y un palacio morisco en el corazón de Andalucía. Una ciudad hecha para tardes y noches sin prisa.",
+    "summary__i18n__fr": "Orangers, patios ornés de carreaux et palais mauresque au cœur de l'Andalousie. Une ville faite pour les soirées qui s'étirent.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Sevilla liegt am Ufer des Guadalquivir im Süden Spaniens. Die Stadt ist die Hauptstadt Andalusiens und eine der wärmsten Städte Europas.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Maurische Baumeister hinterließen den Real Alcázar und die Giralda, die als Minarett begann und heute als Glockenturm der Kathedrale dient. Die Plaza de España kam später und wurde für die Iberoamerikanische Ausstellung von 1929 gebaut. Auf der anderen Flussseite bewahrt Triana seine eigenen Tapas-Bars und Keramikwerkstätten.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Frühling und Herbst eignen sich zum Wandern. Die Sommernachmittage sind heiß, deshalb hat die Stadt lange Öffnungszeiten und isst erst nach 21 Uhr zu Abend.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Sevilla se alza a orillas del Guadalquivir, en el sur de España. Es la capital de Andalucía y una de las ciudades más cálidas de Europa.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los constructores musulmanes dejaron el Real Alcázar y la Giralda, que nació como alminar y hoy es el campanario de la catedral. La Plaza de España llegó después, construida para la Exposición Iberoamericana de 1929. Al otro lado del río, Triana conserva sus propios bares de tapas y talleres de cerámica.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La primavera y el otoño son ideales para caminar. Las tardes de verano son calurosas, así que la ciudad lleva horarios tardíos y cena pasadas las 21:00.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Séville s'étend sur les rives du Guadalquivir, dans le sud de l'Espagne. C'est la capitale de l'Andalousie et l'une des villes les plus chaudes d'Europe.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Les bâtisseurs maures ont laissé le Real Alcázar et la Giralda, à l'origine un minaret, aujourd'hui clocher de la cathédrale. La Plaza de España est venue plus tard, construite pour l'Exposition ibéro-américaine de 1929. De l'autre côté du fleuve, Triana a gardé ses propres bars à tapas et ses ateliers de céramique.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Le printemps et l'automne conviennent à la marche. Les après-midi d'été sont chauds : la ville vit donc tard et dîne après 21 h.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -204,8 +333,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "37120912aeebad9eab55de18e9eee6460c1efc49",
-    "timestamp": "1792592502"
+    "token": "e5843636d7673e0d8482a9ecb8eae4db8fad27bc",
+    "timestamp": "1794347524"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -247,28 +376,98 @@
       "path": "data/destinations/seville",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/seville",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/seville",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -50,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240256078409254,
+      "story_id": 230847570557659,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:29.138Z",
+      "published_at": "2026-11-10T21:24:29.138Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230850638682164",
+          "display_name": "Spain",
+          "name": "spain",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256081456679,
+      "story_id": 230847570557659,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:29.882Z",
+      "published_at": "2026-11-10T21:24:29.882Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230850638682164",
+          "display_name": "Spain",
+          "name": "spain",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240256084233768,
+      "story_id": 230847570557659,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:30.560Z",
+      "published_at": "2026-11-10T21:24:30.560Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230850638682164",
+          "display_name": "Spain",
+          "name": "spain",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230922493042855,
+  "current_version_id": 240251773708359,
   "variant_type": null,
   "taxonomy_terms": [
     {

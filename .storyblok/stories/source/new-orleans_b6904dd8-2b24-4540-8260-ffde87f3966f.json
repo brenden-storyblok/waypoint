@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:34:03.861Z",
-  "published_at": "2026-10-15T14:34:03.849Z",
+  "updated_at": "2026-11-10T20:56:02.807Z",
+  "published_at": "2026-11-10T20:56:02.788Z",
   "id": 230953958690581,
   "uuid": "b6904dd8-2b24-4540-8260-ffde87f3966f",
   "is_folder": false,
@@ -22,17 +22,26 @@
       {
         "_uid": "3039ead5-4cf5-4463-88ec-7b3d42e2c358",
         "headline": "Why New Orleans",
-        "component": "destination_usps"
+        "component": "destination_usps",
+        "headline__i18n__de": "Warum New Orleans",
+        "headline__i18n__es": "Por qué Nueva Orleans",
+        "headline__i18n__fr": "Pourquoi La Nouvelle-Orléans"
       },
       {
         "_uid": "4e1dc357-61cd-46d0-9569-fa29e72db121",
         "headline": "About New Orleans",
-        "component": "destination_bio"
+        "component": "destination_bio",
+        "headline__i18n__de": "Über New Orleans",
+        "headline__i18n__es": "Sobre Nueva Orleans",
+        "headline__i18n__fr": "À propos de La Nouvelle-Orléans"
       },
       {
         "_uid": "b195439a-5458-477e-bac6-a0a7699fbbb6",
         "headline": "New Orleans in pictures",
-        "component": "destination_gallery"
+        "component": "destination_gallery",
+        "headline__i18n__de": "New Orleans in Bildern",
+        "headline__i18n__es": "Nueva Orleans en imágenes",
+        "headline__i18n__fr": "La Nouvelle-Orléans en images"
       },
       {
         "_uid": "1053a5c5-d60a-4a2c-b82f-a7a5b5fcec0c",
@@ -98,7 +107,193 @@
           ]
         },
         "headline": "Getting around",
-        "component": "text_block"
+        "component": "text_block",
+        "text__i18n__de": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Die RTA betreibt die Busse, die Straßenbahnen St. Charles, Canal und Riverfront sowie die Fähren über den Fluss. Bezahlt wird mit der App Le Pass oder bar und passend; eine Fahrt mit Bus oder Straßenbahn kostet 1,25 $.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Ein Taxi vom Flughafen Louis Armstrong ins French Quarter braucht etwa 25 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Die St.-Charles-Straßenbahn von der Canal Street zum Audubon Park braucht etwa 40 Minuten.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Das French Quarter erstreckt sich über 13 Häuserblöcke von der Canal Street bis zur Esplanade Avenue.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__es": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La RTA gestiona los autobuses, los tranvías de St. Charles, Canal y Riverfront, y los ferris que cruzan el río. Se paga con la app Le Pass o en efectivo y con el importe exacto; un viaje en autobús o tranvía cuesta 1,25 $.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Un taxi desde el aeropuerto Louis Armstrong hasta el Barrio Francés tarda unos 25 minutos.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "El tranvía de St. Charles desde Canal Street hasta Audubon Park tarda unos 40 minutos.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "El Barrio Francés se extiende a lo largo de 13 manzanas, desde Canal Street hasta Esplanade Avenue.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "text__i18n__fr": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La RTA exploite les bus, les tramways de St. Charles, de Canal et de Riverfront, et les ferries qui traversent le fleuve. On paie avec l'appli Le Pass ou en espèces, avec l'appoint ; un trajet en bus ou en tramway coûte 1,25 $.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "content": [
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Un taxi de l'aéroport Louis Armstrong au Vieux Carré met environ 25 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Le tramway de St. Charles, de Canal Street à Audubon Park, met environ 40 minutes.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "list_item",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Le Vieux Carré s'étend sur 13 pâtés de maisons, de Canal Street à Esplanade Avenue.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "headline__i18n__de": "Unterwegs",
+        "headline__i18n__es": "Cómo moverse",
+        "headline__i18n__fr": "Se déplacer"
       }
     ],
     "component": "destination_page",
@@ -123,8 +318,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "7a7baba9bb2a2bfc45f31d2d5b7d15148ad9e25c",
-    "timestamp": "1792592493"
+    "token": "460f1b555d13b977e611d6862b0cff7837ea7559",
+    "timestamp": "1794347515"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -156,28 +351,59 @@
       "path": "destinations/new-orleans",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/new-orleans",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "destinations/new-orleans",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -370,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255597313382,
+      "story_id": 230953958690581,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:31.684Z",
+      "published_at": "2026-11-10T21:22:31.684Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255729384864,
+      "story_id": 230953958690581,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:03.928Z",
+      "published_at": "2026-11-10T21:23:03.928Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255852846550,
+      "story_id": 230953958690581,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:34.069Z",
+      "published_at": "2026-11-10T21:23:34.069Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230953958759592,
+  "current_version_id": 240249072917868,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

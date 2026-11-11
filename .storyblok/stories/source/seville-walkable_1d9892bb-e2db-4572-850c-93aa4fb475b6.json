@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:37.662Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T21:05:16.649Z",
+  "published_at": "2026-11-10T21:05:16.623Z",
   "id": 230847497403086,
   "uuid": "1d9892bb-e2db-4572-850c-93aa4fb475b6",
   "is_folder": false,
@@ -38,7 +38,79 @@
       ]
     },
     "question": "Is it walkable?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ja. Die Altstadt ist kompakt und flach. Die Kathedrale, der Real Alcázar und das Viertel Santa Cruz liegen nur einen kurzen Fußweg voneinander entfernt.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Nutze für die Plaza de España und für längere Strecken in der Hitze einen Bus, die Straßenbahn oder ein Sevici-Leihrad.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Sí. El casco antiguo es compacto y llano. La Catedral, el Real Alcázar y el barrio de Santa Cruz están a poca distancia a pie unos de otros.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Usa el autobús, el tranvía o una bici Sevici para ir a la Plaza de España y para los trayectos más largos con calor.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Oui. Le centre ancien est compact et plat. La cathédrale, le Real Alcázar et le quartier de Santa Cruz se trouvent à courte distance à pied les uns des autres.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Prenez un bus, le tramway ou un vélo Sevici pour la Plaza de España et pour les trajets plus longs par forte chaleur.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Ist es zu Fuß gut erkundbar?",
+    "question__i18n__es": "¿Se puede recorrer a pie?",
+    "question__i18n__fr": "Peut-on s'y déplacer à pied ?"
   },
   "published": true,
   "slug": "seville-walkable",
@@ -59,8 +131,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "9d5d0e440e0e141dda98d947fea9262e701fc1e2",
-    "timestamp": "1792592495"
+    "token": "1ecfba03a0213079a03e8706ff33e69b15fea55c",
+    "timestamp": "1794347516"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -102,28 +174,134 @@
       "path": "data/faqs/seville-walkable",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/seville-walkable",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/seville-walkable",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -220,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255602875752,
+      "story_id": 230847497403086,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:33.042Z",
+      "published_at": "2026-11-10T21:22:33.042Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230850638682164",
+          "display_name": "Spain",
+          "name": "spain",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851206502459",
+          "display_name": "Seville",
+          "name": "seville",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255605841259,
+      "story_id": 230847497403086,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:33.766Z",
+      "published_at": "2026-11-10T21:22:33.766Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230850638682164",
+          "display_name": "Spain",
+          "name": "spain",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851206502459",
+          "display_name": "Seville",
+          "name": "seville",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255608458607,
+      "story_id": 230847497403086,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:22:34.404Z",
+      "published_at": "2026-11-10T21:22:34.404Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230850638682164",
+          "display_name": "Spain",
+          "name": "spain",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851206502459",
+          "display_name": "Seville",
+          "name": "seville",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857267776874,
+  "current_version_id": 240251311183594,
   "variant_type": null,
   "taxonomy_terms": [
     {

@@ -7,6 +7,10 @@ const render = (props) =>
 		<DestinationCarousel
 			headline="More places"
 			placesLabel="2 places"
+			label="Destinations"
+			roleDescription="carousel"
+			previousLabel="Previous destinations"
+			nextLabel="Next destinations"
 			{...props}
 		>
 			<div key="lisbon">Lisbon card</div>
@@ -20,8 +24,7 @@ const regionTag = (html) =>
 
 // The opening tag of the button with the given accessible label.
 const buttonTag = (html, label) =>
-	html.match(new RegExp(`<button[^>]*aria-label="${label}"[^>]*>`))?.[0] ??
-	'';
+	html.match(new RegExp(`<button[^>]*aria-label="${label}"[^>]*>`))?.[0] ?? '';
 
 describe('DestinationCarousel', () => {
 	it('is a carousel region named after the headline', () => {
@@ -36,6 +39,19 @@ describe('DestinationCarousel', () => {
 		expect(html).toMatch(
 			new RegExp(`<h2 [^>]*id="${labelId}"[^>]*>More places</h2>`),
 		);
+	});
+
+	it('shows the region and button labels it is given, in German', () => {
+		const html = render({
+			headline: '',
+			label: 'Reiseziele',
+			previousLabel: 'Vorherige Reiseziele',
+			nextLabel: 'Nächste Reiseziele',
+		});
+		expect(regionTag(html)).toContain('aria-label="Reiseziele"');
+		expect(buttonTag(html, 'Vorherige Reiseziele')).toMatch(/^<button/);
+		expect(buttonTag(html, 'Nächste Reiseziele')).toMatch(/^<button/);
+		expect(html).not.toContain('Previous destinations');
 	});
 
 	it('names the region "Destinations" when there is no headline', () => {

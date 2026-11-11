@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:21:23.181Z",
-  "published_at": "2026-10-15T14:21:23.167Z",
+  "updated_at": "2026-11-10T21:11:53.075Z",
+  "published_at": "2026-11-10T21:11:53.057Z",
   "id": 230950842895204,
   "uuid": "1649946b-30f1-4f3c-971a-3d116b5ccfac",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "db54f623-ea63-4073-8674-fedef277ff91",
         "text": "Rotating cable cars climb from Tafelberg Road to the summit in about five minutes.",
         "title": "Table Mountain cableway",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Rotierende Seilbahnkabinen fahren von der Tafelberg Road in etwa fünf Minuten zum Gipfel.",
+        "text__i18n__es": "Las cabinas giratorias del teleférico suben desde Tafelberg Road hasta la cima en unos cinco minutos.",
+        "text__i18n__fr": "Des cabines rotatives montent de Tafelberg Road jusqu'au sommet en cinq minutes environ.",
+        "title__i18n__de": "Seilbahn auf den Tafelberg",
+        "title__i18n__es": "Teleférico de la Montaña de la Mesa",
+        "title__i18n__fr": "Téléphérique de la montagne de la Table"
       },
       {
         "_uid": "9105997c-e971-437a-89cc-ef81914d697f",
         "text": "A colony of endangered African penguins nests on the sand at Simon's Town on False Bay.",
         "title": "Penguins at Boulders Beach",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Eine Kolonie vom Aussterben bedrohter Brillenpinguine nistet im Sand von Simon's Town an der False Bay.",
+        "text__i18n__es": "Una colonia de pingüinos africanos en peligro de extinción anida en la arena de Simon's Town, en False Bay.",
+        "text__i18n__fr": "Une colonie de manchots du Cap en danger d'extinction niche sur le sable de Simon's Town, dans False Bay.",
+        "title__i18n__de": "Pinguine am Boulders Beach",
+        "title__i18n__es": "Pingüinos en Boulders Beach",
+        "title__i18n__fr": "Les manchots de Boulders Beach"
       },
       {
         "_uid": "15feb408-82ea-41e7-a4e9-075809bb7a90",
         "text": "Ferries from the V&A Waterfront run to the prison where Nelson Mandela was held for 18 years.",
         "title": "Robben Island",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Fähren vom V&A Waterfront fahren zum Gefängnis, in dem Nelson Mandela 18 Jahre lang inhaftiert war.",
+        "text__i18n__es": "Los ferris del V&A Waterfront llegan hasta la prisión donde Nelson Mandela estuvo preso durante 18 años.",
+        "text__i18n__fr": "Des ferries partent du V&A Waterfront vers la prison où Nelson Mandela a été détenu pendant 18 ans.",
+        "title__i18n__de": "Robben Island",
+        "title__i18n__es": "Isla Robben",
+        "title__i18n__fr": "Île Robben"
       },
       {
         "_uid": "80a5986d-a13f-451c-92ca-7c4649eeab66",
         "text": "Stellenbosch and Franschhoek, both under 90 minutes by car, have grown wine since the 17th century.",
         "title": "Winelands next door",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "In Stellenbosch und Franschhoek, beide weniger als 90 Autominuten entfernt, wird seit dem 17. Jahrhundert Wein angebaut.",
+        "text__i18n__es": "En Stellenbosch y Franschhoek, ambas a menos de 90 minutos en coche, se cultiva la vid desde el siglo XVII.",
+        "text__i18n__fr": "Stellenbosch et Franschhoek, toutes deux à moins de 90 minutes en voiture, cultivent la vigne depuis le XVIIe siècle.",
+        "title__i18n__de": "Weinland gleich nebenan",
+        "title__i18n__es": "Región vinícola a la puerta",
+        "title__i18n__fr": "Le vignoble à deux pas"
       }
     ],
     "region": "Western Cape",
@@ -184,6 +208,9 @@
         "size": "2400x3600"
       }
     },
+    "name__i18n__de": "Kapstadt",
+    "name__i18n__es": "Ciudad del Cabo",
+    "name__i18n__fr": "Le Cap",
     "image_landscape": {
       "id": 230950430715039,
       "alt": "African penguins gather on white sand between granite boulders at the water's edge.",
@@ -197,6 +224,108 @@
       "meta_data": {
         "size": "2400x1600"
       }
+    },
+    "region__i18n__de": "Westkap",
+    "region__i18n__es": "Cabo Occidental",
+    "region__i18n__fr": "Cap-Occidental",
+    "summary__i18n__de": "Ein Tafelberg über der Stadt und zwei Ozeane in einer Autostunde Entfernung. Pinguine, Weingärten und Atlantikstrände passen in eine einzige Woche.",
+    "summary__i18n__es": "Una montaña de cima plana sobre la ciudad y dos océanos a menos de una hora en coche. Pingüinos, viñedos y playas atlánticas caben en una sola semana.",
+    "summary__i18n__fr": "Une montagne à sommet plat dominant la ville et deux océans à moins d'une heure de route. Manchots, vignobles et plages de l'Atlantique tiennent en une seule semaine.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Kapstadt breitet sich rund um die Tafelbucht unterhalb des Tafelbergs aus, dessen flacher Gipfel etwa 1.085 Meter hoch liegt. Die Kaphalbinsel erstreckt sich von der Stadt nach Süden bis zum Cape Point, mit kalten Atlantikstränden im Westen und der False Bay im Osten.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Die Niederländische Ostindien-Kompanie richtete hier 1652 eine Versorgungsstation ein. Die Kap-Malaien-Familien im Bo-Kaap bewahren ihre bunt bemalten Häuser, ihr Bobotie und ihre Koeksisters. Nelson Mandela verbrachte 18 Jahre im Gefängnis auf Robben Island draußen in der Bucht.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Von Dezember bis März ist es trocken und heiß, auch wenn der Südostwind tagelang wehen kann. Prüfe vor der Auffahrt, ob die Seilbahn in Betrieb ist, denn bei Wind wird sie gesperrt.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ciudad del Cabo se extiende alrededor de la bahía de la Mesa, al pie de la Montaña de la Mesa, cuya cima plana se alza a unos 1085 metros. La península del Cabo desciende hacia el sur desde la ciudad hasta Cape Point, con frías playas atlánticas en el lado oeste y False Bay en el este.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La Compañía Neerlandesa de las Indias Orientales estableció aquí una estación de abastecimiento en 1652. Las familias malayas del Cabo del Bo-Kaap conservan sus casas pintadas, su bobotie y sus koeksisters. Nelson Mandela pasó 18 años preso en la isla Robben, en medio de la bahía.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De diciembre a marzo el clima es seco y caluroso, aunque el viento del sureste puede soplar durante días. Comprueba que el teleférico esté funcionando antes de subir, porque el viento lo cierra.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Le Cap s'étend autour de la baie de la Table, au pied de la montagne de la Table, dont le sommet plat s'élève à environ 1 085 mètres. La péninsule du Cap descend vers le sud depuis la ville jusqu'à Cape Point, avec des plages froides de l'Atlantique à l'ouest et False Bay à l'est.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La Compagnie néerlandaise des Indes orientales y a installé un comptoir de ravitaillement en 1652. Les familles malaises du Cap du Bo-Kaap conservent leurs maisons peintes, leur bobotie et leurs koeksisters. Nelson Mandela a passé 18 ans en prison sur l'île Robben, au large dans la baie.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De décembre à mars, le temps est sec et chaud, même si le vent du sud-est peut souffler pendant des jours. Vérifiez que le téléphérique fonctionne avant de monter, car le vent l'interrompt.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -218,8 +347,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "1c6ee6c384e2502d103e10e793d5c19576df78ad",
-    "timestamp": "1792592499"
+    "token": "9ce030a66ffc9a88f90accf5913b9568a5ad298b",
+    "timestamp": "1794347520"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -261,28 +390,59 @@
       "path": "data/destinations/cape-town",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/cape-town",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/cape-town",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -100,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255959567880,
+      "story_id": 230950842895204,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:00.124Z",
+      "published_at": "2026-11-10T21:24:00.124Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255962541577,
+      "story_id": 230950842895204,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:00.850Z",
+      "published_at": "2026-11-10T21:24:00.850Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240255965150730,
+      "story_id": 230950842895204,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:01.487Z",
+      "published_at": "2026-11-10T21:24:01.487Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230950842998669,
+  "current_version_id": 240252981173796,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

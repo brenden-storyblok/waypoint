@@ -1,5 +1,7 @@
 import { storyblokEditable } from '@storyblok/react/rsc';
 import { bentoLayout } from '@/lib/bento';
+import { getLabel } from '@/lib/labels';
+import { fillTemplate } from '@/lib/template';
 import ImageCredit from './ImageCredit';
 import StoryblokImage from './StoryblokImage';
 
@@ -41,10 +43,13 @@ const tileSizes = ({ wide, narrow }) => {
 	return `(min-width: 1280px) ${maxWidth}px, (min-width: 768px) ${wideShare}vw, ${narrowShare}vw`;
 };
 
-const DestinationGallery = ({ blok, destination }) => {
+const DestinationGallery = async ({ blok, destination }) => {
 	if (!destination) return null;
 
 	const images = (destination.gallery ?? []).filter((asset) => asset?.filename);
+	const countTemplate = await getLabel(
+		images.length === 1 ? 'image-one' : 'image-other',
+	);
 
 	return (
 		<section {...storyblokEditable(blok)} className="py-18">
@@ -57,7 +62,7 @@ const DestinationGallery = ({ blok, destination }) => {
 					)}
 					{images.length > 0 && (
 						<span className="font-mono text-xs text-slate-500 dark:text-slate-300">
-							{images.length} {images.length === 1 ? 'image' : 'images'}
+							{fillTemplate(countTemplate, { count: images.length })}
 						</span>
 					)}
 				</div>

@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T14:19:14.656Z",
-  "published_at": "2026-10-15T14:19:14.637Z",
+  "updated_at": "2026-11-10T20:58:57.207Z",
+  "published_at": "2026-11-10T20:58:57.188Z",
   "id": 230950316444473,
   "uuid": "505e8ed6-1b6c-4428-876a-b3a857779b37",
   "is_folder": false,
@@ -20,25 +20,49 @@
         "_uid": "a8a6925b-fcae-452e-8820-76cc7a790399",
         "text": "Food stalls set up in the main square each evening, serving harira, snail broth and grilled merguez.",
         "title": "Jemaa el-Fna after dark",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Jeden Abend bauen auf dem Hauptplatz Imbissstände auf, die Harira, Schneckenbrühe und gegrillte Merguez servieren.",
+        "text__i18n__es": "Cada tarde se instalan puestos de comida en la plaza principal que sirven harira, caldo de caracoles y merguez a la parrilla.",
+        "text__i18n__fr": "Chaque soir, des échoppes s'installent sur la place principale et servent de la harira, du bouillon d'escargots et des merguez grillées.",
+        "title__i18n__de": "Jemaa el-Fna bei Nacht",
+        "title__i18n__es": "Jemaa el-Fna al anochecer",
+        "title__i18n__fr": "Jemaa el-Fna la nuit"
       },
       {
         "_uid": "680cdbcf-b08c-48d8-9b17-a9d2a1954155",
         "text": "The 12th-century Almohad tower stands about 77 metres tall and served as a model for the Giralda in Seville.",
         "title": "The Koutoubia minaret",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Der almohadische Turm aus dem 12. Jahrhundert ist etwa 77 Meter hoch und diente als Vorbild für die Giralda in Sevilla.",
+        "text__i18n__es": "La torre almohade del siglo XII mide unos 77 metros de altura y sirvió de modelo para la Giralda de Sevilla.",
+        "text__i18n__fr": "La tour almohade du XIIe siècle mesure environ 77 mètres de haut et a servi de modèle à la Giralda de Séville.",
+        "title__i18n__de": "Das Minarett der Koutoubia",
+        "title__i18n__es": "El alminar de la Kutubiyya",
+        "title__i18n__fr": "Le minaret de la Koutoubia"
       },
       {
         "_uid": "e3b5d103-8103-4139-b505-a4b762903534",
         "text": "This 16th-century Saadian college of carved cedar and zellige once housed up to 900 students.",
         "title": "Ben Youssef Madrasa",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "In diesem saadischen Kolleg aus dem 16. Jahrhundert mit geschnitztem Zedernholz und Zellige lebten einst bis zu 900 Studenten.",
+        "text__i18n__es": "Este colegio saadí del siglo XVI, de cedro tallado y zellige, llegó a alojar hasta 900 estudiantes.",
+        "text__i18n__fr": "Ce collège saadien du XVIe siècle, en cèdre sculpté et en zellige, a abrité jusqu'à 900 étudiants.",
+        "title__i18n__de": "Ben-Youssef-Madrasa",
+        "title__i18n__es": "Madrasa Ben Youssef",
+        "title__i18n__fr": "Medersa Ben Youssef"
       },
       {
         "_uid": "5b123b04-aae6-4167-a70f-429a4065bc8f",
         "text": "The stony Agafay desert lies about 40 km southwest, close enough for a night in a desert camp.",
         "title": "Desert on the doorstep",
-        "component": "usp_item"
+        "component": "usp_item",
+        "text__i18n__de": "Die steinige Agafay-Wüste liegt etwa 40 km südwestlich, nah genug für eine Nacht in einem Wüstencamp.",
+        "text__i18n__es": "El desierto pedregoso de Agafay está a unos 40 km al suroeste, lo bastante cerca para pasar una noche en un campamento en el desierto.",
+        "text__i18n__fr": "Le désert pierreux d'Agafay se trouve à environ 40 km au sud-ouest, assez proche pour passer une nuit dans un camp du désert.",
+        "title__i18n__de": "Die Wüste vor der Haustür",
+        "title__i18n__es": "El desierto a las puertas de la ciudad",
+        "title__i18n__fr": "Le désert à votre porte"
       }
     ],
     "region": "Marrakech-Safi",
@@ -183,6 +207,9 @@
         "size": "2400x3200"
       }
     },
+    "name__i18n__de": "Marrakesch",
+    "name__i18n__es": "Marrakech",
+    "name__i18n__fr": "Marrakech",
     "image_landscape": {
       "id": 230949952216121,
       "alt": "Crowds and food stalls fill Jemaa el-Fna square below terracotta rooftops at sunset.",
@@ -196,6 +223,108 @@
       "meta_data": {
         "size": "2400x1507"
       }
+    },
+    "region__i18n__de": "Marrakesch-Safi",
+    "region__i18n__es": "Marrakech-Safi",
+    "region__i18n__fr": "Marrakech-Safi",
+    "summary__i18n__de": "Rote Mauern, Dachterrassen und der verschneite Atlas am Horizont. Verbringe den Tag in den Souks und den Abend an den Grillständen von Jemaa el-Fna.",
+    "summary__i18n__es": "Muros rojos, terrazas en las azoteas y el Atlas nevado en el horizonte. Pasa el día en los zocos y la noche en los puestos de parrilla de Jemaa el-Fna.",
+    "summary__i18n__fr": "Des remparts rouges, des terrasses sur les toits et l'Atlas enneigé à l'horizon. Passez la journée dans les souks et la soirée aux échoppes de grillades de Jemaa el-Fna.",
+    "description__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Marrakesch liegt in der Haouz-Ebene am Fuß des Hohen Atlas, etwa 240 km südlich von Casablanca. An klaren Wintertagen zeigt sich der Jebel Toubkal, mit 4.167 Metern der höchste Gipfel Nordafrikas, weiß über der Stadt.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Die Almoraviden gründeten die Stadt um 1070 und errichteten ihre roten Lehmmauern. Die Almohaden ließen ein Jahrhundert später das Minarett der Koutoubia errichten. Die Medina ist seit 1985 UNESCO-Welterbe, und ihre Souks sind noch immer nach Gewerken geordnet: Färber, Metallarbeiter, Leder- und Gewürzhändler.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Von März bis Mai und von Oktober bis November sind die Tage warm, im Juli und August werden oft mehr als 40 °C erreicht. Habe Kleingeld in Dirham für Stände, Taxis und Trinkgelder dabei.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Marrakech se encuentra en la llanura de Haouz, al pie del Alto Atlas, a unos 240 km al sur de Casablanca. En los días claros de invierno, el Jebel Toubkal, con 4167 metros la cima más alta del norte de África, se ve blanco sobre la ciudad.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los almorávides fundaron la ciudad hacia 1070 y levantaron sus murallas rojas de tierra. Los almohades erigieron el alminar de la Kutubiyya un siglo después. La medina es Patrimonio Mundial de la UNESCO desde 1985 y sus zocos siguen organizados por oficios: tintoreros, metalistas, vendedores de cuero y de especias.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De marzo a mayo y de octubre a noviembre los días son cálidos, mientras que en julio y agosto se superan a menudo los 40 °C. Lleva monedas sueltas en dírhams para los puestos, los taxis y las propinas.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "description__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Marrakech se trouve dans la plaine du Haouz, au pied du Haut Atlas, à environ 240 km au sud de Casablanca. Par temps clair en hiver, le Jebel Toubkal, qui culmine à 4 167 mètres et reste le plus haut sommet d'Afrique du Nord, se dessine tout blanc au-dessus de la ville.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Les Almoravides ont fondé la ville vers 1070 et construit ses remparts de terre rouge. Les Almohades ont élevé le minaret de la Koutoubia un siècle plus tard. La médina est inscrite au patrimoine mondial de l'UNESCO depuis 1985, et ses souks restent organisés par métier : teinturiers, métalliers, vendeurs de cuir et d'épices.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De mars à mai et d'octobre à novembre, les journées sont chaudes, tandis qu'en juillet et août la température dépasse souvent 40 °C. Gardez de la petite monnaie en dirhams pour les échoppes, les taxis et les pourboires.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
     }
   },
   "published": true,
@@ -217,8 +346,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "caa2aadceeac380918a2d2012a5809b9091612c5",
-    "timestamp": "1792592500"
+    "token": "7e4406ae17d0a7648e464efba64ee982555c6ed7",
+    "timestamp": "1794347522"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -260,28 +389,59 @@
       "path": "data/destinations/marrakech",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/marrakech",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/destinations/marrakech",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -80,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240256013110806,
+      "story_id": 230950316444473,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:13.196Z",
+      "published_at": "2026-11-10T21:24:13.196Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240256016055832,
+      "story_id": 230950316444473,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:13.914Z",
+      "published_at": "2026-11-10T21:24:13.914Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": []
+    },
+    {
+      "id": 240256018869785,
+      "story_id": 230950316444473,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:24:14.603Z",
+      "published_at": "2026-11-10T21:24:14.603Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": []
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230950316534782,
+  "current_version_id": 240249787334685,
   "variant_type": null,
   "taxonomy_terms": [],
   "experiment_ids": [],

@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-10-15T08:00:37.138Z",
-  "published_at": "2026-10-15T08:00:36.161Z",
+  "updated_at": "2026-11-10T20:57:02.672Z",
+  "published_at": "2026-11-10T20:57:02.651Z",
   "id": 230846811839140,
   "uuid": "04c2efd6-ce02-47c5-8694-a8fadcc85826",
   "is_folder": false,
@@ -38,7 +38,79 @@
       ]
     },
     "question": "Do I need a car?",
-    "component": "faq_item"
+    "component": "faq_item",
+    "answer__i18n__de": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Nein. Regionalzüge fahren von München nach Garmisch-Partenkirchen und nach Berchtesgaden. RVO-Busse und Seilbahnen erreichen die meisten Ausgangspunkte für Wanderungen und Seen.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ein Auto hilft nur bei abgelegenen Seitentälern und für einen frühen Start.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__es": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "No. Hay trenes regionales de Múnich a Garmisch-Partenkirchen y a Berchtesgaden. Los autobuses de RVO y los teleféricos llegan a la mayoría de los inicios de ruta y de los lagos.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El coche solo resulta útil para valles laterales remotos y para salir temprano.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "answer__i18n__fr": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Non. Des trains régionaux relient Munich à Garmisch-Partenkirchen et à Berchtesgaden. Les bus RVO et les téléphériques desservent la plupart des départs de sentiers et des lacs.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La voiture n'est utile que pour les vallées latérales isolées et les départs matinaux.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "question__i18n__de": "Brauche ich ein Auto?",
+    "question__i18n__es": "¿Necesito coche?",
+    "question__i18n__fr": "Ai-je besoin d'une voiture ?"
   },
   "published": true,
   "slug": "bavarian-alps-do-i-need-a-car",
@@ -59,8 +131,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "092662d2050bcd55e4f77fc21c2166cce78a93b2",
-    "timestamp": "1792592498"
+    "token": "9ce030a66ffc9a88f90accf5913b9568a5ad298b",
+    "timestamp": "1794347520"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -102,28 +174,134 @@
       "path": "data/faqs/bavarian-alps-do-i-need-a-car",
       "name": null,
       "lang": "de",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/bavarian-alps-do-i-need-a-car",
       "name": null,
       "lang": "es",
-      "published": false
+      "published": true
     },
     {
       "path": "data/faqs/bavarian-alps-do-i-need-a-car",
       "name": null,
       "lang": "fr",
-      "published": false
+      "published": true
     }
   ],
   "position": -130,
-  "translated_stories": [],
+  "translated_stories": [
+    {
+      "id": 240255797935558,
+      "story_id": 230846811839140,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:20.663Z",
+      "published_at": "2026-11-10T21:23:20.663Z",
+      "unpublished_changes": false,
+      "lang": "de",
+      "taxonomy_terms": [
+        {
+          "id": "230850677905462",
+          "display_name": "Germany",
+          "name": "germany",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851130366009",
+          "display_name": "Bavaria",
+          "name": "bavaria",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255800614344,
+      "story_id": 230846811839140,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:21.318Z",
+      "published_at": "2026-11-10T21:23:21.318Z",
+      "unpublished_changes": false,
+      "lang": "es",
+      "taxonomy_terms": [
+        {
+          "id": "230850677905462",
+          "display_name": "Germany",
+          "name": "germany",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851130366009",
+          "display_name": "Bavaria",
+          "name": "bavaria",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 240255803416010,
+      "story_id": 230846811839140,
+      "space_id": 295888311565739,
+      "first_published_at": "2026-11-10T21:23:22.002Z",
+      "published_at": "2026-11-10T21:23:22.002Z",
+      "unpublished_changes": false,
+      "lang": "fr",
+      "taxonomy_terms": [
+        {
+          "id": "230850677905462",
+          "display_name": "Germany",
+          "name": "germany",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        },
+        {
+          "id": "230851130366009",
+          "display_name": "Bavaria",
+          "name": "bavaria",
+          "taxonomy_id": "230845703813169",
+          "taxonomy": {
+            "id": "230845703813169",
+            "name": "destination",
+            "display_name": "Destination",
+            "deleted_at": null
+          }
+        }
+      ]
+    }
+  ],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 230857265659226,
+  "current_version_id": 240249297477211,
   "variant_type": null,
   "taxonomy_terms": [
     {
