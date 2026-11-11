@@ -1,6 +1,5 @@
 import { storyblokEditable } from '@storyblok/react/rsc';
 import { bentoLayout } from '@/lib/bento';
-import { lang } from 'next/root-params';
 import { getLabel } from '@/lib/labels';
 import { fillTemplate } from '@/lib/template';
 import ImageCredit from './ImageCredit';
