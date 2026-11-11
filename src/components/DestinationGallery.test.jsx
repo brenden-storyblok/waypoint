@@ -7,8 +7,8 @@ vi.mock('@/lib/storyblok', () => ({
 	getStoryblokApi: () => ({ getAll }),
 }));
 
-const getCurrentLanguage = vi.fn();
-vi.mock('@/lib/currentLanguage', () => ({ getCurrentLanguage }));
+const lang = vi.fn();
+vi.mock('next/root-params', () => ({ lang }));
 
 const { default: DestinationGallery } =
 	await import('@/components/DestinationGallery');
@@ -28,7 +28,7 @@ const uiLabelEntries = [
 ];
 
 beforeEach(() => {
-	getCurrentLanguage.mockResolvedValue('en');
+	lang.mockResolvedValue('en');
 	getAll.mockReset();
 	getAll.mockImplementation(async (path, query) =>
 		path === 'cdn/datasource_entries' && query.datasource === 'ui-labels'
@@ -115,7 +115,7 @@ describe('DestinationGallery', () => {
 	});
 
 	it('counts the images in German', async () => {
-		getCurrentLanguage.mockResolvedValue('de');
+		lang.mockResolvedValue('de');
 		const one = await render({
 			destination: { gallery: [asset('square', '1000x1000')] },
 		});

@@ -1,6 +1,8 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 const getAll = vi.fn();
+const lang = vi.fn();
+vi.mock('next/root-params', () => ({ lang }));
 vi.mock('@/lib/storyblok', () => ({
 	getStoryblokApi: () => ({ getAll }),
 }));
@@ -50,16 +52,21 @@ describe('loadLabels', () => {
 });
 
 describe('getLabel', () => {
+	beforeEach(() => {
+		lang.mockResolvedValue('de');
+	});
+
 	it('returns the translated UI Label', async () => {
-		expect(await getLabel('done', 'de')).toBe('Fertig');
+		expect(await getLabel('done')).toBe('Fertig');
 		expect(getAll.mock.calls[0][1].datasource).toBe('ui-labels');
+		expect(getAll.mock.calls[0][1].dimension).toBe('de');
 	});
 
 	it('returns the English label when the entry has no translation', async () => {
-		expect(await getLabel('clear-all', 'de')).toBe('Clear all');
+		expect(await getLabel('clear-all')).toBe('Clear all');
 	});
 
 	it('returns the key when no entry matches', async () => {
-		expect(await getLabel('missing-key', 'de')).toBe('missing-key');
+		expect(await getLabel('missing-key')).toBe('missing-key');
 	});
 });

@@ -1,11 +1,11 @@
 import { storyblokEditable } from '@storyblok/react/rsc';
-import { getCurrentLanguage } from '@/lib/currentLanguage';
+import { lang } from 'next/root-params';
 import { linkHref } from '@/lib/language';
 import { VARIANT_CLASSES, buttonClasses } from './buttonClasses';
 
 const Button = async ({ blok, size }) => {
 	const variant = VARIANT_CLASSES[blok.variant] ? blok.variant : 'primary';
-	const language = await getCurrentLanguage();
+	const language = await lang();
 
 	return (
 		<a

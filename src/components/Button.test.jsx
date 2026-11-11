@@ -1,13 +1,13 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 
-const getCurrentLanguage = vi.fn();
-vi.mock('@/lib/currentLanguage', () => ({ getCurrentLanguage }));
+const lang = vi.fn();
+vi.mock('next/root-params', () => ({ lang }));
 
 const { default: Button } = await import('@/components/Button');
 
 beforeEach(() => {
-	getCurrentLanguage.mockResolvedValue('en');
+	lang.mockResolvedValue('en');
 });
 
 const classesOf = (html) => html.match(/class="([^"]*)"/)[1].split(' ');
@@ -39,7 +39,7 @@ describe('Button', () => {
 	});
 
 	it('keeps the visitor in German on a story link', async () => {
-		getCurrentLanguage.mockResolvedValue('de');
+		lang.mockResolvedValue('de');
 		const html = await render({
 			link: { linktype: 'story', cached_url: 'destinations/lisbon' },
 		});
@@ -47,7 +47,7 @@ describe('Button', () => {
 	});
 
 	it('renders a manual URL as written in German', async () => {
-		getCurrentLanguage.mockResolvedValue('de');
+		lang.mockResolvedValue('de');
 		const html = await render({});
 		expect(html).toContain('href="https://example.com/book"');
 	});

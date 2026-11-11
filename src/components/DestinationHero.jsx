@@ -1,5 +1,5 @@
 import { storyblokEditable } from '@storyblok/react/rsc';
-import { getCurrentLanguage } from '@/lib/currentLanguage';
+import { lang } from 'next/root-params';
 import { countryName } from '@/lib/countryName';
 import { fetchBlurDataUrl } from '@/lib/fetchBlurDataUrl';
 import { loadLabels } from '@/lib/labels';
@@ -12,7 +12,7 @@ const HERO_QUALITY = 85;
 const DestinationHero = async ({ blok, destination }) => {
 	if (!destination) return null;
 
-	const language = await getCurrentLanguage();
+	const language = await lang();
 	const countries = await loadLabels('countries', language);
 	const blurDataURL = await fetchBlurDataUrl(destination.hero_image);
 	const hasImage = Boolean(destination.hero_image?.filename);

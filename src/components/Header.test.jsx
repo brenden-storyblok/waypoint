@@ -2,8 +2,8 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { firstImage } from '@/test/firstImage';
 
-const getCurrentLanguage = vi.fn();
-vi.mock('@/lib/currentLanguage', () => ({ getCurrentLanguage }));
+const lang = vi.fn();
+vi.mock('next/root-params', () => ({ lang }));
 
 const getLabel = vi.fn();
 vi.mock('@/lib/labels', () => ({ getLabel }));
@@ -11,8 +11,8 @@ vi.mock('@/lib/labels', () => ({ getLabel }));
 const { default: Header } = await import('@/components/Header');
 
 beforeEach(() => {
-	getCurrentLanguage.mockResolvedValue('en');
-	getLabel.mockImplementation(async (key, language) => `${key}:${language}`);
+	lang.mockResolvedValue('en');
+	getLabel.mockImplementation(async (key) => `${key}:${await lang()}`);
 });
 
 /** Header is an async Server Component: await it, then render the element. */
@@ -29,7 +29,7 @@ const renderImage = async (logo) => firstImage(await render({ logo }));
 
 describe('Header language switcher', () => {
 	const renderSwitcher = async (language) => {
-		getCurrentLanguage.mockResolvedValue(language);
+		lang.mockResolvedValue(language);
 		return render({});
 	};
 
@@ -111,7 +111,7 @@ describe('Header', () => {
 	});
 
 	it('links the logo to the German home in German', async () => {
-		getCurrentLanguage.mockResolvedValue('de');
+		lang.mockResolvedValue('de');
 		const html = await render({ logo: null });
 		expect(html).toMatch(/<a [^>]*href="\/de"/);
 	});

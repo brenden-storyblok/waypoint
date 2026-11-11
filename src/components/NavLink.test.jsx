@@ -1,13 +1,13 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 
-const getCurrentLanguage = vi.fn();
-vi.mock('@/lib/currentLanguage', () => ({ getCurrentLanguage }));
+const lang = vi.fn();
+vi.mock('next/root-params', () => ({ lang }));
 
 const { default: NavLink } = await import('@/components/NavLink');
 
 beforeEach(() => {
-	getCurrentLanguage.mockResolvedValue('en');
+	lang.mockResolvedValue('en');
 });
 
 const navLink = (fields) => ({
@@ -30,13 +30,13 @@ describe('NavLink', () => {
 	});
 
 	it('keeps the visitor in German on a story link', async () => {
-		getCurrentLanguage.mockResolvedValue('de');
+		lang.mockResolvedValue('de');
 		const html = await render({});
 		expect(html).toContain('href="/de/destinations"');
 	});
 
 	it('points the home story at /de in German', async () => {
-		getCurrentLanguage.mockResolvedValue('de');
+		lang.mockResolvedValue('de');
 		const html = await render({
 			link: { linktype: 'story', cached_url: 'home' },
 		});
@@ -46,7 +46,7 @@ describe('NavLink', () => {
 	it.each(['en', 'de'])(
 		'renders a manual URL and an email as written in %s',
 		async (code) => {
-			getCurrentLanguage.mockResolvedValue(code);
+			lang.mockResolvedValue(code);
 			expect(
 				await render({
 					link: { linktype: 'url', url: 'https://example.com/partner' },

@@ -2,6 +2,8 @@
  * Stand-in for src/lib/labels.js in Storybook, which has no Storyblok
  * connection. Serves the few UI Labels the stories show.
  */
+import { lang } from 'next/root-params';
+
 const LABELS = {
 	en: {
 		'switcher-label': 'Language',
@@ -15,4 +17,4 @@ const LABELS = {
 
 export const loadLabels = async () => ({});
 
-export const getLabel = async (key, language) => LABELS[language]?.[key] ?? key;
+export const getLabel = async (key) => LABELS[await lang()]?.[key] ?? key;

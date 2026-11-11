@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { StoryblokStory } from '@storyblok/react/rsc';
 import { getStoryblokApi, RESOLVE_RELATIONS } from '@/lib/storyblok';
-import { getCurrentLanguage } from '@/lib/currentLanguage';
+import { lang } from 'next/root-params';
 import {
 	alternateLanguages,
 	deliveryLanguageParams,
@@ -33,7 +33,7 @@ export default async function Page({ params, searchParams }) {
 		notFound();
 	}
 
-	const language = await getCurrentLanguage();
+	const language = await lang();
 
 	let sbParams = {
 		version: 'draft',

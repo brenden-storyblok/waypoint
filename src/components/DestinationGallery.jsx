@@ -1,6 +1,5 @@
 import { storyblokEditable } from '@storyblok/react/rsc';
 import { bentoLayout } from '@/lib/bento';
-import { getCurrentLanguage } from '@/lib/currentLanguage';
 import { getLabel } from '@/lib/labels';
 import { fillTemplate } from '@/lib/template';
 import ImageCredit from './ImageCredit';
@@ -48,10 +47,8 @@ const DestinationGallery = async ({ blok, destination }) => {
 	if (!destination) return null;
 
 	const images = (destination.gallery ?? []).filter((asset) => asset?.filename);
-	const language = await getCurrentLanguage();
 	const countTemplate = await getLabel(
 		images.length === 1 ? 'image-one' : 'image-other',
-		language,
 	);
 
 	return (
