@@ -68,7 +68,8 @@ function SwitcherView({ language, label, pathname, search }) {
 	);
 }
 
-function SwitcherWithQuery({ language, label, pathname }) {
+function SwitcherWithLocation({ language, label }) {
+	const pathname = usePathname() ?? '/';
 	const search = useSearchParams()?.toString() ?? '';
 	return (
 		<SwitcherView
@@ -84,20 +85,17 @@ function SwitcherWithQuery({ language, label, pathname }) {
  * Client Component: the target hrefs depend on the visitor's path and query,
  * which only the router knows. `language` and `label` (the accessible name,
  * a UI Label) come from the server Header.
+ *
+ * With Cache Components, a page the build did not prerender learns its path
+ * at request time, so both hooks wait inside <Suspense>. The fallback in the
+ * App Shell links each Language's home page until the real path streams in.
  */
 export default function LanguageSwitcher({ language, label }) {
-	const pathname = usePathname() ?? '/';
 	return (
 		<Suspense
-			fallback={
-				<SwitcherView language={language} label={label} pathname={pathname} />
-			}
+			fallback={<SwitcherView language={language} label={label} pathname="/" />}
 		>
-			<SwitcherWithQuery
-				language={language}
-				label={label}
-				pathname={pathname}
-			/>
+			<SwitcherWithLocation language={language} label={label} />
 		</Suspense>
 	);
 }
