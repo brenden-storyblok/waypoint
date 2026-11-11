@@ -49,6 +49,12 @@ export const getStoryblokApi = storyblokInit({
 		footer_column: FooterColumn,
 	},
 	apiOptions: {
+		/**
+		 * Next owns caching and the content module owns the Cache Version, so the
+		 * client keeps neither: no response cache, and no cv of its own added to
+		 * requests (the client sends an explicit `cv` as given).
+		 */
+		cache: { type: 'none', clear: 'manual', cv: 'manual' },
 		/** Set the correct region for your space. Learn more: https://www.storyblok.com/docs/packages/storyblok-js#example-region-parameter */
 		region: process.env.STORYBLOK_REGION || 'eu',
 		/** The following code is only required when creating a Storyblok space directly via the Blueprints feature. */

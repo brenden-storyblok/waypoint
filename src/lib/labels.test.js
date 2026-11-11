@@ -1,11 +1,9 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
-const getAll = vi.fn();
+const getDatasourceEntries = vi.fn();
 const lang = vi.fn();
 vi.mock('next/root-params', () => ({ lang }));
-vi.mock('@/lib/storyblok', () => ({
-	getStoryblokApi: () => ({ getAll }),
-}));
+vi.mock('@/lib/content', () => ({ getDatasourceEntries }));
 
 const { getLabel, loadLabels } = await import('@/lib/labels');
 
@@ -15,8 +13,8 @@ const entries = [
 ];
 
 beforeEach(() => {
-	getAll.mockReset();
-	getAll.mockResolvedValue(entries);
+	getDatasourceEntries.mockReset();
+	getDatasourceEntries.mockResolvedValue(entries);
 });
 
 describe('loadLabels', () => {
@@ -28,25 +26,21 @@ describe('loadLabels', () => {
 		]);
 	});
 
-	it('asks for the dimension of a non-default Language', async () => {
+	it('reads the datasource in the Language', async () => {
 		await loadLabels('countries', 'de');
-		expect(getAll.mock.calls[0][1]).toEqual({
-			datasource: 'countries',
-			dimension: 'de',
-		});
+		expect(getDatasourceEntries).toHaveBeenCalledWith('countries', 'de');
 	});
 
-	it('sends no dimension for English and shows the English names', async () => {
+	it('shows the English names when the entries carry no translation', async () => {
 		// Without a dimension the API sends no dimension_value.
-		getAll.mockResolvedValue([{ value: 'done', name: 'Done' }]);
+		getDatasourceEntries.mockResolvedValue([{ value: 'done', name: 'Done' }]);
 		const labels = await loadLabels('countries', 'en');
-		expect(getAll.mock.calls[0][1]).toEqual({ datasource: 'countries' });
 		expect(labels.done).toBe('Done');
 	});
 
 	it('falls back to an empty map when the request fails', async () => {
 		vi.spyOn(console, 'error').mockImplementation(() => {});
-		getAll.mockRejectedValue(new Error('down'));
+		getDatasourceEntries.mockRejectedValue(new Error('down'));
 		expect(await loadLabels('countries', 'de')).toEqual({});
 	});
 });
@@ -58,8 +52,7 @@ describe('getLabel', () => {
 
 	it('returns the translated UI Label', async () => {
 		expect(await getLabel('done')).toBe('Fertig');
-		expect(getAll.mock.calls[0][1].datasource).toBe('ui-labels');
-		expect(getAll.mock.calls[0][1].dimension).toBe('de');
+		expect(getDatasourceEntries).toHaveBeenCalledWith('ui-labels', 'de');
 	});
 
 	it('returns the English label when the entry has no translation', async () => {

@@ -16,7 +16,7 @@ vi.mock('next/font/google', () => {
 });
 vi.mock('next/navigation', () => ({ notFound: vi.fn() }));
 vi.mock('@storyblok/react/rsc', () => ({ StoryblokServerComponent: vi.fn() }));
-vi.mock('@/lib/storyblok', () => ({ getStoryblokApi: vi.fn() }));
+vi.mock('@/lib/content', () => ({ getGlobalStories: vi.fn() }));
 vi.mock('../globals.css', () => ({}));
 
 const { generateMetadata } = await import('./layout');

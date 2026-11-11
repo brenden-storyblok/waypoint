@@ -6,10 +6,10 @@ import {
 import { notFound } from 'next/navigation';
 import { StoryblokServerComponent } from '@storyblok/react/rsc';
 import '../globals.css';
-import { getStoryblokApi } from '@/lib/storyblok';
+import { getGlobalStories } from '@/lib/content';
 import { lang } from 'next/root-params';
 import { getLabel } from '@/lib/labels';
-import { LANGUAGES, deliveryLanguageParams, isLanguage } from '@/lib/language';
+import { LANGUAGES, isLanguage } from '@/lib/language';
 
 const display = Bricolage_Grotesque({
 	subsets: ['latin'],
@@ -28,18 +28,10 @@ const mono = JetBrains_Mono({
 	variable: '--font-next-mono',
 });
 
-/** Loads the header and footer stories from the global/ folder in one request. */
-async function getGlobalStories(language) {
+/** The header and footer that load; the page renders without them on failure. */
+async function loadGlobalStories(language) {
 	try {
-		const { data } = await getStoryblokApi().get('cdn/stories', {
-			version: 'draft',
-			starts_with: 'global/',
-			...deliveryLanguageParams(language),
-		});
-		const byComponent = Object.fromEntries(
-			data.stories.map((story) => [story.content?.component, story]),
-		);
-		return { header: byComponent.header, footer: byComponent.footer };
+		return await getGlobalStories(language);
 	} catch (error) {
 		console.error('Could not load global stories', error);
 		return {};
@@ -59,9 +51,8 @@ function siteOrigin() {
 	return new URL(host ? `https://${host}` : 'http://localhost:3000');
 }
 
-/** Only the four Languages are routes; any other first segment is a 404. */
-export const dynamicParams = false;
-
+// Cache Components rejects dynamicParams, so the layout below
+// answers any first segment that is not a Language with notFound().
 export const generateStaticParams = () =>
 	LANGUAGES.map(({ code }) => ({ lang: code }));
 
@@ -82,7 +73,7 @@ export async function generateMetadata() {
 export default async function RootLayout({ children }) {
 	const language = await lang();
 	if (!isLanguage(language)) notFound();
-	const { header, footer } = await getGlobalStories(language);
+	const { header, footer } = await loadGlobalStories(language);
 
 	return (
 		<html

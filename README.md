@@ -43,6 +43,35 @@ STORYBLOK_DELIVERY_API_TOKEN=<REPLACE_WITH_YOUR_TOKEN>
 > Copy your space's preview access token from **Settings** > **Access Tokens**.
 > Learn more about Storyblok [access tokens](https://www.storyblok.com/docs/concepts/access-tokens).
 
+### Environment variables
+
+Copy `.env.example` to `.env` and fill in the values. Set the same variables in the deployment.
+
+| Variable | Purpose |
+| --- | --- |
+| `STORYBLOK_DELIVERY_API_TOKEN` | Preview access token for the Delivery API. |
+| `STORYBLOK_SPACE_ID` | Numeric ID of the Storyblok space. |
+| `STORYBLOK_REGION` | Region of the space: `eu`, `us`, `cn`, `ap` or `ca`. |
+| `STORYBLOK_API_BASE_URL` | Only for spaces created from the Blueprints feature. |
+| `STORYBLOK_WEBHOOK_SECRET` | Shared secret that signs Storyblok webhooks. Server only. |
+| `STORYBLOK_MANAGEMENT_TOKEN` | Personal access token for the Management API. Server only. |
+
+`STORYBLOK_WEBHOOK_SECRET` and `STORYBLOK_MANAGEMENT_TOKEN` are read only by the webhook route at `/api/revalidate`. Never add them to the `env` block in `next.config.mjs`, which would put them in the browser bundle.
+
+### Set up the revalidation webhook
+
+Published content is cached. A Storyblok webhook tells the site which cached pages to refresh when an editor changes a story.
+
+1. Create a personal access token in your Storyblok account settings and set it as `STORYBLOK_MANAGEMENT_TOKEN`. The route uses it to find the stories that reference the changed story.
+2. Choose a secret, for example the output of `openssl rand -hex 32`, and set it as `STORYBLOK_WEBHOOK_SECRET`.
+3. In the space, go to **Settings > Webhooks** and create a webhook:
+   - **Endpoint URL**: `https://<your-deployment>/api/revalidate`
+   - **Secret**: the same value as `STORYBLOK_WEBHOOK_SECRET`
+   - **Triggers**: under Story, select **Story published**, **Story unpublished**, **Story deleted** and **Story moved**.
+4. Leave the datasource triggers off. The route ignores other events, and datasource changes reach the site within 15 minutes.
+
+The route checks the `webhook-signature` header, an HMAC-SHA1 hex digest of the raw request body, and answers `401` without a valid one. If it cannot reach the Management API, it still refreshes the changed story and answers `502`, so Storyblok retries the delivery. Webhook secrets need a Storyblok plan that supports them.
+
 ### Connect the Visual Editor
 
 To render a preview of the local project in the Visual Editor, follow these steps:

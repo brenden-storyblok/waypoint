@@ -1,10 +1,12 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { firstImage } from '@/test/firstImage';
+import { spacesMeResponse } from '@/test/spacesMe';
 
 const getAll = vi.fn();
+const get = vi.fn();
 vi.mock('@/lib/storyblok', () => ({
-	getStoryblokApi: () => ({ getAll }),
+	getStoryblokApi: () => ({ getAll, get }),
 }));
 
 const lang = vi.fn();
@@ -29,6 +31,7 @@ const uiLabelEntries = [
 
 beforeEach(() => {
 	lang.mockResolvedValue('en');
+	get.mockResolvedValue(spacesMeResponse);
 	getAll.mockReset();
 	getAll.mockImplementation(async (path, query) =>
 		path === 'cdn/datasource_entries' && query.datasource === 'ui-labels'

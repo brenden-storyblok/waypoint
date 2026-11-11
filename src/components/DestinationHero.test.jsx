@@ -3,10 +3,12 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { firstImage } from '@/test/firstImage';
 import { imageBytes, imageResponse } from '@/test/imageResponse';
 import { stubFetch } from '@/test/stubFetch';
+import { spacesMeResponse } from '@/test/spacesMe';
 
 const getAll = vi.fn();
+const get = vi.fn();
 vi.mock('@/lib/storyblok', () => ({
-	getStoryblokApi: () => ({ getAll }),
+	getStoryblokApi: () => ({ getAll, get }),
 }));
 
 const lang = vi.fn();
@@ -39,6 +41,7 @@ const renderHero = async (destination) =>
 
 beforeEach(() => {
 	lang.mockResolvedValue('en');
+	get.mockResolvedValue(spacesMeResponse);
 	getAll.mockReset();
 	getAll.mockImplementation(async (path, query) =>
 		path === 'cdn/datasource_entries' && query.datasource === 'countries'

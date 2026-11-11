@@ -1,7 +1,6 @@
 import { cache } from 'react';
 import { lang } from 'next/root-params';
-import { getStoryblokApi } from '@/lib/storyblok';
-import { DEFAULT_LANGUAGE } from '@/lib/language';
+import { getDatasourceEntries } from '@/lib/content';
 
 /** The datasource holding interface copy that belongs to no single block. */
 const UI_LABELS = 'ui-labels';
@@ -17,14 +16,7 @@ const entryLabel = (entry) => entry.dimension_value || entry.name;
  */
 export const loadLabels = cache(async (datasource, language) => {
 	try {
-		const entries = await getStoryblokApi().getAll(
-			'cdn/datasource_entries',
-			{
-				datasource,
-				...(language !== DEFAULT_LANGUAGE && { dimension: language }),
-			},
-			'datasource_entries',
-		);
+		const entries = await getDatasourceEntries(datasource, language);
 		return Object.fromEntries(
 			entries.map((entry) => [entry.value, entryLabel(entry)]),
 		);

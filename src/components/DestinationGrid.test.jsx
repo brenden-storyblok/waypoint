@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { renderToStaticMarkup } from 'react-dom/server';
+import { renderToReadableStream, renderToStaticMarkup } from 'react-dom/server';
+import { SPACES_ME, spacesMeResponse } from '@/test/spacesMe';
 
 const getAll = vi.fn();
 const get = vi.fn();
@@ -18,6 +19,7 @@ const {
 
 beforeEach(() => {
 	lang.mockResolvedValue('en');
+	get.mockResolvedValue(spacesMeResponse);
 });
 
 // The ui-labels datasource as the Delivery API serves it.
@@ -68,6 +70,9 @@ const serveUiLabels = () =>
 			: [];
 	});
 
+// The page lookups the grid sent, without the Cache Version requests.
+const pageLookups = () => get.mock.calls.filter(([path]) => path !== SPACES_ME);
+
 // The query loadAllDestinations sent to the Delivery API.
 const sentQuery = () => getAll.mock.calls[0][1];
 
@@ -80,7 +85,8 @@ describe('loadAllDestinations', () => {
 	it('asks for every Destination when the grid sets no Countries or Destination Attributes', async () => {
 		await loadAllDestinations({ countries: [], attributes: [] });
 		expect(sentQuery()).toEqual({
-			version: 'draft',
+			version: 'published',
+			cv: 1,
 			content_type: 'destination',
 		});
 	});
@@ -186,7 +192,7 @@ describe('DestinationGrid', () => {
 		content: { destination: 'lisbon' },
 	};
 
-	const render = async (settings) =>
+	const render = async (settings, searchParams = Promise.resolve({})) =>
 		renderToStaticMarkup(
 			await DestinationGrid({
 				blok: {
@@ -195,7 +201,7 @@ describe('DestinationGrid', () => {
 					headline: 'More places in Portugal',
 					...settings,
 				},
-				searchParams: {},
+				searchParams,
 			}),
 		);
 
@@ -203,7 +209,11 @@ describe('DestinationGrid', () => {
 		getAll.mockReset();
 		serveUiLabels();
 		get.mockReset();
-		get.mockResolvedValue({ data: { stories: [lisbonPage] } });
+		get.mockImplementation(async (path) =>
+			path === SPACES_ME
+				? spacesMeResponse
+				: { data: { stories: [lisbonPage] } },
+		);
 	});
 
 	it('shows the Pool as a Carousel when the carousel setting is on and search is off', async () => {
@@ -252,6 +262,45 @@ describe('DestinationGrid', () => {
 		expect(html).toContain('role="search"');
 		expect(html).toContain('href="/destinations/lisbon"');
 	});
+	// The grid reads Search Text and Filters inside a <Suspense> boundary, so
+	// what a server render shows before the promise settles is the fallback.
+	it('shows the unfiltered Pool of a searchable grid while the search params are pending', async () => {
+		const pendingSearchParams = new Promise(() => {});
+		const html = await render(
+			{ search_enabled: true, destinations: [lisbon, porto] },
+			pendingSearchParams,
+		);
+		expect(html).toContain('role="search"');
+		expect(html).toContain('href="/destinations/lisbon"');
+		expect(html).toContain('Porto');
+		expect(html).toContain('2 places');
+	});
+
+	it('narrows a searchable grid by the Search Text once the search params settle', async () => {
+		const element = await DestinationGrid({
+			blok: {
+				_uid: 'grid-uid',
+				component: 'destination_grid',
+				search_enabled: true,
+				destinations: [lisbon, porto],
+			},
+			searchParams: Promise.resolve({ q: 'porto' }),
+		});
+		const stream = await renderToReadableStream(element);
+		await stream.allReady;
+		const html = await new Response(stream).text();
+		expect(html).toContain('value="porto"');
+		expect(html).toContain('1 of 2 places');
+	});
+
+	it('does not wait on the search params when search is off', async () => {
+		const html = await render(
+			{ destinations: [lisbon, porto] },
+			new Promise(() => {}),
+		);
+		expect(html).toContain('href="/destinations/lisbon"');
+	});
+
 	describe('card text', () => {
 		const cardPools = {
 			'a grid': { carousel: false },
@@ -304,7 +353,7 @@ describe('DestinationGrid', () => {
 			});
 			await render(pool);
 			expect(getAll.mock.calls[0][1].language).toBe('de');
-			expect(get.mock.calls[0][1].language).toBe('de');
+			expect(pageLookups()[0][1].language).toBe('de');
 		});
 
 		it('links each Destination card to its German page', async () => {
@@ -321,7 +370,7 @@ describe('DestinationGrid', () => {
 			});
 			await render(pool);
 			expect(getAll.mock.calls[0][1]).not.toHaveProperty('language');
-			expect(get.mock.calls[0][1]).not.toHaveProperty('language');
+			expect(pageLookups()[0][1]).not.toHaveProperty('language');
 		});
 	});
 
@@ -354,8 +403,18 @@ describe('DestinationGrid', () => {
 			await render(searching);
 			const calls = datasourceCalls();
 			expect(calls.map(([, query]) => query)).toEqual([
-				{ datasource: 'countries', dimension: 'de' },
-				{ datasource: 'destination-attributes', dimension: 'de' },
+				{
+					version: 'published',
+					cv: 1,
+					datasource: 'countries',
+					dimension: 'de',
+				},
+				{
+					version: 'published',
+					cv: 1,
+					datasource: 'destination-attributes',
+					dimension: 'de',
+				},
 			]);
 		});
 
@@ -408,6 +467,8 @@ describe('DestinationGrid', () => {
 			expect(html).not.toContain('>Clear</button>');
 			const queries = getAll.mock.calls.map(([, query]) => query);
 			expect(queries).toContainEqual({
+				version: 'published',
+				cv: 1,
 				datasource: 'ui-labels',
 				dimension: 'de',
 			});

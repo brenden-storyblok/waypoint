@@ -1,15 +1,20 @@
+import { Suspense } from 'react';
 import { notFound } from 'next/navigation';
 import { StoryblokStory } from '@storyblok/react/rsc';
-import { getStoryblokApi, RESOLVE_RELATIONS } from '@/lib/storyblok';
+import { RESOLVE_RELATIONS } from '@/lib/storyblok';
+import { StoryNotFoundError, getStory } from '@/lib/content';
 import { lang } from 'next/root-params';
-import {
-	alternateLanguages,
-	deliveryLanguageParams,
-	slugFromSegments,
-} from '@/lib/language';
+import { alternateLanguages, slugFromSegments } from '@/lib/language';
 
 // Folders that hold data records or site chrome, never routable pages.
 const NON_ROUTABLE_PREFIXES = ['data/', 'global/'];
+
+/**
+ * Prerender the home page and no other. The layout supplies each Language, so this
+ * adds the empty slug; every other page gets the App Shell on its first visit
+ * and the cached page after it.
+ */
+export const generateStaticParams = () => [{ slug: [] }];
 
 /**
  * Title and description are inherited from the layout; only the alternates
@@ -22,12 +27,9 @@ export async function generateMetadata({ params }) {
 	};
 }
 
-export default async function Page({ params, searchParams }) {
+async function PageContent({ params, searchParams }) {
 	const { slug } = await params;
-	// Handed down to bloks that read the visitor's choices (destination grid).
-	const query = await searchParams;
-
-	let fullSlug = slugFromSegments(slug);
+	const fullSlug = slugFromSegments(slug);
 
 	if (NON_ROUTABLE_PREFIXES.some((prefix) => fullSlug.startsWith(prefix))) {
 		notFound();
@@ -35,27 +37,35 @@ export default async function Page({ params, searchParams }) {
 
 	const language = await lang();
 
-	let sbParams = {
-		version: 'draft',
-		...deliveryLanguageParams(language),
-		resolve_relations: RESOLVE_RELATIONS.join(','),
-	};
-
-	const storyblokApi = getStoryblokApi();
-
-	let data;
+	let story;
 	try {
-		({ data } = await storyblokApi.get(`cdn/stories/${fullSlug}`, sbParams));
+		story = await getStory(fullSlug, language);
 	} catch (error) {
-		if (error?.status === 404) notFound();
+		if (error instanceof StoryNotFoundError) notFound();
 		throw error;
 	}
 
 	return (
 		<StoryblokStory
-			story={data.story}
+			story={story}
 			bridgeOptions={{ resolveRelations: RESOLVE_RELATIONS }}
-			searchParams={query}
+			// A promise: the bloks that read the visitor's choices await it inside
+			// their own <Suspense> boundary, so the page itself never waits on it.
+			searchParams={searchParams}
 		/>
+	);
+}
+
+/**
+ * The page is a shell around its content: `params` and the story are unknown
+ * until request time for a page the build did not prerender, so they wait
+ * inside the boundary. A first visit gets the layout (header, footer) at once
+ * and the content streams in; a prerendered page has the content in its HTML.
+ */
+export default function Page(props) {
+	return (
+		<Suspense fallback={null}>
+			<PageContent {...props} />
+		</Suspense>
 	);
 }

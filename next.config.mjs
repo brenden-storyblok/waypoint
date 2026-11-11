@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	cacheComponents: true,
+	cacheLife: {
+		// Published Storyblok reads: a webhook invalidates by tag, the 15-minute
+		// revalidate catches any webhook that never arrived.
+		storyblok: { stale: 300, revalidate: 900, expire: 86400 },
+	},
 	// Each <Image> brings its own Storyblok loader, so no loaderFile or remotePatterns.
 	images: { qualities: [75, 85] },
 	// The following environment variables can be safely exposed to the public bundle.

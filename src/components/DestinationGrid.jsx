@@ -4,11 +4,11 @@ import DestinationCarousel from './DestinationCarousel';
 import DestinationSearch from './DestinationSearch';
 import DestinationSearchView from './DestinationSearchView';
 import { storyblokEditable } from '@storyblok/react/rsc';
-import { getStoryblokApi } from '@/lib/storyblok';
+import { getDestinationPages, getDestinations } from '@/lib/content';
 import { countryName } from '@/lib/countryName';
 import { getLabel, loadLabels } from '@/lib/labels';
 import { lang } from 'next/root-params';
-import { deliveryLanguageParams, storyHref } from '@/lib/language';
+import { storyHref } from '@/lib/language';
 import {
 	clearChoicesHref,
 	parseChoices,
@@ -21,14 +21,8 @@ async function findPages(uuids) {
 	if (!uuids.length) return hrefs;
 	const language = await lang();
 	try {
-		const { data } = await getStoryblokApi().get('cdn/stories', {
-			version: 'draft',
-			content_type: 'destination_page',
-			...deliveryLanguageParams(language),
-			filter_query: { destination: { in: uuids.join(',') } },
-			per_page: 100,
-		});
-		for (const page of data?.stories || []) {
+		const pages = await getDestinationPages(uuids, language);
+		for (const page of pages) {
 			const id = page.content?.destination;
 			if (id) hrefs[id] = storyHref(page, language);
 		}
@@ -43,22 +37,8 @@ async function findPages(uuids) {
 // filters nothing.
 export async function loadAllDestinations({ countries = [], attributes = [] }) {
 	const language = await lang();
-	const filterQuery = {};
-	if (countries.length) filterQuery.country = { in: countries.join(',') };
-	if (attributes.length) {
-		filterQuery.attributes = { any_in_array: attributes.join(',') };
-	}
 	try {
-		return await getStoryblokApi().getAll(
-			'cdn/stories',
-			{
-				version: 'draft',
-				content_type: 'destination',
-				...deliveryLanguageParams(language),
-				...(Object.keys(filterQuery).length && { filter_query: filterQuery }),
-			},
-			'stories',
-		);
+		return await getDestinations({ countries, attributes }, language);
 	} catch (error) {
 		console.error('DestinationGrid: destination lookup failed', error);
 		return [];
@@ -89,9 +69,58 @@ export async function loadDestinations(blok) {
 	});
 }
 
+// The searchable grid once the visitor's choices are known. A shared link
+// shows the grid filtered on the server until the client search takes
+// over, so the full Pool does not flash.
+const VisitorChoicesGrid = async ({
+	searchParams,
+	blok,
+	pool,
+	destinations,
+	labels,
+	cards,
+	texts,
+	settings,
+}) => {
+	const urlParams = await searchParams;
+	const choices = parseChoices(urlParams);
+	const searchResult = searchDestinations({
+		destinations,
+		settings,
+		choices,
+		labels,
+	});
+	const filteredFallback = (
+		<DestinationSearchView
+			headline={blok.headline}
+			result={searchResult}
+			cards={cards}
+			texts={texts}
+			choices={choices}
+			clearHref={clearChoicesHref(urlParams)}
+		/>
+	);
+	return (
+		<Suspense fallback={filteredFallback}>
+			<DestinationSearch
+				headline={blok.headline}
+				pool={pool}
+				labels={labels}
+				cards={cards}
+				texts={texts}
+			/>
+		</Suspense>
+	);
+};
+
 const DestinationGrid = async ({ blok, searchParams }) => {
 	const language = await lang();
 	const stories = await loadDestinations(blok);
+	const records = stories.map(toRecord);
+	const settings = {
+		countries: blok.countries || [],
+		attributes: blok.attributes || [],
+	};
 	const storyByUuid = new Map(stories.map((story) => [story.uuid, story]));
 
 	// With search off the grid ignores the URL and shows the whole Pool.
@@ -110,14 +139,9 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 				attributes: await loadLabels('destination-attributes', language),
 			}
 		: {};
-	const choices = parseChoices(search ? searchParams : undefined);
 	const searchResult = searchDestinations({
-		destinations: stories.map(toRecord),
-		settings: {
-			countries: blok.countries || [],
-			attributes: blok.attributes || [],
-		},
-		choices,
+		destinations: records,
+		settings,
 		labels,
 	});
 	const { pool } = searchResult;
@@ -197,23 +221,28 @@ const DestinationGrid = async ({ blok, searchParams }) => {
 		selectedTemplate: await getLabel('filter-selected'),
 		placesTemplates,
 	};
-	// The fallback is the same grid, filtered on the server, so a shared
-	// link never flashes the full Pool.
+	// Search Text and Filters come from the URL, which the page hands down as
+	// a promise. Reading it inside <Suspense> keeps the Pool, labels and cards
+	// above out of the per-request work. While it settles, the fallback is the
+	// same grid with nothing narrowed.
 	const fallback = (
 		<DestinationSearchView
 			headline={blok.headline}
 			result={searchResult}
 			cards={cards}
 			texts={texts}
-			choices={choices}
-			clearHref={clearChoicesHref(searchParams)}
+			choices={parseChoices()}
+			clearHref={clearChoicesHref()}
 		/>
 	);
 	return section(
 		<Suspense fallback={fallback}>
-			<DestinationSearch
-				headline={blok.headline}
+			<VisitorChoicesGrid
+				searchParams={searchParams}
+				blok={blok}
 				pool={pool}
+				destinations={records}
+				settings={settings}
 				labels={labels}
 				cards={cards}
 				texts={texts}

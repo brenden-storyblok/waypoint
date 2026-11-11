@@ -7,6 +7,12 @@ export default defineConfig({
 			'next/root-params': fileURLToPath(
 				new URL('./src/test/rootParams.js', import.meta.url),
 			),
+			'next/cache': fileURLToPath(
+				new URL('./src/test/cache.js', import.meta.url),
+			),
+			'next/headers': fileURLToPath(
+				new URL('./src/test/headers.js', import.meta.url),
+			),
 			'@': fileURLToPath(new URL('./src', import.meta.url)),
 		},
 	},
